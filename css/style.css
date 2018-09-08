@@ -212,6 +212,8 @@ header .intro-text {
 /* About Section */
 #about {
 	padding: 120px 0;
+	background: #444 url(../img/sd.jpg) center top no-repeat fixed;
+	background-size: cover;
 }
 #about h3 {
 	font-size: 20px;
@@ -219,13 +221,9 @@ header .intro-text {
 #about .about-text {
 	margin-left: 10px;
 	
-	
 }
 
-#about .section-title {
-	background: #444 url(../img/sd.jpg) center center no-repeat fixed;
-	background-size: cover;
-}
+
 
 #about .about-img {
 	display: inline-block;
