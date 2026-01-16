@@ -7,6 +7,95 @@
     <!-- Chart.js для графиков -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+           /* Graph Info */
+        .graph-info {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 10px;
+            padding: 8px;
+            background: rgba(248, 250, 253, 0.5);
+            border-radius: 8px;
+        }
+        
+        /* Graph Tabs */
+        .graph-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        
+        .graph-tab {
+            padding: 8px 16px;
+            background: rgba(248, 250, 253, 0.7);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        
+        .graph-tab:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .graph-tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .control-btn {
+            padding: 10px 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex: 1;
+            justify-content: center;
+        }
+        
+        .control-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        /* Responsive для графиков */
+        @media (max-width: 400px) {
+            .graph-tabs {
+                flex-wrap: wrap;
+            }
+            
+            .graph-tab {
+                flex: 1;
+                min-width: 70px;
+                text-align: center;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+        }
         * {
             margin: 0;
             padding: 0;
@@ -1090,16 +1179,19 @@
                 <div class="graph-tab active" data-graph="cpu">Процессор</div>
                 <div class="graph-tab" data-graph="ram">Память</div>
                 <div class="graph-tab" data-graph="errors">Ошибки</div>
-                <div class="graph-tab" data-graph="combined">Все вместе</div>
+                <div class="graph-tab" data-graph="battery">Батарея</div>
             </div>
             <div class="graph-container">
                 <canvas id="statsChart"></canvas>
             </div>
+            <div class="graph-info" id="graphInfo">
+                Загрузка истории...
+            </div>
             <div class="controls">
-                <button class="control-btn" onclick="loadHistoryData()">
-                    <span>🔄</span> Загрузить историю
+                <button class="control-btn" onclick="loadRealHistory()">
+                    <span>🔄</span> Обновить графики
                 </button>
-                <button class="control-btn primary" onclick="toggleAutoGraphRefresh()" id="autoGraphBtn">
+                <button class="control-btn" onclick="toggleAutoGraphs()" id="autoGraphsBtn">
                     <span>⏸️</span> Авто-графики
                 </button>
             </div>
@@ -1950,6 +2042,255 @@
         
         // Запуск приложения
         document.addEventListener('DOMContentLoaded', init);
+         // ========== РЕАЛЬНАЯ ИСТОРИЯ И ГРАФИКИ ==========
+        
+        let historyChart = null;
+        let currentGraphType = 'cpu';
+        let autoGraphsEnabled = false;
+        let autoGraphsInterval = null;
+        
+        // Функция загрузки реальных исторических данных
+        async function loadRealHistory() {
+            try {
+                document.getElementById('graphInfo').textContent = 'Загрузка данных...';
+                
+                const url = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/history/summary.json?t=' + Date.now();
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (!data.data || data.data.length === 0) {
+                    document.getElementById('graphInfo').textContent = 'Нет данных истории';
+                    return;
+                }
+                
+                document.getElementById('graphInfo').textContent = `Данные за ${data.count} точек, обновлено: ${new Date(data.updated).toLocaleTimeString('ru-RU')}`;
+                
+                // Обновляем график
+                updateRealChart(data.data);
+                
+            } catch (error) {
+                console.error('Ошибка загрузки истории:', error);
+                document.getElementById('graphInfo').textContent = 'Ошибка загрузки истории';
+            }
+        }
+        
+        // Функция обновления графика реальными данными
+        function updateRealChart(historyData) {
+            if (!historyData || historyData.length < 2) {
+                console.log('Недостаточно данных для графика');
+                return;
+            }
+            
+            const ctx = document.getElementById('statsChart').getContext('2d');
+            
+            // Уничтожаем старый график
+            if (historyChart) {
+                historyChart.destroy();
+            }
+            
+            // Подготавливаем данные в зависимости от выбранного типа графика
+            const labels = historyData.map(item => {
+                const date = new Date(item.t * 1000);
+                return date.toLocaleTimeString('ru-RU', { 
+                    hour: '2-digit', 
+                    minute: '2-digit' 
+                });
+            });
+            
+            let datasets = [];
+            
+            switch(currentGraphType) {
+                case 'cpu':
+                    datasets = [{
+                        label: 'Процессор %',
+                        data: historyData.map(item => item.cpu),
+                        borderColor: '#FF6B6B',
+                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.4,
+                        fill: true
+                    }];
+                    break;
+                    
+                case 'ram':
+                    datasets = [{
+                        label: 'Память %',
+                        data: historyData.map(item => item.ram),
+                        borderColor: '#4ECDC4',
+                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.4,
+                        fill: true
+                    }];
+                    break;
+                    
+                case 'errors':
+                    datasets = [
+                        {
+                            label: 'Ошибки',
+                            data: historyData.map(item => item.errors),
+                            borderColor: '#E74C3C',
+                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: 'Предупреждения',
+                            data: historyData.map(item => item.warnings),
+                            borderColor: '#F39C12',
+                            backgroundColor: 'rgba(243, 156, 18, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.4,
+                            fill: true
+                        }
+                    ];
+                    break;
+                    
+                case 'battery':
+                    datasets = [{
+                        label: 'Батарея %',
+                        data: historyData.map(item => item.battery || 0),
+                        borderColor: '#2ECC71',
+                        backgroundColor: 'rgba(46, 204, 113, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.4,
+                        fill: true
+                    }];
+                    break;
+            }
+            
+            // Создаем новый график
+            historyChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                color: 'var(--text)',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                            titleColor: 'var(--text)',
+                            bodyColor: 'var(--text)',
+                            borderColor: 'var(--card-border)',
+                            borderWidth: 1
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                color: 'rgba(219, 226, 239, 0.3)'
+                            },
+                            ticks: {
+                                color: 'var(--text-secondary)',
+                                maxRotation: 0,
+                                maxTicksLimit: 8
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            max: currentGraphType === 'battery' ? 100 : 
+                                 currentGraphType === 'errors' ? Math.max(...historyData.map(d => Math.max(d.errors, d.warnings))) * 1.2 : 100,
+                            grid: {
+                                color: 'rgba(219, 226, 239, 0.3)'
+                            },
+                            ticks: {
+                                color: 'var(--text-secondary)',
+                                callback: function(value) {
+                                    return value + (currentGraphType === 'battery' || currentGraphType === 'cpu' || currentGraphType === 'ram' ? '%' : '');
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Переключение типа графика
+        function setupGraphTabs() {
+            document.querySelectorAll('.graph-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Убираем активный класс
+                    document.querySelectorAll('.graph-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+                    
+                    // Добавляем активный класс текущему
+                    tab.classList.add('active');
+                    
+                    // Меняем тип графика
+                    currentGraphType = tab.dataset.graph;
+                    
+                    // Перезагружаем историю для нового графика
+                    loadRealHistory();
+                });
+            });
+        }
+        
+        // Переключение автообновления графиков
+        function toggleAutoGraphs() {
+            autoGraphsEnabled = !autoGraphsEnabled;
+            const btn = document.getElementById('autoGraphsBtn');
+            
+            if (autoGraphsEnabled) {
+                btn.innerHTML = '<span>⏸️</span> Стоп авто';
+                startAutoGraphs();
+            } else {
+                btn.innerHTML = '<span>▶️</span> Авто-графики';
+                stopAutoGraphs();
+            }
+        }
+        
+        function startAutoGraphs() {
+            stopAutoGraphs();
+            autoGraphsInterval = setInterval(() => {
+                loadRealHistory();
+            }, 300000); // Каждые 5 минут
+        }
+        
+        function stopAutoGraphs() {
+            if (autoGraphsInterval) {
+                clearInterval(autoGraphsInterval);
+                autoGraphsInterval = null;
+            }
+        }
+        
+        // В функции init() добавьте:
+        function init() {
+            // ... существующий код ...
+            
+            // Добавьте эти строки:
+            setupGraphTabs(); // Настройка вкладок графиков
+            loadRealHistory(); // Загрузка истории при старте
+            
+            if (autoGraphsEnabled) {
+                startAutoGraphs();
+            }
+            
+            // ... остальной код init()
+        }
     </script>
 </body>
 </html>
+
