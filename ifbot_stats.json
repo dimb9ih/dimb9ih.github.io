@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768569546,
-  "timestamp_human": "2026-01-16 16:19:06",
+  "timestamp": 1768569822,
+  "timestamp_human": "2026-01-16 16:23:42",
   "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 11 (предупреждений: 10, ошибок: 1), последняя: 4м назад",
+  "error_summary": "⚠️ Ошибок: 11 (предупреждений: 10, ошибок: 1), последняя: 9м назад",
   "error_stats": {
     "total_errors": 11,
     "warnings": 10,
@@ -28,24 +28,24 @@
   },
   "battery_info": {
     "battery_state": "2",
-    "battery_level": "99",
+    "battery_level": "100",
     "battery_state_string": "Charging",
     "is_charging": true
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.85",
-      "load_5": "3.06",
-      "load_15": "3.32",
+      "load_1": "1.94",
+      "load_5": "2.47",
+      "load_15": "2.99",
       "cores": 4,
-      "utilization_percent": 71.2
+      "utilization_percent": 48.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 244,
-      "free_mb": 4,
-      "cached_mb": 102,
-      "utilization_percent": 12.2
+      "used_mb": 246,
+      "free_mb": 5,
+      "cached_mb": 116,
+      "utilization_percent": 12.3
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768569546,
-    "timestamp_human": "2026-01-16 16:19:06"
+    "timestamp": 1768569822,
+    "timestamp_human": "2026-01-16 16:23:42"
   },
-  "last_log": "2026-01-16 16:14:25 - WARNING - [CYCLE 3] Loading color not detected, but continuing...\n",
-  "update_time": "2026-01-16 16:19:06"
+  "last_log": "No WARNING/ERROR logs found",
+  "update_time": "2026-01-16 16:23:42"
 }
