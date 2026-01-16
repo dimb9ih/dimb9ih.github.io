@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768566853,
-  "timestamp_human": "2026-01-16 15:34:13",
-  "cycle_count": 1,
+  "timestamp": 1768567052,
+  "timestamp_human": "2026-01-16 15:37:32",
+  "cycle_count": 2,
   "bot_status": "running",
   "device_info": {
     "name": "iPhone 7",
@@ -12,24 +12,24 @@
   },
   "battery_info": {
     "battery_state": "1",
-    "battery_level": "96",
+    "battery_level": "94",
     "battery_state_string": "Unplugged",
     "is_charging": false
   },
   "system_stats": {
     "cpu": {
-      "load_1": "6.75",
-      "load_5": "3.48",
-      "load_15": "3.01",
+      "load_1": "2.83",
+      "load_5": "3.60",
+      "load_15": "3.22",
       "cores": 4,
-      "utilization_percent": 168.8
+      "utilization_percent": 70.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 236,
-      "free_mb": 2,
-      "cached_mb": 129,
-      "utilization_percent": 11.8
+      "used_mb": 241,
+      "free_mb": 6,
+      "cached_mb": 107,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -38,9 +38,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768566853,
-    "timestamp_human": "2026-01-16 15:34:13"
+    "timestamp": 1768567052,
+    "timestamp_human": "2026-01-16 15:37:32"
   },
-  "last_log": "2026-01-16 15:31:51 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 0s\n2026-01-16 15:31:56 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 5s\n2026-01-16 15:31:56 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 5s\n2026-01-16 15:32:00 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 10s\n2026-01-16 15:32:01 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 10s\n2026-01-16 15:32:05 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 15s\n2026-01-16 15:32:06 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 15s\n2026-01-16 15:32:11 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 20s\n2026-01-16 15:32:16 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 25s\n2026-01-16 15:32:21 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 30s\n2026-01-16 15:32:21 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 30s\n2026-01-16 15:32:25 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 35s\n2026-01-16 15:32:26 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 35s\n2026-01-16 15:32:30 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 40s\n2026-01-16 15:32:31 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 40s\n2026-01-16 15:32:36 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 45s\n2026-01-16 15:32:41 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 50s\n2026-01-16 15:32:46 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 55s\n2026-01-16 15:32:46 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-01-16 15:32:51 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 60s\n2026-01-16 15:32:56 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 65s\n2026-01-16 15:33:01 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 70s\n2026-01-16 15:33:06 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 75s\n2026-01-16 15:33:06 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 75s\n2026-01-16 15:33:10 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 80s\n2026-01-16 15:33:11 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 80s\n2026-01-16 15:33:16 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 85s\n2026-01-16 15:33:21 - WARNING - [CYCLE 1] Failed to reach main screen\n2026-01-16 15:33:21 - ERROR - [CYCLE 1] Main screen not found\n2026-01-16 15:34:13 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-01-16 15:34:13"
+  "last_log": "2026-01-16 15:34:33 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-01-16 15:34:34 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-01-16 15:34:34 - INFO - [CYCLE 1] Invite #1 sent (0s)\n2026-01-16 15:34:40 - INFO - [CYCLE 1] Invite #2 sent (5s)\n2026-01-16 15:34:46 - INFO - [CYCLE 1] Invite #3 sent (11s)\n2026-01-16 15:34:52 - INFO - [CYCLE 1] Invite #4 sent (17s)\n2026-01-16 15:34:58 - INFO - [CYCLE 1] Invite #5 sent (23s)\n2026-01-16 15:35:04 - DEBUG - [CYCLE 1] Checking for attention popup (invite #5)\n2026-01-16 15:35:04 - INFO - [CYCLE 1] Invite #6 sent (29s)\n2026-01-16 15:35:10 - INFO - [CYCLE 1] Invite #7 sent (35s)\n2026-01-16 15:35:16 - INFO - [CYCLE 1] Invite #8 sent (41s)\n2026-01-16 15:35:21 - INFO - [CYCLE 1] Invite #9 sent (47s)\n2026-01-16 15:35:27 - INFO - [CYCLE 1] Invite #10 sent (52s)\n2026-01-16 15:35:33 - DEBUG - [CYCLE 1] Checking for attention popup (invite #10)\n2026-01-16 15:35:33 - INFO - [CYCLE 1] Invite #11 sent (58s)\n2026-01-16 15:35:39 - INFO - [CYCLE 1] Invite #12 sent (64s)\n2026-01-16 15:35:45 - INFO - [CYCLE 1] Invite #13 sent (70s)\n2026-01-16 15:35:51 - INFO - [CYCLE 1] Invite #14 sent (76s)\n2026-01-16 15:35:57 - INFO - [CYCLE 1] Invite #15 sent (82s)\n2026-01-16 15:36:03 - DEBUG - [CYCLE 1] Checking for attention popup (invite #15)\n2026-01-16 15:36:03 - INFO - [CYCLE 1] Invite #16 sent (88s)\n2026-01-16 15:36:08 - INFO - [CYCLE 1] Invite #17 sent (94s)\n2026-01-16 15:36:14 - INFO - [CYCLE 1] Invite #18 sent (100s)\n2026-01-16 15:36:20 - INFO - [CYCLE 1] Invite #19 sent (105s)\n2026-01-16 15:36:26 - INFO - [CYCLE 1] Someone joined the team!\n2026-01-16 15:36:26 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-01-16 15:36:28 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-01-16 15:37:09 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-01-16 15:37:09 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-01-16 15:37:29 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-01-16 15:37:32"
 }
