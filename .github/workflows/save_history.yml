@@ -2,7 +2,7 @@ name: Save Bot History
 
 on:
   schedule:
-    - cron: '0,30 * * * *'  # В 0 и 30 минут каждого часа
+    - cron: '0,30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -30,20 +30,83 @@ jobs:
         mkdir -p history
         TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
         FILENAME="ifbot_${TIMESTAMP}.json"
-        mv current.json "history/${FILENAME}"
-        echo "📁 Saved: ${FILENAME}"
         
-    - name: Create summary (simple)
+        if [ -f current.json ]; then
+          cp current.json "history/${FILENAME}"
+          echo "📁 Saved: ${FILENAME}"
+        else
+          echo "❌ No current.json file"
+          exit 1
+        fi
+        
+    - name: Update filelist
       run: |
-        echo "📊 Creating summary..."
-        # Простая версия - сохраняем только имена файлов
-        ls -1 history/ifbot_*.json 2>/dev/null | tail -50 > history/filelist.txt || echo "No files yet" > history/filelist.txt
-        echo "Summary created at $(date)" >> history/filelist.txt
+        ls -1 history/ifbot_*.json 2>/dev/null | sort -r > history/filelist.txt || echo "No files yet" > history/filelist.txt
+        echo "Total files: $(wc -l history/filelist.txt | cut -d' ' -f1)" >> history/filelist.txt
         
-    - name: Commit and push
+    - name: Create summary.json
+      run: |
+        echo "📊 Creating summary.json..."
+        python3 << 'EOF'
+import json, glob, os
+from datetime import datetime
+
+# Находим все файлы истории
+files = []
+try:
+    for f in glob.glob('history/ifbot_*.json'):
+        files.append(f)
+except:
+    files = []
+
+# Сортируем по времени (новые сначала)
+files.sort(reverse=True)
+
+# Читаем последние 24 файла (12 часов при сохранении каждые 30 минут)
+data_points = []
+for f in files[:24]:
+    try:
+        with open(f, 'r') as fp:
+            d = json.load(fp)
+        
+        ts = d.get('timestamp', 0)
+        if ts > 0:
+            data_points.append({
+                't': ts,
+                'cpu': d.get('system_stats', {}).get('cpu', {}).get('utilization_percent', 0),
+                'ram': d.get('system_stats', {}).get('memory', {}).get('utilization_percent', 0),
+                'errors': d.get('error_stats', {}).get('errors', 0),
+                'warnings': d.get('error_stats', {}).get('warnings', 0),
+                'cycle': d.get('cycle_count', 0),
+                'battery': int(d.get('battery_info', {}).get('battery_level', 0))
+            })
+    except Exception as e:
+        print(f"Error reading {f}: {e}")
+
+# Сортируем по времени (старые -> новые) для графика
+data_points.sort(key=lambda x: x['t'])
+
+# Сохраняем сводку
+with open('history/summary.json', 'w') as f:
+    json.dump({
+        'updated': datetime.now().isoformat(),
+        'count': len(data_points),
+        'data': data_points
+    }, f, indent=2)
+
+print(f"✅ Summary.json created with {len(data_points)} data points")
+EOF
+        
+    - name: Commit and push changes
       run: |
         git config --global user.email "github-actions@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
+        
+        # Добавляем все файлы истории
         git add history/
-        git commit -m "🤖 Auto-save: $(date -u '+%Y-%m-%d %H:%M')" || echo "No changes"
+        
+        # Коммит
+        git commit -m "🤖 Auto-save bot history [$(date -u '+%H:%M UTC')]" || echo "No changes to commit"
+        
+        # Пуш
         git push
