@@ -19,6 +19,7 @@
             --success: #2ECC71;
             --warning: #F39C12;
             --danger: #E74C3C;
+            --critical: #C0392B;
             --bg: #F8FAFD;
             --bg-gradient: linear-gradient(135deg, #F8FAFD 0%, #EDF2F7 100%);
             --card-bg: rgba(255, 255, 255, 0.95);
@@ -32,7 +33,9 @@
             --ram-color: #4ECDC4;
             --disk-color: #45B7D1;
             --battery-color: #2ECC71;
-            --accent-glow: rgba(91, 141, 239, 0.12);
+            --error-bg: #FFF5F5;
+            --warning-bg: #FFF9E6;
+            --critical-bg: #FFECEC;
         }
         
         body {
@@ -73,7 +76,7 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--success));
+            background: linear-gradient(90deg, var(--primary), var(--success), var(--warning), var(--danger));
         }
         
         .header h1 {
@@ -167,6 +170,142 @@
             50% { transform: translateY(-3px); }
         }
         
+        /* Error Summary */
+        .error-summary {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.1s both;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-summary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+        }
+        
+        .error-summary.no-errors::before {
+            background: var(--success);
+        }
+        
+        .error-summary.has-warnings::before {
+            background: var(--warning);
+        }
+        
+        .error-summary.has-errors::before {
+            background: var(--danger);
+        }
+        
+        .error-summary.has-critical::before {
+            background: var(--critical);
+            animation: criticalPulse 1.5s infinite;
+        }
+        
+        @keyframes criticalPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .error-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .error-icon {
+            font-size: 22px;
+        }
+        
+        .error-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .error-counts {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .error-count {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 10px;
+            min-width: 70px;
+        }
+        
+        .error-count.warning {
+            background: var(--warning-bg);
+            border: 1px solid rgba(243, 156, 18, 0.2);
+        }
+        
+        .error-count.error {
+            background: var(--error-bg);
+            border: 1px solid rgba(231, 76, 60, 0.2);
+        }
+        
+        .error-count.critical {
+            background: var(--critical-bg);
+            border: 1px solid rgba(192, 57, 43, 0.2);
+        }
+        
+        .count-value {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        
+        .warning .count-value { color: var(--warning); }
+        .error .count-value { color: var(--danger); }
+        .critical .count-value { color: var(--critical); }
+        
+        .count-label {
+            font-size: 11px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-top: 4px;
+        }
+        
+        .error-message {
+            font-size: 14px;
+            padding: 12px 15px;
+            background: rgba(248, 250, 253, 0.7);
+            border-radius: 10px;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .no-errors-message {
+            color: var(--success);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
         /* System Stats */
         .system-stats {
             display: grid;
@@ -185,7 +324,7 @@
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.1s both;
+            animation: slideUp 0.5s ease-out 0.2s both;
         }
         
         .system-card:hover {
@@ -207,17 +346,6 @@
         .cpu-card::before { background: var(--cpu-color); }
         .ram-card::before { background: var(--ram-color); }
         .disk-card::before { background: var(--disk-color); }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
         
         .system-icon {
             font-size: 26px;
@@ -266,7 +394,7 @@
             border: 1px solid var(--card-border);
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.2s both;
+            animation: slideUp 0.5s ease-out 0.3s both;
         }
         
         .stat-card:hover {
@@ -375,7 +503,7 @@
             margin-bottom: 20px;
             border: 1px solid var(--card-border);
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.3s both;
+            animation: slideUp 0.5s ease-out 0.4s both;
         }
         
         .device-card h3 {
@@ -425,7 +553,7 @@
             margin-bottom: 20px;
             border: 1px solid var(--card-border);
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.4s both;
+            animation: slideUp 0.5s ease-out 0.5s both;
         }
         
         .update-row {
@@ -454,7 +582,7 @@
             margin-bottom: 20px;
             border: 1px solid var(--card-border);
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.5s both;
+            animation: slideUp 0.5s ease-out 0.6s both;
         }
         
         .logs-header {
@@ -491,7 +619,7 @@
         }
         
         .logs-container {
-            height: 220px;
+            height: 200px;
             overflow-y: auto;
             font-family: 'SF Mono', 'Cascadia Code', 'Roboto Mono', monospace;
             font-size: 12px;
@@ -511,6 +639,31 @@
             animation: slideInRight 0.3s ease-out;
         }
         
+        .log-entry.error {
+            color: var(--danger);
+            background: rgba(231, 76, 60, 0.05);
+            border-left: 2px solid var(--danger);
+            margin-left: -15px;
+            padding-left: 17px;
+        }
+        
+        .log-entry.warning {
+            color: var(--warning);
+            background: rgba(243, 156, 18, 0.05);
+            border-left: 2px solid var(--warning);
+            margin-left: -15px;
+            padding-left: 17px;
+        }
+        
+        .log-entry.critical {
+            color: var(--critical);
+            background: rgba(192, 57, 43, 0.05);
+            border-left: 2px solid var(--critical);
+            margin-left: -15px;
+            padding-left: 17px;
+            font-weight: 500;
+        }
+        
         .log-entry::before {
             content: '›';
             position: absolute;
@@ -519,6 +672,10 @@
             font-weight: bold;
             font-size: 14px;
         }
+        
+        .log-entry.error::before { color: var(--danger); }
+        .log-entry.warning::before { color: var(--warning); }
+        .log-entry.critical::before { color: var(--critical); }
         
         @keyframes slideInRight {
             from {
@@ -538,6 +695,10 @@
             font-feature-settings: "tnum";
             opacity: 0.8;
         }
+        
+        .log-entry.error .log-timestamp { color: var(--danger); }
+        .log-entry.warning .log-timestamp { color: var(--warning); }
+        .log-entry.critical .log-timestamp { color: var(--critical); }
         
         /* Auto Refresh Indicator */
         .auto-refresh-indicator {
@@ -595,6 +756,17 @@
             .stats-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
+            }
+            
+            .error-counts {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .error-count {
+                flex-direction: row;
+                justify-content: space-between;
+                min-width: auto;
             }
             
             .info-grid {
@@ -707,6 +879,31 @@
             </div>
         </div>
         
+        <!-- Error Summary -->
+        <div class="error-summary" id="errorSummary">
+            <div class="error-header">
+                <div class="error-icon" id="errorIcon">📊</div>
+                <div class="error-title">Статистика ошибок</div>
+            </div>
+            <div class="error-counts">
+                <div class="error-count warning">
+                    <div class="count-value" id="warningCount">0</div>
+                    <div class="count-label">Предупреждения</div>
+                </div>
+                <div class="error-count error">
+                    <div class="count-value" id="errorCount">0</div>
+                    <div class="count-label">Ошибки</div>
+                </div>
+                <div class="error-count critical">
+                    <div class="count-value" id="criticalCount">0</div>
+                    <div class="count-label">Критические</div>
+                </div>
+            </div>
+            <div class="error-message" id="errorMessage">
+                <div class="no-errors-message">✅ Ошибок нет</div>
+            </div>
+        </div>
+        
         <!-- System Stats -->
         <div class="system-stats">
             <div class="system-card cpu-card">
@@ -815,6 +1012,7 @@
         
         // DOM элементы
         const elements = {
+            // Существующие элементы
             cycleCount: document.getElementById('cycle-count'),
             batteryLevel: document.getElementById('battery-level'),
             batteryFill: document.getElementById('battery-fill'),
@@ -837,7 +1035,15 @@
             ramUsage: document.getElementById('ram-usage'),
             ramDetail: document.getElementById('ram-detail'),
             diskUsage: document.getElementById('disk-usage'),
-            diskDetail: document.getElementById('disk-detail')
+            diskDetail: document.getElementById('disk-detail'),
+            
+            // Новые элементы для ошибок
+            errorSummary: document.getElementById('errorSummary'),
+            errorIcon: document.getElementById('errorIcon'),
+            errorMessage: document.getElementById('errorMessage'),
+            warningCount: document.getElementById('warningCount'),
+            errorCount: document.getElementById('errorCount'),
+            criticalCount: document.getElementById('criticalCount')
         };
         
         // Форматирование времени
@@ -874,6 +1080,99 @@
             }
         }
         
+        // Отображение ошибок
+        function displayErrorStats(errorStats) {
+            if (!errorStats) return;
+            
+            // Обновляем счетчики
+            elements.warningCount.textContent = errorStats.warnings || 0;
+            elements.errorCount.textContent = errorStats.errors || 0;
+            elements.criticalCount.textContent = errorStats.critical || 0;
+            
+            const totalErrors = errorStats.total_errors || 0;
+            
+            // Обновляем иконку и класс
+            if (totalErrors === 0) {
+                elements.errorIcon.textContent = '✅';
+                elements.errorSummary.className = 'error-summary no-errors';
+                elements.errorMessage.innerHTML = '<div class="no-errors-message">✅ Ошибок нет</div>';
+            } else {
+                if (errorStats.critical > 0) {
+                    elements.errorIcon.textContent = '🔥';
+                    elements.errorSummary.className = 'error-summary has-critical';
+                } else if (errorStats.errors > 0) {
+                    elements.errorIcon.textContent = '❌';
+                    elements.errorSummary.className = 'error-summary has-errors';
+                } else {
+                    elements.errorIcon.textContent = '⚠️';
+                    elements.errorSummary.className = 'error-summary has-warnings';
+                }
+                
+                // Создаем сообщение об ошибках
+                let message = '';
+                if (errorStats.error_summary) {
+                    message = errorStats.error_summary;
+                } else {
+                    const parts = [];
+                    if (errorStats.warnings > 0) parts.push(`Предупреждений: ${errorStats.warnings}`);
+                    if (errorStats.errors > 0) parts.push(`Ошибок: ${errorStats.errors}`);
+                    if (errorStats.critical > 0) parts.push(`Критических: ${errorStats.critical}`);
+                    message = `⚠️ Всего ошибок: ${totalErrors} (${parts.join(', ')})`;
+                }
+                
+                elements.errorMessage.textContent = message;
+                
+                // Добавляем время последней ошибки
+                if (errorStats.last_error_time) {
+                    const now = Math.floor(Date.now() / 1000);
+                    const diff = now - errorStats.last_error_time;
+                    
+                    if (diff < 3600) {
+                        elements.errorMessage.innerHTML += `<br><small>Последняя ошибка: ${formatTimeDiff(diff)} назад</small>`;
+                    }
+                }
+            }
+            
+            // Показываем последние ошибки в логах
+            if (errorStats.recent_errors && errorStats.recent_errors.length > 0) {
+                displayRecentErrors(errorStats.recent_errors);
+            }
+        }
+        
+        // Отображение последних ошибок
+        function displayRecentErrors(recentErrors) {
+            if (!recentErrors || recentErrors.length === 0) return;
+            
+            // Добавляем только ошибки, если их больше 3
+            if (recentErrors.length > 3) {
+                const errorLogs = document.createElement('div');
+                errorLogs.innerHTML = '<div class="log-entry warning">📋 Показаны последние ошибки:</div>';
+                
+                recentErrors.slice(-3).forEach(errorLine => {
+                    const logEntry = document.createElement('div');
+                    logEntry.className = 'log-entry';
+                    
+                    // Определяем тип ошибки
+                    if (errorLine.toLowerCase().includes('critical')) {
+                        logEntry.className = 'log-entry critical';
+                    } else if (errorLine.toLowerCase().includes('error')) {
+                        logEntry.className = 'log-entry error';
+                    } else if (errorLine.toLowerCase().includes('warning')) {
+                        logEntry.className = 'log-entry warning';
+                    }
+                    
+                    // Обрезаем длинные строки
+                    logEntry.textContent = errorLine.length > 120 ? 
+                        errorLine.substring(0, 120) + '...' : errorLine;
+                    
+                    errorLogs.appendChild(logEntry);
+                });
+                
+                // Вставляем перед обычными логами
+                elements.logsContent.insertBefore(errorLogs, elements.logsContent.firstChild);
+            }
+        }
+        
         // Отображение логов
         function displayLogs(logText) {
             if (!logText) return;
@@ -888,6 +1187,16 @@
                 const logEntry = document.createElement('div');
                 logEntry.className = 'log-entry';
                 logEntry.style.animationDelay = `${index * 0.05}s`;
+                
+                // Определяем тип лога
+                const lineLower = line.toLowerCase();
+                if (lineLower.includes('critical')) {
+                    logEntry.className = 'log-entry critical';
+                } else if (lineLower.includes('error')) {
+                    logEntry.className = 'log-entry error';
+                } else if (lineLower.includes('warning')) {
+                    logEntry.className = 'log-entry warning';
+                }
                 
                 // Парсим временную метку
                 const parts = line.split(' - ');
@@ -927,6 +1236,20 @@
                     elements.cycleCount.textContent = data.cycle_count || '0';
                     elements.statusText.textContent = data.bot_status ? 
                         data.bot_status.charAt(0).toUpperCase() + data.bot_status.slice(1) : 'Неизвестно';
+                    
+                    // Статистика ошибок
+                    if (data.error_stats) {
+                        displayErrorStats(data.error_stats);
+                    } else if (data.error_summary) {
+                        // Для обратной совместимости
+                        displayErrorStats({
+                            total_errors: 0,
+                            warnings: 0,
+                            errors: 0,
+                            critical: 0,
+                            error_summary: data.error_summary
+                        });
+                    }
                     
                     // Системные данные
                     if (data.system_stats) {
@@ -1007,7 +1330,7 @@
                 
             } catch (error) {
                 console.error('Ошибка обновления:', error);
-                elements.logsContent.innerHTML = '<div class="log-entry">❌ Ошибка загрузки данных</div>';
+                elements.logsContent.innerHTML = '<div class="log-entry error">❌ Ошибка загрузки данных</div>';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
                 elements.statusText.textContent = 'ОШИБКА';
             }
@@ -1028,7 +1351,7 @@
                 
             } catch (error) {
                 console.error('Ошибка загрузки:', error);
-                elements.logsContent.innerHTML = '<div class="log-entry">❌ Ошибка соединения</div>';
+                elements.logsContent.innerHTML = '<div class="log-entry error">❌ Ошибка соединения</div>';
                 elements.statusText.textContent = 'ОФФЛАЙН';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
                 elements.autoRefreshIndicator.style.background = 'var(--warning)';
