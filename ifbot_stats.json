@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768570881,
-  "timestamp_human": "2026-01-16 16:41:21",
-  "cycle_count": 3,
+  "timestamp": 1768571146,
+  "timestamp_human": "2026-01-16 16:45:46",
+  "cycle_count": 4,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 9 (предупреждений: 8, ошибок: 1), последняя: 10м назад",
+  "error_summary": "⚠️ Ошибок: 9 (предупреждений: 8, ошибок: 1), последняя: 15м назад",
   "error_stats": {
     "total_errors": 9,
     "warnings": 8,
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.25",
-      "load_5": "2.70",
-      "load_15": "2.69",
+      "load_1": "2.76",
+      "load_5": "3.22",
+      "load_15": "3.01",
       "cores": 4,
-      "utilization_percent": 81.2
+      "utilization_percent": 69.0
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 247,
-      "free_mb": 4,
-      "cached_mb": 120,
+      "free_mb": 5,
+      "cached_mb": 124,
       "utilization_percent": 12.3
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768570881,
-    "timestamp_human": "2026-01-16 16:41:21"
+    "timestamp": 1768571146,
+    "timestamp_human": "2026-01-16 16:45:46"
   },
   "last_log": "No WARNING/ERROR logs found",
-  "update_time": "2026-01-16 16:41:21"
+  "update_time": "2026-01-16 16:45:46"
 }
