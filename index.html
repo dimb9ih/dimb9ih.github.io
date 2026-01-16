@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>🤖 IFBot Status</title>
+    <title>🤖 IFBot Статус</title>
     <style>
         * {
             margin: 0;
@@ -13,33 +13,35 @@
         }
         
         :root {
-            --primary: #6D8BFF;
-            --primary-light: #8BA3FF;
-            --primary-dark: #4A6BE8;
-            --success: #5CD85C;
-            --warning: #FFB74D;
-            --danger: #FF6B6B;
-            --bg: #0D1117;
-            --card-bg: #161B22;
-            --card-bg-light: #1C2128;
-            --text: #E6EDF3;
-            --text-secondary: #8B949E;
-            --text-muted: #6E7681;
-            --border: #30363D;
-            --cpu-color: #FF7B72;
-            --ram-color: #79C0FF;
-            --disk-color: #D2A8FF;
-            --battery-color: #3FB950;
-            --accent-glow: rgba(109, 139, 255, 0.2);
+            --primary: #5B8DEF;
+            --primary-light: #8AB1FF;
+            --primary-dark: #4A76D9;
+            --success: #2ECC71;
+            --warning: #F39C12;
+            --danger: #E74C3C;
+            --bg: #F8FAFD;
+            --bg-gradient: linear-gradient(135deg, #F8FAFD 0%, #EDF2F7 100%);
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --card-border: rgba(219, 226, 239, 0.6);
+            --text: #2D3748;
+            --text-secondary: #718096;
+            --text-muted: #A0AEC0;
+            --shadow: rgba(0, 0, 0, 0.04);
+            --shadow-hover: rgba(0, 0, 0, 0.08);
+            --cpu-color: #FF6B6B;
+            --ram-color: #4ECDC4;
+            --disk-color: #45B7D1;
+            --battery-color: #2ECC71;
+            --accent-glow: rgba(91, 141, 239, 0.12);
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif;
-            background: var(--bg);
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', system-ui, sans-serif;
+            background: var(--bg-gradient);
             color: var(--text);
-            line-height: 1.5;
+            line-height: 1.6;
             min-height: 100vh;
-            padding: 16px;
+            padding: 20px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -53,13 +55,15 @@
         .header {
             text-align: center;
             margin-bottom: 24px;
-            padding: 24px 20px;
-            background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+            padding: 28px 20px;
+            background: var(--card-bg);
             border-radius: 20px;
-            border: 1px solid var(--border);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--card-border);
+            box-shadow: 0 4px 20px var(--shadow);
+            backdrop-filter: blur(10px);
             position: relative;
             overflow: hidden;
+            animation: fadeIn 0.5s ease-out;
         }
         
         .header::before {
@@ -68,7 +72,7 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 2px;
+            height: 3px;
             background: linear-gradient(90deg, var(--primary), var(--success));
         }
         
@@ -76,29 +80,27 @@
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 8px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.5px;
+            color: var(--text);
+            letter-spacing: -0.3px;
         }
         
         .header p {
             color: var(--text-secondary);
-            font-size: 14px;
-            margin-bottom: 16px;
+            font-size: 15px;
+            margin-bottom: 20px;
+            opacity: 0.8;
         }
         
         .status-indicator {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            padding: 8px 16px;
-            background: rgba(22, 27, 34, 0.7);
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            backdrop-filter: blur(10px);
-            animation: float 3s ease-in-out infinite;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 14px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 2px 10px var(--shadow);
+            animation: float 4s ease-in-out infinite;
         }
         
         .status-dot {
@@ -111,46 +113,58 @@
         .status-dot::after {
             content: '';
             position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
             border-radius: 50%;
             animation: pulse 2s infinite;
+            border: 2px solid;
         }
         
         .status-running .status-dot { 
             background: var(--success); 
-            box-shadow: 0 0 12px var(--success);
+            box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
         }
         .status-running .status-dot::after {
-            border: 2px solid var(--success);
+            border-color: var(--success);
         }
         
         .status-stuck .status-dot { 
             background: var(--warning); 
-            box-shadow: 0 0 12px var(--warning);
+            box-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
         }
         .status-stuck .status-dot::after {
-            border: 2px solid var(--warning);
+            border-color: var(--warning);
         }
         
         .status-stopped .status-dot { 
             background: var(--danger); 
-            box-shadow: 0 0 12px var(--danger);
+            box-shadow: 0 0 15px rgba(231, 76, 60, 0.3);
         }
         .status-stopped .status-dot::after {
-            border: 2px solid var(--danger);
+            border-color: var(--danger);
         }
         
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.1); }
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.1; transform: scale(1.2); }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-2px); }
+            50% { transform: translateY(-3px); }
         }
         
         /* System Stats */
@@ -162,19 +176,21 @@
         }
         
         .system-card {
-            background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+            background: var(--card-bg);
             border-radius: 16px;
             padding: 20px;
-            border: 1px solid var(--border);
+            border: 1px solid var(--card-border);
             text-align: center;
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.1s both;
         }
         
         .system-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px var(--shadow-hover);
             border-color: var(--primary);
         }
         
@@ -185,16 +201,27 @@
             left: 0;
             right: 0;
             height: 3px;
-            opacity: 0.7;
+            opacity: 0.8;
         }
         
         .cpu-card::before { background: var(--cpu-color); }
         .ram-card::before { background: var(--ram-color); }
         .disk-card::before { background: var(--disk-color); }
         
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
         .system-icon {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 26px;
+            margin-bottom: 12px;
             opacity: 0.9;
         }
         
@@ -205,10 +232,11 @@
             letter-spacing: 1px;
             margin-bottom: 6px;
             font-weight: 600;
+            opacity: 0.8;
         }
         
         .system-value {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 700;
             margin-bottom: 4px;
         }
@@ -218,7 +246,7 @@
         .disk-card .system-value { color: var(--disk-color); }
         
         .system-detail {
-            font-size: 11px;
+            font-size: 12px;
             color: var(--text-muted);
             opacity: 0.9;
         }
@@ -232,42 +260,34 @@
         }
         
         .stat-card {
-            background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+            background: var(--card-bg);
             border-radius: 16px;
-            padding: 20px;
-            border: 1px solid var(--border);
+            padding: 22px;
+            border: 1px solid var(--card-border);
             transition: all 0.3s ease;
-            animation: fadeInUp 0.6s ease-out;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.2s both;
         }
         
         .stat-card:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--shadow-hover);
             border-color: var(--primary);
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
         
         .stat-label {
             font-size: 13px;
             color: var(--text-secondary);
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             font-weight: 500;
+            opacity: 0.8;
         }
         
         .stat-value {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
             line-height: 1.2;
         }
@@ -275,16 +295,16 @@
         .battery-container {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 15px;
         }
         
         .battery {
-            width: 50px;
-            height: 24px;
-            border: 2px solid var(--border);
-            border-radius: 6px;
+            width: 52px;
+            height: 26px;
+            border: 2px solid var(--card-border);
+            border-radius: 8px;
             position: relative;
-            background: rgba(59, 185, 80, 0.1);
+            background: rgba(46, 204, 113, 0.08);
             overflow: hidden;
         }
         
@@ -294,18 +314,18 @@
             right: -4px;
             top: 50%;
             transform: translateY(-50%);
-            width: 3px;
-            height: 10px;
-            background: var(--border);
-            border-radius: 0 2px 2px 0;
+            width: 4px;
+            height: 12px;
+            background: var(--card-border);
+            border-radius: 0 3px 3px 0;
         }
         
         .battery-level {
             height: 100%;
-            background: linear-gradient(90deg, var(--battery-color), #2EA043);
-            border-radius: 4px;
+            background: linear-gradient(90deg, var(--battery-color), #27AE60);
+            border-radius: 6px;
             transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: 0 0 10px rgba(59, 185, 80, 0.3);
+            box-shadow: 0 0 12px rgba(46, 204, 113, 0.2);
         }
         
         /* Stuck Overlay */
@@ -322,7 +342,7 @@
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s ease;
-            background: rgba(13, 17, 23, 0.95);
+            background: rgba(248, 250, 253, 0.95);
         }
         
         .stuck-overlay.active {
@@ -332,12 +352,13 @@
         .stuck-text {
             font-size: 56px;
             font-weight: 900;
-            color: rgba(255, 107, 107, 0.15);
+            color: rgba(243, 156, 18, 0.15);
             text-transform: uppercase;
-            letter-spacing: 10px;
+            letter-spacing: 12px;
             transform: rotate(-8deg);
-            text-shadow: 0 0 40px rgba(255, 107, 107, 0.4);
+            text-shadow: 0 0 40px rgba(243, 156, 18, 0.2);
             animation: stuckShake 3s infinite;
+            font-family: 'Inter', sans-serif;
         }
         
         @keyframes stuckShake {
@@ -348,22 +369,24 @@
         
         /* Device Info */
         .device-card {
-            background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+            background: var(--card-bg);
             border-radius: 16px;
             padding: 24px;
             margin-bottom: 20px;
-            border: 1px solid var(--border);
-            animation: fadeInUp 0.6s ease-out 0.1s both;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.3s both;
         }
         
         .device-card h3 {
-            font-size: 16px;
-            margin-bottom: 18px;
-            color: var(--primary);
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: var(--text);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             font-weight: 600;
+            opacity: 0.9;
         }
         
         .info-grid {
@@ -373,8 +396,8 @@
         }
         
         .info-item {
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(219, 226, 239, 0.5);
         }
         
         .info-label {
@@ -382,23 +405,27 @@
             color: var(--text-secondary);
             margin-bottom: 6px;
             font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            opacity: 0.7;
         }
         
         .info-value {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
-            word-break: break-all;
+            word-break: break-word;
             line-height: 1.4;
         }
         
         /* Update Info */
         .update-info {
-            background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+            background: var(--card-bg);
             border-radius: 16px;
-            padding: 20px;
+            padding: 22px;
             margin-bottom: 20px;
-            border: 1px solid var(--border);
-            animation: fadeInUp 0.6s ease-out 0.2s both;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.4s both;
         }
         
         .update-row {
@@ -415,49 +442,52 @@
         .time-since {
             color: var(--warning);
             font-weight: 700;
-            font-size: 20px;
+            font-size: 22px;
             font-feature-settings: "tnum";
         }
         
         /* Logs */
         .logs-card {
-            background: linear-gradient(145deg, var(--card-bg), var(--card-bg-light));
+            background: var(--card-bg);
             border-radius: 16px;
             padding: 24px;
             margin-bottom: 20px;
-            border: 1px solid var(--border);
-            animation: fadeInUp 0.6s ease-out 0.3s both;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.5s both;
         }
         
         .logs-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
         
         .logs-header h3 {
-            font-size: 16px;
-            color: var(--primary);
+            font-size: 17px;
+            color: var(--text);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             font-weight: 600;
+            opacity: 0.9;
         }
         
         .update-badge {
             background: var(--primary);
             color: white;
-            padding: 4px 10px;
+            padding: 6px 12px;
             border-radius: 12px;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
             animation: badgePulse 2s infinite;
+            box-shadow: 0 2px 8px rgba(91, 141, 239, 0.3);
         }
         
         @keyframes badgePulse {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+            50% { opacity: 0.8; }
         }
         
         .logs-container {
@@ -465,16 +495,19 @@
             overflow-y: auto;
             font-family: 'SF Mono', 'Cascadia Code', 'Roboto Mono', monospace;
             font-size: 12px;
-            line-height: 1.4;
-            padding-right: 8px;
+            line-height: 1.5;
+            padding-right: 10px;
+            background: rgba(248, 250, 253, 0.5);
+            border-radius: 10px;
+            padding: 15px;
         }
         
         .log-entry {
             padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(219, 226, 239, 0.5);
             color: var(--text);
             position: relative;
-            padding-left: 12px;
+            padding-left: 15px;
             animation: slideInRight 0.3s ease-out;
         }
         
@@ -484,6 +517,7 @@
             left: 0;
             color: var(--primary);
             font-weight: bold;
+            font-size: 14px;
         }
         
         @keyframes slideInRight {
@@ -502,6 +536,7 @@
             font-weight: 600;
             margin-right: 8px;
             font-feature-settings: "tnum";
+            opacity: 0.8;
         }
         
         /* Auto Refresh Indicator */
@@ -509,18 +544,19 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
             border-radius: 50%;
             background: var(--success);
-            box-shadow: 0 0 8px var(--success);
+            box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
             animation: blink 2s infinite;
             z-index: 100;
+            border: 2px solid white;
         }
         
         @keyframes blink {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+            50% { opacity: 0.5; }
         }
         
         /* Scrollbar */
@@ -529,39 +565,41 @@
         }
         
         .logs-container::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(219, 226, 239, 0.3);
             border-radius: 3px;
         }
         
         .logs-container::-webkit-scrollbar-thumb {
             background: var(--primary);
             border-radius: 3px;
+            opacity: 0.5;
         }
         
         .logs-container::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-light);
+            background: var(--primary-dark);
+            opacity: 0.8;
         }
         
         /* Mobile Optimization */
-        @media (max-width: 380px) {
+        @media (max-width: 400px) {
             .container {
-                padding-left: 12px;
-                padding-right: 12px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             
             .system-stats {
                 grid-template-columns: 1fr;
-                gap: 10px;
+                gap: 12px;
             }
             
             .stats-grid {
                 grid-template-columns: 1fr;
-                gap: 10px;
+                gap: 12px;
             }
             
             .info-grid {
                 grid-template-columns: 1fr;
-                gap: 12px;
+                gap: 14px;
             }
             
             .header h1 {
@@ -569,19 +607,39 @@
             }
             
             .stat-value {
-                font-size: 22px;
+                font-size: 24px;
             }
             
             .stuck-text {
                 font-size: 42px;
-                letter-spacing: 6px;
+                letter-spacing: 8px;
             }
+            
+            .battery {
+                width: 46px;
+                height: 22px;
+            }
+        }
+        
+        /* Background Pattern */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(91, 141, 239, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 107, 107, 0.03) 0%, transparent 50%);
+            z-index: -1;
+            pointer-events: none;
         }
         
         /* Loading Animation */
         .loading {
-            opacity: 0.7;
             position: relative;
+            overflow: hidden;
         }
         
         .loading::after {
@@ -594,7 +652,7 @@
             background: linear-gradient(
                 90deg,
                 transparent,
-                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.6),
                 transparent
             );
             animation: shimmer 1.5s infinite;
@@ -604,9 +662,29 @@
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
         }
+        
+        /* Tap Hint */
+        .tap-hint {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 12px;
+            color: var(--text-muted);
+            opacity: 0.6;
+            animation: fadeInOut 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
     </style>
 </head>
 <body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+    
     <!-- Stuck Overlay -->
     <div class="stuck-overlay" id="stuckOverlay">
         <div class="stuck-text">ЗАВИС</div>
@@ -615,14 +693,17 @@
     <!-- Auto Refresh Indicator -->
     <div class="auto-refresh-indicator" id="autoRefreshIndicator"></div>
     
+    <!-- Tap Hint -->
+    <div class="tap-hint" id="tapHint">Нажмите для обновления</div>
+    
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>🤖 IFBot Status</h1>
-            <p>Real-time monitoring for Iron Force bot</p>
+            <h1>🤖 IFBot Статус</h1>
+            <p>Мониторинг бота для Iron Force в реальном времени</p>
             <div class="status-indicator" id="statusIndicator">
                 <div class="status-dot"></div>
-                <span id="status-text">Loading...</span>
+                <span id="status-text">Загрузка...</span>
             </div>
         </div>
         
@@ -630,35 +711,35 @@
         <div class="system-stats">
             <div class="system-card cpu-card">
                 <div class="system-icon">⚡</div>
-                <div class="system-label">CPU</div>
+                <div class="system-label">Процессор</div>
                 <div class="system-value" id="cpu-load">0%</div>
-                <div class="system-detail" id="cpu-detail">Load: 0.00</div>
+                <div class="system-detail" id="cpu-detail">Нагрузка: 0.00</div>
             </div>
             
             <div class="system-card ram-card">
                 <div class="system-icon">💾</div>
-                <div class="system-label">RAM</div>
+                <div class="system-label">Память</div>
                 <div class="system-value" id="ram-usage">0%</div>
-                <div class="system-detail" id="ram-detail">0/0 MB</div>
+                <div class="system-detail" id="ram-detail">0/0 МБ</div>
             </div>
             
             <div class="system-card disk-card">
                 <div class="system-icon">💿</div>
-                <div class="system-label">Disk</div>
+                <div class="system-label">Диск</div>
                 <div class="system-value" id="disk-usage">0%</div>
-                <div class="system-detail" id="disk-detail">0/0 GB</div>
+                <div class="system-detail" id="disk-detail">0/0 ГБ</div>
             </div>
         </div>
         
         <!-- Main Stats -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-label">🔄 Cycle</div>
+                <div class="stat-label">🔄 Цикл</div>
                 <div class="stat-value" id="cycle-count">0</div>
             </div>
             
             <div class="stat-card">
-                <div class="stat-label">🔋 Battery</div>
+                <div class="stat-label">🔋 Батарея</div>
                 <div class="battery-container">
                     <div class="battery">
                         <div class="battery-level" id="battery-fill" style="width: 0%"></div>
@@ -668,30 +749,30 @@
             </div>
             
             <div class="stat-card">
-                <div class="stat-label">⚡ Charging</div>
+                <div class="stat-label">⚡ Зарядка</div>
                 <div class="stat-value" id="charging-status">—</div>
             </div>
             
             <div class="stat-card">
-                <div class="stat-label">📱 Device</div>
+                <div class="stat-label">📱 Устройство</div>
                 <div class="stat-value" id="device-name">—</div>
             </div>
         </div>
         
         <!-- Device Info -->
         <div class="device-card">
-            <h3>📊 Device Information</h3>
+            <h3>📊 Информация об устройстве</h3>
             <div class="info-grid">
                 <div class="info-item">
-                    <div class="info-label">Model</div>
+                    <div class="info-label">Модель</div>
                     <div class="info-value" id="device-model">—</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">iOS Version</div>
+                    <div class="info-label">Версия iOS</div>
                     <div class="info-value" id="system-version">—</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">Device ID</div>
+                    <div class="info-label">ID устройства</div>
                     <div class="info-value" id="device-id">—</div>
                 </div>
             </div>
@@ -700,39 +781,39 @@
         <!-- Update Info -->
         <div class="update-info">
             <div class="update-row">
-                <span>Last updated:</span>
-                <span id="last-updated">never</span>
+                <span>Последнее обновление:</span>
+                <span id="last-updated">никогда</span>
             </div>
             <div class="update-row">
-                <span>Time since:</span>
-                <span class="time-since" id="time-since">0s</span>
+                <span>Прошло времени:</span>
+                <span class="time-since" id="time-since">0с</span>
             </div>
         </div>
         
         <!-- Logs -->
         <div class="logs-card">
             <div class="logs-header">
-                <h3>📝 Recent Logs</h3>
+                <h3>📝 Последние логи</h3>
                 <div class="update-badge" id="update-count">0</div>
             </div>
             <div class="logs-container" id="logs-content">
-                <div class="log-entry">Waiting for bot data...</div>
+                <div class="log-entry">Ожидание данных от бота...</div>
             </div>
         </div>
     </div>
 
     <script>
-        // Configuration
+        // Конфигурация
         const JSON_URL = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json';
-        const REFRESH_INTERVAL = 30000; // 30 seconds
-        const STUCK_THRESHOLD = 30 * 60; // 30 minutes
+        const REFRESH_INTERVAL = 30000; // 30 секунд
+        const STUCK_THRESHOLD = 30 * 60; // 30 минут
         
         let autoRefresh = true;
         let lastUpdateTime = null;
         let updateCount = 0;
         let refreshInterval = null;
         
-        // DOM Elements
+        // DOM элементы
         const elements = {
             cycleCount: document.getElementById('cycle-count'),
             batteryLevel: document.getElementById('battery-level'),
@@ -750,6 +831,7 @@
             updateCount: document.getElementById('update-count'),
             stuckOverlay: document.getElementById('stuckOverlay'),
             autoRefreshIndicator: document.getElementById('autoRefreshIndicator'),
+            tapHint: document.getElementById('tapHint'),
             cpuLoad: document.getElementById('cpu-load'),
             cpuDetail: document.getElementById('cpu-detail'),
             ramUsage: document.getElementById('ram-usage'),
@@ -758,18 +840,18 @@
             diskDetail: document.getElementById('disk-detail')
         };
         
-        // Format time difference
+        // Форматирование времени
         function formatTimeDiff(seconds) {
-            if (seconds < 60) return `${seconds}s`;
-            if (seconds < 3600) return `${Math.floor(seconds / 60)}m`;
-            if (seconds < 86400) return `${Math.floor(seconds / 3600)}h`;
-            return `${Math.floor(seconds / 86400)}d`;
+            if (seconds < 60) return `${seconds}с`;
+            if (seconds < 3600) return `${Math.floor(seconds / 60)}м`;
+            if (seconds < 86400) return `${Math.floor(seconds / 3600)}ч`;
+            return `${Math.floor(seconds / 86400)}д`;
         }
         
-        // Update time display
+        // Обновление времени
         function updateTimeDisplay() {
             if (!lastUpdateTime) {
-                elements.timeSince.textContent = '0s';
+                elements.timeSince.textContent = '0с';
                 return;
             }
             
@@ -778,96 +860,99 @@
             
             elements.timeSince.textContent = formatTimeDiff(diff);
             
-            // Check for stuck state
+            // Проверка зависания
             if (diff > STUCK_THRESHOLD) {
                 elements.stuckOverlay.classList.add('active');
                 elements.statusIndicator.className = 'status-indicator status-stuck';
-                elements.statusText.textContent = 'STUCK';
+                elements.statusText.textContent = 'ЗАВИС';
                 elements.autoRefreshIndicator.style.background = 'var(--danger)';
-                elements.autoRefreshIndicator.style.boxShadow = '0 0 8px var(--danger)';
+                elements.autoRefreshIndicator.style.boxShadow = '0 0 10px rgba(231, 76, 60, 0.3)';
             } else {
                 elements.stuckOverlay.classList.remove('active');
                 elements.autoRefreshIndicator.style.background = 'var(--success)';
-                elements.autoRefreshIndicator.style.boxShadow = '0 0 8px var(--success)';
+                elements.autoRefreshIndicator.style.boxShadow = '0 0 10px rgba(46, 204, 113, 0.3)';
             }
         }
         
-        // Display logs
+        // Отображение логов
         function displayLogs(logText) {
             if (!logText) return;
             
             const lines = logText.split('\n').filter(line => line.trim());
-            const lastLines = lines.slice(-10);
+            const lastLines = lines.slice(-8);
             
-            // Add animation class to new entries
+            // Очищаем и добавляем новые логи с анимацией
+            elements.logsContent.innerHTML = '';
+            
             lastLines.forEach((line, index) => {
                 const logEntry = document.createElement('div');
                 logEntry.className = 'log-entry';
                 logEntry.style.animationDelay = `${index * 0.05}s`;
                 
-                // Parse timestamp
+                // Парсим временную метку
                 const parts = line.split(' - ');
                 if (parts.length >= 3) {
                     logEntry.innerHTML = `<span class="log-timestamp">[${parts[0]}]</span>${parts.slice(2).join(' - ')}`;
                 } else {
-                    logEntry.textContent = line.length > 100 ? line.substring(0, 100) + '...' : line;
+                    logEntry.textContent = line.length > 80 ? line.substring(0, 80) + '...' : line;
                 }
                 
                 elements.logsContent.appendChild(logEntry);
             });
             
-            // Keep only last 10 entries
-            const allEntries = elements.logsContent.querySelectorAll('.log-entry');
-            if (allEntries.length > 10) {
-                for (let i = 0; i < allEntries.length - 10; i++) {
-                    allEntries[i].remove();
-                }
-            }
-            
-            // Auto scroll
+            // Автоскролл
             elements.logsContent.scrollTop = elements.logsContent.scrollHeight;
         }
         
-        // Update UI with data
+        // Исправление процентов диска
+        function fixDiskPercentage(usage) {
+            if (!usage) return '0';
+            // Убираем лишние проценты
+            return usage.replace(/%+/g, '').trim();
+        }
+        
+        // Обновление интерфейса
         function updateUI(data) {
             try {
                 updateCount++;
                 elements.updateCount.textContent = updateCount;
                 
-                // Add loading animation
+                // Эффект загрузки
                 elements.statusIndicator.classList.add('loading');
                 
                 setTimeout(() => {
                     elements.statusIndicator.classList.remove('loading');
                     
-                    // Main stats
+                    // Основные данные
                     elements.cycleCount.textContent = data.cycle_count || '0';
-                    elements.statusText.textContent = data.bot_status?.toUpperCase() || 'UNKNOWN';
+                    elements.statusText.textContent = data.bot_status ? 
+                        data.bot_status.charAt(0).toUpperCase() + data.bot_status.slice(1) : 'Неизвестно';
                     
-                    // System stats
+                    // Системные данные
                     if (data.system_stats) {
                         const sys = data.system_stats;
                         
                         // CPU
                         if (sys.cpu) {
                             elements.cpuLoad.textContent = `${Math.round(sys.cpu.utilization_percent)}%`;
-                            elements.cpuDetail.textContent = `Load: ${sys.cpu.load_1}`;
+                            elements.cpuDetail.textContent = `Нагрузка: ${sys.cpu.load_1}`;
                         }
                         
                         // RAM
                         if (sys.memory) {
                             elements.ramUsage.textContent = `${Math.round(sys.memory.utilization_percent)}%`;
-                            elements.ramDetail.textContent = `${sys.memory.used_mb}/${sys.memory.total_mb}MB`;
+                            elements.ramDetail.textContent = `${sys.memory.used_mb}/${sys.memory.total_mb} МБ`;
                         }
                         
-                        // Disk
+                        // Disk - исправляем двойные проценты
                         if (sys.disk) {
-                            elements.diskUsage.textContent = `${sys.disk.usage_percent || '0'}%`;
-                            elements.diskDetail.textContent = `${sys.disk.used}/${sys.disk.total}`;
+                            const fixedUsage = fixDiskPercentage(sys.disk.usage_percent);
+                            elements.diskUsage.textContent = `${fixedUsage}%`;
+                            elements.diskDetail.textContent = `${sys.disk.used || '0'}/${sys.disk.total || '0'} ГБ`;
                         }
                     }
                     
-                    // Device info
+                    // Информация об устройстве
                     if (data.device_info) {
                         const device = data.device_info;
                         elements.deviceName.textContent = device.name || '—';
@@ -877,7 +962,7 @@
                             device.identifier_for_vendor.substring(0, 8) + '...' : '—';
                     }
                     
-                    // Battery
+                    // Батарея
                     if (data.battery_info) {
                         const battery = data.battery_info;
                         const level = parseInt(battery.battery_level || 0);
@@ -885,28 +970,29 @@
                         elements.batteryFill.style.width = `${level}%`;
                         
                         const isCharging = battery.is_charging || 
-                            (battery.battery_state_string && battery.battery_state_string.includes('Charging'));
-                        elements.chargingStatus.textContent = isCharging ? 'Yes 🔌' : 'No 🔋';
+                            (battery.battery_state_string && 
+                             (battery.battery_state_string.includes('Charging') || 
+                              battery.battery_state_string.includes('Full')));
+                        elements.chargingStatus.textContent = isCharging ? 'Да 🔌' : 'Нет 🔋';
                         elements.chargingStatus.style.color = isCharging ? 'var(--success)' : 'var(--text-secondary)';
                     }
                     
-                    // Logs
+                    // Логи
                     if (data.last_log) {
                         displayLogs(data.last_log);
                     }
                     
-                    // Timestamps
+                    // Временные метки
                     if (data.timestamp) {
                         lastUpdateTime = data.timestamp;
                         const date = new Date(data.timestamp * 1000);
-                        elements.lastUpdated.textContent = date.toLocaleTimeString('en-US', {
+                        elements.lastUpdated.textContent = date.toLocaleTimeString('ru-RU', {
                             hour: '2-digit',
-                            minute: '2-digit',
-                            hour12: false
+                            minute: '2-digit'
                         });
                     }
                     
-                    // Status indicator
+                    // Статус индикатора
                     if (data.bot_status === 'running' || data.bot_status === 'cycle_started') {
                         elements.statusIndicator.className = 'status-indicator status-running';
                     } else if (data.bot_status === 'stuck' || !data.bot_status) {
@@ -920,14 +1006,14 @@
                 }, 300);
                 
             } catch (error) {
-                console.error('UI update error:', error);
-                elements.logsContent.innerHTML = '<div class="log-entry">❌ Error loading data</div>';
+                console.error('Ошибка обновления:', error);
+                elements.logsContent.innerHTML = '<div class="log-entry">❌ Ошибка загрузки данных</div>';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
-                elements.statusText.textContent = 'ERROR';
+                elements.statusText.textContent = 'ОШИБКА';
             }
         }
         
-        // Fetch data
+        // Загрузка данных
         async function fetchData() {
             try {
                 const timestamp = Date.now();
@@ -941,34 +1027,38 @@
                 updateUI(data);
                 
             } catch (error) {
-                console.error('Fetch error:', error);
-                elements.logsContent.innerHTML = '<div class="log-entry">❌ Connection error</div>';
-                elements.statusText.textContent = 'OFFLINE';
+                console.error('Ошибка загрузки:', error);
+                elements.logsContent.innerHTML = '<div class="log-entry">❌ Ошибка соединения</div>';
+                elements.statusText.textContent = 'ОФФЛАЙН';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
                 elements.autoRefreshIndicator.style.background = 'var(--warning)';
-                elements.autoRefreshIndicator.style.boxShadow = '0 0 8px var(--warning)';
+                elements.autoRefreshIndicator.style.boxShadow = '0 0 10px rgba(243, 156, 18, 0.3)';
             }
         }
         
-        // Toggle auto refresh (removed from UI but kept functionality)
+        // Переключение автообновления
         function toggleAutoRefresh() {
             autoRefresh = !autoRefresh;
             if (autoRefresh) {
                 startAutoRefresh();
+                elements.autoRefreshIndicator.style.display = 'block';
             } else {
                 stopAutoRefresh();
+                elements.autoRefreshIndicator.style.display = 'none';
             }
         }
         
-        // Manual refresh on tap anywhere
+        // Ручное обновление
         function refreshData() {
             fetchData();
-            // Visual feedback
-            document.body.style.opacity = '0.9';
-            setTimeout(() => document.body.style.opacity = '1', 200);
+            // Визуальная обратная связь
+            document.body.style.opacity = '0.95';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 150);
         }
         
-        // Auto refresh management
+        // Автообновление
         function startAutoRefresh() {
             stopAutoRefresh();
             refreshInterval = setInterval(fetchData, REFRESH_INTERVAL);
@@ -981,27 +1071,27 @@
             }
         }
         
-        // Initialize
+        // Инициализация
         function init() {
-            // First load
+            // Первая загрузка
             fetchData();
             
-            // Start auto refresh
+            // Запуск автообновления
             if (autoRefresh) {
                 startAutoRefresh();
             }
             
-            // Update time every second
+            // Обновление времени каждую секунду
             setInterval(updateTimeDisplay, 1000);
             
-            // Tap anywhere to refresh
+            // Клик для обновления
             document.addEventListener('click', (e) => {
-                if (e.target.tagName !== 'A') {
+                if (e.target.tagName !== 'A' && !e.target.closest('a')) {
                     refreshData();
                 }
             });
             
-            // Swipe down to refresh
+            // Swipe вниз для обновления
             let startY;
             document.addEventListener('touchstart', e => {
                 startY = e.touches[0].clientY;
@@ -1012,14 +1102,14 @@
                 const endY = e.changedTouches[0].clientY;
                 const diff = startY - endY;
                 
-                if (diff > 80 && window.scrollY === 0) {
+                if (diff > 60 && window.scrollY === 0) {
                     refreshData();
                 }
                 
                 startY = null;
             });
             
-            // Add keyboard shortcuts
+            // Горячие клавиши
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'r' || e.key === 'R') {
                     refreshData();
@@ -1028,9 +1118,17 @@
                     toggleAutoRefresh();
                 }
             });
+            
+            // Скрыть подсказку через 5 секунд
+            setTimeout(() => {
+                elements.tapHint.style.opacity = '0';
+                setTimeout(() => {
+                    elements.tapHint.style.display = 'none';
+                }, 500);
+            }, 5000);
         }
         
-        // Start app
+        // Запуск приложения
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
