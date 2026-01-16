@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768576247,
-  "timestamp_human": "2026-01-16 18:10:47",
-  "cycle_count": 18,
+  "timestamp": 1768576679,
+  "timestamp_human": "2026-01-16 18:17:59",
+  "cycle_count": 19,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.22",
-      "load_5": "2.41",
-      "load_15": "2.51",
+      "load_1": "1.99",
+      "load_5": "2.07",
+      "load_15": "2.30",
       "cores": 4,
-      "utilization_percent": 55.5
+      "utilization_percent": 49.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 229,
-      "free_mb": 32,
-      "cached_mb": 105,
-      "utilization_percent": 11.5
+      "used_mb": 226,
+      "free_mb": 44,
+      "cached_mb": 114,
+      "utilization_percent": 11.3
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768576247,
-    "timestamp_human": "2026-01-16 18:10:47"
+    "timestamp": 1768576679,
+    "timestamp_human": "2026-01-16 18:17:59"
   },
-  "last_log": "2026-01-16 18:09:00 - INFO - [CYCLE 17] Waiting for main screen...\n2026-01-16 18:09:00 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 0s\n2026-01-16 18:09:01 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 0s\n2026-01-16 18:09:05 - DEBUG - [CYCLE 17] Current: loading, waiting for main... 5s\n2026-01-16 18:09:10 - DEBUG - [CYCLE 17] Current: loading, waiting for main... 10s\n2026-01-16 18:09:15 - DEBUG - [CYCLE 17] Current: loading, waiting for main... 15s\n2026-01-16 18:09:16 - DEBUG - [CYCLE 17] Current: loading, waiting for main... 15s\n2026-01-16 18:09:17 - INFO - [CYCLE 17] On main screen\n2026-01-16 18:09:17 - INFO - [CYCLE 17] Step 2/7: Transition to arsenal...\n2026-01-16 18:09:17 - INFO - [CYCLE 17] Quick transition: Кнопка Далее\n2026-01-16 18:09:20 - INFO - [CYCLE 17] Found attention popup\n2026-01-16 18:09:21 - INFO - [CYCLE 17] Step 3/7: Transition to battle...\n2026-01-16 18:09:21 - INFO - [CYCLE 17] Quick transition: Кнопка Битва\n2026-01-16 18:09:24 - INFO - [CYCLE 17] Step 4/7: Transition to team...\n2026-01-16 18:09:26 - INFO - [CYCLE 17] Waiting for team screen...\n2026-01-16 18:09:27 - INFO - [CYCLE 17] Found team screen button\n2026-01-16 18:09:27 - INFO - [CYCLE 17] Step 5/7: Pressing team screen button...\n2026-01-16 18:09:28 - INFO - [CYCLE 17] Step 6/7: Sending invitations...\n2026-01-16 18:09:28 - INFO - [CYCLE 17] Invite #1 sent (0s)\n2026-01-16 18:09:34 - INFO - [CYCLE 17] Invite #2 sent (5s)\n2026-01-16 18:09:40 - INFO - [CYCLE 17] Invite #3 sent (11s)\n2026-01-16 18:09:46 - INFO - [CYCLE 17] Invite #4 sent (17s)\n2026-01-16 18:09:52 - INFO - [CYCLE 17] Invite #5 sent (23s)\n2026-01-16 18:09:58 - DEBUG - [CYCLE 17] Checking for attention popup (invite #5)\n2026-01-16 18:09:58 - INFO - [CYCLE 17] Someone joined the team!\n2026-01-16 18:09:58 - INFO - [CYCLE 17] Step 7/7: Starting game...\n2026-01-16 18:09:59 - INFO - [CYCLE 17] Checking for loading color at (200, 100)...\n2026-01-16 18:10:24 - INFO - [CYCLE 17] Loading color detected! Color: #A9D917\n2026-01-16 18:10:24 - INFO - [CYCLE 17] Cycle #17 completed successfully - loading color detected\n2026-01-16 18:10:44 - INFO - [CYCLE 17] Connected to ZXTouch\n",
-  "update_time": "2026-01-16 18:10:47"
+  "last_log": "2026-01-16 18:14:24 - DEBUG - [CYCLE 18] Checking for attention popup (invite #30)\n2026-01-16 18:14:24 - INFO - [CYCLE 18] Invite #31 sent (176s)\n2026-01-16 18:14:29 - INFO - [CYCLE 18] Invite #32 sent (182s)\n2026-01-16 18:14:35 - INFO - [CYCLE 18] Invite #33 sent (188s)\n2026-01-16 18:14:41 - INFO - [CYCLE 18] Invite #34 sent (194s)\n2026-01-16 18:14:47 - INFO - [CYCLE 18] Invite #35 sent (200s)\n2026-01-16 18:14:53 - DEBUG - [CYCLE 18] Checking for attention popup (invite #35)\n2026-01-16 18:14:53 - INFO - [CYCLE 18] Invite #36 sent (206s)\n2026-01-16 18:14:59 - INFO - [CYCLE 18] Invite #37 sent (212s)\n2026-01-16 18:15:05 - INFO - [CYCLE 18] Invite #38 sent (217s)\n2026-01-16 18:15:11 - INFO - [CYCLE 18] Invite #39 sent (223s)\n2026-01-16 18:15:17 - INFO - [CYCLE 18] Invite #40 sent (229s)\n2026-01-16 18:15:22 - DEBUG - [CYCLE 18] Checking for attention popup (invite #40)\n2026-01-16 18:15:22 - INFO - [CYCLE 18] Invite #41 sent (235s)\n2026-01-16 18:15:28 - INFO - [CYCLE 18] Invite #42 sent (241s)\n2026-01-16 18:15:34 - INFO - [CYCLE 18] Invite #43 sent (247s)\n2026-01-16 18:15:40 - INFO - [CYCLE 18] Invite #44 sent (253s)\n2026-01-16 18:15:46 - INFO - [CYCLE 18] Invite #45 sent (259s)\n2026-01-16 18:15:52 - DEBUG - [CYCLE 18] Checking for attention popup (invite #45)\n2026-01-16 18:15:52 - INFO - [CYCLE 18] Invite #46 sent (265s)\n2026-01-16 18:15:58 - INFO - [CYCLE 18] Invite #47 sent (270s)\n2026-01-16 18:16:04 - INFO - [CYCLE 18] Invite #48 sent (276s)\n2026-01-16 18:16:10 - INFO - [CYCLE 18] Invite #49 sent (282s)\n2026-01-16 18:16:15 - INFO - [CYCLE 18] Invite #50 sent (288s)\n2026-01-16 18:16:21 - DEBUG - [CYCLE 18] Checking for attention popup (invite #50)\n2026-01-16 18:16:21 - INFO - [CYCLE 18] Invite #51 sent (294s)\n2026-01-16 18:16:27 - INFO - [CYCLE 18] Step 7/7: Starting game...\n2026-01-16 18:16:29 - INFO - [CYCLE 18] Checking for loading color at (200, 100)...\n2026-01-16 18:17:35 - INFO - [CYCLE 18] Cycle #18 completed - no loading color detected (normal)\n2026-01-16 18:17:56 - INFO - [CYCLE 18] Connected to ZXTouch\n",
+  "update_time": "2026-01-16 18:17:59"
 }
