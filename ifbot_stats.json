@@ -1,23 +1,23 @@
 {
-  "timestamp": 1768569822,
-  "timestamp_human": "2026-01-16 16:23:42",
-  "cycle_count": 1,
+  "timestamp": 1768570249,
+  "timestamp_human": "2026-01-16 16:30:49",
+  "cycle_count": 2,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 11 (предупреждений: 10, ошибок: 1), последняя: 9м назад",
+  "error_summary": "⚠️ Ошибок: 11 (предупреждений: 10, ошибок: 1), последняя: 23с назад",
   "error_stats": {
     "total_errors": 11,
     "warnings": 10,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
-      "2026-01-16 15:34:25 - WARNING - [CYCLE 1] Still on main, trying again",
       "2026-01-16 15:46:45 - WARNING - [CYCLE 4] Still on main, trying again",
       "2026-01-16 15:56:56 - WARNING - [CYCLE 1] Still on arsenal, trying again",
       "2026-01-16 16:07:09 - WARNING - [CYCLE 2] Loading color not detected, but continuing...",
-      "2026-01-16 16:14:25 - WARNING - [CYCLE 3] Loading color not detected, but continuing..."
+      "2026-01-16 16:14:25 - WARNING - [CYCLE 3] Loading color not detected, but continuing...",
+      "2026-01-16 16:30:26 - WARNING - [CYCLE 1] Loading color not detected, but continuing..."
     ],
-    "last_error_time": 1768569265,
-    "error_timestamp_human": "2026-01-16 16:14:25"
+    "last_error_time": 1768570226,
+    "error_timestamp_human": "2026-01-16 16:30:26"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.94",
-      "load_5": "2.47",
-      "load_15": "2.99",
+      "load_1": "2.34",
+      "load_5": "2.38",
+      "load_15": "2.74",
       "cores": 4,
-      "utilization_percent": 48.5
+      "utilization_percent": 58.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 246,
-      "free_mb": 5,
-      "cached_mb": 116,
-      "utilization_percent": 12.3
+      "used_mb": 245,
+      "free_mb": 4,
+      "cached_mb": 107,
+      "utilization_percent": 12.2
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768569822,
-    "timestamp_human": "2026-01-16 16:23:42"
+    "timestamp": 1768570249,
+    "timestamp_human": "2026-01-16 16:30:49"
   },
-  "last_log": "No WARNING/ERROR logs found",
-  "update_time": "2026-01-16 16:23:42"
+  "last_log": "2026-01-16 16:30:26 - WARNING - [CYCLE 1] Loading color not detected, but continuing...\n",
+  "update_time": "2026-01-16 16:30:49"
 }
