@@ -1,23 +1,17 @@
 {
-  "timestamp": 1768572110,
-  "timestamp_human": "2026-01-16 17:01:50",
-  "cycle_count": 2,
+  "timestamp": 1768572216,
+  "timestamp_human": "2026-01-16 17:03:36",
+  "cycle_count": 3,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 5 (предупреждений: 5), последняя: 31м назад",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 5,
-    "warnings": 5,
+    "total_errors": 0,
+    "warnings": 0,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [
-      "2026-01-16 15:46:45 - WARNING - [CYCLE 4] Still on main, trying again",
-      "2026-01-16 15:56:56 - WARNING - [CYCLE 1] Still on arsenal, trying again",
-      "2026-01-16 16:07:09 - WARNING - [CYCLE 2] Loading color not detected, but continuing...",
-      "2026-01-16 16:14:25 - WARNING - [CYCLE 3] Loading color not detected, but continuing...",
-      "2026-01-16 16:30:26 - WARNING - [CYCLE 1] Loading color not detected, but continuing..."
-    ],
-    "last_error_time": 1768570226,
-    "error_timestamp_human": "2026-01-16 16:30:26"
+    "recent_errors": [],
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.75",
-      "load_5": "3.05",
-      "load_15": "3.07",
+      "load_1": "8.33",
+      "load_5": "4.58",
+      "load_15": "3.65",
       "cores": 4,
-      "utilization_percent": 68.8
+      "utilization_percent": 208.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 228,
-      "free_mb": 37,
-      "cached_mb": 105,
-      "utilization_percent": 11.4
+      "used_mb": 221,
+      "free_mb": 54,
+      "cached_mb": 109,
+      "utilization_percent": 11.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +48,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768572110,
-    "timestamp_human": "2026-01-16 17:01:50"
+    "timestamp": 1768572216,
+    "timestamp_human": "2026-01-16 17:03:36"
   },
-  "last_log": "2026-01-16 17:00:11 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 0s\n2026-01-16 17:00:12 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 0s\n2026-01-16 17:00:16 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 5s\n2026-01-16 17:00:17 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 5s\n2026-01-16 17:00:21 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 10s\n2026-01-16 17:00:26 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 15s\n2026-01-16 17:00:27 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 15s\n2026-01-16 17:00:32 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 20s\n2026-01-16 17:00:36 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 25s\n2026-01-16 17:00:41 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 30s\n2026-01-16 17:00:42 - DEBUG - [CYCLE 1] Current: loading, waiting for main... 30s\n2026-01-16 17:00:43 - INFO - [CYCLE 1] On main screen\n2026-01-16 17:00:43 - INFO - [CYCLE 1] Step 2/7: Transition to arsenal...\n2026-01-16 17:00:43 - INFO - [CYCLE 1] Quick transition: Кнопка Далее\n2026-01-16 17:00:46 - INFO - [CYCLE 1] Step 3/7: Transition to battle...\n2026-01-16 17:00:46 - INFO - [CYCLE 1] Quick transition: Кнопка Битва\n2026-01-16 17:00:49 - INFO - [CYCLE 1] Step 4/7: Transition to team...\n2026-01-16 17:00:51 - INFO - [CYCLE 1] Waiting for team screen...\n2026-01-16 17:00:52 - INFO - [CYCLE 1] Found team screen button\n2026-01-16 17:00:52 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-01-16 17:00:53 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-01-16 17:00:53 - INFO - [CYCLE 1] Invite #1 sent (0s)\n2026-01-16 17:00:59 - INFO - [CYCLE 1] Invite #2 sent (5s)\n2026-01-16 17:01:00 - INFO - [CYCLE 1] Someone joined immediately!\n2026-01-16 17:01:00 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-01-16 17:01:02 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-01-16 17:01:02 - INFO - [CYCLE 1] Found attention popup\n2026-01-16 17:01:27 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-01-16 17:01:27 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-01-16 17:01:48 - INFO - [CYCLE 1] Connected to ZXTouch\n",
-  "update_time": "2026-01-16 17:01:50"
+  "last_log": "2026-01-16 17:02:05 - INFO - [CYCLE 2] Waiting for main screen...\n2026-01-16 17:02:05 - DEBUG - [CYCLE 2] Current: unknown, waiting for main... 0s\n2026-01-16 17:02:06 - DEBUG - [CYCLE 2] Current: unknown, waiting for main... 0s\n2026-01-16 17:02:10 - DEBUG - [CYCLE 2] Current: unknown, waiting for main... 5s\n2026-01-16 17:02:11 - DEBUG - [CYCLE 2] Current: unknown, waiting for main... 5s\n2026-01-16 17:02:15 - DEBUG - [CYCLE 2] Current: unknown, waiting for main... 10s\n2026-01-16 17:02:16 - DEBUG - [CYCLE 2] Current: unknown, waiting for main... 10s\n2026-01-16 17:02:21 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 15s\n2026-01-16 17:02:25 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 20s\n2026-01-16 17:02:26 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 20s\n2026-01-16 17:02:29 - INFO - [CYCLE 2] On main screen\n2026-01-16 17:02:29 - INFO - [CYCLE 2] Step 2/7: Transition to arsenal...\n2026-01-16 17:02:29 - INFO - [CYCLE 2] Quick transition: Кнопка Далее\n2026-01-16 17:02:32 - INFO - [CYCLE 2] Found attention popup\n2026-01-16 17:02:33 - INFO - [CYCLE 2] Step 3/7: Transition to battle...\n2026-01-16 17:02:33 - INFO - [CYCLE 2] Quick transition: Кнопка Битва\n2026-01-16 17:02:36 - INFO - [CYCLE 2] Step 4/7: Transition to team...\n2026-01-16 17:02:38 - INFO - [CYCLE 2] Waiting for team screen...\n2026-01-16 17:02:39 - INFO - [CYCLE 2] Found team screen button\n2026-01-16 17:02:39 - INFO - [CYCLE 2] Step 5/7: Pressing team screen button...\n2026-01-16 17:02:41 - INFO - [CYCLE 2] Step 6/7: Sending invitations...\n2026-01-16 17:02:41 - INFO - [CYCLE 2] Invite #1 sent (0s)\n2026-01-16 17:02:47 - INFO - [CYCLE 2] Someone joined the team!\n2026-01-16 17:02:47 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-01-16 17:02:48 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-01-16 17:03:13 - INFO - [CYCLE 2] Loading color detected! Color: #A9D917\n2026-01-16 17:03:13 - INFO - [CYCLE 2] Cycle #2 completed successfully - loading color detected\n2026-01-16 17:03:34 - INFO - [CYCLE 2] Connected to ZXTouch\n",
+  "update_time": "2026-01-16 17:03:36"
 }
