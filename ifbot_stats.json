@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768568177,
-  "timestamp_human": "2026-01-16 15:56:17",
-  "cycle_count": 1,
+  "timestamp": 1768568427,
+  "timestamp_human": "2026-01-16 16:00:27",
+  "cycle_count": 2,
   "bot_status": "running",
   "device_info": {
     "name": "iPhone 7",
@@ -12,35 +12,35 @@
   },
   "battery_info": {
     "battery_state": "2",
-    "battery_level": "95",
+    "battery_level": "96",
     "battery_state_string": "Charging",
     "is_charging": true
   },
   "system_stats": {
     "cpu": {
-      "load_1": "9.49",
-      "load_5": "5.87",
+      "load_1": "2.58",
+      "load_5": "4.78",
       "load_15": "4.24",
       "cores": 4,
-      "utilization_percent": 237.2
+      "utilization_percent": 64.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 240,
-      "free_mb": 5,
-      "cached_mb": 133,
-      "utilization_percent": 12.0
+      "used_mb": 243,
+      "free_mb": 4,
+      "cached_mb": 107,
+      "utilization_percent": 12.2
     },
     "disk": {
       "total": "30Gi",
       "used": "7.0Gi",
-      "available": "9.9Gi",
+      "available": "9.8Gi",
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768568177,
-    "timestamp_human": "2026-01-16 15:56:17"
+    "timestamp": 1768568427,
+    "timestamp_human": "2026-01-16 16:00:27"
   },
-  "last_log": "No WARNING/ERROR logs found",
-  "update_time": "2026-01-16 15:56:17"
+  "last_log": "2026-01-16 15:56:56 - WARNING - [CYCLE 1] Still on arsenal, trying again\n",
+  "update_time": "2026-01-16 16:00:27"
 }
