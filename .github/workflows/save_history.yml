@@ -1,0 +1,83 @@
+name: Save Bot History
+
+on:
+  schedule:
+    - cron: '0,30 * * * *'  # В 0 и 30 минуты каждого часа
+  workflow_dispatch:
+
+jobs:
+  save-history:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      
+    - name: Download current stats
+      run: |
+        echo "🔄 Downloading current stats..."
+        curl -s -o current.json "https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json"
+        
+        if [ -s current.json ]; then
+          echo "✅ Download successful"
+        else
+          echo "❌ Download failed"
+          exit 1
+        fi
+        
+    - name: Save to history
+      run: |
+        mkdir -p history
+        TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
+        FILENAME="ifbot_${TIMESTAMP}.json"
+        mv current.json "history/${FILENAME}"
+        echo "📁 Saved: ${FILENAME}"
+        
+    - name: Create simple summary
+      run: |
+        echo "📊 Creating summary..."
+        # Простой Python скрипт для создания summary
+        python3 - << 'EOF'
+import json, glob, os
+
+files = sorted(glob.glob('history/ifbot_*.json'), reverse=True)[:48]  # Последние 48 файлов
+data = []
+
+for f in files:
+    try:
+        with open(f) as fp:
+            d = json.load(fp)
+            ts = d.get('timestamp', 0)
+            if ts > 0:
+                data.append({
+                    't': ts,
+                    'cpu': d.get('system_stats', {}).get('cpu', {}).get('utilization_percent', 0),
+                    'ram': d.get('system_stats', {}).get('memory', {}).get('utilization_percent', 0),
+                    'errors': d.get('error_stats', {}).get('errors', 0),
+                    'warnings': d.get('error_stats', {}).get('warnings', 0)
+                })
+    except:
+        continue
+
+# Сохраняем только последние 24 часа данных
+from datetime import datetime
+cutoff = datetime.now().timestamp() - (24 * 3600)
+recent_data = [d for d in data if d['t'] > cutoff]
+
+with open('history/summary.json', 'w') as f:
+    json.dump({
+        'updated': datetime.now().isoformat(),
+        'count': len(recent_data),
+        'data': recent_data[-100:]  # Не более 100 точек
+    }, f, indent=2)
+
+print(f"✅ Summary created: {len(recent_data)} points")
+EOF
+        
+    - name: Commit and push
+      run: |
+        git config --global user.email "github-actions@users.noreply.github.com"
+        git config --global user.name "GitHub Actions"
+        git add history/
+        git commit -m "🤖 Auto-save: $(date -u '+%Y-%m-%d %H:%M')" || echo "No changes"
+        git push
