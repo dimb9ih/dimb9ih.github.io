@@ -1174,130 +1174,213 @@
             }
         }
         
-        function updateRealChart(historyData) {
-            if (!historyData || historyData.length < 2) {
-                console.log('Недостаточно данных для графика');
-                return;
-            }
+       function updateRealChart(historyData) {
+    if (!historyData || historyData.length < 2) {
+        console.log('Недостаточно данных для графика');
+        return;
+    }
+    
+    const ctx = document.getElementById('statsChart').getContext('2d');
+    
+    if (historyChart) {
+        historyChart.destroy();
+    }
+    
+    // Обработка временных меток - если t уже timestamp в секундах
+    const labels = historyData.map(item => {
+        // item.t может быть timestamp в секундах (уже умножать не нужно)
+        const timestamp = item.t * 1000; // Конвертируем в миллисекунды
+        const date = new Date(timestamp);
+        
+        // Форматируем время для отображения
+        return date.toLocaleTimeString('ru-RU', { 
+            hour: '2-digit', 
+            minute: '2-digit',
+            hour12: false // 24-часовой формат
+        });
+    });
+    
+    let datasets = [];
+    
+    switch(currentGraphType) {
+        case 'cpu':
+            datasets = [{
+                label: 'Процессор %',
+                data: historyData.map(item => parseFloat(item.cpu) || 0),
+                borderColor: '#FF6B6B',
+                backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                borderWidth: 2,
+                tension: 0.4,
+                fill: true
+            }];
+            break;
             
-            const ctx = document.getElementById('statsChart').getContext('2d');
+        case 'ram':
+            datasets = [{
+                label: 'Память %',
+                data: historyData.map(item => parseFloat(item.ram) || 0),
+                borderColor: '#4ECDC4',
+                backgroundColor: 'rgba(78, 205, 196, 0.1)',
+                borderWidth: 2,
+                tension: 0.4,
+                fill: true
+            }];
+            break;
             
-            if (historyChart) {
-                historyChart.destroy();
-            }
-            
-            const labels = historyData.map(item => {
-                const date = new Date(item.t * 1000);
-                return date.toLocaleTimeString('ru-RU', { 
-                    hour: '2-digit', 
-                    minute: '2-digit' 
-                });
-            });
-            
-            let datasets = [];
-            
-            switch(currentGraphType) {
-                case 'cpu':
-                    datasets = [{
-                        label: 'Процессор %',
-                        data: historyData.map(item => item.cpu),
-                        borderColor: '#FF6B6B',
-                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    }];
-                    break;
-                    
-                case 'ram':
-                    datasets = [{
-                        label: 'Память %',
-                        data: historyData.map(item => item.ram),
-                        borderColor: '#4ECDC4',
-                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    }];
-                    break;
-                    
-                case 'errors':
-                    datasets = [
-                        {
-                            label: 'Ошибки',
-                            data: historyData.map(item => item.errors || 0),
-                            borderColor: '#E74C3C',
-                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
-                            borderWidth: 2,
-                            tension: 0.4,
-                            fill: true
-                        },
-                        {
-                            label: 'Предупреждения',
-                            data: historyData.map(item => item.warnings || 0),
-                            borderColor: '#F39C12',
-                            backgroundColor: 'rgba(243, 156, 18, 0.1)',
-                            borderWidth: 2,
-                            tension: 0.4,
-                            fill: true
-                        }
-                    ];
-                    break;
-                    
-                case 'cycle':
-                    datasets = [{
-                        label: 'Циклы',
-                        data: historyData.map(item => item.cycle || 0),
-                        borderColor: '#5B8DEF',
-                        backgroundColor: 'rgba(91, 141, 239, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    }];
-                    break;
-            }
-            
-            historyChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: datasets
+        case 'errors':
+            datasets = [
+                {
+                    label: 'Ошибки',
+                    data: historyData.map(item => parseInt(item.errors) || 0),
+                    borderColor: '#E74C3C',
+                    backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
                 },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        }
-                    },
-                    scales: {
-                        x: {
-                            ticks: {
-                                maxTicksLimit: 10
-                            }
-                        },
-                        y: {
-                            beginAtZero: true
+                {
+                    label: 'Предупреждения',
+                    data: historyData.map(item => parseInt(item.warnings) || 0),
+                    borderColor: '#F39C12',
+                    backgroundColor: 'rgba(243, 156, 18, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }
+            ];
+            break;
+            
+        case 'cycle':
+            datasets = [{
+                label: 'Циклы',
+                data: historyData.map(item => parseInt(item.cycle) || 0),
+                borderColor: '#5B8DEF',
+                backgroundColor: 'rgba(91, 141, 239, 0.1)',
+                borderWidth: 2,
+                tension: 0.4,
+                fill: true
+            }];
+            break;
+    }
+    
+    historyChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        usePointStyle: true,
+                    }
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        title: function(context) {
+                            const index = context[0].dataIndex;
+                            const item = historyData[index];
+                            const timestamp = item.t * 1000;
+                            const date = new Date(timestamp);
+                            return date.toLocaleString('ru-RU', {
+                                hour: '2-digit',
+                                minute: '2-digit',
+                                second: '2-digit',
+                                day: '2-digit',
+                                month: '2-digit',
+                                year: 'numeric',
+                                hour12: false
+                            });
                         }
                     }
                 }
-            });
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        maxTicksLimit: 8,
+                        callback: function(value, index) {
+                            // Показываем только каждую N-ю метку
+                            if (index % Math.ceil(labels.length / 8) === 0 || index === labels.length - 1) {
+                                return labels[index];
+                            }
+                            return '';
+                        },
+                        maxRotation: 45,
+                        minRotation: 45
+                    },
+                    grid: {
+                        display: true,
+                        color: 'rgba(219, 226, 239, 0.3)'
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        display: true,
+                        color: 'rgba(219, 226, 239, 0.3)'
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            return value + (currentGraphType === 'cpu' || currentGraphType === 'ram' ? '%' : '');
+                        }
+                    }
+                }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'nearest'
+            },
+            elements: {
+                point: {
+                    radius: 0,
+                    hoverRadius: 6
+                }
+            }
+        }
+    });
+}
+        async function loadRealHistory() {
+    try {
+        elements.graphInfo.textContent = 'Загрузка данных...';
+        
+        const response = await fetch(HISTORY_URL + '?t=' + Date.now());
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
         }
         
-        function setupGraphTabs() {
-            document.querySelectorAll('.graph-tab').forEach(tab => {
-                tab.addEventListener('click', () => {
-                    document.querySelectorAll('.graph-tab').forEach(t => {
-                        t.classList.remove('active');
-                    });
-                    
-                    tab.classList.add('active');
-                    currentGraphType = tab.dataset.graph;
-                    loadRealHistory();
-                });
-            });
+        const data = await response.json();
+        
+        // Отладочный вывод
+        console.log('Получены данные истории:', {
+            length: data.data?.length,
+            firstItem: data.data?.[0],
+            lastItem: data.data?.[data.data?.length - 1],
+            updated: data.updated
+        });
+        
+        if (!data.data || data.data.length === 0) {
+            elements.graphInfo.textContent = 'Нет данных истории';
+            return;
         }
+        
+        const lastUpdate = data.updated ? new Date(data.updated).toLocaleTimeString('ru-RU') : 'неизвестно';
+        elements.graphInfo.textContent = `Данные: ${data.data.length} точек, обновлено: ${lastUpdate}`;
+        
+        updateRealChart(data.data);
+        
+    } catch (error) {
+        console.error('Ошибка загрузки истории:', error);
+        elements.graphInfo.textContent = 'Ошибка загрузки истории';
+    }
+}
         
         function toggleAutoGraphs() {
             autoGraphsEnabled = !autoGraphsEnabled;
@@ -1625,4 +1708,5 @@
     </script>
 </body>
 </html>
+
 
