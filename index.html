@@ -13,26 +13,30 @@
         }
         
         :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --border: rgba(255, 255, 255, 0.1);
+            --primary: #9b87f5;
+            --primary-dark: #7c6ae0;
+            --success: #6bc46d;
+            --warning: #e6b450;
+            --danger: #e66767;
+            --bg: #1a1a2e;
+            --card-bg: rgba(30, 30, 46, 0.8);
+            --text: #e6e6e6;
+            --text-secondary: #9999b3;
+            --border: rgba(155, 135, 245, 0.3);
+            --cpu-color: #ff9966;
+            --ram-color: #66cc99;
+            --disk-color: #6699cc;
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg);
+            font-family: 'Courier New', 'Monaco', monospace;
+            background: linear-gradient(135deg, var(--bg) 0%, #16213e 100%);
             color: var(--text);
             line-height: 1.5;
             min-height: 100vh;
-            padding: 16px;
+            padding: 12px;
             -webkit-font-smoothing: antialiased;
+            background-attachment: fixed;
         }
         
         .container {
@@ -41,127 +45,208 @@
             padding-bottom: 80px;
         }
         
-        /* Заголовок */
+        /* Заголовок в винтажном стиле */
         .header {
             text-align: center;
-            margin-bottom: 24px;
-            padding: 20px 16px;
+            margin-bottom: 20px;
+            padding: 18px 14px;
             background: var(--card-bg);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
+                        inset 0 0 20px rgba(155, 135, 245, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), transparent);
         }
         
         .header h1 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
-            margin-bottom: 8px;
-            background: linear-gradient(135deg, var(--primary), #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            margin-bottom: 6px;
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(155, 135, 245, 0.5);
+            letter-spacing: 1px;
         }
         
         .header p {
             color: var(--text-secondary);
-            font-size: 14px;
-            margin-bottom: 12px;
+            font-size: 13px;
+            margin-bottom: 10px;
+            font-family: 'Monaco', monospace;
         }
         
         .status-indicator {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 6px 12px;
-            background: rgba(30, 41, 59, 0.5);
-            border-radius: 20px;
+            gap: 6px;
+            padding: 5px 10px;
+            background: rgba(30, 30, 46, 0.7);
+            border-radius: 15px;
             border: 1px solid var(--border);
+            font-size: 13px;
         }
         
         .status-dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
+            animation: pulse-dot 2s infinite;
         }
         
-        .status-running .status-dot { background: var(--success); box-shadow: 0 0 10px var(--success); }
-        .status-stuck .status-dot { background: var(--warning); box-shadow: 0 0 10px var(--warning); animation: pulse 1s infinite; }
-        .status-stopped .status-dot { background: var(--danger); box-shadow: 0 0 10px var(--danger); }
+        .status-running .status-dot { 
+            background: var(--success); 
+            box-shadow: 0 0 8px var(--success);
+        }
+        .status-stuck .status-dot { 
+            background: var(--warning); 
+            box-shadow: 0 0 8px var(--warning);
+        }
+        .status-stopped .status-dot { 
+            background: var(--danger); 
+            box-shadow: 0 0 8px var(--danger);
+        }
         
-        @keyframes pulse {
+        @keyframes pulse-dot {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            50% { opacity: 0.6; }
+        }
+        
+        /* Системная статистика */
+        .system-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .system-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 14px;
+            border: 1px solid var(--border);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .system-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+        }
+        
+        .cpu-card::before { background: var(--cpu-color); }
+        .ram-card::before { background: var(--ram-color); }
+        .disk-card::before { background: var(--disk-color); }
+        
+        .system-icon {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+        
+        .system-label {
+            font-size: 11px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        
+        .system-value {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .system-detail {
+            font-size: 11px;
+            color: var(--text-secondary);
+            opacity: 0.9;
         }
         
         /* Основная статистика */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            margin-bottom: 20px;
+            gap: 10px;
+            margin-bottom: 15px;
         }
         
         .stat-card {
             background: var(--card-bg);
-            border-radius: 16px;
-            padding: 16px;
+            border-radius: 10px;
+            padding: 14px;
             border: 1px solid var(--border);
-            transition: transform 0.2s ease;
+            transition: all 0.2s ease;
+            position: relative;
         }
         
         .stat-card:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
+            background: rgba(30, 30, 46, 0.9);
         }
         
         .stat-label {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-secondary);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
+            letter-spacing: 0.8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
         }
         
         .stat-value {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: bold;
         }
         
         .battery-container {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         
         .battery {
-            width: 48px;
-            height: 24px;
-            border: 2px solid var(--primary);
-            border-radius: 6px;
+            width: 42px;
+            height: 20px;
+            border: 1px solid var(--primary);
+            border-radius: 4px;
             position: relative;
-            background: rgba(99, 102, 241, 0.1);
+            background: rgba(155, 135, 245, 0.1);
             overflow: hidden;
         }
         
         .battery::after {
             content: '';
             position: absolute;
-            right: -4px;
+            right: -3px;
             top: 50%;
             transform: translateY(-50%);
-            width: 3px;
-            height: 10px;
+            width: 2px;
+            height: 8px;
             background: var(--primary);
-            border-radius: 0 2px 2px 0;
+            border-radius: 0 1px 1px 0;
         }
         
         .battery-level {
             height: 100%;
-            background: linear-gradient(90deg, var(--primary), #8b5cf6);
-            border-radius: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            border-radius: 3px;
             transition: width 0.5s ease;
         }
         
@@ -179,7 +264,7 @@
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s ease;
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(26, 26, 46, 0.95);
         }
         
         .stuck-overlay.active {
@@ -187,116 +272,130 @@
         }
         
         .stuck-text {
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 900;
-            color: rgba(239, 68, 68, 0.15);
+            color: rgba(230, 103, 103, 0.2);
             text-transform: uppercase;
-            letter-spacing: 8px;
-            transform: rotate(-10deg);
-            text-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
-        }
-        
-        @media (max-width: 380px) {
-            .stuck-text {
-                font-size: 36px;
-                letter-spacing: 6px;
-            }
+            letter-spacing: 6px;
+            transform: rotate(-5deg);
+            text-shadow: 0 0 20px rgba(230, 103, 103, 0.4);
+            font-family: 'Courier New', monospace;
         }
         
         /* Информация об устройстве */
         .device-card {
             background: var(--card-bg);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 15px;
             border: 1px solid var(--border);
+            position: relative;
+        }
+        
+        .device-card::before {
+            content: '⚙️';
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background: var(--bg);
+            padding: 0 8px;
+            font-size: 14px;
         }
         
         .device-card h3 {
-            font-size: 16px;
-            margin-bottom: 16px;
+            font-size: 15px;
+            margin-bottom: 12px;
             color: var(--primary);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
         
         .info-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 10px;
         }
         
         .info-item {
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(155, 135, 245, 0.1);
         }
         
         .info-label {
-            font-size: 12px;
+            font-size: 10px;
             color: var(--text-secondary);
-            margin-bottom: 4px;
+            margin-bottom: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
         }
         
         .info-value {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
-            word-break: break-all;
+            word-break: break-word;
+            font-family: 'Monaco', monospace;
         }
         
         /* Логи */
         .logs-card {
             background: var(--card-bg);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 15px;
             border: 1px solid var(--border);
-            max-height: 300px;
+            max-height: 250px;
             display: flex;
             flex-direction: column;
+            position: relative;
         }
         
-        .logs-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-        
-        .logs-header h3 {
-            font-size: 16px;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .logs-card::before {
+            content: '📝';
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background: var(--bg);
+            padding: 0 8px;
+            font-size: 14px;
         }
         
         .logs-container {
             flex: 1;
             overflow-y: auto;
-            font-family: 'SF Mono', 'Roboto Mono', monospace;
-            font-size: 12px;
-            line-height: 1.4;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 11px;
+            line-height: 1.3;
         }
         
         .log-entry {
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(155, 135, 245, 0.1);
             color: var(--text);
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .log-entry::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
         }
         
         .log-timestamp {
             color: var(--primary);
-            font-weight: 500;
-            margin-right: 8px;
+            font-weight: bold;
+            margin-right: 6px;
         }
         
         /* Время обновления */
         .update-info {
             background: var(--card-bg);
-            border-radius: 16px;
-            padding: 16px;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 15px;
             border: 1px solid var(--border);
             text-align: center;
         }
@@ -305,7 +404,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         
         .update-row:last-child {
@@ -314,44 +413,47 @@
         
         .time-since {
             color: var(--warning);
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Courier New', monospace;
         }
         
         /* Кнопки управления */
         .controls {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 10px;
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 16px;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(20px);
+            padding: 12px;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
             border-top: 1px solid var(--border);
             z-index: 100;
         }
         
         .btn {
-            padding: 14px;
+            padding: 12px;
             border: none;
-            border-radius: 12px;
+            border-radius: 8px;
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
-            font-weight: 600;
-            font-size: 14px;
+            font-weight: bold;
+            font-size: 13px;
             cursor: pointer;
             transition: all 0.2s ease;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 6px;
+            font-family: 'Courier New', monospace;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .btn:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
             opacity: 0.9;
         }
         
@@ -360,11 +462,26 @@
             border: 1px solid var(--border);
         }
         
-        /* Адаптация для очень маленьких экранов */
+        /* Анимация загрузки */
+        .loading {
+            opacity: 0.7;
+            animation: loading-pulse 1.5s infinite;
+        }
+        
+        @keyframes loading-pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 0.9; }
+        }
+        
+        /* Адаптация */
         @media (max-width: 360px) {
             .container {
-                padding-left: 12px;
-                padding-right: 12px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .system-stats {
+                grid-template-columns: 1fr;
             }
             
             .stats-grid {
@@ -380,34 +497,39 @@
             }
             
             .header h1 {
-                font-size: 20px;
+                font-size: 18px;
+            }
+            
+            .stuck-text {
+                font-size: 32px;
+                letter-spacing: 4px;
             }
         }
         
-        /* Скроллбар */
+        /* Скроллбар в винтажном стиле */
         .logs-container::-webkit-scrollbar {
-            width: 6px;
+            width: 5px;
         }
         
         .logs-container::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 3px;
+            background: rgba(155, 135, 245, 0.1);
+            border-radius: 2px;
         }
         
         .logs-container::-webkit-scrollbar-thumb {
             background: var(--primary);
-            border-radius: 3px;
+            border-radius: 2px;
         }
     </style>
 </head>
 <body>
-    <!-- Оверлей "ЗАВИС" (показывается если данные старше 30 минут) -->
+    <!-- Оверлей "ЗАВИС" -->
     <div class="stuck-overlay" id="stuckOverlay">
         <div class="stuck-text">ЗАВИС</div>
     </div>
     
     <div class="container">
-        <!-- Заголовок и статус -->
+        <!-- Заголовок -->
         <div class="header">
             <h1>🤖 IFBot Status</h1>
             <p>Мониторинг бота для Iron Force</p>
@@ -417,10 +539,34 @@
             </div>
         </div>
         
+        <!-- Системная статистика -->
+        <div class="system-stats">
+            <div class="system-card cpu-card">
+                <div class="system-icon">⚡</div>
+                <div class="system-label">CPU</div>
+                <div class="system-value" id="cpu-load">0%</div>
+                <div class="system-detail" id="cpu-detail">Load: 0.00</div>
+            </div>
+            
+            <div class="system-card ram-card">
+                <div class="system-icon">💾</div>
+                <div class="system-label">RAM</div>
+                <div class="system-value" id="ram-usage">0%</div>
+                <div class="system-detail" id="ram-detail">0/0 MB</div>
+            </div>
+            
+            <div class="system-card disk-card">
+                <div class="system-icon">💿</div>
+                <div class="system-label">Disk</div>
+                <div class="system-value" id="disk-usage">0%</div>
+                <div class="system-detail" id="disk-detail">0/0 GB</div>
+            </div>
+        </div>
+        
         <!-- Основная статистика -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-label">🔁 Цикл</div>
+                <div class="stat-label">🔄 Цикл</div>
                 <div class="stat-value" id="cycle-count">0</div>
             </div>
             
@@ -454,16 +600,12 @@
                     <div class="info-value" id="device-model">—</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">iOS</div>
+                    <div class="info-label">iOS Версия</div>
                     <div class="info-value" id="system-version">—</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">ID устройства</div>
+                    <div class="info-label">ID Устройства</div>
                     <div class="info-value" id="device-id">—</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">Vendor ID</div>
-                    <div class="info-value" id="vendor-id">—</div>
                 </div>
             </div>
         </div>
@@ -471,11 +613,11 @@
         <!-- Время обновления -->
         <div class="update-info">
             <div class="update-row">
-                <span>Последнее обновление:</span>
+                <span>Обновлено:</span>
                 <span id="last-updated">никогда</span>
             </div>
             <div class="update-row">
-                <span>Прошло времени:</span>
+                <span>Прошло:</span>
                 <span class="time-since" id="time-since">0с</span>
             </div>
         </div>
@@ -505,8 +647,8 @@
     <script>
         // Конфигурация
         const JSON_URL = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json';
-        const REFRESH_INTERVAL = 30000; // 30 секунд
-        const STUCK_THRESHOLD = 30 * 60; // 30 минут в секундах
+        const REFRESH_INTERVAL = 30000;
+        const STUCK_THRESHOLD = 30 * 60;
         
         let autoRefresh = true;
         let lastUpdateTime = null;
@@ -523,7 +665,6 @@
             deviceId: document.getElementById('device-id'),
             deviceModel: document.getElementById('device-model'),
             systemVersion: document.getElementById('system-version'),
-            vendorId: document.getElementById('vendor-id'),
             lastUpdated: document.getElementById('last-updated'),
             statusText: document.getElementById('status-text'),
             statusIndicator: document.getElementById('statusIndicator'),
@@ -531,29 +672,29 @@
             timeSince: document.getElementById('time-since'),
             updateCount: document.getElementById('update-count'),
             stuckOverlay: document.getElementById('stuckOverlay'),
-            autoRefreshBtn: document.getElementById('autoRefreshBtn')
+            autoRefreshBtn: document.getElementById('autoRefreshBtn'),
+            cpuLoad: document.getElementById('cpu-load'),
+            cpuDetail: document.getElementById('cpu-detail'),
+            ramUsage: document.getElementById('ram-usage'),
+            ramDetail: document.getElementById('ram-detail'),
+            diskUsage: document.getElementById('disk-usage'),
+            diskDetail: document.getElementById('disk-detail')
         };
         
-        // Форматирование времени
         function formatTimeDiff(seconds) {
             if (seconds < 60) return `${seconds}с`;
             if (seconds < 3600) return `${Math.floor(seconds / 60)}м`;
             return `${Math.floor(seconds / 3600)}ч`;
         }
         
-        // Обновление отображения времени
         function updateTimeDisplay() {
-            if (!lastUpdateTime) {
-                elements.timeSince.textContent = '0с';
-                return;
-            }
+            if (!lastUpdateTime) return;
             
             const now = Math.floor(Date.now() / 1000);
             const diff = now - lastUpdateTime;
             
             elements.timeSince.textContent = formatTimeDiff(diff);
             
-            // Проверка на "ЗАВИС"
             if (diff > STUCK_THRESHOLD) {
                 elements.stuckOverlay.classList.add('active');
                 elements.statusIndicator.className = 'status-indicator status-stuck';
@@ -563,33 +704,29 @@
             }
         }
         
-        // Отображение логов
         function displayLogs(logText) {
             if (!logText) return;
             
             const lines = logText.split('\n').filter(line => line.trim());
             elements.logsContent.innerHTML = '';
             
-            lines.slice(-15).forEach(line => {
+            lines.slice(-12).forEach(line => {
                 const logEntry = document.createElement('div');
                 logEntry.className = 'log-entry';
                 
-                // Парсинг временной метки
                 const parts = line.split(' - ');
                 if (parts.length >= 3) {
                     logEntry.innerHTML = `<span class="log-timestamp">[${parts[0]}]</span>${parts.slice(2).join(' - ')}`;
                 } else {
-                    logEntry.textContent = line.length > 80 ? line.substring(0, 80) + '...' : line;
+                    logEntry.textContent = line.length > 70 ? line.substring(0, 70) + '...' : line;
                 }
                 
                 elements.logsContent.appendChild(logEntry);
             });
             
-            // Автоскролл к последнему логу
             elements.logsContent.scrollTop = elements.logsContent.scrollHeight;
         }
         
-        // Обновление интерфейса данными
         function updateUI(data) {
             try {
                 updateCount++;
@@ -599,6 +736,29 @@
                 elements.cycleCount.textContent = data.cycle_count || '0';
                 elements.statusText.textContent = data.bot_status || 'Нет данных';
                 
+                // Системная статистика
+                if (data.system_stats) {
+                    const sys = data.system_stats;
+                    
+                    // CPU
+                    if (sys.cpu) {
+                        elements.cpuLoad.textContent = `${Math.round(sys.cpu.utilization_percent)}%`;
+                        elements.cpuDetail.textContent = `Load: ${sys.cpu.load_1}`;
+                    }
+                    
+                    // RAM
+                    if (sys.memory) {
+                        elements.ramUsage.textContent = `${Math.round(sys.memory.utilization_percent)}%`;
+                        elements.ramDetail.textContent = `${sys.memory.used_mb}/${sys.memory.total_mb}MB`;
+                    }
+                    
+                    // Disk
+                    if (sys.disk) {
+                        elements.diskUsage.textContent = sys.disk.usage_percent || '0%';
+                        elements.diskDetail.textContent = `${sys.disk.used}/${sys.disk.total}`;
+                    }
+                }
+                
                 // Информация об устройстве
                 if (data.device_info) {
                     const device = data.device_info;
@@ -607,7 +767,6 @@
                     elements.systemVersion.textContent = device.system_version || '—';
                     elements.deviceId.textContent = device.identifier_for_vendor ? 
                         device.identifier_for_vendor.substring(0, 8) + '...' : '—';
-                    elements.vendorId.textContent = device.identifier_for_vendor || '—';
                 }
                 
                 // Батарея
@@ -620,7 +779,7 @@
                     const isCharging = battery.is_charging || 
                         (battery.battery_state_string && battery.battery_state_string.includes('Charging'));
                     elements.chargingStatus.textContent = isCharging ? 'Да 🔌' : 'Нет 🔋';
-                    elements.chargingStatus.style.color = isCharging ? '#10b981' : '#94a3b8';
+                    elements.chargingStatus.style.color = isCharging ? '#6bc46d' : '#9999b3';
                 }
                 
                 // Логи
@@ -650,16 +809,17 @@
                 updateTimeDisplay();
                 
             } catch (error) {
-                console.error('Ошибка обновления интерфейса:', error);
-                elements.logsContent.innerHTML = `<div class="log-entry">❌ Ошибка загрузки данных</div>`;
+                console.error('Ошибка обновления:', error);
+                elements.logsContent.innerHTML = '<div class="log-entry">❌ Ошибка загрузки данных</div>';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
                 elements.statusText.textContent = 'ОШИБКА';
             }
         }
         
-        // Загрузка данных
         async function fetchData() {
             try {
+                elements.statusIndicator.classList.add('loading');
+                
                 const response = await fetch(`${JSON_URL}?t=${Date.now()}`);
                 
                 if (!response.ok) {
@@ -671,13 +831,14 @@
                 
             } catch (error) {
                 console.error('Ошибка загрузки:', error);
-                elements.logsContent.innerHTML = `<div class="log-entry">❌ Нет связи с сервером</div>`;
+                elements.logsContent.innerHTML = '<div class="log-entry">❌ Нет связи с сервером</div>';
                 elements.statusText.textContent = 'НЕТ ДАННЫХ';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
+            } finally {
+                elements.statusIndicator.classList.remove('loading');
             }
         }
         
-        // Переключение автообновления
         function toggleAutoRefresh() {
             autoRefresh = !autoRefresh;
             
@@ -690,16 +851,13 @@
             }
         }
         
-        // Ручное обновление
         function refreshData() {
             fetchData();
-            // Анимация нажатия кнопки
             const btn = document.querySelector('.btn');
             btn.style.transform = 'scale(0.95)';
             setTimeout(() => btn.style.transform = '', 200);
         }
         
-        // Управление автообновлением
         function startAutoRefresh() {
             stopAutoRefresh();
             refreshInterval = setInterval(fetchData, REFRESH_INTERVAL);
@@ -712,20 +870,16 @@
             }
         }
         
-        // Инициализация
         function init() {
-            // Первая загрузка
             fetchData();
             
-            // Запуск автообновления
             if (autoRefresh) {
                 startAutoRefresh();
             }
             
-            // Обновление времени каждую секунду
             setInterval(updateTimeDisplay, 1000);
             
-            // Добавление свайпов для удобства на мобильных
+            // Свайп для обновления
             let startY;
             document.addEventListener('touchstart', e => {
                 startY = e.touches[0].clientY;
@@ -736,7 +890,6 @@
                 const endY = e.changedTouches[0].clientY;
                 const diff = startY - endY;
                 
-                // Свайп вниз для обновления (если проскроллен вверх)
                 if (diff > 100 && window.scrollY === 0) {
                     refreshData();
                 }
@@ -745,7 +898,6 @@
             });
         }
         
-        // Запуск приложения
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
