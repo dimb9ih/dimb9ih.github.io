@@ -4,98 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>🤖 IFBot Статус</title>
-    <!-- Chart.js для графиков -->
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-           /* Graph Info */
-        .graph-info {
-            font-size: 12px;
-            color: var(--text-secondary);
-            text-align: center;
-            margin-top: 10px;
-            padding: 8px;
-            background: rgba(248, 250, 253, 0.5);
-            border-radius: 8px;
-        }
-        
-        /* Graph Tabs */
-        .graph-tabs {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 15px;
-            overflow-x: auto;
-            padding-bottom: 5px;
-        }
-        
-        .graph-tab {
-            padding: 8px 16px;
-            background: rgba(248, 250, 253, 0.7);
-            border: 1px solid var(--card-border);
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--text-secondary);
-            cursor: pointer;
-            white-space: nowrap;
-            transition: all 0.2s ease;
-        }
-        
-        .graph-tab:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-        
-        .graph-tab.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        
-        /* Controls */
-        .controls {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        
-        .control-btn {
-            padding: 10px 16px;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--text);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex: 1;
-            justify-content: center;
-        }
-        
-        .control-btn:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-        
-        /* Responsive для графиков */
-        @media (max-width: 400px) {
-            .graph-tabs {
-                flex-wrap: wrap;
-            }
-            
-            .graph-tab {
-                flex: 1;
-                min-width: 70px;
-                text-align: center;
-            }
-            
-            .controls {
-                flex-direction: column;
-            }
-        }
         * {
             margin: 0;
             padding: 0;
@@ -127,10 +38,6 @@
             --error-bg: #FFF5F5;
             --warning-bg: #FFF9E6;
             --critical-bg: #FFECEC;
-            --graph-cpu: #FF6B6B;
-            --graph-ram: #4ECDC4;
-            --graph-errors: #E74C3C;
-            --graph-warnings: #F39C12;
         }
         
         body {
@@ -426,124 +333,6 @@
             box-shadow: 0 0 12px rgba(46, 204, 113, 0.2);
         }
         
-        /* Stuck Overlay */
-        .stuck-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            background: rgba(248, 250, 253, 0.95);
-        }
-        
-        .stuck-overlay.active {
-            opacity: 1;
-        }
-        
-        .stuck-text {
-            font-size: 56px;
-            font-weight: 900;
-            color: rgba(243, 156, 18, 0.15);
-            text-transform: uppercase;
-            letter-spacing: 12px;
-            transform: rotate(-8deg);
-            text-shadow: 0 0 40px rgba(243, 156, 18, 0.2);
-            animation: stuckShake 3s infinite;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        @keyframes stuckShake {
-            0%, 100% { transform: rotate(-8deg) translateX(0); }
-            25% { transform: rotate(-8deg) translateX(-4px); }
-            75% { transform: rotate(-8deg) translateX(4px); }
-        }
-        
-        /* Device Info */
-        .device-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-            border: 1px solid var(--card-border);
-            backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.3s both;
-        }
-        
-        .device-card h3 {
-            font-size: 17px;
-            margin-bottom: 20px;
-            color: var(--text);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            opacity: 0.9;
-        }
-        
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-        }
-        
-        .info-item {
-            padding-bottom: 14px;
-            border-bottom: 1px solid rgba(219, 226, 239, 0.5);
-        }
-        
-        .info-label {
-            font-size: 12px;
-            color: var(--text-secondary);
-            margin-bottom: 6px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            opacity: 0.7;
-        }
-        
-        .info-value {
-            font-size: 15px;
-            font-weight: 500;
-            word-break: break-word;
-            line-height: 1.4;
-        }
-        
-        /* Update Info */
-        .update-info {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 22px;
-            margin-bottom: 20px;
-            border: 1px solid var(--card-border);
-            backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.4s both;
-        }
-        
-        .update-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-        
-        .update-row:last-child {
-            margin-bottom: 0;
-        }
-        
-        .time-since {
-            color: var(--warning);
-            font-weight: 700;
-            font-size: 22px;
-            font-feature-settings: "tnum";
-        }
-        
         /* Graphs Section */
         .graphs-section {
             background: var(--card-bg);
@@ -552,7 +341,7 @@
             margin-bottom: 20px;
             border: 1px solid var(--card-border);
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.5s both;
+            animation: slideUp 0.5s ease-out 0.3s both;
         }
         
         .graphs-section h3 {
@@ -569,9 +358,9 @@
         .graph-tabs {
             display: flex;
             gap: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             overflow-x: auto;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
         
         .graph-tab {
@@ -604,7 +393,46 @@
             width: 100%;
         }
         
-        /* Error Stats - ПЕРЕМЕЩЕН ВНИЗ */
+        .graph-info {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 10px;
+            padding: 8px;
+            background: rgba(248, 250, 253, 0.5);
+            border-radius: 8px;
+        }
+        
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .control-btn {
+            padding: 10px 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex: 1;
+            justify-content: center;
+        }
+        
+        .control-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        /* Error Stats */
         .error-stats {
             background: var(--card-bg);
             border-radius: 16px;
@@ -612,7 +440,7 @@
             margin-bottom: 20px;
             border: 1px solid var(--card-border);
             backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out 0.6s both;
+            animation: slideUp 0.5s ease-out 0.4s both;
         }
         
         .error-stats h3 {
@@ -681,7 +509,7 @@
             margin-top: 4px;
         }
         
-        /* Раскрывающийся список ошибок */
+        /* Error Details */
         .error-details {
             max-height: 0;
             overflow: hidden;
@@ -733,6 +561,85 @@
             padding-left: 15px;
             margin-left: -12px;
             font-weight: 500;
+        }
+        
+        /* Device Info */
+        .device-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.5s both;
+        }
+        
+        .device-card h3 {
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        
+        .info-item {
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(219, 226, 239, 0.5);
+        }
+        
+        .info-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            opacity: 0.7;
+        }
+        
+        .info-value {
+            font-size: 15px;
+            font-weight: 500;
+            word-break: break-word;
+            line-height: 1.4;
+        }
+        
+        /* Update Info */
+        .update-info {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 22px;
+            margin-bottom: 20px;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.5s ease-out 0.6s both;
+        }
+        
+        .update-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .update-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .time-since {
+            color: var(--warning);
+            font-weight: 700;
+            font-size: 22px;
+            font-feature-settings: "tnum";
         }
         
         /* Logs */
@@ -849,18 +756,6 @@
             }
         }
         
-        .log-timestamp {
-            color: var(--primary);
-            font-weight: 600;
-            margin-right: 8px;
-            font-feature-settings: "tnum";
-            opacity: 0.8;
-        }
-        
-        .log-entry.error .log-timestamp { color: var(--danger); }
-        .log-entry.warning .log-timestamp { color: var(--warning); }
-        .log-entry.critical .log-timestamp { color: var(--critical); }
-        
         /* Auto Refresh Indicator */
         .auto-refresh-indicator {
             position: fixed;
@@ -879,31 +774,6 @@
         @keyframes blink {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
-        }
-        
-        /* Scrollbar */
-        .logs-container::-webkit-scrollbar,
-        .error-list::-webkit-scrollbar {
-            width: 6px;
-        }
-        
-        .logs-container::-webkit-scrollbar-track,
-        .error-list::-webkit-scrollbar-track {
-            background: rgba(219, 226, 239, 0.3);
-            border-radius: 3px;
-        }
-        
-        .logs-container::-webkit-scrollbar-thumb,
-        .error-list::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 3px;
-            opacity: 0.5;
-        }
-        
-        .logs-container::-webkit-scrollbar-thumb:hover,
-        .error-list::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-dark);
-            opacity: 0.8;
         }
         
         /* Mobile Optimization */
@@ -939,17 +809,16 @@
                 gap: 14px;
             }
             
+            .controls {
+                flex-direction: column;
+            }
+            
             .header h1 {
                 font-size: 24px;
             }
             
             .stat-value {
                 font-size: 24px;
-            }
-            
-            .stuck-text {
-                font-size: 42px;
-                letter-spacing: 8px;
             }
             
             .battery {
@@ -1004,62 +873,23 @@
             100% { transform: translateX(100%); }
         }
         
-        /* Tap Hint */
-        .tap-hint {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            font-size: 12px;
-            color: var(--text-muted);
-            opacity: 0.6;
-            animation: fadeInOut 3s ease-in-out infinite;
-            pointer-events: none;
+        /* Scrollbar */
+        .logs-container::-webkit-scrollbar,
+        .error-list::-webkit-scrollbar {
+            width: 6px;
         }
         
-        @keyframes fadeInOut {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 0.6; }
+        .logs-container::-webkit-scrollbar-track,
+        .error-list::-webkit-scrollbar-track {
+            background: rgba(219, 226, 239, 0.3);
+            border-radius: 3px;
         }
         
-        /* Controls */
-        .controls {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .control-btn {
-            padding: 10px 16px;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--text);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex: 1;
-            justify-content: center;
-            min-width: 120px;
-        }
-        
-        .control-btn:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-        
-        .control-btn.primary {
+        .logs-container::-webkit-scrollbar-thumb,
+        .error-list::-webkit-scrollbar-thumb {
             background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        
-        .control-btn.primary:hover {
-            background: var(--primary-dark);
+            border-radius: 3px;
+            opacity: 0.5;
         }
     </style>
 </head>
@@ -1067,16 +897,8 @@
     <!-- Background Pattern -->
     <div class="bg-pattern"></div>
     
-    <!-- Stuck Overlay -->
-    <div class="stuck-overlay" id="stuckOverlay">
-        <div class="stuck-text">ЗАВИС</div>
-    </div>
-    
     <!-- Auto Refresh Indicator -->
     <div class="auto-refresh-indicator" id="autoRefreshIndicator"></div>
-    
-    <!-- Tap Hint -->
-    <div class="tap-hint" id="tapHint">Нажмите для обновления</div>
     
     <div class="container">
         <!-- Header -->
@@ -1141,6 +963,61 @@
             </div>
         </div>
         
+        <!-- Graphs Section -->
+        <div class="graphs-section">
+            <h3>📈 История нагрузок</h3>
+            <div class="graph-tabs">
+                <div class="graph-tab active" data-graph="cpu">Процессор</div>
+                <div class="graph-tab" data-graph="ram">Память</div>
+                <div class="graph-tab" data-graph="errors">Ошибки</div>
+                <div class="graph-tab" data-graph="cycle">Циклы</div>
+            </div>
+            <div class="graph-container">
+                <canvas id="statsChart"></canvas>
+            </div>
+            <div class="graph-info" id="graphInfo">
+                Загрузка истории...
+            </div>
+            <div class="controls">
+                <button class="control-btn" onclick="loadRealHistory()">
+                    <span>🔄</span> Обновить графики
+                </button>
+                <button class="control-btn" onclick="toggleAutoGraphs()" id="autoGraphsBtn">
+                    <span>⏸️</span> Авто-графики
+                </button>
+            </div>
+        </div>
+        
+        <!-- Error Stats -->
+        <div class="error-stats">
+            <h3>⚠️ Статистика ошибок</h3>
+            <div class="error-counts">
+                <div class="error-count warning" data-type="warning">
+                    <div class="count-value" id="warningCount">0</div>
+                    <div class="count-label">Предупреждения</div>
+                </div>
+                <div class="error-count error" data-type="error">
+                    <div class="count-value" id="errorCount">0</div>
+                    <div class="count-label">Ошибки</div>
+                </div>
+                <div class="error-count critical" data-type="critical">
+                    <div class="count-value" id="criticalCount">0</div>
+                    <div class="count-label">Критические</div>
+                </div>
+            </div>
+            
+            <!-- Error Details -->
+            <div class="error-details" id="warningDetails">
+                <div class="error-list" id="warningList"></div>
+            </div>
+            <div class="error-details" id="errorDetails">
+                <div class="error-list" id="errorList"></div>
+            </div>
+            <div class="error-details" id="criticalDetails">
+                <div class="error-list" id="criticalList"></div>
+            </div>
+        </div>
+        
         <!-- Device Info -->
         <div class="device-card">
             <h3>📊 Информация об устройстве</h3>
@@ -1172,61 +1049,6 @@
             </div>
         </div>
         
-        <!-- Graphs Section -->
-        <div class="graphs-section">
-            <h3>📈 История нагрузок</h3>
-            <div class="graph-tabs">
-                <div class="graph-tab active" data-graph="cpu">Процессор</div>
-                <div class="graph-tab" data-graph="ram">Память</div>
-                <div class="graph-tab" data-graph="errors">Ошибки</div>
-                <div class="graph-tab" data-graph="battery">Батарея</div>
-            </div>
-            <div class="graph-container">
-                <canvas id="statsChart"></canvas>
-            </div>
-            <div class="graph-info" id="graphInfo">
-                Загрузка истории...
-            </div>
-            <div class="controls">
-                <button class="control-btn" onclick="loadRealHistory()">
-                    <span>🔄</span> Обновить графики
-                </button>
-                <button class="control-btn" onclick="toggleAutoGraphs()" id="autoGraphsBtn">
-                    <span>⏸️</span> Авто-графики
-                </button>
-            </div>
-        </div>
-        
-        <!-- Error Stats - ПЕРЕМЕЩЕН ВНИЗ -->
-        <div class="error-stats">
-            <h3>⚠️ Статистика ошибок</h3>
-            <div class="error-counts">
-                <div class="error-count warning" data-type="warning">
-                    <div class="count-value" id="warningCount">0</div>
-                    <div class="count-label">Предупреждения</div>
-                </div>
-                <div class="error-count error" data-type="error">
-                    <div class="count-value" id="errorCount">0</div>
-                    <div class="count-label">Ошибки</div>
-                </div>
-                <div class="error-count critical" data-type="critical">
-                    <div class="count-value" id="criticalCount">0</div>
-                    <div class="count-label">Критические</div>
-                </div>
-            </div>
-            
-            <!-- Раскрывающиеся списки ошибок -->
-            <div class="error-details" id="warningDetails">
-                <div class="error-list" id="warningList"></div>
-            </div>
-            <div class="error-details" id="errorDetails">
-                <div class="error-list" id="errorList"></div>
-            </div>
-            <div class="error-details" id="criticalDetails">
-                <div class="error-list" id="criticalList"></div>
-            </div>
-        </div>
-        
         <!-- Logs -->
         <div class="logs-card">
             <div class="logs-header">
@@ -1242,24 +1064,22 @@
     <script>
         // Конфигурация
         const JSON_URL = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json';
-        const HISTORY_BASE_URL = 'https://api.github.com/repos/dimb9ih/dimb9ih.github.io/contents/history';
-        const REFRESH_INTERVAL = 30000; // 30 секунд
-        const STUCK_THRESHOLD = 30 * 60; // 30 минут
+        const HISTORY_URL = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/history/summary.json';
+        const REFRESH_INTERVAL = 30000;
+        const STUCK_THRESHOLD = 30 * 60;
         
         let autoRefresh = true;
-        let autoGraphRefresh = false;
+        let autoGraphsEnabled = false;
         let lastUpdateTime = null;
         let updateCount = 0;
         let refreshInterval = null;
-        let graphRefreshInterval = null;
-        let historyData = [];
-        let currentGraph = 'cpu';
-        let statsChart = null;
+        let autoGraphsInterval = null;
+        let historyChart = null;
+        let currentGraphType = 'cpu';
         let expandedErrorType = null;
         
         // DOM элементы
         const elements = {
-            // Существующие элементы
             cycleCount: document.getElementById('cycle-count'),
             batteryLevel: document.getElementById('battery-level'),
             batteryFill: document.getElementById('battery-fill'),
@@ -1274,17 +1094,13 @@
             logsContent: document.getElementById('logs-content'),
             timeSince: document.getElementById('time-since'),
             updateCount: document.getElementById('update-count'),
-            stuckOverlay: document.getElementById('stuckOverlay'),
             autoRefreshIndicator: document.getElementById('autoRefreshIndicator'),
-            tapHint: document.getElementById('tapHint'),
             cpuLoad: document.getElementById('cpu-load'),
             cpuDetail: document.getElementById('cpu-detail'),
             ramUsage: document.getElementById('ram-usage'),
             ramDetail: document.getElementById('ram-detail'),
             diskUsage: document.getElementById('disk-usage'),
             diskDetail: document.getElementById('disk-detail'),
-            
-            // Новые элементы
             warningCount: document.getElementById('warningCount'),
             errorCount: document.getElementById('errorCount'),
             criticalCount: document.getElementById('criticalCount'),
@@ -1294,10 +1110,12 @@
             warningDetails: document.getElementById('warningDetails'),
             errorDetails: document.getElementById('errorDetails'),
             criticalDetails: document.getElementById('criticalDetails'),
-            autoGraphBtn: document.getElementById('autoGraphBtn')
+            graphInfo: document.getElementById('graphInfo'),
+            autoGraphsBtn: document.getElementById('autoGraphsBtn')
         };
         
-        // Форматирование времени
+        // ========== ОСНОВНЫЕ ФУНКЦИИ ==========
+        
         function formatTimeDiff(seconds) {
             if (seconds < 60) return `${seconds}с`;
             if (seconds < 3600) return `${Math.floor(seconds / 60)}м`;
@@ -1305,15 +1123,6 @@
             return `${Math.floor(seconds / 86400)}д`;
         }
         
-        function formatTime(timestamp) {
-            const date = new Date(timestamp * 1000);
-            return date.toLocaleTimeString('ru-RU', {
-                hour: '2-digit',
-                minute: '2-digit'
-            });
-        }
-        
-        // Обновление времени
         function updateTimeDisplay() {
             if (!lastUpdateTime) {
                 elements.timeSince.textContent = '0с';
@@ -1325,737 +1134,22 @@
             
             elements.timeSince.textContent = formatTimeDiff(diff);
             
-            // Проверка зависания
             if (diff > STUCK_THRESHOLD) {
-                elements.stuckOverlay.classList.add('active');
                 elements.statusIndicator.className = 'status-indicator status-stuck';
                 elements.statusText.textContent = 'ЗАВИС';
                 elements.autoRefreshIndicator.style.background = 'var(--danger)';
-                elements.autoRefreshIndicator.style.boxShadow = '0 0 10px rgba(231, 76, 60, 0.3)';
             } else {
-                elements.stuckOverlay.classList.remove('active');
                 elements.autoRefreshIndicator.style.background = 'var(--success)';
-                elements.autoRefreshIndicator.style.boxShadow = '0 0 10px rgba(46, 204, 113, 0.3)';
             }
         }
         
-        // Отображение ошибок
-        function displayErrorStats(errorStats, recentErrors = []) {
-            if (!errorStats) return;
-            
-            // Обновляем счетчики
-            elements.warningCount.textContent = errorStats.warnings || 0;
-            elements.errorCount.textContent = errorStats.errors || 0;
-            elements.criticalCount.textContent = errorStats.critical || 0;
-            
-            // Собираем все ошибки для отображения
-            const allErrors = {
-                warnings: [],
-                errors: [],
-                critical: []
-            };
-            
-            // Добавляем ошибки из статистики
-            if (errorStats.recent_errors && Array.isArray(errorStats.recent_errors)) {
-                errorStats.recent_errors.forEach(error => {
-                    const errorLower = error.toLowerCase();
-                    if (errorLower.includes('critical')) {
-                        allErrors.critical.push(error);
-                    } else if (errorLower.includes('error')) {
-                        allErrors.errors.push(error);
-                    } else if (errorLower.includes('warning')) {
-                        allErrors.warnings.push(error);
-                    }
-                });
-            }
-            
-            // Добавляем ошибки из логов
-            if (recentErrors.length > 0) {
-                recentErrors.forEach(error => {
-                    const errorLower = error.toLowerCase();
-                    if (errorLower.includes('critical')) {
-                        allErrors.critical.push(error);
-                    } else if (errorLower.includes('error')) {
-                        allErrors.errors.push(error);
-                    } else if (errorLower.includes('warning')) {
-                        allErrors.warnings.push(error);
-                    }
-                });
-            }
-            
-            // Отображаем списки ошибок
-            displayErrorList('warning', allErrors.warnings.slice(-5));
-            displayErrorList('error', allErrors.errors.slice(-5));
-            displayErrorList('critical', allErrors.critical.slice(-5));
-            
-            // Добавляем обработчики кликов на счетчики
-            document.querySelectorAll('.error-count').forEach(count => {
-                count.addEventListener('click', () => {
-                    const type = count.dataset.type;
-                    toggleErrorDetails(type);
-                });
-            });
-        }
+        // ========== ГРАФИКИ ИСТОРИИ ==========
         
-        // Отображение списка ошибок
-        function displayErrorList(type, errors) {
-            const listElement = elements[type + 'List'];
-            const detailsElement = elements[type + 'Details'];
-            
-            if (!errors || errors.length === 0) {
-                listElement.innerHTML = `<div class="error-item">Нет ${getErrorTypeName(type)}</div>`;
-                return;
-            }
-            
-            listElement.innerHTML = '';
-            errors.forEach(error => {
-                const errorItem = document.createElement('div');
-                errorItem.className = `error-item ${type}`;
-                
-                // Обрезаем длинные ошибки
-                const maxLength = 100;
-                const displayError = error.length > maxLength ? 
-                    error.substring(0, maxLength) + '...' : error;
-                
-                errorItem.textContent = displayError;
-                errorItem.title = error; // Полный текст при наведении
-                listElement.appendChild(errorItem);
-            });
-        }
-        
-        function getErrorTypeName(type) {
-            switch(type) {
-                case 'warning': return 'предупреждений';
-                case 'error': return 'ошибок';
-                case 'critical': return 'критических ошибок';
-                default: return 'ошибок';
-            }
-        }
-        
-        // Переключение раскрытия списка ошибок
-        function toggleErrorDetails(type) {
-            const detailsElement = elements[type + 'Details'];
-            
-            if (expandedErrorType === type) {
-                // Закрываем текущий
-                detailsElement.classList.remove('expanded');
-                expandedErrorType = null;
-            } else {
-                // Закрываем все
-                document.querySelectorAll('.error-details').forEach(el => {
-                    el.classList.remove('expanded');
-                });
-                
-                // Открываем выбранный
-                detailsElement.classList.add('expanded');
-                expandedErrorType = type;
-            }
-        }
-        
-        // Загрузка истории JSON
-        async function loadHistoryData() {
-            try {
-                console.log('Загрузка истории...');
-                
-                // Для GitHub Pages мы будем использовать кэшированные данные
-                // В реальном приложении здесь был бы запрос к GitHub API
-                
-                // Пока используем фиктивные данные для демонстрации
-                await simulateHistoryLoading();
-                
-            } catch (error) {
-                console.error('Ошибка загрузки истории:', error);
-                // Продолжаем работу с текущими данными
-            }
-        }
-        
-        // Симуляция загрузки истории (заглушка)
-        async function simulateHistoryLoading() {
-            // Создаем фиктивные исторические данные на основе текущих
-            const now = Math.floor(Date.now() / 1000);
-            const hoursInSeconds = 3600;
-            
-            historyData = [];
-            
-            for (let i = 0; i < 24; i++) {
-                const timestamp = now - (i * hoursInSeconds);
-                const cpuUsage = 20 + Math.random() * 40;
-                const ramUsage = 30 + Math.random() * 30;
-                const errors = Math.floor(Math.random() * 5);
-                const warnings = Math.floor(Math.random() * 10);
-                
-                historyData.push({
-                    timestamp: timestamp,
-                    time: formatTime(timestamp),
-                    cpu: Math.round(cpuUsage),
-                    ram: Math.round(ramUsage),
-                    errors: errors,
-                    warnings: warnings
-                });
-            }
-            
-            historyData.reverse(); // От старых к новым
-            updateChart();
-        }
-        
-        // Создание графика
-        function createChart() {
-            const ctx = document.getElementById('statsChart').getContext('2d');
-            
-            if (statsChart) {
-                statsChart.destroy();
-            }
-            
-            const labels = historyData.map(d => d.time);
-            const cpuData = historyData.map(d => d.cpu);
-            const ramData = historyData.map(d => d.ram);
-            const errorsData = historyData.map(d => d.errors * 10); // Умножаем для масштаба
-            const warningsData = historyData.map(d => d.warnings * 5);
-            
-            const datasets = [];
-            
-            switch(currentGraph) {
-                case 'cpu':
-                    datasets.push({
-                        label: 'Процессор %',
-                        data: cpuData,
-                        borderColor: 'var(--graph-cpu)',
-                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    });
-                    break;
-                    
-                case 'ram':
-                    datasets.push({
-                        label: 'Память %',
-                        data: ramData,
-                        borderColor: 'var(--graph-ram)',
-                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    });
-                    break;
-                    
-                case 'errors':
-                    datasets.push({
-                        label: 'Ошибки',
-                        data: errorsData,
-                        borderColor: 'var(--graph-errors)',
-                        backgroundColor: 'rgba(231, 76, 60, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    });
-                    datasets.push({
-                        label: 'Предупреждения',
-                        data: warningsData,
-                        borderColor: 'var(--graph-warnings)',
-                        backgroundColor: 'rgba(243, 156, 18, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true
-                    });
-                    break;
-                    
-                case 'combined':
-                    datasets.push({
-                        label: 'Процессор %',
-                        data: cpuData,
-                        borderColor: 'var(--graph-cpu)',
-                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true,
-                        yAxisID: 'y'
-                    });
-                    datasets.push({
-                        label: 'Память %',
-                        data: ramData,
-                        borderColor: 'var(--graph-ram)',
-                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: true,
-                        yAxisID: 'y'
-                    });
-                    datasets.push({
-                        label: 'Ошибки',
-                        data: errorsData,
-                        borderColor: 'var(--graph-errors)',
-                        backgroundColor: 'rgba(231, 76, 60, 0.1)',
-                        borderWidth: 2,
-                        tension: 0.4,
-                        fill: false,
-                        yAxisID: 'y1'
-                    });
-                    break;
-            }
-            
-            statsChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: datasets
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: {
-                        intersect: false,
-                        mode: 'index'
-                    },
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top',
-                            labels: {
-                                color: 'var(--text)',
-                                font: {
-                                    size: 11
-                                }
-                            }
-                        },
-                        tooltip: {
-                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                            titleColor: 'var(--text)',
-                            bodyColor: 'var(--text)',
-                            borderColor: 'var(--card-border)',
-                            borderWidth: 1,
-                            cornerRadius: 6,
-                            displayColors: false
-                        }
-                    },
-                    scales: {
-                        x: {
-                            grid: {
-                                color: 'rgba(219, 226, 239, 0.3)'
-                            },
-                            ticks: {
-                                color: 'var(--text-secondary)',
-                                maxRotation: 0,
-                                maxTicksLimit: 8
-                            }
-                        },
-                        y: {
-                            beginAtZero: true,
-                            max: currentGraph === 'combined' ? 100 : undefined,
-                            grid: {
-                                color: 'rgba(219, 226, 239, 0.3)'
-                            },
-                            ticks: {
-                                color: 'var(--text-secondary)'
-                            }
-                        },
-                        ...(currentGraph === 'combined' && {
-                            y1: {
-                                position: 'right',
-                                beginAtZero: true,
-                                grid: {
-                                    drawOnChartArea: false
-                                },
-                                ticks: {
-                                    color: 'var(--graph-errors)'
-                                }
-                            }
-                        })
-                    }
-                }
-            });
-        }
-        
-        // Обновление графика
-        function updateChart() {
-            if (historyData.length > 0) {
-                createChart();
-            }
-        }
-        
-        // Переключение вкладок графика
-        function setupGraphTabs() {
-            document.querySelectorAll('.graph-tab').forEach(tab => {
-                tab.addEventListener('click', () => {
-                    // Убираем активный класс у всех
-                    document.querySelectorAll('.graph-tab').forEach(t => {
-                        t.classList.remove('active');
-                    });
-                    
-                    // Добавляем активный класс текущему
-                    tab.classList.add('active');
-                    
-                    // Меняем график
-                    currentGraph = tab.dataset.graph;
-                    updateChart();
-                });
-            });
-        }
-        
-        // Переключение автообновления графиков
-        function toggleAutoGraphRefresh() {
-            autoGraphRefresh = !autoGraphRefresh;
-            
-            if (autoGraphRefresh) {
-                elements.autoGraphBtn.innerHTML = '<span>⏸️</span> Стоп графики';
-                startAutoGraphRefresh();
-            } else {
-                elements.autoGraphBtn.innerHTML = '<span>▶️</span> Авто-графики';
-                stopAutoGraphRefresh();
-            }
-        }
-        
-        function startAutoGraphRefresh() {
-            stopAutoGraphRefresh();
-            graphRefreshInterval = setInterval(() => {
-                // Добавляем новые данные в историю
-                if (historyData.length > 0) {
-                    const lastData = historyData[historyData.length - 1];
-                    const now = Math.floor(Date.now() / 1000);
-                    
-                    // Создаем новые данные на основе последних
-                    const newData = {
-                        timestamp: now,
-                        time: formatTime(now),
-                        cpu: Math.max(0, Math.min(100, lastData.cpu + (Math.random() * 10 - 5))),
-                        ram: Math.max(0, Math.min(100, lastData.ram + (Math.random() * 5 - 2.5))),
-                        errors: Math.floor(Math.random() * 3),
-                        warnings: Math.floor(Math.random() * 6)
-                    };
-                    
-                    historyData.push(newData);
-                    
-                    // Ограничиваем количество точек
-                    if (historyData.length > 48) {
-                        historyData.shift();
-                    }
-                    
-                    updateChart();
-                }
-            }, 60000); // Каждую минуту
-        }
-        
-        function stopAutoGraphRefresh() {
-            if (graphRefreshInterval) {
-                clearInterval(graphRefreshInterval);
-                graphRefreshInterval = null;
-            }
-        }
-        
-        // Отображение логов
-        function displayLogs(logText) {
-            if (!logText) return;
-            
-            const lines = logText.split('\n').filter(line => line.trim());
-            const lastLines = lines.slice(-8);
-            const errorLines = lines.filter(line => 
-                line.toLowerCase().includes('error') || 
-                line.toLowerCase().includes('warning') ||
-                line.toLowerCase().includes('critical')
-            );
-            
-            // Очищаем и добавляем новые логи с анимацией
-            elements.logsContent.innerHTML = '';
-            
-            lastLines.forEach((line, index) => {
-                const logEntry = document.createElement('div');
-                logEntry.className = 'log-entry';
-                logEntry.style.animationDelay = `${index * 0.05}s`;
-                
-                // Определяем тип лога
-                const lineLower = line.toLowerCase();
-                if (lineLower.includes('critical')) {
-                    logEntry.className = 'log-entry critical';
-                } else if (lineLower.includes('error')) {
-                    logEntry.className = 'log-entry error';
-                } else if (lineLower.includes('warning')) {
-                    logEntry.className = 'log-entry warning';
-                }
-                
-                // Парсим временную метку
-                const parts = line.split(' - ');
-                if (parts.length >= 3) {
-                    logEntry.innerHTML = `<span class="log-timestamp">[${parts[0]}]</span>${parts.slice(2).join(' - ')}`;
-                } else {
-                    logEntry.textContent = line.length > 80 ? line.substring(0, 80) + '...' : line;
-                }
-                
-                elements.logsContent.appendChild(logEntry);
-            });
-            
-            // Автоскролл
-            elements.logsContent.scrollTop = elements.logsContent.scrollHeight;
-            
-            return errorLines;
-        }
-        
-        // Исправление процентов диска
-        function fixDiskPercentage(usage) {
-            if (!usage) return '0';
-            // Убираем лишние проценты
-            return usage.replace(/%+/g, '').trim();
-        }
-        
-        // Обновление интерфейса
-        function updateUI(data) {
-            try {
-                updateCount++;
-                elements.updateCount.textContent = updateCount;
-                
-                // Эффект загрузки
-                elements.statusIndicator.classList.add('loading');
-                
-                setTimeout(() => {
-                    elements.statusIndicator.classList.remove('loading');
-                    
-                    // Основные данные
-                    elements.cycleCount.textContent = data.cycle_count || '0';
-                    elements.statusText.textContent = data.bot_status ? 
-                        data.bot_status.charAt(0).toUpperCase() + data.bot_status.slice(1) : 'Неизвестно';
-                    
-                    // Системные данные
-                    if (data.system_stats) {
-                        const sys = data.system_stats;
-                        
-                        // CPU
-                        if (sys.cpu) {
-                            elements.cpuLoad.textContent = `${Math.round(sys.cpu.utilization_percent)}%`;
-                            elements.cpuDetail.textContent = `Нагрузка: ${sys.cpu.load_1}`;
-                        }
-                        
-                        // RAM
-                        if (sys.memory) {
-                            elements.ramUsage.textContent = `${Math.round(sys.memory.utilization_percent)}%`;
-                            elements.ramDetail.textContent = `${sys.memory.used_mb}/${sys.memory.total_mb} МБ`;
-                        }
-                        
-                        // Disk - исправляем двойные проценты
-                        if (sys.disk) {
-                            const fixedUsage = fixDiskPercentage(sys.disk.usage_percent);
-                            elements.diskUsage.textContent = `${fixedUsage}%`;
-                            elements.diskDetail.textContent = `${sys.disk.used || '0'}/${sys.disk.total || '0'} ГБ`;
-                        }
-                    }
-                    
-                    // Информация об устройстве
-                    if (data.device_info) {
-                        const device = data.device_info;
-                        elements.deviceName.textContent = device.name || '—';
-                        elements.deviceModel.textContent = device.model || '—';
-                        elements.systemVersion.textContent = device.system_version || '—';
-                        elements.deviceId.textContent = device.identifier_for_vendor ? 
-                            device.identifier_for_vendor.substring(0, 8) + '...' : '—';
-                    }
-                    
-                    // Батарея
-                    if (data.battery_info) {
-                        const battery = data.battery_info;
-                        const level = parseInt(battery.battery_level || 0);
-                        elements.batteryLevel.textContent = `${level}%`;
-                        elements.batteryFill.style.width = `${level}%`;
-                        
-                        const isCharging = battery.is_charging || 
-                            (battery.battery_state_string && 
-                             (battery.battery_state_string.includes('Charging') || 
-                              battery.battery_state_string.includes('Full')));
-                        elements.chargingStatus.textContent = isCharging ? 'Да 🔌' : 'Нет 🔋';
-                        elements.chargingStatus.style.color = isCharging ? 'var(--success)' : 'var(--text-secondary)';
-                    }
-                    
-                    // Логи и ошибки
-                    let errorLines = [];
-                    if (data.last_log) {
-                        errorLines = displayLogs(data.last_log);
-                    }
-                    
-                    // Статистика ошибок
-                    if (data.error_stats) {
-                        displayErrorStats(data.error_stats, errorLines);
-                    } else if (data.error_summary) {
-                        // Для обратной совместимости
-                        displayErrorStats({
-                            total_errors: 0,
-                            warnings: 0,
-                            errors: 0,
-                            critical: 0,
-                            error_summary: data.error_summary
-                        }, errorLines);
-                    }
-                    
-                    // Временные метки
-                    if (data.timestamp) {
-                        lastUpdateTime = data.timestamp;
-                        const date = new Date(data.timestamp * 1000);
-                        elements.lastUpdated.textContent = date.toLocaleTimeString('ru-RU', {
-                            hour: '2-digit',
-                            minute: '2-digit'
-                        });
-                    }
-                    
-                    // Статус индикатора
-                    if (data.bot_status === 'running' || data.bot_status === 'cycle_started') {
-                        elements.statusIndicator.className = 'status-indicator status-running';
-                    } else if (data.bot_status === 'stuck' || !data.bot_status) {
-                        elements.statusIndicator.className = 'status-indicator status-stuck';
-                    } else {
-                        elements.statusIndicator.className = 'status-indicator status-stopped';
-                    }
-                    
-                    updateTimeDisplay();
-                    
-                }, 300);
-                
-            } catch (error) {
-                console.error('Ошибка обновления:', error);
-                elements.logsContent.innerHTML = '<div class="log-entry error">❌ Ошибка загрузки данных</div>';
-                elements.statusIndicator.className = 'status-indicator status-stopped';
-                elements.statusText.textContent = 'ОШИБКА';
-            }
-        }
-        
-        // Загрузка данных
-        async function fetchData() {
-            try {
-                const timestamp = Date.now();
-                const response = await fetch(`${JSON_URL}?t=${timestamp}`);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                
-                const data = await response.json();
-                updateUI(data);
-                
-            } catch (error) {
-                console.error('Ошибка загрузки:', error);
-                elements.logsContent.innerHTML = '<div class="log-entry error">❌ Ошибка соединения</div>';
-                elements.statusText.textContent = 'ОФФЛАЙН';
-                elements.statusIndicator.className = 'status-indicator status-stopped';
-                elements.autoRefreshIndicator.style.background = 'var(--warning)';
-                elements.autoRefreshIndicator.style.boxShadow = '0 0 10px rgba(243, 156, 18, 0.3)';
-            }
-        }
-        
-        // Переключение автообновления
-        function toggleAutoRefresh() {
-            autoRefresh = !autoRefresh;
-            if (autoRefresh) {
-                startAutoRefresh();
-                elements.autoRefreshIndicator.style.display = 'block';
-            } else {
-                stopAutoRefresh();
-                elements.autoRefreshIndicator.style.display = 'none';
-            }
-        }
-        
-        // Ручное обновление
-        function refreshData() {
-            fetchData();
-            // Визуальная обратная связь
-            document.body.style.opacity = '0.95';
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 150);
-        }
-        
-        // Автообновление
-        function startAutoRefresh() {
-            stopAutoRefresh();
-            refreshInterval = setInterval(fetchData, REFRESH_INTERVAL);
-        }
-        
-        function stopAutoRefresh() {
-            if (refreshInterval) {
-                clearInterval(refreshInterval);
-                refreshInterval = null;
-            }
-        }
-        
-        // Инициализация
-        function init() {
-            // Первая загрузка
-            fetchData();
-            
-            // Запуск автообновления
-            if (autoRefresh) {
-                startAutoRefresh();
-            }
-            
-            // Загрузка истории
-            loadHistoryData();
-            
-            // Настройка вкладок графиков
-            setupGraphTabs();
-            
-            // Обновление времени каждую секунду
-            setInterval(updateTimeDisplay, 1000);
-            
-            // Клик для обновления
-            document.addEventListener('click', (e) => {
-                if (e.target.tagName !== 'A' && !e.target.closest('a') && !e.target.closest('.control-btn')) {
-                    refreshData();
-                }
-            });
-            
-            // Swipe вниз для обновления
-            let startY;
-            document.addEventListener('touchstart', e => {
-                startY = e.touches[0].clientY;
-            });
-            
-            document.addEventListener('touchend', e => {
-                if (!startY) return;
-                const endY = e.changedTouches[0].clientY;
-                const diff = startY - endY;
-                
-                if (diff > 60 && window.scrollY === 0) {
-                    refreshData();
-                }
-                
-                startY = null;
-            });
-            
-            // Горячие клавиши
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'r' || e.key === 'R') {
-                    refreshData();
-                }
-                if (e.key === 'a' || e.key === 'A') {
-                    toggleAutoRefresh();
-                }
-                if (e.key === 'g' || e.key === 'G') {
-                    toggleAutoGraphRefresh();
-                }
-                if (e.key === 'h' || e.key === 'H') {
-                    loadHistoryData();
-                }
-            });
-            
-            // Скрыть подсказку через 5 секунд
-            setTimeout(() => {
-                elements.tapHint.style.opacity = '0';
-                setTimeout(() => {
-                    elements.tapHint.style.display = 'none';
-                }, 500);
-            }, 5000);
-        }
-        
-        // Запуск приложения
-        document.addEventListener('DOMContentLoaded', init);
-         // ========== РЕАЛЬНАЯ ИСТОРИЯ И ГРАФИКИ ==========
-        
-        let historyChart = null;
-        let currentGraphType = 'cpu';
-        let autoGraphsEnabled = false;
-        let autoGraphsInterval = null;
-        
-        // Функция загрузки реальных исторических данных
         async function loadRealHistory() {
             try {
-                document.getElementById('graphInfo').textContent = 'Загрузка данных...';
+                elements.graphInfo.textContent = 'Загрузка данных...';
                 
-                const url = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/history/summary.json?t=' + Date.now();
-                const response = await fetch(url);
+                const response = await fetch(HISTORY_URL + '?t=' + Date.now());
                 
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}`);
@@ -2064,22 +1158,21 @@
                 const data = await response.json();
                 
                 if (!data.data || data.data.length === 0) {
-                    document.getElementById('graphInfo').textContent = 'Нет данных истории';
+                    elements.graphInfo.textContent = 'Нет данных истории';
                     return;
                 }
                 
-                document.getElementById('graphInfo').textContent = `Данные за ${data.count} точек, обновлено: ${new Date(data.updated).toLocaleTimeString('ru-RU')}`;
+                const lastUpdate = data.updated ? new Date(data.updated).toLocaleTimeString('ru-RU') : 'неизвестно';
+                elements.graphInfo.textContent = `Данные: ${data.data.length} точек, обновлено: ${lastUpdate}`;
                 
-                // Обновляем график
                 updateRealChart(data.data);
                 
             } catch (error) {
                 console.error('Ошибка загрузки истории:', error);
-                document.getElementById('graphInfo').textContent = 'Ошибка загрузки истории';
+                elements.graphInfo.textContent = 'Ошибка загрузки истории';
             }
         }
         
-        // Функция обновления графика реальными данными
         function updateRealChart(historyData) {
             if (!historyData || historyData.length < 2) {
                 console.log('Недостаточно данных для графика');
@@ -2088,12 +1181,10 @@
             
             const ctx = document.getElementById('statsChart').getContext('2d');
             
-            // Уничтожаем старый график
             if (historyChart) {
                 historyChart.destroy();
             }
             
-            // Подготавливаем данные в зависимости от выбранного типа графика
             const labels = historyData.map(item => {
                 const date = new Date(item.t * 1000);
                 return date.toLocaleTimeString('ru-RU', { 
@@ -2133,7 +1224,7 @@
                     datasets = [
                         {
                             label: 'Ошибки',
-                            data: historyData.map(item => item.errors),
+                            data: historyData.map(item => item.errors || 0),
                             borderColor: '#E74C3C',
                             backgroundColor: 'rgba(231, 76, 60, 0.1)',
                             borderWidth: 2,
@@ -2142,7 +1233,7 @@
                         },
                         {
                             label: 'Предупреждения',
-                            data: historyData.map(item => item.warnings),
+                            data: historyData.map(item => item.warnings || 0),
                             borderColor: '#F39C12',
                             backgroundColor: 'rgba(243, 156, 18, 0.1)',
                             borderWidth: 2,
@@ -2152,12 +1243,12 @@
                     ];
                     break;
                     
-                case 'battery':
+                case 'cycle':
                     datasets = [{
-                        label: 'Батарея %',
-                        data: historyData.map(item => item.battery || 0),
-                        borderColor: '#2ECC71',
-                        backgroundColor: 'rgba(46, 204, 113, 0.1)',
+                        label: 'Циклы',
+                        data: historyData.map(item => item.cycle || 0),
+                        borderColor: '#5B8DEF',
+                        backgroundColor: 'rgba(91, 141, 239, 0.1)',
                         borderWidth: 2,
                         tension: 0.4,
                         fill: true
@@ -2165,7 +1256,6 @@
                     break;
             }
             
-            // Создаем новый график
             historyChart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -2175,89 +1265,47 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    interaction: {
-                        intersect: false,
-                        mode: 'index'
-                    },
                     plugins: {
                         legend: {
                             position: 'top',
-                            labels: {
-                                color: 'var(--text)',
-                                font: {
-                                    size: 12
-                                }
-                            }
-                        },
-                        tooltip: {
-                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                            titleColor: 'var(--text)',
-                            bodyColor: 'var(--text)',
-                            borderColor: 'var(--card-border)',
-                            borderWidth: 1
                         }
                     },
                     scales: {
                         x: {
-                            grid: {
-                                color: 'rgba(219, 226, 239, 0.3)'
-                            },
                             ticks: {
-                                color: 'var(--text-secondary)',
-                                maxRotation: 0,
-                                maxTicksLimit: 8
+                                maxTicksLimit: 10
                             }
                         },
                         y: {
-                            beginAtZero: true,
-                            max: currentGraphType === 'battery' ? 100 : 
-                                 currentGraphType === 'errors' ? Math.max(...historyData.map(d => Math.max(d.errors, d.warnings))) * 1.2 : 100,
-                            grid: {
-                                color: 'rgba(219, 226, 239, 0.3)'
-                            },
-                            ticks: {
-                                color: 'var(--text-secondary)',
-                                callback: function(value) {
-                                    return value + (currentGraphType === 'battery' || currentGraphType === 'cpu' || currentGraphType === 'ram' ? '%' : '');
-                                }
-                            }
+                            beginAtZero: true
                         }
                     }
                 }
             });
         }
         
-        // Переключение типа графика
         function setupGraphTabs() {
             document.querySelectorAll('.graph-tab').forEach(tab => {
                 tab.addEventListener('click', () => {
-                    // Убираем активный класс
                     document.querySelectorAll('.graph-tab').forEach(t => {
                         t.classList.remove('active');
                     });
                     
-                    // Добавляем активный класс текущему
                     tab.classList.add('active');
-                    
-                    // Меняем тип графика
                     currentGraphType = tab.dataset.graph;
-                    
-                    // Перезагружаем историю для нового графика
                     loadRealHistory();
                 });
             });
         }
         
-        // Переключение автообновления графиков
         function toggleAutoGraphs() {
             autoGraphsEnabled = !autoGraphsEnabled;
-            const btn = document.getElementById('autoGraphsBtn');
             
             if (autoGraphsEnabled) {
-                btn.innerHTML = '<span>⏸️</span> Стоп авто';
+                elements.autoGraphsBtn.innerHTML = '<span>⏸️</span> Стоп авто';
                 startAutoGraphs();
             } else {
-                btn.innerHTML = '<span>▶️</span> Авто-графики';
+                elements.autoGraphsBtn.innerHTML = '<span>▶️</span> Авто-графики';
                 stopAutoGraphs();
             }
         }
@@ -2266,7 +1314,7 @@
             stopAutoGraphs();
             autoGraphsInterval = setInterval(() => {
                 loadRealHistory();
-            }, 300000); // Каждые 5 минут
+            }, 300000);
         }
         
         function stopAutoGraphs() {
@@ -2276,21 +1324,303 @@
             }
         }
         
-        // В функции init() добавьте:
-        function init() {
-            // ... существующий код ...
+        // ========== ОШИБКИ ==========
+        
+        function displayErrorStats(errorStats, recentErrors = []) {
+            if (!errorStats) return;
             
-            // Добавьте эти строки:
-            setupGraphTabs(); // Настройка вкладок графиков
-            loadRealHistory(); // Загрузка истории при старте
+            elements.warningCount.textContent = errorStats.warnings || 0;
+            elements.errorCount.textContent = errorStats.errors || 0;
+            elements.criticalCount.textContent = errorStats.critical || 0;
             
-            if (autoGraphsEnabled) {
-                startAutoGraphs();
+            const allErrors = {
+                warnings: [],
+                errors: [],
+                critical: []
+            };
+            
+            if (errorStats.recent_errors && Array.isArray(errorStats.recent_errors)) {
+                errorStats.recent_errors.forEach(error => {
+                    const errorLower = error.toLowerCase();
+                    if (errorLower.includes('critical')) {
+                        allErrors.critical.push(error);
+                    } else if (errorLower.includes('error')) {
+                        allErrors.errors.push(error);
+                    } else if (errorLower.includes('warning')) {
+                        allErrors.warnings.push(error);
+                    }
+                });
             }
             
-            // ... остальной код init()
+            displayErrorList('warning', allErrors.warnings.slice(-5));
+            displayErrorList('error', allErrors.errors.slice(-5));
+            displayErrorList('critical', allErrors.critical.slice(-5));
+            
+            document.querySelectorAll('.error-count').forEach(count => {
+                count.addEventListener('click', () => {
+                    const type = count.dataset.type;
+                    toggleErrorDetails(type);
+                });
+            });
         }
+        
+        function displayErrorList(type, errors) {
+            const listElement = elements[type + 'List'];
+            const detailsElement = elements[type + 'Details'];
+            
+            if (!errors || errors.length === 0) {
+                listElement.innerHTML = `<div class="error-item">Нет ${getErrorTypeName(type)}</div>`;
+                return;
+            }
+            
+            listElement.innerHTML = '';
+            errors.forEach(error => {
+                const errorItem = document.createElement('div');
+                errorItem.className = `error-item ${type}`;
+                const displayError = error.length > 100 ? 
+                    error.substring(0, 100) + '...' : error;
+                errorItem.textContent = displayError;
+                errorItem.title = error;
+                listElement.appendChild(errorItem);
+            });
+        }
+        
+        function getErrorTypeName(type) {
+            switch(type) {
+                case 'warning': return 'предупреждений';
+                case 'error': return 'ошибок';
+                case 'critical': return 'критических ошибок';
+                default: return 'ошибок';
+            }
+        }
+        
+        function toggleErrorDetails(type) {
+            const detailsElement = elements[type + 'Details'];
+            
+            if (expandedErrorType === type) {
+                detailsElement.classList.remove('expanded');
+                expandedErrorType = null;
+            } else {
+                document.querySelectorAll('.error-details').forEach(el => {
+                    el.classList.remove('expanded');
+                });
+                detailsElement.classList.add('expanded');
+                expandedErrorType = type;
+            }
+        }
+        
+        // ========== ОСТАЛЬНЫЕ ФУНКЦИИ ==========
+        
+        function displayLogs(logText) {
+            if (!logText) return;
+            
+            const lines = logText.split('\n').filter(line => line.trim());
+            const lastLines = lines.slice(-8);
+            
+            elements.logsContent.innerHTML = '';
+            
+            lastLines.forEach((line, index) => {
+                const logEntry = document.createElement('div');
+                logEntry.className = 'log-entry';
+                logEntry.style.animationDelay = `${index * 0.05}s`;
+                
+                const lineLower = line.toLowerCase();
+                if (lineLower.includes('critical')) {
+                    logEntry.className = 'log-entry critical';
+                } else if (lineLower.includes('error')) {
+                    logEntry.className = 'log-entry error';
+                } else if (lineLower.includes('warning')) {
+                    logEntry.className = 'log-entry warning';
+                }
+                
+                const parts = line.split(' - ');
+                if (parts.length >= 3) {
+                    logEntry.innerHTML = `<span class="log-timestamp">[${parts[0]}]</span>${parts.slice(2).join(' - ')}`;
+                } else {
+                    logEntry.textContent = line.length > 80 ? line.substring(0, 80) + '...' : line;
+                }
+                
+                elements.logsContent.appendChild(logEntry);
+            });
+            
+            elements.logsContent.scrollTop = elements.logsContent.scrollHeight;
+        }
+        
+        function fixDiskPercentage(usage) {
+            if (!usage) return '0';
+            return usage.replace(/%+/g, '').trim();
+        }
+        
+        function updateUI(data) {
+            try {
+                updateCount++;
+                elements.updateCount.textContent = updateCount;
+                
+                elements.statusIndicator.classList.add('loading');
+                
+                setTimeout(() => {
+                    elements.statusIndicator.classList.remove('loading');
+                    
+                    elements.cycleCount.textContent = data.cycle_count || '0';
+                    elements.statusText.textContent = data.bot_status ? 
+                        data.bot_status.charAt(0).toUpperCase() + data.bot_status.slice(1) : 'Неизвестно';
+                    
+                    if (data.system_stats) {
+                        const sys = data.system_stats;
+                        
+                        if (sys.cpu) {
+                            elements.cpuLoad.textContent = `${Math.round(sys.cpu.utilization_percent)}%`;
+                            elements.cpuDetail.textContent = `Нагрузка: ${sys.cpu.load_1}`;
+                        }
+                        
+                        if (sys.memory) {
+                            elements.ramUsage.textContent = `${Math.round(sys.memory.utilization_percent)}%`;
+                            elements.ramDetail.textContent = `${sys.memory.used_mb}/${sys.memory.total_mb} МБ`;
+                        }
+                        
+                        if (sys.disk) {
+                            const fixedUsage = fixDiskPercentage(sys.disk.usage_percent);
+                            elements.diskUsage.textContent = `${fixedUsage}%`;
+                            elements.diskDetail.textContent = `${sys.disk.used || '0'}/${sys.disk.total || '0'} ГБ`;
+                        }
+                    }
+                    
+                    if (data.device_info) {
+                        const device = data.device_info;
+                        elements.deviceName.textContent = device.name || '—';
+                        elements.deviceModel.textContent = device.model || '—';
+                        elements.systemVersion.textContent = device.system_version || '—';
+                        elements.deviceId.textContent = device.identifier_for_vendor ? 
+                            device.identifier_for_vendor.substring(0, 8) + '...' : '—';
+                    }
+                    
+                    if (data.battery_info) {
+                        const battery = data.battery_info;
+                        const level = parseInt(battery.battery_level || 0);
+                        elements.batteryLevel.textContent = `${level}%`;
+                        elements.batteryFill.style.width = `${level}%`;
+                        
+                        const isCharging = battery.is_charging || 
+                            (battery.battery_state_string && 
+                             (battery.battery_state_string.includes('Charging') || 
+                              battery.battery_state_string.includes('Full')));
+                        elements.chargingStatus.textContent = isCharging ? 'Да 🔌' : 'Нет 🔋';
+                        elements.chargingStatus.style.color = isCharging ? 'var(--success)' : 'var(--text-secondary)';
+                    }
+                    
+                    if (data.error_stats) {
+                        displayErrorStats(data.error_stats);
+                    }
+                    
+                    if (data.last_log) {
+                        displayLogs(data.last_log);
+                    }
+                    
+                    if (data.timestamp) {
+                        lastUpdateTime = data.timestamp;
+                        const date = new Date(data.timestamp * 1000);
+                        elements.lastUpdated.textContent = date.toLocaleTimeString('ru-RU', {
+                            hour: '2-digit',
+                            minute: '2-digit'
+                        });
+                    }
+                    
+                    if (data.bot_status === 'running' || data.bot_status === 'cycle_started') {
+                        elements.statusIndicator.className = 'status-indicator status-running';
+                    } else if (data.bot_status === 'stuck' || !data.bot_status) {
+                        elements.statusIndicator.className = 'status-indicator status-stuck';
+                    } else {
+                        elements.statusIndicator.className = 'status-indicator status-stopped';
+                    }
+                    
+                    updateTimeDisplay();
+                    
+                }, 300);
+                
+            } catch (error) {
+                console.error('Ошибка обновления:', error);
+                elements.logsContent.innerHTML = '<div class="log-entry error">❌ Ошибка загрузки данных</div>';
+                elements.statusIndicator.className = 'status-indicator status-stopped';
+                elements.statusText.textContent = 'ОШИБКА';
+            }
+        }
+        
+        async function fetchData() {
+            try {
+                const response = await fetch(JSON_URL + '?t=' + Date.now());
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                updateUI(data);
+                
+            } catch (error) {
+                console.error('Ошибка загрузки:', error);
+                elements.logsContent.innerHTML = '<div class="log-entry error">❌ Ошибка соединения</div>';
+                elements.statusText.textContent = 'ОФФЛАЙН';
+                elements.statusIndicator.className = 'status-indicator status-stopped';
+            }
+        }
+        
+        function refreshData() {
+            fetchData();
+            document.body.style.opacity = '0.95';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 150);
+        }
+        
+        function startAutoRefresh() {
+            stopAutoRefresh();
+            refreshInterval = setInterval(fetchData, REFRESH_INTERVAL);
+        }
+        
+        function stopAutoRefresh() {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+                refreshInterval = null;
+            }
+        }
+        
+        function init() {
+            fetchData();
+            loadRealHistory();
+            
+            if (autoRefresh) {
+                startAutoRefresh();
+            }
+            
+            setupGraphTabs();
+            
+            setInterval(updateTimeDisplay, 1000);
+            
+            document.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A' && !e.target.closest('a') && !e.target.closest('.control-btn')) {
+                    refreshData();
+                }
+            });
+            
+            let startY;
+            document.addEventListener('touchstart', e => {
+                startY = e.touches[0].clientY;
+            });
+            
+            document.addEventListener('touchend', e => {
+                if (!startY) return;
+                const endY = e.changedTouches[0].clientY;
+                const diff = startY - endY;
+                
+                if (diff > 60 && window.scrollY === 0) {
+                    refreshData();
+                }
+                
+                startY = null;
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
 </html>
-
