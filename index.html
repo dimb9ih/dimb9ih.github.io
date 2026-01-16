@@ -6,6 +6,8 @@
     <title>🤖 IFBot Статус</title>
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js Time Scale -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -1163,10 +1165,23 @@
                     return;
                 }
                 
-                const lastUpdate = data.updated ? new Date(data.updated).toLocaleTimeString('ru-RU') : 'неизвестно';
-                elements.graphInfo.textContent = `Данные: ${data.data.length} точек, обновлено: ${lastUpdate}`;
+                // Сортируем данные по времени
+                const sortedData = [...data.data].sort((a, b) => {
+                    const timeA = a.timestamp || a.t || a.time || 0;
+                    const timeB = b.timestamp || b.t || b.time || 0;
+                    return timeA - timeB;
+                });
                 
-                updateRealChart(data.data);
+                const firstTime = sortedData[0].timestamp || sortedData[0].t || sortedData[0].time;
+                const lastTime = sortedData[sortedData.length - 1].timestamp || sortedData[sortedData.length - 1].t || sortedData[sortedData.length - 1].time;
+                
+                const firstDate = new Date(firstTime * 1000);
+                const lastDate = new Date(lastTime * 1000);
+                
+                const timeRange = formatTimeRange(firstDate, lastDate);
+                elements.graphInfo.textContent = `${timeRange} (${sortedData.length} точек)`;
+                
+                updateRealChart(sortedData);
                 
             } catch (error) {
                 console.error('Ошибка загрузки истории:', error);
@@ -1174,213 +1189,284 @@
             }
         }
         
-       function updateRealChart(historyData) {
-    if (!historyData || historyData.length < 2) {
-        console.log('Недостаточно данных для графика');
-        return;
-    }
-    
-    const ctx = document.getElementById('statsChart').getContext('2d');
-    
-    if (historyChart) {
-        historyChart.destroy();
-    }
-    
-    // Обработка временных меток - если t уже timestamp в секундах
-    const labels = historyData.map(item => {
-        // item.t может быть timestamp в секундах (уже умножать не нужно)
-        const timestamp = item.t * 1000; // Конвертируем в миллисекунды
-        const date = new Date(timestamp);
-        
-        // Форматируем время для отображения
-        return date.toLocaleTimeString('ru-RU', { 
-            hour: '2-digit', 
-            minute: '2-digit',
-            hour12: false // 24-часовой формат
-        });
-    });
-    
-    let datasets = [];
-    
-    switch(currentGraphType) {
-        case 'cpu':
-            datasets = [{
-                label: 'Процессор %',
-                data: historyData.map(item => parseFloat(item.cpu) || 0),
-                borderColor: '#FF6B6B',
-                backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                borderWidth: 2,
-                tension: 0.4,
-                fill: true
-            }];
-            break;
+        function formatTimeRange(startDate, endDate) {
+            const formatTime = (date) => {
+                return date.toLocaleTimeString('ru-RU', { 
+                    hour: '2-digit', 
+                    minute: '2-digit',
+                    hour12: false
+                });
+            };
             
-        case 'ram':
-            datasets = [{
-                label: 'Память %',
-                data: historyData.map(item => parseFloat(item.ram) || 0),
-                borderColor: '#4ECDC4',
-                backgroundColor: 'rgba(78, 205, 196, 0.1)',
-                borderWidth: 2,
-                tension: 0.4,
-                fill: true
-            }];
-            break;
+            const formatDate = (date) => {
+                return date.toLocaleDateString('ru-RU', {
+                    day: '2-digit',
+                    month: '2-digit'
+                });
+            };
             
-        case 'errors':
-            datasets = [
-                {
-                    label: 'Ошибки',
-                    data: historyData.map(item => parseInt(item.errors) || 0),
-                    borderColor: '#E74C3C',
-                    backgroundColor: 'rgba(231, 76, 60, 0.1)',
-                    borderWidth: 2,
-                    tension: 0.4,
-                    fill: true
-                },
-                {
-                    label: 'Предупреждения',
-                    data: historyData.map(item => parseInt(item.warnings) || 0),
-                    borderColor: '#F39C12',
-                    backgroundColor: 'rgba(243, 156, 18, 0.1)',
-                    borderWidth: 2,
-                    tension: 0.4,
-                    fill: true
-                }
-            ];
-            break;
-            
-        case 'cycle':
-            datasets = [{
-                label: 'Циклы',
-                data: historyData.map(item => parseInt(item.cycle) || 0),
-                borderColor: '#5B8DEF',
-                backgroundColor: 'rgba(91, 141, 239, 0.1)',
-                borderWidth: 2,
-                tension: 0.4,
-                fill: true
-            }];
-            break;
-    }
-    
-    historyChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: labels,
-            datasets: datasets
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'top',
-                    labels: {
-                        usePointStyle: true,
-                    }
-                },
-                tooltip: {
-                    mode: 'index',
-                    intersect: false,
-                    callbacks: {
-                        title: function(context) {
-                            const index = context[0].dataIndex;
-                            const item = historyData[index];
-                            const timestamp = item.t * 1000;
-                            const date = new Date(timestamp);
-                            return date.toLocaleString('ru-RU', {
-                                hour: '2-digit',
-                                minute: '2-digit',
-                                second: '2-digit',
-                                day: '2-digit',
-                                month: '2-digit',
-                                year: 'numeric',
-                                hour12: false
-                            });
-                        }
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    ticks: {
-                        maxTicksLimit: 8,
-                        callback: function(value, index) {
-                            // Показываем только каждую N-ю метку
-                            if (index % Math.ceil(labels.length / 8) === 0 || index === labels.length - 1) {
-                                return labels[index];
-                            }
-                            return '';
-                        },
-                        maxRotation: 45,
-                        minRotation: 45
-                    },
-                    grid: {
-                        display: true,
-                        color: 'rgba(219, 226, 239, 0.3)'
-                    }
-                },
-                y: {
-                    beginAtZero: true,
-                    grid: {
-                        display: true,
-                        color: 'rgba(219, 226, 239, 0.3)'
-                    },
-                    ticks: {
-                        callback: function(value) {
-                            return value + (currentGraphType === 'cpu' || currentGraphType === 'ram' ? '%' : '');
-                        }
-                    }
-                }
-            },
-            interaction: {
-                intersect: false,
-                mode: 'nearest'
-            },
-            elements: {
-                point: {
-                    radius: 0,
-                    hoverRadius: 6
-                }
+            // Если один день
+            if (startDate.toDateString() === endDate.toDateString()) {
+                return `${formatDate(startDate)} ${formatTime(startDate)} - ${formatTime(endDate)}`;
             }
-        }
-    });
-}
-        async function loadRealHistory() {
-    try {
-        elements.graphInfo.textContent = 'Загрузка данных...';
-        
-        const response = await fetch(HISTORY_URL + '?t=' + Date.now());
-        
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+            
+            return `${formatDate(startDate)} ${formatTime(startDate)} - ${formatDate(endDate)} ${formatTime(endDate)}`;
         }
         
-        const data = await response.json();
-        
-        // Отладочный вывод
-        console.log('Получены данные истории:', {
-            length: data.data?.length,
-            firstItem: data.data?.[0],
-            lastItem: data.data?.[data.data?.length - 1],
-            updated: data.updated
-        });
-        
-        if (!data.data || data.data.length === 0) {
-            elements.graphInfo.textContent = 'Нет данных истории';
-            return;
+        function updateRealChart(historyData) {
+            if (!historyData || historyData.length < 2) {
+                console.log('Недостаточно данных для графика');
+                elements.graphInfo.textContent = 'Недостаточно данных для графика';
+                return;
+            }
+            
+            const ctx = document.getElementById('statsChart').getContext('2d');
+            
+            // Уничтожаем старый график
+            if (historyChart) {
+                historyChart.destroy();
+            }
+            
+            // Подготавливаем данные для графика
+            const timestamps = historyData.map(item => {
+                const timestamp = item.timestamp || item.t || item.time || 0;
+                return timestamp * 1000; // Конвертируем в миллисекунды
+            });
+            
+            let datasets = [];
+            
+            switch(currentGraphType) {
+                case 'cpu':
+                    datasets = [{
+                        label: 'Процессор',
+                        data: historyData.map((item, index) => ({
+                            x: timestamps[index],
+                            y: parseFloat(item.cpu) || 0
+                        })),
+                        borderColor: '#FF6B6B',
+                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 0,
+                        pointHoverRadius: 5
+                    }];
+                    break;
+                    
+                case 'ram':
+                    datasets = [{
+                        label: 'Память',
+                        data: historyData.map((item, index) => ({
+                            x: timestamps[index],
+                            y: parseFloat(item.ram) || 0
+                        })),
+                        borderColor: '#4ECDC4',
+                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 0,
+                        pointHoverRadius: 5
+                    }];
+                    break;
+                    
+                case 'errors':
+                    datasets = [
+                        {
+                            label: 'Ошибки',
+                            data: historyData.map((item, index) => ({
+                                x: timestamps[index],
+                                y: parseInt(item.errors) || 0
+                            })),
+                            borderColor: '#E74C3C',
+                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: false,
+                            pointRadius: 0,
+                            pointHoverRadius: 5
+                        },
+                        {
+                            label: 'Предупреждения',
+                            data: historyData.map((item, index) => ({
+                                x: timestamps[index],
+                                y: parseInt(item.warnings) || 0
+                            })),
+                            borderColor: '#F39C12',
+                            backgroundColor: 'rgba(243, 156, 18, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: false,
+                            pointRadius: 0,
+                            pointHoverRadius: 5
+                        }
+                    ];
+                    break;
+                    
+                case 'cycle':
+                    datasets = [{
+                        label: 'Циклы',
+                        data: historyData.map((item, index) => ({
+                            x: timestamps[index],
+                            y: parseInt(item.cycle) || 0
+                        })),
+                        borderColor: '#5B8DEF',
+                        backgroundColor: 'rgba(91, 141, 239, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 0,
+                        pointHoverRadius: 5
+                    }];
+                    break;
+            }
+            
+            // Создаем график
+            historyChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 500
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                padding: 15,
+                                usePointStyle: true,
+                                pointStyle: 'circle',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                            titleColor: '#2D3748',
+                            bodyColor: '#2D3748',
+                            borderColor: 'rgba(219, 226, 239, 0.8)',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            padding: 12,
+                            callbacks: {
+                                title: function(context) {
+                                    const timestamp = context[0].parsed.x;
+                                    const date = new Date(timestamp);
+                                    
+                                    return date.toLocaleString('ru-RU', {
+                                        hour: '2-digit',
+                                        minute: '2-digit',
+                                        second: '2-digit',
+                                        day: '2-digit',
+                                        month: 'short',
+                                        year: 'numeric',
+                                        hour12: false
+                                    });
+                                },
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const value = context.parsed.y;
+                                    
+                                    if (currentGraphType === 'cpu' || currentGraphType === 'ram') {
+                                        label += value.toFixed(1) + '%';
+                                    } else {
+                                        label += value;
+                                    }
+                                    
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'minute',
+                                displayFormats: {
+                                    millisecond: 'HH:mm:ss',
+                                    second: 'HH:mm:ss',
+                                    minute: 'HH:mm',
+                                    hour: 'HH:mm'
+                                },
+                                tooltipFormat: 'dd.MM.yyyy HH:mm:ss'
+                            },
+                            ticks: {
+                                maxTicksLimit: 10,
+                                maxRotation: 45,
+                                font: {
+                                    size: 10
+                                },
+                                color: '#718096',
+                                autoSkip: true,
+                                autoSkipPadding: 20
+                            },
+                            grid: {
+                                display: true,
+                                color: 'rgba(219, 226, 239, 0.5)',
+                                drawBorder: false
+                            },
+                            title: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                font: {
+                                    size: 10
+                                },
+                                color: '#718096',
+                                callback: function(value) {
+                                    if (currentGraphType === 'cpu' || currentGraphType === 'ram') {
+                                        return value + '%';
+                                    }
+                                    return value;
+                                }
+                            },
+                            grid: {
+                                display: true,
+                                color: 'rgba(219, 226, 239, 0.5)',
+                                drawBorder: false
+                            }
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'nearest'
+                    },
+                    elements: {
+                        line: {
+                            tension: 0.3
+                        }
+                    }
+                }
+            });
         }
         
-        const lastUpdate = data.updated ? new Date(data.updated).toLocaleTimeString('ru-RU') : 'неизвестно';
-        elements.graphInfo.textContent = `Данные: ${data.data.length} точек, обновлено: ${lastUpdate}`;
-        
-        updateRealChart(data.data);
-        
-    } catch (error) {
-        console.error('Ошибка загрузки истории:', error);
-        elements.graphInfo.textContent = 'Ошибка загрузки истории';
-    }
-}
+        function setupGraphTabs() {
+            document.querySelectorAll('.graph-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.graph-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+                    
+                    tab.classList.add('active');
+                    currentGraphType = tab.dataset.graph;
+                    loadRealHistory();
+                });
+            });
+        }
         
         function toggleAutoGraphs() {
             autoGraphsEnabled = !autoGraphsEnabled;
@@ -1708,5 +1794,3 @@
     </script>
 </body>
 </html>
-
-
