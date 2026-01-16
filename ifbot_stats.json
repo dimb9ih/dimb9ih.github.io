@@ -1,6 +1,6 @@
 {
-  "timestamp": 1768567915,
-  "timestamp_human": "2026-01-16 15:51:55",
+  "timestamp": 1768568048,
+  "timestamp_human": "2026-01-16 15:54:08",
   "cycle_count": 1,
   "bot_status": "running",
   "device_info": {
@@ -18,18 +18,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.93",
-      "load_5": "2.75",
-      "load_15": "3.01",
+      "load_1": "3.11",
+      "load_5": "3.10",
+      "load_15": "3.13",
       "cores": 4,
-      "utilization_percent": 73.2
+      "utilization_percent": 77.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 241,
-      "free_mb": 6,
-      "cached_mb": 103,
-      "utilization_percent": 12.0
+      "used_mb": 239,
+      "free_mb": 0,
+      "cached_mb": 130,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -38,9 +38,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768567915,
-    "timestamp_human": "2026-01-16 15:51:55"
+    "timestamp": 1768568048,
+    "timestamp_human": "2026-01-16 15:54:08"
   },
-  "last_log": "2026-01-16 15:46:45 - WARNING - [CYCLE 4] Still on main, trying again\n",
-  "update_time": "2026-01-16 15:51:55"
+  "last_log": "No WARNING/ERROR logs found",
+  "update_time": "2026-01-16 15:54:08"
 }
