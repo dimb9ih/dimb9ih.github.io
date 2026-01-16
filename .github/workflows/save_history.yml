@@ -47,50 +47,50 @@ jobs:
     - name: Create summary.json
       run: |
         echo "Creating summary.json..."
-        python3 << 'EOF'
-import json, glob, os
-from datetime import datetime
-
-files = []
-try:
-    for f in glob.glob('history/ifbot_*.json'):
-        files.append(f)
-except:
-    files = []
-
-files.sort(reverse=True)
-
-data_points = []
-for f in files[:24]:
-    try:
-        with open(f, 'r') as fp:
-            d = json.load(fp)
         
-        ts = d.get('timestamp', 0)
-        if ts > 0:
-            data_points.append({
-                't': ts,
-                'cpu': d.get('system_stats', {}).get('cpu', {}).get('utilization_percent', 0),
-                'ram': d.get('system_stats', {}).get('memory', {}).get('utilization_percent', 0),
-                'errors': d.get('error_stats', {}).get('errors', 0),
-                'warnings': d.get('error_stats', {}).get('warnings', 0),
-                'cycle': d.get('cycle_count', 0),
-                'battery': int(d.get('battery_info', {}).get('battery_level', 0))
-            })
-    except Exception as e:
-        print(f"Error reading {f}: {e}")
-
-data_points.sort(key=lambda x: x['t'])
-
-with open('history/summary.json', 'w') as f:
-    json.dump({
-        'updated': datetime.now().isoformat(),
-        'count': len(data_points),
-        'data': data_points
-    }, f, indent=2)
-
-print(f"Summary.json created with {len(data_points)} data points")
-EOF
+        # Получаем последние 24 файла
+        LATEST_FILES=$(ls -1t history/ifbot_*.json 2>/dev/null | head -24)
+        
+        # Начинаем формировать JSON
+        echo '{"updated":"'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'","count":0,"data":[' > history/summary.json
+        
+        COUNT=0
+        FIRST=1
+        
+        # Обрабатываем файлы в обратном порядке (от старых к новым)
+        for file in $(echo "$LATEST_FILES" | tac); do
+          if [ -f "$file" ]; then
+            # Извлекаем данные с помощью jq
+            TIMESTAMP=$(jq -r '.timestamp // 0' "$file" 2>/dev/null || echo "0")
+            CPU=$(jq -r '.system_stats.cpu.utilization_percent // 0' "$file" 2>/dev/null || echo "0")
+            RAM=$(jq -r '.system_stats.memory.utilization_percent // 0' "$file" 2>/dev/null || echo "0")
+            ERRORS=$(jq -r '.error_stats.errors // 0' "$file" 2>/dev/null || echo "0")
+            WARNINGS=$(jq -r '.error_stats.warnings // 0' "$file" 2>/dev/null || echo "0")
+            CYCLE=$(jq -r '.cycle_count // 0' "$file" 2>/dev/null || echo "0")
+            BATTERY=$(jq -r '.battery_info.battery_level // 0' "$file" 2>/dev/null || echo "0")
+            
+            # Преобразуем battery в целое число
+            BATTERY_INT=$(printf "%.0f" "$BATTERY" 2>/dev/null || echo "0")
+            
+            if [ "$TIMESTAMP" != "0" ]; then
+              if [ "$FIRST" -eq 1 ]; then
+                FIRST=0
+              else
+                echo -n "," >> history/summary.json
+              fi
+              
+              echo -n '{"t":'$TIMESTAMP',"cpu":'$CPU',"ram":'$RAM',"errors":'$ERRORS',"warnings":'$WARNINGS',"cycle":'$CYCLE',"battery":'$BATTERY_INT'}' >> history/summary.json
+              COUNT=$((COUNT + 1))
+            fi
+          fi
+        done
+        
+        echo ']}' >> history/summary.json
+        
+        # Обновляем count в JSON
+        jq --arg count "$COUNT" '.count = ($count|tonumber)' history/summary.json > history/summary.tmp && mv history/summary.tmp history/summary.json
+        
+        echo "Summary.json created with $COUNT data points"
         
     - name: Commit and push changes
       run: |
