@@ -2,41 +2,184 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFBot Status Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>🤖 IFBot Status</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
         }
         
         body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
             min-height: 100vh;
-            padding: 20px;
+            padding: 16px;
+            -webkit-font-smoothing: antialiased;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 500px;
             margin: 0 auto;
+            padding-bottom: 80px;
         }
         
+        /* Заголовок */
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 20px 16px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--primary), #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .status-running .status-dot { background: var(--success); box-shadow: 0 0 10px var(--success); }
+        .status-stuck .status-dot { background: var(--warning); box-shadow: 0 0 10px var(--warning); animation: pulse 1s infinite; }
+        .status-stopped .status-dot { background: var(--danger); box-shadow: 0 0 10px var(--danger); }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Основная статистика */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s ease;
+        }
+        
+        .stat-card:active {
+            transform: scale(0.98);
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .stat-value {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .battery-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .battery {
+            width: 48px;
+            height: 24px;
+            border: 2px solid var(--primary);
+            border-radius: 6px;
+            position: relative;
+            background: rgba(99, 102, 241, 0.1);
+            overflow: hidden;
+        }
+        
+        .battery::after {
+            content: '';
+            position: absolute;
+            right: -4px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 10px;
+            background: var(--primary);
+            border-radius: 0 2px 2px 0;
+        }
+        
+        .battery-level {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), #8b5cf6);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        /* Оверлей "ЗАВИС" */
         .stuck-overlay {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 1000;
             pointer-events: none;
             opacity: 0;
-            transition: opacity 0.5s ease;
+            transition: opacity 0.3s ease;
+            background: rgba(15, 23, 42, 0.95);
         }
         
         .stuck-overlay.active {
@@ -44,394 +187,333 @@
         }
         
         .stuck-text {
-            font-size: 8rem;
-            font-weight: bold;
-            color: rgba(255, 0, 0, 0.2);
+            font-size: 48px;
+            font-weight: 900;
+            color: rgba(239, 68, 68, 0.15);
             text-transform: uppercase;
-            letter-spacing: 20px;
-            transform: rotate(-15deg);
-            text-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+            letter-spacing: 8px;
+            transform: rotate(-10deg);
+            text-shadow: 0 0 30px rgba(239, 68, 68, 0.3);
         }
         
-        header {
-            text-align: center;
-            margin-bottom: 40px;
+        @media (max-width: 380px) {
+            .stuck-text {
+                font-size: 36px;
+                letter-spacing: 6px;
+            }
+        }
+        
+        /* Информация об устройстве */
+        .device-card {
+            background: var(--card-bg);
+            border-radius: 16px;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
         }
         
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .subtitle {
-            color: #a0a0c0;
-            font-size: 1.1rem;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .stat-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.1);
-        }
-        
-        .stat-label {
-            font-size: 0.9rem;
-            color: #a0a0c0;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #fff;
-        }
-        
-        .battery-level {
+        .device-card h3 {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: var(--primary);
             display: flex;
             align-items: center;
-            gap: 15px;
-        }
-        
-        .battery-icon {
-            width: 60px;
-            height: 30px;
-            border: 2px solid #00dbde;
-            border-radius: 6px;
-            position: relative;
-            background: rgba(0, 219, 222, 0.1);
-            overflow: hidden;
-        }
-        
-        .battery-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00dbde, #0099ff);
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-        
-        .charging {
-            color: #00ff00;
-        }
-        
-        .not-charging {
-            color: #ff4444;
-        }
-        
-        .device-info {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            backdrop-filter: blur(10px);
+            gap: 8px;
         }
         
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
         }
         
         .info-item {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
         
         .info-label {
-            color: #a0a0c0;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
         }
         
         .info-value {
-            color: #fff;
+            font-size: 14px;
             font-weight: 500;
             word-break: break-all;
         }
         
-        .logs-container {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            padding: 25px;
-            margin-top: 20px;
-            backdrop-filter: blur(10px);
-            max-height: 400px;
-            overflow-y: auto;
+        /* Логи */
+        .logs-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            max-height: 300px;
+            display: flex;
+            flex-direction: column;
         }
         
-        .logs-title {
-            font-size: 1.1rem;
-            color: #00dbde;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        .logs-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .logs-header h3 {
+            font-size: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logs-container {
+            flex: 1;
+            overflow-y: auto;
+            font-family: 'SF Mono', 'Roboto Mono', monospace;
+            font-size: 12px;
+            line-height: 1.4;
         }
         
         .log-entry {
-            font-family: 'Courier New', monospace;
-            font-size: 0.85rem;
-            color: #ddd;
-            margin-bottom: 8px;
             padding: 8px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text);
         }
         
-        .timestamp {
-            color: #00dbde;
-            font-weight: bold;
+        .log-timestamp {
+            color: var(--primary);
+            font-weight: 500;
+            margin-right: 8px;
         }
         
-        .status-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-left: 20px;
-        }
-        
-        .status-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        
-        .status-running .status-dot {
-            background: #00ff00;
-            box-shadow: 0 0 10px #00ff00;
-        }
-        
-        .status-stuck .status-dot {
-            background: #ff9900;
-            box-shadow: 0 0 10px #ff9900;
-            animation: stuck-pulse 1s infinite;
-        }
-        
-        .status-stopped .status-dot {
-            background: #ff4444;
-            box-shadow: 0 0 10px #ff4444;
-        }
-        
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-        
-        @keyframes stuck-pulse {
-            0% { opacity: 0.3; }
-            50% { opacity: 1; }
-            100% { opacity: 0.3; }
-        }
-        
+        /* Время обновления */
         .update-info {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
             text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
+        }
+        
+        .update-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .update-row:last-child {
+            margin-bottom: 0;
         }
         
         .time-since {
-            font-weight: bold;
-            color: #ff9900;
-            font-size: 1.1rem;
+            color: var(--warning);
+            font-weight: 700;
+            font-size: 18px;
         }
         
+        /* Кнопки управления */
         .controls {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 16px;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            z-index: 100;
         }
         
         .btn {
-            padding: 12px 25px;
+            padding: 14px;
             border: none;
-            border-radius: 8px;
-            background: linear-gradient(90deg, #00dbde, #0099ff);
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
+            font-weight: 600;
+            font-size: 14px;
             cursor: pointer;
-            font-weight: bold;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 219, 222, 0.3);
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
         
         .btn:active {
-            transform: translateY(0);
+            transform: scale(0.98);
+            opacity: 0.9;
         }
         
-        .phone-mockup {
-            width: 300px;
-            height: 600px;
-            background: #222;
-            border-radius: 40px;
-            margin: 0 auto 40px;
-            position: relative;
-            border: 8px solid #333;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        .btn-secondary {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
         }
         
-        .phone-screen {
-            width: calc(100% - 40px);
-            height: calc(100% - 40px);
-            background: #111;
-            border-radius: 20px;
-            margin: 20px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .screen-content {
-            padding: 20px;
-            height: 100%;
-            overflow-y: auto;
-        }
-        
-        @media (max-width: 768px) {
-            .stuck-text {
-                font-size: 4rem;
-                letter-spacing: 10px;
-            }
-            
-            .phone-mockup {
-                width: 250px;
-                height: 500px;
+        /* Адаптация для очень маленьких экранов */
+        @media (max-width: 360px) {
+            .container {
+                padding-left: 12px;
+                padding-right: 12px;
             }
             
             .stats-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+        
+        /* Скроллбар */
+        .logs-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .logs-container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+        }
+        
+        .logs-container::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 3px;
         }
     </style>
 </head>
 <body>
+    <!-- Оверлей "ЗАВИС" (показывается если данные старше 30 минут) -->
     <div class="stuck-overlay" id="stuckOverlay">
         <div class="stuck-text">ЗАВИС</div>
     </div>
     
     <div class="container">
-        <header>
-            <h1>🤖 IFBot Status Monitor</h1>
-            <p class="subtitle">Real-time monitoring of Iron Force bot on iOS device</p>
+        <!-- Заголовок и статус -->
+        <div class="header">
+            <h1>🤖 IFBot Status</h1>
+            <p>Мониторинг бота для Iron Force</p>
             <div class="status-indicator" id="statusIndicator">
                 <div class="status-dot"></div>
-                <span id="status-text">LOADING...</span>
+                <span id="status-text">Загрузка...</span>
             </div>
-        </header>
+        </div>
         
-        <div class="phone-mockup">
-            <div class="phone-screen">
-                <div class="screen-content">
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-label">Current Cycle</div>
-                            <div class="stat-value" id="cycle-count">0</div>
-                        </div>
-                        
-                        <div class="stat-card">
-                            <div class="stat-label">Battery Level</div>
-                            <div class="battery-level">
-                                <div class="battery-icon">
-                                    <div class="battery-fill" id="battery-fill" style="width: 0%"></div>
-                                </div>
-                                <span class="stat-value" id="battery-level">0%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="stat-card">
-                            <div class="stat-label">Charging Status</div>
-                            <div class="stat-value" id="charging-status">Unknown</div>
-                        </div>
-                        
-                        <div class="stat-card">
-                            <div class="stat-label">Device Name</div>
-                            <div class="stat-value" id="device-name">Unknown</div>
-                        </div>
+        <!-- Основная статистика -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">🔁 Цикл</div>
+                <div class="stat-value" id="cycle-count">0</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">🔋 Батарея</div>
+                <div class="battery-container">
+                    <div class="battery">
+                        <div class="battery-level" id="battery-fill" style="width: 0%"></div>
                     </div>
+                    <span class="stat-value" id="battery-level">0%</span>
                 </div>
             </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">⚡ Зарядка</div>
+                <div class="stat-value" id="charging-status">?</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">📱 Устройство</div>
+                <div class="stat-value" id="device-name">—</div>
+            </div>
         </div>
         
-        <div class="update-info">
-            <div>Last update: <span id="last-updated">Never</span></div>
-            <div>Time since update: <span class="time-since" id="time-since">0s</span></div>
-            <div>Update count: <span id="update-count">0</span></div>
-        </div>
-        
-        <div class="device-info">
-            <h3>📱 Device Information</h3>
+        <!-- Информация об устройстве -->
+        <div class="device-card">
+            <h3>📊 Информация об устройстве</h3>
             <div class="info-grid">
                 <div class="info-item">
-                    <div class="info-label">Device Model</div>
-                    <div class="info-value" id="device-model">Unknown</div>
+                    <div class="info-label">Модель</div>
+                    <div class="info-value" id="device-model">—</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">iOS Version</div>
-                    <div class="info-value" id="system-version">Unknown</div>
+                    <div class="info-label">iOS</div>
+                    <div class="info-value" id="system-version">—</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">Device ID</div>
-                    <div class="info-value" id="device-id">Unknown</div>
+                    <div class="info-label">ID устройства</div>
+                    <div class="info-value" id="device-id">—</div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">Vendor ID</div>
-                    <div class="info-value" id="vendor-id">Unknown</div>
+                    <div class="info-value" id="vendor-id">—</div>
                 </div>
             </div>
         </div>
         
-        <div class="logs-container">
-            <div class="logs-title">Recent Logs (Last 30 lines)</div>
-            <div id="logs-content">
-                <div class="log-entry">Waiting for bot data...</div>
+        <!-- Время обновления -->
+        <div class="update-info">
+            <div class="update-row">
+                <span>Последнее обновление:</span>
+                <span id="last-updated">никогда</span>
+            </div>
+            <div class="update-row">
+                <span>Прошло времени:</span>
+                <span class="time-since" id="time-since">0с</span>
             </div>
         </div>
         
-        <div class="controls">
-            <button class="btn" onclick="refreshData()">🔄 Refresh Data</button>
-            <button class="btn" onclick="toggleAutoRefresh()">⏸️ Auto-refresh: ON</button>
+        <!-- Логи -->
+        <div class="logs-card">
+            <div class="logs-header">
+                <h3>📝 Последние логи</h3>
+                <span id="update-count">0</span>
+            </div>
+            <div class="logs-container" id="logs-content">
+                <div class="log-entry">Ожидание данных от бота...</div>
+            </div>
         </div>
+    </div>
+    
+    <!-- Кнопки управления -->
+    <div class="controls">
+        <button class="btn" onclick="refreshData()">
+            <span>🔄</span> Обновить
+        </button>
+        <button class="btn btn-secondary" onclick="toggleAutoRefresh()" id="autoRefreshBtn">
+            <span>⏸️</span> Авто: ВКЛ
+        </button>
     </div>
 
     <script>
-        // Configuration - ВАЖНО: замените USERNAME на свой GitHub username
-        const GITHUB_USERNAME = 'dimb9ih'; // Например: 'johnsmith'
-        const JSON_URL = `https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json`;
-        const REFRESH_INTERVAL = 30000; // 30 seconds
-        const STUCK_THRESHOLD = 30 * 60; // 30 minutes in seconds
+        // Конфигурация
+        const JSON_URL = 'https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json';
+        const REFRESH_INTERVAL = 30000; // 30 секунд
+        const STUCK_THRESHOLD = 30 * 60; // 30 минут в секундах
         
         let autoRefresh = true;
         let lastUpdateTime = null;
         let updateCount = 0;
+        let refreshInterval = null;
         
-        // DOM Elements
+        // DOM элементы
         const elements = {
             cycleCount: document.getElementById('cycle-count'),
             batteryLevel: document.getElementById('battery-level'),
@@ -448,28 +530,21 @@
             logsContent: document.getElementById('logs-content'),
             timeSince: document.getElementById('time-since'),
             updateCount: document.getElementById('update-count'),
-            stuckOverlay: document.getElementById('stuckOverlay')
+            stuckOverlay: document.getElementById('stuckOverlay'),
+            autoRefreshBtn: document.getElementById('autoRefreshBtn')
         };
         
-        // Format time difference
+        // Форматирование времени
         function formatTimeDiff(seconds) {
-            if (seconds < 60) {
-                return `${Math.floor(seconds)}s`;
-            } else if (seconds < 3600) {
-                const minutes = Math.floor(seconds / 60);
-                const secs = Math.floor(seconds % 60);
-                return `${minutes}m ${secs}s`;
-            } else {
-                const hours = Math.floor(seconds / 3600);
-                const minutes = Math.floor((seconds % 3600) / 60);
-                return `${hours}h ${minutes}m`;
-            }
+            if (seconds < 60) return `${seconds}с`;
+            if (seconds < 3600) return `${Math.floor(seconds / 60)}м`;
+            return `${Math.floor(seconds / 3600)}ч`;
         }
         
-        // Update time display
+        // Обновление отображения времени
         function updateTimeDisplay() {
             if (!lastUpdateTime) {
-                elements.timeSince.textContent = 'Never';
+                elements.timeSince.textContent = '0с';
                 return;
             }
             
@@ -478,88 +553,92 @@
             
             elements.timeSince.textContent = formatTimeDiff(diff);
             
-            // Check if bot is stuck
+            // Проверка на "ЗАВИС"
             if (diff > STUCK_THRESHOLD) {
                 elements.stuckOverlay.classList.add('active');
                 elements.statusIndicator.className = 'status-indicator status-stuck';
-                elements.statusText.textContent = 'STUCK';
+                elements.statusText.textContent = 'ЗАВИС';
             } else {
                 elements.stuckOverlay.classList.remove('active');
             }
         }
         
-        // Parse and display logs
+        // Отображение логов
         function displayLogs(logText) {
             if (!logText) return;
             
-            const lines = logText.split('\n');
+            const lines = logText.split('\n').filter(line => line.trim());
             elements.logsContent.innerHTML = '';
             
-            lines
-                .filter(line => line.trim())
-                .slice(-20) // Last 20 lines
-                .forEach(line => {
-                    const logEntry = document.createElement('div');
-                    logEntry.className = 'log-entry';
-                    
-                    // Try to parse timestamp
-                    const parts = line.split(' - ');
-                    if (parts.length >= 3) {
-                        logEntry.innerHTML = `<span class="timestamp">[${parts[0]}]</span> ${parts.slice(2).join(' - ')}`;
-                    } else {
-                        logEntry.textContent = line;
-                    }
-                    
-                    elements.logsContent.appendChild(logEntry);
-                });
+            lines.slice(-15).forEach(line => {
+                const logEntry = document.createElement('div');
+                logEntry.className = 'log-entry';
+                
+                // Парсинг временной метки
+                const parts = line.split(' - ');
+                if (parts.length >= 3) {
+                    logEntry.innerHTML = `<span class="log-timestamp">[${parts[0]}]</span>${parts.slice(2).join(' - ')}`;
+                } else {
+                    logEntry.textContent = line.length > 80 ? line.substring(0, 80) + '...' : line;
+                }
+                
+                elements.logsContent.appendChild(logEntry);
+            });
+            
+            // Автоскролл к последнему логу
+            elements.logsContent.scrollTop = elements.logsContent.scrollHeight;
         }
         
-        // Update UI with JSON data
+        // Обновление интерфейса данными
         function updateUI(data) {
             try {
                 updateCount++;
                 elements.updateCount.textContent = updateCount;
                 
-                // Update basic stats
+                // Основная статистика
                 elements.cycleCount.textContent = data.cycle_count || '0';
-                elements.statusText.textContent = data.bot_status || 'Unknown';
+                elements.statusText.textContent = data.bot_status || 'Нет данных';
                 
-                // Update device info
+                // Информация об устройстве
                 if (data.device_info) {
-                    elements.deviceName.textContent = data.device_info.name || 'Unknown';
-                    elements.deviceModel.textContent = data.device_info.model || 'Unknown';
-                    elements.systemVersion.textContent = data.device_info.system_version || 'Unknown';
-                    elements.deviceId.textContent = data.device_info.identifier_for_vendor ? 
-                        data.device_info.identifier_for_vendor.slice(0, 8) + '...' : 'Unknown';
-                    elements.vendorId.textContent = data.device_info.identifier_for_vendor || 'Unknown';
+                    const device = data.device_info;
+                    elements.deviceName.textContent = device.name || '—';
+                    elements.deviceModel.textContent = device.model || '—';
+                    elements.systemVersion.textContent = device.system_version || '—';
+                    elements.deviceId.textContent = device.identifier_for_vendor ? 
+                        device.identifier_for_vendor.substring(0, 8) + '...' : '—';
+                    elements.vendorId.textContent = device.identifier_for_vendor || '—';
                 }
                 
-                // Update battery info
+                // Батарея
                 if (data.battery_info) {
-                    const batteryLevel = parseInt(data.battery_info.battery_level || 0);
-                    elements.batteryLevel.textContent = `${batteryLevel}%`;
-                    elements.batteryFill.style.width = `${batteryLevel}%`;
+                    const battery = data.battery_info;
+                    const level = parseInt(battery.battery_level || 0);
+                    elements.batteryLevel.textContent = `${level}%`;
+                    elements.batteryFill.style.width = `${level}%`;
                     
-                    const isCharging = data.battery_info.is_charging || 
-                                      (data.battery_info.battery_state_string && 
-                                       data.battery_info.battery_state_string.includes('Charging'));
-                    elements.chargingStatus.textContent = isCharging ? 'Charging 🔌' : 'Not Charging 🔋';
-                    elements.chargingStatus.className = isCharging ? 'stat-value charging' : 'stat-value not-charging';
+                    const isCharging = battery.is_charging || 
+                        (battery.battery_state_string && battery.battery_state_string.includes('Charging'));
+                    elements.chargingStatus.textContent = isCharging ? 'Да 🔌' : 'Нет 🔋';
+                    elements.chargingStatus.style.color = isCharging ? '#10b981' : '#94a3b8';
                 }
                 
-                // Update logs
+                // Логи
                 if (data.last_log) {
                     displayLogs(data.last_log);
                 }
                 
-                // Update timestamps
+                // Временные метки
                 if (data.timestamp) {
                     lastUpdateTime = data.timestamp;
                     const date = new Date(data.timestamp * 1000);
-                    elements.lastUpdated.textContent = date.toLocaleString();
+                    elements.lastUpdated.textContent = date.toLocaleTimeString('ru-RU', {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
                 }
                 
-                // Update status indicator
+                // Статус индикатора
                 if (data.bot_status === 'running' || data.bot_status === 'cycle_started') {
                     elements.statusIndicator.className = 'status-indicator status-running';
                 } else if (!data.bot_status || data.bot_status === 'stuck') {
@@ -571,69 +650,59 @@
                 updateTimeDisplay();
                 
             } catch (error) {
-                console.error('Error updating UI:', error);
-                elements.logsContent.innerHTML = `<div class="log-entry">❌ Error loading data: ${error.message}</div>`;
+                console.error('Ошибка обновления интерфейса:', error);
+                elements.logsContent.innerHTML = `<div class="log-entry">❌ Ошибка загрузки данных</div>`;
                 elements.statusIndicator.className = 'status-indicator status-stopped';
-                elements.statusText.textContent = 'ERROR';
+                elements.statusText.textContent = 'ОШИБКА';
             }
         }
         
-        // Fetch JSON data from GitHub
+        // Загрузка данных
         async function fetchData() {
             try {
-                const url = `${JSON_URL}?t=${Date.now()}`;
-                const response = await fetch(url);
+                const response = await fetch(`${JSON_URL}?t=${Date.now()}`);
                 
                 if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    throw new Error(`Ошибка ${response.status}`);
                 }
                 
                 const data = await response.json();
                 updateUI(data);
                 
             } catch (error) {
-                console.error('Error fetching data:', error);
-                elements.logsContent.innerHTML = `<div class="log-entry">❌ Cannot fetch data: ${error.message}</div>`;
-                elements.statusText.textContent = 'NO DATA';
+                console.error('Ошибка загрузки:', error);
+                elements.logsContent.innerHTML = `<div class="log-entry">❌ Нет связи с сервером</div>`;
+                elements.statusText.textContent = 'НЕТ ДАННЫХ';
                 elements.statusIndicator.className = 'status-indicator status-stopped';
             }
         }
         
-        // Toggle auto-refresh
+        // Переключение автообновления
         function toggleAutoRefresh() {
             autoRefresh = !autoRefresh;
-            const button = document.querySelector('.btn:nth-child(2)');
-            button.textContent = autoRefresh ? '⏸️ Auto-refresh: ON' : '▶️ Auto-refresh: OFF';
             
             if (autoRefresh) {
+                elements.autoRefreshBtn.innerHTML = '<span>⏸️</span> Авто: ВКЛ';
                 startAutoRefresh();
             } else {
+                elements.autoRefreshBtn.innerHTML = '<span>▶️</span> Авто: ВЫКЛ';
                 stopAutoRefresh();
             }
         }
         
-        // Manual refresh
+        // Ручное обновление
         function refreshData() {
             fetchData();
-            
-            // Show refresh animation
-            const refreshBtn = document.querySelector('.btn:nth-child(1)');
-            refreshBtn.textContent = '🔄 Refreshing...';
-            setTimeout(() => {
-                refreshBtn.textContent = '🔄 Refresh Data';
-            }, 1000);
+            // Анимация нажатия кнопки
+            const btn = document.querySelector('.btn');
+            btn.style.transform = 'scale(0.95)';
+            setTimeout(() => btn.style.transform = '', 200);
         }
         
-        // Auto-refresh control
-        let refreshInterval;
-        let timeUpdateInterval;
-        
+        // Управление автообновлением
         function startAutoRefresh() {
-            if (refreshInterval) clearInterval(refreshInterval);
+            stopAutoRefresh();
             refreshInterval = setInterval(fetchData, REFRESH_INTERVAL);
-            
-            if (timeUpdateInterval) clearInterval(timeUpdateInterval);
-            timeUpdateInterval = setInterval(updateTimeDisplay, 1000);
         }
         
         function stopAutoRefresh() {
@@ -641,38 +710,43 @@
                 clearInterval(refreshInterval);
                 refreshInterval = null;
             }
-            if (timeUpdateInterval) {
-                clearInterval(timeUpdateInterval);
-                timeUpdateInterval = null;
-            }
         }
         
-        // Initialize
+        // Инициализация
         function init() {
-            // Replace USERNAME in the URL
-            const urlUsername = GITHUB_USERNAME === 'ВАШ_GITHUB_USERNAME' ? 
-                window.location.pathname.split('/')[1] : GITHUB_USERNAME;
-            
-            if (urlUsername && GITHUB_USERNAME === 'ВАШ_GITHUB_USERNAME') {
-                window.GITHUB_USERNAME = urlUsername;
-                window.JSON_URL = `https://raw.githubusercontent.com/${urlUsername}/ifbot-stats/main/ifbot_stats.json`;
-            }
-            
-            // Fetch data immediately
+            // Первая загрузка
             fetchData();
             
-            // Start auto-refresh if enabled
+            // Запуск автообновления
             if (autoRefresh) {
                 startAutoRefresh();
             }
             
-            // Update time display every second
+            // Обновление времени каждую секунду
             setInterval(updateTimeDisplay, 1000);
+            
+            // Добавление свайпов для удобства на мобильных
+            let startY;
+            document.addEventListener('touchstart', e => {
+                startY = e.touches[0].clientY;
+            });
+            
+            document.addEventListener('touchend', e => {
+                if (!startY) return;
+                const endY = e.changedTouches[0].clientY;
+                const diff = startY - endY;
+                
+                // Свайп вниз для обновления (если проскроллен вверх)
+                if (diff > 100 && window.scrollY === 0) {
+                    refreshData();
+                }
+                
+                startY = null;
+            });
         }
         
-        // Start the application
-        init();
+        // Запуск приложения
+        document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
 </html>
-
