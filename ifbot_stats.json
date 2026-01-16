@@ -1,12 +1,12 @@
 {
-  "timestamp": 1768570319,
-  "timestamp_human": "2026-01-16 16:31:59",
-  "cycle_count": 1,
+  "timestamp": 1768570743,
+  "timestamp_human": "2026-01-16 16:39:03",
+  "cycle_count": 2,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 11 (предупреждений: 10, ошибок: 1), последняя: 1м назад",
+  "error_summary": "⚠️ Ошибок: 10 (предупреждений: 9, ошибок: 1), последняя: 8м назад",
   "error_stats": {
-    "total_errors": 11,
-    "warnings": 10,
+    "total_errors": 10,
+    "warnings": 9,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.02",
-      "load_5": "2.69",
-      "load_15": "2.83",
+      "load_1": "2.51",
+      "load_5": "2.37",
+      "load_15": "2.60",
       "cores": 4,
-      "utilization_percent": 75.5
+      "utilization_percent": 62.7
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 243,
+      "used_mb": 244,
       "free_mb": 5,
-      "cached_mb": 110,
+      "cached_mb": 103,
       "utilization_percent": 12.2
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "42%",
       "mount": "375935"
     },
-    "timestamp": 1768570319,
-    "timestamp_human": "2026-01-16 16:31:59"
+    "timestamp": 1768570743,
+    "timestamp_human": "2026-01-16 16:39:03"
   },
-  "last_log": "2026-01-16 16:30:26 - WARNING - [CYCLE 1] Loading color not detected, but continuing...\n",
-  "update_time": "2026-01-16 16:31:59"
+  "last_log": "No WARNING/ERROR logs found",
+  "update_time": "2026-01-16 16:39:03"
 }
