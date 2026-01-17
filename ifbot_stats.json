@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768640772,
-  "timestamp_human": "2026-01-17 12:06:12",
-  "cycle_count": 191,
+  "timestamp": 1768641347,
+  "timestamp_human": "2026-01-17 12:15:47",
+  "cycle_count": 194,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,17 +28,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.42",
-      "load_5": "3.09",
-      "load_15": "2.76",
+      "load_1": "2.49",
+      "load_5": "2.47",
+      "load_15": "2.54",
       "cores": 4,
-      "utilization_percent": 110.5
+      "utilization_percent": 62.3
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 226,
-      "free_mb": 33,
-      "cached_mb": 110,
+      "free_mb": 32,
+      "cached_mb": 108,
       "utilization_percent": 11.3
     },
     "disk": {
@@ -48,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768640772,
-    "timestamp_human": "2026-01-17 12:06:12"
+    "timestamp": 1768641347,
+    "timestamp_human": "2026-01-17 12:15:47"
   },
-  "last_log": "2026-01-17 12:03:40 - INFO - [CYCLE 190] Invite #9 sent (48s)\n2026-01-17 12:03:45 - INFO - [CYCLE 190] Invite #10 sent (54s)\n2026-01-17 12:03:51 - DEBUG - [CYCLE 190] Checking for attention popup (invite #10)\n2026-01-17 12:03:51 - INFO - [CYCLE 190] Invite #11 sent (60s)\n2026-01-17 12:03:57 - INFO - [CYCLE 190] Invite #12 sent (66s)\n2026-01-17 12:04:03 - INFO - [CYCLE 190] Invite #13 sent (71s)\n2026-01-17 12:04:09 - INFO - [CYCLE 190] Invite #14 sent (77s)\n2026-01-17 12:04:15 - INFO - [CYCLE 190] Invite #15 sent (83s)\n2026-01-17 12:04:21 - DEBUG - [CYCLE 190] Checking for attention popup (invite #15)\n2026-01-17 12:04:21 - INFO - [CYCLE 190] Invite #16 sent (89s)\n2026-01-17 12:04:27 - INFO - [CYCLE 190] Invite #17 sent (95s)\n2026-01-17 12:04:33 - INFO - [CYCLE 190] Invite #18 sent (101s)\n2026-01-17 12:04:38 - INFO - [CYCLE 190] Invite #19 sent (107s)\n2026-01-17 12:04:44 - INFO - [CYCLE 190] Invite #20 sent (113s)\n2026-01-17 12:04:50 - DEBUG - [CYCLE 190] Checking for attention popup (invite #20)\n2026-01-17 12:04:50 - INFO - [CYCLE 190] Invite #21 sent (119s)\n2026-01-17 12:04:56 - INFO - [CYCLE 190] Invite #22 sent (125s)\n2026-01-17 12:05:02 - INFO - [CYCLE 190] Invite #23 sent (130s)\n2026-01-17 12:05:08 - INFO - [CYCLE 190] Invite #24 sent (136s)\n2026-01-17 12:05:14 - INFO - [CYCLE 190] Invite #25 sent (142s)\n2026-01-17 12:05:20 - DEBUG - [CYCLE 190] Checking for attention popup (invite #25)\n2026-01-17 12:05:20 - INFO - [CYCLE 190] Invite #26 sent (148s)\n2026-01-17 12:05:26 - INFO - [CYCLE 190] Invite #27 sent (154s)\n2026-01-17 12:05:32 - INFO - [CYCLE 190] Invite #28 sent (160s)\n2026-01-17 12:05:37 - INFO - [CYCLE 190] Someone joined the team!\n2026-01-17 12:05:37 - INFO - [CYCLE 190] Step 7/7: Starting game...\n2026-01-17 12:05:39 - INFO - [CYCLE 190] Checking for loading color at (200, 100)...\n2026-01-17 12:05:49 - INFO - [CYCLE 190] Loading color detected! Color: #A9D917\n2026-01-17 12:05:49 - INFO - [CYCLE 190] Cycle #190 completed successfully - loading color detected\n2026-01-17 12:06:10 - INFO - [CYCLE 190] Connected to ZXTouch\n",
-  "update_time": "2026-01-17 12:06:12"
+  "last_log": "2026-01-17 12:13:58 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 15s\n2026-01-17 12:13:59 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 15s\n2026-01-17 12:14:03 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 20s\n2026-01-17 12:14:04 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 20s\n2026-01-17 12:14:08 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 25s\n2026-01-17 12:14:13 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 30s\n2026-01-17 12:14:18 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 35s\n2026-01-17 12:14:19 - DEBUG - [CYCLE 193] Current: loading, waiting for main... 35s\n2026-01-17 12:14:21 - INFO - [CYCLE 193] On main screen\n2026-01-17 12:14:21 - INFO - [CYCLE 193] Step 2/7: Transition to arsenal...\n2026-01-17 12:14:21 - INFO - [CYCLE 193] Quick transition: Кнопка Далее\n2026-01-17 12:14:24 - INFO - [CYCLE 193] Step 3/7: Transition to battle...\n2026-01-17 12:14:24 - INFO - [CYCLE 193] Quick transition: Кнопка Битва\n2026-01-17 12:14:26 - INFO - [CYCLE 193] Step 4/7: Transition to team...\n2026-01-17 12:14:28 - INFO - [CYCLE 193] Waiting for team screen...\n2026-01-17 12:14:29 - INFO - [CYCLE 193] Found attention popup\n2026-01-17 12:14:31 - INFO - [CYCLE 193] Found team screen button\n2026-01-17 12:14:31 - INFO - [CYCLE 193] Step 5/7: Pressing team screen button...\n2026-01-17 12:14:32 - INFO - [CYCLE 193] Step 6/7: Sending invitations...\n2026-01-17 12:14:32 - INFO - [CYCLE 193] Invite #1 sent (0s)\n2026-01-17 12:14:38 - INFO - [CYCLE 193] Invite #2 sent (5s)\n2026-01-17 12:14:44 - INFO - [CYCLE 193] Found ВНИМАНИЕ popup\n2026-01-17 12:14:46 - INFO - [CYCLE 193] Invite #3 sent (13s)\n2026-01-17 12:14:52 - INFO - [CYCLE 193] Invite #4 sent (19s)\n2026-01-17 12:14:57 - INFO - [CYCLE 193] Someone joined the team!\n2026-01-17 12:14:57 - INFO - [CYCLE 193] Step 7/7: Starting game...\n2026-01-17 12:14:59 - INFO - [CYCLE 193] Checking for loading color at (200, 100)...\n2026-01-17 12:15:24 - INFO - [CYCLE 193] Loading color detected! Color: #A9D917\n2026-01-17 12:15:24 - INFO - [CYCLE 193] Cycle #193 completed successfully - loading color detected\n2026-01-17 12:15:45 - INFO - [CYCLE 193] Connected to ZXTouch\n",
+  "update_time": "2026-01-17 12:15:47"
 }
