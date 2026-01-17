@@ -1,0 +1,58 @@
+{
+  "timestamp": 1768662611,
+  "timestamp_human": "2026-01-17 18:10:11",
+  "cycle_count": 251,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1м назад",
+  "error_stats": {
+    "total_errors": 1,
+    "warnings": 1,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-17 18:09:04 - WARNING - [CYCLE 250] Still on main, trying again"
+    ],
+    "last_error_time": 1768662544,
+    "error_timestamp_human": "2026-01-17 18:09:04"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.65",
+      "load_5": "2.36",
+      "load_15": "2.34",
+      "cores": 4,
+      "utilization_percent": 66.2
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 240,
+      "free_mb": 5,
+      "cached_mb": 98,
+      "utilization_percent": 12.0
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.5Gi",
+      "usage_percent": "43%",
+      "mount": "375935"
+    },
+    "timestamp": 1768662611,
+    "timestamp_human": "2026-01-17 18:10:11"
+  },
+  "last_log": "2026-01-17 18:08:13 - INFO - [CYCLE 249] Cycle #249 completed - no loading color detected (normal)\n2026-01-17 18:08:34 - INFO - [CYCLE 249] Connected to ZXTouch\n2026-01-17 18:08:45 - INFO - [CYCLE 250] Starting cycle #250\n2026-01-17 18:08:45 - INFO - [CYCLE 250] Step 1/7: Waiting for main screen...\n2026-01-17 18:08:45 - INFO - [CYCLE 250] Waiting for main screen...\n2026-01-17 18:08:45 - DEBUG - [CYCLE 250] Current: unknown, waiting for main... 0s\n2026-01-17 18:08:46 - DEBUG - [CYCLE 250] Current: unknown, waiting for main... 0s\n2026-01-17 18:08:50 - DEBUG - [CYCLE 250] Current: unknown, waiting for main... 5s\n2026-01-17 18:08:55 - DEBUG - [CYCLE 250] Current: loading, waiting for main... 10s\n2026-01-17 18:08:56 - DEBUG - [CYCLE 250] Current: loading, waiting for main... 10s\n2026-01-17 18:09:00 - INFO - [CYCLE 250] On main screen\n2026-01-17 18:09:00 - INFO - [CYCLE 250] Step 2/7: Transition to arsenal...\n2026-01-17 18:09:00 - INFO - [CYCLE 250] Quick transition: Кнопка Далее\n2026-01-17 18:09:03 - INFO - [CYCLE 250] Found special invite popup\n2026-01-17 18:09:04 - WARNING - [CYCLE 250] Still on main, trying again\n2026-01-17 18:09:06 - INFO - [CYCLE 250] Step 3/7: Transition to battle...\n2026-01-17 18:09:06 - INFO - [CYCLE 250] Quick transition: Кнопка Битва\n2026-01-17 18:09:06 - INFO - [CYCLE 250] Found attention popup\n2026-01-17 18:09:10 - INFO - [CYCLE 250] Step 4/7: Transition to team...\n2026-01-17 18:09:12 - INFO - [CYCLE 250] Waiting for team screen...\n2026-01-17 18:09:13 - INFO - [CYCLE 250] Found team screen button\n2026-01-17 18:09:13 - INFO - [CYCLE 250] Step 5/7: Pressing team screen button...\n2026-01-17 18:09:15 - INFO - [CYCLE 250] Step 6/7: Sending invitations...\n2026-01-17 18:09:15 - INFO - [CYCLE 250] Invite #1 sent (0s)\n2026-01-17 18:09:21 - INFO - [CYCLE 250] Someone joined the team!\n2026-01-17 18:09:21 - INFO - [CYCLE 250] Step 7/7: Starting game...\n2026-01-17 18:09:22 - INFO - [CYCLE 250] Checking for loading color at (200, 100)...\n2026-01-17 18:09:47 - INFO - [CYCLE 250] Loading color detected! Color: #A9D917\n2026-01-17 18:09:47 - INFO - [CYCLE 250] Cycle #250 completed successfully - loading color detected\n2026-01-17 18:10:08 - INFO - [CYCLE 250] Connected to ZXTouch\n",
+  "update_time": "2026-01-17 18:10:11"
+}
