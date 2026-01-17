@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768692796,
-  "timestamp_human": "2026-01-18 02:33:16",
-  "cycle_count": 331,
+  "timestamp": 1768693066,
+  "timestamp_human": "2026-01-18 02:37:46",
+  "cycle_count": 332,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "5.11",
-      "load_5": "3.41",
-      "load_15": "2.93",
+      "load_1": "1.67",
+      "load_5": "2.69",
+      "load_15": "2.79",
       "cores": 4,
-      "utilization_percent": 127.8
+      "utilization_percent": 41.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 240,
-      "free_mb": 2,
-      "cached_mb": 124,
-      "utilization_percent": 12.0
+      "used_mb": 231,
+      "free_mb": 18,
+      "cached_mb": 105,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768692796,
-    "timestamp_human": "2026-01-18 02:33:16"
+    "timestamp": 1768693066,
+    "timestamp_human": "2026-01-18 02:37:46"
   },
-  "last_log": "2026-01-18 02:30:08 - DEBUG - [CYCLE 329] Checking for attention popup (invite #50)\n2026-01-18 02:30:08 - INFO - [CYCLE 329] Invite #51 sent (294s)\n2026-01-18 02:30:14 - INFO - [CYCLE 329] Step 7/7: Starting game...\n2026-01-18 02:30:16 - INFO - [CYCLE 329] Checking for loading color at (200, 100)...\n2026-01-18 02:31:22 - INFO - [CYCLE 329] Cycle #329 completed - no loading color detected (normal)\n2026-01-18 02:31:43 - INFO - [CYCLE 329] Connected to ZXTouch\n2026-01-18 02:31:58 - INFO - [CYCLE 330] Starting cycle #330\n2026-01-18 02:31:58 - INFO - [CYCLE 330] Step 1/7: Waiting for main screen...\n2026-01-18 02:31:58 - INFO - [CYCLE 330] Waiting for main screen...\n2026-01-18 02:31:58 - DEBUG - [CYCLE 330] Current: loading, waiting for main... 0s\n2026-01-18 02:31:59 - DEBUG - [CYCLE 330] Current: loading, waiting for main... 0s\n2026-01-18 02:32:03 - INFO - [CYCLE 330] On main screen\n2026-01-18 02:32:03 - INFO - [CYCLE 330] Step 2/7: Transition to arsenal...\n2026-01-18 02:32:03 - INFO - [CYCLE 330] Quick transition: Кнопка Далее\n2026-01-18 02:32:06 - INFO - [CYCLE 330] Step 3/7: Transition to battle...\n2026-01-18 02:32:06 - INFO - [CYCLE 330] Quick transition: Кнопка Битва\n2026-01-18 02:32:09 - INFO - [CYCLE 330] Step 4/7: Transition to team...\n2026-01-18 02:32:11 - INFO - [CYCLE 330] Waiting for team screen...\n2026-01-18 02:32:12 - INFO - [CYCLE 330] Found team screen button\n2026-01-18 02:32:12 - INFO - [CYCLE 330] Step 5/7: Pressing team screen button...\n2026-01-18 02:32:12 - INFO - [CYCLE 330] Found attention popup\n2026-01-18 02:32:15 - INFO - [CYCLE 330] Step 6/7: Sending invitations...\n2026-01-18 02:32:15 - INFO - [CYCLE 330] Invite #1 sent (0s)\n2026-01-18 02:32:21 - INFO - [CYCLE 330] Invite #2 sent (5s)\n2026-01-18 02:32:27 - INFO - [CYCLE 330] Someone joined the team!\n2026-01-18 02:32:27 - INFO - [CYCLE 330] Step 7/7: Starting game...\n2026-01-18 02:32:28 - INFO - [CYCLE 330] Checking for loading color at (200, 100)...\n2026-01-18 02:32:53 - INFO - [CYCLE 330] Loading color detected! Color: #A9D917\n2026-01-18 02:32:53 - INFO - [CYCLE 330] Cycle #330 completed successfully - loading color detected\n2026-01-18 02:33:13 - INFO - [CYCLE 330] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 02:33:16"
+  "last_log": "2026-01-18 02:34:58 - INFO - [CYCLE 331] Invite #15 sent (82s)\n2026-01-18 02:35:04 - DEBUG - [CYCLE 331] Checking for attention popup (invite #15)\n2026-01-18 02:35:04 - INFO - [CYCLE 331] Invite #16 sent (88s)\n2026-01-18 02:35:10 - INFO - [CYCLE 331] Invite #17 sent (94s)\n2026-01-18 02:35:16 - INFO - [CYCLE 331] Invite #18 sent (100s)\n2026-01-18 02:35:22 - INFO - [CYCLE 331] Invite #19 sent (106s)\n2026-01-18 02:35:28 - INFO - [CYCLE 331] Invite #20 sent (111s)\n2026-01-18 02:35:33 - DEBUG - [CYCLE 331] Checking for attention popup (invite #20)\n2026-01-18 02:35:33 - INFO - [CYCLE 331] Invite #21 sent (117s)\n2026-01-18 02:35:39 - INFO - [CYCLE 331] Invite #22 sent (123s)\n2026-01-18 02:35:45 - INFO - [CYCLE 331] Invite #23 sent (129s)\n2026-01-18 02:35:51 - INFO - [CYCLE 331] Invite #24 sent (135s)\n2026-01-18 02:35:57 - INFO - [CYCLE 331] Invite #25 sent (141s)\n2026-01-18 02:36:03 - DEBUG - [CYCLE 331] Checking for attention popup (invite #25)\n2026-01-18 02:36:03 - INFO - [CYCLE 331] Invite #26 sent (147s)\n2026-01-18 02:36:09 - INFO - [CYCLE 331] Invite #27 sent (153s)\n2026-01-18 02:36:15 - INFO - [CYCLE 331] Invite #28 sent (159s)\n2026-01-18 02:36:21 - INFO - [CYCLE 331] Invite #29 sent (165s)\n2026-01-18 02:36:27 - INFO - [CYCLE 331] Invite #30 sent (170s)\n2026-01-18 02:36:32 - DEBUG - [CYCLE 331] Checking for attention popup (invite #30)\n2026-01-18 02:36:32 - INFO - [CYCLE 331] Invite #31 sent (176s)\n2026-01-18 02:36:38 - INFO - [CYCLE 331] Invite #32 sent (182s)\n2026-01-18 02:36:44 - INFO - [CYCLE 331] Invite #33 sent (188s)\n2026-01-18 02:36:50 - INFO - [CYCLE 331] Invite #34 sent (194s)\n2026-01-18 02:36:56 - INFO - [CYCLE 331] Someone joined the team!\n2026-01-18 02:36:56 - INFO - [CYCLE 331] Step 7/7: Starting game...\n2026-01-18 02:36:58 - INFO - [CYCLE 331] Checking for loading color at (200, 100)...\n2026-01-18 02:37:23 - INFO - [CYCLE 331] Loading color detected! Color: #A9D917\n2026-01-18 02:37:23 - INFO - [CYCLE 331] Cycle #331 completed successfully - loading color detected\n2026-01-18 02:37:43 - INFO - [CYCLE 331] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 02:37:46"
 }
