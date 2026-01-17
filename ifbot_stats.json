@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768641470,
-  "timestamp_human": "2026-01-17 12:17:50",
-  "cycle_count": 195,
+  "timestamp": 1768641571,
+  "timestamp_human": "2026-01-17 12:19:31",
+  "cycle_count": 196,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 2м назад",
   "error_stats": {
     "total_errors": 2,
     "warnings": 1,
@@ -31,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.01",
-      "load_5": "2.81",
-      "load_15": "2.67",
+      "load_1": "2.81",
+      "load_5": "2.82",
+      "load_15": "2.69",
       "cores": 4,
-      "utilization_percent": 75.2
+      "utilization_percent": 70.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 220,
-      "free_mb": 43,
-      "cached_mb": 115,
-      "utilization_percent": 11.0
+      "used_mb": 244,
+      "free_mb": 6,
+      "cached_mb": 118,
+      "utilization_percent": 12.2
     },
     "disk": {
       "total": "30Gi",
@@ -51,9 +51,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768641470,
-    "timestamp_human": "2026-01-17 12:17:50"
+    "timestamp": 1768641571,
+    "timestamp_human": "2026-01-17 12:19:31"
   },
-  "last_log": "2026-01-17 12:15:24 - INFO - [CYCLE 193] Cycle #193 completed successfully - loading color detected\n2026-01-17 12:15:45 - INFO - [CYCLE 193] Connected to ZXTouch\n2026-01-17 12:15:56 - INFO - [CYCLE 194] Starting cycle #194\n2026-01-17 12:15:56 - INFO - [CYCLE 194] Step 1/7: Waiting for main screen...\n2026-01-17 12:15:56 - INFO - [CYCLE 194] Waiting for main screen...\n2026-01-17 12:15:56 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 0s\n2026-01-17 12:15:57 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 0s\n2026-01-17 12:16:02 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 5s\n2026-01-17 12:16:07 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 10s\n2026-01-17 12:16:12 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 15s\n2026-01-17 12:16:17 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 20s\n2026-01-17 12:16:22 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 25s\n2026-01-17 12:16:27 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 30s\n2026-01-17 12:16:32 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 35s\n2026-01-17 12:16:37 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 40s\n2026-01-17 12:16:41 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 45s\n2026-01-17 12:16:42 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 45s\n2026-01-17 12:16:47 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 50s\n2026-01-17 12:16:52 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 55s\n2026-01-17 12:16:57 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 60s\n2026-01-17 12:17:02 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 65s\n2026-01-17 12:17:07 - DEBUG - [CYCLE 194] Current: unknown, waiting for main... 70s\n2026-01-17 12:17:12 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 75s\n2026-01-17 12:17:17 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 80s\n2026-01-17 12:17:21 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 85s\n2026-01-17 12:17:22 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 85s\n2026-01-17 12:17:26 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 90s\n2026-01-17 12:17:27 - WARNING - [CYCLE 194] Failed to reach main screen\n2026-01-17 12:17:27 - ERROR - [CYCLE 194] Main screen not found\n2026-01-17 12:17:48 - INFO - [CYCLE 194] Connected to ZXTouch\n",
-  "update_time": "2026-01-17 12:17:50"
+  "last_log": "2026-01-17 12:17:26 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 90s\n2026-01-17 12:17:27 - WARNING - [CYCLE 194] Failed to reach main screen\n2026-01-17 12:17:27 - ERROR - [CYCLE 194] Main screen not found\n2026-01-17 12:17:48 - INFO - [CYCLE 194] Connected to ZXTouch\n2026-01-17 12:18:06 - INFO - [CYCLE 195] Starting cycle #195\n2026-01-17 12:18:06 - INFO - [CYCLE 195] Step 1/7: Waiting for main screen...\n2026-01-17 12:18:06 - INFO - [CYCLE 195] Waiting for main screen...\n2026-01-17 12:18:06 - DEBUG - [CYCLE 195] Current: loading, waiting for main... 0s\n2026-01-17 12:18:07 - DEBUG - [CYCLE 195] Current: loading, waiting for main... 0s\n2026-01-17 12:18:12 - DEBUG - [CYCLE 195] Current: loading, waiting for main... 5s\n2026-01-17 12:18:12 - INFO - [CYCLE 195] On main screen\n2026-01-17 12:18:12 - INFO - [CYCLE 195] Step 2/7: Transition to arsenal...\n2026-01-17 12:18:12 - INFO - [CYCLE 195] Quick transition: Кнопка Далее\n2026-01-17 12:18:15 - INFO - [CYCLE 195] Step 3/7: Transition to battle...\n2026-01-17 12:18:15 - INFO - [CYCLE 195] Quick transition: Кнопка Битва\n2026-01-17 12:18:18 - INFO - [CYCLE 195] Step 4/7: Transition to team...\n2026-01-17 12:18:20 - INFO - [CYCLE 195] Waiting for team screen...\n2026-01-17 12:18:21 - INFO - [CYCLE 195] Found team screen button\n2026-01-17 12:18:21 - INFO - [CYCLE 195] Step 5/7: Pressing team screen button...\n2026-01-17 12:18:22 - INFO - [CYCLE 195] Step 6/7: Sending invitations...\n2026-01-17 12:18:22 - INFO - [CYCLE 195] Invite #1 sent (0s)\n2026-01-17 12:18:28 - INFO - [CYCLE 195] Found attention popup\n2026-01-17 12:18:30 - INFO - [CYCLE 195] Invite #2 sent (7s)\n2026-01-17 12:18:35 - INFO - [CYCLE 195] Invite #3 sent (13s)\n2026-01-17 12:18:41 - INFO - [CYCLE 195] Someone joined the team!\n2026-01-17 12:18:41 - INFO - [CYCLE 195] Step 7/7: Starting game...\n2026-01-17 12:18:43 - INFO - [CYCLE 195] Checking for loading color at (200, 100)...\n2026-01-17 12:19:08 - INFO - [CYCLE 195] Loading color detected! Color: #A9D917\n2026-01-17 12:19:08 - INFO - [CYCLE 195] Cycle #195 completed successfully - loading color detected\n2026-01-17 12:19:29 - INFO - [CYCLE 195] Connected to ZXTouch\n",
+  "update_time": "2026-01-17 12:19:31"
 }
