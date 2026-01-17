@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768641571,
-  "timestamp_human": "2026-01-17 12:19:31",
-  "cycle_count": 196,
+  "timestamp": 1768641716,
+  "timestamp_human": "2026-01-17 12:21:56",
+  "cycle_count": 197,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 2м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 4м назад",
   "error_stats": {
     "total_errors": 2,
     "warnings": 1,
@@ -31,17 +31,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.81",
-      "load_5": "2.82",
-      "load_15": "2.69",
+      "load_1": "3.41",
+      "load_5": "3.07",
+      "load_15": "2.81",
       "cores": 4,
-      "utilization_percent": 70.2
+      "utilization_percent": 85.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 244,
-      "free_mb": 6,
-      "cached_mb": 118,
+      "used_mb": 243,
+      "free_mb": 5,
+      "cached_mb": 120,
       "utilization_percent": 12.2
     },
     "disk": {
@@ -51,9 +51,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768641571,
-    "timestamp_human": "2026-01-17 12:19:31"
+    "timestamp": 1768641716,
+    "timestamp_human": "2026-01-17 12:21:56"
   },
-  "last_log": "2026-01-17 12:17:26 - DEBUG - [CYCLE 194] Current: loading, waiting for main... 90s\n2026-01-17 12:17:27 - WARNING - [CYCLE 194] Failed to reach main screen\n2026-01-17 12:17:27 - ERROR - [CYCLE 194] Main screen not found\n2026-01-17 12:17:48 - INFO - [CYCLE 194] Connected to ZXTouch\n2026-01-17 12:18:06 - INFO - [CYCLE 195] Starting cycle #195\n2026-01-17 12:18:06 - INFO - [CYCLE 195] Step 1/7: Waiting for main screen...\n2026-01-17 12:18:06 - INFO - [CYCLE 195] Waiting for main screen...\n2026-01-17 12:18:06 - DEBUG - [CYCLE 195] Current: loading, waiting for main... 0s\n2026-01-17 12:18:07 - DEBUG - [CYCLE 195] Current: loading, waiting for main... 0s\n2026-01-17 12:18:12 - DEBUG - [CYCLE 195] Current: loading, waiting for main... 5s\n2026-01-17 12:18:12 - INFO - [CYCLE 195] On main screen\n2026-01-17 12:18:12 - INFO - [CYCLE 195] Step 2/7: Transition to arsenal...\n2026-01-17 12:18:12 - INFO - [CYCLE 195] Quick transition: Кнопка Далее\n2026-01-17 12:18:15 - INFO - [CYCLE 195] Step 3/7: Transition to battle...\n2026-01-17 12:18:15 - INFO - [CYCLE 195] Quick transition: Кнопка Битва\n2026-01-17 12:18:18 - INFO - [CYCLE 195] Step 4/7: Transition to team...\n2026-01-17 12:18:20 - INFO - [CYCLE 195] Waiting for team screen...\n2026-01-17 12:18:21 - INFO - [CYCLE 195] Found team screen button\n2026-01-17 12:18:21 - INFO - [CYCLE 195] Step 5/7: Pressing team screen button...\n2026-01-17 12:18:22 - INFO - [CYCLE 195] Step 6/7: Sending invitations...\n2026-01-17 12:18:22 - INFO - [CYCLE 195] Invite #1 sent (0s)\n2026-01-17 12:18:28 - INFO - [CYCLE 195] Found attention popup\n2026-01-17 12:18:30 - INFO - [CYCLE 195] Invite #2 sent (7s)\n2026-01-17 12:18:35 - INFO - [CYCLE 195] Invite #3 sent (13s)\n2026-01-17 12:18:41 - INFO - [CYCLE 195] Someone joined the team!\n2026-01-17 12:18:41 - INFO - [CYCLE 195] Step 7/7: Starting game...\n2026-01-17 12:18:43 - INFO - [CYCLE 195] Checking for loading color at (200, 100)...\n2026-01-17 12:19:08 - INFO - [CYCLE 195] Loading color detected! Color: #A9D917\n2026-01-17 12:19:08 - INFO - [CYCLE 195] Cycle #195 completed successfully - loading color detected\n2026-01-17 12:19:29 - INFO - [CYCLE 195] Connected to ZXTouch\n",
-  "update_time": "2026-01-17 12:19:31"
+  "last_log": "2026-01-17 12:20:01 - DEBUG - [CYCLE 196] Current: loading, waiting for main... 15s\n2026-01-17 12:20:05 - DEBUG - [CYCLE 196] Current: loading, waiting for main... 20s\n2026-01-17 12:20:06 - DEBUG - [CYCLE 196] Current: loading, waiting for main... 20s\n2026-01-17 12:20:11 - DEBUG - [CYCLE 196] Current: loading, waiting for main... 25s\n2026-01-17 12:20:11 - DEBUG - [CYCLE 196] Current: loading, waiting for main... 25s\n2026-01-17 12:20:14 - INFO - [CYCLE 196] On main screen\n2026-01-17 12:20:14 - INFO - [CYCLE 196] Step 2/7: Transition to arsenal...\n2026-01-17 12:20:14 - INFO - [CYCLE 196] Quick transition: Кнопка Далее\n2026-01-17 12:20:17 - INFO - [CYCLE 196] Step 3/7: Transition to battle...\n2026-01-17 12:20:17 - INFO - [CYCLE 196] Quick transition: Кнопка Битва\n2026-01-17 12:20:19 - INFO - [CYCLE 196] Step 4/7: Transition to team...\n2026-01-17 12:20:21 - INFO - [CYCLE 196] Waiting for team screen...\n2026-01-17 12:20:22 - INFO - [CYCLE 196] Found team screen button\n2026-01-17 12:20:22 - INFO - [CYCLE 196] Step 5/7: Pressing team screen button...\n2026-01-17 12:20:24 - INFO - [CYCLE 196] Step 6/7: Sending invitations...\n2026-01-17 12:20:24 - INFO - [CYCLE 196] Found attention popup\n2026-01-17 12:20:25 - INFO - [CYCLE 196] Invite #1 sent (1s)\n2026-01-17 12:20:31 - INFO - [CYCLE 196] Invite #2 sent (7s)\n2026-01-17 12:20:37 - INFO - [CYCLE 196] Invite #3 sent (13s)\n2026-01-17 12:20:43 - INFO - [CYCLE 196] Invite #4 sent (18s)\n2026-01-17 12:20:49 - INFO - [CYCLE 196] Invite #5 sent (24s)\n2026-01-17 12:20:55 - DEBUG - [CYCLE 196] Checking for attention popup (invite #5)\n2026-01-17 12:20:55 - INFO - [CYCLE 196] Invite #6 sent (30s)\n2026-01-17 12:21:01 - INFO - [CYCLE 196] Invite #7 sent (36s)\n2026-01-17 12:21:07 - INFO - [CYCLE 196] Someone joined the team!\n2026-01-17 12:21:07 - INFO - [CYCLE 196] Step 7/7: Starting game...\n2026-01-17 12:21:08 - INFO - [CYCLE 196] Checking for loading color at (200, 100)...\n2026-01-17 12:21:33 - INFO - [CYCLE 196] Loading color detected! Color: #A9D917\n2026-01-17 12:21:33 - INFO - [CYCLE 196] Cycle #196 completed successfully - loading color detected\n2026-01-17 12:21:53 - INFO - [CYCLE 196] Connected to ZXTouch\n",
+  "update_time": "2026-01-17 12:21:56"
 }
