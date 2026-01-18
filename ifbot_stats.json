@@ -1,21 +1,22 @@
 {
-  "timestamp": 1768737271,
-  "timestamp_human": "2026-01-18 14:54:31",
-  "cycle_count": 464,
+  "timestamp": 1768737688,
+  "timestamp_human": "2026-01-18 15:01:28",
+  "cycle_count": 465,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 17м назад",
+  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 3, ошибок: 1), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 3,
-    "warnings": 2,
+    "total_errors": 4,
+    "warnings": 3,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
       "2026-01-18 14:31:17 - WARNING - [CYCLE 459] Still on main, trying again",
       "2026-01-18 14:37:25 - WARNING - [CYCLE 460] Failed to reach main screen",
-      "2026-01-18 14:37:25 - ERROR - [CYCLE 460] Main screen not found"
+      "2026-01-18 14:37:25 - ERROR - [CYCLE 460] Main screen not found",
+      "2026-01-18 14:54:46 - WARNING - [CYCLE 464] Still on main, trying again"
     ],
-    "last_error_time": 1768736245,
-    "error_timestamp_human": "2026-01-18 14:37:25"
+    "last_error_time": 1768737286,
+    "error_timestamp_human": "2026-01-18 14:54:46"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -32,18 +33,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.56",
-      "load_5": "2.70",
-      "load_15": "2.82",
+      "load_1": "4.85",
+      "load_5": "3.20",
+      "load_15": "2.93",
       "cores": 4,
-      "utilization_percent": 64.0
+      "utilization_percent": 121.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
-      "free_mb": 6,
-      "cached_mb": 98,
-      "utilization_percent": 11.9
+      "used_mb": 240,
+      "free_mb": 4,
+      "cached_mb": 124,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -52,9 +53,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768737271,
-    "timestamp_human": "2026-01-18 14:54:31"
+    "timestamp": 1768737688,
+    "timestamp_human": "2026-01-18 15:01:28"
   },
-  "last_log": "2026-01-18 14:52:15 - INFO - [CYCLE 463] Step 2/7: Transition to arsenal...\n2026-01-18 14:52:15 - INFO - [CYCLE 463] Quick transition: Кнопка Далее\n2026-01-18 14:52:17 - INFO - [CYCLE 463] Step 3/7: Transition to battle...\n2026-01-18 14:52:17 - INFO - [CYCLE 463] Quick transition: Кнопка Битва\n2026-01-18 14:52:20 - INFO - [CYCLE 463] Step 4/7: Transition to team...\n2026-01-18 14:52:22 - INFO - [CYCLE 463] Waiting for team screen...\n2026-01-18 14:52:23 - INFO - [CYCLE 463] Found team screen button\n2026-01-18 14:52:23 - INFO - [CYCLE 463] Step 5/7: Pressing team screen button...\n2026-01-18 14:52:25 - INFO - [CYCLE 463] Step 6/7: Sending invitations...\n2026-01-18 14:52:25 - INFO - [CYCLE 463] Invite #1 sent (0s)\n2026-01-18 14:52:31 - INFO - [CYCLE 463] Invite #2 sent (5s)\n2026-01-18 14:52:37 - INFO - [CYCLE 463] Invite #3 sent (11s)\n2026-01-18 14:52:43 - INFO - [CYCLE 463] Invite #4 sent (17s)\n2026-01-18 14:52:48 - INFO - [CYCLE 463] Invite #5 sent (23s)\n2026-01-18 14:52:54 - DEBUG - [CYCLE 463] Checking for attention popup (invite #5)\n2026-01-18 14:52:54 - INFO - [CYCLE 463] Invite #6 sent (29s)\n2026-01-18 14:53:00 - INFO - [CYCLE 463] Invite #7 sent (35s)\n2026-01-18 14:53:06 - INFO - [CYCLE 463] Invite #8 sent (41s)\n2026-01-18 14:53:12 - INFO - [CYCLE 463] Invite #9 sent (47s)\n2026-01-18 14:53:18 - INFO - [CYCLE 463] Invite #10 sent (53s)\n2026-01-18 14:53:24 - DEBUG - [CYCLE 463] Checking for attention popup (invite #10)\n2026-01-18 14:53:24 - INFO - [CYCLE 463] Invite #11 sent (58s)\n2026-01-18 14:53:30 - INFO - [CYCLE 463] Invite #12 sent (64s)\n2026-01-18 14:53:36 - INFO - [CYCLE 463] Invite #13 sent (70s)\n2026-01-18 14:53:42 - INFO - [CYCLE 463] Someone joined the team!\n2026-01-18 14:53:42 - INFO - [CYCLE 463] Step 7/7: Starting game...\n2026-01-18 14:53:43 - INFO - [CYCLE 463] Checking for loading color at (200, 100)...\n2026-01-18 14:54:08 - INFO - [CYCLE 463] Loading color detected! Color: #A9D917\n2026-01-18 14:54:08 - INFO - [CYCLE 463] Cycle #463 completed successfully - loading color detected\n2026-01-18 14:54:28 - INFO - [CYCLE 463] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 14:54:31"
+  "last_log": "2026-01-18 14:57:53 - DEBUG - [CYCLE 464] Checking for attention popup (invite #30)\n2026-01-18 14:57:53 - INFO - [CYCLE 464] Invite #31 sent (177s)\n2026-01-18 14:57:59 - INFO - [CYCLE 464] Invite #32 sent (183s)\n2026-01-18 14:58:05 - INFO - [CYCLE 464] Invite #33 sent (189s)\n2026-01-18 14:58:11 - INFO - [CYCLE 464] Invite #34 sent (195s)\n2026-01-18 14:58:16 - INFO - [CYCLE 464] Invite #35 sent (200s)\n2026-01-18 14:58:22 - DEBUG - [CYCLE 464] Checking for attention popup (invite #35)\n2026-01-18 14:58:22 - INFO - [CYCLE 464] Invite #36 sent (206s)\n2026-01-18 14:58:28 - INFO - [CYCLE 464] Invite #37 sent (212s)\n2026-01-18 14:58:34 - INFO - [CYCLE 464] Invite #38 sent (218s)\n2026-01-18 14:58:40 - INFO - [CYCLE 464] Invite #39 sent (224s)\n2026-01-18 14:58:46 - INFO - [CYCLE 464] Invite #40 sent (230s)\n2026-01-18 14:58:52 - DEBUG - [CYCLE 464] Checking for attention popup (invite #40)\n2026-01-18 14:58:52 - INFO - [CYCLE 464] Invite #41 sent (236s)\n2026-01-18 14:58:58 - INFO - [CYCLE 464] Invite #42 sent (242s)\n2026-01-18 14:59:04 - INFO - [CYCLE 464] Invite #43 sent (248s)\n2026-01-18 14:59:10 - INFO - [CYCLE 464] Invite #44 sent (254s)\n2026-01-18 14:59:15 - INFO - [CYCLE 464] Invite #45 sent (259s)\n2026-01-18 14:59:21 - DEBUG - [CYCLE 464] Checking for attention popup (invite #45)\n2026-01-18 14:59:21 - INFO - [CYCLE 464] Invite #46 sent (265s)\n2026-01-18 14:59:27 - INFO - [CYCLE 464] Invite #47 sent (271s)\n2026-01-18 14:59:33 - INFO - [CYCLE 464] Invite #48 sent (277s)\n2026-01-18 14:59:39 - INFO - [CYCLE 464] Invite #49 sent (283s)\n2026-01-18 14:59:45 - INFO - [CYCLE 464] Invite #50 sent (289s)\n2026-01-18 14:59:51 - DEBUG - [CYCLE 464] Checking for attention popup (invite #50)\n2026-01-18 14:59:51 - INFO - [CYCLE 464] Invite #51 sent (295s)\n2026-01-18 14:59:57 - INFO - [CYCLE 464] Step 7/7: Starting game...\n2026-01-18 14:59:58 - INFO - [CYCLE 464] Checking for loading color at (200, 100)...\n2026-01-18 15:01:05 - INFO - [CYCLE 464] Cycle #464 completed - no loading color detected (normal)\n2026-01-18 15:01:26 - INFO - [CYCLE 464] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 15:01:28"
 }
