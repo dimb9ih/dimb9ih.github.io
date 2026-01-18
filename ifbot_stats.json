@@ -1,23 +1,23 @@
 {
-  "timestamp": 1768731465,
-  "timestamp_human": "2026-01-18 13:17:45",
-  "cycle_count": 443,
+  "timestamp": 1768731546,
+  "timestamp_human": "2026-01-18 13:19:06",
+  "cycle_count": 444,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 5, ошибок: 1), последняя: 12м назад",
+  "error_summary": "⚠️ Ошибок: 5 (предупреждений: 4, ошибок: 1), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 6,
-    "warnings": 5,
+    "total_errors": 5,
+    "warnings": 4,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
-      "2026-01-18 12:06:45 - WARNING - [CYCLE 423] Attention popup detected, returning to main screen",
       "2026-01-18 12:41:47 - WARNING - [CYCLE 432] Failed to reach main screen",
       "2026-01-18 12:41:47 - ERROR - [CYCLE 432] Main screen not found",
       "2026-01-18 12:58:01 - WARNING - [CYCLE 436] Still on main, trying again",
-      "2026-01-18 13:05:13 - WARNING - [CYCLE 437] Still on main, trying again"
+      "2026-01-18 13:05:13 - WARNING - [CYCLE 437] Still on main, trying again",
+      "2026-01-18 13:18:01 - WARNING - [CYCLE 443] Still on main, trying again"
     ],
-    "last_error_time": 1768730713,
-    "error_timestamp_human": "2026-01-18 13:05:13"
+    "last_error_time": 1768731481,
+    "error_timestamp_human": "2026-01-18 13:18:01"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.03",
-      "load_5": "3.58",
-      "load_15": "3.73",
+      "load_1": "3.57",
+      "load_5": "3.81",
+      "load_15": "3.82",
       "cores": 4,
-      "utilization_percent": 75.8
+      "utilization_percent": 89.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 229,
-      "free_mb": 22,
-      "cached_mb": 97,
-      "utilization_percent": 11.5
+      "used_mb": 239,
+      "free_mb": 3,
+      "cached_mb": 108,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768731465,
-    "timestamp_human": "2026-01-18 13:17:45"
+    "timestamp": 1768731546,
+    "timestamp_human": "2026-01-18 13:19:06"
   },
-  "last_log": "2026-01-18 13:15:44 - DEBUG - [CYCLE 442] Current: unknown, waiting for main... 0s\n2026-01-18 13:15:45 - DEBUG - [CYCLE 442] Current: unknown, waiting for main... 0s\n2026-01-18 13:15:50 - INFO - [CYCLE 442] Found attention popup\n2026-01-18 13:15:51 - INFO - [CYCLE 442] Found special invite popup\n2026-01-18 13:15:52 - INFO - [CYCLE 442] On main screen\n2026-01-18 13:15:52 - INFO - [CYCLE 442] Step 2/7: Transition to arsenal...\n2026-01-18 13:15:52 - INFO - [CYCLE 442] Quick transition: Кнопка Далее\n2026-01-18 13:15:55 - INFO - [CYCLE 442] Step 3/7: Transition to battle...\n2026-01-18 13:15:55 - INFO - [CYCLE 442] Quick transition: Кнопка Битва\n2026-01-18 13:15:58 - INFO - [CYCLE 442] Step 4/7: Transition to team...\n2026-01-18 13:16:00 - INFO - [CYCLE 442] Waiting for team screen...\n2026-01-18 13:16:01 - INFO - [CYCLE 442] Found team screen button\n2026-01-18 13:16:01 - INFO - [CYCLE 442] Step 5/7: Pressing team screen button...\n2026-01-18 13:16:03 - INFO - [CYCLE 442] Step 6/7: Sending invitations...\n2026-01-18 13:16:03 - INFO - [CYCLE 442] Invite #1 sent (0s)\n2026-01-18 13:16:09 - INFO - [CYCLE 442] Invite #2 sent (5s)\n2026-01-18 13:16:14 - INFO - [CYCLE 442] Invite #3 sent (11s)\n2026-01-18 13:16:20 - INFO - [CYCLE 442] Invite #4 sent (17s)\n2026-01-18 13:16:26 - INFO - [CYCLE 442] Invite #5 sent (23s)\n2026-01-18 13:16:32 - DEBUG - [CYCLE 442] Checking for attention popup (invite #5)\n2026-01-18 13:16:32 - INFO - [CYCLE 442] Invite #6 sent (29s)\n2026-01-18 13:16:38 - INFO - [CYCLE 442] Invite #7 sent (35s)\n2026-01-18 13:16:44 - INFO - [CYCLE 442] Invite #8 sent (41s)\n2026-01-18 13:16:50 - INFO - [CYCLE 442] Invite #9 sent (47s)\n2026-01-18 13:16:56 - INFO - [CYCLE 442] Someone joined the team!\n2026-01-18 13:16:56 - INFO - [CYCLE 442] Step 7/7: Starting game...\n2026-01-18 13:16:57 - INFO - [CYCLE 442] Checking for loading color at (200, 100)...\n2026-01-18 13:17:22 - INFO - [CYCLE 442] Loading color detected! Color: #A9D917\n2026-01-18 13:17:22 - INFO - [CYCLE 442] Cycle #442 completed successfully - loading color detected\n2026-01-18 13:17:42 - INFO - [CYCLE 442] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 13:17:45"
+  "last_log": "2026-01-18 13:16:57 - INFO - [CYCLE 442] Checking for loading color at (200, 100)...\n2026-01-18 13:17:22 - INFO - [CYCLE 442] Loading color detected! Color: #A9D917\n2026-01-18 13:17:22 - INFO - [CYCLE 442] Cycle #442 completed successfully - loading color detected\n2026-01-18 13:17:42 - INFO - [CYCLE 442] Connected to ZXTouch\n2026-01-18 13:17:47 - INFO - [CYCLE 443] Starting cycle #443\n2026-01-18 13:17:47 - INFO - [CYCLE 443] Step 1/7: Waiting for main screen...\n2026-01-18 13:17:47 - INFO - [CYCLE 443] Waiting for main screen...\n2026-01-18 13:17:47 - DEBUG - [CYCLE 443] Current: unknown, waiting for main... 0s\n2026-01-18 13:17:47 - DEBUG - [CYCLE 443] Current: unknown, waiting for main... 0s\n2026-01-18 13:17:52 - DEBUG - [CYCLE 443] Current: unknown, waiting for main... 5s\n2026-01-18 13:17:56 - INFO - [CYCLE 443] On main screen\n2026-01-18 13:17:56 - INFO - [CYCLE 443] Step 2/7: Transition to arsenal...\n2026-01-18 13:17:56 - INFO - [CYCLE 443] Quick transition: Кнопка Далее\n2026-01-18 13:17:59 - INFO - [CYCLE 443] Found attention popup\n2026-01-18 13:18:00 - INFO - [CYCLE 443] Found special invite popup\n2026-01-18 13:18:01 - WARNING - [CYCLE 443] Still on main, trying again\n2026-01-18 13:18:03 - INFO - [CYCLE 443] Step 3/7: Transition to battle...\n2026-01-18 13:18:03 - INFO - [CYCLE 443] Quick transition: Кнопка Битва\n2026-01-18 13:18:06 - INFO - [CYCLE 443] Step 4/7: Transition to team...\n2026-01-18 13:18:08 - INFO - [CYCLE 443] Waiting for team screen...\n2026-01-18 13:18:09 - INFO - [CYCLE 443] Found team screen button\n2026-01-18 13:18:09 - INFO - [CYCLE 443] Step 5/7: Pressing team screen button...\n2026-01-18 13:18:11 - INFO - [CYCLE 443] Step 6/7: Sending invitations...\n2026-01-18 13:18:11 - INFO - [CYCLE 443] Invite #1 sent (0s)\n2026-01-18 13:18:17 - INFO - [CYCLE 443] Someone joined the team!\n2026-01-18 13:18:17 - INFO - [CYCLE 443] Step 7/7: Starting game...\n2026-01-18 13:18:18 - INFO - [CYCLE 443] Checking for loading color at (200, 100)...\n2026-01-18 13:18:43 - INFO - [CYCLE 443] Loading color detected! Color: #A9D917\n2026-01-18 13:18:43 - INFO - [CYCLE 443] Cycle #443 completed successfully - loading color detected\n2026-01-18 13:19:03 - INFO - [CYCLE 443] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 13:19:06"
 }
