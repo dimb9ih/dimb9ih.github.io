@@ -1,23 +1,23 @@
 {
-  "timestamp": 1768730250,
-  "timestamp_human": "2026-01-18 12:57:30",
-  "cycle_count": 436,
+  "timestamp": 1768730693,
+  "timestamp_human": "2026-01-18 13:04:53",
+  "cycle_count": 437,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 5 (предупреждений: 4, ошибок: 1), последняя: 15м назад",
+  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 5, ошибок: 1), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 5,
-    "warnings": 4,
+    "total_errors": 6,
+    "warnings": 5,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
-      "2026-01-18 11:56:08 - WARNING - [CYCLE 421] Still on main, trying again",
       "2026-01-18 12:06:45 - WARNING - [CYCLE 423] Found Внимание popup during invitation phase",
       "2026-01-18 12:06:45 - WARNING - [CYCLE 423] Attention popup detected, returning to main screen",
       "2026-01-18 12:41:47 - WARNING - [CYCLE 432] Failed to reach main screen",
-      "2026-01-18 12:41:47 - ERROR - [CYCLE 432] Main screen not found"
+      "2026-01-18 12:41:47 - ERROR - [CYCLE 432] Main screen not found",
+      "2026-01-18 12:58:01 - WARNING - [CYCLE 436] Still on main, trying again"
     ],
-    "last_error_time": 1768729307,
-    "error_timestamp_human": "2026-01-18 12:41:47"
+    "last_error_time": 1768730281,
+    "error_timestamp_human": "2026-01-18 12:58:01"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.78",
-      "load_5": "3.28",
-      "load_15": "3.25",
+      "load_1": "10.66",
+      "load_5": "4.94",
+      "load_15": "3.77",
       "cores": 4,
-      "utilization_percent": 94.5
+      "utilization_percent": 266.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 227,
-      "free_mb": 36,
-      "cached_mb": 110,
-      "utilization_percent": 11.3
+      "used_mb": 228,
+      "free_mb": 19,
+      "cached_mb": 113,
+      "utilization_percent": 11.4
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768730250,
-    "timestamp_human": "2026-01-18 12:57:30"
+    "timestamp": 1768730693,
+    "timestamp_human": "2026-01-18 13:04:53"
   },
-  "last_log": "2026-01-18 12:55:32 - DEBUG - [CYCLE 435] Current: unknown, waiting for main... 5s\n2026-01-18 12:55:33 - DEBUG - [CYCLE 435] Current: unknown, waiting for main... 5s\n2026-01-18 12:55:37 - DEBUG - [CYCLE 435] Current: loading, waiting for main... 10s\n2026-01-18 12:55:38 - DEBUG - [CYCLE 435] Current: loading, waiting for main... 10s\n2026-01-18 12:55:43 - DEBUG - [CYCLE 435] Current: loading, waiting for main... 15s\n2026-01-18 12:55:48 - INFO - [CYCLE 435] On main screen\n2026-01-18 12:55:48 - INFO - [CYCLE 435] Step 2/7: Transition to arsenal...\n2026-01-18 12:55:48 - INFO - [CYCLE 435] Quick transition: Кнопка Далее\n2026-01-18 12:55:50 - INFO - [CYCLE 435] Found attention popup\n2026-01-18 12:55:52 - INFO - [CYCLE 435] Step 3/7: Transition to battle...\n2026-01-18 12:55:52 - INFO - [CYCLE 435] Quick transition: Кнопка Битва\n2026-01-18 12:55:54 - INFO - [CYCLE 435] Step 4/7: Transition to team...\n2026-01-18 12:55:56 - INFO - [CYCLE 435] Waiting for team screen...\n2026-01-18 12:55:57 - INFO - [CYCLE 435] Found team screen button\n2026-01-18 12:55:57 - INFO - [CYCLE 435] Step 5/7: Pressing team screen button...\n2026-01-18 12:55:59 - INFO - [CYCLE 435] Step 6/7: Sending invitations...\n2026-01-18 12:55:59 - INFO - [CYCLE 435] Invite #1 sent (0s)\n2026-01-18 12:56:05 - INFO - [CYCLE 435] Invite #2 sent (5s)\n2026-01-18 12:56:11 - INFO - [CYCLE 435] Invite #3 sent (11s)\n2026-01-18 12:56:17 - INFO - [CYCLE 435] Invite #4 sent (17s)\n2026-01-18 12:56:23 - INFO - [CYCLE 435] Invite #5 sent (23s)\n2026-01-18 12:56:28 - DEBUG - [CYCLE 435] Checking for attention popup (invite #5)\n2026-01-18 12:56:28 - INFO - [CYCLE 435] Invite #6 sent (29s)\n2026-01-18 12:56:34 - INFO - [CYCLE 435] Invite #7 sent (35s)\n2026-01-18 12:56:40 - INFO - [CYCLE 435] Someone joined the team!\n2026-01-18 12:56:40 - INFO - [CYCLE 435] Step 7/7: Starting game...\n2026-01-18 12:56:42 - INFO - [CYCLE 435] Checking for loading color at (200, 100)...\n2026-01-18 12:57:06 - INFO - [CYCLE 435] Loading color detected! Color: #A9D917\n2026-01-18 12:57:06 - INFO - [CYCLE 435] Cycle #435 completed successfully - loading color detected\n2026-01-18 12:57:27 - INFO - [CYCLE 435] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 12:57:30"
+  "last_log": "2026-01-18 13:01:14 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:19 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:24 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:29 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:34 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:40 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:45 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:50 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:01:55 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:00 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:05 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:10 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:15 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:20 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:25 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:30 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:36 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:41 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:46 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:51 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:02:56 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:03:01 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:03:06 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:03:11 - DEBUG - [CYCLE 436] Checking for attention popup (invite #15)\n2026-01-18 13:03:16 - INFO - [CYCLE 436] Step 7/7: Starting game...\n2026-01-18 13:03:18 - INFO - [CYCLE 436] Checking for loading color at (200, 100)...\n2026-01-18 13:04:15 - INFO - [CYCLE 436] Found special invite popup\n2026-01-18 13:04:26 - INFO - [CYCLE 436] Found special invite popup\n2026-01-18 13:04:29 - INFO - [CYCLE 436] Cycle #436 completed - no loading color detected (normal)\n2026-01-18 13:04:51 - INFO - [CYCLE 436] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 13:04:53"
 }
