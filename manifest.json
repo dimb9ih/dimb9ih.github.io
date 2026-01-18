@@ -1,0 +1,23 @@
+{
+  "name": "IFBot Статус",
+  "short_name": "IFBot",
+  "description": "Мониторинг IFBot с офлайн-поддержкой",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "background_color": "#F8FAFD",
+  "theme_color": "#5B8DEF",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
