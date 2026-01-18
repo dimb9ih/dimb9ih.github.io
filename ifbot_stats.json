@@ -1,17 +1,19 @@
 {
-  "timestamp": 1768721035,
-  "timestamp_human": "2026-01-18 10:23:55",
-  "cycle_count": 404,
+  "timestamp": 1768721485,
+  "timestamp_human": "2026-01-18 10:31:25",
+  "cycle_count": 405,
   "bot_status": "running",
-  "error_summary": "✅ Ошибок нет",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 0,
-    "warnings": 0,
+    "total_errors": 1,
+    "warnings": 1,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "recent_errors": [
+      "2026-01-18 10:24:42 - WARNING - [CYCLE 404] Still on main, trying again"
+    ],
+    "last_error_time": 1768721082,
+    "error_timestamp_human": "2026-01-18 10:24:42"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.11",
-      "load_5": "2.35",
-      "load_15": "2.44",
+      "load_1": "2.10",
+      "load_5": "2.02",
+      "load_15": "2.24",
       "cores": 4,
-      "utilization_percent": 52.8
+      "utilization_percent": 52.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 223,
-      "free_mb": 44,
-      "cached_mb": 109,
-      "utilization_percent": 11.2
+      "used_mb": 233,
+      "free_mb": 24,
+      "cached_mb": 105,
+      "utilization_percent": 11.7
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +50,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768721035,
-    "timestamp_human": "2026-01-18 10:23:55"
+    "timestamp": 1768721485,
+    "timestamp_human": "2026-01-18 10:31:25"
   },
-  "last_log": "2026-01-18 10:21:08 - INFO - [CYCLE 403] Invite #3 sent (13s)\n2026-01-18 10:21:14 - INFO - [CYCLE 403] Invite #4 sent (18s)\n2026-01-18 10:21:20 - INFO - [CYCLE 403] Invite #5 sent (24s)\n2026-01-18 10:21:26 - DEBUG - [CYCLE 403] Checking for attention popup (invite #5)\n2026-01-18 10:21:26 - INFO - [CYCLE 403] Invite #6 sent (30s)\n2026-01-18 10:21:32 - INFO - [CYCLE 403] Invite #7 sent (36s)\n2026-01-18 10:21:38 - INFO - [CYCLE 403] Invite #8 sent (42s)\n2026-01-18 10:21:44 - INFO - [CYCLE 403] Invite #9 sent (48s)\n2026-01-18 10:21:49 - INFO - [CYCLE 403] Invite #10 sent (54s)\n2026-01-18 10:21:55 - DEBUG - [CYCLE 403] Checking for attention popup (invite #10)\n2026-01-18 10:21:55 - INFO - [CYCLE 403] Invite #11 sent (60s)\n2026-01-18 10:22:01 - INFO - [CYCLE 403] Invite #12 sent (66s)\n2026-01-18 10:22:07 - INFO - [CYCLE 403] Invite #13 sent (72s)\n2026-01-18 10:22:13 - INFO - [CYCLE 403] Invite #14 sent (77s)\n2026-01-18 10:22:19 - INFO - [CYCLE 403] Invite #15 sent (83s)\n2026-01-18 10:22:25 - DEBUG - [CYCLE 403] Checking for attention popup (invite #15)\n2026-01-18 10:22:25 - INFO - [CYCLE 403] Invite #16 sent (89s)\n2026-01-18 10:22:31 - INFO - [CYCLE 403] Invite #17 sent (95s)\n2026-01-18 10:22:37 - INFO - [CYCLE 403] Invite #18 sent (101s)\n2026-01-18 10:22:42 - INFO - [CYCLE 403] Invite #19 sent (107s)\n2026-01-18 10:22:48 - INFO - [CYCLE 403] Invite #20 sent (113s)\n2026-01-18 10:22:54 - DEBUG - [CYCLE 403] Checking for attention popup (invite #20)\n2026-01-18 10:22:54 - INFO - [CYCLE 403] Invite #21 sent (119s)\n2026-01-18 10:23:00 - INFO - [CYCLE 403] Invite #22 sent (125s)\n2026-01-18 10:23:06 - INFO - [CYCLE 403] Someone joined the team!\n2026-01-18 10:23:06 - INFO - [CYCLE 403] Step 7/7: Starting game...\n2026-01-18 10:23:08 - INFO - [CYCLE 403] Checking for loading color at (200, 100)...\n2026-01-18 10:23:32 - INFO - [CYCLE 403] Loading color detected! Color: #A9D917\n2026-01-18 10:23:32 - INFO - [CYCLE 403] Cycle #403 completed successfully - loading color detected\n2026-01-18 10:23:53 - INFO - [CYCLE 403] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 10:23:55"
+  "last_log": "2026-01-18 10:27:50 - DEBUG - [CYCLE 404] Checking for attention popup (invite #30)\n2026-01-18 10:27:50 - INFO - [CYCLE 404] Invite #31 sent (177s)\n2026-01-18 10:27:56 - INFO - [CYCLE 404] Invite #32 sent (182s)\n2026-01-18 10:28:02 - INFO - [CYCLE 404] Invite #33 sent (188s)\n2026-01-18 10:28:07 - INFO - [CYCLE 404] Invite #34 sent (194s)\n2026-01-18 10:28:13 - INFO - [CYCLE 404] Invite #35 sent (200s)\n2026-01-18 10:28:19 - DEBUG - [CYCLE 404] Checking for attention popup (invite #35)\n2026-01-18 10:28:19 - INFO - [CYCLE 404] Invite #36 sent (206s)\n2026-01-18 10:28:25 - INFO - [CYCLE 404] Invite #37 sent (212s)\n2026-01-18 10:28:31 - INFO - [CYCLE 404] Invite #38 sent (218s)\n2026-01-18 10:28:37 - INFO - [CYCLE 404] Invite #39 sent (224s)\n2026-01-18 10:28:43 - INFO - [CYCLE 404] Invite #40 sent (230s)\n2026-01-18 10:28:49 - DEBUG - [CYCLE 404] Checking for attention popup (invite #40)\n2026-01-18 10:28:49 - INFO - [CYCLE 404] Invite #41 sent (236s)\n2026-01-18 10:28:55 - INFO - [CYCLE 404] Invite #42 sent (242s)\n2026-01-18 10:29:01 - INFO - [CYCLE 404] Invite #43 sent (247s)\n2026-01-18 10:29:07 - INFO - [CYCLE 404] Invite #44 sent (253s)\n2026-01-18 10:29:12 - INFO - [CYCLE 404] Invite #45 sent (259s)\n2026-01-18 10:29:18 - DEBUG - [CYCLE 404] Checking for attention popup (invite #45)\n2026-01-18 10:29:18 - INFO - [CYCLE 404] Invite #46 sent (265s)\n2026-01-18 10:29:24 - INFO - [CYCLE 404] Invite #47 sent (271s)\n2026-01-18 10:29:30 - INFO - [CYCLE 404] Invite #48 sent (277s)\n2026-01-18 10:29:36 - INFO - [CYCLE 404] Invite #49 sent (283s)\n2026-01-18 10:29:42 - INFO - [CYCLE 404] Invite #50 sent (289s)\n2026-01-18 10:29:48 - DEBUG - [CYCLE 404] Checking for attention popup (invite #50)\n2026-01-18 10:29:48 - INFO - [CYCLE 404] Invite #51 sent (295s)\n2026-01-18 10:29:54 - INFO - [CYCLE 404] Step 7/7: Starting game...\n2026-01-18 10:29:55 - INFO - [CYCLE 404] Checking for loading color at (200, 100)...\n2026-01-18 10:31:02 - INFO - [CYCLE 404] Cycle #404 completed - no loading color detected (normal)\n2026-01-18 10:31:23 - INFO - [CYCLE 404] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 10:31:25"
 }
