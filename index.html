@@ -7,18 +7,21 @@
 
 <!-- PWA -->
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#5B8DEF">
+<meta name="theme-color" content="#4f8cff">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
 :root{
-  --bg:#f6f8fb;
+  --bg:#f5f7fb;
   --card:#ffffff;
   --text:#1f2937;
   --muted:#6b7280;
+  --primary:#4f8cff;
   --ok:#22c55e;
   --warn:#f59e0b;
   --err:#ef4444;
-  --primary:#5B8DEF;
 }
 
 *{box-sizing:border-box}
@@ -30,7 +33,7 @@ body{
 }
 
 .container{
-  max-width:480px;
+  max-width:520px;
   margin:auto;
   padding:14px;
 }
@@ -50,7 +53,7 @@ body{
   gap:10px;
   padding:8px 14px;
   border-radius:14px;
-  background:#f1f5f9;
+  background:#eef2ff;
 }
 .dot{
   width:10px;
@@ -114,8 +117,21 @@ body{
   transition:width .6s;
 }
 
+/* GRAPH */
+.graph{
+  background:var(--card);
+  border-radius:16px;
+  padding:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+canvas{
+  width:100%!important;
+  height:220px!important;
+}
+
 /* LOGS */
 .logs{
+  margin-top:16px;
   background:var(--card);
   border-radius:14px;
   padding:14px;
@@ -140,8 +156,8 @@ body{
   <div class="header">
     <h2>🤖 IFBot</h2>
     <div class="status">
-      <div class="dot" id="dot"></div>
-      <span id="status">Загрузка…</span>
+      <div class="dot" id="statusDot"></div>
+      <span id="statusText">Загрузка…</span>
     </div>
   </div>
 
@@ -154,10 +170,14 @@ body{
     <div class="card">
       <div class="label">Батарея</div>
       <div style="display:flex;align-items:center;gap:10px;margin-top:6px">
-        <div class="battery"><div class="level" id="battery"></div></div>
+        <div class="battery"><div class="level" id="batteryLevel"></div></div>
         <div class="value" id="batteryText">—%</div>
       </div>
     </div>
+  </div>
+
+  <div class="graph">
+    <canvas id="cycleChart"></canvas>
   </div>
 
   <div class="logs" id="logs">
@@ -170,14 +190,18 @@ body{
 const DATA_URL =
   "https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json";
 
+let chart;
+let history = [];
+
 async function loadData(){
   try{
     const r = await fetch(DATA_URL + "?t=" + Date.now());
+    if(!r.ok) throw new Error("HTTP " + r.status);
     const d = await r.json();
     updateUI(d);
   }catch(e){
-    document.getElementById("status").textContent="Нет данных";
-    document.getElementById("dot").style.background="var(--err)";
+    document.getElementById("statusText").textContent = "Нет данных";
+    document.getElementById("statusDot").style.background = "var(--err)";
   }
 }
 
@@ -185,39 +209,80 @@ function updateUI(d){
   document.getElementById("cycle").textContent =
     d.cycle_count ?? "—";
 
-  document.getElementById("status").textContent =
+  document.getElementById("statusText").textContent =
     d.bot_status ?? "—";
 
-  const b = parseInt(d.battery_info?.battery_level || 0);
-  document.getElementById("battery").style.width = b + "%";
-  document.getElementById("batteryText").textContent = b + "%";
+  const battery = parseInt(d.battery_info?.battery_level || 0);
+  document.getElementById("batteryLevel").style.width = battery + "%";
+  document.getElementById("batteryText").textContent = battery + "%";
 
-  const dot = document.getElementById("dot");
+  const dot = document.getElementById("statusDot");
   dot.style.background =
-    b < 20 ? "var(--warn)" : "var(--ok)";
+    battery < 20 ? "var(--warn)" : "var(--ok)";
 
+  // HISTORY
+  if(typeof d.cycle_count === "number"){
+    history.push({
+      x: new Date(),
+      y: d.cycle_count
+    });
+    if(history.length > 50) history.shift();
+    updateChart();
+  }
+
+  // LOGS
   if(d.last_log){
-    const logs = d.last_log.split("\n").slice(-20);
+    const lines = d.last_log.split("\n").slice(-20);
     const box = document.getElementById("logs");
     box.innerHTML = "";
-    logs.forEach(l=>{
-      const div=document.createElement("div");
-      div.className="log" +
-        (l.includes("ERROR")?" error":
-         l.includes("WARN")?" warn":"");
-      div.textContent=l;
+    lines.forEach(l=>{
+      const div = document.createElement("div");
+      div.className = "log" +
+        (l.includes("ERROR") ? " error" :
+         l.includes("WARN") ? " warn" : "");
+      div.textContent = l;
       box.appendChild(div);
     });
   }
 }
 
-loadData();
-setInterval(loadData, 30000);
+function updateChart(){
+  if(!chart){
+    chart = new Chart(
+      document.getElementById("cycleChart"),
+      {
+        type:"line",
+        data:{
+          datasets:[{
+            label:"Циклы",
+            data:history,
+            borderColor:"#4f8cff",
+            tension:.3
+          }]
+        },
+        options:{
+          responsive:true,
+          plugins:{legend:{display:false}},
+          scales:{
+            x:{type:"time"},
+            y:{beginAtZero:true}
+          }
+        }
+      }
+    );
+  }else{
+    chart.data.datasets[0].data = history;
+    chart.update();
+  }
+}
 
-/* PWA */
+// PWA
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("/service-worker.js");
 }
+
+loadData();
+setInterval(loadData, 30000);
 </script>
 
 </body>
