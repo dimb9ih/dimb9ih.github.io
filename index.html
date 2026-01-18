@@ -2,151 +2,223 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>🤖 IFBot Статус</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🤖 IFBot Status</title>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#5B8DEF">
 
 <style>
-/* === ЯДРО === */
 :root{
---p:#5B8DEF;--ok:#2ECC71;--warn:#F39C12;--err:#E74C3C;
---bg:#F8FAFD;--card:#fff;--text:#2D3748;--muted:#718096;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --ok:#22c55e;
+  --warn:#f59e0b;
+  --err:#ef4444;
+  --primary:#5B8DEF;
 }
+
 *{box-sizing:border-box}
 body{
-margin:0;font-family:-apple-system,BlinkMacSystemFont,Inter,system-ui;
-background:linear-gradient(135deg,#f8fafd,#edf2f7);
-color:var(--text)
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,system-ui,Inter;
+  background:var(--bg);
+  color:var(--text);
 }
-.container{max-width:500px;margin:auto;padding:14px}
 
-/* === HEADER === */
-.header{
-background:var(--card);border-radius:20px;padding:18px;
-box-shadow:0 8px 30px rgba(0,0,0,.05);
-text-align:center;position:relative;overflow:hidden
+.container{
+  max-width:480px;
+  margin:auto;
+  padding:14px;
 }
-.header:before{
-content:"";position:absolute;top:0;left:0;right:0;height:3px;
-background:linear-gradient(90deg,var(--p),var(--ok),var(--warn),var(--err))
+
+/* HEADER */
+.header{
+  background:var(--card);
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  text-align:center;
 }
 .status{
-display:inline-flex;align-items:center;gap:10px;
-margin-top:12px;padding:8px 16px;border-radius:14px;
-background:#f9fafc;border:1px solid #e2e8f0
+  margin-top:10px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 14px;
+  border-radius:14px;
+  background:#f1f5f9;
 }
 .dot{
-width:10px;height:10px;border-radius:50%;
-background:var(--ok);box-shadow:0 0 12px rgba(46,204,113,.5);
-animation:pulse 2s infinite
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--ok);
+  animation:pulse 2s infinite;
 }
 @keyframes pulse{
-0%{opacity:.6}50%{opacity:.2}100%{opacity:.6}
+  0%{opacity:.3}
+  50%{opacity:1}
+  100%{opacity:.3}
 }
 
-/* === CARDS === */
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:16px 0}
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin:16px 0;
+}
 .card{
-background:var(--card);border-radius:14px;padding:14px;
-box-shadow:0 6px 20px rgba(0,0,0,.04);
-transition:.3s
+  background:var(--card);
+  border-radius:14px;
+  padding:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.05);
 }
-.card:hover{transform:translateY(-2px)}
-.label{font-size:12px;color:var(--muted)}
-.value{font-size:22px;font-weight:700}
+.label{
+  font-size:12px;
+  color:var(--muted);
+}
+.value{
+  font-size:22px;
+  font-weight:700;
+  margin-top:6px;
+}
 
-/* === BATTERY === */
-.battery{width:46px;height:22px;border:2px solid #e2e8f0;
-border-radius:8px;position:relative}
+/* BATTERY */
+.battery{
+  width:48px;
+  height:22px;
+  border:2px solid #cbd5e1;
+  border-radius:8px;
+  position:relative;
+}
 .battery::after{
-content:"";position:absolute;right:-4px;top:50%;
-width:4px;height:12px;background:#e2e8f0;transform:translateY(-50%)
+  content:"";
+  position:absolute;
+  right:-4px;
+  top:50%;
+  width:4px;
+  height:12px;
+  background:#cbd5e1;
+  transform:translateY(-50%);
 }
 .level{
-height:100%;background:linear-gradient(90deg,#2ecc71,#27ae60);
-border-radius:6px;transition:width .6s cubic-bezier(.4,1.4,.6,1)
+  height:100%;
+  background:linear-gradient(90deg,#22c55e,#16a34a);
+  border-radius:6px;
+  width:0%;
+  transition:width .6s;
 }
 
-/* === GRAPH === */
-.graph{
-background:var(--card);border-radius:16px;padding:16px;
-box-shadow:0 6px 25px rgba(0,0,0,.05)
-}
-canvas{width:100%!important;height:240px!important}
-
-/* === LOGS === */
+/* LOGS */
 .logs{
-background:var(--card);border-radius:16px;padding:16px;margin-top:16px;
-font-family:monospace;font-size:12px;max-height:200px;overflow:auto
+  background:var(--card);
+  border-radius:14px;
+  padding:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.05);
+  font-family:monospace;
+  font-size:12px;
+  max-height:220px;
+  overflow:auto;
 }
-.log{padding:6px 0;border-bottom:1px solid #edf2f7}
+.log{
+  padding:4px 0;
+  border-bottom:1px solid #e5e7eb;
+}
 .log.error{color:var(--err)}
 .log.warn{color:var(--warn)}
-
 </style>
 </head>
 
 <body>
 <div class="container">
 
-<div class="header">
-<h2>🤖 IFBot</h2>
-<div class="status"><div class="dot"></div><span id="status">Загрузка…</span></div>
-</div>
+  <div class="header">
+    <h2>🤖 IFBot</h2>
+    <div class="status">
+      <div class="dot" id="dot"></div>
+      <span id="status">Загрузка…</span>
+    </div>
+  </div>
 
-<div class="grid">
-<div class="card"><div class="label">Цикл</div><div class="value" id="cycle">0</div></div>
-<div class="card">
-<div class="label">Батарея</div>
-<div style="display:flex;align-items:center;gap:10px">
-<div class="battery"><div class="level" id="bat"></div></div>
-<div class="value" id="batv">0%</div>
-</div>
-</div>
-</div>
+  <div class="grid">
+    <div class="card">
+      <div class="label">Цикл</div>
+      <div class="value" id="cycle">—</div>
+    </div>
 
-<div class="graph">
-<canvas id="chart"></canvas>
-</div>
+    <div class="card">
+      <div class="label">Батарея</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:6px">
+        <div class="battery"><div class="level" id="battery"></div></div>
+        <div class="value" id="batteryText">—%</div>
+      </div>
+    </div>
+  </div>
 
-<div class="logs" id="logs"></div>
+  <div class="logs" id="logs">
+    <div class="log">Загрузка логов…</div>
+  </div>
 
 </div>
 
 <script>
-const URL="https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json";
-let chart,history=[];
+const DATA_URL =
+  "https://raw.githubusercontent.com/dimb9ih/dimb9ih.github.io/master/ifbot_stats.json";
 
-async function load(){
-const r=await fetch(URL+"?t="+Date.now());
-const d=await r.json();
-update(d)
+async function loadData(){
+  try{
+    const r = await fetch(DATA_URL + "?t=" + Date.now());
+    const d = await r.json();
+    updateUI(d);
+  }catch(e){
+    document.getElementById("status").textContent="Нет данных";
+    document.getElementById("dot").style.background="var(--err)";
+  }
 }
 
-function update(d){
-document.getElementById("cycle").textContent=d.cycle_count||0;
-document.getElementById("status").textContent=d.bot_status||"—";
-const b=parseInt(d.battery_info?.battery_level||0);
-document.getElementById("bat").style.width=b+"%";
-document.getElementById("batv").textContent=b+"%";
+function updateUI(d){
+  document.getElementById("cycle").textContent =
+    d.cycle_count ?? "—";
 
-if(d.last_log){
-const logs=d.last_log.split("\n").slice(-10);
-const box=document.getElementById("logs");
-box.innerHTML="";
-logs.forEach(l=>{
-const div=document.createElement("div");
-div.className="log"+(l.includes("ERROR")?" error":l.includes("WARN")?" warn":"");
-div.textContent=l;
-box.appendChild(div)
-})
-}
+  document.getElementById("status").textContent =
+    d.bot_status ?? "—";
+
+  const b = parseInt(d.battery_info?.battery_level || 0);
+  document.getElementById("battery").style.width = b + "%";
+  document.getElementById("batteryText").textContent = b + "%";
+
+  const dot = document.getElementById("dot");
+  dot.style.background =
+    b < 20 ? "var(--warn)" : "var(--ok)";
+
+  if(d.last_log){
+    const logs = d.last_log.split("\n").slice(-20);
+    const box = document.getElementById("logs");
+    box.innerHTML = "";
+    logs.forEach(l=>{
+      const div=document.createElement("div");
+      div.className="log" +
+        (l.includes("ERROR")?" error":
+         l.includes("WARN")?" warn":"");
+      div.textContent=l;
+      box.appendChild(div);
+    });
+  }
 }
 
-setInterval(load,30000);
-load();
+loadData();
+setInterval(loadData, 30000);
+
+/* PWA */
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("/service-worker.js");
+}
 </script>
+
 </body>
 </html>
