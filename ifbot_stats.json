@@ -1,16 +1,15 @@
 {
-  "timestamp": 1768740860,
-  "timestamp_human": "2026-01-18 15:54:20",
-  "cycle_count": 477,
+  "timestamp": 1768740952,
+  "timestamp_human": "2026-01-18 15:55:52",
+  "cycle_count": 478,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 27м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 29м назад",
   "error_stats": {
-    "total_errors": 3,
+    "total_errors": 2,
     "warnings": 2,
-    "errors": 1,
+    "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-18 14:37:25 - ERROR - [CYCLE 460] Main screen not found",
       "2026-01-18 14:54:46 - WARNING - [CYCLE 464] Still on main, trying again",
       "2026-01-18 15:26:25 - WARNING - [CYCLE 470] Still on main, trying again"
     ],
@@ -32,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.35",
-      "load_5": "2.88",
-      "load_15": "3.04",
+      "load_1": "4.17",
+      "load_5": "3.38",
+      "load_15": "3.22",
       "cores": 4,
-      "utilization_percent": 58.8
+      "utilization_percent": 104.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 243,
+      "used_mb": 241,
       "free_mb": 1,
-      "cached_mb": 138,
-      "utilization_percent": 12.2
+      "cached_mb": 136,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -52,9 +51,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768740860,
-    "timestamp_human": "2026-01-18 15:54:20"
+    "timestamp": 1768740952,
+    "timestamp_human": "2026-01-18 15:55:52"
   },
-  "last_log": "2026-01-18 15:52:35 - INFO - [CYCLE 475] Connected to ZXTouch\n2026-01-18 15:52:39 - INFO - [CYCLE 476] Starting cycle #476\n2026-01-18 15:52:39 - INFO - [CYCLE 476] Step 1/7: Waiting for main screen...\n2026-01-18 15:52:39 - INFO - [CYCLE 476] Waiting for main screen...\n2026-01-18 15:52:39 - DEBUG - [CYCLE 476] Current: unknown, waiting for main... 0s\n2026-01-18 15:52:39 - DEBUG - [CYCLE 476] Current: unknown, waiting for main... 0s\n2026-01-18 15:52:44 - INFO - [CYCLE 476] Found attention popup\n2026-01-18 15:52:45 - INFO - [CYCLE 476] On main screen\n2026-01-18 15:52:45 - INFO - [CYCLE 476] Step 2/7: Transition to arsenal...\n2026-01-18 15:52:45 - INFO - [CYCLE 476] Quick transition: Кнопка Далее\n2026-01-18 15:52:48 - INFO - [CYCLE 476] Step 3/7: Transition to battle...\n2026-01-18 15:52:48 - INFO - [CYCLE 476] Quick transition: Кнопка Битва\n2026-01-18 15:52:51 - INFO - [CYCLE 476] Step 4/7: Transition to team...\n2026-01-18 15:52:53 - INFO - [CYCLE 476] Waiting for team screen...\n2026-01-18 15:52:54 - INFO - [CYCLE 476] Found team screen button\n2026-01-18 15:52:54 - INFO - [CYCLE 476] Step 5/7: Pressing team screen button...\n2026-01-18 15:52:56 - INFO - [CYCLE 476] Step 6/7: Sending invitations...\n2026-01-18 15:52:56 - INFO - [CYCLE 476] Invite #1 sent (0s)\n2026-01-18 15:53:02 - INFO - [CYCLE 476] Invite #2 sent (5s)\n2026-01-18 15:53:07 - INFO - [CYCLE 476] Invite #3 sent (11s)\n2026-01-18 15:53:13 - INFO - [CYCLE 476] Invite #4 sent (17s)\n2026-01-18 15:53:19 - INFO - [CYCLE 476] Invite #5 sent (23s)\n2026-01-18 15:53:25 - DEBUG - [CYCLE 476] Checking for attention popup (invite #5)\n2026-01-18 15:53:25 - INFO - [CYCLE 476] Invite #6 sent (29s)\n2026-01-18 15:53:31 - INFO - [CYCLE 476] Someone joined the team!\n2026-01-18 15:53:31 - INFO - [CYCLE 476] Step 7/7: Starting game...\n2026-01-18 15:53:33 - INFO - [CYCLE 476] Checking for loading color at (200, 100)...\n2026-01-18 15:53:57 - INFO - [CYCLE 476] Loading color detected! Color: #A9D917\n2026-01-18 15:53:57 - INFO - [CYCLE 476] Cycle #476 completed successfully - loading color detected\n2026-01-18 15:54:18 - INFO - [CYCLE 476] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 15:54:20"
+  "last_log": "2026-01-18 15:53:57 - INFO - [CYCLE 476] Loading color detected! Color: #A9D917\n2026-01-18 15:53:57 - INFO - [CYCLE 476] Cycle #476 completed successfully - loading color detected\n2026-01-18 15:54:18 - INFO - [CYCLE 476] Connected to ZXTouch\n2026-01-18 15:54:22 - INFO - [CYCLE 477] Starting cycle #477\n2026-01-18 15:54:22 - INFO - [CYCLE 477] Step 1/7: Waiting for main screen...\n2026-01-18 15:54:22 - INFO - [CYCLE 477] Waiting for main screen...\n2026-01-18 15:54:22 - DEBUG - [CYCLE 477] Current: unknown, waiting for main... 0s\n2026-01-18 15:54:22 - DEBUG - [CYCLE 477] Current: unknown, waiting for main... 0s\n2026-01-18 15:54:27 - DEBUG - [CYCLE 477] Current: loading, waiting for main... 5s\n2026-01-18 15:54:27 - INFO - [CYCLE 477] Found attention popup\n2026-01-18 15:54:29 - INFO - [CYCLE 477] On main screen\n2026-01-18 15:54:29 - INFO - [CYCLE 477] Step 2/7: Transition to arsenal...\n2026-01-18 15:54:29 - INFO - [CYCLE 477] Quick transition: Кнопка Далее\n2026-01-18 15:54:32 - INFO - [CYCLE 477] Step 3/7: Transition to battle...\n2026-01-18 15:54:32 - INFO - [CYCLE 477] Quick transition: Кнопка Битва\n2026-01-18 15:54:35 - INFO - [CYCLE 477] Step 4/7: Transition to team...\n2026-01-18 15:54:37 - INFO - [CYCLE 477] Waiting for team screen...\n2026-01-18 15:54:38 - INFO - [CYCLE 477] Found team screen button\n2026-01-18 15:54:38 - INFO - [CYCLE 477] Step 5/7: Pressing team screen button...\n2026-01-18 15:54:39 - INFO - [CYCLE 477] Step 6/7: Sending invitations...\n2026-01-18 15:54:40 - INFO - [CYCLE 477] Invite #1 sent (0s)\n2026-01-18 15:54:45 - INFO - [CYCLE 477] Invite #2 sent (5s)\n2026-01-18 15:54:51 - INFO - [CYCLE 477] Invite #3 sent (11s)\n2026-01-18 15:54:57 - INFO - [CYCLE 477] Invite #4 sent (17s)\n2026-01-18 15:55:03 - INFO - [CYCLE 477] Someone joined the team!\n2026-01-18 15:55:03 - INFO - [CYCLE 477] Step 7/7: Starting game...\n2026-01-18 15:55:05 - INFO - [CYCLE 477] Checking for loading color at (200, 100)...\n2026-01-18 15:55:29 - INFO - [CYCLE 477] Loading color detected! Color: #A9D917\n2026-01-18 15:55:29 - INFO - [CYCLE 477] Cycle #477 completed successfully - loading color detected\n2026-01-18 15:55:50 - INFO - [CYCLE 477] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 15:55:52"
 }
