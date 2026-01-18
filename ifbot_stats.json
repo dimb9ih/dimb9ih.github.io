@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768731106,
-  "timestamp_human": "2026-01-18 13:11:46",
-  "cycle_count": 440,
+  "timestamp": 1768731188,
+  "timestamp_human": "2026-01-18 13:13:08",
+  "cycle_count": 441,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 5, ошибок: 1), последняя: 6м назад",
+  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 5, ошибок: 1), последняя: 7м назад",
   "error_stats": {
     "total_errors": 6,
     "warnings": 5,
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.58",
-      "load_5": "4.36",
-      "load_15": "3.89",
+      "load_1": "4.43",
+      "load_5": "4.69",
+      "load_15": "4.08",
       "cores": 4,
-      "utilization_percent": 114.5
+      "utilization_percent": 110.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 5,
-      "cached_mb": 116,
-      "utilization_percent": 11.7
+      "used_mb": 232,
+      "free_mb": 14,
+      "cached_mb": 107,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768731106,
-    "timestamp_human": "2026-01-18 13:11:46"
+    "timestamp": 1768731188,
+    "timestamp_human": "2026-01-18 13:13:08"
   },
-  "last_log": "2026-01-18 13:09:37 - INFO - [CYCLE 438] Step 7/7: Starting game...\n2026-01-18 13:09:38 - INFO - [CYCLE 438] Checking for loading color at (200, 100)...\n2026-01-18 13:10:02 - INFO - [CYCLE 438] Loading color detected! Color: #A9D917\n2026-01-18 13:10:02 - INFO - [CYCLE 438] Cycle #438 completed successfully - loading color detected\n2026-01-18 13:10:23 - INFO - [CYCLE 438] Connected to ZXTouch\n2026-01-18 13:10:27 - INFO - [CYCLE 439] Starting cycle #439\n2026-01-18 13:10:27 - INFO - [CYCLE 439] Step 1/7: Waiting for main screen...\n2026-01-18 13:10:27 - INFO - [CYCLE 439] Waiting for main screen...\n2026-01-18 13:10:27 - DEBUG - [CYCLE 439] Current: loading, waiting for main... 0s\n2026-01-18 13:10:28 - DEBUG - [CYCLE 439] Current: loading, waiting for main... 0s\n2026-01-18 13:10:29 - INFO - [CYCLE 439] On main screen\n2026-01-18 13:10:29 - INFO - [CYCLE 439] Step 2/7: Transition to arsenal...\n2026-01-18 13:10:29 - INFO - [CYCLE 439] Quick transition: Кнопка Далее\n2026-01-18 13:10:31 - INFO - [CYCLE 439] Found attention popup\n2026-01-18 13:10:33 - INFO - [CYCLE 439] Step 3/7: Transition to battle...\n2026-01-18 13:10:33 - INFO - [CYCLE 439] Quick transition: Кнопка Битва\n2026-01-18 13:10:35 - INFO - [CYCLE 439] Step 4/7: Transition to team...\n2026-01-18 13:10:37 - INFO - [CYCLE 439] Waiting for team screen...\n2026-01-18 13:10:38 - INFO - [CYCLE 439] Found team screen button\n2026-01-18 13:10:38 - INFO - [CYCLE 439] Step 5/7: Pressing team screen button...\n2026-01-18 13:10:40 - INFO - [CYCLE 439] Step 6/7: Sending invitations...\n2026-01-18 13:10:40 - INFO - [CYCLE 439] Invite #1 sent (0s)\n2026-01-18 13:10:46 - INFO - [CYCLE 439] Invite #2 sent (5s)\n2026-01-18 13:10:52 - INFO - [CYCLE 439] Invite #3 sent (11s)\n2026-01-18 13:10:58 - INFO - [CYCLE 439] Someone joined the team!\n2026-01-18 13:10:58 - INFO - [CYCLE 439] Step 7/7: Starting game...\n2026-01-18 13:10:59 - INFO - [CYCLE 439] Checking for loading color at (200, 100)...\n2026-01-18 13:11:23 - INFO - [CYCLE 439] Loading color detected! Color: #A9D917\n2026-01-18 13:11:23 - INFO - [CYCLE 439] Cycle #439 completed successfully - loading color detected\n2026-01-18 13:11:44 - INFO - [CYCLE 439] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 13:11:46"
+  "last_log": "2026-01-18 13:10:59 - INFO - [CYCLE 439] Checking for loading color at (200, 100)...\n2026-01-18 13:11:23 - INFO - [CYCLE 439] Loading color detected! Color: #A9D917\n2026-01-18 13:11:23 - INFO - [CYCLE 439] Cycle #439 completed successfully - loading color detected\n2026-01-18 13:11:44 - INFO - [CYCLE 439] Connected to ZXTouch\n2026-01-18 13:11:48 - INFO - [CYCLE 440] Starting cycle #440\n2026-01-18 13:11:48 - INFO - [CYCLE 440] Step 1/7: Waiting for main screen...\n2026-01-18 13:11:48 - INFO - [CYCLE 440] Waiting for main screen...\n2026-01-18 13:11:48 - DEBUG - [CYCLE 440] Current: unknown, waiting for main... 0s\n2026-01-18 13:11:49 - DEBUG - [CYCLE 440] Current: unknown, waiting for main... 0s\n2026-01-18 13:11:53 - DEBUG - [CYCLE 440] Current: loading, waiting for main... 5s\n2026-01-18 13:11:55 - INFO - [CYCLE 440] Found attention popup\n2026-01-18 13:11:56 - INFO - [CYCLE 440] Found special invite popup\n2026-01-18 13:11:57 - INFO - [CYCLE 440] On main screen\n2026-01-18 13:11:57 - INFO - [CYCLE 440] Step 2/7: Transition to arsenal...\n2026-01-18 13:11:57 - INFO - [CYCLE 440] Quick transition: Кнопка Далее\n2026-01-18 13:12:00 - INFO - [CYCLE 440] Step 3/7: Transition to battle...\n2026-01-18 13:12:00 - INFO - [CYCLE 440] Quick transition: Кнопка Битва\n2026-01-18 13:12:03 - INFO - [CYCLE 440] Step 4/7: Transition to team...\n2026-01-18 13:12:05 - INFO - [CYCLE 440] Waiting for team screen...\n2026-01-18 13:12:06 - INFO - [CYCLE 440] Found team screen button\n2026-01-18 13:12:06 - INFO - [CYCLE 440] Step 5/7: Pressing team screen button...\n2026-01-18 13:12:08 - INFO - [CYCLE 440] Step 6/7: Sending invitations...\n2026-01-18 13:12:08 - INFO - [CYCLE 440] Invite #1 sent (0s)\n2026-01-18 13:12:14 - INFO - [CYCLE 440] Invite #2 sent (5s)\n2026-01-18 13:12:19 - INFO - [CYCLE 440] Someone joined the team!\n2026-01-18 13:12:19 - INFO - [CYCLE 440] Step 7/7: Starting game...\n2026-01-18 13:12:21 - INFO - [CYCLE 440] Checking for loading color at (200, 100)...\n2026-01-18 13:12:45 - INFO - [CYCLE 440] Loading color detected! Color: #A9D917\n2026-01-18 13:12:45 - INFO - [CYCLE 440] Cycle #440 completed successfully - loading color detected\n2026-01-18 13:13:06 - INFO - [CYCLE 440] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 13:13:08"
 }
