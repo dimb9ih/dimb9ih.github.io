@@ -1,19 +1,21 @@
 {
-  "timestamp": 1768727094,
-  "timestamp_human": "2026-01-18 12:04:54",
-  "cycle_count": 423,
+  "timestamp": 1768727232,
+  "timestamp_human": "2026-01-18 12:07:12",
+  "cycle_count": 424,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 8м назад",
+  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 3), последняя: 27с назад",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 3,
+    "warnings": 3,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-18 11:56:08 - WARNING - [CYCLE 421] Still on main, trying again"
+      "2026-01-18 11:56:08 - WARNING - [CYCLE 421] Still on main, trying again",
+      "2026-01-18 12:06:45 - WARNING - [CYCLE 423] Found Внимание popup during invitation phase",
+      "2026-01-18 12:06:45 - WARNING - [CYCLE 423] Attention popup detected, returning to main screen"
     ],
-    "last_error_time": 1768726568,
-    "error_timestamp_human": "2026-01-18 11:56:08"
+    "last_error_time": 1768727205,
+    "error_timestamp_human": "2026-01-18 12:06:45"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +32,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.95",
-      "load_5": "2.79",
-      "load_15": "2.65",
+      "load_1": "2.57",
+      "load_5": "2.89",
+      "load_15": "2.73",
       "cores": 4,
-      "utilization_percent": 73.8
+      "utilization_percent": 64.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 216,
-      "free_mb": 56,
-      "cached_mb": 111,
-      "utilization_percent": 10.8
+      "used_mb": 222,
+      "free_mb": 46,
+      "cached_mb": 107,
+      "utilization_percent": 11.1
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +52,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768727094,
-    "timestamp_human": "2026-01-18 12:04:54"
+    "timestamp": 1768727232,
+    "timestamp_human": "2026-01-18 12:07:12"
   },
-  "last_log": "2026-01-18 12:02:59 - INFO - [CYCLE 422] Waiting for main screen...\n2026-01-18 12:02:59 - DEBUG - [CYCLE 422] Current: unknown, waiting for main... 0s\n2026-01-18 12:03:00 - DEBUG - [CYCLE 422] Current: unknown, waiting for main... 0s\n2026-01-18 12:03:05 - DEBUG - [CYCLE 422] Current: loading, waiting for main... 5s\n2026-01-18 12:03:06 - INFO - [CYCLE 422] On main screen\n2026-01-18 12:03:06 - INFO - [CYCLE 422] Step 2/7: Transition to arsenal...\n2026-01-18 12:03:06 - INFO - [CYCLE 422] Quick transition: Кнопка Далее\n2026-01-18 12:03:09 - INFO - [CYCLE 422] Step 3/7: Transition to battle...\n2026-01-18 12:03:09 - INFO - [CYCLE 422] Quick transition: Кнопка Битва\n2026-01-18 12:03:12 - INFO - [CYCLE 422] Step 4/7: Transition to team...\n2026-01-18 12:03:14 - INFO - [CYCLE 422] Waiting for team screen...\n2026-01-18 12:03:15 - INFO - [CYCLE 422] Found team screen button\n2026-01-18 12:03:15 - INFO - [CYCLE 422] Step 5/7: Pressing team screen button...\n2026-01-18 12:03:16 - INFO - [CYCLE 422] Step 6/7: Sending invitations...\n2026-01-18 12:03:16 - INFO - [CYCLE 422] Invite #1 sent (0s)\n2026-01-18 12:03:17 - INFO - [CYCLE 422] Found attention popup\n2026-01-18 12:03:24 - INFO - [CYCLE 422] Invite #2 sent (7s)\n2026-01-18 12:03:29 - INFO - [CYCLE 422] Invite #3 sent (13s)\n2026-01-18 12:03:35 - INFO - [CYCLE 422] Invite #4 sent (18s)\n2026-01-18 12:03:41 - INFO - [CYCLE 422] Invite #5 sent (24s)\n2026-01-18 12:03:47 - DEBUG - [CYCLE 422] Checking for attention popup (invite #5)\n2026-01-18 12:03:47 - INFO - [CYCLE 422] Invite #6 sent (30s)\n2026-01-18 12:03:53 - INFO - [CYCLE 422] Invite #7 sent (36s)\n2026-01-18 12:03:59 - INFO - [CYCLE 422] Invite #8 sent (42s)\n2026-01-18 12:04:05 - INFO - [CYCLE 422] Someone joined the team!\n2026-01-18 12:04:05 - INFO - [CYCLE 422] Step 7/7: Starting game...\n2026-01-18 12:04:06 - INFO - [CYCLE 422] Checking for loading color at (200, 100)...\n2026-01-18 12:04:30 - INFO - [CYCLE 422] Loading color detected! Color: #A9D917\n2026-01-18 12:04:30 - INFO - [CYCLE 422] Cycle #422 completed successfully - loading color detected\n2026-01-18 12:04:51 - INFO - [CYCLE 422] Connected to ZXTouch\n",
-  "update_time": "2026-01-18 12:04:54"
+  "last_log": "2026-01-18 12:05:46 - DEBUG - [CYCLE 423] Current: loading, waiting for main... 45s\n2026-01-18 12:05:47 - DEBUG - [CYCLE 423] Current: loading, waiting for main... 45s\n2026-01-18 12:05:52 - DEBUG - [CYCLE 423] Current: loading, waiting for main... 50s\n2026-01-18 12:05:57 - DEBUG - [CYCLE 423] Current: loading, waiting for main... 55s\n2026-01-18 12:05:59 - INFO - [CYCLE 423] On main screen\n2026-01-18 12:05:59 - INFO - [CYCLE 423] Step 2/7: Transition to arsenal...\n2026-01-18 12:05:59 - INFO - [CYCLE 423] Quick transition: Кнопка Далее\n2026-01-18 12:06:02 - INFO - [CYCLE 423] Step 3/7: Transition to battle...\n2026-01-18 12:06:02 - INFO - [CYCLE 423] Quick transition: Кнопка Битва\n2026-01-18 12:06:05 - INFO - [CYCLE 423] Step 4/7: Transition to team...\n2026-01-18 12:06:07 - INFO - [CYCLE 423] Waiting for team screen...\n2026-01-18 12:06:08 - INFO - [CYCLE 423] Found team screen button\n2026-01-18 12:06:08 - INFO - [CYCLE 423] Step 5/7: Pressing team screen button...\n2026-01-18 12:06:09 - INFO - [CYCLE 423] Step 6/7: Sending invitations...\n2026-01-18 12:06:09 - INFO - [CYCLE 423] Invite #1 sent (0s)\n2026-01-18 12:06:15 - INFO - [CYCLE 423] Invite #2 sent (5s)\n2026-01-18 12:06:21 - INFO - [CYCLE 423] Invite #3 sent (11s)\n2026-01-18 12:06:22 - INFO - [CYCLE 423] Found attention popup\n2026-01-18 12:06:28 - INFO - [CYCLE 423] Found attention popup\n2026-01-18 12:06:30 - INFO - [CYCLE 423] Invite #4 sent (20s)\n2026-01-18 12:06:30 - INFO - [CYCLE 423] Found attention popup\n2026-01-18 12:06:37 - INFO - [CYCLE 423] Found attention popup\n2026-01-18 12:06:38 - INFO - [CYCLE 423] Invite #5 sent (28s)\n2026-01-18 12:06:39 - INFO - [CYCLE 423] Found attention popup\n2026-01-18 12:06:45 - DEBUG - [CYCLE 423] Checking for attention popup (invite #5)\n2026-01-18 12:06:45 - WARNING - [CYCLE 423] Found Внимание popup during invitation phase\n2026-01-18 12:06:45 - WARNING - [CYCLE 423] Attention popup detected, returning to main screen\n2026-01-18 12:06:45 - INFO - [CYCLE 423] Handling attention popup\n2026-01-18 12:06:46 - INFO - [CYCLE 423] Waiting 3 seconds after closing popup\n2026-01-18 12:07:09 - INFO - [CYCLE 423] Connected to ZXTouch\n",
+  "update_time": "2026-01-18 12:07:12"
 }
