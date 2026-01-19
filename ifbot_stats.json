@@ -1,19 +1,17 @@
 {
-  "timestamp": 1768853593,
-  "timestamp_human": "2026-01-19 23:13:13",
-  "cycle_count": 419,
+  "timestamp": 1768853784,
+  "timestamp_human": "2026-01-19 23:16:24",
+  "cycle_count": 420,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 51м назад",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 0,
+    "warnings": 0,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [
-      "2026-01-19 22:21:40 - WARNING - [CYCLE 406] Still on main, trying again"
-    ],
-    "last_error_time": 1768850500,
-    "error_timestamp_human": "2026-01-19 22:21:40"
+    "recent_errors": [],
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.23",
-      "load_5": "3.98",
-      "load_15": "3.70",
+      "load_1": "5.97",
+      "load_5": "4.86",
+      "load_15": "4.15",
       "cores": 4,
-      "utilization_percent": 80.8
+      "utilization_percent": 149.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 235,
-      "free_mb": 4,
-      "cached_mb": 117,
-      "utilization_percent": 11.8
+      "used_mb": 233,
+      "free_mb": 5,
+      "cached_mb": 132,
+      "utilization_percent": 11.7
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768853593,
-    "timestamp_human": "2026-01-19 23:13:13"
+    "timestamp": 1768853784,
+    "timestamp_human": "2026-01-19 23:16:24"
   },
-  "last_log": "2026-01-19 23:11:01 - INFO - [CYCLE 418] Step 2/7: Transition to arsenal...\n2026-01-19 23:11:01 - INFO - [CYCLE 418] Quick transition: Кнопка Далее\n2026-01-19 23:11:01 - INFO - [CYCLE 418] Found attention popup\n2026-01-19 23:11:05 - INFO - [CYCLE 418] Step 3/7: Transition to battle...\n2026-01-19 23:11:05 - INFO - [CYCLE 418] Quick transition: Кнопка Битва\n2026-01-19 23:11:08 - INFO - [CYCLE 418] Step 4/7: Transition to team...\n2026-01-19 23:11:10 - INFO - [CYCLE 418] Waiting for team screen...\n2026-01-19 23:11:11 - INFO - [CYCLE 418] Found team screen button\n2026-01-19 23:11:11 - INFO - [CYCLE 418] Step 5/7: Pressing team screen button...\n2026-01-19 23:11:12 - INFO - [CYCLE 418] Step 6/7: Sending invitations...\n2026-01-19 23:11:13 - INFO - [CYCLE 418] Invite #1 sent (0s)\n2026-01-19 23:11:18 - INFO - [CYCLE 418] Invite #2 sent (5s)\n2026-01-19 23:11:24 - INFO - [CYCLE 418] Invite #3 sent (11s)\n2026-01-19 23:11:30 - INFO - [CYCLE 418] Invite #4 sent (17s)\n2026-01-19 23:11:36 - INFO - [CYCLE 418] Invite #5 sent (23s)\n2026-01-19 23:11:42 - DEBUG - [CYCLE 418] Checking for attention popup (invite #5)\n2026-01-19 23:11:42 - INFO - [CYCLE 418] Invite #6 sent (29s)\n2026-01-19 23:11:48 - INFO - [CYCLE 418] Invite #7 sent (35s)\n2026-01-19 23:11:54 - INFO - [CYCLE 418] Invite #8 sent (41s)\n2026-01-19 23:12:00 - INFO - [CYCLE 418] Invite #9 sent (47s)\n2026-01-19 23:12:06 - INFO - [CYCLE 418] Invite #10 sent (53s)\n2026-01-19 23:12:12 - DEBUG - [CYCLE 418] Checking for attention popup (invite #10)\n2026-01-19 23:12:12 - INFO - [CYCLE 418] Invite #11 sent (59s)\n2026-01-19 23:12:18 - INFO - [CYCLE 418] Invite #12 sent (65s)\n2026-01-19 23:12:23 - INFO - [CYCLE 418] Someone joined the team!\n2026-01-19 23:12:23 - INFO - [CYCLE 418] Step 7/7: Starting game...\n2026-01-19 23:12:25 - INFO - [CYCLE 418] Checking for loading color at (200, 100)...\n2026-01-19 23:12:49 - INFO - [CYCLE 418] Loading color detected! Color: #A9D917\n2026-01-19 23:12:49 - INFO - [CYCLE 418] Cycle #418 completed successfully - loading color detected\n2026-01-19 23:13:10 - INFO - [CYCLE 418] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 23:13:13"
+  "last_log": "2026-01-19 23:14:07 - INFO - [CYCLE 419] Invite #6 sent (29s)\n2026-01-19 23:14:13 - INFO - [CYCLE 419] Invite #7 sent (35s)\n2026-01-19 23:14:19 - INFO - [CYCLE 419] Invite #8 sent (41s)\n2026-01-19 23:14:25 - INFO - [CYCLE 419] Invite #9 sent (47s)\n2026-01-19 23:14:31 - INFO - [CYCLE 419] Invite #10 sent (53s)\n2026-01-19 23:14:37 - DEBUG - [CYCLE 419] Checking for attention popup (invite #10)\n2026-01-19 23:14:37 - INFO - [CYCLE 419] Invite #11 sent (59s)\n2026-01-19 23:14:43 - INFO - [CYCLE 419] Invite #12 sent (65s)\n2026-01-19 23:14:49 - INFO - [CYCLE 419] Invite #13 sent (71s)\n2026-01-19 23:14:55 - INFO - [CYCLE 419] Invite #14 sent (76s)\n2026-01-19 23:15:01 - INFO - [CYCLE 419] Invite #15 sent (82s)\n2026-01-19 23:15:06 - DEBUG - [CYCLE 419] Checking for attention popup (invite #15)\n2026-01-19 23:15:07 - INFO - [CYCLE 419] Invite #16 sent (88s)\n2026-01-19 23:15:12 - INFO - [CYCLE 419] Invite #17 sent (94s)\n2026-01-19 23:15:18 - INFO - [CYCLE 419] Invite #18 sent (100s)\n2026-01-19 23:15:24 - INFO - [CYCLE 419] Invite #19 sent (106s)\n2026-01-19 23:15:30 - INFO - [CYCLE 419] Invite #20 sent (112s)\n2026-01-19 23:15:36 - DEBUG - [CYCLE 419] Checking for attention popup (invite #20)\n2026-01-19 23:15:36 - INFO - [CYCLE 419] Someone joined the team!\n2026-01-19 23:15:36 - INFO - [CYCLE 419] Step 7/7: Starting game...\n2026-01-19 23:15:38 - INFO - [CYCLE 419] Checking for loading color at (200, 100)...\n2026-01-19 23:16:01 - INFO - [CYCLE 419] Loading color detected! Color: #A9D917\n2026-01-19 23:16:01 - INFO - [CYCLE 419] Cycle #419 completed successfully - loading color detected\n2026-01-19 23:16:22 - INFO - [CYCLE 419] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 23:16:24"
 }
