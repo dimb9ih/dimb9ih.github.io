@@ -1,23 +1,23 @@
 {
-  "timestamp": 1768829737,
-  "timestamp_human": "2026-01-19 16:35:37",
-  "cycle_count": 291,
+  "timestamp": 1768829853,
+  "timestamp_human": "2026-01-19 16:37:33",
+  "cycle_count": 292,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 24 (предупреждений: 12, ошибок: 12), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 26 (предупреждений: 13, ошибок: 13), последняя: 24с назад",
   "error_stats": {
-    "total_errors": 24,
-    "warnings": 12,
-    "errors": 12,
+    "total_errors": 26,
+    "warnings": 13,
+    "errors": 13,
     "critical": 0,
     "recent_errors": [
-      "2026-01-19 16:31:24 - ERROR - [CYCLE 288] Main screen not found",
-      "2026-01-19 16:33:18 - WARNING - [CYCLE 289] Failed to reach main screen",
       "2026-01-19 16:33:18 - ERROR - [CYCLE 289] Main screen not found",
       "2026-01-19 16:35:14 - WARNING - [CYCLE 290] Failed to reach main screen",
-      "2026-01-19 16:35:14 - ERROR - [CYCLE 290] Main screen not found"
+      "2026-01-19 16:35:14 - ERROR - [CYCLE 290] Main screen not found",
+      "2026-01-19 16:37:09 - WARNING - [CYCLE 291] Failed to reach main screen",
+      "2026-01-19 16:37:09 - ERROR - [CYCLE 291] Main screen not found"
     ],
-    "last_error_time": 1768829714,
-    "error_timestamp_human": "2026-01-19 16:35:14"
+    "last_error_time": 1768829829,
+    "error_timestamp_human": "2026-01-19 16:37:09"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "5.18",
-      "load_5": "5.26",
-      "load_15": "5.40",
+      "load_1": "7.77",
+      "load_5": "5.83",
+      "load_15": "5.59",
       "cores": 4,
-      "utilization_percent": 129.5
+      "utilization_percent": 194.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 235,
-      "free_mb": 1,
-      "cached_mb": 130,
-      "utilization_percent": 11.8
+      "used_mb": 229,
+      "free_mb": 0,
+      "cached_mb": 120,
+      "utilization_percent": 11.5
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768829737,
-    "timestamp_human": "2026-01-19 16:35:37"
+    "timestamp": 1768829853,
+    "timestamp_human": "2026-01-19 16:37:33"
   },
-  "last_log": "2026-01-19 16:33:43 - INFO - [CYCLE 290] Starting cycle #290\n2026-01-19 16:33:43 - INFO - [CYCLE 290] Step 1/7: Waiting for main screen...\n2026-01-19 16:33:43 - INFO - [CYCLE 290] Waiting for main screen...\n2026-01-19 16:33:44 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 0s\n2026-01-19 16:33:44 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 0s\n2026-01-19 16:33:48 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 5s\n2026-01-19 16:33:49 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 5s\n2026-01-19 16:33:54 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 10s\n2026-01-19 16:33:59 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 15s\n2026-01-19 16:34:03 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 20s\n2026-01-19 16:34:04 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 20s\n2026-01-19 16:34:09 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 25s\n2026-01-19 16:34:09 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 25s\n2026-01-19 16:34:14 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 30s\n2026-01-19 16:34:19 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 35s\n2026-01-19 16:34:24 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 40s\n2026-01-19 16:34:29 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 45s\n2026-01-19 16:34:34 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 50s\n2026-01-19 16:34:39 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 55s\n2026-01-19 16:34:44 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 60s\n2026-01-19 16:34:48 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 65s\n2026-01-19 16:34:49 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 65s\n2026-01-19 16:34:54 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 70s\n2026-01-19 16:34:54 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 70s\n2026-01-19 16:34:59 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 75s\n2026-01-19 16:35:04 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 80s\n2026-01-19 16:35:09 - DEBUG - [CYCLE 290] Current: unknown, waiting for main... 85s\n2026-01-19 16:35:14 - WARNING - [CYCLE 290] Failed to reach main screen\n2026-01-19 16:35:14 - ERROR - [CYCLE 290] Main screen not found\n2026-01-19 16:35:34 - INFO - [CYCLE 290] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 16:35:37"
+  "last_log": "2026-01-19 16:35:40 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 0s\n2026-01-19 16:35:44 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 5s\n2026-01-19 16:35:45 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 5s\n2026-01-19 16:35:49 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 10s\n2026-01-19 16:35:54 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 15s\n2026-01-19 16:35:55 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 15s\n2026-01-19 16:35:59 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 20s\n2026-01-19 16:35:59 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 20s\n2026-01-19 16:36:04 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 25s\n2026-01-19 16:36:05 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 25s\n2026-01-19 16:36:09 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 30s\n2026-01-19 16:36:10 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 30s\n2026-01-19 16:36:14 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 35s\n2026-01-19 16:36:19 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 40s\n2026-01-19 16:36:24 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 45s\n2026-01-19 16:36:29 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 50s\n2026-01-19 16:36:35 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 55s\n2026-01-19 16:36:39 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 60s\n2026-01-19 16:36:40 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 60s\n2026-01-19 16:36:44 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 65s\n2026-01-19 16:36:45 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 65s\n2026-01-19 16:36:49 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 70s\n2026-01-19 16:36:50 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 70s\n2026-01-19 16:36:54 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 75s\n2026-01-19 16:36:55 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 75s\n2026-01-19 16:36:59 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 80s\n2026-01-19 16:37:04 - DEBUG - [CYCLE 291] Current: unknown, waiting for main... 85s\n2026-01-19 16:37:09 - WARNING - [CYCLE 291] Failed to reach main screen\n2026-01-19 16:37:09 - ERROR - [CYCLE 291] Main screen not found\n2026-01-19 16:37:30 - INFO - [CYCLE 291] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 16:37:33"
 }
