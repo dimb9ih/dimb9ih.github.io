@@ -1,23 +1,23 @@
 {
-  "timestamp": 1768822015,
-  "timestamp_human": "2026-01-19 14:26:55",
-  "cycle_count": 224,
+  "timestamp": 1768822130,
+  "timestamp_human": "2026-01-19 14:28:50",
+  "cycle_count": 225,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 3, ошибок: 3), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 8 (предупреждений: 4, ошибок: 4), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 6,
-    "warnings": 3,
-    "errors": 3,
+    "total_errors": 8,
+    "warnings": 4,
+    "errors": 4,
     "critical": 0,
     "recent_errors": [
-      "2026-01-19 14:22:42 - ERROR - [CYCLE 221] Main screen not found",
-      "2026-01-19 14:24:37 - WARNING - [CYCLE 222] Failed to reach main screen",
       "2026-01-19 14:24:37 - ERROR - [CYCLE 222] Main screen not found",
       "2026-01-19 14:26:32 - WARNING - [CYCLE 223] Failed to reach main screen",
-      "2026-01-19 14:26:32 - ERROR - [CYCLE 223] Main screen not found"
+      "2026-01-19 14:26:32 - ERROR - [CYCLE 223] Main screen not found",
+      "2026-01-19 14:28:27 - WARNING - [CYCLE 224] Failed to reach main screen",
+      "2026-01-19 14:28:27 - ERROR - [CYCLE 224] Main screen not found"
     ],
-    "last_error_time": 1768821992,
-    "error_timestamp_human": "2026-01-19 14:26:32"
+    "last_error_time": 1768822107,
+    "error_timestamp_human": "2026-01-19 14:28:27"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.28",
-      "load_5": "4.83",
-      "load_15": "4.94",
+      "load_1": "5.00",
+      "load_5": "5.15",
+      "load_15": "5.07",
       "cores": 4,
-      "utilization_percent": 82.0
+      "utilization_percent": 125.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
-      "free_mb": 4,
-      "cached_mb": 133,
-      "utilization_percent": 11.9
+      "used_mb": 229,
+      "free_mb": 13,
+      "cached_mb": 115,
+      "utilization_percent": 11.5
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768822015,
-    "timestamp_human": "2026-01-19 14:26:55"
+    "timestamp": 1768822130,
+    "timestamp_human": "2026-01-19 14:28:50"
   },
-  "last_log": "2026-01-19 14:25:01 - INFO - [CYCLE 223] Waiting for main screen...\n2026-01-19 14:25:02 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 0s\n2026-01-19 14:25:02 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 0s\n2026-01-19 14:25:07 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 5s\n2026-01-19 14:25:07 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 5s\n2026-01-19 14:25:11 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 10s\n2026-01-19 14:25:12 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 10s\n2026-01-19 14:25:17 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 15s\n2026-01-19 14:25:22 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 20s\n2026-01-19 14:25:27 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 25s\n2026-01-19 14:25:32 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 30s\n2026-01-19 14:25:37 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 35s\n2026-01-19 14:25:41 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 40s\n2026-01-19 14:25:42 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 40s\n2026-01-19 14:25:46 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 45s\n2026-01-19 14:25:47 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 45s\n2026-01-19 14:25:51 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 50s\n2026-01-19 14:25:52 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 50s\n2026-01-19 14:25:57 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 55s\n2026-01-19 14:25:57 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 55s\n2026-01-19 14:26:02 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 60s\n2026-01-19 14:26:07 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 65s\n2026-01-19 14:26:12 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 70s\n2026-01-19 14:26:17 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 75s\n2026-01-19 14:26:22 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 80s\n2026-01-19 14:26:27 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 85s\n2026-01-19 14:26:31 - DEBUG - [CYCLE 223] Current: unknown, waiting for main... 90s\n2026-01-19 14:26:32 - WARNING - [CYCLE 223] Failed to reach main screen\n2026-01-19 14:26:32 - ERROR - [CYCLE 223] Main screen not found\n2026-01-19 14:26:53 - INFO - [CYCLE 223] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 14:26:55"
+  "last_log": "2026-01-19 14:26:56 - INFO - [CYCLE 224] Waiting for main screen...\n2026-01-19 14:26:57 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 0s\n2026-01-19 14:26:57 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 0s\n2026-01-19 14:27:02 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 5s\n2026-01-19 14:27:02 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 5s\n2026-01-19 14:27:06 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 10s\n2026-01-19 14:27:07 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 10s\n2026-01-19 14:27:12 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 15s\n2026-01-19 14:27:17 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 20s\n2026-01-19 14:27:22 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 25s\n2026-01-19 14:27:27 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 30s\n2026-01-19 14:27:32 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 35s\n2026-01-19 14:27:32 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 35s\n2026-01-19 14:27:37 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 40s\n2026-01-19 14:27:37 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 40s\n2026-01-19 14:27:42 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 45s\n2026-01-19 14:27:47 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 50s\n2026-01-19 14:27:52 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 55s\n2026-01-19 14:27:57 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 60s\n2026-01-19 14:28:02 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 65s\n2026-01-19 14:28:07 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 70s\n2026-01-19 14:28:12 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 75s\n2026-01-19 14:28:16 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 80s\n2026-01-19 14:28:17 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 80s\n2026-01-19 14:28:21 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 85s\n2026-01-19 14:28:22 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 85s\n2026-01-19 14:28:26 - DEBUG - [CYCLE 224] Current: unknown, waiting for main... 90s\n2026-01-19 14:28:27 - WARNING - [CYCLE 224] Failed to reach main screen\n2026-01-19 14:28:27 - ERROR - [CYCLE 224] Main screen not found\n2026-01-19 14:28:48 - INFO - [CYCLE 224] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 14:28:50"
 }
