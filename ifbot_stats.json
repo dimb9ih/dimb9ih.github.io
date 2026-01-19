@@ -1,19 +1,17 @@
 {
-  "timestamp": 1768864149,
-  "timestamp_human": "2026-01-20 02:09:09",
-  "cycle_count": 451,
+  "timestamp": 1768864563,
+  "timestamp_human": "2026-01-20 02:16:03",
+  "cycle_count": 452,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1ч назад",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 0,
+    "warnings": 0,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [
-      "2026-01-20 00:53:54 - WARNING - [CYCLE 439] Still on main, trying again"
-    ],
-    "last_error_time": 1768859634,
-    "error_timestamp_human": "2026-01-20 00:53:54"
+    "recent_errors": [],
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.05",
-      "load_5": "2.68",
-      "load_15": "2.87",
+      "load_1": "2.19",
+      "load_5": "2.26",
+      "load_15": "2.60",
       "cores": 4,
-      "utilization_percent": 51.2
+      "utilization_percent": 54.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 228,
-      "free_mb": 3,
-      "cached_mb": 132,
-      "utilization_percent": 11.4
+      "used_mb": 236,
+      "free_mb": 4,
+      "cached_mb": 126,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768864149,
-    "timestamp_human": "2026-01-20 02:09:09"
+    "timestamp": 1768864563,
+    "timestamp_human": "2026-01-20 02:16:03"
   },
-  "last_log": "2026-01-20 02:06:21 - INFO - [CYCLE 450] Invite #15 sent (82s)\n2026-01-20 02:06:27 - DEBUG - [CYCLE 450] Checking for attention popup (invite #15)\n2026-01-20 02:06:27 - INFO - [CYCLE 450] Invite #16 sent (88s)\n2026-01-20 02:06:33 - INFO - [CYCLE 450] Invite #17 sent (94s)\n2026-01-20 02:06:39 - INFO - [CYCLE 450] Invite #18 sent (100s)\n2026-01-20 02:06:45 - INFO - [CYCLE 450] Invite #19 sent (106s)\n2026-01-20 02:06:51 - INFO - [CYCLE 450] Invite #20 sent (112s)\n2026-01-20 02:06:57 - DEBUG - [CYCLE 450] Checking for attention popup (invite #20)\n2026-01-20 02:06:57 - INFO - [CYCLE 450] Invite #21 sent (118s)\n2026-01-20 02:07:03 - INFO - [CYCLE 450] Invite #22 sent (124s)\n2026-01-20 02:07:08 - INFO - [CYCLE 450] Invite #23 sent (130s)\n2026-01-20 02:07:14 - INFO - [CYCLE 450] Invite #24 sent (135s)\n2026-01-20 02:07:20 - INFO - [CYCLE 450] Invite #25 sent (141s)\n2026-01-20 02:07:26 - DEBUG - [CYCLE 450] Checking for attention popup (invite #25)\n2026-01-20 02:07:26 - INFO - [CYCLE 450] Invite #26 sent (147s)\n2026-01-20 02:07:32 - INFO - [CYCLE 450] Invite #27 sent (153s)\n2026-01-20 02:07:38 - INFO - [CYCLE 450] Invite #28 sent (159s)\n2026-01-20 02:07:44 - INFO - [CYCLE 450] Invite #29 sent (165s)\n2026-01-20 02:07:50 - INFO - [CYCLE 450] Invite #30 sent (171s)\n2026-01-20 02:07:56 - DEBUG - [CYCLE 450] Checking for attention popup (invite #30)\n2026-01-20 02:07:56 - INFO - [CYCLE 450] Invite #31 sent (177s)\n2026-01-20 02:08:02 - INFO - [CYCLE 450] Invite #32 sent (183s)\n2026-01-20 02:08:08 - INFO - [CYCLE 450] Invite #33 sent (189s)\n2026-01-20 02:08:13 - INFO - [CYCLE 450] Invite #34 sent (195s)\n2026-01-20 02:08:19 - INFO - [CYCLE 450] Someone joined the team!\n2026-01-20 02:08:19 - INFO - [CYCLE 450] Step 7/7: Starting game...\n2026-01-20 02:08:21 - INFO - [CYCLE 450] Checking for loading color at (200, 100)...\n2026-01-20 02:08:46 - INFO - [CYCLE 450] Loading color detected! Color: #A9D917\n2026-01-20 02:08:46 - INFO - [CYCLE 450] Cycle #450 completed successfully - loading color detected\n2026-01-20 02:09:06 - INFO - [CYCLE 450] Connected to ZXTouch\n",
-  "update_time": "2026-01-20 02:09:09"
+  "last_log": "2026-01-20 02:12:27 - DEBUG - [CYCLE 451] Checking for attention popup (invite #30)\n2026-01-20 02:12:27 - INFO - [CYCLE 451] Invite #31 sent (177s)\n2026-01-20 02:12:33 - INFO - [CYCLE 451] Invite #32 sent (183s)\n2026-01-20 02:12:38 - INFO - [CYCLE 451] Invite #33 sent (189s)\n2026-01-20 02:12:44 - INFO - [CYCLE 451] Invite #34 sent (195s)\n2026-01-20 02:12:50 - INFO - [CYCLE 451] Invite #35 sent (201s)\n2026-01-20 02:12:56 - DEBUG - [CYCLE 451] Checking for attention popup (invite #35)\n2026-01-20 02:12:56 - INFO - [CYCLE 451] Invite #36 sent (206s)\n2026-01-20 02:13:02 - INFO - [CYCLE 451] Invite #37 sent (212s)\n2026-01-20 02:13:08 - INFO - [CYCLE 451] Invite #38 sent (218s)\n2026-01-20 02:13:14 - INFO - [CYCLE 451] Invite #39 sent (224s)\n2026-01-20 02:13:20 - INFO - [CYCLE 451] Invite #40 sent (230s)\n2026-01-20 02:13:26 - DEBUG - [CYCLE 451] Checking for attention popup (invite #40)\n2026-01-20 02:13:26 - INFO - [CYCLE 451] Invite #41 sent (236s)\n2026-01-20 02:13:32 - INFO - [CYCLE 451] Invite #42 sent (242s)\n2026-01-20 02:13:38 - INFO - [CYCLE 451] Invite #43 sent (248s)\n2026-01-20 02:13:43 - INFO - [CYCLE 451] Invite #44 sent (254s)\n2026-01-20 02:13:49 - INFO - [CYCLE 451] Invite #45 sent (260s)\n2026-01-20 02:13:55 - DEBUG - [CYCLE 451] Checking for attention popup (invite #45)\n2026-01-20 02:13:55 - INFO - [CYCLE 451] Invite #46 sent (266s)\n2026-01-20 02:14:01 - INFO - [CYCLE 451] Invite #47 sent (272s)\n2026-01-20 02:14:07 - INFO - [CYCLE 451] Invite #48 sent (277s)\n2026-01-20 02:14:13 - INFO - [CYCLE 451] Invite #49 sent (283s)\n2026-01-20 02:14:19 - INFO - [CYCLE 451] Invite #50 sent (289s)\n2026-01-20 02:14:25 - DEBUG - [CYCLE 451] Checking for attention popup (invite #50)\n2026-01-20 02:14:25 - INFO - [CYCLE 451] Invite #51 sent (295s)\n2026-01-20 02:14:31 - INFO - [CYCLE 451] Step 7/7: Starting game...\n2026-01-20 02:14:32 - INFO - [CYCLE 451] Checking for loading color at (200, 100)...\n2026-01-20 02:15:40 - INFO - [CYCLE 451] Cycle #451 completed - no loading color detected (normal)\n2026-01-20 02:16:00 - INFO - [CYCLE 451] Connected to ZXTouch\n",
+  "update_time": "2026-01-20 02:16:03"
 }
