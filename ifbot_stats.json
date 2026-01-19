@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768819333,
-  "timestamp_human": "2026-01-19 13:42:13",
-  "cycle_count": 206,
+  "timestamp": 1768819500,
+  "timestamp_human": "2026-01-19 13:45:00",
+  "cycle_count": 207,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 4, ошибок: 2), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 6 (предупреждений: 4, ошибок: 2), последняя: 3м назад",
   "error_stats": {
     "total_errors": 6,
     "warnings": 4,
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.00",
-      "load_5": "2.62",
-      "load_15": "2.87",
+      "load_1": "2.35",
+      "load_5": "2.74",
+      "load_15": "2.90",
       "cores": 4,
-      "utilization_percent": 50.0
+      "utilization_percent": 58.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 233,
-      "free_mb": 11,
-      "cached_mb": 110,
-      "utilization_percent": 11.7
+      "used_mb": 235,
+      "free_mb": 1,
+      "cached_mb": 130,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768819333,
-    "timestamp_human": "2026-01-19 13:42:13"
+    "timestamp": 1768819500,
+    "timestamp_human": "2026-01-19 13:45:00"
   },
-  "last_log": "2026-01-19 13:39:29 - INFO - [CYCLE 204] Step 7/7: Starting game...\n2026-01-19 13:39:30 - INFO - [CYCLE 204] Checking for loading color at (200, 100)...\n2026-01-19 13:39:55 - INFO - [CYCLE 204] Loading color detected! Color: #A9D917\n2026-01-19 13:39:55 - INFO - [CYCLE 204] Cycle #204 completed successfully - loading color detected\n2026-01-19 13:40:16 - INFO - [CYCLE 204] Connected to ZXTouch\n2026-01-19 13:40:20 - INFO - [CYCLE 205] Starting cycle #205\n2026-01-19 13:40:20 - INFO - [CYCLE 205] Step 1/7: Waiting for main screen...\n2026-01-19 13:40:20 - INFO - [CYCLE 205] Waiting for main screen...\n2026-01-19 13:40:20 - DEBUG - [CYCLE 205] Current: unknown, waiting for main... 0s\n2026-01-19 13:40:20 - DEBUG - [CYCLE 205] Current: unknown, waiting for main... 0s\n2026-01-19 13:40:25 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 5s\n2026-01-19 13:40:30 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 10s\n2026-01-19 13:40:35 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 15s\n2026-01-19 13:40:40 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 20s\n2026-01-19 13:40:45 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 25s\n2026-01-19 13:40:50 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 30s\n2026-01-19 13:40:55 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 35s\n2026-01-19 13:41:00 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 40s\n2026-01-19 13:41:05 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 45s\n2026-01-19 13:41:10 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 50s\n2026-01-19 13:41:15 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 55s\n2026-01-19 13:41:20 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 60s\n2026-01-19 13:41:25 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 65s\n2026-01-19 13:41:30 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 70s\n2026-01-19 13:41:35 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 75s\n2026-01-19 13:41:40 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 80s\n2026-01-19 13:41:45 - DEBUG - [CYCLE 205] Current: loading, waiting for main... 85s\n2026-01-19 13:41:50 - WARNING - [CYCLE 205] Failed to reach main screen\n2026-01-19 13:41:50 - ERROR - [CYCLE 205] Main screen not found\n2026-01-19 13:42:11 - INFO - [CYCLE 205] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 13:42:13"
+  "last_log": "2026-01-19 13:42:32 - INFO - [CYCLE 206] Waiting for team screen...\n2026-01-19 13:42:33 - INFO - [CYCLE 206] Found team screen button\n2026-01-19 13:42:33 - INFO - [CYCLE 206] Step 5/7: Pressing team screen button...\n2026-01-19 13:42:35 - INFO - [CYCLE 206] Step 6/7: Sending invitations...\n2026-01-19 13:42:35 - INFO - [CYCLE 206] Invite #1 sent (0s)\n2026-01-19 13:42:41 - INFO - [CYCLE 206] Invite #2 sent (5s)\n2026-01-19 13:42:47 - INFO - [CYCLE 206] Invite #3 sent (11s)\n2026-01-19 13:42:53 - INFO - [CYCLE 206] Invite #4 sent (17s)\n2026-01-19 13:42:59 - INFO - [CYCLE 206] Invite #5 sent (23s)\n2026-01-19 13:43:05 - DEBUG - [CYCLE 206] Checking for attention popup (invite #5)\n2026-01-19 13:43:05 - INFO - [CYCLE 206] Invite #6 sent (29s)\n2026-01-19 13:43:11 - INFO - [CYCLE 206] Invite #7 sent (35s)\n2026-01-19 13:43:16 - INFO - [CYCLE 206] Invite #8 sent (41s)\n2026-01-19 13:43:22 - INFO - [CYCLE 206] Invite #9 sent (47s)\n2026-01-19 13:43:28 - INFO - [CYCLE 206] Invite #10 sent (53s)\n2026-01-19 13:43:34 - DEBUG - [CYCLE 206] Checking for attention popup (invite #10)\n2026-01-19 13:43:34 - INFO - [CYCLE 206] Invite #11 sent (59s)\n2026-01-19 13:43:40 - INFO - [CYCLE 206] Invite #12 sent (64s)\n2026-01-19 13:43:46 - INFO - [CYCLE 206] Invite #13 sent (70s)\n2026-01-19 13:43:52 - INFO - [CYCLE 206] Invite #14 sent (76s)\n2026-01-19 13:43:58 - INFO - [CYCLE 206] Invite #15 sent (82s)\n2026-01-19 13:44:04 - DEBUG - [CYCLE 206] Checking for attention popup (invite #15)\n2026-01-19 13:44:04 - INFO - [CYCLE 206] Invite #16 sent (88s)\n2026-01-19 13:44:10 - INFO - [CYCLE 206] Invite #17 sent (94s)\n2026-01-19 13:44:10 - INFO - [CYCLE 206] Someone joined immediately!\n2026-01-19 13:44:10 - INFO - [CYCLE 206] Step 7/7: Starting game...\n2026-01-19 13:44:12 - INFO - [CYCLE 206] Checking for loading color at (200, 100)...\n2026-01-19 13:44:37 - INFO - [CYCLE 206] Loading color detected! Color: #A9D917\n2026-01-19 13:44:37 - INFO - [CYCLE 206] Cycle #206 completed successfully - loading color detected\n2026-01-19 13:44:58 - INFO - [CYCLE 206] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 13:45:00"
 }
