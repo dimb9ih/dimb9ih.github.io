@@ -1,9 +1,9 @@
 {
-  "timestamp": 1768813875,
-  "timestamp_human": "2026-01-19 12:11:15",
-  "cycle_count": 182,
+  "timestamp": 1768814024,
+  "timestamp_human": "2026-01-19 12:13:44",
+  "cycle_count": 183,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1м назад",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 3м назад",
   "error_stats": {
     "total_errors": 1,
     "warnings": 1,
@@ -30,17 +30,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.71",
-      "load_5": "3.15",
-      "load_15": "3.07",
+      "load_1": "2.67",
+      "load_5": "3.20",
+      "load_15": "3.13",
       "cores": 4,
-      "utilization_percent": 67.8
+      "utilization_percent": 66.8
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 234,
-      "free_mb": 6,
-      "cached_mb": 98,
+      "free_mb": 3,
+      "cached_mb": 122,
       "utilization_percent": 11.7
     },
     "disk": {
@@ -50,9 +50,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768813875,
-    "timestamp_human": "2026-01-19 12:11:15"
+    "timestamp": 1768814024,
+    "timestamp_human": "2026-01-19 12:13:44"
   },
-  "last_log": "2026-01-19 12:09:04 - INFO - [CYCLE 180] Step 7/7: Starting game...\n2026-01-19 12:09:06 - INFO - [CYCLE 180] Checking for loading color at (200, 100)...\n2026-01-19 12:09:28 - INFO - [CYCLE 180] Loading color detected! Color: #A9D917\n2026-01-19 12:09:28 - INFO - [CYCLE 180] Cycle #180 completed successfully - loading color detected\n2026-01-19 12:09:48 - INFO - [CYCLE 180] Connected to ZXTouch\n2026-01-19 12:09:53 - INFO - [CYCLE 181] Starting cycle #181\n2026-01-19 12:09:53 - INFO - [CYCLE 181] Step 1/7: Waiting for main screen...\n2026-01-19 12:09:53 - INFO - [CYCLE 181] Waiting for main screen...\n2026-01-19 12:09:53 - DEBUG - [CYCLE 181] Current: unknown, waiting for main... 0s\n2026-01-19 12:09:54 - DEBUG - [CYCLE 181] Current: unknown, waiting for main... 0s\n2026-01-19 12:09:58 - DEBUG - [CYCLE 181] Current: unknown, waiting for main... 5s\n2026-01-19 12:10:02 - INFO - [CYCLE 181] On main screen\n2026-01-19 12:10:02 - INFO - [CYCLE 181] Step 2/7: Transition to arsenal...\n2026-01-19 12:10:02 - INFO - [CYCLE 181] Quick transition: Кнопка Далее\n2026-01-19 12:10:05 - WARNING - [CYCLE 181] Still on main, trying again\n2026-01-19 12:10:07 - INFO - [CYCLE 181] Step 3/7: Transition to battle...\n2026-01-19 12:10:07 - INFO - [CYCLE 181] Quick transition: Кнопка Битва\n2026-01-19 12:10:09 - INFO - [CYCLE 181] Step 4/7: Transition to team...\n2026-01-19 12:10:12 - INFO - [CYCLE 181] Waiting for team screen...\n2026-01-19 12:10:13 - INFO - [CYCLE 181] Found team screen button\n2026-01-19 12:10:13 - INFO - [CYCLE 181] Step 5/7: Pressing team screen button...\n2026-01-19 12:10:14 - INFO - [CYCLE 181] Step 6/7: Sending invitations...\n2026-01-19 12:10:14 - INFO - [CYCLE 181] Invite #1 sent (0s)\n2026-01-19 12:10:20 - INFO - [CYCLE 181] Invite #2 sent (5s)\n2026-01-19 12:10:26 - INFO - [CYCLE 181] Someone joined the team!\n2026-01-19 12:10:26 - INFO - [CYCLE 181] Step 7/7: Starting game...\n2026-01-19 12:10:28 - INFO - [CYCLE 181] Checking for loading color at (200, 100)...\n2026-01-19 12:10:52 - INFO - [CYCLE 181] Loading color detected! Color: #A9D917\n2026-01-19 12:10:52 - INFO - [CYCLE 181] Cycle #181 completed successfully - loading color detected\n2026-01-19 12:11:12 - INFO - [CYCLE 181] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 12:11:15"
+  "last_log": "2026-01-19 12:11:33 - INFO - [CYCLE 182] Step 4/7: Transition to team...\n2026-01-19 12:11:36 - INFO - [CYCLE 182] Waiting for team screen...\n2026-01-19 12:11:37 - INFO - [CYCLE 182] Found team screen button\n2026-01-19 12:11:37 - INFO - [CYCLE 182] Step 5/7: Pressing team screen button...\n2026-01-19 12:11:38 - INFO - [CYCLE 182] Step 6/7: Sending invitations...\n2026-01-19 12:11:38 - INFO - [CYCLE 182] Invite #1 sent (0s)\n2026-01-19 12:11:44 - INFO - [CYCLE 182] Invite #2 sent (5s)\n2026-01-19 12:11:50 - INFO - [CYCLE 182] Invite #3 sent (11s)\n2026-01-19 12:11:56 - INFO - [CYCLE 182] Invite #4 sent (17s)\n2026-01-19 12:12:02 - INFO - [CYCLE 182] Invite #5 sent (23s)\n2026-01-19 12:12:08 - DEBUG - [CYCLE 182] Checking for attention popup (invite #5)\n2026-01-19 12:12:08 - INFO - [CYCLE 182] Invite #6 sent (29s)\n2026-01-19 12:12:14 - INFO - [CYCLE 182] Invite #7 sent (35s)\n2026-01-19 12:12:20 - INFO - [CYCLE 182] Invite #8 sent (41s)\n2026-01-19 12:12:25 - INFO - [CYCLE 182] Invite #9 sent (47s)\n2026-01-19 12:12:31 - INFO - [CYCLE 182] Invite #10 sent (53s)\n2026-01-19 12:12:37 - DEBUG - [CYCLE 182] Checking for attention popup (invite #10)\n2026-01-19 12:12:37 - INFO - [CYCLE 182] Invite #11 sent (58s)\n2026-01-19 12:12:43 - INFO - [CYCLE 182] Invite #12 sent (64s)\n2026-01-19 12:12:49 - INFO - [CYCLE 182] Invite #13 sent (70s)\n2026-01-19 12:12:55 - INFO - [CYCLE 182] Invite #14 sent (76s)\n2026-01-19 12:13:01 - INFO - [CYCLE 182] Invite #15 sent (82s)\n2026-01-19 12:13:07 - DEBUG - [CYCLE 182] Checking for attention popup (invite #15)\n2026-01-19 12:13:07 - INFO - [CYCLE 182] Invite #16 sent (88s)\n2026-01-19 12:13:13 - INFO - [CYCLE 182] Someone joined the team!\n2026-01-19 12:13:13 - INFO - [CYCLE 182] Step 7/7: Starting game...\n2026-01-19 12:13:14 - INFO - [CYCLE 182] Checking for loading color at (200, 100)...\n2026-01-19 12:13:21 - INFO - [CYCLE 182] Loading color detected! Color: #A9D917\n2026-01-19 12:13:21 - INFO - [CYCLE 182] Cycle #182 completed successfully - loading color detected\n2026-01-19 12:13:42 - INFO - [CYCLE 182] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 12:13:44"
 }
