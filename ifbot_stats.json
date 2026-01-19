@@ -1,23 +1,23 @@
 {
-  "timestamp": 1768835736,
-  "timestamp_human": "2026-01-19 18:15:36",
-  "cycle_count": 343,
+  "timestamp": 1768835851,
+  "timestamp_human": "2026-01-19 18:17:31",
+  "cycle_count": 344,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 12 (предупреждений: 6, ошибок: 6), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 14 (предупреждений: 7, ошибок: 7), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 12,
-    "warnings": 6,
-    "errors": 6,
+    "total_errors": 14,
+    "warnings": 7,
+    "errors": 7,
     "critical": 0,
     "recent_errors": [
-      "2026-01-19 18:11:22 - ERROR - [CYCLE 340] Main screen not found",
-      "2026-01-19 18:13:18 - WARNING - [CYCLE 341] Failed to reach main screen",
       "2026-01-19 18:13:18 - ERROR - [CYCLE 341] Main screen not found",
       "2026-01-19 18:15:13 - WARNING - [CYCLE 342] Failed to reach main screen",
-      "2026-01-19 18:15:13 - ERROR - [CYCLE 342] Main screen not found"
+      "2026-01-19 18:15:13 - ERROR - [CYCLE 342] Main screen not found",
+      "2026-01-19 18:17:08 - WARNING - [CYCLE 343] Failed to reach main screen",
+      "2026-01-19 18:17:08 - ERROR - [CYCLE 343] Main screen not found"
     ],
-    "last_error_time": 1768835713,
-    "error_timestamp_human": "2026-01-19 18:15:13"
+    "last_error_time": 1768835828,
+    "error_timestamp_human": "2026-01-19 18:17:08"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.31",
-      "load_5": "4.51",
-      "load_15": "4.71",
+      "load_1": "5.56",
+      "load_5": "5.21",
+      "load_15": "4.99",
       "cores": 4,
-      "utilization_percent": 82.8
+      "utilization_percent": 139.0
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 234,
-      "free_mb": 4,
-      "cached_mb": 118,
+      "free_mb": 1,
+      "cached_mb": 127,
       "utilization_percent": 11.7
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768835736,
-    "timestamp_human": "2026-01-19 18:15:36"
+    "timestamp": 1768835851,
+    "timestamp_human": "2026-01-19 18:17:31"
   },
-  "last_log": "2026-01-19 18:13:48 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 5s\n2026-01-19 18:13:48 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 5s\n2026-01-19 18:13:53 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 10s\n2026-01-19 18:13:53 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 10s\n2026-01-19 18:13:58 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 15s\n2026-01-19 18:13:58 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 15s\n2026-01-19 18:14:03 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 20s\n2026-01-19 18:14:08 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 25s\n2026-01-19 18:14:13 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 30s\n2026-01-19 18:14:18 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 35s\n2026-01-19 18:14:23 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 40s\n2026-01-19 18:14:28 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 45s\n2026-01-19 18:14:33 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 50s\n2026-01-19 18:14:38 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 55s\n2026-01-19 18:14:38 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 55s\n2026-01-19 18:14:43 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 60s\n2026-01-19 18:14:43 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 60s\n2026-01-19 18:14:48 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 65s\n2026-01-19 18:14:48 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 65s\n2026-01-19 18:14:53 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 70s\n2026-01-19 18:14:53 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 70s\n2026-01-19 18:14:58 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 75s\n2026-01-19 18:14:58 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 75s\n2026-01-19 18:15:03 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 80s\n2026-01-19 18:15:04 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 80s\n2026-01-19 18:15:08 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 85s\n2026-01-19 18:15:08 - DEBUG - [CYCLE 342] Current: unknown, waiting for main... 85s\n2026-01-19 18:15:13 - WARNING - [CYCLE 342] Failed to reach main screen\n2026-01-19 18:15:13 - ERROR - [CYCLE 342] Main screen not found\n2026-01-19 18:15:33 - INFO - [CYCLE 342] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 18:15:36"
+  "last_log": "2026-01-19 18:15:48 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 10s\n2026-01-19 18:15:53 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 15s\n2026-01-19 18:15:58 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 20s\n2026-01-19 18:16:02 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 25s\n2026-01-19 18:16:03 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 25s\n2026-01-19 18:16:08 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 30s\n2026-01-19 18:16:08 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 30s\n2026-01-19 18:16:13 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 35s\n2026-01-19 18:16:13 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 35s\n2026-01-19 18:16:18 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 40s\n2026-01-19 18:16:18 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 40s\n2026-01-19 18:16:23 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 45s\n2026-01-19 18:16:23 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 45s\n2026-01-19 18:16:28 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 50s\n2026-01-19 18:16:33 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 55s\n2026-01-19 18:16:37 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 60s\n2026-01-19 18:16:38 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 60s\n2026-01-19 18:16:43 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 65s\n2026-01-19 18:16:43 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 65s\n2026-01-19 18:16:48 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 70s\n2026-01-19 18:16:48 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 70s\n2026-01-19 18:16:53 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 75s\n2026-01-19 18:16:53 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 75s\n2026-01-19 18:16:58 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 80s\n2026-01-19 18:16:58 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 80s\n2026-01-19 18:17:03 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 85s\n2026-01-19 18:17:03 - DEBUG - [CYCLE 343] Current: unknown, waiting for main... 85s\n2026-01-19 18:17:08 - WARNING - [CYCLE 343] Failed to reach main screen\n2026-01-19 18:17:08 - ERROR - [CYCLE 343] Main screen not found\n2026-01-19 18:17:28 - INFO - [CYCLE 343] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 18:17:31"
 }
