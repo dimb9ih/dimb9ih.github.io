@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768786304,
-  "timestamp_human": "2026-01-19 04:31:44",
-  "cycle_count": 90,
+  "timestamp": 1768786398,
+  "timestamp_human": "2026-01-19 04:33:18",
+  "cycle_count": 91,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1ч назад",
   "error_stats": {
@@ -30,17 +30,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.06",
-      "load_5": "2.48",
-      "load_15": "2.76",
+      "load_1": "2.90",
+      "load_5": "2.84",
+      "load_15": "2.88",
       "cores": 4,
-      "utilization_percent": 51.5
+      "utilization_percent": 72.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 5,
-      "cached_mb": 127,
+      "used_mb": 233,
+      "free_mb": 1,
+      "cached_mb": 131,
       "utilization_percent": 11.7
     },
     "disk": {
@@ -50,9 +50,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768786304,
-    "timestamp_human": "2026-01-19 04:31:44"
+    "timestamp": 1768786398,
+    "timestamp_human": "2026-01-19 04:33:18"
   },
-  "last_log": "2026-01-19 04:28:39 - INFO - [CYCLE 89] Invite #18 sent (100s)\n2026-01-19 04:28:45 - INFO - [CYCLE 89] Invite #19 sent (106s)\n2026-01-19 04:28:51 - INFO - [CYCLE 89] Invite #20 sent (112s)\n2026-01-19 04:28:57 - DEBUG - [CYCLE 89] Checking for attention popup (invite #20)\n2026-01-19 04:28:57 - INFO - [CYCLE 89] Invite #21 sent (117s)\n2026-01-19 04:29:03 - INFO - [CYCLE 89] Invite #22 sent (123s)\n2026-01-19 04:29:09 - INFO - [CYCLE 89] Invite #23 sent (129s)\n2026-01-19 04:29:15 - INFO - [CYCLE 89] Invite #24 sent (135s)\n2026-01-19 04:29:21 - INFO - [CYCLE 89] Invite #25 sent (141s)\n2026-01-19 04:29:26 - DEBUG - [CYCLE 89] Checking for attention popup (invite #25)\n2026-01-19 04:29:27 - INFO - [CYCLE 89] Invite #26 sent (147s)\n2026-01-19 04:29:32 - INFO - [CYCLE 89] Invite #27 sent (153s)\n2026-01-19 04:29:38 - INFO - [CYCLE 89] Invite #28 sent (159s)\n2026-01-19 04:29:44 - INFO - [CYCLE 89] Invite #29 sent (165s)\n2026-01-19 04:29:50 - INFO - [CYCLE 89] Invite #30 sent (171s)\n2026-01-19 04:29:56 - DEBUG - [CYCLE 89] Checking for attention popup (invite #30)\n2026-01-19 04:29:56 - INFO - [CYCLE 89] Invite #31 sent (177s)\n2026-01-19 04:30:02 - INFO - [CYCLE 89] Invite #32 sent (182s)\n2026-01-19 04:30:08 - INFO - [CYCLE 89] Invite #33 sent (188s)\n2026-01-19 04:30:14 - INFO - [CYCLE 89] Invite #34 sent (194s)\n2026-01-19 04:30:20 - INFO - [CYCLE 89] Invite #35 sent (200s)\n2026-01-19 04:30:26 - DEBUG - [CYCLE 89] Checking for attention popup (invite #35)\n2026-01-19 04:30:26 - INFO - [CYCLE 89] Invite #36 sent (206s)\n2026-01-19 04:30:32 - INFO - [CYCLE 89] Invite #37 sent (212s)\n2026-01-19 04:30:37 - INFO - [CYCLE 89] Someone joined the team!\n2026-01-19 04:30:37 - INFO - [CYCLE 89] Step 7/7: Starting game...\n2026-01-19 04:30:39 - INFO - [CYCLE 89] Checking for loading color at (200, 100)...\n2026-01-19 04:31:21 - INFO - [CYCLE 89] Loading color detected! Color: #A9D917\n2026-01-19 04:31:21 - INFO - [CYCLE 89] Cycle #89 completed successfully - loading color detected\n2026-01-19 04:31:42 - INFO - [CYCLE 89] Connected to ZXTouch\n",
-  "update_time": "2026-01-19 04:31:44"
+  "last_log": "2026-01-19 04:30:37 - INFO - [CYCLE 89] Step 7/7: Starting game...\n2026-01-19 04:30:39 - INFO - [CYCLE 89] Checking for loading color at (200, 100)...\n2026-01-19 04:31:21 - INFO - [CYCLE 89] Loading color detected! Color: #A9D917\n2026-01-19 04:31:21 - INFO - [CYCLE 89] Cycle #89 completed successfully - loading color detected\n2026-01-19 04:31:42 - INFO - [CYCLE 89] Connected to ZXTouch\n2026-01-19 04:31:45 - INFO - [CYCLE 90] Starting cycle #90\n2026-01-19 04:31:45 - INFO - [CYCLE 90] Step 1/7: Waiting for main screen...\n2026-01-19 04:31:45 - INFO - [CYCLE 90] Waiting for main screen...\n2026-01-19 04:31:46 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 0s\n2026-01-19 04:31:46 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 0s\n2026-01-19 04:31:51 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 5s\n2026-01-19 04:31:51 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 5s\n2026-01-19 04:31:54 - INFO - [CYCLE 90] On main screen\n2026-01-19 04:31:54 - INFO - [CYCLE 90] Step 2/7: Transition to arsenal...\n2026-01-19 04:31:54 - INFO - [CYCLE 90] Quick transition: Кнопка Далее\n2026-01-19 04:31:57 - INFO - [CYCLE 90] Found attention popup\n2026-01-19 04:31:58 - INFO - [CYCLE 90] Step 3/7: Transition to battle...\n2026-01-19 04:31:58 - INFO - [CYCLE 90] Quick transition: Кнопка Битва\n2026-01-19 04:32:01 - INFO - [CYCLE 90] Step 4/7: Transition to team...\n2026-01-19 04:32:03 - INFO - [CYCLE 90] Waiting for team screen...\n2026-01-19 04:32:04 - INFO - [CYCLE 90] Found team screen button\n2026-01-19 04:32:04 - INFO - [CYCLE 90] Step 5/7: Pressing team screen button...\n2026-01-19 04:32:05 - INFO - [CYCLE 90] Step 6/7: Sending invitations...\n2026-01-19 04:32:06 - INFO - [CYCLE 90] Invite #1 sent (0s)\n2026-01-19 04:32:11 - INFO - [CYCLE 90] Someone joined the team!\n2026-01-19 04:32:11 - INFO - [CYCLE 90] Step 7/7: Starting game...\n2026-01-19 04:32:13 - INFO - [CYCLE 90] Checking for loading color at (200, 100)...\n2026-01-19 04:32:55 - INFO - [CYCLE 90] Loading color detected! Color: #A9D917\n2026-01-19 04:32:55 - INFO - [CYCLE 90] Cycle #90 completed successfully - loading color detected\n2026-01-19 04:33:16 - INFO - [CYCLE 90] Connected to ZXTouch\n",
+  "update_time": "2026-01-19 04:33:18"
 }
