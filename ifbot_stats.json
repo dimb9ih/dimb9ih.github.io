@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768910730,
-  "timestamp_human": "2026-01-20 15:05:30",
-  "cycle_count": 577,
+  "timestamp": 1768910819,
+  "timestamp_human": "2026-01-20 15:06:59",
+  "cycle_count": 578,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.40",
-      "load_5": "2.68",
-      "load_15": "2.78",
+      "load_1": "3.27",
+      "load_5": "3.12",
+      "load_15": "2.96",
       "cores": 4,
-      "utilization_percent": 60.0
+      "utilization_percent": 81.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 6,
-      "cached_mb": 103,
-      "utilization_percent": 11.7
+      "used_mb": 230,
+      "free_mb": 4,
+      "cached_mb": 119,
+      "utilization_percent": 11.5
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768910730,
-    "timestamp_human": "2026-01-20 15:05:30"
+    "timestamp": 1768910819,
+    "timestamp_human": "2026-01-20 15:06:59"
   },
-  "last_log": "2026-01-20 15:03:05 - INFO - [CYCLE 576] Quick transition: Кнопка Битва\n2026-01-20 15:03:08 - INFO - [CYCLE 576] Step 4/7: Transition to team...\n2026-01-20 15:03:10 - INFO - [CYCLE 576] Waiting for team screen...\n2026-01-20 15:03:11 - INFO - [CYCLE 576] Found team screen button\n2026-01-20 15:03:11 - INFO - [CYCLE 576] Step 5/7: Pressing team screen button...\n2026-01-20 15:03:13 - INFO - [CYCLE 576] Step 6/7: Sending invitations...\n2026-01-20 15:03:13 - INFO - [CYCLE 576] Invite #1 sent (0s)\n2026-01-20 15:03:19 - INFO - [CYCLE 576] Invite #2 sent (5s)\n2026-01-20 15:03:25 - INFO - [CYCLE 576] Invite #3 sent (11s)\n2026-01-20 15:03:30 - INFO - [CYCLE 576] Invite #4 sent (17s)\n2026-01-20 15:03:36 - INFO - [CYCLE 576] Invite #5 sent (23s)\n2026-01-20 15:03:42 - DEBUG - [CYCLE 576] Checking for attention popup (invite #5)\n2026-01-20 15:03:42 - INFO - [CYCLE 576] Invite #6 sent (29s)\n2026-01-20 15:03:48 - INFO - [CYCLE 576] Invite #7 sent (35s)\n2026-01-20 15:03:54 - INFO - [CYCLE 576] Invite #8 sent (41s)\n2026-01-20 15:04:00 - INFO - [CYCLE 576] Invite #9 sent (47s)\n2026-01-20 15:04:06 - INFO - [CYCLE 576] Invite #10 sent (53s)\n2026-01-20 15:04:12 - DEBUG - [CYCLE 576] Checking for attention popup (invite #10)\n2026-01-20 15:04:12 - INFO - [CYCLE 576] Invite #11 sent (59s)\n2026-01-20 15:04:18 - INFO - [CYCLE 576] Invite #12 sent (64s)\n2026-01-20 15:04:24 - INFO - [CYCLE 576] Invite #13 sent (70s)\n2026-01-20 15:04:29 - INFO - [CYCLE 576] Invite #14 sent (76s)\n2026-01-20 15:04:35 - INFO - [CYCLE 576] Invite #15 sent (82s)\n2026-01-20 15:04:41 - DEBUG - [CYCLE 576] Checking for attention popup (invite #15)\n2026-01-20 15:04:41 - INFO - [CYCLE 576] Someone joined the team!\n2026-01-20 15:04:41 - INFO - [CYCLE 576] Step 7/7: Starting game...\n2026-01-20 15:04:43 - INFO - [CYCLE 576] Checking for loading color at (200, 100)...\n2026-01-20 15:05:07 - INFO - [CYCLE 576] Loading color detected! Color: #A9D917\n2026-01-20 15:05:07 - INFO - [CYCLE 576] Cycle #576 completed successfully - loading color detected\n2026-01-20 15:05:28 - INFO - [CYCLE 576] Connected to ZXTouch\n",
-  "update_time": "2026-01-20 15:05:30"
+  "last_log": "2026-01-20 15:05:07 - INFO - [CYCLE 576] Cycle #576 completed successfully - loading color detected\n2026-01-20 15:05:28 - INFO - [CYCLE 576] Connected to ZXTouch\n2026-01-20 15:05:32 - INFO - [CYCLE 577] Starting cycle #577\n2026-01-20 15:05:32 - INFO - [CYCLE 577] Step 1/7: Waiting for main screen...\n2026-01-20 15:05:32 - INFO - [CYCLE 577] Waiting for main screen...\n2026-01-20 15:05:32 - DEBUG - [CYCLE 577] Current: unknown, waiting for main... 0s\n2026-01-20 15:05:37 - DEBUG - [CYCLE 577] Current: unknown, waiting for main... 5s\n2026-01-20 15:05:38 - DEBUG - [CYCLE 577] Current: unknown, waiting for main... 5s\n2026-01-20 15:05:42 - DEBUG - [CYCLE 577] Current: unknown, waiting for main... 10s\n2026-01-20 15:05:43 - DEBUG - [CYCLE 577] Current: unknown, waiting for main... 10s\n2026-01-20 15:05:46 - INFO - [CYCLE 577] Found attention popup\n2026-01-20 15:05:47 - INFO - [CYCLE 577] On main screen\n2026-01-20 15:05:47 - INFO - [CYCLE 577] Step 2/7: Transition to arsenal...\n2026-01-20 15:05:47 - INFO - [CYCLE 577] Quick transition: Кнопка Далее\n2026-01-20 15:05:50 - INFO - [CYCLE 577] Step 3/7: Transition to battle...\n2026-01-20 15:05:50 - INFO - [CYCLE 577] Quick transition: Кнопка Битва\n2026-01-20 15:05:52 - INFO - [CYCLE 577] Step 4/7: Transition to team...\n2026-01-20 15:05:55 - INFO - [CYCLE 577] Waiting for team screen...\n2026-01-20 15:05:56 - INFO - [CYCLE 577] Found team screen button\n2026-01-20 15:05:56 - INFO - [CYCLE 577] Step 5/7: Pressing team screen button...\n2026-01-20 15:05:57 - INFO - [CYCLE 577] Step 6/7: Sending invitations...\n2026-01-20 15:05:57 - INFO - [CYCLE 577] Invite #1 sent (0s)\n2026-01-20 15:06:03 - INFO - [CYCLE 577] Invite #2 sent (5s)\n2026-01-20 15:06:09 - INFO - [CYCLE 577] Invite #3 sent (11s)\n2026-01-20 15:06:10 - INFO - [CYCLE 577] Someone joined immediately!\n2026-01-20 15:06:10 - INFO - [CYCLE 577] Step 7/7: Starting game...\n2026-01-20 15:06:11 - INFO - [CYCLE 577] Checking for loading color at (200, 100)...\n2026-01-20 15:06:36 - INFO - [CYCLE 577] Loading color detected! Color: #A9D917\n2026-01-20 15:06:36 - INFO - [CYCLE 577] Cycle #577 completed successfully - loading color detected\n2026-01-20 15:06:56 - INFO - [CYCLE 577] Connected to ZXTouch\n",
+  "update_time": "2026-01-20 15:06:59"
 }
