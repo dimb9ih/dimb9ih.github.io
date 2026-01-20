@@ -1,17 +1,15 @@
 {
-  "timestamp": 1768934610,
-  "timestamp_human": "2026-01-20 21:43:30",
-  "cycle_count": 665,
+  "timestamp": 1768935024,
+  "timestamp_human": "2026-01-20 21:50:24",
+  "cycle_count": 666,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1ч назад",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 0,
+    "warnings": 0,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [
-      "2026-01-20 20:27:34 - WARNING - [CYCLE 652] Still on main, trying again"
-    ],
+    "recent_errors": [],
     "last_error_time": 1768930054,
     "error_timestamp_human": "2026-01-20 20:27:34"
   },
@@ -30,17 +28,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.67",
-      "load_5": "2.18",
-      "load_15": "2.48",
+      "load_1": "3.06",
+      "load_5": "2.64",
+      "load_15": "2.60",
       "cores": 4,
-      "utilization_percent": 41.8
+      "utilization_percent": 76.5
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 233,
-      "free_mb": 3,
-      "cached_mb": 126,
+      "free_mb": 5,
+      "cached_mb": 113,
       "utilization_percent": 11.7
     },
     "disk": {
@@ -50,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1768934610,
-    "timestamp_human": "2026-01-20 21:43:30"
+    "timestamp": 1768935024,
+    "timestamp_human": "2026-01-20 21:50:24"
   },
-  "last_log": "2026-01-20 21:39:54 - DEBUG - [CYCLE 664] Checking for attention popup (invite #30)\n2026-01-20 21:39:54 - INFO - [CYCLE 664] Invite #31 sent (177s)\n2026-01-20 21:40:00 - INFO - [CYCLE 664] Invite #32 sent (183s)\n2026-01-20 21:40:06 - INFO - [CYCLE 664] Invite #33 sent (188s)\n2026-01-20 21:40:11 - INFO - [CYCLE 664] Invite #34 sent (194s)\n2026-01-20 21:40:17 - INFO - [CYCLE 664] Invite #35 sent (200s)\n2026-01-20 21:40:23 - DEBUG - [CYCLE 664] Checking for attention popup (invite #35)\n2026-01-20 21:40:23 - INFO - [CYCLE 664] Invite #36 sent (206s)\n2026-01-20 21:40:29 - INFO - [CYCLE 664] Invite #37 sent (212s)\n2026-01-20 21:40:35 - INFO - [CYCLE 664] Invite #38 sent (218s)\n2026-01-20 21:40:41 - INFO - [CYCLE 664] Invite #39 sent (224s)\n2026-01-20 21:40:47 - INFO - [CYCLE 664] Invite #40 sent (230s)\n2026-01-20 21:40:53 - DEBUG - [CYCLE 664] Checking for attention popup (invite #40)\n2026-01-20 21:40:53 - INFO - [CYCLE 664] Invite #41 sent (236s)\n2026-01-20 21:40:59 - INFO - [CYCLE 664] Invite #42 sent (242s)\n2026-01-20 21:41:05 - INFO - [CYCLE 664] Invite #43 sent (247s)\n2026-01-20 21:41:11 - INFO - [CYCLE 664] Invite #44 sent (253s)\n2026-01-20 21:41:16 - INFO - [CYCLE 664] Invite #45 sent (259s)\n2026-01-20 21:41:22 - DEBUG - [CYCLE 664] Checking for attention popup (invite #45)\n2026-01-20 21:41:22 - INFO - [CYCLE 664] Invite #46 sent (265s)\n2026-01-20 21:41:28 - INFO - [CYCLE 664] Invite #47 sent (271s)\n2026-01-20 21:41:34 - INFO - [CYCLE 664] Invite #48 sent (277s)\n2026-01-20 21:41:40 - INFO - [CYCLE 664] Invite #49 sent (283s)\n2026-01-20 21:41:46 - INFO - [CYCLE 664] Invite #50 sent (289s)\n2026-01-20 21:41:52 - DEBUG - [CYCLE 664] Checking for attention popup (invite #50)\n2026-01-20 21:41:52 - INFO - [CYCLE 664] Invite #51 sent (295s)\n2026-01-20 21:41:58 - INFO - [CYCLE 664] Step 7/7: Starting game...\n2026-01-20 21:41:59 - INFO - [CYCLE 664] Checking for loading color at (200, 100)...\n2026-01-20 21:43:07 - INFO - [CYCLE 664] Cycle #664 completed - no loading color detected (normal)\n2026-01-20 21:43:28 - INFO - [CYCLE 664] Connected to ZXTouch\n",
-  "update_time": "2026-01-20 21:43:30"
+  "last_log": "2026-01-20 21:46:47 - DEBUG - [CYCLE 665] Checking for attention popup (invite #30)\n2026-01-20 21:46:47 - INFO - [CYCLE 665] Invite #31 sent (177s)\n2026-01-20 21:46:53 - INFO - [CYCLE 665] Invite #32 sent (183s)\n2026-01-20 21:46:59 - INFO - [CYCLE 665] Invite #33 sent (189s)\n2026-01-20 21:47:05 - INFO - [CYCLE 665] Invite #34 sent (194s)\n2026-01-20 21:47:11 - INFO - [CYCLE 665] Invite #35 sent (200s)\n2026-01-20 21:47:17 - DEBUG - [CYCLE 665] Checking for attention popup (invite #35)\n2026-01-20 21:47:17 - INFO - [CYCLE 665] Invite #36 sent (206s)\n2026-01-20 21:47:23 - INFO - [CYCLE 665] Invite #37 sent (212s)\n2026-01-20 21:47:29 - INFO - [CYCLE 665] Invite #38 sent (218s)\n2026-01-20 21:47:35 - INFO - [CYCLE 665] Invite #39 sent (224s)\n2026-01-20 21:47:40 - INFO - [CYCLE 665] Invite #40 sent (230s)\n2026-01-20 21:47:46 - DEBUG - [CYCLE 665] Checking for attention popup (invite #40)\n2026-01-20 21:47:46 - INFO - [CYCLE 665] Invite #41 sent (236s)\n2026-01-20 21:47:52 - INFO - [CYCLE 665] Invite #42 sent (242s)\n2026-01-20 21:47:58 - INFO - [CYCLE 665] Invite #43 sent (248s)\n2026-01-20 21:48:04 - INFO - [CYCLE 665] Invite #44 sent (254s)\n2026-01-20 21:48:10 - INFO - [CYCLE 665] Invite #45 sent (259s)\n2026-01-20 21:48:16 - DEBUG - [CYCLE 665] Checking for attention popup (invite #45)\n2026-01-20 21:48:16 - INFO - [CYCLE 665] Invite #46 sent (265s)\n2026-01-20 21:48:22 - INFO - [CYCLE 665] Invite #47 sent (271s)\n2026-01-20 21:48:28 - INFO - [CYCLE 665] Invite #48 sent (277s)\n2026-01-20 21:48:34 - INFO - [CYCLE 665] Invite #49 sent (283s)\n2026-01-20 21:48:40 - INFO - [CYCLE 665] Invite #50 sent (289s)\n2026-01-20 21:48:45 - DEBUG - [CYCLE 665] Checking for attention popup (invite #50)\n2026-01-20 21:48:45 - INFO - [CYCLE 665] Invite #51 sent (295s)\n2026-01-20 21:48:51 - INFO - [CYCLE 665] Step 7/7: Starting game...\n2026-01-20 21:48:53 - INFO - [CYCLE 665] Checking for loading color at (200, 100)...\n2026-01-20 21:50:01 - INFO - [CYCLE 665] Cycle #665 completed - no loading color detected (normal)\n2026-01-20 21:50:22 - INFO - [CYCLE 665] Connected to ZXTouch\n",
+  "update_time": "2026-01-20 21:50:24"
 }
