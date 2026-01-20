@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768917660,
-  "timestamp_human": "2026-01-20 17:01:00",
-  "cycle_count": 601,
+  "timestamp": 1768917800,
+  "timestamp_human": "2026-01-20 17:03:20",
+  "cycle_count": 602,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,17 +28,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.12",
-      "load_5": "3.88",
-      "load_15": "3.66",
+      "load_1": "2.13",
+      "load_5": "3.28",
+      "load_15": "3.46",
       "cores": 4,
-      "utilization_percent": 103.0
+      "utilization_percent": 53.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 5,
-      "cached_mb": 126,
+      "used_mb": 233,
+      "free_mb": 4,
+      "cached_mb": 102,
       "utilization_percent": 11.7
     },
     "disk": {
@@ -48,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768917660,
-    "timestamp_human": "2026-01-20 17:01:00"
+    "timestamp": 1768917800,
+    "timestamp_human": "2026-01-20 17:03:20"
   },
-  "last_log": "2026-01-20 16:59:35 - DEBUG - [CYCLE 600] Checking for attention popup (invite #25)\n2026-01-20 16:59:35 - INFO - [CYCLE 600] Invite #26 sent (148s)\n2026-01-20 16:59:41 - INFO - [CYCLE 600] Invite #27 sent (153s)\n2026-01-20 16:59:47 - INFO - [CYCLE 600] Invite #28 sent (159s)\n2026-01-20 16:59:53 - INFO - [CYCLE 600] Invite #29 sent (165s)\n2026-01-20 16:59:59 - INFO - [CYCLE 600] Invite #30 sent (171s)\n2026-01-20 17:00:05 - DEBUG - [CYCLE 600] Checking for attention popup (invite #30)\n2026-01-20 17:00:05 - INFO - [CYCLE 600] Invite #31 sent (177s)\n2026-01-20 17:00:11 - INFO - [CYCLE 600] Someone joined the team!\n2026-01-20 17:00:11 - INFO - [CYCLE 600] Step 7/7: Starting game...\n2026-01-20 17:00:12 - INFO - [CYCLE 600] Checking for loading color at (200, 100)...\n2026-01-20 17:00:37 - INFO - [CYCLE 600] Loading color detected! Color: #A9D917\n2026-01-20 17:00:37 - INFO - [CYCLE 600] Cycle #600 completed successfully - loading color detected\n2026-01-20 17:00:57 - INFO - [CYCLE 600] Connected to ZXTouch\n",
-  "update_time": "2026-01-20 17:01:00"
+  "last_log": "2026-01-20 17:01:08 - INFO - [CYCLE 601] Step 2/7: Transition to arsenal...\n2026-01-20 17:01:08 - INFO - [CYCLE 601] Quick transition: Кнопка Далее\n2026-01-20 17:01:11 - INFO - [CYCLE 601] Found attention popup\n2026-01-20 17:01:12 - INFO - [CYCLE 601] Step 3/7: Transition to battle...\n2026-01-20 17:01:12 - INFO - [CYCLE 601] Quick transition: Кнопка Битва\n2026-01-20 17:01:15 - INFO - [CYCLE 601] Step 4/7: Transition to team...\n2026-01-20 17:01:17 - INFO - [CYCLE 601] Waiting for team screen...\n2026-01-20 17:01:18 - INFO - [CYCLE 601] Found team screen button\n2026-01-20 17:01:18 - INFO - [CYCLE 601] Step 5/7: Pressing team screen button...\n2026-01-20 17:01:20 - INFO - [CYCLE 601] Step 6/7: Sending invitations...\n2026-01-20 17:01:20 - INFO - [CYCLE 601] Invite #1 sent (0s)\n2026-01-20 17:01:26 - INFO - [CYCLE 601] Invite #2 sent (5s)\n2026-01-20 17:01:32 - INFO - [CYCLE 601] Invite #3 sent (11s)\n2026-01-20 17:01:38 - INFO - [CYCLE 601] Invite #4 sent (17s)\n2026-01-20 17:01:43 - INFO - [CYCLE 601] Invite #5 sent (23s)\n2026-01-20 17:01:49 - DEBUG - [CYCLE 601] Checking for attention popup (invite #5)\n2026-01-20 17:01:49 - INFO - [CYCLE 601] Invite #6 sent (29s)\n2026-01-20 17:01:55 - INFO - [CYCLE 601] Invite #7 sent (35s)\n2026-01-20 17:02:01 - INFO - [CYCLE 601] Invite #8 sent (41s)\n2026-01-20 17:02:07 - INFO - [CYCLE 601] Invite #9 sent (47s)\n2026-01-20 17:02:13 - INFO - [CYCLE 601] Invite #10 sent (53s)\n2026-01-20 17:02:19 - DEBUG - [CYCLE 601] Checking for attention popup (invite #10)\n2026-01-20 17:02:19 - INFO - [CYCLE 601] Invite #11 sent (59s)\n2026-01-20 17:02:25 - INFO - [CYCLE 601] Invite #12 sent (64s)\n2026-01-20 17:02:31 - INFO - [CYCLE 601] Someone joined the team!\n2026-01-20 17:02:31 - INFO - [CYCLE 601] Step 7/7: Starting game...\n2026-01-20 17:02:32 - INFO - [CYCLE 601] Checking for loading color at (200, 100)...\n2026-01-20 17:02:56 - INFO - [CYCLE 601] Loading color detected! Color: #A9D917\n2026-01-20 17:02:56 - INFO - [CYCLE 601] Cycle #601 completed successfully - loading color detected\n2026-01-20 17:03:17 - INFO - [CYCLE 601] Connected to ZXTouch\n",
+  "update_time": "2026-01-20 17:03:20"
 }
