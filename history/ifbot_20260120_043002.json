@@ -1,0 +1,56 @@
+{
+  "timestamp": 1768883224,
+  "timestamp_human": "2026-01-20 07:27:04",
+  "cycle_count": 498,
+  "bot_status": "running",
+  "error_summary": "✅ Ошибок нет",
+  "error_stats": {
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [],
+    "last_error_time": 1768875749,
+    "error_timestamp_human": "2026-01-20 05:22:29"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "4.73",
+      "load_5": "3.42",
+      "load_15": "2.92",
+      "cores": 4,
+      "utilization_percent": 118.3
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 234,
+      "free_mb": 5,
+      "cached_mb": 99,
+      "utilization_percent": 11.7
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.4Gi",
+      "usage_percent": "43%",
+      "mount": "375935"
+    },
+    "timestamp": 1768883224,
+    "timestamp_human": "2026-01-20 07:27:04"
+  },
+  "last_log": "2026-01-20 07:24:41 - INFO - [CYCLE 497] On main screen\n2026-01-20 07:24:41 - INFO - [CYCLE 497] Step 2/7: Transition to arsenal...\n2026-01-20 07:24:41 - INFO - [CYCLE 497] Quick transition: Кнопка Далее\n2026-01-20 07:24:41 - INFO - [CYCLE 497] Found attention popup\n2026-01-20 07:24:45 - INFO - [CYCLE 497] Step 3/7: Transition to battle...\n2026-01-20 07:24:45 - INFO - [CYCLE 497] Quick transition: Кнопка Битва\n2026-01-20 07:24:47 - INFO - [CYCLE 497] Step 4/7: Transition to team...\n2026-01-20 07:24:50 - INFO - [CYCLE 497] Waiting for team screen...\n2026-01-20 07:24:51 - INFO - [CYCLE 497] Found team screen button\n2026-01-20 07:24:51 - INFO - [CYCLE 497] Step 5/7: Pressing team screen button...\n2026-01-20 07:24:52 - INFO - [CYCLE 497] Step 6/7: Sending invitations...\n2026-01-20 07:24:52 - INFO - [CYCLE 497] Invite #1 sent (0s)\n2026-01-20 07:24:58 - INFO - [CYCLE 497] Invite #2 sent (5s)\n2026-01-20 07:25:04 - INFO - [CYCLE 497] Invite #3 sent (11s)\n2026-01-20 07:25:10 - INFO - [CYCLE 497] Invite #4 sent (17s)\n2026-01-20 07:25:16 - INFO - [CYCLE 497] Invite #5 sent (23s)\n2026-01-20 07:25:22 - DEBUG - [CYCLE 497] Checking for attention popup (invite #5)\n2026-01-20 07:25:22 - INFO - [CYCLE 497] Invite #6 sent (29s)\n2026-01-20 07:25:28 - INFO - [CYCLE 497] Invite #7 sent (35s)\n2026-01-20 07:25:34 - INFO - [CYCLE 497] Invite #8 sent (41s)\n2026-01-20 07:25:40 - INFO - [CYCLE 497] Invite #9 sent (47s)\n2026-01-20 07:25:45 - INFO - [CYCLE 497] Invite #10 sent (53s)\n2026-01-20 07:25:51 - DEBUG - [CYCLE 497] Checking for attention popup (invite #10)\n2026-01-20 07:25:51 - INFO - [CYCLE 497] Invite #11 sent (59s)\n2026-01-20 07:25:57 - INFO - [CYCLE 497] Someone joined the team!\n2026-01-20 07:25:57 - INFO - [CYCLE 497] Step 7/7: Starting game...\n2026-01-20 07:25:59 - INFO - [CYCLE 497] Checking for loading color at (200, 100)...\n2026-01-20 07:26:41 - INFO - [CYCLE 497] Loading color detected! Color: #A9D917\n2026-01-20 07:26:41 - INFO - [CYCLE 497] Cycle #497 completed successfully - loading color detected\n2026-01-20 07:27:01 - INFO - [CYCLE 497] Connected to ZXTouch\n",
+  "update_time": "2026-01-20 07:27:04"
+}
