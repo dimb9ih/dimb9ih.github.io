@@ -1,7 +1,7 @@
 {
-  "timestamp": 1768895069,
-  "timestamp_human": "2026-01-20 10:44:29",
-  "cycle_count": 530,
+  "timestamp": 1768895188,
+  "timestamp_human": "2026-01-20 10:46:28",
+  "cycle_count": 531,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1ч назад",
   "error_stats": {
@@ -30,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.94",
-      "load_5": "2.16",
-      "load_15": "2.42",
+      "load_1": "2.87",
+      "load_5": "2.74",
+      "load_15": "2.63",
       "cores": 4,
-      "utilization_percent": 48.5
+      "utilization_percent": 71.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 237,
-      "free_mb": 4,
-      "cached_mb": 114,
-      "utilization_percent": 11.8
+      "used_mb": 225,
+      "free_mb": 19,
+      "cached_mb": 95,
+      "utilization_percent": 11.2
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +50,9 @@
       "usage_percent": "43%",
       "mount": "375935"
     },
-    "timestamp": 1768895069,
-    "timestamp_human": "2026-01-20 10:44:29"
+    "timestamp": 1768895188,
+    "timestamp_human": "2026-01-20 10:46:28"
   },
-  "last_log": "2026-01-20 10:40:53 - DEBUG - [CYCLE 529] Checking for attention popup (invite #30)\n2026-01-20 10:40:53 - INFO - [CYCLE 529] Invite #31 sent (177s)\n2026-01-20 10:40:59 - INFO - [CYCLE 529] Invite #32 sent (183s)\n2026-01-20 10:41:05 - INFO - [CYCLE 529] Invite #33 sent (189s)\n2026-01-20 10:41:11 - INFO - [CYCLE 529] Invite #34 sent (195s)\n2026-01-20 10:41:17 - INFO - [CYCLE 529] Invite #35 sent (200s)\n2026-01-20 10:41:22 - DEBUG - [CYCLE 529] Checking for attention popup (invite #35)\n2026-01-20 10:41:22 - INFO - [CYCLE 529] Invite #36 sent (206s)\n2026-01-20 10:41:28 - INFO - [CYCLE 529] Invite #37 sent (212s)\n2026-01-20 10:41:34 - INFO - [CYCLE 529] Invite #38 sent (218s)\n2026-01-20 10:41:40 - INFO - [CYCLE 529] Invite #39 sent (224s)\n2026-01-20 10:41:46 - INFO - [CYCLE 529] Invite #40 sent (230s)\n2026-01-20 10:41:52 - DEBUG - [CYCLE 529] Checking for attention popup (invite #40)\n2026-01-20 10:41:52 - INFO - [CYCLE 529] Invite #41 sent (236s)\n2026-01-20 10:41:58 - INFO - [CYCLE 529] Invite #42 sent (242s)\n2026-01-20 10:42:04 - INFO - [CYCLE 529] Invite #43 sent (248s)\n2026-01-20 10:42:10 - INFO - [CYCLE 529] Invite #44 sent (254s)\n2026-01-20 10:42:16 - INFO - [CYCLE 529] Invite #45 sent (260s)\n2026-01-20 10:42:21 - DEBUG - [CYCLE 529] Checking for attention popup (invite #45)\n2026-01-20 10:42:22 - INFO - [CYCLE 529] Invite #46 sent (265s)\n2026-01-20 10:42:28 - INFO - [CYCLE 529] Invite #47 sent (271s)\n2026-01-20 10:42:33 - INFO - [CYCLE 529] Invite #48 sent (277s)\n2026-01-20 10:42:39 - INFO - [CYCLE 529] Invite #49 sent (283s)\n2026-01-20 10:42:45 - INFO - [CYCLE 529] Invite #50 sent (289s)\n2026-01-20 10:42:51 - DEBUG - [CYCLE 529] Checking for attention popup (invite #50)\n2026-01-20 10:42:51 - INFO - [CYCLE 529] Invite #51 sent (295s)\n2026-01-20 10:42:57 - INFO - [CYCLE 529] Step 7/7: Starting game...\n2026-01-20 10:42:59 - INFO - [CYCLE 529] Checking for loading color at (200, 100)...\n2026-01-20 10:44:06 - INFO - [CYCLE 529] Cycle #529 completed - no loading color detected (normal)\n2026-01-20 10:44:26 - INFO - [CYCLE 529] Connected to ZXTouch\n",
-  "update_time": "2026-01-20 10:44:29"
+  "last_log": "2026-01-20 10:44:36 - DEBUG - [CYCLE 530] Current: unknown, waiting for main... 5s\n2026-01-20 10:44:37 - DEBUG - [CYCLE 530] Current: unknown, waiting for main... 5s\n2026-01-20 10:44:41 - DEBUG - [CYCLE 530] Current: unknown, waiting for main... 10s\n2026-01-20 10:44:42 - DEBUG - [CYCLE 530] Current: unknown, waiting for main... 10s\n2026-01-20 10:44:45 - INFO - [CYCLE 530] Found attention popup\n2026-01-20 10:44:46 - INFO - [CYCLE 530] On main screen\n2026-01-20 10:44:46 - INFO - [CYCLE 530] Step 2/7: Transition to arsenal...\n2026-01-20 10:44:46 - INFO - [CYCLE 530] Quick transition: Кнопка Далее\n2026-01-20 10:44:49 - INFO - [CYCLE 530] Step 3/7: Transition to battle...\n2026-01-20 10:44:49 - INFO - [CYCLE 530] Quick transition: Кнопка Битва\n2026-01-20 10:44:51 - INFO - [CYCLE 530] Step 4/7: Transition to team...\n2026-01-20 10:44:54 - INFO - [CYCLE 530] Waiting for team screen...\n2026-01-20 10:44:55 - INFO - [CYCLE 530] Found team screen button\n2026-01-20 10:44:55 - INFO - [CYCLE 530] Step 5/7: Pressing team screen button...\n2026-01-20 10:44:56 - INFO - [CYCLE 530] Step 6/7: Sending invitations...\n2026-01-20 10:44:56 - INFO - [CYCLE 530] Invite #1 sent (0s)\n2026-01-20 10:45:02 - INFO - [CYCLE 530] Invite #2 sent (6s)\n2026-01-20 10:45:08 - INFO - [CYCLE 530] Invite #3 sent (11s)\n2026-01-20 10:45:14 - INFO - [CYCLE 530] Invite #4 sent (17s)\n2026-01-20 10:45:20 - INFO - [CYCLE 530] Invite #5 sent (23s)\n2026-01-20 10:45:26 - DEBUG - [CYCLE 530] Checking for attention popup (invite #5)\n2026-01-20 10:45:26 - INFO - [CYCLE 530] Invite #6 sent (29s)\n2026-01-20 10:45:32 - INFO - [CYCLE 530] Invite #7 sent (35s)\n2026-01-20 10:45:38 - INFO - [CYCLE 530] Invite #8 sent (41s)\n2026-01-20 10:45:39 - INFO - [CYCLE 530] Someone joined immediately!\n2026-01-20 10:45:39 - INFO - [CYCLE 530] Step 7/7: Starting game...\n2026-01-20 10:45:40 - INFO - [CYCLE 530] Checking for loading color at (200, 100)...\n2026-01-20 10:46:05 - INFO - [CYCLE 530] Loading color detected! Color: #A9D917\n2026-01-20 10:46:05 - INFO - [CYCLE 530] Cycle #530 completed successfully - loading color detected\n2026-01-20 10:46:25 - INFO - [CYCLE 530] Connected to ZXTouch\n",
+  "update_time": "2026-01-20 10:46:28"
 }
