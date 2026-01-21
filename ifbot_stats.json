@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769031626,
-  "timestamp_human": "2026-01-22 00:40:26",
-  "cycle_count": 202,
+  "timestamp": 1769031770,
+  "timestamp_human": "2026-01-22 00:42:50",
+  "cycle_count": 203,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 8м назад",
+  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 10м назад",
   "error_stats": {
     "total_errors": 3,
     "warnings": 2,
@@ -32,17 +32,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.70",
-      "load_5": "4.58",
-      "load_15": "3.89",
+      "load_1": "2.72",
+      "load_5": "4.38",
+      "load_15": "3.97",
       "cores": 4,
-      "utilization_percent": 117.5
+      "utilization_percent": 68.0
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 237,
       "free_mb": 2,
-      "cached_mb": 131,
+      "cached_mb": 134,
       "utilization_percent": 11.8
     },
     "disk": {
@@ -52,9 +52,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769031626,
-    "timestamp_human": "2026-01-22 00:40:26"
+    "timestamp": 1769031770,
+    "timestamp_human": "2026-01-22 00:42:50"
   },
-  "last_log": "2026-01-22 00:38:21 - DEBUG - [CYCLE 201] Current: unknown, waiting for main... 0s\n2026-01-22 00:38:26 - INFO - [CYCLE 201] On main screen\n2026-01-22 00:38:26 - INFO - [CYCLE 201] Step 2/7: Transition to arsenal...\n2026-01-22 00:38:26 - INFO - [CYCLE 201] Quick transition: Кнопка Далее\n2026-01-22 00:38:26 - INFO - [CYCLE 201] Found attention popup\n2026-01-22 00:38:30 - INFO - [CYCLE 201] Step 3/7: Transition to battle...\n2026-01-22 00:38:30 - INFO - [CYCLE 201] Quick transition: Кнопка Битва\n2026-01-22 00:38:32 - INFO - [CYCLE 201] Step 4/7: Transition to team...\n2026-01-22 00:38:34 - INFO - [CYCLE 201] Waiting for team screen...\n2026-01-22 00:38:36 - INFO - [CYCLE 201] Found team screen button\n2026-01-22 00:38:36 - INFO - [CYCLE 201] Step 5/7: Pressing team screen button...\n2026-01-22 00:38:37 - INFO - [CYCLE 201] Step 6/7: Sending invitations...\n2026-01-22 00:38:37 - INFO - [CYCLE 201] Invite #1 sent (0s)\n2026-01-22 00:38:43 - INFO - [CYCLE 201] Invite #2 sent (5s)\n2026-01-22 00:38:49 - INFO - [CYCLE 201] Invite #3 sent (11s)\n2026-01-22 00:38:55 - INFO - [CYCLE 201] Invite #4 sent (17s)\n2026-01-22 00:39:01 - INFO - [CYCLE 201] Invite #5 sent (23s)\n2026-01-22 00:39:07 - DEBUG - [CYCLE 201] Checking for attention popup (invite #5)\n2026-01-22 00:39:07 - INFO - [CYCLE 201] Invite #6 sent (29s)\n2026-01-22 00:39:13 - INFO - [CYCLE 201] Invite #7 sent (35s)\n2026-01-22 00:39:19 - INFO - [CYCLE 201] Invite #8 sent (41s)\n2026-01-22 00:39:24 - INFO - [CYCLE 201] Invite #9 sent (47s)\n2026-01-22 00:39:30 - INFO - [CYCLE 201] Invite #10 sent (53s)\n2026-01-22 00:39:36 - DEBUG - [CYCLE 201] Checking for attention popup (invite #10)\n2026-01-22 00:39:36 - INFO - [CYCLE 201] Someone joined the team!\n2026-01-22 00:39:36 - INFO - [CYCLE 201] Step 7/7: Starting game...\n2026-01-22 00:39:38 - INFO - [CYCLE 201] Checking for loading color at (200, 100)...\n2026-01-22 00:40:03 - INFO - [CYCLE 201] Loading color detected! Color: #A9D917\n2026-01-22 00:40:03 - INFO - [CYCLE 201] Cycle #201 completed successfully - loading color detected\n2026-01-22 00:40:23 - INFO - [CYCLE 201] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 00:40:26"
+  "last_log": "2026-01-22 00:40:32 - INFO - [CYCLE 202] Quick transition: Кнопка Далее\n2026-01-22 00:40:32 - INFO - [CYCLE 202] Found attention popup\n2026-01-22 00:40:36 - INFO - [CYCLE 202] Step 3/7: Transition to battle...\n2026-01-22 00:40:36 - INFO - [CYCLE 202] Quick transition: Кнопка Битва\n2026-01-22 00:40:39 - INFO - [CYCLE 202] Step 4/7: Transition to team...\n2026-01-22 00:40:41 - INFO - [CYCLE 202] Waiting for team screen...\n2026-01-22 00:40:42 - INFO - [CYCLE 202] Found team screen button\n2026-01-22 00:40:42 - INFO - [CYCLE 202] Step 5/7: Pressing team screen button...\n2026-01-22 00:40:43 - INFO - [CYCLE 202] Step 6/7: Sending invitations...\n2026-01-22 00:40:43 - INFO - [CYCLE 202] Invite #1 sent (0s)\n2026-01-22 00:40:49 - INFO - [CYCLE 202] Invite #2 sent (5s)\n2026-01-22 00:40:55 - INFO - [CYCLE 202] Invite #3 sent (11s)\n2026-01-22 00:41:01 - INFO - [CYCLE 202] Invite #4 sent (17s)\n2026-01-22 00:41:07 - INFO - [CYCLE 202] Invite #5 sent (23s)\n2026-01-22 00:41:13 - DEBUG - [CYCLE 202] Checking for attention popup (invite #5)\n2026-01-22 00:41:13 - INFO - [CYCLE 202] Invite #6 sent (29s)\n2026-01-22 00:41:19 - INFO - [CYCLE 202] Invite #7 sent (35s)\n2026-01-22 00:41:25 - INFO - [CYCLE 202] Invite #8 sent (41s)\n2026-01-22 00:41:31 - INFO - [CYCLE 202] Invite #9 sent (47s)\n2026-01-22 00:41:37 - INFO - [CYCLE 202] Invite #10 sent (53s)\n2026-01-22 00:41:42 - DEBUG - [CYCLE 202] Checking for attention popup (invite #10)\n2026-01-22 00:41:43 - INFO - [CYCLE 202] Invite #11 sent (59s)\n2026-01-22 00:41:48 - INFO - [CYCLE 202] Invite #12 sent (65s)\n2026-01-22 00:41:54 - INFO - [CYCLE 202] Invite #13 sent (71s)\n2026-01-22 00:42:00 - INFO - [CYCLE 202] Someone joined the team!\n2026-01-22 00:42:00 - INFO - [CYCLE 202] Step 7/7: Starting game...\n2026-01-22 00:42:02 - INFO - [CYCLE 202] Checking for loading color at (200, 100)...\n2026-01-22 00:42:27 - INFO - [CYCLE 202] Loading color detected! Color: #A9D917\n2026-01-22 00:42:27 - INFO - [CYCLE 202] Cycle #202 completed successfully - loading color detected\n2026-01-22 00:42:47 - INFO - [CYCLE 202] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 00:42:50"
 }
