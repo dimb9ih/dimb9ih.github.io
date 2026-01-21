@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769005764,
-  "timestamp_human": "2026-01-21 17:29:24",
-  "cycle_count": 119,
+  "timestamp": 1769005876,
+  "timestamp_human": "2026-01-21 17:31:16",
+  "cycle_count": 120,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 14м назад",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 16м назад",
   "error_stats": {
     "total_errors": 1,
     "warnings": 1,
@@ -30,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.86",
-      "load_5": "5.20",
+      "load_1": "2.99",
+      "load_5": "5.06",
       "load_15": "5.14",
       "cores": 4,
-      "utilization_percent": 71.5
+      "utilization_percent": 74.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 5,
-      "cached_mb": 129,
-      "utilization_percent": 11.7
+      "used_mb": 235,
+      "free_mb": 1,
+      "cached_mb": 130,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769005764,
-    "timestamp_human": "2026-01-21 17:29:24"
+    "timestamp": 1769005876,
+    "timestamp_human": "2026-01-21 17:31:16"
   },
-  "last_log": "2026-01-21 17:27:17 - INFO - [CYCLE 118] On main screen\n2026-01-21 17:27:18 - INFO - [CYCLE 118] Step 2/7: Transition to arsenal...\n2026-01-21 17:27:18 - INFO - [CYCLE 118] Quick transition: Кнопка Далее\n2026-01-21 17:27:18 - INFO - [CYCLE 118] Found attention popup\n2026-01-21 17:27:22 - INFO - [CYCLE 118] Step 3/7: Transition to battle...\n2026-01-21 17:27:22 - INFO - [CYCLE 118] Quick transition: Кнопка Битва\n2026-01-21 17:27:24 - INFO - [CYCLE 118] Step 4/7: Transition to team...\n2026-01-21 17:27:26 - INFO - [CYCLE 118] Waiting for team screen...\n2026-01-21 17:27:27 - INFO - [CYCLE 118] Found team screen button\n2026-01-21 17:27:27 - INFO - [CYCLE 118] Step 5/7: Pressing team screen button...\n2026-01-21 17:27:29 - INFO - [CYCLE 118] Step 6/7: Sending invitations...\n2026-01-21 17:27:29 - INFO - [CYCLE 118] Invite #1 sent (0s)\n2026-01-21 17:27:35 - INFO - [CYCLE 118] Invite #2 sent (5s)\n2026-01-21 17:27:41 - INFO - [CYCLE 118] Invite #3 sent (11s)\n2026-01-21 17:27:47 - INFO - [CYCLE 118] Invite #4 sent (17s)\n2026-01-21 17:27:53 - INFO - [CYCLE 118] Invite #5 sent (23s)\n2026-01-21 17:27:59 - DEBUG - [CYCLE 118] Checking for attention popup (invite #5)\n2026-01-21 17:27:59 - INFO - [CYCLE 118] Invite #6 sent (29s)\n2026-01-21 17:28:05 - INFO - [CYCLE 118] Invite #7 sent (35s)\n2026-01-21 17:28:11 - INFO - [CYCLE 118] Invite #8 sent (41s)\n2026-01-21 17:28:16 - INFO - [CYCLE 118] Invite #9 sent (47s)\n2026-01-21 17:28:22 - INFO - [CYCLE 118] Invite #10 sent (53s)\n2026-01-21 17:28:28 - DEBUG - [CYCLE 118] Checking for attention popup (invite #10)\n2026-01-21 17:28:28 - INFO - [CYCLE 118] Invite #11 sent (59s)\n2026-01-21 17:28:34 - INFO - [CYCLE 118] Someone joined the team!\n2026-01-21 17:28:34 - INFO - [CYCLE 118] Step 7/7: Starting game...\n2026-01-21 17:28:36 - INFO - [CYCLE 118] Checking for loading color at (200, 100)...\n2026-01-21 17:29:01 - INFO - [CYCLE 118] Loading color detected! Color: #A9D917\n2026-01-21 17:29:01 - INFO - [CYCLE 118] Cycle #118 completed successfully - loading color detected\n2026-01-21 17:29:21 - INFO - [CYCLE 118] Connected to ZXTouch\n",
-  "update_time": "2026-01-21 17:29:24"
+  "last_log": "2026-01-21 17:29:26 - INFO - [CYCLE 119] Waiting for main screen...\n2026-01-21 17:29:26 - DEBUG - [CYCLE 119] Current: unknown, waiting for main... 0s\n2026-01-21 17:29:27 - DEBUG - [CYCLE 119] Current: unknown, waiting for main... 0s\n2026-01-21 17:29:31 - DEBUG - [CYCLE 119] Current: unknown, waiting for main... 5s\n2026-01-21 17:29:32 - DEBUG - [CYCLE 119] Current: loading, waiting for main... 5s\n2026-01-21 17:29:33 - INFO - [CYCLE 119] On main screen\n2026-01-21 17:29:33 - INFO - [CYCLE 119] Step 2/7: Transition to arsenal...\n2026-01-21 17:29:33 - INFO - [CYCLE 119] Quick transition: Кнопка Далее\n2026-01-21 17:29:33 - INFO - [CYCLE 119] Found attention popup\n2026-01-21 17:29:37 - INFO - [CYCLE 119] Step 3/7: Transition to battle...\n2026-01-21 17:29:37 - INFO - [CYCLE 119] Quick transition: Кнопка Битва\n2026-01-21 17:29:40 - INFO - [CYCLE 119] Step 4/7: Transition to team...\n2026-01-21 17:29:42 - INFO - [CYCLE 119] Waiting for team screen...\n2026-01-21 17:29:43 - INFO - [CYCLE 119] Found team screen button\n2026-01-21 17:29:43 - INFO - [CYCLE 119] Step 5/7: Pressing team screen button...\n2026-01-21 17:29:45 - INFO - [CYCLE 119] Step 6/7: Sending invitations...\n2026-01-21 17:29:45 - INFO - [CYCLE 119] Invite #1 sent (0s)\n2026-01-21 17:29:51 - INFO - [CYCLE 119] Invite #2 sent (5s)\n2026-01-21 17:29:57 - INFO - [CYCLE 119] Invite #3 sent (11s)\n2026-01-21 17:30:03 - INFO - [CYCLE 119] Invite #4 sent (17s)\n2026-01-21 17:30:08 - INFO - [CYCLE 119] Invite #5 sent (23s)\n2026-01-21 17:30:14 - DEBUG - [CYCLE 119] Checking for attention popup (invite #5)\n2026-01-21 17:30:14 - INFO - [CYCLE 119] Invite #6 sent (29s)\n2026-01-21 17:30:20 - INFO - [CYCLE 119] Invite #7 sent (35s)\n2026-01-21 17:30:26 - INFO - [CYCLE 119] Someone joined the team!\n2026-01-21 17:30:26 - INFO - [CYCLE 119] Step 7/7: Starting game...\n2026-01-21 17:30:28 - INFO - [CYCLE 119] Checking for loading color at (200, 100)...\n2026-01-21 17:30:53 - INFO - [CYCLE 119] Loading color detected! Color: #A9D917\n2026-01-21 17:30:53 - INFO - [CYCLE 119] Cycle #119 completed successfully - loading color detected\n2026-01-21 17:31:14 - INFO - [CYCLE 119] Connected to ZXTouch\n",
+  "update_time": "2026-01-21 17:31:16"
 }
