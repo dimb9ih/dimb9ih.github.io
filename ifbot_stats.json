@@ -1,17 +1,15 @@
 {
-  "timestamp": 1769033392,
-  "timestamp_human": "2026-01-22 01:09:52",
-  "cycle_count": 209,
+  "timestamp": 1769033484,
+  "timestamp_human": "2026-01-22 01:11:24",
+  "cycle_count": 210,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 3, ошибок: 1), последняя: 6м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 8м назад",
   "error_stats": {
-    "total_errors": 4,
-    "warnings": 3,
-    "errors": 1,
+    "total_errors": 2,
+    "warnings": 2,
+    "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-21 23:55:54 - WARNING - [CYCLE 191] Failed to reach main screen",
-      "2026-01-21 23:55:54 - ERROR - [CYCLE 191] Main screen not found",
       "2026-01-22 00:32:19 - WARNING - [CYCLE 198] Still on main, trying again",
       "2026-01-22 01:03:08 - WARNING - [CYCLE 208] Still on main, trying again"
     ],
@@ -33,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.93",
-      "load_5": "2.53",
-      "load_15": "3.06",
+      "load_1": "6.65",
+      "load_5": "3.99",
+      "load_15": "3.58",
       "cores": 4,
-      "utilization_percent": 48.2
+      "utilization_percent": 166.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 240,
-      "free_mb": 4,
-      "cached_mb": 118,
-      "utilization_percent": 12.0
+      "used_mb": 236,
+      "free_mb": 1,
+      "cached_mb": 132,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -53,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769033392,
-    "timestamp_human": "2026-01-22 01:09:52"
+    "timestamp": 1769033484,
+    "timestamp_human": "2026-01-22 01:11:24"
   },
-  "last_log": "2026-01-22 01:06:15 - DEBUG - [CYCLE 208] Checking for attention popup (invite #30)\n2026-01-22 01:06:15 - INFO - [CYCLE 208] Invite #31 sent (177s)\n2026-01-22 01:06:21 - INFO - [CYCLE 208] Invite #32 sent (183s)\n2026-01-22 01:06:27 - INFO - [CYCLE 208] Invite #33 sent (189s)\n2026-01-22 01:06:33 - INFO - [CYCLE 208] Invite #34 sent (195s)\n2026-01-22 01:06:39 - INFO - [CYCLE 208] Invite #35 sent (201s)\n2026-01-22 01:06:45 - DEBUG - [CYCLE 208] Checking for attention popup (invite #35)\n2026-01-22 01:06:45 - INFO - [CYCLE 208] Invite #36 sent (207s)\n2026-01-22 01:06:51 - INFO - [CYCLE 208] Invite #37 sent (213s)\n2026-01-22 01:06:56 - INFO - [CYCLE 208] Invite #38 sent (218s)\n2026-01-22 01:07:02 - INFO - [CYCLE 208] Invite #39 sent (224s)\n2026-01-22 01:07:08 - INFO - [CYCLE 208] Invite #40 sent (230s)\n2026-01-22 01:07:14 - DEBUG - [CYCLE 208] Checking for attention popup (invite #40)\n2026-01-22 01:07:14 - INFO - [CYCLE 208] Invite #41 sent (236s)\n2026-01-22 01:07:20 - INFO - [CYCLE 208] Invite #42 sent (242s)\n2026-01-22 01:07:26 - INFO - [CYCLE 208] Invite #43 sent (248s)\n2026-01-22 01:07:32 - INFO - [CYCLE 208] Invite #44 sent (254s)\n2026-01-22 01:07:38 - INFO - [CYCLE 208] Invite #45 sent (260s)\n2026-01-22 01:07:44 - DEBUG - [CYCLE 208] Checking for attention popup (invite #45)\n2026-01-22 01:07:44 - INFO - [CYCLE 208] Invite #46 sent (266s)\n2026-01-22 01:07:50 - INFO - [CYCLE 208] Invite #47 sent (272s)\n2026-01-22 01:07:56 - INFO - [CYCLE 208] Invite #48 sent (278s)\n2026-01-22 01:08:01 - INFO - [CYCLE 208] Invite #49 sent (283s)\n2026-01-22 01:08:07 - INFO - [CYCLE 208] Invite #50 sent (289s)\n2026-01-22 01:08:13 - DEBUG - [CYCLE 208] Checking for attention popup (invite #50)\n2026-01-22 01:08:13 - INFO - [CYCLE 208] Invite #51 sent (295s)\n2026-01-22 01:08:19 - INFO - [CYCLE 208] Step 7/7: Starting game...\n2026-01-22 01:08:21 - INFO - [CYCLE 208] Checking for loading color at (200, 100)...\n2026-01-22 01:09:28 - INFO - [CYCLE 208] Cycle #208 completed - no loading color detected (normal)\n2026-01-22 01:09:49 - INFO - [CYCLE 208] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 01:09:52"
+  "last_log": "2026-01-22 01:09:28 - INFO - [CYCLE 208] Cycle #208 completed - no loading color detected (normal)\n2026-01-22 01:09:49 - INFO - [CYCLE 208] Connected to ZXTouch\n2026-01-22 01:09:55 - INFO - [CYCLE 209] Starting cycle #209\n2026-01-22 01:09:55 - INFO - [CYCLE 209] Step 1/7: Waiting for main screen...\n2026-01-22 01:09:55 - INFO - [CYCLE 209] Waiting for main screen...\n2026-01-22 01:09:55 - DEBUG - [CYCLE 209] Current: unknown, waiting for main... 0s\n2026-01-22 01:09:56 - DEBUG - [CYCLE 209] Current: unknown, waiting for main... 0s\n2026-01-22 01:10:00 - DEBUG - [CYCLE 209] Current: unknown, waiting for main... 5s\n2026-01-22 01:10:01 - DEBUG - [CYCLE 209] Current: unknown, waiting for main... 5s\n2026-01-22 01:10:05 - INFO - [CYCLE 209] Found attention popup\n2026-01-22 01:10:07 - INFO - [CYCLE 209] On main screen\n2026-01-22 01:10:07 - INFO - [CYCLE 209] Step 2/7: Transition to arsenal...\n2026-01-22 01:10:07 - INFO - [CYCLE 209] Quick transition: Кнопка Далее\n2026-01-22 01:10:09 - INFO - [CYCLE 209] Step 3/7: Transition to battle...\n2026-01-22 01:10:09 - INFO - [CYCLE 209] Quick transition: Кнопка Битва\n2026-01-22 01:10:12 - INFO - [CYCLE 209] Step 4/7: Transition to team...\n2026-01-22 01:10:14 - INFO - [CYCLE 209] Waiting for team screen...\n2026-01-22 01:10:15 - INFO - [CYCLE 209] Found team screen button\n2026-01-22 01:10:15 - INFO - [CYCLE 209] Step 5/7: Pressing team screen button...\n2026-01-22 01:10:17 - INFO - [CYCLE 209] Step 6/7: Sending invitations...\n2026-01-22 01:10:17 - INFO - [CYCLE 209] Invite #1 sent (0s)\n2026-01-22 01:10:23 - INFO - [CYCLE 209] Invite #2 sent (5s)\n2026-01-22 01:10:29 - INFO - [CYCLE 209] Invite #3 sent (11s)\n2026-01-22 01:10:35 - INFO - [CYCLE 209] Invite #4 sent (17s)\n2026-01-22 01:10:35 - INFO - [CYCLE 209] Someone joined immediately!\n2026-01-22 01:10:35 - INFO - [CYCLE 209] Step 7/7: Starting game...\n2026-01-22 01:10:37 - INFO - [CYCLE 209] Checking for loading color at (200, 100)...\n2026-01-22 01:11:01 - INFO - [CYCLE 209] Loading color detected! Color: #A9D917\n2026-01-22 01:11:01 - INFO - [CYCLE 209] Cycle #209 completed successfully - loading color detected\n2026-01-22 01:11:22 - INFO - [CYCLE 209] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 01:11:24"
 }
