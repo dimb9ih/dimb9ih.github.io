@@ -1,19 +1,20 @@
 {
-  "timestamp": 1769016139,
-  "timestamp_human": "2026-01-21 20:22:19",
-  "cycle_count": 150,
+  "timestamp": 1769016552,
+  "timestamp_human": "2026-01-21 20:29:12",
+  "cycle_count": 151,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 44м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 2,
+    "warnings": 2,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-21 19:37:39 - WARNING - [CYCLE 141] Still on main, trying again"
+      "2026-01-21 19:37:39 - WARNING - [CYCLE 141] Still on main, trying again",
+      "2026-01-21 20:22:29 - WARNING - [CYCLE 150] Still on main, trying again"
     ],
-    "last_error_time": 1769013459,
-    "error_timestamp_human": "2026-01-21 19:37:39"
+    "last_error_time": 1769016149,
+    "error_timestamp_human": "2026-01-21 20:22:29"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.36",
-      "load_5": "2.63",
-      "load_15": "2.66",
+      "load_1": "1.63",
+      "load_5": "2.32",
+      "load_15": "2.58",
       "cores": 4,
-      "utilization_percent": 109.0
+      "utilization_percent": 40.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 229,
-      "free_mb": 1,
-      "cached_mb": 123,
-      "utilization_percent": 11.5
+      "used_mb": 234,
+      "free_mb": 5,
+      "cached_mb": 127,
+      "utilization_percent": 11.7
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769016139,
-    "timestamp_human": "2026-01-21 20:22:19"
+    "timestamp": 1769016552,
+    "timestamp_human": "2026-01-21 20:29:12"
   },
-  "last_log": "2026-01-21 20:18:42 - DEBUG - [CYCLE 149] Checking for attention popup (invite #30)\n2026-01-21 20:18:42 - INFO - [CYCLE 149] Invite #31 sent (177s)\n2026-01-21 20:18:48 - INFO - [CYCLE 149] Invite #32 sent (183s)\n2026-01-21 20:18:54 - INFO - [CYCLE 149] Invite #33 sent (189s)\n2026-01-21 20:19:00 - INFO - [CYCLE 149] Invite #34 sent (195s)\n2026-01-21 20:19:06 - INFO - [CYCLE 149] Invite #35 sent (201s)\n2026-01-21 20:19:12 - DEBUG - [CYCLE 149] Checking for attention popup (invite #35)\n2026-01-21 20:19:12 - INFO - [CYCLE 149] Invite #36 sent (207s)\n2026-01-21 20:19:18 - INFO - [CYCLE 149] Invite #37 sent (213s)\n2026-01-21 20:19:24 - INFO - [CYCLE 149] Invite #38 sent (219s)\n2026-01-21 20:19:30 - INFO - [CYCLE 149] Invite #39 sent (225s)\n2026-01-21 20:19:36 - INFO - [CYCLE 149] Invite #40 sent (230s)\n2026-01-21 20:19:41 - DEBUG - [CYCLE 149] Checking for attention popup (invite #40)\n2026-01-21 20:19:42 - INFO - [CYCLE 149] Invite #41 sent (236s)\n2026-01-21 20:19:48 - INFO - [CYCLE 149] Invite #42 sent (242s)\n2026-01-21 20:19:53 - INFO - [CYCLE 149] Invite #43 sent (248s)\n2026-01-21 20:19:59 - INFO - [CYCLE 149] Invite #44 sent (254s)\n2026-01-21 20:20:05 - INFO - [CYCLE 149] Invite #45 sent (260s)\n2026-01-21 20:20:11 - DEBUG - [CYCLE 149] Checking for attention popup (invite #45)\n2026-01-21 20:20:11 - INFO - [CYCLE 149] Invite #46 sent (266s)\n2026-01-21 20:20:17 - INFO - [CYCLE 149] Invite #47 sent (272s)\n2026-01-21 20:20:23 - INFO - [CYCLE 149] Invite #48 sent (278s)\n2026-01-21 20:20:29 - INFO - [CYCLE 149] Invite #49 sent (284s)\n2026-01-21 20:20:35 - INFO - [CYCLE 149] Invite #50 sent (290s)\n2026-01-21 20:20:41 - DEBUG - [CYCLE 149] Checking for attention popup (invite #50)\n2026-01-21 20:20:41 - INFO - [CYCLE 149] Invite #51 sent (296s)\n2026-01-21 20:20:47 - INFO - [CYCLE 149] Step 7/7: Starting game...\n2026-01-21 20:20:48 - INFO - [CYCLE 149] Checking for loading color at (200, 100)...\n2026-01-21 20:21:56 - INFO - [CYCLE 149] Cycle #149 completed - no loading color detected (normal)\n2026-01-21 20:22:17 - INFO - [CYCLE 149] Connected to ZXTouch\n",
-  "update_time": "2026-01-21 20:22:19"
+  "last_log": "2026-01-21 20:25:35 - DEBUG - [CYCLE 150] Checking for attention popup (invite #30)\n2026-01-21 20:25:35 - INFO - [CYCLE 150] Invite #31 sent (177s)\n2026-01-21 20:25:41 - INFO - [CYCLE 150] Invite #32 sent (183s)\n2026-01-21 20:25:47 - INFO - [CYCLE 150] Invite #33 sent (189s)\n2026-01-21 20:25:53 - INFO - [CYCLE 150] Invite #34 sent (195s)\n2026-01-21 20:25:59 - INFO - [CYCLE 150] Invite #35 sent (201s)\n2026-01-21 20:26:05 - DEBUG - [CYCLE 150] Checking for attention popup (invite #35)\n2026-01-21 20:26:05 - INFO - [CYCLE 150] Invite #36 sent (206s)\n2026-01-21 20:26:11 - INFO - [CYCLE 150] Invite #37 sent (212s)\n2026-01-21 20:26:17 - INFO - [CYCLE 150] Invite #38 sent (218s)\n2026-01-21 20:26:23 - INFO - [CYCLE 150] Invite #39 sent (224s)\n2026-01-21 20:26:29 - INFO - [CYCLE 150] Invite #40 sent (230s)\n2026-01-21 20:26:35 - DEBUG - [CYCLE 150] Checking for attention popup (invite #40)\n2026-01-21 20:26:35 - INFO - [CYCLE 150] Invite #41 sent (236s)\n2026-01-21 20:26:41 - INFO - [CYCLE 150] Invite #42 sent (242s)\n2026-01-21 20:26:46 - INFO - [CYCLE 150] Invite #43 sent (248s)\n2026-01-21 20:26:52 - INFO - [CYCLE 150] Invite #44 sent (254s)\n2026-01-21 20:26:58 - INFO - [CYCLE 150] Invite #45 sent (260s)\n2026-01-21 20:27:04 - DEBUG - [CYCLE 150] Checking for attention popup (invite #45)\n2026-01-21 20:27:04 - INFO - [CYCLE 150] Invite #46 sent (266s)\n2026-01-21 20:27:10 - INFO - [CYCLE 150] Invite #47 sent (272s)\n2026-01-21 20:27:16 - INFO - [CYCLE 150] Invite #48 sent (277s)\n2026-01-21 20:27:22 - INFO - [CYCLE 150] Invite #49 sent (283s)\n2026-01-21 20:27:28 - INFO - [CYCLE 150] Invite #50 sent (289s)\n2026-01-21 20:27:34 - DEBUG - [CYCLE 150] Checking for attention popup (invite #50)\n2026-01-21 20:27:34 - INFO - [CYCLE 150] Invite #51 sent (295s)\n2026-01-21 20:27:40 - INFO - [CYCLE 150] Step 7/7: Starting game...\n2026-01-21 20:27:41 - INFO - [CYCLE 150] Checking for loading color at (200, 100)...\n2026-01-21 20:28:49 - INFO - [CYCLE 150] Cycle #150 completed - no loading color detected (normal)\n2026-01-21 20:29:09 - INFO - [CYCLE 150] Connected to ZXTouch\n",
+  "update_time": "2026-01-21 20:29:12"
 }
