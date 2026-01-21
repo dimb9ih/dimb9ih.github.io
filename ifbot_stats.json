@@ -1,21 +1,22 @@
 {
-  "timestamp": 1769032977,
-  "timestamp_human": "2026-01-22 01:02:57",
-  "cycle_count": 208,
+  "timestamp": 1769033392,
+  "timestamp_human": "2026-01-22 01:09:52",
+  "cycle_count": 209,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 30м назад",
+  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 3, ошибок: 1), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 3,
-    "warnings": 2,
+    "total_errors": 4,
+    "warnings": 3,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
       "2026-01-21 23:55:54 - WARNING - [CYCLE 191] Failed to reach main screen",
       "2026-01-21 23:55:54 - ERROR - [CYCLE 191] Main screen not found",
-      "2026-01-22 00:32:19 - WARNING - [CYCLE 198] Still on main, trying again"
+      "2026-01-22 00:32:19 - WARNING - [CYCLE 198] Still on main, trying again",
+      "2026-01-22 01:03:08 - WARNING - [CYCLE 208] Still on main, trying again"
     ],
-    "last_error_time": 1769031139,
-    "error_timestamp_human": "2026-01-22 00:32:19"
+    "last_error_time": 1769032988,
+    "error_timestamp_human": "2026-01-22 01:03:08"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -32,18 +33,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.77",
-      "load_5": "2.61",
-      "load_15": "3.26",
+      "load_1": "1.93",
+      "load_5": "2.53",
+      "load_15": "3.06",
       "cores": 4,
-      "utilization_percent": 69.2
+      "utilization_percent": 48.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 239,
-      "free_mb": 0,
-      "cached_mb": 133,
-      "utilization_percent": 11.9
+      "used_mb": 240,
+      "free_mb": 4,
+      "cached_mb": 118,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -52,9 +53,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769032977,
-    "timestamp_human": "2026-01-22 01:02:57"
+    "timestamp": 1769033392,
+    "timestamp_human": "2026-01-22 01:09:52"
   },
-  "last_log": "2026-01-22 01:00:09 - INFO - [CYCLE 207] Invite #19 sent (106s)\n2026-01-22 01:00:15 - INFO - [CYCLE 207] Invite #20 sent (112s)\n2026-01-22 01:00:21 - DEBUG - [CYCLE 207] Checking for attention popup (invite #20)\n2026-01-22 01:00:21 - INFO - [CYCLE 207] Invite #21 sent (118s)\n2026-01-22 01:00:27 - INFO - [CYCLE 207] Invite #22 sent (124s)\n2026-01-22 01:00:33 - INFO - [CYCLE 207] Invite #23 sent (130s)\n2026-01-22 01:00:39 - INFO - [CYCLE 207] Invite #24 sent (136s)\n2026-01-22 01:00:45 - INFO - [CYCLE 207] Invite #25 sent (141s)\n2026-01-22 01:00:50 - DEBUG - [CYCLE 207] Checking for attention popup (invite #25)\n2026-01-22 01:00:50 - INFO - [CYCLE 207] Invite #26 sent (147s)\n2026-01-22 01:00:56 - INFO - [CYCLE 207] Invite #27 sent (153s)\n2026-01-22 01:01:02 - INFO - [CYCLE 207] Invite #28 sent (159s)\n2026-01-22 01:01:08 - INFO - [CYCLE 207] Invite #29 sent (165s)\n2026-01-22 01:01:14 - INFO - [CYCLE 207] Invite #30 sent (171s)\n2026-01-22 01:01:20 - DEBUG - [CYCLE 207] Checking for attention popup (invite #30)\n2026-01-22 01:01:20 - INFO - [CYCLE 207] Invite #31 sent (177s)\n2026-01-22 01:01:26 - INFO - [CYCLE 207] Invite #32 sent (183s)\n2026-01-22 01:01:32 - INFO - [CYCLE 207] Invite #33 sent (189s)\n2026-01-22 01:01:38 - INFO - [CYCLE 207] Invite #34 sent (195s)\n2026-01-22 01:01:44 - INFO - [CYCLE 207] Invite #35 sent (201s)\n2026-01-22 01:01:50 - DEBUG - [CYCLE 207] Checking for attention popup (invite #35)\n2026-01-22 01:01:50 - INFO - [CYCLE 207] Invite #36 sent (206s)\n2026-01-22 01:01:56 - INFO - [CYCLE 207] Invite #37 sent (212s)\n2026-01-22 01:02:01 - INFO - [CYCLE 207] Invite #38 sent (218s)\n2026-01-22 01:02:07 - INFO - [CYCLE 207] Someone joined the team!\n2026-01-22 01:02:07 - INFO - [CYCLE 207] Step 7/7: Starting game...\n2026-01-22 01:02:09 - INFO - [CYCLE 207] Checking for loading color at (200, 100)...\n2026-01-22 01:02:34 - INFO - [CYCLE 207] Loading color detected! Color: #A9D917\n2026-01-22 01:02:34 - INFO - [CYCLE 207] Cycle #207 completed successfully - loading color detected\n2026-01-22 01:02:55 - INFO - [CYCLE 207] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 01:02:57"
+  "last_log": "2026-01-22 01:06:15 - DEBUG - [CYCLE 208] Checking for attention popup (invite #30)\n2026-01-22 01:06:15 - INFO - [CYCLE 208] Invite #31 sent (177s)\n2026-01-22 01:06:21 - INFO - [CYCLE 208] Invite #32 sent (183s)\n2026-01-22 01:06:27 - INFO - [CYCLE 208] Invite #33 sent (189s)\n2026-01-22 01:06:33 - INFO - [CYCLE 208] Invite #34 sent (195s)\n2026-01-22 01:06:39 - INFO - [CYCLE 208] Invite #35 sent (201s)\n2026-01-22 01:06:45 - DEBUG - [CYCLE 208] Checking for attention popup (invite #35)\n2026-01-22 01:06:45 - INFO - [CYCLE 208] Invite #36 sent (207s)\n2026-01-22 01:06:51 - INFO - [CYCLE 208] Invite #37 sent (213s)\n2026-01-22 01:06:56 - INFO - [CYCLE 208] Invite #38 sent (218s)\n2026-01-22 01:07:02 - INFO - [CYCLE 208] Invite #39 sent (224s)\n2026-01-22 01:07:08 - INFO - [CYCLE 208] Invite #40 sent (230s)\n2026-01-22 01:07:14 - DEBUG - [CYCLE 208] Checking for attention popup (invite #40)\n2026-01-22 01:07:14 - INFO - [CYCLE 208] Invite #41 sent (236s)\n2026-01-22 01:07:20 - INFO - [CYCLE 208] Invite #42 sent (242s)\n2026-01-22 01:07:26 - INFO - [CYCLE 208] Invite #43 sent (248s)\n2026-01-22 01:07:32 - INFO - [CYCLE 208] Invite #44 sent (254s)\n2026-01-22 01:07:38 - INFO - [CYCLE 208] Invite #45 sent (260s)\n2026-01-22 01:07:44 - DEBUG - [CYCLE 208] Checking for attention popup (invite #45)\n2026-01-22 01:07:44 - INFO - [CYCLE 208] Invite #46 sent (266s)\n2026-01-22 01:07:50 - INFO - [CYCLE 208] Invite #47 sent (272s)\n2026-01-22 01:07:56 - INFO - [CYCLE 208] Invite #48 sent (278s)\n2026-01-22 01:08:01 - INFO - [CYCLE 208] Invite #49 sent (283s)\n2026-01-22 01:08:07 - INFO - [CYCLE 208] Invite #50 sent (289s)\n2026-01-22 01:08:13 - DEBUG - [CYCLE 208] Checking for attention popup (invite #50)\n2026-01-22 01:08:13 - INFO - [CYCLE 208] Invite #51 sent (295s)\n2026-01-22 01:08:19 - INFO - [CYCLE 208] Step 7/7: Starting game...\n2026-01-22 01:08:21 - INFO - [CYCLE 208] Checking for loading color at (200, 100)...\n2026-01-22 01:09:28 - INFO - [CYCLE 208] Cycle #208 completed - no loading color detected (normal)\n2026-01-22 01:09:49 - INFO - [CYCLE 208] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 01:09:52"
 }
