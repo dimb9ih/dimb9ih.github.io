@@ -1,21 +1,23 @@
 {
-  "timestamp": 1768999623,
-  "timestamp_human": "2026-01-21 15:47:03",
-  "cycle_count": 89,
+  "timestamp": 1769000029,
+  "timestamp_human": "2026-01-21 15:53:49",
+  "cycle_count": 91,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 3), последняя: 26м назад",
+  "error_summary": "⚠️ Ошибок: 5 (предупреждений: 4, ошибок: 1), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 3,
-    "warnings": 3,
-    "errors": 0,
+    "total_errors": 5,
+    "warnings": 4,
+    "errors": 1,
     "critical": 0,
     "recent_errors": [
       "2026-01-21 15:05:58 - WARNING - [CYCLE 80] Still on main, trying again",
       "2026-01-21 15:07:22 - WARNING - [CYCLE 81] Still on main, trying again",
-      "2026-01-21 15:20:27 - WARNING - [CYCLE 84] Still on main, trying again"
+      "2026-01-21 15:20:27 - WARNING - [CYCLE 84] Still on main, trying again",
+      "2026-01-21 15:53:26 - WARNING - [CYCLE 90] Failed to reach main screen",
+      "2026-01-21 15:53:26 - ERROR - [CYCLE 90] Main screen not found"
     ],
-    "last_error_time": 1768998027,
-    "error_timestamp_human": "2026-01-21 15:20:27"
+    "last_error_time": 1769000006,
+    "error_timestamp_human": "2026-01-21 15:53:26"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -32,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.37",
-      "load_5": "3.95",
-      "load_15": "3.50",
+      "load_1": "10.60",
+      "load_5": "5.20",
+      "load_15": "4.00",
       "cores": 4,
-      "utilization_percent": 109.2
+      "utilization_percent": 265.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 6,
-      "cached_mb": 119,
-      "utilization_percent": 11.7
+      "used_mb": 235,
+      "free_mb": 1,
+      "cached_mb": 129,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -52,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1768999623,
-    "timestamp_human": "2026-01-21 15:47:03"
+    "timestamp": 1769000029,
+    "timestamp_human": "2026-01-21 15:53:49"
   },
-  "last_log": "2026-01-21 15:44:15 - INFO - [CYCLE 88] Invite #12 sent (65s)\n2026-01-21 15:44:21 - INFO - [CYCLE 88] Invite #13 sent (70s)\n2026-01-21 15:44:27 - INFO - [CYCLE 88] Invite #14 sent (76s)\n2026-01-21 15:44:33 - INFO - [CYCLE 88] Invite #15 sent (82s)\n2026-01-21 15:44:39 - DEBUG - [CYCLE 88] Checking for attention popup (invite #15)\n2026-01-21 15:44:39 - INFO - [CYCLE 88] Invite #16 sent (88s)\n2026-01-21 15:44:45 - INFO - [CYCLE 88] Invite #17 sent (94s)\n2026-01-21 15:44:50 - INFO - [CYCLE 88] Invite #18 sent (100s)\n2026-01-21 15:44:56 - INFO - [CYCLE 88] Invite #19 sent (106s)\n2026-01-21 15:45:02 - INFO - [CYCLE 88] Invite #20 sent (112s)\n2026-01-21 15:45:08 - DEBUG - [CYCLE 88] Checking for attention popup (invite #20)\n2026-01-21 15:45:08 - INFO - [CYCLE 88] Invite #21 sent (118s)\n2026-01-21 15:45:14 - INFO - [CYCLE 88] Invite #22 sent (124s)\n2026-01-21 15:45:20 - INFO - [CYCLE 88] Invite #23 sent (129s)\n2026-01-21 15:45:26 - INFO - [CYCLE 88] Invite #24 sent (135s)\n2026-01-21 15:45:32 - INFO - [CYCLE 88] Invite #25 sent (141s)\n2026-01-21 15:45:38 - DEBUG - [CYCLE 88] Checking for attention popup (invite #25)\n2026-01-21 15:45:38 - INFO - [CYCLE 88] Invite #26 sent (147s)\n2026-01-21 15:45:44 - INFO - [CYCLE 88] Invite #27 sent (153s)\n2026-01-21 15:45:50 - INFO - [CYCLE 88] Invite #28 sent (159s)\n2026-01-21 15:45:55 - INFO - [CYCLE 88] Invite #29 sent (165s)\n2026-01-21 15:46:01 - INFO - [CYCLE 88] Invite #30 sent (171s)\n2026-01-21 15:46:07 - DEBUG - [CYCLE 88] Checking for attention popup (invite #30)\n2026-01-21 15:46:07 - INFO - [CYCLE 88] Invite #31 sent (177s)\n2026-01-21 15:46:13 - INFO - [CYCLE 88] Someone joined the team!\n2026-01-21 15:46:13 - INFO - [CYCLE 88] Step 7/7: Starting game...\n2026-01-21 15:46:15 - INFO - [CYCLE 88] Checking for loading color at (200, 100)...\n2026-01-21 15:46:39 - INFO - [CYCLE 88] Loading color detected! Color: #A9D917\n2026-01-21 15:46:39 - INFO - [CYCLE 88] Cycle #88 completed successfully - loading color detected\n2026-01-21 15:47:00 - INFO - [CYCLE 88] Connected to ZXTouch\n",
-  "update_time": "2026-01-21 15:47:03"
+  "last_log": "2026-01-21 15:50:52 - INFO - [CYCLE 89] Cycle #89 completed successfully - loading color detected\n2026-01-21 15:51:13 - INFO - [CYCLE 89] Connected to ZXTouch\n2026-01-21 15:51:56 - INFO - [CYCLE 90] Starting cycle #90\n2026-01-21 15:51:56 - INFO - [CYCLE 90] Step 1/7: Waiting for main screen...\n2026-01-21 15:51:56 - INFO - [CYCLE 90] Waiting for main screen...\n2026-01-21 15:51:56 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 0s\n2026-01-21 15:52:01 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 5s\n2026-01-21 15:52:06 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 10s\n2026-01-21 15:52:07 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 10s\n2026-01-21 15:52:11 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 15s\n2026-01-21 15:52:16 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 20s\n2026-01-21 15:52:21 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 25s\n2026-01-21 15:52:22 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 25s\n2026-01-21 15:52:26 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 30s\n2026-01-21 15:52:30 - INFO - [CYCLE 90] Found loading popup with YES button\n2026-01-21 15:52:32 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 35s\n2026-01-21 15:52:36 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 40s\n2026-01-21 15:52:42 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 45s\n2026-01-21 15:52:46 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 50s\n2026-01-21 15:52:50 - INFO - [CYCLE 90] Found loading popup with YES button\n2026-01-21 15:52:55 - INFO - [CYCLE 90] Found loading popup with YES button\n2026-01-21 15:53:01 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 65s\n2026-01-21 15:53:06 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 70s\n2026-01-21 15:53:07 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 70s\n2026-01-21 15:53:11 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 75s\n2026-01-21 15:53:16 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 80s\n2026-01-21 15:53:21 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 85s\n2026-01-21 15:53:26 - WARNING - [CYCLE 90] Failed to reach main screen\n2026-01-21 15:53:26 - ERROR - [CYCLE 90] Main screen not found\n2026-01-21 15:53:47 - INFO - [CYCLE 90] Connected to ZXTouch\n",
+  "update_time": "2026-01-21 15:53:49"
 }
