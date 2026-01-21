@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769000029,
-  "timestamp_human": "2026-01-21 15:53:49",
-  "cycle_count": 91,
+  "timestamp": 1769000140,
+  "timestamp_human": "2026-01-21 15:55:40",
+  "cycle_count": 92,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 5 (предупреждений: 4, ошибок: 1), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 5 (предупреждений: 4, ошибок: 1), последняя: 2м назад",
   "error_stats": {
     "total_errors": 5,
     "warnings": 4,
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "10.60",
-      "load_5": "5.20",
-      "load_15": "4.00",
+      "load_1": "4.58",
+      "load_5": "4.95",
+      "load_15": "4.07",
       "cores": 4,
-      "utilization_percent": 265.0
+      "utilization_percent": 114.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 235,
-      "free_mb": 1,
-      "cached_mb": 129,
-      "utilization_percent": 11.8
+      "used_mb": 233,
+      "free_mb": 6,
+      "cached_mb": 104,
+      "utilization_percent": 11.7
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769000029,
-    "timestamp_human": "2026-01-21 15:53:49"
+    "timestamp": 1769000140,
+    "timestamp_human": "2026-01-21 15:55:40"
   },
-  "last_log": "2026-01-21 15:50:52 - INFO - [CYCLE 89] Cycle #89 completed successfully - loading color detected\n2026-01-21 15:51:13 - INFO - [CYCLE 89] Connected to ZXTouch\n2026-01-21 15:51:56 - INFO - [CYCLE 90] Starting cycle #90\n2026-01-21 15:51:56 - INFO - [CYCLE 90] Step 1/7: Waiting for main screen...\n2026-01-21 15:51:56 - INFO - [CYCLE 90] Waiting for main screen...\n2026-01-21 15:51:56 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 0s\n2026-01-21 15:52:01 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 5s\n2026-01-21 15:52:06 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 10s\n2026-01-21 15:52:07 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 10s\n2026-01-21 15:52:11 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 15s\n2026-01-21 15:52:16 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 20s\n2026-01-21 15:52:21 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 25s\n2026-01-21 15:52:22 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 25s\n2026-01-21 15:52:26 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 30s\n2026-01-21 15:52:30 - INFO - [CYCLE 90] Found loading popup with YES button\n2026-01-21 15:52:32 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 35s\n2026-01-21 15:52:36 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 40s\n2026-01-21 15:52:42 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 45s\n2026-01-21 15:52:46 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 50s\n2026-01-21 15:52:50 - INFO - [CYCLE 90] Found loading popup with YES button\n2026-01-21 15:52:55 - INFO - [CYCLE 90] Found loading popup with YES button\n2026-01-21 15:53:01 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 65s\n2026-01-21 15:53:06 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 70s\n2026-01-21 15:53:07 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 70s\n2026-01-21 15:53:11 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 75s\n2026-01-21 15:53:16 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 80s\n2026-01-21 15:53:21 - DEBUG - [CYCLE 90] Current: unknown, waiting for main... 85s\n2026-01-21 15:53:26 - WARNING - [CYCLE 90] Failed to reach main screen\n2026-01-21 15:53:26 - ERROR - [CYCLE 90] Main screen not found\n2026-01-21 15:53:47 - INFO - [CYCLE 90] Connected to ZXTouch\n",
-  "update_time": "2026-01-21 15:53:49"
+  "last_log": "2026-01-21 15:53:51 - INFO - [CYCLE 91] Starting cycle #91\n2026-01-21 15:53:51 - INFO - [CYCLE 91] Step 1/7: Waiting for main screen...\n2026-01-21 15:53:51 - INFO - [CYCLE 91] Waiting for main screen...\n2026-01-21 15:53:51 - DEBUG - [CYCLE 91] Current: unknown, waiting for main... 0s\n2026-01-21 15:53:52 - DEBUG - [CYCLE 91] Current: unknown, waiting for main... 0s\n2026-01-21 15:53:56 - INFO - [CYCLE 91] On main screen\n2026-01-21 15:53:56 - INFO - [CYCLE 91] Step 2/7: Transition to arsenal...\n2026-01-21 15:53:56 - INFO - [CYCLE 91] Quick transition: Кнопка Далее\n2026-01-21 15:53:59 - INFO - [CYCLE 91] Found attention popup\n2026-01-21 15:54:00 - INFO - [CYCLE 91] Step 3/7: Transition to battle...\n2026-01-21 15:54:00 - INFO - [CYCLE 91] Quick transition: Кнопка Битва\n2026-01-21 15:54:03 - INFO - [CYCLE 91] Step 4/7: Transition to team...\n2026-01-21 15:54:05 - INFO - [CYCLE 91] Waiting for team screen...\n2026-01-21 15:54:06 - INFO - [CYCLE 91] Found team screen button\n2026-01-21 15:54:06 - INFO - [CYCLE 91] Step 5/7: Pressing team screen button...\n2026-01-21 15:54:08 - INFO - [CYCLE 91] Step 6/7: Sending invitations...\n2026-01-21 15:54:08 - INFO - [CYCLE 91] Invite #1 sent (0s)\n2026-01-21 15:54:14 - INFO - [CYCLE 91] Invite #2 sent (5s)\n2026-01-21 15:54:20 - INFO - [CYCLE 91] Invite #3 sent (11s)\n2026-01-21 15:54:26 - INFO - [CYCLE 91] Invite #4 sent (17s)\n2026-01-21 15:54:32 - INFO - [CYCLE 91] Invite #5 sent (23s)\n2026-01-21 15:54:38 - DEBUG - [CYCLE 91] Checking for attention popup (invite #5)\n2026-01-21 15:54:38 - INFO - [CYCLE 91] Invite #6 sent (29s)\n2026-01-21 15:54:44 - INFO - [CYCLE 91] Invite #7 sent (35s)\n2026-01-21 15:54:50 - INFO - [CYCLE 91] Someone joined the team!\n2026-01-21 15:54:50 - INFO - [CYCLE 91] Step 7/7: Starting game...\n2026-01-21 15:54:51 - INFO - [CYCLE 91] Checking for loading color at (200, 100)...\n2026-01-21 15:55:16 - INFO - [CYCLE 91] Loading color detected! Color: #A9D917\n2026-01-21 15:55:16 - INFO - [CYCLE 91] Cycle #91 completed successfully - loading color detected\n2026-01-21 15:55:37 - INFO - [CYCLE 91] Connected to ZXTouch\n",
+  "update_time": "2026-01-21 15:55:40"
 }
