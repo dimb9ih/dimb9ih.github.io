@@ -1,12 +1,12 @@
 {
-  "timestamp": 1769001295,
-  "timestamp_human": "2026-01-21 16:14:55",
-  "cycle_count": 97,
+  "timestamp": 1769001705,
+  "timestamp_human": "2026-01-21 16:21:45",
+  "cycle_count": 98,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 8 (предупреждений: 6, ошибок: 2), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 7 (предупреждений: 5, ошибок: 2), последняя: 7м назад",
   "error_stats": {
-    "total_errors": 8,
-    "warnings": 6,
+    "total_errors": 7,
+    "warnings": 5,
     "errors": 2,
     "critical": 0,
     "recent_errors": [
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "5.10",
-      "load_5": "3.87",
-      "load_15": "3.70",
+      "load_1": "1.99",
+      "load_5": "2.35",
+      "load_15": "2.99",
       "cores": 4,
-      "utilization_percent": 127.5
+      "utilization_percent": 49.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 232,
-      "free_mb": 2,
-      "cached_mb": 126,
-      "utilization_percent": 11.6
+      "used_mb": 236,
+      "free_mb": 5,
+      "cached_mb": 120,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769001295,
-    "timestamp_human": "2026-01-21 16:14:55"
+    "timestamp": 1769001705,
+    "timestamp_human": "2026-01-21 16:21:45"
   },
-  "last_log": "2026-01-21 16:13:01 - INFO - [CYCLE 96] Waiting for main screen...\n2026-01-21 16:13:02 - DEBUG - [CYCLE 96] Current: unknown, waiting for main... 0s\n2026-01-21 16:13:02 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 0s\n2026-01-21 16:13:07 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 5s\n2026-01-21 16:13:12 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 10s\n2026-01-21 16:13:16 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 15s\n2026-01-21 16:13:17 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 15s\n2026-01-21 16:13:22 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 20s\n2026-01-21 16:13:22 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 20s\n2026-01-21 16:13:27 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 25s\n2026-01-21 16:13:32 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 30s\n2026-01-21 16:13:37 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 35s\n2026-01-21 16:13:41 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 40s\n2026-01-21 16:13:42 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 40s\n2026-01-21 16:13:47 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 45s\n2026-01-21 16:13:47 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 45s\n2026-01-21 16:13:52 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 50s\n2026-01-21 16:13:52 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 50s\n2026-01-21 16:13:57 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 55s\n2026-01-21 16:14:02 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 60s\n2026-01-21 16:14:07 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 65s\n2026-01-21 16:14:12 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 70s\n2026-01-21 16:14:16 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 75s\n2026-01-21 16:14:17 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 75s\n2026-01-21 16:14:22 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 80s\n2026-01-21 16:14:22 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 80s\n2026-01-21 16:14:27 - DEBUG - [CYCLE 96] Current: loading, waiting for main... 85s\n2026-01-21 16:14:32 - WARNING - [CYCLE 96] Failed to reach main screen\n2026-01-21 16:14:32 - ERROR - [CYCLE 96] Main screen not found\n2026-01-21 16:14:53 - INFO - [CYCLE 96] Connected to ZXTouch\n",
-  "update_time": "2026-01-21 16:14:55"
+  "last_log": "2026-01-21 16:18:09 - DEBUG - [CYCLE 97] Checking for attention popup (invite #30)\n2026-01-21 16:18:09 - INFO - [CYCLE 97] Invite #31 sent (177s)\n2026-01-21 16:18:15 - INFO - [CYCLE 97] Invite #32 sent (183s)\n2026-01-21 16:18:21 - INFO - [CYCLE 97] Invite #33 sent (189s)\n2026-01-21 16:18:27 - INFO - [CYCLE 97] Invite #34 sent (195s)\n2026-01-21 16:18:33 - INFO - [CYCLE 97] Invite #35 sent (200s)\n2026-01-21 16:18:39 - DEBUG - [CYCLE 97] Checking for attention popup (invite #35)\n2026-01-21 16:18:39 - INFO - [CYCLE 97] Invite #36 sent (206s)\n2026-01-21 16:18:45 - INFO - [CYCLE 97] Invite #37 sent (212s)\n2026-01-21 16:18:51 - INFO - [CYCLE 97] Invite #38 sent (218s)\n2026-01-21 16:18:56 - INFO - [CYCLE 97] Invite #39 sent (224s)\n2026-01-21 16:19:02 - INFO - [CYCLE 97] Invite #40 sent (230s)\n2026-01-21 16:19:08 - DEBUG - [CYCLE 97] Checking for attention popup (invite #40)\n2026-01-21 16:19:08 - INFO - [CYCLE 97] Invite #41 sent (236s)\n2026-01-21 16:19:14 - INFO - [CYCLE 97] Invite #42 sent (242s)\n2026-01-21 16:19:20 - INFO - [CYCLE 97] Invite #43 sent (248s)\n2026-01-21 16:19:26 - INFO - [CYCLE 97] Invite #44 sent (254s)\n2026-01-21 16:19:32 - INFO - [CYCLE 97] Invite #45 sent (260s)\n2026-01-21 16:19:38 - DEBUG - [CYCLE 97] Checking for attention popup (invite #45)\n2026-01-21 16:19:38 - INFO - [CYCLE 97] Invite #46 sent (266s)\n2026-01-21 16:19:44 - INFO - [CYCLE 97] Invite #47 sent (271s)\n2026-01-21 16:19:50 - INFO - [CYCLE 97] Invite #48 sent (277s)\n2026-01-21 16:19:55 - INFO - [CYCLE 97] Invite #49 sent (283s)\n2026-01-21 16:20:01 - INFO - [CYCLE 97] Invite #50 sent (289s)\n2026-01-21 16:20:07 - DEBUG - [CYCLE 97] Checking for attention popup (invite #50)\n2026-01-21 16:20:07 - INFO - [CYCLE 97] Invite #51 sent (295s)\n2026-01-21 16:20:13 - INFO - [CYCLE 97] Step 7/7: Starting game...\n2026-01-21 16:20:15 - INFO - [CYCLE 97] Checking for loading color at (200, 100)...\n2026-01-21 16:21:22 - INFO - [CYCLE 97] Cycle #97 completed - no loading color detected (normal)\n2026-01-21 16:21:43 - INFO - [CYCLE 97] Connected to ZXTouch\n",
+  "update_time": "2026-01-21 16:21:45"
 }
