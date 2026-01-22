@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769076225,
-  "timestamp_human": "2026-01-22 13:03:45",
-  "cycle_count": 378,
+  "timestamp": 1769076341,
+  "timestamp_human": "2026-01-22 13:05:41",
+  "cycle_count": 379,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 47 (предупреждений: 24, ошибок: 23), последняя: 24с назад",
+  "error_summary": "⚠️ Ошибок: 49 (предупреждений: 25, ошибок: 24), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 47,
-    "warnings": 24,
-    "errors": 23,
+    "total_errors": 49,
+    "warnings": 25,
+    "errors": 24,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 12:59:29 - ERROR - [CYCLE 375] Main screen not found",
-      "2026-01-22 13:01:25 - WARNING - [CYCLE 376] Failed to reach main screen",
       "2026-01-22 13:01:25 - ERROR - [CYCLE 376] Main screen not found",
       "2026-01-22 13:03:21 - WARNING - [CYCLE 377] Failed to reach main screen",
-      "2026-01-22 13:03:21 - ERROR - [CYCLE 377] Main screen not found"
+      "2026-01-22 13:03:21 - ERROR - [CYCLE 377] Main screen not found",
+      "2026-01-22 13:05:18 - WARNING - [CYCLE 378] Failed to reach main screen",
+      "2026-01-22 13:05:18 - ERROR - [CYCLE 378] Main screen not found"
     ],
-    "last_error_time": 1769076201,
-    "error_timestamp_human": "2026-01-22 13:03:21"
+    "last_error_time": 1769076318,
+    "error_timestamp_human": "2026-01-22 13:05:18"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.79",
-      "load_5": "6.30",
-      "load_15": "6.60",
+      "load_1": "3.66",
+      "load_5": "5.32",
+      "load_15": "6.17",
       "cores": 4,
-      "utilization_percent": 119.8
+      "utilization_percent": 91.5
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 237,
-      "free_mb": 5,
-      "cached_mb": 116,
+      "free_mb": 6,
+      "cached_mb": 132,
       "utilization_percent": 11.8
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769076225,
-    "timestamp_human": "2026-01-22 13:03:45"
+    "timestamp": 1769076341,
+    "timestamp_human": "2026-01-22 13:05:41"
   },
-  "last_log": "2026-01-22 13:01:51 - INFO - [CYCLE 377] Waiting for main screen...\n2026-01-22 13:01:51 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 0s\n2026-01-22 13:01:52 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 0s\n2026-01-22 13:01:56 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 5s\n2026-01-22 13:01:57 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 5s\n2026-01-22 13:02:01 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 10s\n2026-01-22 13:02:06 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 15s\n2026-01-22 13:02:11 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 20s\n2026-01-22 13:02:16 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 25s\n2026-01-22 13:02:21 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 30s\n2026-01-22 13:02:26 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 35s\n2026-01-22 13:02:27 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 35s\n2026-01-22 13:02:31 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 40s\n2026-01-22 13:02:32 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 40s\n2026-01-22 13:02:36 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 45s\n2026-01-22 13:02:41 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 50s\n2026-01-22 13:02:46 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 55s\n2026-01-22 13:02:47 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 55s\n2026-01-22 13:02:51 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 60s\n2026-01-22 13:02:56 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 65s\n2026-01-22 13:03:01 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 70s\n2026-01-22 13:03:02 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 70s\n2026-01-22 13:03:06 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 75s\n2026-01-22 13:03:07 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 75s\n2026-01-22 13:03:11 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 80s\n2026-01-22 13:03:16 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 85s\n2026-01-22 13:03:21 - DEBUG - [CYCLE 377] Current: unknown, waiting for main... 90s\n2026-01-22 13:03:21 - WARNING - [CYCLE 377] Failed to reach main screen\n2026-01-22 13:03:21 - ERROR - [CYCLE 377] Main screen not found\n2026-01-22 13:03:42 - INFO - [CYCLE 377] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 13:03:45"
+  "last_log": "2026-01-22 13:03:42 - INFO - [CYCLE 377] Connected to ZXTouch\n2026-01-22 13:03:47 - INFO - [CYCLE 378] Starting cycle #378\n2026-01-22 13:03:47 - INFO - [CYCLE 378] Step 1/7: Waiting for main screen...\n2026-01-22 13:03:47 - INFO - [CYCLE 378] Waiting for main screen...\n2026-01-22 13:03:47 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 0s\n2026-01-22 13:03:52 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 5s\n2026-01-22 13:03:57 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 10s\n2026-01-22 13:03:58 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 10s\n2026-01-22 13:04:02 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 15s\n2026-01-22 13:04:08 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 20s\n2026-01-22 13:04:12 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 25s\n2026-01-22 13:04:17 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 30s\n2026-01-22 13:04:22 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 35s\n2026-01-22 13:04:23 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 35s\n2026-01-22 13:04:27 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 40s\n2026-01-22 13:04:33 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 45s\n2026-01-22 13:04:37 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 50s\n2026-01-22 13:04:38 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 50s\n2026-01-22 13:04:42 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 55s\n2026-01-22 13:04:48 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 60s\n2026-01-22 13:04:52 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 65s\n2026-01-22 13:04:57 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 70s\n2026-01-22 13:05:02 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 75s\n2026-01-22 13:05:03 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 75s\n2026-01-22 13:05:07 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 80s\n2026-01-22 13:05:12 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 85s\n2026-01-22 13:05:17 - DEBUG - [CYCLE 378] Current: unknown, waiting for main... 90s\n2026-01-22 13:05:18 - WARNING - [CYCLE 378] Failed to reach main screen\n2026-01-22 13:05:18 - ERROR - [CYCLE 378] Main screen not found\n2026-01-22 13:05:38 - INFO - [CYCLE 378] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 13:05:41"
 }
