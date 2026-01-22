@@ -1,13 +1,13 @@
 {
-  "timestamp": 1769094338,
-  "timestamp_human": "2026-01-22 18:05:38",
-  "cycle_count": 504,
+  "timestamp": 1769094605,
+  "timestamp_human": "2026-01-22 18:10:05",
+  "cycle_count": 505,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 68 (предупреждений: 34, ошибок: 34), последняя: 1м назад",
+  "error_summary": "⚠️ Ошибок: 64 (предупреждений: 32, ошибок: 32), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 68,
-    "warnings": 34,
-    "errors": 34,
+    "total_errors": 64,
+    "warnings": 32,
+    "errors": 32,
     "critical": 0,
     "recent_errors": [
       "2026-01-22 17:58:42 - ERROR - [CYCLE 500] Main screen not found",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.93",
-      "load_5": "3.84",
-      "load_15": "3.57",
+      "load_1": "2.17",
+      "load_5": "3.36",
+      "load_15": "3.47",
       "cores": 4,
-      "utilization_percent": 98.2
+      "utilization_percent": 54.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 239,
+      "used_mb": 235,
       "free_mb": 4,
-      "cached_mb": 132,
-      "utilization_percent": 11.9
+      "cached_mb": 108,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769094338,
-    "timestamp_human": "2026-01-22 18:05:38"
+    "timestamp": 1769094605,
+    "timestamp_human": "2026-01-22 18:10:05"
   },
-  "last_log": "2026-01-22 18:03:49 - ERROR - [CYCLE 502] Main screen not found\n2026-01-22 18:04:10 - INFO - [CYCLE 502] Connected to ZXTouch\n2026-01-22 18:04:14 - INFO - [CYCLE 503] Starting cycle #503\n2026-01-22 18:04:14 - INFO - [CYCLE 503] Step 1/7: Waiting for main screen...\n2026-01-22 18:04:14 - INFO - [CYCLE 503] Waiting for main screen...\n2026-01-22 18:04:15 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 0s\n2026-01-22 18:04:15 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 0s\n2026-01-22 18:04:19 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 5s\n2026-01-22 18:04:20 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 5s\n2026-01-22 18:04:24 - DEBUG - [CYCLE 503] Current: loading, waiting for main... 10s\n2026-01-22 18:04:25 - INFO - [CYCLE 503] On main screen\n2026-01-22 18:04:25 - INFO - [CYCLE 503] Step 2/7: Transition to arsenal...\n2026-01-22 18:04:25 - INFO - [CYCLE 503] Quick transition: Кнопка Далее\n2026-01-22 18:04:28 - INFO - [CYCLE 503] Found attention popup\n2026-01-22 18:04:29 - INFO - [CYCLE 503] Step 3/7: Transition to battle...\n2026-01-22 18:04:29 - INFO - [CYCLE 503] Quick transition: Кнопка Битва\n2026-01-22 18:04:32 - INFO - [CYCLE 503] Step 4/7: Transition to team...\n2026-01-22 18:04:34 - INFO - [CYCLE 503] Waiting for team screen...\n2026-01-22 18:04:35 - INFO - [CYCLE 503] Found team screen button\n2026-01-22 18:04:35 - INFO - [CYCLE 503] Step 5/7: Pressing team screen button...\n2026-01-22 18:04:37 - INFO - [CYCLE 503] Step 6/7: Sending invitations...\n2026-01-22 18:04:37 - INFO - [CYCLE 503] Invite #1 sent (0s)\n2026-01-22 18:04:43 - INFO - [CYCLE 503] Invite #2 sent (5s)\n2026-01-22 18:04:49 - INFO - [CYCLE 503] Invite #3 sent (11s)\n2026-01-22 18:04:50 - INFO - [CYCLE 503] Someone joined immediately!\n2026-01-22 18:04:50 - INFO - [CYCLE 503] Step 7/7: Starting game...\n2026-01-22 18:04:51 - INFO - [CYCLE 503] Checking for loading color at (200, 100)...\n2026-01-22 18:05:15 - INFO - [CYCLE 503] Loading color detected! Color: #A9D917\n2026-01-22 18:05:15 - INFO - [CYCLE 503] Cycle #503 completed successfully - loading color detected\n2026-01-22 18:05:36 - INFO - [CYCLE 503] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 18:05:38"
+  "last_log": "2026-01-22 18:07:18 - INFO - [CYCLE 504] Invite #14 sent (77s)\n2026-01-22 18:07:24 - INFO - [CYCLE 504] Invite #15 sent (83s)\n2026-01-22 18:07:30 - DEBUG - [CYCLE 504] Checking for attention popup (invite #15)\n2026-01-22 18:07:30 - INFO - [CYCLE 504] Invite #16 sent (88s)\n2026-01-22 18:07:36 - INFO - [CYCLE 504] Invite #17 sent (94s)\n2026-01-22 18:07:42 - INFO - [CYCLE 504] Invite #18 sent (100s)\n2026-01-22 18:07:48 - INFO - [CYCLE 504] Invite #19 sent (106s)\n2026-01-22 18:07:54 - INFO - [CYCLE 504] Invite #20 sent (112s)\n2026-01-22 18:07:59 - DEBUG - [CYCLE 504] Checking for attention popup (invite #20)\n2026-01-22 18:07:59 - INFO - [CYCLE 504] Invite #21 sent (118s)\n2026-01-22 18:08:05 - INFO - [CYCLE 504] Invite #22 sent (124s)\n2026-01-22 18:08:11 - INFO - [CYCLE 504] Invite #23 sent (130s)\n2026-01-22 18:08:17 - INFO - [CYCLE 504] Invite #24 sent (136s)\n2026-01-22 18:08:23 - INFO - [CYCLE 504] Invite #25 sent (142s)\n2026-01-22 18:08:29 - DEBUG - [CYCLE 504] Checking for attention popup (invite #25)\n2026-01-22 18:08:29 - INFO - [CYCLE 504] Invite #26 sent (148s)\n2026-01-22 18:08:35 - INFO - [CYCLE 504] Invite #27 sent (154s)\n2026-01-22 18:08:41 - INFO - [CYCLE 504] Invite #28 sent (159s)\n2026-01-22 18:08:47 - INFO - [CYCLE 504] Invite #29 sent (165s)\n2026-01-22 18:08:53 - INFO - [CYCLE 504] Invite #30 sent (171s)\n2026-01-22 18:08:59 - DEBUG - [CYCLE 504] Checking for attention popup (invite #30)\n2026-01-22 18:08:59 - INFO - [CYCLE 504] Invite #31 sent (177s)\n2026-01-22 18:09:05 - INFO - [CYCLE 504] Invite #32 sent (183s)\n2026-01-22 18:09:11 - INFO - [CYCLE 504] Invite #33 sent (189s)\n2026-01-22 18:09:16 - INFO - [CYCLE 504] Someone joined the team!\n2026-01-22 18:09:16 - INFO - [CYCLE 504] Step 7/7: Starting game...\n2026-01-22 18:09:18 - INFO - [CYCLE 504] Checking for loading color at (200, 100)...\n2026-01-22 18:09:42 - INFO - [CYCLE 504] Loading color detected! Color: #A9D917\n2026-01-22 18:09:42 - INFO - [CYCLE 504] Cycle #504 completed successfully - loading color detected\n2026-01-22 18:10:03 - INFO - [CYCLE 504] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 18:10:05"
 }
