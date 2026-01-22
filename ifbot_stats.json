@@ -1,19 +1,21 @@
 {
-  "timestamp": 1769073568,
-  "timestamp_human": "2026-01-22 12:19:28",
-  "cycle_count": 355,
+  "timestamp": 1769073683,
+  "timestamp_human": "2026-01-22 12:21:23",
+  "cycle_count": 356,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 18м назад",
+  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
-    "errors": 0,
+    "total_errors": 3,
+    "warnings": 2,
+    "errors": 1,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 12:01:12 - WARNING - [CYCLE 350] Still on main, trying again"
+      "2026-01-22 12:01:12 - WARNING - [CYCLE 350] Still on main, trying again",
+      "2026-01-22 12:21:00 - WARNING - [CYCLE 355] Failed to reach main screen",
+      "2026-01-22 12:21:00 - ERROR - [CYCLE 355] Main screen not found"
     ],
-    "last_error_time": 1769072472,
-    "error_timestamp_human": "2026-01-22 12:01:12"
+    "last_error_time": 1769073660,
+    "error_timestamp_human": "2026-01-22 12:21:00"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +32,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.38",
-      "load_5": "3.94",
-      "load_15": "3.57",
+      "load_1": "5.64",
+      "load_5": "4.98",
+      "load_15": "4.06",
       "cores": 4,
-      "utilization_percent": 109.5
+      "utilization_percent": 141.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 225,
+      "used_mb": 231,
       "free_mb": 6,
-      "cached_mb": 124,
-      "utilization_percent": 11.2
+      "cached_mb": 125,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +52,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769073568,
-    "timestamp_human": "2026-01-22 12:19:28"
+    "timestamp": 1769073683,
+    "timestamp_human": "2026-01-22 12:21:23"
   },
-  "last_log": "2026-01-22 12:15:50 - DEBUG - [CYCLE 354] Checking for attention popup (invite #30)\n2026-01-22 12:15:51 - INFO - [CYCLE 354] Invite #31 sent (177s)\n2026-01-22 12:15:56 - INFO - [CYCLE 354] Invite #32 sent (183s)\n2026-01-22 12:16:02 - INFO - [CYCLE 354] Invite #33 sent (189s)\n2026-01-22 12:16:08 - INFO - [CYCLE 354] Invite #34 sent (195s)\n2026-01-22 12:16:14 - INFO - [CYCLE 354] Invite #35 sent (201s)\n2026-01-22 12:16:20 - DEBUG - [CYCLE 354] Checking for attention popup (invite #35)\n2026-01-22 12:16:20 - INFO - [CYCLE 354] Invite #36 sent (207s)\n2026-01-22 12:16:26 - INFO - [CYCLE 354] Invite #37 sent (213s)\n2026-01-22 12:16:32 - INFO - [CYCLE 354] Invite #38 sent (219s)\n2026-01-22 12:16:38 - INFO - [CYCLE 354] Invite #39 sent (225s)\n2026-01-22 12:16:44 - INFO - [CYCLE 354] Invite #40 sent (231s)\n2026-01-22 12:16:50 - DEBUG - [CYCLE 354] Checking for attention popup (invite #40)\n2026-01-22 12:16:50 - INFO - [CYCLE 354] Invite #41 sent (236s)\n2026-01-22 12:16:56 - INFO - [CYCLE 354] Invite #42 sent (242s)\n2026-01-22 12:17:02 - INFO - [CYCLE 354] Invite #43 sent (248s)\n2026-01-22 12:17:08 - INFO - [CYCLE 354] Invite #44 sent (254s)\n2026-01-22 12:17:14 - INFO - [CYCLE 354] Invite #45 sent (260s)\n2026-01-22 12:17:19 - DEBUG - [CYCLE 354] Checking for attention popup (invite #45)\n2026-01-22 12:17:19 - INFO - [CYCLE 354] Invite #46 sent (266s)\n2026-01-22 12:17:25 - INFO - [CYCLE 354] Invite #47 sent (272s)\n2026-01-22 12:17:31 - INFO - [CYCLE 354] Invite #48 sent (278s)\n2026-01-22 12:17:37 - INFO - [CYCLE 354] Invite #49 sent (284s)\n2026-01-22 12:17:43 - INFO - [CYCLE 354] Invite #50 sent (290s)\n2026-01-22 12:17:49 - DEBUG - [CYCLE 354] Checking for attention popup (invite #50)\n2026-01-22 12:17:49 - INFO - [CYCLE 354] Invite #51 sent (296s)\n2026-01-22 12:17:55 - INFO - [CYCLE 354] Step 7/7: Starting game...\n2026-01-22 12:17:57 - INFO - [CYCLE 354] Checking for loading color at (200, 100)...\n2026-01-22 12:19:05 - INFO - [CYCLE 354] Cycle #354 completed - no loading color detected (normal)\n2026-01-22 12:19:25 - INFO - [CYCLE 354] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 12:19:28"
+  "last_log": "2026-01-22 12:19:30 - INFO - [CYCLE 355] Waiting for main screen...\n2026-01-22 12:19:30 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 0s\n2026-01-22 12:19:31 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 0s\n2026-01-22 12:19:35 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 5s\n2026-01-22 12:19:40 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 10s\n2026-01-22 12:19:45 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 15s\n2026-01-22 12:19:46 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 15s\n2026-01-22 12:19:50 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 20s\n2026-01-22 12:19:55 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 25s\n2026-01-22 12:19:56 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 25s\n2026-01-22 12:20:00 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 30s\n2026-01-22 12:20:05 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 35s\n2026-01-22 12:20:10 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 40s\n2026-01-22 12:20:15 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 45s\n2026-01-22 12:20:16 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 45s\n2026-01-22 12:20:20 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 50s\n2026-01-22 12:20:25 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 55s\n2026-01-22 12:20:25 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 55s\n2026-01-22 12:20:30 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 60s\n2026-01-22 12:20:35 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 65s\n2026-01-22 12:20:40 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 70s\n2026-01-22 12:20:45 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 75s\n2026-01-22 12:20:46 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 75s\n2026-01-22 12:20:50 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 80s\n2026-01-22 12:20:51 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 80s\n2026-01-22 12:20:55 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 85s\n2026-01-22 12:21:00 - DEBUG - [CYCLE 355] Current: unknown, waiting for main... 90s\n2026-01-22 12:21:00 - WARNING - [CYCLE 355] Failed to reach main screen\n2026-01-22 12:21:00 - ERROR - [CYCLE 355] Main screen not found\n2026-01-22 12:21:21 - INFO - [CYCLE 355] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 12:21:23"
 }
