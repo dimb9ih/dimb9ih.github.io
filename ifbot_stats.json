@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769080155,
-  "timestamp_human": "2026-01-22 14:09:15",
-  "cycle_count": 412,
+  "timestamp": 1769080270,
+  "timestamp_human": "2026-01-22 14:11:10",
+  "cycle_count": 413,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 52 (предупреждений: 26, ошибок: 26), последняя: 24с назад",
+  "error_summary": "⚠️ Ошибок: 54 (предупреждений: 27, ошибок: 27), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 52,
-    "warnings": 26,
-    "errors": 26,
+    "total_errors": 54,
+    "warnings": 27,
+    "errors": 27,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 14:05:00 - ERROR - [CYCLE 409] Main screen not found",
-      "2026-01-22 14:06:55 - WARNING - [CYCLE 410] Failed to reach main screen",
       "2026-01-22 14:06:55 - ERROR - [CYCLE 410] Main screen not found",
       "2026-01-22 14:08:51 - WARNING - [CYCLE 411] Failed to reach main screen",
-      "2026-01-22 14:08:51 - ERROR - [CYCLE 411] Main screen not found"
+      "2026-01-22 14:08:51 - ERROR - [CYCLE 411] Main screen not found",
+      "2026-01-22 14:10:47 - WARNING - [CYCLE 412] Failed to reach main screen",
+      "2026-01-22 14:10:47 - ERROR - [CYCLE 412] Main screen not found"
     ],
-    "last_error_time": 1769080131,
-    "error_timestamp_human": "2026-01-22 14:08:51"
+    "last_error_time": 1769080247,
+    "error_timestamp_human": "2026-01-22 14:10:47"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,16 +34,16 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.95",
-      "load_5": "3.55",
-      "load_15": "3.43",
+      "load_1": "5.70",
+      "load_5": "3.94",
+      "load_15": "3.57",
       "cores": 4,
-      "utilization_percent": 98.8
+      "utilization_percent": 142.5
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 237,
-      "free_mb": 4,
+      "free_mb": 6,
       "cached_mb": 132,
       "utilization_percent": 11.8
     },
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769080155,
-    "timestamp_human": "2026-01-22 14:09:15"
+    "timestamp": 1769080270,
+    "timestamp_human": "2026-01-22 14:11:10"
   },
-  "last_log": "2026-01-22 14:07:20 - INFO - [CYCLE 411] Starting cycle #411\n2026-01-22 14:07:20 - INFO - [CYCLE 411] Step 1/7: Waiting for main screen...\n2026-01-22 14:07:20 - INFO - [CYCLE 411] Waiting for main screen...\n2026-01-22 14:07:21 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 0s\n2026-01-22 14:07:26 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 5s\n2026-01-22 14:07:31 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 10s\n2026-01-22 14:07:31 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 10s\n2026-01-22 14:07:36 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 15s\n2026-01-22 14:07:41 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 20s\n2026-01-22 14:07:46 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 25s\n2026-01-22 14:07:46 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 25s\n2026-01-22 14:07:51 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 30s\n2026-01-22 14:07:56 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 35s\n2026-01-22 14:08:01 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 40s\n2026-01-22 14:08:06 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 45s\n2026-01-22 14:08:11 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 50s\n2026-01-22 14:08:11 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 50s\n2026-01-22 14:08:16 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 55s\n2026-01-22 14:08:21 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 60s\n2026-01-22 14:08:26 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 65s\n2026-01-22 14:08:26 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 65s\n2026-01-22 14:08:31 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 70s\n2026-01-22 14:08:36 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 75s\n2026-01-22 14:08:36 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 75s\n2026-01-22 14:08:41 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 80s\n2026-01-22 14:08:46 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 85s\n2026-01-22 14:08:51 - DEBUG - [CYCLE 411] Current: unknown, waiting for main... 90s\n2026-01-22 14:08:51 - WARNING - [CYCLE 411] Failed to reach main screen\n2026-01-22 14:08:51 - ERROR - [CYCLE 411] Main screen not found\n2026-01-22 14:09:12 - INFO - [CYCLE 411] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 14:09:15"
+  "last_log": "2026-01-22 14:09:17 - INFO - [CYCLE 412] Starting cycle #412\n2026-01-22 14:09:17 - INFO - [CYCLE 412] Step 1/7: Waiting for main screen...\n2026-01-22 14:09:17 - INFO - [CYCLE 412] Waiting for main screen...\n2026-01-22 14:09:17 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 0s\n2026-01-22 14:09:22 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 5s\n2026-01-22 14:09:27 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 10s\n2026-01-22 14:09:28 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 10s\n2026-01-22 14:09:32 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 15s\n2026-01-22 14:09:37 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 20s\n2026-01-22 14:09:38 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 20s\n2026-01-22 14:09:42 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 25s\n2026-01-22 14:09:47 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 30s\n2026-01-22 14:09:52 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 35s\n2026-01-22 14:09:53 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 35s\n2026-01-22 14:09:57 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 40s\n2026-01-22 14:10:03 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 45s\n2026-01-22 14:10:07 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 50s\n2026-01-22 14:10:12 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 55s\n2026-01-22 14:10:17 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 60s\n2026-01-22 14:10:18 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 60s\n2026-01-22 14:10:22 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 65s\n2026-01-22 14:10:27 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 70s\n2026-01-22 14:10:32 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 75s\n2026-01-22 14:10:33 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 75s\n2026-01-22 14:10:37 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 80s\n2026-01-22 14:10:42 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 85s\n2026-01-22 14:10:43 - DEBUG - [CYCLE 412] Current: unknown, waiting for main... 85s\n2026-01-22 14:10:47 - WARNING - [CYCLE 412] Failed to reach main screen\n2026-01-22 14:10:47 - ERROR - [CYCLE 412] Main screen not found\n2026-01-22 14:11:08 - INFO - [CYCLE 412] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 14:11:10"
 }
