@@ -1,0 +1,62 @@
+{
+  "timestamp": 1769082122,
+  "timestamp_human": "2026-01-22 14:42:02",
+  "cycle_count": 429,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 66 (предупреждений: 33, ошибок: 33), последняя: 24с назад",
+  "error_stats": {
+    "total_errors": 66,
+    "warnings": 33,
+    "errors": 33,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-22 14:37:48 - ERROR - [CYCLE 426] Main screen not found",
+      "2026-01-22 14:39:43 - WARNING - [CYCLE 427] Failed to reach main screen",
+      "2026-01-22 14:39:43 - ERROR - [CYCLE 427] Main screen not found",
+      "2026-01-22 14:41:38 - WARNING - [CYCLE 428] Failed to reach main screen",
+      "2026-01-22 14:41:38 - ERROR - [CYCLE 428] Main screen not found"
+    ],
+    "last_error_time": 1769082098,
+    "error_timestamp_human": "2026-01-22 14:41:38"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "3.04",
+      "load_5": "3.55",
+      "load_15": "3.50",
+      "cores": 4,
+      "utilization_percent": 76.0
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 237,
+      "free_mb": 5,
+      "cached_mb": 132,
+      "utilization_percent": 11.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.0Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769082122,
+    "timestamp_human": "2026-01-22 14:42:02"
+  },
+  "last_log": "2026-01-22 14:40:08 - INFO - [CYCLE 428] Step 1/7: Waiting for main screen...\n2026-01-22 14:40:08 - INFO - [CYCLE 428] Waiting for main screen...\n2026-01-22 14:40:08 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 0s\n2026-01-22 14:40:09 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 0s\n2026-01-22 14:40:13 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 5s\n2026-01-22 14:40:19 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 10s\n2026-01-22 14:40:23 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 15s\n2026-01-22 14:40:24 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 15s\n2026-01-22 14:40:29 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 20s\n2026-01-22 14:40:33 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 25s\n2026-01-22 14:40:34 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 25s\n2026-01-22 14:40:38 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 30s\n2026-01-22 14:40:44 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 35s\n2026-01-22 14:40:48 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 40s\n2026-01-22 14:40:49 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 40s\n2026-01-22 14:40:53 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 45s\n2026-01-22 14:40:59 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 50s\n2026-01-22 14:41:03 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 55s\n2026-01-22 14:41:04 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 55s\n2026-01-22 14:41:08 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 60s\n2026-01-22 14:41:13 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 65s\n2026-01-22 14:41:14 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 65s\n2026-01-22 14:41:18 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 70s\n2026-01-22 14:41:24 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 75s\n2026-01-22 14:41:28 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 80s\n2026-01-22 14:41:29 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 80s\n2026-01-22 14:41:33 - DEBUG - [CYCLE 428] Current: unknown, waiting for main... 85s\n2026-01-22 14:41:38 - WARNING - [CYCLE 428] Failed to reach main screen\n2026-01-22 14:41:38 - ERROR - [CYCLE 428] Main screen not found\n2026-01-22 14:41:59 - INFO - [CYCLE 428] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 14:42:02"
+}
