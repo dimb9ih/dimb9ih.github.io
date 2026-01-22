@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769079346,
-  "timestamp_human": "2026-01-22 13:55:46",
-  "cycle_count": 405,
+  "timestamp": 1769079461,
+  "timestamp_human": "2026-01-22 13:57:41",
+  "cycle_count": 406,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 38 (предупреждений: 19, ошибок: 19), последняя: 24с назад",
+  "error_summary": "⚠️ Ошибок: 40 (предупреждений: 20, ошибок: 20), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 38,
-    "warnings": 19,
-    "errors": 19,
+    "total_errors": 40,
+    "warnings": 20,
+    "errors": 20,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 13:51:31 - ERROR - [CYCLE 402] Main screen not found",
-      "2026-01-22 13:53:27 - WARNING - [CYCLE 403] Failed to reach main screen",
       "2026-01-22 13:53:27 - ERROR - [CYCLE 403] Main screen not found",
       "2026-01-22 13:55:22 - WARNING - [CYCLE 404] Failed to reach main screen",
-      "2026-01-22 13:55:22 - ERROR - [CYCLE 404] Main screen not found"
+      "2026-01-22 13:55:22 - ERROR - [CYCLE 404] Main screen not found",
+      "2026-01-22 13:57:18 - WARNING - [CYCLE 405] Failed to reach main screen",
+      "2026-01-22 13:57:18 - ERROR - [CYCLE 405] Main screen not found"
     ],
-    "last_error_time": 1769079322,
-    "error_timestamp_human": "2026-01-22 13:55:22"
+    "last_error_time": 1769079438,
+    "error_timestamp_human": "2026-01-22 13:57:18"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,11 +34,11 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.19",
-      "load_5": "3.41",
-      "load_15": "3.53",
+      "load_1": "3.14",
+      "load_5": "3.38",
+      "load_15": "3.50",
       "cores": 4,
-      "utilization_percent": 104.8
+      "utilization_percent": 78.5
     },
     "memory": {
       "total_mb": 2000,
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769079346,
-    "timestamp_human": "2026-01-22 13:55:46"
+    "timestamp": 1769079461,
+    "timestamp_human": "2026-01-22 13:57:41"
   },
-  "last_log": "2026-01-22 13:53:52 - INFO - [CYCLE 404] Step 1/7: Waiting for main screen...\n2026-01-22 13:53:52 - INFO - [CYCLE 404] Waiting for main screen...\n2026-01-22 13:53:52 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 0s\n2026-01-22 13:53:53 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 0s\n2026-01-22 13:53:57 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 5s\n2026-01-22 13:53:58 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 5s\n2026-01-22 13:54:02 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 10s\n2026-01-22 13:54:07 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 15s\n2026-01-22 13:54:08 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 15s\n2026-01-22 13:54:12 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 20s\n2026-01-22 13:54:18 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 25s\n2026-01-22 13:54:22 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 30s\n2026-01-22 13:54:23 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 30s\n2026-01-22 13:54:27 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 35s\n2026-01-22 13:54:33 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 40s\n2026-01-22 13:54:37 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 45s\n2026-01-22 13:54:38 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 45s\n2026-01-22 13:54:42 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 50s\n2026-01-22 13:54:48 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 55s\n2026-01-22 13:54:52 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 60s\n2026-01-22 13:54:58 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 65s\n2026-01-22 13:55:02 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 70s\n2026-01-22 13:55:03 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 70s\n2026-01-22 13:55:07 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 75s\n2026-01-22 13:55:12 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 80s\n2026-01-22 13:55:13 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 80s\n2026-01-22 13:55:17 - DEBUG - [CYCLE 404] Current: unknown, waiting for main... 85s\n2026-01-22 13:55:22 - WARNING - [CYCLE 404] Failed to reach main screen\n2026-01-22 13:55:22 - ERROR - [CYCLE 404] Main screen not found\n2026-01-22 13:55:43 - INFO - [CYCLE 404] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 13:55:46"
+  "last_log": "2026-01-22 13:55:22 - ERROR - [CYCLE 404] Main screen not found\n2026-01-22 13:55:43 - INFO - [CYCLE 404] Connected to ZXTouch\n2026-01-22 13:55:48 - INFO - [CYCLE 405] Starting cycle #405\n2026-01-22 13:55:48 - INFO - [CYCLE 405] Step 1/7: Waiting for main screen...\n2026-01-22 13:55:48 - INFO - [CYCLE 405] Waiting for main screen...\n2026-01-22 13:55:48 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 0s\n2026-01-22 13:55:53 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 5s\n2026-01-22 13:55:53 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 5s\n2026-01-22 13:55:58 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 10s\n2026-01-22 13:56:03 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 15s\n2026-01-22 13:56:08 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 20s\n2026-01-22 13:56:13 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 25s\n2026-01-22 13:56:18 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 30s\n2026-01-22 13:56:18 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 30s\n2026-01-22 13:56:23 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 35s\n2026-01-22 13:56:28 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 40s\n2026-01-22 13:56:33 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 45s\n2026-01-22 13:56:38 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 50s\n2026-01-22 13:56:43 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 55s\n2026-01-22 13:56:43 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 55s\n2026-01-22 13:56:48 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 60s\n2026-01-22 13:56:53 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 65s\n2026-01-22 13:56:58 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 70s\n2026-01-22 13:56:58 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 70s\n2026-01-22 13:57:03 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 75s\n2026-01-22 13:57:08 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 80s\n2026-01-22 13:57:13 - DEBUG - [CYCLE 405] Current: unknown, waiting for main... 85s\n2026-01-22 13:57:18 - WARNING - [CYCLE 405] Failed to reach main screen\n2026-01-22 13:57:18 - ERROR - [CYCLE 405] Main screen not found\n2026-01-22 13:57:39 - INFO - [CYCLE 405] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 13:57:41"
 }
