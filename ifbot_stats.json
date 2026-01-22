@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769049700,
-  "timestamp_human": "2026-01-22 05:41:40",
-  "cycle_count": 262,
+  "timestamp": 1769049819,
+  "timestamp_human": "2026-01-22 05:43:39",
+  "cycle_count": 263,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 11 (предупреждений: 6, ошибок: 5), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 13 (предупреждений: 7, ошибок: 6), последняя: 24с назад",
   "error_stats": {
-    "total_errors": 11,
-    "warnings": 6,
-    "errors": 5,
+    "total_errors": 13,
+    "warnings": 7,
+    "errors": 6,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 05:37:22 - ERROR - [CYCLE 259] Main screen not found",
-      "2026-01-22 05:39:19 - WARNING - [CYCLE 260] Failed to reach main screen",
       "2026-01-22 05:39:19 - ERROR - [CYCLE 260] Main screen not found",
       "2026-01-22 05:41:17 - WARNING - [CYCLE 261] Failed to reach main screen",
-      "2026-01-22 05:41:17 - ERROR - [CYCLE 261] Main screen not found"
+      "2026-01-22 05:41:17 - ERROR - [CYCLE 261] Main screen not found",
+      "2026-01-22 05:43:15 - WARNING - [CYCLE 262] Failed to reach main screen",
+      "2026-01-22 05:43:15 - ERROR - [CYCLE 262] Main screen not found"
     ],
-    "last_error_time": 1769049677,
-    "error_timestamp_human": "2026-01-22 05:41:17"
+    "last_error_time": 1769049795,
+    "error_timestamp_human": "2026-01-22 05:43:15"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.21",
-      "load_5": "3.14",
-      "load_15": "2.99",
+      "load_1": "2.43",
+      "load_5": "2.98",
+      "load_15": "2.95",
       "cores": 4,
-      "utilization_percent": 55.2
+      "utilization_percent": 60.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 229,
-      "free_mb": 20,
-      "cached_mb": 108,
-      "utilization_percent": 11.5
+      "used_mb": 222,
+      "free_mb": 33,
+      "cached_mb": 114,
+      "utilization_percent": 11.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769049700,
-    "timestamp_human": "2026-01-22 05:41:40"
+    "timestamp": 1769049819,
+    "timestamp_human": "2026-01-22 05:43:39"
   },
-  "last_log": "2026-01-22 05:40:32 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:34 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:36 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:37 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:39 - DEBUG - [CYCLE 261] Current: popup, waiting for main... 55s\n2026-01-22 05:40:40 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:41 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:43 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:45 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:47 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:49 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:51 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:52 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:54 - DEBUG - [CYCLE 261] Current: popup, waiting for main... 70s\n2026-01-22 05:40:55 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:56 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:40:58 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:00 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:02 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:04 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:06 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:08 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:09 - DEBUG - [CYCLE 261] Current: popup, waiting for main... 85s\n2026-01-22 05:41:10 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:11 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:13 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:15 - INFO - [CYCLE 261] Found ВНИМАНИЕ popup\n2026-01-22 05:41:17 - WARNING - [CYCLE 261] Failed to reach main screen\n2026-01-22 05:41:17 - ERROR - [CYCLE 261] Main screen not found\n2026-01-22 05:41:38 - INFO - [CYCLE 261] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 05:41:40"
+  "last_log": "2026-01-22 05:42:24 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:27 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:28 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:30 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:32 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:34 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:36 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:38 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:40 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:42 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:43 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:45 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:47 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:49 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:51 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:53 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:55 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:57 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:42:58 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:00 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:02 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:04 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:06 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:08 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:09 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:12 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:13 - INFO - [CYCLE 262] Found ВНИМАНИЕ popup\n2026-01-22 05:43:15 - WARNING - [CYCLE 262] Failed to reach main screen\n2026-01-22 05:43:15 - ERROR - [CYCLE 262] Main screen not found\n2026-01-22 05:43:36 - INFO - [CYCLE 262] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 05:43:39"
 }
