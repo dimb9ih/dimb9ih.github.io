@@ -1,0 +1,58 @@
+{
+  "timestamp": 1769125279,
+  "timestamp_human": "2026-01-23 02:41:19",
+  "cycle_count": 596,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 29м назад",
+  "error_stats": {
+    "total_errors": 1,
+    "warnings": 1,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-23 02:11:30 - WARNING - [CYCLE 590] Still on main, trying again"
+    ],
+    "last_error_time": 1769123490,
+    "error_timestamp_human": "2026-01-23 02:11:30"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.29",
+      "load_5": "2.65",
+      "load_15": "2.80",
+      "cores": 4,
+      "utilization_percent": 57.2
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 239,
+      "free_mb": 3,
+      "cached_mb": 117,
+      "utilization_percent": 11.9
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.0Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769125279,
+    "timestamp_human": "2026-01-23 02:41:19"
+  },
+  "last_log": "2026-01-23 02:39:13 - DEBUG - [CYCLE 595] Current: unknown, waiting for main... 5s\n2026-01-23 02:39:18 - DEBUG - [CYCLE 595] Current: unknown, waiting for main... 10s\n2026-01-23 02:39:23 - DEBUG - [CYCLE 595] Current: unknown, waiting for main... 15s\n2026-01-23 02:39:25 - INFO - [CYCLE 595] Found attention popup\n2026-01-23 02:39:26 - INFO - [CYCLE 595] On main screen\n2026-01-23 02:39:26 - INFO - [CYCLE 595] Step 2/7: Transition to arsenal...\n2026-01-23 02:39:26 - INFO - [CYCLE 595] Quick transition: Кнопка Далее\n2026-01-23 02:39:29 - INFO - [CYCLE 595] Step 3/7: Transition to battle...\n2026-01-23 02:39:29 - INFO - [CYCLE 595] Quick transition: Кнопка Битва\n2026-01-23 02:39:32 - INFO - [CYCLE 595] Step 4/7: Transition to team...\n2026-01-23 02:39:34 - INFO - [CYCLE 595] Waiting for team screen...\n2026-01-23 02:39:35 - INFO - [CYCLE 595] Found team screen button\n2026-01-23 02:39:35 - INFO - [CYCLE 595] Step 5/7: Pressing team screen button...\n2026-01-23 02:39:36 - INFO - [CYCLE 595] Step 6/7: Sending invitations...\n2026-01-23 02:39:36 - INFO - [CYCLE 595] Invite #1 sent (0s)\n2026-01-23 02:39:42 - INFO - [CYCLE 595] Invite #2 sent (5s)\n2026-01-23 02:39:48 - INFO - [CYCLE 595] Invite #3 sent (11s)\n2026-01-23 02:39:54 - INFO - [CYCLE 595] Invite #4 sent (17s)\n2026-01-23 02:40:00 - INFO - [CYCLE 595] Invite #5 sent (23s)\n2026-01-23 02:40:06 - DEBUG - [CYCLE 595] Checking for attention popup (invite #5)\n2026-01-23 02:40:06 - INFO - [CYCLE 595] Invite #6 sent (29s)\n2026-01-23 02:40:12 - INFO - [CYCLE 595] Invite #7 sent (35s)\n2026-01-23 02:40:18 - INFO - [CYCLE 595] Invite #8 sent (41s)\n2026-01-23 02:40:24 - INFO - [CYCLE 595] Invite #9 sent (47s)\n2026-01-23 02:40:30 - INFO - [CYCLE 595] Someone joined the team!\n2026-01-23 02:40:30 - INFO - [CYCLE 595] Step 7/7: Starting game...\n2026-01-23 02:40:31 - INFO - [CYCLE 595] Checking for loading color at (200, 100)...\n2026-01-23 02:40:56 - INFO - [CYCLE 595] Loading color detected! Color: #A9D917\n2026-01-23 02:40:56 - INFO - [CYCLE 595] Cycle #595 completed successfully - loading color detected\n2026-01-23 02:41:17 - INFO - [CYCLE 595] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 02:41:19"
+}
