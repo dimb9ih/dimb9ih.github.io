@@ -1,23 +1,17 @@
 {
-  "timestamp": 1769094605,
-  "timestamp_human": "2026-01-22 18:10:05",
-  "cycle_count": 505,
+  "timestamp": 1769095026,
+  "timestamp_human": "2026-01-22 18:17:06",
+  "cycle_count": 506,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 64 (предупреждений: 32, ошибок: 32), последняя: 6м назад",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 64,
-    "warnings": 32,
-    "errors": 32,
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
     "critical": 0,
-    "recent_errors": [
-      "2026-01-22 17:58:42 - ERROR - [CYCLE 500] Main screen not found",
-      "2026-01-22 18:01:15 - WARNING - [CYCLE 501] Failed to reach main screen",
-      "2026-01-22 18:01:15 - ERROR - [CYCLE 501] Main screen not found",
-      "2026-01-22 18:03:49 - WARNING - [CYCLE 502] Failed to reach main screen",
-      "2026-01-22 18:03:49 - ERROR - [CYCLE 502] Main screen not found"
-    ],
-    "last_error_time": 1769094229,
-    "error_timestamp_human": "2026-01-22 18:03:49"
+    "recent_errors": [],
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.17",
-      "load_5": "3.36",
-      "load_15": "3.47",
+      "load_1": "2.00",
+      "load_5": "2.61",
+      "load_15": "3.15",
       "cores": 4,
-      "utilization_percent": 54.2
+      "utilization_percent": 50.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 235,
+      "used_mb": 238,
       "free_mb": 4,
-      "cached_mb": 108,
-      "utilization_percent": 11.8
+      "cached_mb": 127,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769094605,
-    "timestamp_human": "2026-01-22 18:10:05"
+    "timestamp": 1769095026,
+    "timestamp_human": "2026-01-22 18:17:06"
   },
-  "last_log": "2026-01-22 18:07:18 - INFO - [CYCLE 504] Invite #14 sent (77s)\n2026-01-22 18:07:24 - INFO - [CYCLE 504] Invite #15 sent (83s)\n2026-01-22 18:07:30 - DEBUG - [CYCLE 504] Checking for attention popup (invite #15)\n2026-01-22 18:07:30 - INFO - [CYCLE 504] Invite #16 sent (88s)\n2026-01-22 18:07:36 - INFO - [CYCLE 504] Invite #17 sent (94s)\n2026-01-22 18:07:42 - INFO - [CYCLE 504] Invite #18 sent (100s)\n2026-01-22 18:07:48 - INFO - [CYCLE 504] Invite #19 sent (106s)\n2026-01-22 18:07:54 - INFO - [CYCLE 504] Invite #20 sent (112s)\n2026-01-22 18:07:59 - DEBUG - [CYCLE 504] Checking for attention popup (invite #20)\n2026-01-22 18:07:59 - INFO - [CYCLE 504] Invite #21 sent (118s)\n2026-01-22 18:08:05 - INFO - [CYCLE 504] Invite #22 sent (124s)\n2026-01-22 18:08:11 - INFO - [CYCLE 504] Invite #23 sent (130s)\n2026-01-22 18:08:17 - INFO - [CYCLE 504] Invite #24 sent (136s)\n2026-01-22 18:08:23 - INFO - [CYCLE 504] Invite #25 sent (142s)\n2026-01-22 18:08:29 - DEBUG - [CYCLE 504] Checking for attention popup (invite #25)\n2026-01-22 18:08:29 - INFO - [CYCLE 504] Invite #26 sent (148s)\n2026-01-22 18:08:35 - INFO - [CYCLE 504] Invite #27 sent (154s)\n2026-01-22 18:08:41 - INFO - [CYCLE 504] Invite #28 sent (159s)\n2026-01-22 18:08:47 - INFO - [CYCLE 504] Invite #29 sent (165s)\n2026-01-22 18:08:53 - INFO - [CYCLE 504] Invite #30 sent (171s)\n2026-01-22 18:08:59 - DEBUG - [CYCLE 504] Checking for attention popup (invite #30)\n2026-01-22 18:08:59 - INFO - [CYCLE 504] Invite #31 sent (177s)\n2026-01-22 18:09:05 - INFO - [CYCLE 504] Invite #32 sent (183s)\n2026-01-22 18:09:11 - INFO - [CYCLE 504] Invite #33 sent (189s)\n2026-01-22 18:09:16 - INFO - [CYCLE 504] Someone joined the team!\n2026-01-22 18:09:16 - INFO - [CYCLE 504] Step 7/7: Starting game...\n2026-01-22 18:09:18 - INFO - [CYCLE 504] Checking for loading color at (200, 100)...\n2026-01-22 18:09:42 - INFO - [CYCLE 504] Loading color detected! Color: #A9D917\n2026-01-22 18:09:42 - INFO - [CYCLE 504] Cycle #504 completed successfully - loading color detected\n2026-01-22 18:10:03 - INFO - [CYCLE 504] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 18:10:05"
+  "last_log": "2026-01-22 18:13:28 - DEBUG - [CYCLE 505] Checking for attention popup (invite #30)\n2026-01-22 18:13:28 - INFO - [CYCLE 505] Invite #31 sent (177s)\n2026-01-22 18:13:34 - INFO - [CYCLE 505] Invite #32 sent (183s)\n2026-01-22 18:13:40 - INFO - [CYCLE 505] Invite #33 sent (189s)\n2026-01-22 18:13:46 - INFO - [CYCLE 505] Invite #34 sent (195s)\n2026-01-22 18:13:52 - INFO - [CYCLE 505] Invite #35 sent (201s)\n2026-01-22 18:13:58 - DEBUG - [CYCLE 505] Checking for attention popup (invite #35)\n2026-01-22 18:13:58 - INFO - [CYCLE 505] Invite #36 sent (207s)\n2026-01-22 18:14:04 - INFO - [CYCLE 505] Invite #37 sent (213s)\n2026-01-22 18:14:10 - INFO - [CYCLE 505] Invite #38 sent (219s)\n2026-01-22 18:14:16 - INFO - [CYCLE 505] Invite #39 sent (225s)\n2026-01-22 18:14:22 - INFO - [CYCLE 505] Invite #40 sent (230s)\n2026-01-22 18:14:27 - DEBUG - [CYCLE 505] Checking for attention popup (invite #40)\n2026-01-22 18:14:28 - INFO - [CYCLE 505] Invite #41 sent (236s)\n2026-01-22 18:14:33 - INFO - [CYCLE 505] Invite #42 sent (242s)\n2026-01-22 18:14:39 - INFO - [CYCLE 505] Invite #43 sent (248s)\n2026-01-22 18:14:45 - INFO - [CYCLE 505] Invite #44 sent (254s)\n2026-01-22 18:14:51 - INFO - [CYCLE 505] Invite #45 sent (260s)\n2026-01-22 18:14:57 - DEBUG - [CYCLE 505] Checking for attention popup (invite #45)\n2026-01-22 18:14:57 - INFO - [CYCLE 505] Invite #46 sent (266s)\n2026-01-22 18:15:03 - INFO - [CYCLE 505] Invite #47 sent (272s)\n2026-01-22 18:15:09 - INFO - [CYCLE 505] Invite #48 sent (278s)\n2026-01-22 18:15:15 - INFO - [CYCLE 505] Invite #49 sent (284s)\n2026-01-22 18:15:21 - INFO - [CYCLE 505] Invite #50 sent (290s)\n2026-01-22 18:15:27 - DEBUG - [CYCLE 505] Checking for attention popup (invite #50)\n2026-01-22 18:15:27 - INFO - [CYCLE 505] Invite #51 sent (296s)\n2026-01-22 18:15:33 - INFO - [CYCLE 505] Step 7/7: Starting game...\n2026-01-22 18:15:34 - INFO - [CYCLE 505] Checking for loading color at (200, 100)...\n2026-01-22 18:16:42 - INFO - [CYCLE 505] Cycle #505 completed - no loading color detected (normal)\n2026-01-22 18:17:03 - INFO - [CYCLE 505] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 18:17:06"
 }
