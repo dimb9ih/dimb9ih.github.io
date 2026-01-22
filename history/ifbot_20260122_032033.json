@@ -1,0 +1,62 @@
+{
+  "timestamp": 1769051921,
+  "timestamp_human": "2026-01-22 06:18:41",
+  "cycle_count": 281,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 12 (предупреждений: 6, ошибок: 6), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 12,
+    "warnings": 6,
+    "errors": 6,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-22 06:14:21 - ERROR - [CYCLE 278] Main screen not found",
+      "2026-01-22 06:16:20 - WARNING - [CYCLE 279] Failed to reach main screen",
+      "2026-01-22 06:16:20 - ERROR - [CYCLE 279] Main screen not found",
+      "2026-01-22 06:18:18 - WARNING - [CYCLE 280] Failed to reach main screen",
+      "2026-01-22 06:18:18 - ERROR - [CYCLE 280] Main screen not found"
+    ],
+    "last_error_time": 1769051898,
+    "error_timestamp_human": "2026-01-22 06:18:18"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.30",
+      "load_5": "2.99",
+      "load_15": "3.14",
+      "cores": 4,
+      "utilization_percent": 57.5
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 231,
+      "free_mb": 16,
+      "cached_mb": 112,
+      "utilization_percent": 11.6
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.0Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769051921,
+    "timestamp_human": "2026-01-22 06:18:41"
+  },
+  "last_log": "2026-01-22 06:17:33 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:35 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:37 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:38 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:40 - DEBUG - [CYCLE 280] Current: popup, waiting for main... 55s\n2026-01-22 06:17:41 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:42 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:44 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:46 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:48 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:50 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:52 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:54 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:55 - DEBUG - [CYCLE 280] Current: popup, waiting for main... 70s\n2026-01-22 06:17:56 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:57 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:17:59 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:01 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:03 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:05 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:07 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:09 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:10 - DEBUG - [CYCLE 280] Current: popup, waiting for main... 85s\n2026-01-22 06:18:11 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:12 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:14 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:16 - INFO - [CYCLE 280] Found ВНИМАНИЕ popup\n2026-01-22 06:18:18 - WARNING - [CYCLE 280] Failed to reach main screen\n2026-01-22 06:18:18 - ERROR - [CYCLE 280] Main screen not found\n2026-01-22 06:18:39 - INFO - [CYCLE 280] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 06:18:41"
+}
