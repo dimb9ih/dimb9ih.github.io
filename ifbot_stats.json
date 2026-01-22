@@ -1,16 +1,15 @@
 {
-  "timestamp": 1769042630,
-  "timestamp_human": "2026-01-22 03:43:50",
-  "cycle_count": 240,
+  "timestamp": 1769043056,
+  "timestamp_human": "2026-01-22 03:50:56",
+  "cycle_count": 241,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 3, ошибок: 1), последняя: 14м назад",
+  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 21м назад",
   "error_stats": {
-    "total_errors": 4,
-    "warnings": 3,
+    "total_errors": 3,
+    "warnings": 2,
     "errors": 1,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 02:30:39 - WARNING - [CYCLE 226] Still on main, trying again",
       "2026-01-22 02:43:55 - WARNING - [CYCLE 229] Still on main, trying again",
       "2026-01-22 03:29:18 - WARNING - [CYCLE 237] Failed to reach main screen",
       "2026-01-22 03:29:18 - ERROR - [CYCLE 237] Main screen not found"
@@ -33,29 +32,29 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.67",
-      "load_5": "2.08",
-      "load_15": "2.59",
+      "load_1": "2.59",
+      "load_5": "2.66",
+      "load_15": "2.70",
       "cores": 4,
-      "utilization_percent": 41.8
+      "utilization_percent": 64.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 239,
-      "free_mb": 4,
-      "cached_mb": 112,
-      "utilization_percent": 11.9
+      "used_mb": 235,
+      "free_mb": 8,
+      "cached_mb": 102,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
       "used": "7.0Gi",
-      "available": "9.1Gi",
+      "available": "9.0Gi",
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769042630,
-    "timestamp_human": "2026-01-22 03:43:50"
+    "timestamp": 1769043056,
+    "timestamp_human": "2026-01-22 03:50:56"
   },
-  "last_log": "2026-01-22 03:40:13 - DEBUG - [CYCLE 239] Checking for attention popup (invite #30)\n2026-01-22 03:40:13 - INFO - [CYCLE 239] Invite #31 sent (177s)\n2026-01-22 03:40:19 - INFO - [CYCLE 239] Invite #32 sent (183s)\n2026-01-22 03:40:25 - INFO - [CYCLE 239] Invite #33 sent (189s)\n2026-01-22 03:40:31 - INFO - [CYCLE 239] Invite #34 sent (195s)\n2026-01-22 03:40:37 - INFO - [CYCLE 239] Invite #35 sent (201s)\n2026-01-22 03:40:43 - DEBUG - [CYCLE 239] Checking for attention popup (invite #35)\n2026-01-22 03:40:43 - INFO - [CYCLE 239] Invite #36 sent (207s)\n2026-01-22 03:40:49 - INFO - [CYCLE 239] Invite #37 sent (213s)\n2026-01-22 03:40:54 - INFO - [CYCLE 239] Invite #38 sent (219s)\n2026-01-22 03:41:00 - INFO - [CYCLE 239] Invite #39 sent (225s)\n2026-01-22 03:41:06 - INFO - [CYCLE 239] Invite #40 sent (230s)\n2026-01-22 03:41:12 - DEBUG - [CYCLE 239] Checking for attention popup (invite #40)\n2026-01-22 03:41:12 - INFO - [CYCLE 239] Invite #41 sent (236s)\n2026-01-22 03:41:18 - INFO - [CYCLE 239] Invite #42 sent (242s)\n2026-01-22 03:41:24 - INFO - [CYCLE 239] Invite #43 sent (248s)\n2026-01-22 03:41:30 - INFO - [CYCLE 239] Invite #44 sent (254s)\n2026-01-22 03:41:36 - INFO - [CYCLE 239] Invite #45 sent (260s)\n2026-01-22 03:41:42 - DEBUG - [CYCLE 239] Checking for attention popup (invite #45)\n2026-01-22 03:41:42 - INFO - [CYCLE 239] Invite #46 sent (266s)\n2026-01-22 03:41:48 - INFO - [CYCLE 239] Invite #47 sent (272s)\n2026-01-22 03:41:54 - INFO - [CYCLE 239] Invite #48 sent (278s)\n2026-01-22 03:41:59 - INFO - [CYCLE 239] Invite #49 sent (284s)\n2026-01-22 03:42:05 - INFO - [CYCLE 239] Invite #50 sent (289s)\n2026-01-22 03:42:11 - DEBUG - [CYCLE 239] Checking for attention popup (invite #50)\n2026-01-22 03:42:11 - INFO - [CYCLE 239] Invite #51 sent (295s)\n2026-01-22 03:42:17 - INFO - [CYCLE 239] Step 7/7: Starting game...\n2026-01-22 03:42:19 - INFO - [CYCLE 239] Checking for loading color at (200, 100)...\n2026-01-22 03:43:26 - INFO - [CYCLE 239] Cycle #239 completed - no loading color detected (normal)\n2026-01-22 03:43:47 - INFO - [CYCLE 239] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 03:43:50"
+  "last_log": "2026-01-22 03:47:19 - DEBUG - [CYCLE 240] Checking for attention popup (invite #30)\n2026-01-22 03:47:19 - INFO - [CYCLE 240] Invite #31 sent (177s)\n2026-01-22 03:47:25 - INFO - [CYCLE 240] Invite #32 sent (183s)\n2026-01-22 03:47:30 - INFO - [CYCLE 240] Invite #33 sent (189s)\n2026-01-22 03:47:36 - INFO - [CYCLE 240] Invite #34 sent (195s)\n2026-01-22 03:47:42 - INFO - [CYCLE 240] Invite #35 sent (201s)\n2026-01-22 03:47:48 - DEBUG - [CYCLE 240] Checking for attention popup (invite #35)\n2026-01-22 03:47:48 - INFO - [CYCLE 240] Invite #36 sent (206s)\n2026-01-22 03:47:54 - INFO - [CYCLE 240] Invite #37 sent (212s)\n2026-01-22 03:48:00 - INFO - [CYCLE 240] Invite #38 sent (218s)\n2026-01-22 03:48:06 - INFO - [CYCLE 240] Invite #39 sent (224s)\n2026-01-22 03:48:12 - INFO - [CYCLE 240] Invite #40 sent (230s)\n2026-01-22 03:48:18 - DEBUG - [CYCLE 240] Checking for attention popup (invite #40)\n2026-01-22 03:48:18 - INFO - [CYCLE 240] Invite #41 sent (236s)\n2026-01-22 03:48:24 - INFO - [CYCLE 240] Invite #42 sent (242s)\n2026-01-22 03:48:30 - INFO - [CYCLE 240] Invite #43 sent (248s)\n2026-01-22 03:48:36 - INFO - [CYCLE 240] Invite #44 sent (254s)\n2026-01-22 03:48:42 - INFO - [CYCLE 240] Invite #45 sent (260s)\n2026-01-22 03:48:48 - DEBUG - [CYCLE 240] Checking for attention popup (invite #45)\n2026-01-22 03:48:48 - INFO - [CYCLE 240] Invite #46 sent (266s)\n2026-01-22 03:48:53 - INFO - [CYCLE 240] Invite #47 sent (272s)\n2026-01-22 03:48:59 - INFO - [CYCLE 240] Invite #48 sent (278s)\n2026-01-22 03:49:05 - INFO - [CYCLE 240] Invite #49 sent (284s)\n2026-01-22 03:49:11 - INFO - [CYCLE 240] Invite #50 sent (289s)\n2026-01-22 03:49:17 - DEBUG - [CYCLE 240] Checking for attention popup (invite #50)\n2026-01-22 03:49:17 - INFO - [CYCLE 240] Invite #51 sent (295s)\n2026-01-22 03:49:23 - INFO - [CYCLE 240] Step 7/7: Starting game...\n2026-01-22 03:49:25 - INFO - [CYCLE 240] Checking for loading color at (200, 100)...\n2026-01-22 03:50:32 - INFO - [CYCLE 240] Cycle #240 completed - no loading color detected (normal)\n2026-01-22 03:50:53 - INFO - [CYCLE 240] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 03:50:56"
 }
