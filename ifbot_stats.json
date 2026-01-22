@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769085248,
-  "timestamp_human": "2026-01-22 15:34:08",
-  "cycle_count": 450,
+  "timestamp": 1769085526,
+  "timestamp_human": "2026-01-22 15:38:46",
+  "cycle_count": 451,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 2м назад",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 7м назад",
   "error_stats": {
     "total_errors": 1,
     "warnings": 1,
@@ -30,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.16",
-      "load_5": "2.76",
-      "load_15": "3.15",
+      "load_1": "2.30",
+      "load_5": "2.63",
+      "load_15": "3.02",
       "cores": 4,
-      "utilization_percent": 54.0
+      "utilization_percent": 57.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 235,
+      "used_mb": 232,
       "free_mb": 5,
-      "cached_mb": 106,
-      "utilization_percent": 11.8
+      "cached_mb": 133,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769085248,
-    "timestamp_human": "2026-01-22 15:34:08"
+    "timestamp": 1769085526,
+    "timestamp_human": "2026-01-22 15:38:46"
   },
-  "last_log": "2026-01-22 15:31:39 - INFO - [CYCLE 449] Step 4/7: Transition to team...\n2026-01-22 15:31:41 - INFO - [CYCLE 449] Waiting for team screen...\n2026-01-22 15:31:42 - INFO - [CYCLE 449] Found team screen button\n2026-01-22 15:31:42 - INFO - [CYCLE 449] Step 5/7: Pressing team screen button...\n2026-01-22 15:31:44 - INFO - [CYCLE 449] Step 6/7: Sending invitations...\n2026-01-22 15:31:44 - INFO - [CYCLE 449] Invite #1 sent (0s)\n2026-01-22 15:31:50 - INFO - [CYCLE 449] Invite #2 sent (5s)\n2026-01-22 15:31:56 - INFO - [CYCLE 449] Invite #3 sent (11s)\n2026-01-22 15:32:01 - INFO - [CYCLE 449] Invite #4 sent (17s)\n2026-01-22 15:32:07 - INFO - [CYCLE 449] Invite #5 sent (23s)\n2026-01-22 15:32:13 - DEBUG - [CYCLE 449] Checking for attention popup (invite #5)\n2026-01-22 15:32:13 - INFO - [CYCLE 449] Invite #6 sent (29s)\n2026-01-22 15:32:19 - INFO - [CYCLE 449] Invite #7 sent (35s)\n2026-01-22 15:32:25 - INFO - [CYCLE 449] Invite #8 sent (41s)\n2026-01-22 15:32:31 - INFO - [CYCLE 449] Invite #9 sent (47s)\n2026-01-22 15:32:37 - INFO - [CYCLE 449] Invite #10 sent (53s)\n2026-01-22 15:32:43 - DEBUG - [CYCLE 449] Checking for attention popup (invite #10)\n2026-01-22 15:32:43 - INFO - [CYCLE 449] Invite #11 sent (59s)\n2026-01-22 15:32:49 - INFO - [CYCLE 449] Invite #12 sent (65s)\n2026-01-22 15:32:55 - INFO - [CYCLE 449] Invite #13 sent (71s)\n2026-01-22 15:33:01 - INFO - [CYCLE 449] Invite #14 sent (76s)\n2026-01-22 15:33:07 - INFO - [CYCLE 449] Invite #15 sent (82s)\n2026-01-22 15:33:12 - DEBUG - [CYCLE 449] Checking for attention popup (invite #15)\n2026-01-22 15:33:12 - INFO - [CYCLE 449] Invite #16 sent (88s)\n2026-01-22 15:33:18 - INFO - [CYCLE 449] Someone joined the team!\n2026-01-22 15:33:18 - INFO - [CYCLE 449] Step 7/7: Starting game...\n2026-01-22 15:33:20 - INFO - [CYCLE 449] Checking for loading color at (200, 100)...\n2026-01-22 15:33:44 - INFO - [CYCLE 449] Loading color detected! Color: #A9D917\n2026-01-22 15:33:44 - INFO - [CYCLE 449] Cycle #449 completed successfully - loading color detected\n2026-01-22 15:34:05 - INFO - [CYCLE 449] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 15:34:08"
+  "last_log": "2026-01-22 15:35:59 - INFO - [CYCLE 450] Invite #15 sent (82s)\n2026-01-22 15:36:05 - DEBUG - [CYCLE 450] Checking for attention popup (invite #15)\n2026-01-22 15:36:05 - INFO - [CYCLE 450] Invite #16 sent (88s)\n2026-01-22 15:36:11 - INFO - [CYCLE 450] Invite #17 sent (94s)\n2026-01-22 15:36:17 - INFO - [CYCLE 450] Invite #18 sent (100s)\n2026-01-22 15:36:23 - INFO - [CYCLE 450] Invite #19 sent (106s)\n2026-01-22 15:36:29 - INFO - [CYCLE 450] Invite #20 sent (112s)\n2026-01-22 15:36:35 - DEBUG - [CYCLE 450] Checking for attention popup (invite #20)\n2026-01-22 15:36:35 - INFO - [CYCLE 450] Invite #21 sent (118s)\n2026-01-22 15:36:41 - INFO - [CYCLE 450] Invite #22 sent (124s)\n2026-01-22 15:36:47 - INFO - [CYCLE 450] Invite #23 sent (130s)\n2026-01-22 15:36:53 - INFO - [CYCLE 450] Invite #24 sent (136s)\n2026-01-22 15:36:59 - INFO - [CYCLE 450] Invite #25 sent (142s)\n2026-01-22 15:37:05 - DEBUG - [CYCLE 450] Checking for attention popup (invite #25)\n2026-01-22 15:37:05 - INFO - [CYCLE 450] Invite #26 sent (148s)\n2026-01-22 15:37:10 - INFO - [CYCLE 450] Invite #27 sent (154s)\n2026-01-22 15:37:16 - INFO - [CYCLE 450] Invite #28 sent (159s)\n2026-01-22 15:37:22 - INFO - [CYCLE 450] Invite #29 sent (165s)\n2026-01-22 15:37:28 - INFO - [CYCLE 450] Invite #30 sent (171s)\n2026-01-22 15:37:34 - DEBUG - [CYCLE 450] Checking for attention popup (invite #30)\n2026-01-22 15:37:34 - INFO - [CYCLE 450] Invite #31 sent (177s)\n2026-01-22 15:37:40 - INFO - [CYCLE 450] Invite #32 sent (183s)\n2026-01-22 15:37:46 - INFO - [CYCLE 450] Invite #33 sent (189s)\n2026-01-22 15:37:52 - INFO - [CYCLE 450] Invite #34 sent (195s)\n2026-01-22 15:37:58 - INFO - [CYCLE 450] Someone joined the team!\n2026-01-22 15:37:58 - INFO - [CYCLE 450] Step 7/7: Starting game...\n2026-01-22 15:38:00 - INFO - [CYCLE 450] Checking for loading color at (200, 100)...\n2026-01-22 15:38:23 - INFO - [CYCLE 450] Loading color detected! Color: #A9D917\n2026-01-22 15:38:23 - INFO - [CYCLE 450] Cycle #450 completed successfully - loading color detected\n2026-01-22 15:38:44 - INFO - [CYCLE 450] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 15:38:46"
 }
