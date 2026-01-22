@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769079923,
-  "timestamp_human": "2026-01-22 14:05:23",
-  "cycle_count": 410,
+  "timestamp": 1769080039,
+  "timestamp_human": "2026-01-22 14:07:19",
+  "cycle_count": 411,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 48 (предупреждений: 24, ошибок: 24), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 50 (предупреждений: 25, ошибок: 25), последняя: 24с назад",
   "error_stats": {
-    "total_errors": 48,
-    "warnings": 24,
-    "errors": 24,
+    "total_errors": 50,
+    "warnings": 25,
+    "errors": 25,
     "critical": 0,
     "recent_errors": [
-      "2026-01-22 14:01:09 - ERROR - [CYCLE 407] Main screen not found",
-      "2026-01-22 14:03:04 - WARNING - [CYCLE 408] Failed to reach main screen",
       "2026-01-22 14:03:04 - ERROR - [CYCLE 408] Main screen not found",
       "2026-01-22 14:05:00 - WARNING - [CYCLE 409] Failed to reach main screen",
-      "2026-01-22 14:05:00 - ERROR - [CYCLE 409] Main screen not found"
+      "2026-01-22 14:05:00 - ERROR - [CYCLE 409] Main screen not found",
+      "2026-01-22 14:06:55 - WARNING - [CYCLE 410] Failed to reach main screen",
+      "2026-01-22 14:06:55 - ERROR - [CYCLE 410] Main screen not found"
     ],
-    "last_error_time": 1769079900,
-    "error_timestamp_human": "2026-01-22 14:05:00"
+    "last_error_time": 1769080015,
+    "error_timestamp_human": "2026-01-22 14:06:55"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.65",
-      "load_5": "3.32",
-      "load_15": "3.35",
+      "load_1": "3.69",
+      "load_5": "3.44",
+      "load_15": "3.38",
       "cores": 4,
-      "utilization_percent": 91.2
+      "utilization_percent": 92.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
-      "free_mb": 5,
-      "cached_mb": 134,
-      "utilization_percent": 11.9
+      "used_mb": 237,
+      "free_mb": 6,
+      "cached_mb": 131,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769079923,
-    "timestamp_human": "2026-01-22 14:05:23"
+    "timestamp": 1769080039,
+    "timestamp_human": "2026-01-22 14:07:19"
   },
-  "last_log": "2026-01-22 14:03:25 - INFO - [CYCLE 408] Connected to ZXTouch\n2026-01-22 14:03:29 - INFO - [CYCLE 409] Starting cycle #409\n2026-01-22 14:03:29 - INFO - [CYCLE 409] Step 1/7: Waiting for main screen...\n2026-01-22 14:03:29 - INFO - [CYCLE 409] Waiting for main screen...\n2026-01-22 14:03:30 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 0s\n2026-01-22 14:03:35 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 5s\n2026-01-22 14:03:40 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 10s\n2026-01-22 14:03:45 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 15s\n2026-01-22 14:03:50 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 20s\n2026-01-22 14:03:54 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 25s\n2026-01-22 14:03:55 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 25s\n2026-01-22 14:04:00 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 30s\n2026-01-22 14:04:05 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 35s\n2026-01-22 14:04:09 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 40s\n2026-01-22 14:04:10 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 40s\n2026-01-22 14:04:15 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 45s\n2026-01-22 14:04:20 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 50s\n2026-01-22 14:04:24 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 55s\n2026-01-22 14:04:25 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 55s\n2026-01-22 14:04:30 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 60s\n2026-01-22 14:04:34 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 65s\n2026-01-22 14:04:35 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 65s\n2026-01-22 14:04:40 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 70s\n2026-01-22 14:04:45 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 75s\n2026-01-22 14:04:49 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 80s\n2026-01-22 14:04:50 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 80s\n2026-01-22 14:04:55 - DEBUG - [CYCLE 409] Current: unknown, waiting for main... 85s\n2026-01-22 14:05:00 - WARNING - [CYCLE 409] Failed to reach main screen\n2026-01-22 14:05:00 - ERROR - [CYCLE 409] Main screen not found\n2026-01-22 14:05:21 - INFO - [CYCLE 409] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 14:05:23"
+  "last_log": "2026-01-22 14:05:25 - INFO - [CYCLE 410] Waiting for main screen...\n2026-01-22 14:05:25 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 0s\n2026-01-22 14:05:26 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 0s\n2026-01-22 14:05:30 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 5s\n2026-01-22 14:05:31 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 5s\n2026-01-22 14:05:35 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 10s\n2026-01-22 14:05:40 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 15s\n2026-01-22 14:05:40 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 15s\n2026-01-22 14:05:45 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 20s\n2026-01-22 14:05:50 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 25s\n2026-01-22 14:05:55 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 30s\n2026-01-22 14:05:56 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 30s\n2026-01-22 14:06:00 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 35s\n2026-01-22 14:06:05 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 40s\n2026-01-22 14:06:05 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 40s\n2026-01-22 14:06:10 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 45s\n2026-01-22 14:06:15 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 50s\n2026-01-22 14:06:20 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 55s\n2026-01-22 14:06:25 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 60s\n2026-01-22 14:06:30 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 65s\n2026-01-22 14:06:31 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 65s\n2026-01-22 14:06:35 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 70s\n2026-01-22 14:06:40 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 75s\n2026-01-22 14:06:45 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 80s\n2026-01-22 14:06:46 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 80s\n2026-01-22 14:06:50 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 85s\n2026-01-22 14:06:55 - DEBUG - [CYCLE 410] Current: unknown, waiting for main... 90s\n2026-01-22 14:06:55 - WARNING - [CYCLE 410] Failed to reach main screen\n2026-01-22 14:06:55 - ERROR - [CYCLE 410] Main screen not found\n2026-01-22 14:07:16 - INFO - [CYCLE 410] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 14:07:19"
 }
