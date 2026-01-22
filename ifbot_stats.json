@@ -1,13 +1,13 @@
 {
-  "timestamp": 1769094253,
-  "timestamp_human": "2026-01-22 18:04:13",
-  "cycle_count": 503,
+  "timestamp": 1769094338,
+  "timestamp_human": "2026-01-22 18:05:38",
+  "cycle_count": 504,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 70 (предупреждений: 35, ошибок: 35), последняя: 24с назад",
+  "error_summary": "⚠️ Ошибок: 68 (предупреждений: 34, ошибок: 34), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 70,
-    "warnings": 35,
-    "errors": 35,
+    "total_errors": 68,
+    "warnings": 34,
+    "errors": 34,
     "critical": 0,
     "recent_errors": [
       "2026-01-22 17:58:42 - ERROR - [CYCLE 500] Main screen not found",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.66",
-      "load_5": "3.30",
-      "load_15": "3.34",
+      "load_1": "3.93",
+      "load_5": "3.84",
+      "load_15": "3.57",
       "cores": 4,
-      "utilization_percent": 91.5
+      "utilization_percent": 98.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
+      "used_mb": 239,
       "free_mb": 4,
-      "cached_mb": 137,
+      "cached_mb": 132,
       "utilization_percent": 11.9
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769094253,
-    "timestamp_human": "2026-01-22 18:04:13"
+    "timestamp": 1769094338,
+    "timestamp_human": "2026-01-22 18:05:38"
   },
-  "last_log": "2026-01-22 18:01:36 - INFO - [CYCLE 501] Connected to ZXTouch\n2026-01-22 18:02:19 - INFO - [CYCLE 502] Starting cycle #502\n2026-01-22 18:02:19 - INFO - [CYCLE 502] Step 1/7: Waiting for main screen...\n2026-01-22 18:02:19 - INFO - [CYCLE 502] Waiting for main screen...\n2026-01-22 18:02:19 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 0s\n2026-01-22 18:02:24 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 5s\n2026-01-22 18:02:29 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 10s\n2026-01-22 18:02:34 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 15s\n2026-01-22 18:02:39 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 20s\n2026-01-22 18:02:40 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 20s\n2026-01-22 18:02:44 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 25s\n2026-01-22 18:02:49 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 30s\n2026-01-22 18:02:50 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 30s\n2026-01-22 18:02:54 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 35s\n2026-01-22 18:02:59 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 40s\n2026-01-22 18:03:00 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 40s\n2026-01-22 18:03:03 - INFO - [CYCLE 502] Found attention popup\n2026-01-22 18:03:05 - INFO - [CYCLE 502] Found loading popup with YES button\n2026-01-22 18:03:09 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 50s\n2026-01-22 18:03:14 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 55s\n2026-01-22 18:03:19 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 60s\n2026-01-22 18:03:24 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 65s\n2026-01-22 18:03:29 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 70s\n2026-01-22 18:03:34 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 75s\n2026-01-22 18:03:39 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 80s\n2026-01-22 18:03:44 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 85s\n2026-01-22 18:03:49 - DEBUG - [CYCLE 502] Current: unknown, waiting for main... 90s\n2026-01-22 18:03:49 - WARNING - [CYCLE 502] Failed to reach main screen\n2026-01-22 18:03:49 - ERROR - [CYCLE 502] Main screen not found\n2026-01-22 18:04:10 - INFO - [CYCLE 502] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 18:04:13"
+  "last_log": "2026-01-22 18:03:49 - ERROR - [CYCLE 502] Main screen not found\n2026-01-22 18:04:10 - INFO - [CYCLE 502] Connected to ZXTouch\n2026-01-22 18:04:14 - INFO - [CYCLE 503] Starting cycle #503\n2026-01-22 18:04:14 - INFO - [CYCLE 503] Step 1/7: Waiting for main screen...\n2026-01-22 18:04:14 - INFO - [CYCLE 503] Waiting for main screen...\n2026-01-22 18:04:15 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 0s\n2026-01-22 18:04:15 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 0s\n2026-01-22 18:04:19 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 5s\n2026-01-22 18:04:20 - DEBUG - [CYCLE 503] Current: unknown, waiting for main... 5s\n2026-01-22 18:04:24 - DEBUG - [CYCLE 503] Current: loading, waiting for main... 10s\n2026-01-22 18:04:25 - INFO - [CYCLE 503] On main screen\n2026-01-22 18:04:25 - INFO - [CYCLE 503] Step 2/7: Transition to arsenal...\n2026-01-22 18:04:25 - INFO - [CYCLE 503] Quick transition: Кнопка Далее\n2026-01-22 18:04:28 - INFO - [CYCLE 503] Found attention popup\n2026-01-22 18:04:29 - INFO - [CYCLE 503] Step 3/7: Transition to battle...\n2026-01-22 18:04:29 - INFO - [CYCLE 503] Quick transition: Кнопка Битва\n2026-01-22 18:04:32 - INFO - [CYCLE 503] Step 4/7: Transition to team...\n2026-01-22 18:04:34 - INFO - [CYCLE 503] Waiting for team screen...\n2026-01-22 18:04:35 - INFO - [CYCLE 503] Found team screen button\n2026-01-22 18:04:35 - INFO - [CYCLE 503] Step 5/7: Pressing team screen button...\n2026-01-22 18:04:37 - INFO - [CYCLE 503] Step 6/7: Sending invitations...\n2026-01-22 18:04:37 - INFO - [CYCLE 503] Invite #1 sent (0s)\n2026-01-22 18:04:43 - INFO - [CYCLE 503] Invite #2 sent (5s)\n2026-01-22 18:04:49 - INFO - [CYCLE 503] Invite #3 sent (11s)\n2026-01-22 18:04:50 - INFO - [CYCLE 503] Someone joined immediately!\n2026-01-22 18:04:50 - INFO - [CYCLE 503] Step 7/7: Starting game...\n2026-01-22 18:04:51 - INFO - [CYCLE 503] Checking for loading color at (200, 100)...\n2026-01-22 18:05:15 - INFO - [CYCLE 503] Loading color detected! Color: #A9D917\n2026-01-22 18:05:15 - INFO - [CYCLE 503] Cycle #503 completed successfully - loading color detected\n2026-01-22 18:05:36 - INFO - [CYCLE 503] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 18:05:38"
 }
