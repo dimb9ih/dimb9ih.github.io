@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769105058,
-  "timestamp_human": "2026-01-22 21:04:18",
-  "cycle_count": 533,
+  "timestamp": 1769105137,
+  "timestamp_human": "2026-01-22 21:05:37",
+  "cycle_count": 534,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 53м назад",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 54м назад",
   "error_stats": {
     "total_errors": 1,
     "warnings": 1,
@@ -30,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.64",
-      "load_5": "2.56",
-      "load_15": "2.79",
+      "load_1": "3.92",
+      "load_5": "3.33",
+      "load_15": "3.08",
       "cores": 4,
-      "utilization_percent": 41.0
+      "utilization_percent": 98.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
-      "free_mb": 3,
-      "cached_mb": 124,
-      "utilization_percent": 11.9
+      "used_mb": 232,
+      "free_mb": 1,
+      "cached_mb": 133,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769105058,
-    "timestamp_human": "2026-01-22 21:04:18"
+    "timestamp": 1769105137,
+    "timestamp_human": "2026-01-22 21:05:37"
   },
-  "last_log": "2026-01-22 21:00:41 - DEBUG - [CYCLE 532] Checking for attention popup (invite #30)\n2026-01-22 21:00:41 - INFO - [CYCLE 532] Invite #31 sent (177s)\n2026-01-22 21:00:47 - INFO - [CYCLE 532] Invite #32 sent (183s)\n2026-01-22 21:00:53 - INFO - [CYCLE 532] Invite #33 sent (189s)\n2026-01-22 21:00:59 - INFO - [CYCLE 532] Invite #34 sent (195s)\n2026-01-22 21:01:05 - INFO - [CYCLE 532] Invite #35 sent (201s)\n2026-01-22 21:01:11 - DEBUG - [CYCLE 532] Checking for attention popup (invite #35)\n2026-01-22 21:01:11 - INFO - [CYCLE 532] Invite #36 sent (207s)\n2026-01-22 21:01:17 - INFO - [CYCLE 532] Invite #37 sent (213s)\n2026-01-22 21:01:23 - INFO - [CYCLE 532] Invite #38 sent (219s)\n2026-01-22 21:01:29 - INFO - [CYCLE 532] Invite #39 sent (225s)\n2026-01-22 21:01:35 - INFO - [CYCLE 532] Invite #40 sent (231s)\n2026-01-22 21:01:41 - DEBUG - [CYCLE 532] Checking for attention popup (invite #40)\n2026-01-22 21:01:41 - INFO - [CYCLE 532] Invite #41 sent (237s)\n2026-01-22 21:01:47 - INFO - [CYCLE 532] Invite #42 sent (243s)\n2026-01-22 21:01:53 - INFO - [CYCLE 532] Invite #43 sent (248s)\n2026-01-22 21:01:58 - INFO - [CYCLE 532] Invite #44 sent (254s)\n2026-01-22 21:02:04 - INFO - [CYCLE 532] Invite #45 sent (260s)\n2026-01-22 21:02:10 - DEBUG - [CYCLE 532] Checking for attention popup (invite #45)\n2026-01-22 21:02:10 - INFO - [CYCLE 532] Invite #46 sent (266s)\n2026-01-22 21:02:16 - INFO - [CYCLE 532] Invite #47 sent (272s)\n2026-01-22 21:02:22 - INFO - [CYCLE 532] Invite #48 sent (278s)\n2026-01-22 21:02:28 - INFO - [CYCLE 532] Invite #49 sent (284s)\n2026-01-22 21:02:34 - INFO - [CYCLE 532] Invite #50 sent (290s)\n2026-01-22 21:02:40 - DEBUG - [CYCLE 532] Checking for attention popup (invite #50)\n2026-01-22 21:02:40 - INFO - [CYCLE 532] Invite #51 sent (296s)\n2026-01-22 21:02:46 - INFO - [CYCLE 532] Step 7/7: Starting game...\n2026-01-22 21:02:47 - INFO - [CYCLE 532] Checking for loading color at (200, 100)...\n2026-01-22 21:03:55 - INFO - [CYCLE 532] Cycle #532 completed - no loading color detected (normal)\n2026-01-22 21:04:16 - INFO - [CYCLE 532] Connected to ZXTouch\n",
-  "update_time": "2026-01-22 21:04:18"
+  "last_log": "2026-01-22 21:02:34 - INFO - [CYCLE 532] Invite #50 sent (290s)\n2026-01-22 21:02:40 - DEBUG - [CYCLE 532] Checking for attention popup (invite #50)\n2026-01-22 21:02:40 - INFO - [CYCLE 532] Invite #51 sent (296s)\n2026-01-22 21:02:46 - INFO - [CYCLE 532] Step 7/7: Starting game...\n2026-01-22 21:02:47 - INFO - [CYCLE 532] Checking for loading color at (200, 100)...\n2026-01-22 21:03:55 - INFO - [CYCLE 532] Cycle #532 completed - no loading color detected (normal)\n2026-01-22 21:04:16 - INFO - [CYCLE 532] Connected to ZXTouch\n2026-01-22 21:04:20 - INFO - [CYCLE 533] Starting cycle #533\n2026-01-22 21:04:20 - INFO - [CYCLE 533] Step 1/7: Waiting for main screen...\n2026-01-22 21:04:20 - INFO - [CYCLE 533] Waiting for main screen...\n2026-01-22 21:04:20 - DEBUG - [CYCLE 533] Current: unknown, waiting for main... 0s\n2026-01-22 21:04:26 - DEBUG - [CYCLE 533] Current: unknown, waiting for main... 5s\n2026-01-22 21:04:30 - INFO - [CYCLE 533] Found attention popup\n2026-01-22 21:04:31 - INFO - [CYCLE 533] On main screen\n2026-01-22 21:04:31 - INFO - [CYCLE 533] Step 2/7: Transition to arsenal...\n2026-01-22 21:04:31 - INFO - [CYCLE 533] Quick transition: Кнопка Далее\n2026-01-22 21:04:34 - INFO - [CYCLE 533] Step 3/7: Transition to battle...\n2026-01-22 21:04:34 - INFO - [CYCLE 533] Quick transition: Кнопка Битва\n2026-01-22 21:04:36 - INFO - [CYCLE 533] Step 4/7: Transition to team...\n2026-01-22 21:04:39 - INFO - [CYCLE 533] Waiting for team screen...\n2026-01-22 21:04:40 - INFO - [CYCLE 533] Found team screen button\n2026-01-22 21:04:40 - INFO - [CYCLE 533] Step 5/7: Pressing team screen button...\n2026-01-22 21:04:41 - INFO - [CYCLE 533] Step 6/7: Sending invitations...\n2026-01-22 21:04:41 - INFO - [CYCLE 533] Invite #1 sent (0s)\n2026-01-22 21:04:47 - INFO - [CYCLE 533] Someone joined the team!\n2026-01-22 21:04:47 - INFO - [CYCLE 533] Step 7/7: Starting game...\n2026-01-22 21:04:49 - INFO - [CYCLE 533] Checking for loading color at (200, 100)...\n2026-01-22 21:05:14 - INFO - [CYCLE 533] Loading color detected! Color: #A9D917\n2026-01-22 21:05:14 - INFO - [CYCLE 533] Cycle #533 completed successfully - loading color detected\n2026-01-22 21:05:34 - INFO - [CYCLE 533] Connected to ZXTouch\n",
+  "update_time": "2026-01-22 21:05:37"
 }
