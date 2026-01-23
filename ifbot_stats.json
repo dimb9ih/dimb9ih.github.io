@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769198104,
-  "timestamp_human": "2026-01-23 22:55:04",
-  "cycle_count": 3,
+  "timestamp": 1769198689,
+  "timestamp_human": "2026-01-23 23:04:49",
+  "cycle_count": 7,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 26 (предупреждений: 13, ошибок: 13), последняя: 6м назад",
+  "error_summary": "⚠️ Ошибок: 28 (предупреждений: 14, ошибок: 14), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 26,
-    "warnings": 13,
-    "errors": 13,
+    "total_errors": 28,
+    "warnings": 14,
+    "errors": 14,
     "critical": 0,
     "recent_errors": [
-      "2026-01-23 22:43:15 - ERROR - [CYCLE 31] Main screen not found",
-      "2026-01-23 22:45:49 - WARNING - [CYCLE 32] Failed to reach main screen",
       "2026-01-23 22:45:49 - ERROR - [CYCLE 32] Main screen not found",
       "2026-01-23 22:48:23 - WARNING - [CYCLE 33] Failed to reach main screen",
-      "2026-01-23 22:48:23 - ERROR - [CYCLE 33] Main screen not found"
+      "2026-01-23 22:48:23 - ERROR - [CYCLE 33] Main screen not found",
+      "2026-01-23 23:04:26 - WARNING - [CYCLE 6] Failed to reach main screen",
+      "2026-01-23 23:04:26 - ERROR - [CYCLE 6] Main screen not found"
     ],
-    "last_error_time": 1769197703,
-    "error_timestamp_human": "2026-01-23 22:48:23"
+    "last_error_time": 1769198666,
+    "error_timestamp_human": "2026-01-23 23:04:26"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.21",
-      "load_5": "6.53",
-      "load_15": "5.50",
+      "load_1": "2.51",
+      "load_5": "3.97",
+      "load_15": "4.56",
       "cores": 4,
-      "utilization_percent": 80.2
+      "utilization_percent": 62.7
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 6,
-      "cached_mb": 96,
-      "utilization_percent": 11.7
+      "used_mb": 226,
+      "free_mb": 24,
+      "cached_mb": 108,
+      "utilization_percent": 11.3
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769198104,
-    "timestamp_human": "2026-01-23 22:55:04"
+    "timestamp": 1769198689,
+    "timestamp_human": "2026-01-23 23:04:49"
   },
-  "last_log": "2026-01-23 22:52:47 - INFO - [CYCLE 1] Invite #6 sent (30s)\n2026-01-23 22:52:47 - INFO - [CYCLE 1] Someone joined immediately!\n2026-01-23 22:52:47 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-01-23 22:52:49 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-01-23 22:53:14 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-01-23 22:53:14 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-01-23 22:53:35 - INFO - [CYCLE 1] Connected to ZXTouch\n2026-01-23 22:53:54 - INFO - [CYCLE 2] Starting cycle #2\n2026-01-23 22:53:54 - INFO - [CYCLE 2] Step 1/7: Waiting for main screen...\n2026-01-23 22:53:54 - INFO - [CYCLE 2] Waiting for main screen...\n2026-01-23 22:53:54 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 0s\n2026-01-23 22:53:55 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 0s\n2026-01-23 22:53:57 - INFO - [CYCLE 2] On main screen\n2026-01-23 22:53:57 - INFO - [CYCLE 2] Step 2/7: Transition to arsenal...\n2026-01-23 22:53:57 - INFO - [CYCLE 2] Quick transition: Кнопка Далее\n2026-01-23 22:54:00 - INFO - [CYCLE 2] Found attention popup\n2026-01-23 22:54:01 - INFO - [CYCLE 2] Step 3/7: Transition to battle...\n2026-01-23 22:54:01 - INFO - [CYCLE 2] Quick transition: Кнопка Битва\n2026-01-23 22:54:04 - INFO - [CYCLE 2] Step 4/7: Transition to team...\n2026-01-23 22:54:06 - INFO - [CYCLE 2] Waiting for team screen...\n2026-01-23 22:54:07 - INFO - [CYCLE 2] Found team screen button\n2026-01-23 22:54:07 - INFO - [CYCLE 2] Step 5/7: Pressing team screen button...\n2026-01-23 22:54:09 - INFO - [CYCLE 2] Step 6/7: Sending invitations...\n2026-01-23 22:54:09 - INFO - [CYCLE 2] Invite #1 sent (0s)\n2026-01-23 22:54:15 - INFO - [CYCLE 2] Someone joined the team!\n2026-01-23 22:54:15 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-01-23 22:54:16 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-01-23 22:54:41 - INFO - [CYCLE 2] Loading color detected! Color: #A9D917\n2026-01-23 22:54:41 - INFO - [CYCLE 2] Cycle #2 completed successfully - loading color detected\n2026-01-23 22:55:02 - INFO - [CYCLE 2] Connected to ZXTouch\n",
-  "update_time": "2026-01-23 22:55:04"
+  "last_log": "2026-01-23 23:02:56 - INFO - [CYCLE 6] Waiting for main screen...\n2026-01-23 23:02:56 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 0s\n2026-01-23 23:03:01 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 5s\n2026-01-23 23:03:02 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 5s\n2026-01-23 23:03:06 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 10s\n2026-01-23 23:03:11 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 15s\n2026-01-23 23:03:12 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 15s\n2026-01-23 23:03:16 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 20s\n2026-01-23 23:03:21 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 25s\n2026-01-23 23:03:27 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 30s\n2026-01-23 23:03:31 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 35s\n2026-01-23 23:03:32 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 35s\n2026-01-23 23:03:36 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 40s\n2026-01-23 23:03:42 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 45s\n2026-01-23 23:03:46 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 50s\n2026-01-23 23:03:51 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 55s\n2026-01-23 23:03:56 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 60s\n2026-01-23 23:03:57 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 60s\n2026-01-23 23:04:01 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 65s\n2026-01-23 23:04:02 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 65s\n2026-01-23 23:04:06 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 70s\n2026-01-23 23:04:07 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 70s\n2026-01-23 23:04:11 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 75s\n2026-01-23 23:04:12 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 75s\n2026-01-23 23:04:16 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 80s\n2026-01-23 23:04:17 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 80s\n2026-01-23 23:04:21 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 85s\n2026-01-23 23:04:26 - WARNING - [CYCLE 6] Failed to reach main screen\n2026-01-23 23:04:26 - ERROR - [CYCLE 6] Main screen not found\n2026-01-23 23:04:47 - INFO - [CYCLE 6] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 23:04:49"
 }
