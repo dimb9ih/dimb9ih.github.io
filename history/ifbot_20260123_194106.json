@@ -1,0 +1,62 @@
+{
+  "timestamp": 1769193561,
+  "timestamp_human": "2026-01-23 21:39:21",
+  "cycle_count": 8,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 45 (предупреждений: 23, ошибок: 22), последняя: 3м назад",
+  "error_stats": {
+    "total_errors": 45,
+    "warnings": 23,
+    "errors": 22,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-23 21:14:17 - WARNING - [CYCLE 70] Failed to reach main screen",
+      "2026-01-23 21:14:17 - ERROR - [CYCLE 70] Main screen not found",
+      "2026-01-23 21:16:13 - WARNING - [CYCLE 71] Failed to reach main screen",
+      "2026-01-23 21:16:13 - ERROR - [CYCLE 71] Main screen not found",
+      "2026-01-23 21:36:17 - WARNING - [CYCLE 7] Still on main, trying again"
+    ],
+    "last_error_time": 1769193377,
+    "error_timestamp_human": "2026-01-23 21:36:17"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.31",
+      "load_5": "4.15",
+      "load_15": "4.61",
+      "cores": 4,
+      "utilization_percent": 57.8
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 236,
+      "free_mb": 5,
+      "cached_mb": 104,
+      "utilization_percent": 11.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769193561,
+    "timestamp_human": "2026-01-23 21:39:21"
+  },
+  "last_log": "2026-01-23 21:36:33 - INFO - [CYCLE 7] Invite #2 sent (5s)\n2026-01-23 21:36:39 - INFO - [CYCLE 7] Invite #3 sent (11s)\n2026-01-23 21:36:45 - INFO - [CYCLE 7] Invite #4 sent (17s)\n2026-01-23 21:36:51 - INFO - [CYCLE 7] Invite #5 sent (23s)\n2026-01-23 21:36:56 - DEBUG - [CYCLE 7] Checking for attention popup (invite #5)\n2026-01-23 21:36:57 - INFO - [CYCLE 7] Invite #6 sent (29s)\n2026-01-23 21:37:02 - INFO - [CYCLE 7] Invite #7 sent (35s)\n2026-01-23 21:37:08 - INFO - [CYCLE 7] Invite #8 sent (41s)\n2026-01-23 21:37:14 - INFO - [CYCLE 7] Invite #9 sent (47s)\n2026-01-23 21:37:20 - INFO - [CYCLE 7] Invite #10 sent (53s)\n2026-01-23 21:37:26 - DEBUG - [CYCLE 7] Checking for attention popup (invite #10)\n2026-01-23 21:37:26 - INFO - [CYCLE 7] Invite #11 sent (59s)\n2026-01-23 21:37:32 - INFO - [CYCLE 7] Invite #12 sent (65s)\n2026-01-23 21:37:38 - INFO - [CYCLE 7] Invite #13 sent (71s)\n2026-01-23 21:37:44 - INFO - [CYCLE 7] Invite #14 sent (77s)\n2026-01-23 21:37:50 - INFO - [CYCLE 7] Invite #15 sent (82s)\n2026-01-23 21:37:56 - DEBUG - [CYCLE 7] Checking for attention popup (invite #15)\n2026-01-23 21:37:56 - INFO - [CYCLE 7] Invite #16 sent (88s)\n2026-01-23 21:38:02 - INFO - [CYCLE 7] Invite #17 sent (94s)\n2026-01-23 21:38:08 - INFO - [CYCLE 7] Invite #18 sent (100s)\n2026-01-23 21:38:14 - INFO - [CYCLE 7] Invite #19 sent (106s)\n2026-01-23 21:38:20 - INFO - [CYCLE 7] Invite #20 sent (112s)\n2026-01-23 21:38:25 - DEBUG - [CYCLE 7] Checking for attention popup (invite #20)\n2026-01-23 21:38:25 - INFO - [CYCLE 7] Invite #21 sent (118s)\n2026-01-23 21:38:31 - INFO - [CYCLE 7] Someone joined the team!\n2026-01-23 21:38:31 - INFO - [CYCLE 7] Step 7/7: Starting game...\n2026-01-23 21:38:33 - INFO - [CYCLE 7] Checking for loading color at (200, 100)...\n2026-01-23 21:38:58 - INFO - [CYCLE 7] Loading color detected! Color: #A9D917\n2026-01-23 21:38:58 - INFO - [CYCLE 7] Cycle #7 completed successfully - loading color detected\n2026-01-23 21:39:18 - INFO - [CYCLE 7] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 21:39:21"
+}
