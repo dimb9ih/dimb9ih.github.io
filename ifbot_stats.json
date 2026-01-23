@@ -1,13 +1,13 @@
 {
-  "timestamp": 1769201055,
-  "timestamp_human": "2026-01-23 23:44:15",
-  "cycle_count": 21,
+  "timestamp": 1769201220,
+  "timestamp_human": "2026-01-23 23:47:00",
+  "cycle_count": 22,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 26 (предупреждений: 13, ошибок: 13), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 23 (предупреждений: 12, ошибок: 11), последняя: 3м назад",
   "error_stats": {
-    "total_errors": 26,
-    "warnings": 13,
-    "errors": 13,
+    "total_errors": 23,
+    "warnings": 12,
+    "errors": 11,
     "critical": 0,
     "recent_errors": [
       "2026-01-23 23:36:18 - WARNING - [CYCLE 17] Still on main, trying again",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.23",
-      "load_5": "3.66",
-      "load_15": "3.61",
+      "load_1": "2.22",
+      "load_5": "3.14",
+      "load_15": "3.41",
       "cores": 4,
-      "utilization_percent": 80.8
+      "utilization_percent": 55.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 229,
-      "free_mb": 19,
-      "cached_mb": 105,
-      "utilization_percent": 11.5
+      "used_mb": 237,
+      "free_mb": 4,
+      "cached_mb": 107,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769201055,
-    "timestamp_human": "2026-01-23 23:44:15"
+    "timestamp": 1769201220,
+    "timestamp_human": "2026-01-23 23:47:00"
   },
-  "last_log": "2026-01-23 23:41:53 - INFO - [CYCLE 19] Connected to ZXTouch\n2026-01-23 23:42:22 - INFO - [CYCLE 20] Starting cycle #20\n2026-01-23 23:42:22 - INFO - [CYCLE 20] Step 1/7: Waiting for main screen...\n2026-01-23 23:42:22 - INFO - [CYCLE 20] Waiting for main screen...\n2026-01-23 23:42:22 - DEBUG - [CYCLE 20] Current: unknown, waiting for main... 0s\n2026-01-23 23:42:28 - DEBUG - [CYCLE 20] Current: unknown, waiting for main... 5s\n2026-01-23 23:42:33 - DEBUG - [CYCLE 20] Current: unknown, waiting for main... 10s\n2026-01-23 23:42:38 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 15s\n2026-01-23 23:42:42 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 20s\n2026-01-23 23:42:43 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 20s\n2026-01-23 23:42:47 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 25s\n2026-01-23 23:42:48 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 25s\n2026-01-23 23:42:52 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 30s\n2026-01-23 23:42:53 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 30s\n2026-01-23 23:42:58 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 35s\n2026-01-23 23:43:03 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 40s\n2026-01-23 23:43:07 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 45s\n2026-01-23 23:43:08 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 45s\n2026-01-23 23:43:12 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 50s\n2026-01-23 23:43:18 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 55s\n2026-01-23 23:43:23 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 60s\n2026-01-23 23:43:26 - INFO - [CYCLE 20] Found ВНИМАНИЕ popup\n2026-01-23 23:43:28 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 65s\n2026-01-23 23:43:32 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 70s\n2026-01-23 23:43:38 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 75s\n2026-01-23 23:43:42 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 80s\n2026-01-23 23:43:48 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 85s\n2026-01-23 23:43:52 - WARNING - [CYCLE 20] Failed to reach main screen\n2026-01-23 23:43:52 - ERROR - [CYCLE 20] Main screen not found\n2026-01-23 23:44:13 - INFO - [CYCLE 20] Connected to ZXTouch\n",
-  "update_time": "2026-01-23 23:44:15"
+  "last_log": "2026-01-23 23:44:56 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 30s\n2026-01-23 23:45:01 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 35s\n2026-01-23 23:45:06 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 40s\n2026-01-23 23:45:11 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 45s\n2026-01-23 23:45:16 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 50s\n2026-01-23 23:45:21 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 55s\n2026-01-23 23:45:26 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 60s\n2026-01-23 23:45:26 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 60s\n2026-01-23 23:45:31 - DEBUG - [CYCLE 21] Current: loading, waiting for main... 65s\n2026-01-23 23:45:34 - INFO - [CYCLE 21] On main screen\n2026-01-23 23:45:34 - INFO - [CYCLE 21] Step 2/7: Transition to arsenal...\n2026-01-23 23:45:34 - INFO - [CYCLE 21] Quick transition: Кнопка Далее\n2026-01-23 23:45:37 - INFO - [CYCLE 21] Step 3/7: Transition to battle...\n2026-01-23 23:45:37 - INFO - [CYCLE 21] Quick transition: Кнопка Битва\n2026-01-23 23:45:40 - INFO - [CYCLE 21] Step 4/7: Transition to team...\n2026-01-23 23:45:42 - INFO - [CYCLE 21] Waiting for team screen...\n2026-01-23 23:45:43 - INFO - [CYCLE 21] Found attention popup\n2026-01-23 23:45:44 - INFO - [CYCLE 21] Found team screen button\n2026-01-23 23:45:44 - INFO - [CYCLE 21] Step 5/7: Pressing team screen button...\n2026-01-23 23:45:46 - INFO - [CYCLE 21] Step 6/7: Sending invitations...\n2026-01-23 23:45:46 - INFO - [CYCLE 21] Invite #1 sent (0s)\n2026-01-23 23:45:52 - INFO - [CYCLE 21] Invite #2 sent (5s)\n2026-01-23 23:45:58 - INFO - [CYCLE 21] Invite #3 sent (11s)\n2026-01-23 23:46:04 - INFO - [CYCLE 21] Invite #4 sent (17s)\n2026-01-23 23:46:09 - INFO - [CYCLE 21] Someone joined the team!\n2026-01-23 23:46:09 - INFO - [CYCLE 21] Step 7/7: Starting game...\n2026-01-23 23:46:11 - INFO - [CYCLE 21] Checking for loading color at (200, 100)...\n2026-01-23 23:46:36 - INFO - [CYCLE 21] Loading color detected! Color: #A9D917\n2026-01-23 23:46:36 - INFO - [CYCLE 21] Cycle #21 completed successfully - loading color detected\n2026-01-23 23:46:57 - INFO - [CYCLE 21] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 23:47:00"
 }
