@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769163763,
-  "timestamp_human": "2026-01-23 13:22:43",
-  "cycle_count": 33,
+  "timestamp": 1769164046,
+  "timestamp_human": "2026-01-23 13:27:26",
+  "cycle_count": 34,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 19м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 24м назад",
   "error_stats": {
     "total_errors": 2,
     "warnings": 2,
@@ -31,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.51",
-      "load_5": "3.70",
-      "load_15": "3.66",
+      "load_1": "2.16",
+      "load_5": "3.33",
+      "load_15": "3.61",
       "cores": 4,
-      "utilization_percent": 112.8
+      "utilization_percent": 54.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 233,
-      "free_mb": 4,
-      "cached_mb": 105,
-      "utilization_percent": 11.7
+      "used_mb": 232,
+      "free_mb": 5,
+      "cached_mb": 111,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -51,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769163763,
-    "timestamp_human": "2026-01-23 13:22:43"
+    "timestamp": 1769164046,
+    "timestamp_human": "2026-01-23 13:27:26"
   },
-  "last_log": "2026-01-23 13:20:38 - INFO - [CYCLE 31] Step 7/7: Starting game...\n2026-01-23 13:20:39 - INFO - [CYCLE 31] Checking for loading color at (200, 100)...\n2026-01-23 13:21:04 - INFO - [CYCLE 31] Loading color detected! Color: #A9D917\n2026-01-23 13:21:04 - INFO - [CYCLE 31] Cycle #31 completed successfully - loading color detected\n2026-01-23 13:21:24 - INFO - [CYCLE 31] Connected to ZXTouch\n2026-01-23 13:21:28 - INFO - [CYCLE 32] Starting cycle #32\n2026-01-23 13:21:28 - INFO - [CYCLE 32] Step 1/7: Waiting for main screen...\n2026-01-23 13:21:28 - INFO - [CYCLE 32] Waiting for main screen...\n2026-01-23 13:21:29 - DEBUG - [CYCLE 32] Current: unknown, waiting for main... 0s\n2026-01-23 13:21:29 - DEBUG - [CYCLE 32] Current: unknown, waiting for main... 0s\n2026-01-23 13:21:33 - DEBUG - [CYCLE 32] Current: unknown, waiting for main... 5s\n2026-01-23 13:21:34 - DEBUG - [CYCLE 32] Current: unknown, waiting for main... 5s\n2026-01-23 13:21:36 - INFO - [CYCLE 32] On main screen\n2026-01-23 13:21:36 - INFO - [CYCLE 32] Step 2/7: Transition to arsenal...\n2026-01-23 13:21:36 - INFO - [CYCLE 32] Quick transition: Кнопка Далее\n2026-01-23 13:21:39 - INFO - [CYCLE 32] Found attention popup\n2026-01-23 13:21:40 - INFO - [CYCLE 32] Step 3/7: Transition to battle...\n2026-01-23 13:21:40 - INFO - [CYCLE 32] Quick transition: Кнопка Битва\n2026-01-23 13:21:43 - INFO - [CYCLE 32] Step 4/7: Transition to team...\n2026-01-23 13:21:45 - INFO - [CYCLE 32] Waiting for team screen...\n2026-01-23 13:21:46 - INFO - [CYCLE 32] Found team screen button\n2026-01-23 13:21:46 - INFO - [CYCLE 32] Step 5/7: Pressing team screen button...\n2026-01-23 13:21:48 - INFO - [CYCLE 32] Step 6/7: Sending invitations...\n2026-01-23 13:21:48 - INFO - [CYCLE 32] Invite #1 sent (0s)\n2026-01-23 13:21:54 - INFO - [CYCLE 32] Someone joined the team!\n2026-01-23 13:21:54 - INFO - [CYCLE 32] Step 7/7: Starting game...\n2026-01-23 13:21:55 - INFO - [CYCLE 32] Checking for loading color at (200, 100)...\n2026-01-23 13:22:20 - INFO - [CYCLE 32] Loading color detected! Color: #A9D917\n2026-01-23 13:22:20 - INFO - [CYCLE 32] Cycle #32 completed successfully - loading color detected\n2026-01-23 13:22:40 - INFO - [CYCLE 32] Connected to ZXTouch\n",
-  "update_time": "2026-01-23 13:22:43"
+  "last_log": "2026-01-23 13:24:39 - INFO - [CYCLE 33] Invite #15 sent (82s)\n2026-01-23 13:24:45 - DEBUG - [CYCLE 33] Checking for attention popup (invite #15)\n2026-01-23 13:24:45 - INFO - [CYCLE 33] Invite #16 sent (88s)\n2026-01-23 13:24:51 - INFO - [CYCLE 33] Invite #17 sent (94s)\n2026-01-23 13:24:56 - INFO - [CYCLE 33] Invite #18 sent (100s)\n2026-01-23 13:25:02 - INFO - [CYCLE 33] Invite #19 sent (106s)\n2026-01-23 13:25:08 - INFO - [CYCLE 33] Invite #20 sent (112s)\n2026-01-23 13:25:14 - DEBUG - [CYCLE 33] Checking for attention popup (invite #20)\n2026-01-23 13:25:14 - INFO - [CYCLE 33] Invite #21 sent (118s)\n2026-01-23 13:25:20 - INFO - [CYCLE 33] Invite #22 sent (124s)\n2026-01-23 13:25:26 - INFO - [CYCLE 33] Invite #23 sent (130s)\n2026-01-23 13:25:32 - INFO - [CYCLE 33] Invite #24 sent (136s)\n2026-01-23 13:25:38 - INFO - [CYCLE 33] Invite #25 sent (142s)\n2026-01-23 13:25:44 - DEBUG - [CYCLE 33] Checking for attention popup (invite #25)\n2026-01-23 13:25:44 - INFO - [CYCLE 33] Invite #26 sent (148s)\n2026-01-23 13:25:50 - INFO - [CYCLE 33] Invite #27 sent (154s)\n2026-01-23 13:25:56 - INFO - [CYCLE 33] Invite #28 sent (159s)\n2026-01-23 13:26:02 - INFO - [CYCLE 33] Invite #29 sent (165s)\n2026-01-23 13:26:07 - INFO - [CYCLE 33] Invite #30 sent (171s)\n2026-01-23 13:26:13 - DEBUG - [CYCLE 33] Checking for attention popup (invite #30)\n2026-01-23 13:26:13 - INFO - [CYCLE 33] Invite #31 sent (177s)\n2026-01-23 13:26:19 - INFO - [CYCLE 33] Invite #32 sent (183s)\n2026-01-23 13:26:25 - INFO - [CYCLE 33] Invite #33 sent (189s)\n2026-01-23 13:26:31 - INFO - [CYCLE 33] Invite #34 sent (195s)\n2026-01-23 13:26:37 - INFO - [CYCLE 33] Someone joined the team!\n2026-01-23 13:26:37 - INFO - [CYCLE 33] Step 7/7: Starting game...\n2026-01-23 13:26:39 - INFO - [CYCLE 33] Checking for loading color at (200, 100)...\n2026-01-23 13:27:02 - INFO - [CYCLE 33] Loading color detected! Color: #A9D917\n2026-01-23 13:27:02 - INFO - [CYCLE 33] Cycle #33 completed successfully - loading color detected\n2026-01-23 13:27:23 - INFO - [CYCLE 33] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 13:27:26"
 }
