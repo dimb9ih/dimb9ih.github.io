@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769185609,
-  "timestamp_human": "2026-01-23 19:26:49",
-  "cycle_count": 19,
+  "timestamp": 1769185724,
+  "timestamp_human": "2026-01-23 19:28:44",
+  "cycle_count": 20,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 66 (предупреждений: 33, ошибок: 33), последняя: 23с назад",
   "error_stats": {
@@ -10,14 +10,14 @@
     "errors": 33,
     "critical": 0,
     "recent_errors": [
-      "2026-01-23 19:22:36 - ERROR - [CYCLE 16] Main screen not found",
-      "2026-01-23 19:24:31 - WARNING - [CYCLE 17] Failed to reach main screen",
       "2026-01-23 19:24:31 - ERROR - [CYCLE 17] Main screen not found",
       "2026-01-23 19:26:26 - WARNING - [CYCLE 18] Failed to reach main screen",
-      "2026-01-23 19:26:26 - ERROR - [CYCLE 18] Main screen not found"
+      "2026-01-23 19:26:26 - ERROR - [CYCLE 18] Main screen not found",
+      "2026-01-23 19:28:21 - WARNING - [CYCLE 19] Failed to reach main screen",
+      "2026-01-23 19:28:21 - ERROR - [CYCLE 19] Main screen not found"
     ],
-    "last_error_time": 1769185586,
-    "error_timestamp_human": "2026-01-23 19:26:26"
+    "last_error_time": 1769185701,
+    "error_timestamp_human": "2026-01-23 19:28:21"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.72",
-      "load_5": "3.22",
-      "load_15": "3.31",
+      "load_1": "5.11",
+      "load_5": "3.50",
+      "load_15": "3.39",
       "cores": 4,
-      "utilization_percent": 93.0
+      "utilization_percent": 127.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 218,
-      "free_mb": 5,
-      "cached_mb": 108,
-      "utilization_percent": 10.9
+      "used_mb": 225,
+      "free_mb": 3,
+      "cached_mb": 113,
+      "utilization_percent": 11.2
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769185609,
-    "timestamp_human": "2026-01-23 19:26:49"
+    "timestamp": 1769185724,
+    "timestamp_human": "2026-01-23 19:28:44"
   },
-  "last_log": "2026-01-23 19:24:56 - INFO - [CYCLE 18] Starting cycle #18\n2026-01-23 19:24:56 - INFO - [CYCLE 18] Step 1/7: Waiting for main screen...\n2026-01-23 19:24:56 - INFO - [CYCLE 18] Waiting for main screen...\n2026-01-23 19:24:56 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 0s\n2026-01-23 19:24:57 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 0s\n2026-01-23 19:25:01 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 5s\n2026-01-23 19:25:02 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 5s\n2026-01-23 19:25:06 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 10s\n2026-01-23 19:25:12 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 15s\n2026-01-23 19:25:16 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 20s\n2026-01-23 19:25:17 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 20s\n2026-01-23 19:25:21 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 25s\n2026-01-23 19:25:27 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 30s\n2026-01-23 19:25:31 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 35s\n2026-01-23 19:25:32 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 35s\n2026-01-23 19:25:36 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 40s\n2026-01-23 19:25:42 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 45s\n2026-01-23 19:25:46 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 50s\n2026-01-23 19:25:51 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 55s\n2026-01-23 19:25:52 - INFO - [CYCLE 18] Found ВНИМАНИЕ popup\n2026-01-23 19:25:57 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 60s\n2026-01-23 19:26:01 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 65s\n2026-01-23 19:26:02 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 65s\n2026-01-23 19:26:06 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 70s\n2026-01-23 19:26:12 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 75s\n2026-01-23 19:26:16 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 80s\n2026-01-23 19:26:21 - DEBUG - [CYCLE 18] Current: loading, waiting for main... 85s\n2026-01-23 19:26:26 - WARNING - [CYCLE 18] Failed to reach main screen\n2026-01-23 19:26:26 - ERROR - [CYCLE 18] Main screen not found\n2026-01-23 19:26:47 - INFO - [CYCLE 18] Connected to ZXTouch\n",
-  "update_time": "2026-01-23 19:26:49"
+  "last_log": "2026-01-23 19:26:47 - INFO - [CYCLE 18] Connected to ZXTouch\n2026-01-23 19:26:51 - INFO - [CYCLE 19] Starting cycle #19\n2026-01-23 19:26:51 - INFO - [CYCLE 19] Step 1/7: Waiting for main screen...\n2026-01-23 19:26:51 - INFO - [CYCLE 19] Waiting for main screen...\n2026-01-23 19:26:51 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 0s\n2026-01-23 19:26:56 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 5s\n2026-01-23 19:27:01 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 10s\n2026-01-23 19:27:02 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 10s\n2026-01-23 19:27:06 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 15s\n2026-01-23 19:27:11 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 20s\n2026-01-23 19:27:16 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 25s\n2026-01-23 19:27:17 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 25s\n2026-01-23 19:27:21 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 30s\n2026-01-23 19:27:26 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 35s\n2026-01-23 19:27:31 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 40s\n2026-01-23 19:27:32 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 40s\n2026-01-23 19:27:36 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 45s\n2026-01-23 19:27:42 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 50s\n2026-01-23 19:27:46 - INFO - [CYCLE 19] Found ВНИМАНИЕ popup\n2026-01-23 19:27:51 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 60s\n2026-01-23 19:27:52 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 60s\n2026-01-23 19:27:56 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 65s\n2026-01-23 19:28:01 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 70s\n2026-01-23 19:28:06 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 75s\n2026-01-23 19:28:07 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 75s\n2026-01-23 19:28:11 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 80s\n2026-01-23 19:28:17 - DEBUG - [CYCLE 19] Current: loading, waiting for main... 85s\n2026-01-23 19:28:21 - WARNING - [CYCLE 19] Failed to reach main screen\n2026-01-23 19:28:21 - ERROR - [CYCLE 19] Main screen not found\n2026-01-23 19:28:42 - INFO - [CYCLE 19] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 19:28:44"
 }
