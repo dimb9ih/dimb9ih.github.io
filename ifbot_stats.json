@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769168866,
-  "timestamp_human": "2026-01-23 14:47:46",
-  "cycle_count": 52,
+  "timestamp": 1769169122,
+  "timestamp_human": "2026-01-23 14:52:02",
+  "cycle_count": 53,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -10,8 +10,8 @@
     "errors": 0,
     "critical": 0,
     "recent_errors": [],
-    "last_error_time": 1769164060,
-    "error_timestamp_human": "2026-01-23 13:27:40"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,17 +28,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "6.15",
-      "load_5": "4.73",
-      "load_15": "4.01",
+      "load_1": "2.78",
+      "load_5": "3.51",
+      "load_15": "3.64",
       "cores": 4,
-      "utilization_percent": 153.8
+      "utilization_percent": 69.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 225,
+      "used_mb": 224,
       "free_mb": 1,
-      "cached_mb": 119,
+      "cached_mb": 118,
       "utilization_percent": 11.2
     },
     "disk": {
@@ -48,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769168866,
-    "timestamp_human": "2026-01-23 14:47:46"
+    "timestamp": 1769169122,
+    "timestamp_human": "2026-01-23 14:52:02"
   },
-  "last_log": "2026-01-23 14:45:41 - INFO - [CYCLE 50] Step 7/7: Starting game...\n2026-01-23 14:45:42 - INFO - [CYCLE 50] Checking for loading color at (200, 100)...\n2026-01-23 14:46:07 - INFO - [CYCLE 50] Loading color detected! Color: #A9D917\n2026-01-23 14:46:07 - INFO - [CYCLE 50] Cycle #50 completed successfully - loading color detected\n2026-01-23 14:46:28 - INFO - [CYCLE 50] Connected to ZXTouch\n2026-01-23 14:46:31 - INFO - [CYCLE 51] Starting cycle #51\n2026-01-23 14:46:31 - INFO - [CYCLE 51] Step 1/7: Waiting for main screen...\n2026-01-23 14:46:31 - INFO - [CYCLE 51] Waiting for main screen...\n2026-01-23 14:46:32 - DEBUG - [CYCLE 51] Current: unknown, waiting for main... 0s\n2026-01-23 14:46:32 - DEBUG - [CYCLE 51] Current: unknown, waiting for main... 0s\n2026-01-23 14:46:36 - DEBUG - [CYCLE 51] Current: unknown, waiting for main... 5s\n2026-01-23 14:46:37 - DEBUG - [CYCLE 51] Current: unknown, waiting for main... 5s\n2026-01-23 14:46:39 - INFO - [CYCLE 51] On main screen\n2026-01-23 14:46:39 - INFO - [CYCLE 51] Step 2/7: Transition to arsenal...\n2026-01-23 14:46:39 - INFO - [CYCLE 51] Quick transition: Кнопка Далее\n2026-01-23 14:46:39 - INFO - [CYCLE 51] Found attention popup\n2026-01-23 14:46:43 - INFO - [CYCLE 51] Step 3/7: Transition to battle...\n2026-01-23 14:46:43 - INFO - [CYCLE 51] Quick transition: Кнопка Битва\n2026-01-23 14:46:46 - INFO - [CYCLE 51] Step 4/7: Transition to team...\n2026-01-23 14:46:48 - INFO - [CYCLE 51] Waiting for team screen...\n2026-01-23 14:46:49 - INFO - [CYCLE 51] Found team screen button\n2026-01-23 14:46:49 - INFO - [CYCLE 51] Step 5/7: Pressing team screen button...\n2026-01-23 14:46:51 - INFO - [CYCLE 51] Step 6/7: Sending invitations...\n2026-01-23 14:46:51 - INFO - [CYCLE 51] Invite #1 sent (0s)\n2026-01-23 14:46:57 - INFO - [CYCLE 51] Someone joined the team!\n2026-01-23 14:46:57 - INFO - [CYCLE 51] Step 7/7: Starting game...\n2026-01-23 14:46:58 - INFO - [CYCLE 51] Checking for loading color at (200, 100)...\n2026-01-23 14:47:23 - INFO - [CYCLE 51] Loading color detected! Color: #A9D917\n2026-01-23 14:47:23 - INFO - [CYCLE 51] Cycle #51 completed successfully - loading color detected\n2026-01-23 14:47:44 - INFO - [CYCLE 51] Connected to ZXTouch\n",
-  "update_time": "2026-01-23 14:47:46"
+  "last_log": "2026-01-23 14:51:07 - INFO - [CYCLE 52] Invite #32 sent (183s)\n2026-01-23 14:51:13 - INFO - [CYCLE 52] Someone joined the team!\n2026-01-23 14:51:13 - INFO - [CYCLE 52] Step 7/7: Starting game...\n2026-01-23 14:51:15 - INFO - [CYCLE 52] Checking for loading color at (200, 100)...\n2026-01-23 14:51:39 - INFO - [CYCLE 52] Loading color detected! Color: #A9D917\n2026-01-23 14:51:39 - INFO - [CYCLE 52] Cycle #52 completed successfully - loading color detected\n2026-01-23 14:51:59 - INFO - [CYCLE 52] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 14:52:02"
 }
