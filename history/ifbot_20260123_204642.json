@@ -1,0 +1,62 @@
+{
+  "timestamp": 1769201055,
+  "timestamp_human": "2026-01-23 23:44:15",
+  "cycle_count": 21,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 26 (предупреждений: 13, ошибок: 13), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 26,
+    "warnings": 13,
+    "errors": 13,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-23 23:36:18 - WARNING - [CYCLE 17] Still on main, trying again",
+      "2026-01-23 23:41:32 - WARNING - [CYCLE 19] Failed to reach main screen",
+      "2026-01-23 23:41:32 - ERROR - [CYCLE 19] Main screen not found",
+      "2026-01-23 23:43:52 - WARNING - [CYCLE 20] Failed to reach main screen",
+      "2026-01-23 23:43:52 - ERROR - [CYCLE 20] Main screen not found"
+    ],
+    "last_error_time": 1769201032,
+    "error_timestamp_human": "2026-01-23 23:43:52"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "3.23",
+      "load_5": "3.66",
+      "load_15": "3.61",
+      "cores": 4,
+      "utilization_percent": 80.8
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 229,
+      "free_mb": 19,
+      "cached_mb": 105,
+      "utilization_percent": 11.5
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.2Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769201055,
+    "timestamp_human": "2026-01-23 23:44:15"
+  },
+  "last_log": "2026-01-23 23:41:53 - INFO - [CYCLE 19] Connected to ZXTouch\n2026-01-23 23:42:22 - INFO - [CYCLE 20] Starting cycle #20\n2026-01-23 23:42:22 - INFO - [CYCLE 20] Step 1/7: Waiting for main screen...\n2026-01-23 23:42:22 - INFO - [CYCLE 20] Waiting for main screen...\n2026-01-23 23:42:22 - DEBUG - [CYCLE 20] Current: unknown, waiting for main... 0s\n2026-01-23 23:42:28 - DEBUG - [CYCLE 20] Current: unknown, waiting for main... 5s\n2026-01-23 23:42:33 - DEBUG - [CYCLE 20] Current: unknown, waiting for main... 10s\n2026-01-23 23:42:38 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 15s\n2026-01-23 23:42:42 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 20s\n2026-01-23 23:42:43 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 20s\n2026-01-23 23:42:47 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 25s\n2026-01-23 23:42:48 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 25s\n2026-01-23 23:42:52 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 30s\n2026-01-23 23:42:53 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 30s\n2026-01-23 23:42:58 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 35s\n2026-01-23 23:43:03 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 40s\n2026-01-23 23:43:07 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 45s\n2026-01-23 23:43:08 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 45s\n2026-01-23 23:43:12 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 50s\n2026-01-23 23:43:18 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 55s\n2026-01-23 23:43:23 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 60s\n2026-01-23 23:43:26 - INFO - [CYCLE 20] Found ВНИМАНИЕ popup\n2026-01-23 23:43:28 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 65s\n2026-01-23 23:43:32 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 70s\n2026-01-23 23:43:38 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 75s\n2026-01-23 23:43:42 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 80s\n2026-01-23 23:43:48 - DEBUG - [CYCLE 20] Current: loading, waiting for main... 85s\n2026-01-23 23:43:52 - WARNING - [CYCLE 20] Failed to reach main screen\n2026-01-23 23:43:52 - ERROR - [CYCLE 20] Main screen not found\n2026-01-23 23:44:13 - INFO - [CYCLE 20] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 23:44:15"
+}
