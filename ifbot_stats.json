@@ -1,17 +1,19 @@
 {
-  "timestamp": 1769169712,
-  "timestamp_human": "2026-01-23 15:01:52",
-  "cycle_count": 58,
+  "timestamp": 1769169805,
+  "timestamp_human": "2026-01-23 15:03:25",
+  "cycle_count": 59,
   "bot_status": "running",
-  "error_summary": "✅ Ошибок нет",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 0,
-    "warnings": 0,
+    "total_errors": 1,
+    "warnings": 1,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "recent_errors": [
+      "2026-01-23 15:02:08 - WARNING - [CYCLE 58] Still on main, trying again"
+    ],
+    "last_error_time": 1769169728,
+    "error_timestamp_human": "2026-01-23 15:02:08"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,17 +30,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.77",
-      "load_5": "4.56",
-      "load_15": "4.42",
+      "load_1": "4.11",
+      "load_5": "4.85",
+      "load_15": "4.57",
       "cores": 4,
-      "utilization_percent": 94.2
+      "utilization_percent": 102.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 233,
-      "free_mb": 6,
-      "cached_mb": 120,
+      "used_mb": 234,
+      "free_mb": 4,
+      "cached_mb": 118,
       "utilization_percent": 11.7
     },
     "disk": {
@@ -48,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769169712,
-    "timestamp_human": "2026-01-23 15:01:52"
+    "timestamp": 1769169805,
+    "timestamp_human": "2026-01-23 15:03:25"
   },
-  "last_log": "2026-01-23 14:59:41 - INFO - [CYCLE 56] Step 7/7: Starting game...\n2026-01-23 14:59:43 - INFO - [CYCLE 56] Checking for loading color at (200, 100)...\n2026-01-23 15:00:07 - INFO - [CYCLE 56] Loading color detected! Color: #A9D917\n2026-01-23 15:00:07 - INFO - [CYCLE 56] Cycle #56 completed successfully - loading color detected\n2026-01-23 15:00:28 - INFO - [CYCLE 56] Connected to ZXTouch\n2026-01-23 15:00:32 - INFO - [CYCLE 57] Starting cycle #57\n2026-01-23 15:00:32 - INFO - [CYCLE 57] Step 1/7: Waiting for main screen...\n2026-01-23 15:00:32 - INFO - [CYCLE 57] Waiting for main screen...\n2026-01-23 15:00:32 - DEBUG - [CYCLE 57] Current: unknown, waiting for main... 0s\n2026-01-23 15:00:32 - DEBUG - [CYCLE 57] Current: unknown, waiting for main... 0s\n2026-01-23 15:00:37 - DEBUG - [CYCLE 57] Current: unknown, waiting for main... 5s\n2026-01-23 15:00:40 - INFO - [CYCLE 57] Found attention popup\n2026-01-23 15:00:42 - INFO - [CYCLE 57] On main screen\n2026-01-23 15:00:42 - INFO - [CYCLE 57] Step 2/7: Transition to arsenal...\n2026-01-23 15:00:42 - INFO - [CYCLE 57] Quick transition: Кнопка Далее\n2026-01-23 15:00:45 - INFO - [CYCLE 57] Step 3/7: Transition to battle...\n2026-01-23 15:00:45 - INFO - [CYCLE 57] Quick transition: Кнопка Битва\n2026-01-23 15:00:47 - INFO - [CYCLE 57] Step 4/7: Transition to team...\n2026-01-23 15:00:49 - INFO - [CYCLE 57] Waiting for team screen...\n2026-01-23 15:00:50 - INFO - [CYCLE 57] Found team screen button\n2026-01-23 15:00:50 - INFO - [CYCLE 57] Step 5/7: Pressing team screen button...\n2026-01-23 15:00:52 - INFO - [CYCLE 57] Step 6/7: Sending invitations...\n2026-01-23 15:00:52 - INFO - [CYCLE 57] Invite #1 sent (0s)\n2026-01-23 15:00:58 - INFO - [CYCLE 57] Invite #2 sent (5s)\n2026-01-23 15:01:04 - INFO - [CYCLE 57] Someone joined the team!\n2026-01-23 15:01:04 - INFO - [CYCLE 57] Step 7/7: Starting game...\n2026-01-23 15:01:06 - INFO - [CYCLE 57] Checking for loading color at (200, 100)...\n2026-01-23 15:01:29 - INFO - [CYCLE 57] Loading color detected! Color: #A9D917\n2026-01-23 15:01:29 - INFO - [CYCLE 57] Cycle #57 completed successfully - loading color detected\n2026-01-23 15:01:50 - INFO - [CYCLE 57] Connected to ZXTouch\n",
-  "update_time": "2026-01-23 15:01:52"
+  "last_log": "2026-01-23 15:01:06 - INFO - [CYCLE 57] Checking for loading color at (200, 100)...\n2026-01-23 15:01:29 - INFO - [CYCLE 57] Loading color detected! Color: #A9D917\n2026-01-23 15:01:29 - INFO - [CYCLE 57] Cycle #57 completed successfully - loading color detected\n2026-01-23 15:01:50 - INFO - [CYCLE 57] Connected to ZXTouch\n2026-01-23 15:01:54 - INFO - [CYCLE 58] Starting cycle #58\n2026-01-23 15:01:54 - INFO - [CYCLE 58] Step 1/7: Waiting for main screen...\n2026-01-23 15:01:54 - INFO - [CYCLE 58] Waiting for main screen...\n2026-01-23 15:01:54 - DEBUG - [CYCLE 58] Current: unknown, waiting for main... 0s\n2026-01-23 15:02:00 - DEBUG - [CYCLE 58] Current: unknown, waiting for main... 5s\n2026-01-23 15:02:04 - INFO - [CYCLE 58] On main screen\n2026-01-23 15:02:04 - INFO - [CYCLE 58] Step 2/7: Transition to arsenal...\n2026-01-23 15:02:04 - INFO - [CYCLE 58] Quick transition: Кнопка Далее\n2026-01-23 15:02:07 - INFO - [CYCLE 58] Found attention popup\n2026-01-23 15:02:08 - WARNING - [CYCLE 58] Still on main, trying again\n2026-01-23 15:02:10 - INFO - [CYCLE 58] Step 3/7: Transition to battle...\n2026-01-23 15:02:10 - INFO - [CYCLE 58] Quick transition: Кнопка Битва\n2026-01-23 15:02:13 - INFO - [CYCLE 58] Step 4/7: Transition to team...\n2026-01-23 15:02:15 - INFO - [CYCLE 58] Waiting for team screen...\n2026-01-23 15:02:16 - INFO - [CYCLE 58] Found team screen button\n2026-01-23 15:02:16 - INFO - [CYCLE 58] Step 5/7: Pressing team screen button...\n2026-01-23 15:02:17 - INFO - [CYCLE 58] Step 6/7: Sending invitations...\n2026-01-23 15:02:18 - INFO - [CYCLE 58] Invite #1 sent (0s)\n2026-01-23 15:02:23 - INFO - [CYCLE 58] Invite #2 sent (5s)\n2026-01-23 15:02:29 - INFO - [CYCLE 58] Invite #3 sent (11s)\n2026-01-23 15:02:35 - INFO - [CYCLE 58] Someone joined the team!\n2026-01-23 15:02:35 - INFO - [CYCLE 58] Step 7/7: Starting game...\n2026-01-23 15:02:37 - INFO - [CYCLE 58] Checking for loading color at (200, 100)...\n2026-01-23 15:03:02 - INFO - [CYCLE 58] Loading color detected! Color: #A9D917\n2026-01-23 15:03:02 - INFO - [CYCLE 58] Cycle #58 completed successfully - loading color detected\n2026-01-23 15:03:23 - INFO - [CYCLE 58] Connected to ZXTouch\n",
+  "update_time": "2026-01-23 15:03:25"
 }
