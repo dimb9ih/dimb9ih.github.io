@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769280866,
-  "timestamp_human": "2026-01-24 21:54:26",
-  "cycle_count": 261,
+  "timestamp": 1769281120,
+  "timestamp_human": "2026-01-24 21:58:40",
+  "cycle_count": 262,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.23",
-      "load_5": "3.86",
-      "load_15": "3.20",
+      "load_1": "2.64",
+      "load_5": "3.02",
+      "load_15": "2.99",
       "cores": 4,
-      "utilization_percent": 80.8
+      "utilization_percent": 66.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 237,
-      "free_mb": 5,
-      "cached_mb": 97,
-      "utilization_percent": 11.8
+      "used_mb": 240,
+      "free_mb": 4,
+      "cached_mb": 133,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769280866,
-    "timestamp_human": "2026-01-24 21:54:26"
+    "timestamp": 1769281120,
+    "timestamp_human": "2026-01-24 21:58:40"
   },
-  "last_log": "2026-01-24 21:52:25 - DEBUG - [CYCLE 260] Current: loading, waiting for main... 0s\n2026-01-24 21:52:26 - DEBUG - [CYCLE 260] Current: loading, waiting for main... 0s\n2026-01-24 21:52:30 - DEBUG - [CYCLE 260] Current: loading, waiting for main... 5s\n2026-01-24 21:52:36 - DEBUG - [CYCLE 260] Current: loading, waiting for main... 10s\n2026-01-24 21:52:37 - INFO - [CYCLE 260] On main screen\n2026-01-24 21:52:37 - INFO - [CYCLE 260] Step 2/7: Transition to arsenal...\n2026-01-24 21:52:37 - INFO - [CYCLE 260] Quick transition: Кнопка Далее\n2026-01-24 21:52:40 - INFO - [CYCLE 260] Step 3/7: Transition to battle...\n2026-01-24 21:52:40 - INFO - [CYCLE 260] Quick transition: Кнопка Битва\n2026-01-24 21:52:42 - INFO - [CYCLE 260] Found attention popup\n2026-01-24 21:52:44 - INFO - [CYCLE 260] Step 4/7: Transition to team...\n2026-01-24 21:52:46 - INFO - [CYCLE 260] Waiting for team screen...\n2026-01-24 21:52:47 - INFO - [CYCLE 260] Found team screen button\n2026-01-24 21:52:47 - INFO - [CYCLE 260] Step 5/7: Pressing team screen button...\n2026-01-24 21:52:49 - INFO - [CYCLE 260] Step 6/7: Sending invitations...\n2026-01-24 21:52:49 - INFO - [CYCLE 260] Invite #1 sent (0s)\n2026-01-24 21:52:55 - INFO - [CYCLE 260] Invite #2 sent (5s)\n2026-01-24 21:53:01 - INFO - [CYCLE 260] Invite #3 sent (11s)\n2026-01-24 21:53:06 - INFO - [CYCLE 260] Invite #4 sent (17s)\n2026-01-24 21:53:12 - INFO - [CYCLE 260] Invite #5 sent (23s)\n2026-01-24 21:53:18 - DEBUG - [CYCLE 260] Checking for attention popup (invite #5)\n2026-01-24 21:53:18 - INFO - [CYCLE 260] Invite #6 sent (29s)\n2026-01-24 21:53:24 - INFO - [CYCLE 260] Invite #7 sent (35s)\n2026-01-24 21:53:30 - INFO - [CYCLE 260] Invite #8 sent (41s)\n2026-01-24 21:53:36 - INFO - [CYCLE 260] Someone joined the team!\n2026-01-24 21:53:36 - INFO - [CYCLE 260] Step 7/7: Starting game...\n2026-01-24 21:53:38 - INFO - [CYCLE 260] Checking for loading color at (200, 100)...\n2026-01-24 21:54:03 - INFO - [CYCLE 260] Loading color detected! Color: #A9D917\n2026-01-24 21:54:03 - INFO - [CYCLE 260] Cycle #260 completed successfully - loading color detected\n2026-01-24 21:54:24 - INFO - [CYCLE 260] Connected to ZXTouch\n",
-  "update_time": "2026-01-24 21:54:26"
+  "last_log": "2026-01-24 21:55:53 - INFO - [CYCLE 261] Invite #10 sent (53s)\n2026-01-24 21:55:58 - DEBUG - [CYCLE 261] Checking for attention popup (invite #10)\n2026-01-24 21:55:59 - INFO - [CYCLE 261] Invite #11 sent (59s)\n2026-01-24 21:56:04 - INFO - [CYCLE 261] Invite #12 sent (65s)\n2026-01-24 21:56:10 - INFO - [CYCLE 261] Invite #13 sent (71s)\n2026-01-24 21:56:16 - INFO - [CYCLE 261] Invite #14 sent (77s)\n2026-01-24 21:56:22 - INFO - [CYCLE 261] Invite #15 sent (83s)\n2026-01-24 21:56:28 - DEBUG - [CYCLE 261] Checking for attention popup (invite #15)\n2026-01-24 21:56:28 - INFO - [CYCLE 261] Invite #16 sent (89s)\n2026-01-24 21:56:34 - INFO - [CYCLE 261] Invite #17 sent (94s)\n2026-01-24 21:56:40 - INFO - [CYCLE 261] Invite #18 sent (100s)\n2026-01-24 21:56:46 - INFO - [CYCLE 261] Invite #19 sent (106s)\n2026-01-24 21:56:52 - INFO - [CYCLE 261] Invite #20 sent (112s)\n2026-01-24 21:56:58 - DEBUG - [CYCLE 261] Checking for attention popup (invite #20)\n2026-01-24 21:56:58 - INFO - [CYCLE 261] Invite #21 sent (118s)\n2026-01-24 21:57:04 - INFO - [CYCLE 261] Invite #22 sent (124s)\n2026-01-24 21:57:10 - INFO - [CYCLE 261] Invite #23 sent (130s)\n2026-01-24 21:57:16 - INFO - [CYCLE 261] Invite #24 sent (136s)\n2026-01-24 21:57:22 - INFO - [CYCLE 261] Invite #25 sent (142s)\n2026-01-24 21:57:27 - DEBUG - [CYCLE 261] Checking for attention popup (invite #25)\n2026-01-24 21:57:28 - INFO - [CYCLE 261] Invite #26 sent (148s)\n2026-01-24 21:57:33 - INFO - [CYCLE 261] Invite #27 sent (154s)\n2026-01-24 21:57:39 - INFO - [CYCLE 261] Invite #28 sent (160s)\n2026-01-24 21:57:45 - INFO - [CYCLE 261] Invite #29 sent (166s)\n2026-01-24 21:57:51 - INFO - [CYCLE 261] Someone joined the team!\n2026-01-24 21:57:51 - INFO - [CYCLE 261] Step 7/7: Starting game...\n2026-01-24 21:57:53 - INFO - [CYCLE 261] Checking for loading color at (200, 100)...\n2026-01-24 21:58:17 - INFO - [CYCLE 261] Loading color detected! Color: #A9D917\n2026-01-24 21:58:17 - INFO - [CYCLE 261] Cycle #261 completed successfully - loading color detected\n2026-01-24 21:58:38 - INFO - [CYCLE 261] Connected to ZXTouch\n",
+  "update_time": "2026-01-24 21:58:40"
 }
