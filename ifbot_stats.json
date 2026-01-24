@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769254654,
-  "timestamp_human": "2026-01-24 14:37:34",
-  "cycle_count": 170,
+  "timestamp": 1769254888,
+  "timestamp_human": "2026-01-24 14:41:28",
+  "cycle_count": 171,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 1ч назад",
   "error_stats": {
@@ -31,17 +31,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "4.34",
-      "load_5": "3.48",
-      "load_15": "3.07",
+      "load_1": "1.39",
+      "load_5": "2.85",
+      "load_15": "2.94",
       "cores": 4,
-      "utilization_percent": 108.5
+      "utilization_percent": 34.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 236,
-      "free_mb": 5,
-      "cached_mb": 107,
+      "used_mb": 237,
+      "free_mb": 6,
+      "cached_mb": 117,
       "utilization_percent": 11.8
     },
     "disk": {
@@ -51,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769254654,
-    "timestamp_human": "2026-01-24 14:37:34"
+    "timestamp": 1769254888,
+    "timestamp_human": "2026-01-24 14:41:28"
   },
-  "last_log": "2026-01-24 14:35:40 - INFO - [CYCLE 169] Quick transition: Кнопка Далее\n2026-01-24 14:35:43 - INFO - [CYCLE 169] Found attention popup\n2026-01-24 14:35:44 - INFO - [CYCLE 169] Step 3/7: Transition to battle...\n2026-01-24 14:35:44 - INFO - [CYCLE 169] Quick transition: Кнопка Битва\n2026-01-24 14:35:47 - INFO - [CYCLE 169] Step 4/7: Transition to team...\n2026-01-24 14:35:49 - INFO - [CYCLE 169] Waiting for team screen...\n2026-01-24 14:35:50 - INFO - [CYCLE 169] Found team screen button\n2026-01-24 14:35:50 - INFO - [CYCLE 169] Step 5/7: Pressing team screen button...\n2026-01-24 14:35:52 - INFO - [CYCLE 169] Step 6/7: Sending invitations...\n2026-01-24 14:35:52 - INFO - [CYCLE 169] Invite #1 sent (0s)\n2026-01-24 14:35:58 - INFO - [CYCLE 169] Invite #2 sent (5s)\n2026-01-24 14:36:03 - INFO - [CYCLE 169] Invite #3 sent (11s)\n2026-01-24 14:36:09 - INFO - [CYCLE 169] Invite #4 sent (17s)\n2026-01-24 14:36:15 - INFO - [CYCLE 169] Invite #5 sent (23s)\n2026-01-24 14:36:21 - DEBUG - [CYCLE 169] Checking for attention popup (invite #5)\n2026-01-24 14:36:21 - INFO - [CYCLE 169] Invite #6 sent (29s)\n2026-01-24 14:36:27 - INFO - [CYCLE 169] Invite #7 sent (35s)\n2026-01-24 14:36:33 - INFO - [CYCLE 169] Invite #8 sent (41s)\n2026-01-24 14:36:39 - INFO - [CYCLE 169] Invite #9 sent (47s)\n2026-01-24 14:36:45 - INFO - [CYCLE 169] Invite #10 sent (53s)\n2026-01-24 14:36:51 - DEBUG - [CYCLE 169] Checking for attention popup (invite #10)\n2026-01-24 14:36:51 - INFO - [CYCLE 169] Invite #11 sent (59s)\n2026-01-24 14:36:57 - INFO - [CYCLE 169] Invite #12 sent (65s)\n2026-01-24 14:37:03 - INFO - [CYCLE 169] Invite #13 sent (71s)\n2026-01-24 14:37:09 - INFO - [CYCLE 169] Someone joined the team!\n2026-01-24 14:37:09 - INFO - [CYCLE 169] Step 7/7: Starting game...\n2026-01-24 14:37:10 - INFO - [CYCLE 169] Checking for loading color at (200, 100)...\n2026-01-24 14:37:11 - INFO - [CYCLE 169] Loading color detected! Color: #A9D917\n2026-01-24 14:37:11 - INFO - [CYCLE 169] Cycle #169 completed successfully - loading color detected\n2026-01-24 14:37:32 - INFO - [CYCLE 169] Connected to ZXTouch\n",
-  "update_time": "2026-01-24 14:37:34"
+  "last_log": "2026-01-24 14:38:59 - INFO - [CYCLE 170] Invite #8 sent (41s)\n2026-01-24 14:39:05 - INFO - [CYCLE 170] Invite #9 sent (47s)\n2026-01-24 14:39:11 - INFO - [CYCLE 170] Invite #10 sent (53s)\n2026-01-24 14:39:17 - DEBUG - [CYCLE 170] Checking for attention popup (invite #10)\n2026-01-24 14:39:17 - INFO - [CYCLE 170] Invite #11 sent (59s)\n2026-01-24 14:39:23 - INFO - [CYCLE 170] Invite #12 sent (65s)\n2026-01-24 14:39:29 - INFO - [CYCLE 170] Invite #13 sent (71s)\n2026-01-24 14:39:35 - INFO - [CYCLE 170] Invite #14 sent (77s)\n2026-01-24 14:39:41 - INFO - [CYCLE 170] Invite #15 sent (83s)\n2026-01-24 14:39:47 - DEBUG - [CYCLE 170] Checking for attention popup (invite #15)\n2026-01-24 14:39:47 - INFO - [CYCLE 170] Invite #16 sent (89s)\n2026-01-24 14:39:53 - INFO - [CYCLE 170] Invite #17 sent (95s)\n2026-01-24 14:39:58 - INFO - [CYCLE 170] Invite #18 sent (101s)\n2026-01-24 14:40:04 - INFO - [CYCLE 170] Invite #19 sent (107s)\n2026-01-24 14:40:10 - INFO - [CYCLE 170] Invite #20 sent (113s)\n2026-01-24 14:40:16 - DEBUG - [CYCLE 170] Checking for attention popup (invite #20)\n2026-01-24 14:40:16 - INFO - [CYCLE 170] Invite #21 sent (118s)\n2026-01-24 14:40:22 - INFO - [CYCLE 170] Invite #22 sent (124s)\n2026-01-24 14:40:28 - INFO - [CYCLE 170] Invite #23 sent (130s)\n2026-01-24 14:40:34 - INFO - [CYCLE 170] Invite #24 sent (136s)\n2026-01-24 14:40:40 - INFO - [CYCLE 170] Invite #25 sent (142s)\n2026-01-24 14:40:46 - DEBUG - [CYCLE 170] Checking for attention popup (invite #25)\n2026-01-24 14:40:46 - INFO - [CYCLE 170] Invite #26 sent (148s)\n2026-01-24 14:40:52 - INFO - [CYCLE 170] Invite #27 sent (154s)\n2026-01-24 14:40:58 - INFO - [CYCLE 170] Someone joined the team!\n2026-01-24 14:40:58 - INFO - [CYCLE 170] Step 7/7: Starting game...\n2026-01-24 14:41:00 - INFO - [CYCLE 170] Checking for loading color at (200, 100)...\n2026-01-24 14:41:05 - INFO - [CYCLE 170] Loading color detected! Color: #A9D917\n2026-01-24 14:41:05 - INFO - [CYCLE 170] Cycle #170 completed successfully - loading color detected\n2026-01-24 14:41:26 - INFO - [CYCLE 170] Connected to ZXTouch\n",
+  "update_time": "2026-01-24 14:41:28"
 }
