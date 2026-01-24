@@ -1,17 +1,20 @@
 {
-  "timestamp": 1769274965,
-  "timestamp_human": "2026-01-24 20:16:05",
-  "cycle_count": 240,
+  "timestamp": 1769275090,
+  "timestamp_human": "2026-01-24 20:18:10",
+  "cycle_count": 241,
   "bot_status": "running",
-  "error_summary": "✅ Ошибок нет",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 0,
-    "warnings": 0,
-    "errors": 0,
+    "total_errors": 2,
+    "warnings": 1,
+    "errors": 1,
     "critical": 0,
-    "recent_errors": [],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "recent_errors": [
+      "2026-01-24 20:17:47 - WARNING - [CYCLE 240] Failed to reach main screen",
+      "2026-01-24 20:17:47 - ERROR - [CYCLE 240] Main screen not found"
+    ],
+    "last_error_time": 1769275067,
+    "error_timestamp_human": "2026-01-24 20:17:47"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "5.67",
-      "load_5": "3.60",
-      "load_15": "3.09",
+      "load_1": "4.06",
+      "load_5": "3.90",
+      "load_15": "3.30",
       "cores": 4,
-      "utilization_percent": 141.8
+      "utilization_percent": 101.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 14,
-      "cached_mb": 102,
-      "utilization_percent": 11.7
+      "used_mb": 231,
+      "free_mb": 17,
+      "cached_mb": 111,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769274965,
-    "timestamp_human": "2026-01-24 20:16:05"
+    "timestamp": 1769275090,
+    "timestamp_human": "2026-01-24 20:18:10"
   },
-  "last_log": "2026-01-24 20:13:50 - INFO - [CYCLE 238] Step 7/7: Starting game...\n2026-01-24 20:13:51 - INFO - [CYCLE 238] Checking for loading color at (200, 100)...\n2026-01-24 20:14:16 - INFO - [CYCLE 238] Loading color detected! Color: #A9D917\n2026-01-24 20:14:16 - INFO - [CYCLE 238] Cycle #238 completed successfully - loading color detected\n2026-01-24 20:14:37 - INFO - [CYCLE 238] Connected to ZXTouch\n2026-01-24 20:14:51 - INFO - [CYCLE 239] Starting cycle #239\n2026-01-24 20:14:51 - INFO - [CYCLE 239] Step 1/7: Waiting for main screen...\n2026-01-24 20:14:51 - INFO - [CYCLE 239] Waiting for main screen...\n2026-01-24 20:14:51 - DEBUG - [CYCLE 239] Current: unknown, waiting for main... 0s\n2026-01-24 20:14:52 - DEBUG - [CYCLE 239] Current: loading, waiting for main... 0s\n2026-01-24 20:14:56 - DEBUG - [CYCLE 239] Current: loading, waiting for main... 5s\n2026-01-24 20:14:57 - DEBUG - [CYCLE 239] Current: loading, waiting for main... 5s\n2026-01-24 20:14:58 - INFO - [CYCLE 239] On main screen\n2026-01-24 20:14:58 - INFO - [CYCLE 239] Step 2/7: Transition to arsenal...\n2026-01-24 20:14:58 - INFO - [CYCLE 239] Quick transition: Кнопка Далее\n2026-01-24 20:15:01 - INFO - [CYCLE 239] Step 3/7: Transition to battle...\n2026-01-24 20:15:01 - INFO - [CYCLE 239] Quick transition: Кнопка Битва\n2026-01-24 20:15:03 - INFO - [CYCLE 239] Step 4/7: Transition to team...\n2026-01-24 20:15:06 - INFO - [CYCLE 239] Waiting for team screen...\n2026-01-24 20:15:07 - INFO - [CYCLE 239] Found team screen button\n2026-01-24 20:15:07 - INFO - [CYCLE 239] Step 5/7: Pressing team screen button...\n2026-01-24 20:15:08 - INFO - [CYCLE 239] Step 6/7: Sending invitations...\n2026-01-24 20:15:08 - INFO - [CYCLE 239] Invite #1 sent (0s)\n2026-01-24 20:15:14 - INFO - [CYCLE 239] Found attention popup\n2026-01-24 20:15:15 - INFO - [CYCLE 239] Someone joined the team!\n2026-01-24 20:15:15 - INFO - [CYCLE 239] Step 7/7: Starting game...\n2026-01-24 20:15:17 - INFO - [CYCLE 239] Checking for loading color at (200, 100)...\n2026-01-24 20:15:42 - INFO - [CYCLE 239] Loading color detected! Color: #A9D917\n2026-01-24 20:15:42 - INFO - [CYCLE 239] Cycle #239 completed successfully - loading color detected\n2026-01-24 20:16:03 - INFO - [CYCLE 239] Connected to ZXTouch\n",
-  "update_time": "2026-01-24 20:16:05"
+  "last_log": "2026-01-24 20:16:17 - INFO - [CYCLE 240] Starting cycle #240\n2026-01-24 20:16:17 - INFO - [CYCLE 240] Step 1/7: Waiting for main screen...\n2026-01-24 20:16:17 - INFO - [CYCLE 240] Waiting for main screen...\n2026-01-24 20:16:17 - DEBUG - [CYCLE 240] Current: unknown, waiting for main... 0s\n2026-01-24 20:16:18 - DEBUG - [CYCLE 240] Current: unknown, waiting for main... 0s\n2026-01-24 20:16:22 - DEBUG - [CYCLE 240] Current: unknown, waiting for main... 5s\n2026-01-24 20:16:27 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 10s\n2026-01-24 20:16:32 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 15s\n2026-01-24 20:16:37 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 20s\n2026-01-24 20:16:38 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 20s\n2026-01-24 20:16:42 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 25s\n2026-01-24 20:16:48 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 30s\n2026-01-24 20:16:52 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 35s\n2026-01-24 20:16:53 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 35s\n2026-01-24 20:16:57 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 40s\n2026-01-24 20:17:02 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 45s\n2026-01-24 20:17:03 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 45s\n2026-01-24 20:17:07 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 50s\n2026-01-24 20:17:13 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 55s\n2026-01-24 20:17:17 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 60s\n2026-01-24 20:17:22 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 65s\n2026-01-24 20:17:23 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 65s\n2026-01-24 20:17:27 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 70s\n2026-01-24 20:17:32 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 75s\n2026-01-24 20:17:33 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 75s\n2026-01-24 20:17:37 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 80s\n2026-01-24 20:17:42 - DEBUG - [CYCLE 240] Current: loading, waiting for main... 85s\n2026-01-24 20:17:47 - WARNING - [CYCLE 240] Failed to reach main screen\n2026-01-24 20:17:47 - ERROR - [CYCLE 240] Main screen not found\n2026-01-24 20:18:08 - INFO - [CYCLE 240] Connected to ZXTouch\n",
+  "update_time": "2026-01-24 20:18:10"
 }
