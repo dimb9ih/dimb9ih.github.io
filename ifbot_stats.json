@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769246515,
-  "timestamp_human": "2026-01-24 12:21:55",
-  "cycle_count": 145,
+  "timestamp": 1769247011,
+  "timestamp_human": "2026-01-24 12:30:11",
+  "cycle_count": 146,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 2, ошибок: 2), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 2, ошибок: 2), последняя: 8м назад",
   "error_stats": {
     "total_errors": 4,
     "warnings": 2,
@@ -33,29 +33,29 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "5.04",
-      "load_5": "3.95",
-      "load_15": "3.40",
+      "load_1": "4.02",
+      "load_5": "3.99",
+      "load_15": "3.68",
       "cores": 4,
-      "utilization_percent": 126.0
+      "utilization_percent": 100.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
+      "used_mb": 235,
       "free_mb": 4,
-      "cached_mb": 121,
-      "utilization_percent": 11.9
+      "cached_mb": 129,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
       "used": "7.0Gi",
-      "available": "9.0Gi",
+      "available": "9.1Gi",
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769246515,
-    "timestamp_human": "2026-01-24 12:21:55"
+    "timestamp": 1769247011,
+    "timestamp_human": "2026-01-24 12:30:11"
   },
-  "last_log": "2026-01-24 12:20:01 - INFO - [CYCLE 144] Waiting for main screen...\n2026-01-24 12:20:01 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 0s\n2026-01-24 12:20:02 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 0s\n2026-01-24 12:20:07 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 5s\n2026-01-24 12:20:11 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 10s\n2026-01-24 12:20:16 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 15s\n2026-01-24 12:20:17 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 15s\n2026-01-24 12:20:21 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 20s\n2026-01-24 12:20:26 - DEBUG - [CYCLE 144] Current: unknown, waiting for main... 25s\n2026-01-24 12:20:31 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 30s\n2026-01-24 12:20:32 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 30s\n2026-01-24 12:20:36 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 35s\n2026-01-24 12:20:37 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 35s\n2026-01-24 12:20:41 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 40s\n2026-01-24 12:20:42 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 40s\n2026-01-24 12:20:46 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 45s\n2026-01-24 12:20:47 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 45s\n2026-01-24 12:20:51 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 50s\n2026-01-24 12:20:56 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 55s\n2026-01-24 12:20:57 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 55s\n2026-01-24 12:21:01 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 60s\n2026-01-24 12:21:06 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 65s\n2026-01-24 12:21:10 - INFO - [CYCLE 144] Found ВНИМАНИЕ popup\n2026-01-24 12:21:17 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 75s\n2026-01-24 12:21:21 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 80s\n2026-01-24 12:21:27 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 85s\n2026-01-24 12:21:31 - DEBUG - [CYCLE 144] Current: loading, waiting for main... 90s\n2026-01-24 12:21:32 - WARNING - [CYCLE 144] Failed to reach main screen\n2026-01-24 12:21:32 - ERROR - [CYCLE 144] Main screen not found\n2026-01-24 12:21:52 - INFO - [CYCLE 144] Connected to ZXTouch\n",
-  "update_time": "2026-01-24 12:21:55"
+  "last_log": "2026-01-24 12:26:32 - DEBUG - [CYCLE 145] Checking for attention popup (invite #30)\n2026-01-24 12:26:32 - INFO - [CYCLE 145] Invite #31 sent (178s)\n2026-01-24 12:26:38 - INFO - [CYCLE 145] Invite #32 sent (184s)\n2026-01-24 12:26:44 - INFO - [CYCLE 145] Invite #33 sent (190s)\n2026-01-24 12:26:50 - INFO - [CYCLE 145] Invite #34 sent (196s)\n2026-01-24 12:26:56 - INFO - [CYCLE 145] Invite #35 sent (202s)\n2026-01-24 12:27:02 - DEBUG - [CYCLE 145] Checking for attention popup (invite #35)\n2026-01-24 12:27:02 - INFO - [CYCLE 145] Invite #36 sent (208s)\n2026-01-24 12:27:08 - INFO - [CYCLE 145] Invite #37 sent (214s)\n2026-01-24 12:27:14 - INFO - [CYCLE 145] Invite #38 sent (220s)\n2026-01-24 12:27:20 - INFO - [CYCLE 145] Invite #39 sent (226s)\n2026-01-24 12:27:26 - INFO - [CYCLE 145] Invite #40 sent (232s)\n2026-01-24 12:27:32 - DEBUG - [CYCLE 145] Checking for attention popup (invite #40)\n2026-01-24 12:27:32 - INFO - [CYCLE 145] Invite #41 sent (237s)\n2026-01-24 12:27:38 - INFO - [CYCLE 145] Invite #42 sent (243s)\n2026-01-24 12:27:44 - INFO - [CYCLE 145] Invite #43 sent (249s)\n2026-01-24 12:27:49 - INFO - [CYCLE 145] Invite #44 sent (255s)\n2026-01-24 12:27:55 - INFO - [CYCLE 145] Invite #45 sent (261s)\n2026-01-24 12:28:01 - DEBUG - [CYCLE 145] Checking for attention popup (invite #45)\n2026-01-24 12:28:01 - INFO - [CYCLE 145] Invite #46 sent (267s)\n2026-01-24 12:28:07 - INFO - [CYCLE 145] Invite #47 sent (273s)\n2026-01-24 12:28:13 - INFO - [CYCLE 145] Invite #48 sent (279s)\n2026-01-24 12:28:19 - INFO - [CYCLE 145] Invite #49 sent (285s)\n2026-01-24 12:28:25 - INFO - [CYCLE 145] Invite #50 sent (291s)\n2026-01-24 12:28:31 - DEBUG - [CYCLE 145] Checking for attention popup (invite #50)\n2026-01-24 12:28:31 - INFO - [CYCLE 145] Invite #51 sent (297s)\n2026-01-24 12:28:37 - INFO - [CYCLE 145] Step 7/7: Starting game...\n2026-01-24 12:28:39 - INFO - [CYCLE 145] Checking for loading color at (200, 100)...\n2026-01-24 12:29:48 - INFO - [CYCLE 145] Cycle #145 completed - no loading color detected (normal)\n2026-01-24 12:30:09 - INFO - [CYCLE 145] Connected to ZXTouch\n",
+  "update_time": "2026-01-24 12:30:11"
 }
