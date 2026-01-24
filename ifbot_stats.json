@@ -1,17 +1,19 @@
 {
-  "timestamp": 1769250503,
-  "timestamp_human": "2026-01-24 13:28:23",
-  "cycle_count": 154,
+  "timestamp": 1769250594,
+  "timestamp_human": "2026-01-24 13:29:54",
+  "cycle_count": 155,
   "bot_status": "running",
-  "error_summary": "✅ Ошибок нет",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 0,
-    "warnings": 0,
+    "total_errors": 1,
+    "warnings": 1,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "recent_errors": [
+      "2026-01-24 13:28:47 - WARNING - [CYCLE 154] Still on main, trying again"
+    ],
+    "last_error_time": 1769250527,
+    "error_timestamp_human": "2026-01-24 13:28:47"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.54",
-      "load_5": "2.75",
-      "load_15": "2.77",
+      "load_1": "7.77",
+      "load_5": "4.39",
+      "load_15": "3.39",
       "cores": 4,
-      "utilization_percent": 63.5
+      "utilization_percent": 194.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
-      "free_mb": 4,
-      "cached_mb": 117,
-      "utilization_percent": 11.9
+      "used_mb": 235,
+      "free_mb": 5,
+      "cached_mb": 105,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769250503,
-    "timestamp_human": "2026-01-24 13:28:23"
+    "timestamp": 1769250594,
+    "timestamp_human": "2026-01-24 13:29:54"
   },
-  "last_log": "2026-01-24 13:24:45 - DEBUG - [CYCLE 153] Checking for attention popup (invite #30)\n2026-01-24 13:24:45 - INFO - [CYCLE 153] Invite #31 sent (178s)\n2026-01-24 13:24:51 - INFO - [CYCLE 153] Invite #32 sent (183s)\n2026-01-24 13:24:57 - INFO - [CYCLE 153] Invite #33 sent (189s)\n2026-01-24 13:25:03 - INFO - [CYCLE 153] Invite #34 sent (195s)\n2026-01-24 13:25:09 - INFO - [CYCLE 153] Invite #35 sent (201s)\n2026-01-24 13:25:15 - DEBUG - [CYCLE 153] Checking for attention popup (invite #35)\n2026-01-24 13:25:15 - INFO - [CYCLE 153] Invite #36 sent (207s)\n2026-01-24 13:25:21 - INFO - [CYCLE 153] Invite #37 sent (213s)\n2026-01-24 13:25:27 - INFO - [CYCLE 153] Invite #38 sent (219s)\n2026-01-24 13:25:33 - INFO - [CYCLE 153] Invite #39 sent (225s)\n2026-01-24 13:25:39 - INFO - [CYCLE 153] Invite #40 sent (231s)\n2026-01-24 13:25:45 - DEBUG - [CYCLE 153] Checking for attention popup (invite #40)\n2026-01-24 13:25:45 - INFO - [CYCLE 153] Invite #41 sent (237s)\n2026-01-24 13:25:51 - INFO - [CYCLE 153] Invite #42 sent (243s)\n2026-01-24 13:25:57 - INFO - [CYCLE 153] Invite #43 sent (249s)\n2026-01-24 13:26:03 - INFO - [CYCLE 153] Invite #44 sent (255s)\n2026-01-24 13:26:09 - INFO - [CYCLE 153] Invite #45 sent (261s)\n2026-01-24 13:26:14 - DEBUG - [CYCLE 153] Checking for attention popup (invite #45)\n2026-01-24 13:26:14 - INFO - [CYCLE 153] Invite #46 sent (267s)\n2026-01-24 13:26:20 - INFO - [CYCLE 153] Invite #47 sent (273s)\n2026-01-24 13:26:26 - INFO - [CYCLE 153] Invite #48 sent (279s)\n2026-01-24 13:26:32 - INFO - [CYCLE 153] Invite #49 sent (285s)\n2026-01-24 13:26:38 - INFO - [CYCLE 153] Invite #50 sent (290s)\n2026-01-24 13:26:44 - DEBUG - [CYCLE 153] Checking for attention popup (invite #50)\n2026-01-24 13:26:44 - INFO - [CYCLE 153] Invite #51 sent (296s)\n2026-01-24 13:26:50 - INFO - [CYCLE 153] Step 7/7: Starting game...\n2026-01-24 13:26:52 - INFO - [CYCLE 153] Checking for loading color at (200, 100)...\n2026-01-24 13:28:00 - INFO - [CYCLE 153] Cycle #153 completed - no loading color detected (normal)\n2026-01-24 13:28:21 - INFO - [CYCLE 153] Connected to ZXTouch\n",
-  "update_time": "2026-01-24 13:28:23"
+  "last_log": "2026-01-24 13:26:44 - INFO - [CYCLE 153] Invite #51 sent (296s)\n2026-01-24 13:26:50 - INFO - [CYCLE 153] Step 7/7: Starting game...\n2026-01-24 13:26:52 - INFO - [CYCLE 153] Checking for loading color at (200, 100)...\n2026-01-24 13:28:00 - INFO - [CYCLE 153] Cycle #153 completed - no loading color detected (normal)\n2026-01-24 13:28:21 - INFO - [CYCLE 153] Connected to ZXTouch\n2026-01-24 13:28:34 - INFO - [CYCLE 154] Starting cycle #154\n2026-01-24 13:28:34 - INFO - [CYCLE 154] Step 1/7: Waiting for main screen...\n2026-01-24 13:28:34 - INFO - [CYCLE 154] Waiting for main screen...\n2026-01-24 13:28:35 - DEBUG - [CYCLE 154] Current: unknown, waiting for main... 0s\n2026-01-24 13:28:40 - DEBUG - [CYCLE 154] Current: loading, waiting for main... 5s\n2026-01-24 13:28:40 - DEBUG - [CYCLE 154] Current: loading, waiting for main... 5s\n2026-01-24 13:28:44 - INFO - [CYCLE 154] On main screen\n2026-01-24 13:28:44 - INFO - [CYCLE 154] Step 2/7: Transition to arsenal...\n2026-01-24 13:28:44 - INFO - [CYCLE 154] Quick transition: Кнопка Далее\n2026-01-24 13:28:47 - WARNING - [CYCLE 154] Still on main, trying again\n2026-01-24 13:28:49 - INFO - [CYCLE 154] Step 3/7: Transition to battle...\n2026-01-24 13:28:49 - INFO - [CYCLE 154] Quick transition: Кнопка Битва\n2026-01-24 13:28:49 - INFO - [CYCLE 154] Found attention popup\n2026-01-24 13:28:53 - INFO - [CYCLE 154] Step 4/7: Transition to team...\n2026-01-24 13:28:55 - INFO - [CYCLE 154] Waiting for team screen...\n2026-01-24 13:28:56 - INFO - [CYCLE 154] Found team screen button\n2026-01-24 13:28:56 - INFO - [CYCLE 154] Step 5/7: Pressing team screen button...\n2026-01-24 13:28:58 - INFO - [CYCLE 154] Step 6/7: Sending invitations...\n2026-01-24 13:28:58 - INFO - [CYCLE 154] Invite #1 sent (0s)\n2026-01-24 13:29:04 - INFO - [CYCLE 154] Someone joined the team!\n2026-01-24 13:29:04 - INFO - [CYCLE 154] Step 7/7: Starting game...\n2026-01-24 13:29:06 - INFO - [CYCLE 154] Checking for loading color at (200, 100)...\n2026-01-24 13:29:31 - INFO - [CYCLE 154] Loading color detected! Color: #A9D917\n2026-01-24 13:29:31 - INFO - [CYCLE 154] Cycle #154 completed successfully - loading color detected\n2026-01-24 13:29:52 - INFO - [CYCLE 154] Connected to ZXTouch\n",
+  "update_time": "2026-01-24 13:29:54"
 }
