@@ -1,0 +1,56 @@
+{
+  "timestamp": 1769257415,
+  "timestamp_human": "2026-01-24 15:23:35",
+  "cycle_count": 178,
+  "bot_status": "running",
+  "error_summary": "✅ Ошибок нет",
+  "error_stats": {
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [],
+    "last_error_time": 1769250896,
+    "error_timestamp_human": "2026-01-24 13:34:56"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "4.20",
+      "load_5": "3.24",
+      "load_15": "2.82",
+      "cores": 4,
+      "utilization_percent": 105.0
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 235,
+      "free_mb": 6,
+      "cached_mb": 108,
+      "utilization_percent": 11.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.0Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769257415,
+    "timestamp_human": "2026-01-24 15:23:35"
+  },
+  "last_log": "2026-01-24 15:21:06 - INFO - [CYCLE 176] Invite #25 sent (142s)\n2026-01-24 15:21:12 - DEBUG - [CYCLE 176] Checking for attention popup (invite #25)\n2026-01-24 15:21:12 - INFO - [CYCLE 176] Invite #26 sent (148s)\n2026-01-24 15:21:18 - INFO - [CYCLE 176] Someone joined the team!\n2026-01-24 15:21:18 - INFO - [CYCLE 176] Step 7/7: Starting game...\n2026-01-24 15:21:19 - INFO - [CYCLE 176] Checking for loading color at (200, 100)...\n2026-01-24 15:21:34 - INFO - [CYCLE 176] Loading color detected! Color: #A9D917\n2026-01-24 15:21:34 - INFO - [CYCLE 176] Cycle #176 completed successfully - loading color detected\n2026-01-24 15:21:55 - INFO - [CYCLE 176] Connected to ZXTouch\n2026-01-24 15:22:28 - INFO - [CYCLE 177] Starting cycle #177\n2026-01-24 15:22:28 - INFO - [CYCLE 177] Step 1/7: Waiting for main screen...\n2026-01-24 15:22:28 - INFO - [CYCLE 177] Waiting for main screen...\n2026-01-24 15:22:28 - INFO - [CYCLE 177] On main screen\n2026-01-24 15:22:28 - INFO - [CYCLE 177] Step 2/7: Transition to arsenal...\n2026-01-24 15:22:28 - INFO - [CYCLE 177] Quick transition: Кнопка Далее\n2026-01-24 15:22:31 - INFO - [CYCLE 177] Found attention popup\n2026-01-24 15:22:32 - INFO - [CYCLE 177] Step 3/7: Transition to battle...\n2026-01-24 15:22:32 - INFO - [CYCLE 177] Quick transition: Кнопка Битва\n2026-01-24 15:22:35 - INFO - [CYCLE 177] Step 4/7: Transition to team...\n2026-01-24 15:22:37 - INFO - [CYCLE 177] Waiting for team screen...\n2026-01-24 15:22:38 - INFO - [CYCLE 177] Found team screen button\n2026-01-24 15:22:38 - INFO - [CYCLE 177] Step 5/7: Pressing team screen button...\n2026-01-24 15:22:40 - INFO - [CYCLE 177] Step 6/7: Sending invitations...\n2026-01-24 15:22:40 - INFO - [CYCLE 177] Invite #1 sent (0s)\n2026-01-24 15:22:46 - INFO - [CYCLE 177] Someone joined the team!\n2026-01-24 15:22:46 - INFO - [CYCLE 177] Step 7/7: Starting game...\n2026-01-24 15:22:47 - INFO - [CYCLE 177] Checking for loading color at (200, 100)...\n2026-01-24 15:23:12 - INFO - [CYCLE 177] Loading color detected! Color: #A9D917\n2026-01-24 15:23:12 - INFO - [CYCLE 177] Cycle #177 completed successfully - loading color detected\n2026-01-24 15:23:33 - INFO - [CYCLE 177] Connected to ZXTouch\n",
+  "update_time": "2026-01-24 15:23:35"
+}
