@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769329705,
-  "timestamp_human": "2026-01-25 11:28:25",
-  "cycle_count": 401,
+  "timestamp": 1769329868,
+  "timestamp_human": "2026-01-25 11:31:08",
+  "cycle_count": 402,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 28м назад",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 31м назад",
   "error_stats": {
     "total_errors": 1,
     "warnings": 1,
@@ -30,17 +30,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.36",
-      "load_5": "2.34",
-      "load_15": "2.48",
+      "load_1": "2.43",
+      "load_5": "2.48",
+      "load_15": "2.53",
       "cores": 4,
-      "utilization_percent": 59.0
+      "utilization_percent": 60.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 241,
-      "free_mb": 4,
-      "cached_mb": 113,
+      "used_mb": 240,
+      "free_mb": 5,
+      "cached_mb": 100,
       "utilization_percent": 12.0
     },
     "disk": {
@@ -50,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769329705,
-    "timestamp_human": "2026-01-25 11:28:25"
+    "timestamp": 1769329868,
+    "timestamp_human": "2026-01-25 11:31:08"
   },
-  "last_log": "2026-01-25 11:24:47 - DEBUG - [CYCLE 400] Checking for attention popup (invite #30)\n2026-01-25 11:24:47 - INFO - [CYCLE 400] Invite #31 sent (178s)\n2026-01-25 11:24:53 - INFO - [CYCLE 400] Invite #32 sent (183s)\n2026-01-25 11:24:59 - INFO - [CYCLE 400] Invite #33 sent (189s)\n2026-01-25 11:25:05 - INFO - [CYCLE 400] Invite #34 sent (195s)\n2026-01-25 11:25:11 - INFO - [CYCLE 400] Invite #35 sent (201s)\n2026-01-25 11:25:16 - DEBUG - [CYCLE 400] Checking for attention popup (invite #35)\n2026-01-25 11:25:17 - INFO - [CYCLE 400] Invite #36 sent (207s)\n2026-01-25 11:25:22 - INFO - [CYCLE 400] Invite #37 sent (213s)\n2026-01-25 11:25:28 - INFO - [CYCLE 400] Invite #38 sent (219s)\n2026-01-25 11:25:34 - INFO - [CYCLE 400] Invite #39 sent (225s)\n2026-01-25 11:25:40 - INFO - [CYCLE 400] Invite #40 sent (231s)\n2026-01-25 11:25:46 - DEBUG - [CYCLE 400] Checking for attention popup (invite #40)\n2026-01-25 11:25:46 - INFO - [CYCLE 400] Invite #41 sent (237s)\n2026-01-25 11:25:52 - INFO - [CYCLE 400] Invite #42 sent (243s)\n2026-01-25 11:25:58 - INFO - [CYCLE 400] Invite #43 sent (249s)\n2026-01-25 11:26:04 - INFO - [CYCLE 400] Invite #44 sent (255s)\n2026-01-25 11:26:10 - INFO - [CYCLE 400] Invite #45 sent (261s)\n2026-01-25 11:26:16 - DEBUG - [CYCLE 400] Checking for attention popup (invite #45)\n2026-01-25 11:26:16 - INFO - [CYCLE 400] Invite #46 sent (267s)\n2026-01-25 11:26:22 - INFO - [CYCLE 400] Invite #47 sent (272s)\n2026-01-25 11:26:28 - INFO - [CYCLE 400] Invite #48 sent (278s)\n2026-01-25 11:26:34 - INFO - [CYCLE 400] Invite #49 sent (284s)\n2026-01-25 11:26:40 - INFO - [CYCLE 400] Invite #50 sent (290s)\n2026-01-25 11:26:45 - DEBUG - [CYCLE 400] Checking for attention popup (invite #50)\n2026-01-25 11:26:46 - INFO - [CYCLE 400] Invite #51 sent (296s)\n2026-01-25 11:26:51 - INFO - [CYCLE 400] Step 7/7: Starting game...\n2026-01-25 11:26:53 - INFO - [CYCLE 400] Checking for loading color at (200, 100)...\n2026-01-25 11:28:02 - INFO - [CYCLE 400] Cycle #400 completed - no loading color detected (normal)\n2026-01-25 11:28:23 - INFO - [CYCLE 400] Connected to ZXTouch\n",
-  "update_time": "2026-01-25 11:28:25"
+  "last_log": "2026-01-25 11:29:04 - INFO - [CYCLE 401] Waiting for team screen...\n2026-01-25 11:29:05 - INFO - [CYCLE 401] Found team screen button\n2026-01-25 11:29:05 - INFO - [CYCLE 401] Step 5/7: Pressing team screen button...\n2026-01-25 11:29:07 - INFO - [CYCLE 401] Step 6/7: Sending invitations...\n2026-01-25 11:29:07 - INFO - [CYCLE 401] Found attention popup\n2026-01-25 11:29:08 - INFO - [CYCLE 401] Invite #1 sent (1s)\n2026-01-25 11:29:14 - INFO - [CYCLE 401] Invite #2 sent (7s)\n2026-01-25 11:29:20 - INFO - [CYCLE 401] Invite #3 sent (13s)\n2026-01-25 11:29:26 - INFO - [CYCLE 401] Invite #4 sent (19s)\n2026-01-25 11:29:32 - INFO - [CYCLE 401] Invite #5 sent (25s)\n2026-01-25 11:29:38 - DEBUG - [CYCLE 401] Checking for attention popup (invite #5)\n2026-01-25 11:29:38 - INFO - [CYCLE 401] Invite #6 sent (31s)\n2026-01-25 11:29:44 - INFO - [CYCLE 401] Invite #7 sent (36s)\n2026-01-25 11:29:49 - INFO - [CYCLE 401] Invite #8 sent (42s)\n2026-01-25 11:29:55 - INFO - [CYCLE 401] Invite #9 sent (48s)\n2026-01-25 11:30:01 - INFO - [CYCLE 401] Invite #10 sent (54s)\n2026-01-25 11:30:07 - DEBUG - [CYCLE 401] Checking for attention popup (invite #10)\n2026-01-25 11:30:07 - INFO - [CYCLE 401] Invite #11 sent (60s)\n2026-01-25 11:30:13 - INFO - [CYCLE 401] Invite #12 sent (66s)\n2026-01-25 11:30:19 - INFO - [CYCLE 401] Invite #13 sent (72s)\n2026-01-25 11:30:25 - INFO - [CYCLE 401] Invite #14 sent (78s)\n2026-01-25 11:30:31 - INFO - [CYCLE 401] Invite #15 sent (84s)\n2026-01-25 11:30:37 - DEBUG - [CYCLE 401] Checking for attention popup (invite #15)\n2026-01-25 11:30:37 - INFO - [CYCLE 401] Invite #16 sent (90s)\n2026-01-25 11:30:43 - INFO - [CYCLE 401] Someone joined the team!\n2026-01-25 11:30:43 - INFO - [CYCLE 401] Step 7/7: Starting game...\n2026-01-25 11:30:45 - INFO - [CYCLE 401] Checking for loading color at (200, 100)...\n2026-01-25 11:30:45 - INFO - [CYCLE 401] Loading color detected! Color: #A9D917\n2026-01-25 11:30:45 - INFO - [CYCLE 401] Cycle #401 completed successfully - loading color detected\n2026-01-25 11:31:06 - INFO - [CYCLE 401] Connected to ZXTouch\n",
+  "update_time": "2026-01-25 11:31:08"
 }
