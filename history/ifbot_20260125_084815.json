@@ -1,0 +1,58 @@
+{
+  "timestamp": 1769330721,
+  "timestamp_human": "2026-01-25 11:45:21",
+  "cycle_count": 405,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 45м назад",
+  "error_stats": {
+    "total_errors": 1,
+    "warnings": 1,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-25 10:59:41 - WARNING - [CYCLE 397] Still on main, trying again"
+    ],
+    "last_error_time": 1769327981,
+    "error_timestamp_human": "2026-01-25 10:59:41"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.57",
+      "load_5": "2.69",
+      "load_15": "2.73",
+      "cores": 4,
+      "utilization_percent": 64.2
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 237,
+      "free_mb": 6,
+      "cached_mb": 100,
+      "utilization_percent": 11.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769330721,
+    "timestamp_human": "2026-01-25 11:45:21"
+  },
+  "last_log": "2026-01-25 11:42:34 - INFO - [CYCLE 404] Invite #3 sent (11s)\n2026-01-25 11:42:40 - INFO - [CYCLE 404] Invite #4 sent (17s)\n2026-01-25 11:42:46 - INFO - [CYCLE 404] Invite #5 sent (23s)\n2026-01-25 11:42:51 - DEBUG - [CYCLE 404] Checking for attention popup (invite #5)\n2026-01-25 11:42:52 - INFO - [CYCLE 404] Invite #6 sent (29s)\n2026-01-25 11:42:58 - INFO - [CYCLE 404] Invite #7 sent (35s)\n2026-01-25 11:43:03 - INFO - [CYCLE 404] Invite #8 sent (41s)\n2026-01-25 11:43:09 - INFO - [CYCLE 404] Invite #9 sent (47s)\n2026-01-25 11:43:15 - INFO - [CYCLE 404] Invite #10 sent (53s)\n2026-01-25 11:43:21 - DEBUG - [CYCLE 404] Checking for attention popup (invite #10)\n2026-01-25 11:43:21 - INFO - [CYCLE 404] Invite #11 sent (59s)\n2026-01-25 11:43:27 - INFO - [CYCLE 404] Invite #12 sent (65s)\n2026-01-25 11:43:33 - INFO - [CYCLE 404] Invite #13 sent (71s)\n2026-01-25 11:43:39 - INFO - [CYCLE 404] Invite #14 sent (77s)\n2026-01-25 11:43:45 - INFO - [CYCLE 404] Invite #15 sent (83s)\n2026-01-25 11:43:51 - DEBUG - [CYCLE 404] Checking for attention popup (invite #15)\n2026-01-25 11:43:51 - INFO - [CYCLE 404] Invite #16 sent (89s)\n2026-01-25 11:43:57 - INFO - [CYCLE 404] Invite #17 sent (95s)\n2026-01-25 11:44:03 - INFO - [CYCLE 404] Invite #18 sent (100s)\n2026-01-25 11:44:09 - INFO - [CYCLE 404] Invite #19 sent (106s)\n2026-01-25 11:44:15 - INFO - [CYCLE 404] Invite #20 sent (112s)\n2026-01-25 11:44:21 - DEBUG - [CYCLE 404] Checking for attention popup (invite #20)\n2026-01-25 11:44:21 - INFO - [CYCLE 404] Invite #21 sent (118s)\n2026-01-25 11:44:27 - INFO - [CYCLE 404] Invite #22 sent (124s)\n2026-01-25 11:44:33 - INFO - [CYCLE 404] Someone joined the team!\n2026-01-25 11:44:33 - INFO - [CYCLE 404] Step 7/7: Starting game...\n2026-01-25 11:44:34 - INFO - [CYCLE 404] Checking for loading color at (200, 100)...\n2026-01-25 11:44:58 - INFO - [CYCLE 404] Loading color detected! Color: #A9D917\n2026-01-25 11:44:58 - INFO - [CYCLE 404] Cycle #404 completed successfully - loading color detected\n2026-01-25 11:45:19 - INFO - [CYCLE 404] Connected to ZXTouch\n",
+  "update_time": "2026-01-25 11:45:21"
+}
