@@ -1,0 +1,56 @@
+{
+  "timestamp": 1769339601,
+  "timestamp_human": "2026-01-25 14:13:21",
+  "cycle_count": 446,
+  "bot_status": "running",
+  "error_summary": "✅ Ошибок нет",
+  "error_stats": {
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [],
+    "last_error_time": 1769334367,
+    "error_timestamp_human": "2026-01-25 12:46:07"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "3.55",
+      "load_5": "2.81",
+      "load_15": "2.75",
+      "cores": 4,
+      "utilization_percent": 88.8
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 239,
+      "free_mb": 5,
+      "cached_mb": 106,
+      "utilization_percent": 11.9
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "375935"
+    },
+    "timestamp": 1769339601,
+    "timestamp_human": "2026-01-25 14:13:21"
+  },
+  "last_log": "2026-01-25 14:11:45 - INFO - [CYCLE 445] Step 1/7: Waiting for main screen...\n2026-01-25 14:11:45 - INFO - [CYCLE 445] Waiting for main screen...\n2026-01-25 14:11:45 - DEBUG - [CYCLE 445] Current: unknown, waiting for main... 0s\n2026-01-25 14:11:46 - DEBUG - [CYCLE 445] Current: unknown, waiting for main... 0s\n2026-01-25 14:11:50 - DEBUG - [CYCLE 445] Current: unknown, waiting for main... 5s\n2026-01-25 14:11:51 - DEBUG - [CYCLE 445] Current: unknown, waiting for main... 5s\n2026-01-25 14:11:56 - DEBUG - [CYCLE 445] Current: loading, waiting for main... 10s\n2026-01-25 14:12:00 - DEBUG - [CYCLE 445] Current: loading, waiting for main... 15s\n2026-01-25 14:12:01 - DEBUG - [CYCLE 445] Current: loading, waiting for main... 15s\n2026-01-25 14:12:05 - DEBUG - [CYCLE 445] Current: loading, waiting for main... 20s\n2026-01-25 14:12:06 - DEBUG - [CYCLE 445] Current: loading, waiting for main... 20s\n2026-01-25 14:12:09 - INFO - [CYCLE 445] On main screen\n2026-01-25 14:12:09 - INFO - [CYCLE 445] Step 2/7: Transition to arsenal...\n2026-01-25 14:12:09 - INFO - [CYCLE 445] Quick transition: Кнопка Далее\n2026-01-25 14:12:11 - INFO - [CYCLE 445] Step 3/7: Transition to battle...\n2026-01-25 14:12:11 - INFO - [CYCLE 445] Quick transition: Кнопка Битва\n2026-01-25 14:12:14 - INFO - [CYCLE 445] Found attention popup\n2026-01-25 14:12:15 - INFO - [CYCLE 445] Step 4/7: Transition to team...\n2026-01-25 14:12:18 - INFO - [CYCLE 445] Waiting for team screen...\n2026-01-25 14:12:19 - INFO - [CYCLE 445] Found team screen button\n2026-01-25 14:12:19 - INFO - [CYCLE 445] Step 5/7: Pressing team screen button...\n2026-01-25 14:12:20 - INFO - [CYCLE 445] Step 6/7: Sending invitations...\n2026-01-25 14:12:21 - INFO - [CYCLE 445] Invite #1 sent (0s)\n2026-01-25 14:12:27 - INFO - [CYCLE 445] Invite #2 sent (6s)\n2026-01-25 14:12:32 - INFO - [CYCLE 445] Someone joined the team!\n2026-01-25 14:12:32 - INFO - [CYCLE 445] Step 7/7: Starting game...\n2026-01-25 14:12:34 - INFO - [CYCLE 445] Checking for loading color at (200, 100)...\n2026-01-25 14:12:58 - INFO - [CYCLE 445] Loading color detected! Color: #A9D917\n2026-01-25 14:12:58 - INFO - [CYCLE 445] Cycle #445 completed successfully - loading color detected\n2026-01-25 14:13:19 - INFO - [CYCLE 445] Connected to ZXTouch\n",
+  "update_time": "2026-01-25 14:13:21"
+}
