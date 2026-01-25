@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769333275,
-  "timestamp_human": "2026-01-25 12:27:55",
-  "cycle_count": 419,
+  "timestamp": 1769333351,
+  "timestamp_human": "2026-01-25 12:29:11",
+  "cycle_count": 420,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 5м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 6м назад",
   "error_stats": {
     "total_errors": 2,
     "warnings": 1,
@@ -31,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "5.03",
-      "load_5": "5.18",
-      "load_15": "4.69",
+      "load_1": "5.13",
+      "load_5": "5.21",
+      "load_15": "4.74",
       "cores": 4,
-      "utilization_percent": 125.8
+      "utilization_percent": 128.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 242,
-      "free_mb": 4,
-      "cached_mb": 125,
-      "utilization_percent": 12.1
+      "used_mb": 240,
+      "free_mb": 5,
+      "cached_mb": 108,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -51,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769333275,
-    "timestamp_human": "2026-01-25 12:27:55"
+    "timestamp": 1769333351,
+    "timestamp_human": "2026-01-25 12:29:11"
   },
-  "last_log": "2026-01-25 12:25:48 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 45s\n2026-01-25 12:25:49 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 45s\n2026-01-25 12:25:54 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 50s\n2026-01-25 12:25:58 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 55s\n2026-01-25 12:26:04 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 60s\n2026-01-25 12:26:09 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 65s\n2026-01-25 12:26:13 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 70s\n2026-01-25 12:26:14 - DEBUG - [CYCLE 418] Current: unknown, waiting for main... 70s\n2026-01-25 12:26:18 - DEBUG - [CYCLE 418] Current: loading, waiting for main... 75s\n2026-01-25 12:26:23 - DEBUG - [CYCLE 418] Current: loading, waiting for main... 80s\n2026-01-25 12:26:28 - DEBUG - [CYCLE 418] Current: loading, waiting for main... 85s\n2026-01-25 12:26:31 - INFO - [CYCLE 418] On main screen\n2026-01-25 12:26:31 - INFO - [CYCLE 418] Step 2/7: Transition to arsenal...\n2026-01-25 12:26:31 - INFO - [CYCLE 418] Quick transition: Кнопка Далее\n2026-01-25 12:26:34 - INFO - [CYCLE 418] Step 3/7: Transition to battle...\n2026-01-25 12:26:34 - INFO - [CYCLE 418] Quick transition: Кнопка Битва\n2026-01-25 12:26:37 - INFO - [CYCLE 418] Found attention popup\n2026-01-25 12:26:38 - INFO - [CYCLE 418] Step 4/7: Transition to team...\n2026-01-25 12:26:40 - INFO - [CYCLE 418] Waiting for team screen...\n2026-01-25 12:26:41 - INFO - [CYCLE 418] Found team screen button\n2026-01-25 12:26:41 - INFO - [CYCLE 418] Step 5/7: Pressing team screen button...\n2026-01-25 12:26:43 - INFO - [CYCLE 418] Step 6/7: Sending invitations...\n2026-01-25 12:26:43 - INFO - [CYCLE 418] Invite #1 sent (0s)\n2026-01-25 12:26:49 - INFO - [CYCLE 418] Invite #2 sent (5s)\n2026-01-25 12:27:05 - INFO - [CYCLE 418] Someone joined the team!\n2026-01-25 12:27:05 - INFO - [CYCLE 418] Step 7/7: Starting game...\n2026-01-25 12:27:07 - INFO - [CYCLE 418] Checking for loading color at (200, 100)...\n2026-01-25 12:27:31 - INFO - [CYCLE 418] Loading color detected! Color: #A9D917\n2026-01-25 12:27:31 - INFO - [CYCLE 418] Cycle #418 completed successfully - loading color detected\n2026-01-25 12:27:52 - INFO - [CYCLE 418] Connected to ZXTouch\n",
-  "update_time": "2026-01-25 12:27:55"
+  "last_log": "2026-01-25 12:27:31 - INFO - [CYCLE 418] Loading color detected! Color: #A9D917\n2026-01-25 12:27:31 - INFO - [CYCLE 418] Cycle #418 completed successfully - loading color detected\n2026-01-25 12:27:52 - INFO - [CYCLE 418] Connected to ZXTouch\n2026-01-25 12:28:04 - INFO - [CYCLE 419] Starting cycle #419\n2026-01-25 12:28:04 - INFO - [CYCLE 419] Step 1/7: Waiting for main screen...\n2026-01-25 12:28:04 - INFO - [CYCLE 419] Waiting for main screen...\n2026-01-25 12:28:04 - DEBUG - [CYCLE 419] Current: unknown, waiting for main... 0s\n2026-01-25 12:28:05 - DEBUG - [CYCLE 419] Current: unknown, waiting for main... 0s\n2026-01-25 12:28:09 - DEBUG - [CYCLE 419] Current: unknown, waiting for main... 5s\n2026-01-25 12:28:10 - DEBUG - [CYCLE 419] Current: unknown, waiting for main... 5s\n2026-01-25 12:28:14 - DEBUG - [CYCLE 419] Current: loading, waiting for main... 10s\n2026-01-25 12:28:15 - DEBUG - [CYCLE 419] Current: loading, waiting for main... 10s\n2026-01-25 12:28:20 - INFO - [CYCLE 419] On main screen\n2026-01-25 12:28:20 - INFO - [CYCLE 419] Step 2/7: Transition to arsenal...\n2026-01-25 12:28:20 - INFO - [CYCLE 419] Quick transition: Кнопка Далее\n2026-01-25 12:28:22 - INFO - [CYCLE 419] Found attention popup\n2026-01-25 12:28:24 - INFO - [CYCLE 419] Step 3/7: Transition to battle...\n2026-01-25 12:28:24 - INFO - [CYCLE 419] Quick transition: Кнопка Битва\n2026-01-25 12:28:27 - INFO - [CYCLE 419] Step 4/7: Transition to team...\n2026-01-25 12:28:29 - INFO - [CYCLE 419] Waiting for team screen...\n2026-01-25 12:28:30 - INFO - [CYCLE 419] Found team screen button\n2026-01-25 12:28:30 - INFO - [CYCLE 419] Step 5/7: Pressing team screen button...\n2026-01-25 12:28:31 - INFO - [CYCLE 419] Step 6/7: Sending invitations...\n2026-01-25 12:28:31 - INFO - [CYCLE 419] Invite #1 sent (0s)\n2026-01-25 12:28:37 - INFO - [CYCLE 419] Someone joined the team!\n2026-01-25 12:28:37 - INFO - [CYCLE 419] Step 7/7: Starting game...\n2026-01-25 12:28:39 - INFO - [CYCLE 419] Checking for loading color at (200, 100)...\n2026-01-25 12:28:48 - INFO - [CYCLE 419] Loading color detected! Color: #A9D917\n2026-01-25 12:28:48 - INFO - [CYCLE 419] Cycle #419 completed successfully - loading color detected\n2026-01-25 12:29:08 - INFO - [CYCLE 419] Connected to ZXTouch\n",
+  "update_time": "2026-01-25 12:29:11"
 }
