@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769341317,
-  "timestamp_human": "2026-01-25 14:41:57",
-  "cycle_count": 451,
+  "timestamp": 1769341436,
+  "timestamp_human": "2026-01-25 14:43:56",
+  "cycle_count": 452,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.02",
-      "load_5": "2.18",
-      "load_15": "2.65",
+      "load_1": "3.25",
+      "load_5": "2.54",
+      "load_15": "2.73",
       "cores": 4,
-      "utilization_percent": 50.5
+      "utilization_percent": 81.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 240,
+      "used_mb": 239,
       "free_mb": 4,
-      "cached_mb": 116,
-      "utilization_percent": 12.0
+      "cached_mb": 108,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769341317,
-    "timestamp_human": "2026-01-25 14:41:57"
+    "timestamp": 1769341436,
+    "timestamp_human": "2026-01-25 14:43:56"
   },
-  "last_log": "2026-01-25 14:38:18 - DEBUG - [CYCLE 450] Checking for attention popup (invite #30)\n2026-01-25 14:38:18 - INFO - [CYCLE 450] Invite #31 sent (178s)\n2026-01-25 14:38:24 - INFO - [CYCLE 450] Invite #32 sent (184s)\n2026-01-25 14:38:30 - INFO - [CYCLE 450] Invite #33 sent (190s)\n2026-01-25 14:38:36 - INFO - [CYCLE 450] Invite #34 sent (196s)\n2026-01-25 14:38:42 - INFO - [CYCLE 450] Invite #35 sent (201s)\n2026-01-25 14:38:48 - DEBUG - [CYCLE 450] Checking for attention popup (invite #35)\n2026-01-25 14:38:48 - INFO - [CYCLE 450] Invite #36 sent (207s)\n2026-01-25 14:38:54 - INFO - [CYCLE 450] Invite #37 sent (213s)\n2026-01-25 14:39:00 - INFO - [CYCLE 450] Invite #38 sent (219s)\n2026-01-25 14:39:06 - INFO - [CYCLE 450] Invite #39 sent (225s)\n2026-01-25 14:39:12 - INFO - [CYCLE 450] Invite #40 sent (231s)\n2026-01-25 14:39:18 - DEBUG - [CYCLE 450] Checking for attention popup (invite #40)\n2026-01-25 14:39:18 - INFO - [CYCLE 450] Invite #41 sent (237s)\n2026-01-25 14:39:24 - INFO - [CYCLE 450] Invite #42 sent (243s)\n2026-01-25 14:39:30 - INFO - [CYCLE 450] Invite #43 sent (249s)\n2026-01-25 14:39:36 - INFO - [CYCLE 450] Invite #44 sent (255s)\n2026-01-25 14:39:42 - INFO - [CYCLE 450] Invite #45 sent (261s)\n2026-01-25 14:39:48 - DEBUG - [CYCLE 450] Checking for attention popup (invite #45)\n2026-01-25 14:39:48 - INFO - [CYCLE 450] Invite #46 sent (267s)\n2026-01-25 14:39:54 - INFO - [CYCLE 450] Invite #47 sent (273s)\n2026-01-25 14:40:00 - INFO - [CYCLE 450] Invite #48 sent (279s)\n2026-01-25 14:40:06 - INFO - [CYCLE 450] Invite #49 sent (285s)\n2026-01-25 14:40:11 - INFO - [CYCLE 450] Invite #50 sent (291s)\n2026-01-25 14:40:17 - DEBUG - [CYCLE 450] Checking for attention popup (invite #50)\n2026-01-25 14:40:17 - INFO - [CYCLE 450] Invite #51 sent (297s)\n2026-01-25 14:40:23 - INFO - [CYCLE 450] Step 7/7: Starting game...\n2026-01-25 14:40:25 - INFO - [CYCLE 450] Checking for loading color at (200, 100)...\n2026-01-25 14:41:33 - INFO - [CYCLE 450] Cycle #450 completed - no loading color detected (normal)\n2026-01-25 14:41:54 - INFO - [CYCLE 450] Connected to ZXTouch\n",
-  "update_time": "2026-01-25 14:41:57"
+  "last_log": "2026-01-25 14:42:04 - DEBUG - [CYCLE 451] Current: unknown, waiting for main... 0s\n2026-01-25 14:42:04 - DEBUG - [CYCLE 451] Current: unknown, waiting for main... 0s\n2026-01-25 14:42:09 - DEBUG - [CYCLE 451] Current: unknown, waiting for main... 5s\n2026-01-25 14:42:13 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 10s\n2026-01-25 14:42:14 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 10s\n2026-01-25 14:42:19 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 15s\n2026-01-25 14:42:23 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 20s\n2026-01-25 14:42:24 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 20s\n2026-01-25 14:42:29 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 25s\n2026-01-25 14:42:34 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 30s\n2026-01-25 14:42:39 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 35s\n2026-01-25 14:42:44 - DEBUG - [CYCLE 451] Current: loading, waiting for main... 40s\n2026-01-25 14:42:48 - INFO - [CYCLE 451] On main screen\n2026-01-25 14:42:48 - INFO - [CYCLE 451] Step 2/7: Transition to arsenal...\n2026-01-25 14:42:48 - INFO - [CYCLE 451] Quick transition: Кнопка Далее\n2026-01-25 14:42:51 - INFO - [CYCLE 451] Found attention popup\n2026-01-25 14:42:52 - INFO - [CYCLE 451] Step 3/7: Transition to battle...\n2026-01-25 14:42:52 - INFO - [CYCLE 451] Quick transition: Кнопка Битва\n2026-01-25 14:42:55 - INFO - [CYCLE 451] Step 4/7: Transition to team...\n2026-01-25 14:42:57 - INFO - [CYCLE 451] Waiting for team screen...\n2026-01-25 14:42:58 - INFO - [CYCLE 451] Found team screen button\n2026-01-25 14:42:58 - INFO - [CYCLE 451] Step 5/7: Pressing team screen button...\n2026-01-25 14:43:00 - INFO - [CYCLE 451] Step 6/7: Sending invitations...\n2026-01-25 14:43:00 - INFO - [CYCLE 451] Invite #1 sent (0s)\n2026-01-25 14:43:06 - INFO - [CYCLE 451] Someone joined the team!\n2026-01-25 14:43:06 - INFO - [CYCLE 451] Step 7/7: Starting game...\n2026-01-25 14:43:07 - INFO - [CYCLE 451] Checking for loading color at (200, 100)...\n2026-01-25 14:43:33 - INFO - [CYCLE 451] Loading color detected! Color: #A9D917\n2026-01-25 14:43:33 - INFO - [CYCLE 451] Cycle #451 completed successfully - loading color detected\n2026-01-25 14:43:53 - INFO - [CYCLE 451] Connected to ZXTouch\n",
+  "update_time": "2026-01-25 14:43:56"
 }
