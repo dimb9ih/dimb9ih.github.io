@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769345952,
-  "timestamp_human": "2026-01-25 15:59:12",
-  "cycle_count": 466,
+  "timestamp": 1769346097,
+  "timestamp_human": "2026-01-25 16:01:37",
+  "cycle_count": 467,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.86",
-      "load_5": "2.97",
-      "load_15": "2.85",
+      "load_1": "2.66",
+      "load_5": "3.38",
+      "load_15": "3.08",
       "cores": 4,
-      "utilization_percent": 71.5
+      "utilization_percent": 66.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 237,
-      "free_mb": 2,
-      "cached_mb": 95,
-      "utilization_percent": 11.8
+      "used_mb": 238,
+      "free_mb": 4,
+      "cached_mb": 108,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "375935"
     },
-    "timestamp": 1769345952,
-    "timestamp_human": "2026-01-25 15:59:12"
+    "timestamp": 1769346097,
+    "timestamp_human": "2026-01-25 16:01:37"
   },
-  "last_log": "2026-01-25 15:57:18 - DEBUG - [CYCLE 465] Current: unknown, waiting for main... 0s\n2026-01-25 15:57:22 - DEBUG - [CYCLE 465] Current: loading, waiting for main... 5s\n2026-01-25 15:57:23 - DEBUG - [CYCLE 465] Current: loading, waiting for main... 5s\n2026-01-25 15:57:28 - DEBUG - [CYCLE 465] Current: loading, waiting for main... 10s\n2026-01-25 15:57:32 - DEBUG - [CYCLE 465] Current: loading, waiting for main... 15s\n2026-01-25 15:57:33 - DEBUG - [CYCLE 465] Current: loading, waiting for main... 15s\n2026-01-25 15:57:34 - INFO - [CYCLE 465] On main screen\n2026-01-25 15:57:34 - INFO - [CYCLE 465] Step 2/7: Transition to arsenal...\n2026-01-25 15:57:34 - INFO - [CYCLE 465] Quick transition: Кнопка Далее\n2026-01-25 15:57:37 - INFO - [CYCLE 465] Step 3/7: Transition to battle...\n2026-01-25 15:57:37 - INFO - [CYCLE 465] Quick transition: Кнопка Битва\n2026-01-25 15:57:40 - INFO - [CYCLE 465] Step 4/7: Transition to team...\n2026-01-25 15:57:42 - INFO - [CYCLE 465] Waiting for team screen...\n2026-01-25 15:57:43 - INFO - [CYCLE 465] Found team screen button\n2026-01-25 15:57:43 - INFO - [CYCLE 465] Step 5/7: Pressing team screen button...\n2026-01-25 15:57:45 - INFO - [CYCLE 465] Step 6/7: Sending invitations...\n2026-01-25 15:57:45 - INFO - [CYCLE 465] Invite #1 sent (0s)\n2026-01-25 15:57:51 - INFO - [CYCLE 465] Found attention popup\n2026-01-25 15:57:52 - INFO - [CYCLE 465] Invite #2 sent (7s)\n2026-01-25 15:57:58 - INFO - [CYCLE 465] Invite #3 sent (13s)\n2026-01-25 15:58:04 - INFO - [CYCLE 465] Invite #4 sent (19s)\n2026-01-25 15:58:10 - INFO - [CYCLE 465] Invite #5 sent (24s)\n2026-01-25 15:58:15 - DEBUG - [CYCLE 465] Checking for attention popup (invite #5)\n2026-01-25 15:58:16 - INFO - [CYCLE 465] Invite #6 sent (30s)\n2026-01-25 15:58:21 - INFO - [CYCLE 465] Someone joined the team!\n2026-01-25 15:58:21 - INFO - [CYCLE 465] Step 7/7: Starting game...\n2026-01-25 15:58:23 - INFO - [CYCLE 465] Checking for loading color at (200, 100)...\n2026-01-25 15:58:49 - INFO - [CYCLE 465] Loading color detected! Color: #A9D917\n2026-01-25 15:58:49 - INFO - [CYCLE 465] Cycle #465 completed successfully - loading color detected\n2026-01-25 15:59:09 - INFO - [CYCLE 465] Connected to ZXTouch\n",
-  "update_time": "2026-01-25 15:59:12"
+  "last_log": "2026-01-25 15:59:42 - DEBUG - [CYCLE 466] Current: loading, waiting for main... 20s\n2026-01-25 15:59:42 - DEBUG - [CYCLE 466] Current: loading, waiting for main... 20s\n2026-01-25 15:59:47 - DEBUG - [CYCLE 466] Current: loading, waiting for main... 25s\n2026-01-25 15:59:48 - DEBUG - [CYCLE 466] Current: loading, waiting for main... 25s\n2026-01-25 15:59:52 - DEBUG - [CYCLE 466] Current: loading, waiting for main... 30s\n2026-01-25 15:59:55 - INFO - [CYCLE 466] On main screen\n2026-01-25 15:59:55 - INFO - [CYCLE 466] Step 2/7: Transition to arsenal...\n2026-01-25 15:59:55 - INFO - [CYCLE 466] Quick transition: Кнопка Далее\n2026-01-25 15:59:58 - INFO - [CYCLE 466] Found attention popup\n2026-01-25 15:59:59 - INFO - [CYCLE 466] Step 3/7: Transition to battle...\n2026-01-25 15:59:59 - INFO - [CYCLE 466] Quick transition: Кнопка Битва\n2026-01-25 16:00:02 - INFO - [CYCLE 466] Step 4/7: Transition to team...\n2026-01-25 16:00:04 - INFO - [CYCLE 466] Waiting for team screen...\n2026-01-25 16:00:05 - INFO - [CYCLE 466] Found team screen button\n2026-01-25 16:00:05 - INFO - [CYCLE 466] Step 5/7: Pressing team screen button...\n2026-01-25 16:00:07 - INFO - [CYCLE 466] Step 6/7: Sending invitations...\n2026-01-25 16:00:07 - INFO - [CYCLE 466] Invite #1 sent (0s)\n2026-01-25 16:00:13 - INFO - [CYCLE 466] Invite #2 sent (6s)\n2026-01-25 16:00:19 - INFO - [CYCLE 466] Invite #3 sent (11s)\n2026-01-25 16:00:25 - INFO - [CYCLE 466] Invite #4 sent (17s)\n2026-01-25 16:00:31 - INFO - [CYCLE 466] Invite #5 sent (23s)\n2026-01-25 16:00:37 - DEBUG - [CYCLE 466] Checking for attention popup (invite #5)\n2026-01-25 16:00:37 - INFO - [CYCLE 466] Invite #6 sent (29s)\n2026-01-25 16:00:43 - INFO - [CYCLE 466] Invite #7 sent (35s)\n2026-01-25 16:00:49 - INFO - [CYCLE 466] Someone joined the team!\n2026-01-25 16:00:49 - INFO - [CYCLE 466] Step 7/7: Starting game...\n2026-01-25 16:00:50 - INFO - [CYCLE 466] Checking for loading color at (200, 100)...\n2026-01-25 16:01:14 - INFO - [CYCLE 466] Loading color detected! Color: #A9D917\n2026-01-25 16:01:14 - INFO - [CYCLE 466] Cycle #466 completed successfully - loading color detected\n2026-01-25 16:01:35 - INFO - [CYCLE 466] Connected to ZXTouch\n",
+  "update_time": "2026-01-25 16:01:37"
 }
