@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769454098,
-  "timestamp_human": "2026-01-26 22:01:38",
-  "cycle_count": 8,
+  "timestamp": 1769454452,
+  "timestamp_human": "2026-01-26 22:07:32",
+  "cycle_count": 9,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 29 (предупреждений: 29), последняя: 3м назад",
+  "error_summary": "⚠️ Ошибок: 30 (предупреждений: 30), последняя: 5м назад",
   "error_stats": {
-    "total_errors": 29,
-    "warnings": 29,
+    "total_errors": 30,
+    "warnings": 30,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-26 21:54:45 - WARNING - [CYCLE 4] Team screen button not found, continuing...",
       "2026-01-26 21:56:34 - WARNING - [CYCLE 5] Team screen not found, continuing...",
       "2026-01-26 21:56:35 - WARNING - [CYCLE 5] Team screen button not found, continuing...",
       "2026-01-26 21:58:24 - WARNING - [CYCLE 6] Team screen not found, continuing...",
-      "2026-01-26 21:58:26 - WARNING - [CYCLE 6] Team screen button not found, continuing..."
+      "2026-01-26 21:58:26 - WARNING - [CYCLE 6] Team screen button not found, continuing...",
+      "2026-01-26 22:01:47 - WARNING - [CYCLE 8] Still on main, trying again"
     ],
-    "last_error_time": 1769453906,
-    "error_timestamp_human": "2026-01-26 21:58:26"
+    "last_error_time": 1769454107,
+    "error_timestamp_human": "2026-01-26 22:01:47"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,23 +28,23 @@
   },
   "battery_info": {
     "battery_state": "2",
-    "battery_level": "64",
+    "battery_level": "65",
     "battery_state_string": "Charging",
     "is_charging": true
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.55",
-      "load_5": "2.57",
-      "load_15": "2.52",
+      "load_1": "1.76",
+      "load_5": "1.90",
+      "load_15": "2.20",
       "cores": 4,
-      "utilization_percent": 63.7
+      "utilization_percent": 44.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 223,
-      "free_mb": 56,
-      "cached_mb": 124,
+      "used_mb": 225,
+      "free_mb": 53,
+      "cached_mb": 122,
       "utilization_percent": 11.2
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769454098,
-    "timestamp_human": "2026-01-26 22:01:38"
+    "timestamp": 1769454452,
+    "timestamp_human": "2026-01-26 22:07:32"
   },
-  "last_log": "2026-01-26 21:59:17 - INFO - [CYCLE 7] Quick transition: Кнопка Далее\n2026-01-26 21:59:20 - INFO - [CYCLE 7] Step 3/7: Transition to battle...\n2026-01-26 21:59:20 - INFO - [CYCLE 7] Quick transition: Кнопка Битва\n2026-01-26 21:59:22 - INFO - [CYCLE 7] Step 4/7: Transition to team...\n2026-01-26 21:59:25 - INFO - [CYCLE 7] Waiting for team screen...\n2026-01-26 21:59:26 - INFO - [CYCLE 7] Found team screen button\n2026-01-26 21:59:26 - INFO - [CYCLE 7] Step 5/7: Pressing team screen button...\n2026-01-26 21:59:27 - INFO - [CYCLE 7] Step 6/7: Sending invitations...\n2026-01-26 21:59:27 - INFO - [CYCLE 7] Invite #1 sent (0s)\n2026-01-26 21:59:33 - INFO - [CYCLE 7] Invite #2 sent (5s)\n2026-01-26 21:59:39 - INFO - [CYCLE 7] Invite #3 sent (11s)\n2026-01-26 21:59:45 - INFO - [CYCLE 7] Invite #4 sent (17s)\n2026-01-26 21:59:51 - INFO - [CYCLE 7] Invite #5 sent (23s)\n2026-01-26 21:59:56 - DEBUG - [CYCLE 7] Checking for attention popup (invite #5)\n2026-01-26 21:59:56 - INFO - [CYCLE 7] Invite #6 sent (29s)\n2026-01-26 22:00:02 - INFO - [CYCLE 7] Invite #7 sent (35s)\n2026-01-26 22:00:08 - INFO - [CYCLE 7] Invite #8 sent (41s)\n2026-01-26 22:00:14 - INFO - [CYCLE 7] Invite #9 sent (46s)\n2026-01-26 22:00:20 - INFO - [CYCLE 7] Invite #10 sent (52s)\n2026-01-26 22:00:26 - DEBUG - [CYCLE 7] Checking for attention popup (invite #10)\n2026-01-26 22:00:26 - INFO - [CYCLE 7] Invite #11 sent (58s)\n2026-01-26 22:00:32 - INFO - [CYCLE 7] Invite #12 sent (64s)\n2026-01-26 22:00:38 - INFO - [CYCLE 7] Invite #13 sent (70s)\n2026-01-26 22:00:43 - INFO - [CYCLE 7] Invite #14 sent (76s)\n2026-01-26 22:00:49 - INFO - [CYCLE 7] Someone joined the team!\n2026-01-26 22:00:49 - INFO - [CYCLE 7] Step 7/7: Starting game...\n2026-01-26 22:00:51 - INFO - [CYCLE 7] Checking for loading color at (200, 100)...\n2026-01-26 22:01:16 - INFO - [CYCLE 7] Loading color detected! Color: #A9D917\n2026-01-26 22:01:16 - INFO - [CYCLE 7] Cycle #7 completed successfully - loading color detected\n2026-01-26 22:01:36 - INFO - [CYCLE 7] Connected to ZXTouch\n",
-  "update_time": "2026-01-26 22:01:38"
+  "last_log": "2026-01-26 22:04:47 - INFO - [CYCLE 8] Invite #30 sent (170s)\n2026-01-26 22:04:52 - DEBUG - [CYCLE 8] Checking for attention popup (invite #30)\n2026-01-26 22:04:52 - INFO - [CYCLE 8] Invite #31 sent (176s)\n2026-01-26 22:04:58 - INFO - [CYCLE 8] Invite #32 sent (181s)\n2026-01-26 22:05:04 - INFO - [CYCLE 8] Invite #33 sent (187s)\n2026-01-26 22:05:10 - INFO - [CYCLE 8] Invite #34 sent (193s)\n2026-01-26 22:05:16 - INFO - [CYCLE 8] Invite #35 sent (199s)\n2026-01-26 22:05:22 - DEBUG - [CYCLE 8] Checking for attention popup (invite #35)\n2026-01-26 22:05:22 - INFO - [CYCLE 8] Invite #36 sent (205s)\n2026-01-26 22:05:28 - INFO - [CYCLE 8] Invite #37 sent (211s)\n2026-01-26 22:05:33 - INFO - [CYCLE 8] Invite #38 sent (217s)\n2026-01-26 22:05:39 - INFO - [CYCLE 8] Invite #39 sent (223s)\n2026-01-26 22:05:45 - INFO - [CYCLE 8] Invite #40 sent (228s)\n2026-01-26 22:05:51 - DEBUG - [CYCLE 8] Checking for attention popup (invite #40)\n2026-01-26 22:05:51 - INFO - [CYCLE 8] Invite #41 sent (234s)\n2026-01-26 22:05:57 - INFO - [CYCLE 8] Invite #42 sent (240s)\n2026-01-26 22:06:03 - INFO - [CYCLE 8] Invite #43 sent (246s)\n2026-01-26 22:06:09 - INFO - [CYCLE 8] Invite #44 sent (252s)\n2026-01-26 22:06:14 - INFO - [CYCLE 8] Invite #45 sent (258s)\n2026-01-26 22:06:20 - DEBUG - [CYCLE 8] Checking for attention popup (invite #45)\n2026-01-26 22:06:20 - INFO - [CYCLE 8] Invite #46 sent (264s)\n2026-01-26 22:06:26 - INFO - [CYCLE 8] Invite #47 sent (269s)\n2026-01-26 22:06:32 - INFO - [CYCLE 8] Invite #48 sent (275s)\n2026-01-26 22:06:38 - INFO - [CYCLE 8] Invite #49 sent (281s)\n2026-01-26 22:06:44 - INFO - [CYCLE 8] Someone joined the team!\n2026-01-26 22:06:44 - INFO - [CYCLE 8] Step 7/7: Starting game...\n2026-01-26 22:06:45 - INFO - [CYCLE 8] Checking for loading color at (200, 100)...\n2026-01-26 22:07:10 - INFO - [CYCLE 8] Loading color detected! Color: #A9D917\n2026-01-26 22:07:10 - INFO - [CYCLE 8] Cycle #8 completed successfully - loading color detected\n2026-01-26 22:07:30 - INFO - [CYCLE 8] Connected to ZXTouch\n",
+  "update_time": "2026-01-26 22:07:32"
 }
