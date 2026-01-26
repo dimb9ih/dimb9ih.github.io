@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769453555,
-  "timestamp_human": "2026-01-26 21:52:35",
-  "cycle_count": 3,
+  "timestamp": 1769453665,
+  "timestamp_human": "2026-01-26 21:54:25",
+  "cycle_count": 4,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 21 (предупреждений: 21), последняя: 8м назад",
+  "error_summary": "⚠️ Ошибок: 23 (предупреждений: 23), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 21,
-    "warnings": 21,
+    "total_errors": 23,
+    "warnings": 23,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-26 21:40:39 - WARNING - [CYCLE 1] Team screen button not found, continuing...",
-      "2026-01-26 21:42:20 - WARNING - [CYCLE 1] Team screen not found, continuing...",
       "2026-01-26 21:42:21 - WARNING - [CYCLE 1] Team screen button not found, continuing...",
       "2026-01-26 21:44:05 - WARNING - [CYCLE 1] Team screen not found, continuing...",
-      "2026-01-26 21:44:07 - WARNING - [CYCLE 1] Team screen button not found, continuing..."
+      "2026-01-26 21:44:07 - WARNING - [CYCLE 1] Team screen button not found, continuing...",
+      "2026-01-26 21:52:52 - WARNING - [CYCLE 3] Team screen not found, continuing...",
+      "2026-01-26 21:52:54 - WARNING - [CYCLE 3] Team screen button not found, continuing..."
     ],
-    "last_error_time": 1769453047,
-    "error_timestamp_human": "2026-01-26 21:44:07"
+    "last_error_time": 1769453574,
+    "error_timestamp_human": "2026-01-26 21:52:54"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.74",
-      "load_5": "2.24",
-      "load_15": "2.45",
+      "load_1": "3.01",
+      "load_5": "2.46",
+      "load_15": "2.51",
       "cores": 4,
-      "utilization_percent": 68.5
+      "utilization_percent": 75.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 251,
-      "free_mb": 8,
-      "cached_mb": 154,
-      "utilization_percent": 12.6
+      "used_mb": 222,
+      "free_mb": 60,
+      "cached_mb": 125,
+      "utilization_percent": 11.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769453555,
-    "timestamp_human": "2026-01-26 21:52:35"
+    "timestamp": 1769453665,
+    "timestamp_human": "2026-01-26 21:54:25"
   },
-  "last_log": "2026-01-26 21:48:56 - INFO - [CYCLE 2] Invite #31 sent (176s)\n2026-01-26 21:49:02 - INFO - [CYCLE 2] Invite #32 sent (182s)\n2026-01-26 21:49:08 - INFO - [CYCLE 2] Invite #33 sent (187s)\n2026-01-26 21:49:14 - INFO - [CYCLE 2] Invite #34 sent (193s)\n2026-01-26 21:49:20 - INFO - [CYCLE 2] Invite #35 sent (199s)\n2026-01-26 21:49:26 - DEBUG - [CYCLE 2] Checking for attention popup (invite #35)\n2026-01-26 21:49:26 - INFO - [CYCLE 2] Invite #36 sent (205s)\n2026-01-26 21:49:31 - INFO - [CYCLE 2] Invite #37 sent (211s)\n2026-01-26 21:49:37 - INFO - [CYCLE 2] Invite #38 sent (217s)\n2026-01-26 21:49:43 - INFO - [CYCLE 2] Invite #39 sent (223s)\n2026-01-26 21:49:49 - INFO - [CYCLE 2] Invite #40 sent (228s)\n2026-01-26 21:49:55 - DEBUG - [CYCLE 2] Checking for attention popup (invite #40)\n2026-01-26 21:49:55 - INFO - [CYCLE 2] Invite #41 sent (234s)\n2026-01-26 21:50:01 - INFO - [CYCLE 2] Invite #42 sent (240s)\n2026-01-26 21:50:07 - INFO - [CYCLE 2] Invite #43 sent (246s)\n2026-01-26 21:50:13 - INFO - [CYCLE 2] Invite #44 sent (252s)\n2026-01-26 21:50:18 - INFO - [CYCLE 2] Invite #45 sent (258s)\n2026-01-26 21:50:24 - DEBUG - [CYCLE 2] Checking for attention popup (invite #45)\n2026-01-26 21:50:24 - INFO - [CYCLE 2] Invite #46 sent (264s)\n2026-01-26 21:50:30 - INFO - [CYCLE 2] Invite #47 sent (269s)\n2026-01-26 21:50:36 - INFO - [CYCLE 2] Invite #48 sent (275s)\n2026-01-26 21:50:42 - INFO - [CYCLE 2] Invite #49 sent (281s)\n2026-01-26 21:50:48 - INFO - [CYCLE 2] Invite #50 sent (287s)\n2026-01-26 21:50:54 - DEBUG - [CYCLE 2] Checking for attention popup (invite #50)\n2026-01-26 21:50:54 - INFO - [CYCLE 2] Invite #51 sent (293s)\n2026-01-26 21:50:59 - INFO - [CYCLE 2] Invite #52 sent (299s)\n2026-01-26 21:51:05 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-01-26 21:51:07 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-01-26 21:52:12 - INFO - [CYCLE 2] Cycle #2 completed - no loading color detected (normal)\n2026-01-26 21:52:33 - INFO - [CYCLE 2] Connected to ZXTouch\n",
-  "update_time": "2026-01-26 21:52:35"
+  "last_log": "2026-01-26 21:50:42 - INFO - [CYCLE 2] Invite #49 sent (281s)\n2026-01-26 21:50:48 - INFO - [CYCLE 2] Invite #50 sent (287s)\n2026-01-26 21:50:54 - DEBUG - [CYCLE 2] Checking for attention popup (invite #50)\n2026-01-26 21:50:54 - INFO - [CYCLE 2] Invite #51 sent (293s)\n2026-01-26 21:50:59 - INFO - [CYCLE 2] Invite #52 sent (299s)\n2026-01-26 21:51:05 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-01-26 21:51:07 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-01-26 21:52:12 - INFO - [CYCLE 2] Cycle #2 completed - no loading color detected (normal)\n2026-01-26 21:52:33 - INFO - [CYCLE 2] Connected to ZXTouch\n2026-01-26 21:52:37 - INFO - [CYCLE 3] Starting cycle #3\n2026-01-26 21:52:37 - INFO - [CYCLE 3] Step 1/7: Waiting for main screen...\n2026-01-26 21:52:37 - INFO - [CYCLE 3] Waiting for main screen...\n2026-01-26 21:52:37 - INFO - [CYCLE 3] Found special invite popup\n2026-01-26 21:52:38 - INFO - [CYCLE 3] On main screen\n2026-01-26 21:52:38 - INFO - [CYCLE 3] Step 2/7: Transition to arsenal...\n2026-01-26 21:52:38 - INFO - [CYCLE 3] Quick transition: Кнопка Далее\n2026-01-26 21:52:41 - INFO - [CYCLE 3] Step 3/7: Transition to battle...\n2026-01-26 21:52:41 - INFO - [CYCLE 3] Quick transition: Кнопка Битва\n2026-01-26 21:52:44 - INFO - [CYCLE 3] Step 4/7: Transition to team...\n2026-01-26 21:52:46 - INFO - [CYCLE 3] Waiting for team screen...\n2026-01-26 21:52:49 - INFO - [CYCLE 3] Trying team button again\n2026-01-26 21:52:52 - WARNING - [CYCLE 3] Team screen not found, continuing...\n2026-01-26 21:52:52 - INFO - [CYCLE 3] Step 5/7: Pressing team screen button...\n2026-01-26 21:52:54 - WARNING - [CYCLE 3] Team screen button not found, continuing...\n2026-01-26 21:52:54 - INFO - [CYCLE 3] Step 6/7: Sending invitations...\n2026-01-26 21:52:54 - INFO - [CYCLE 3] Someone joined the team!\n2026-01-26 21:52:54 - INFO - [CYCLE 3] Step 7/7: Starting game...\n2026-01-26 21:52:56 - INFO - [CYCLE 3] Checking for loading color at (200, 100)...\n2026-01-26 21:54:02 - INFO - [CYCLE 3] Cycle #3 completed - no loading color detected (normal)\n2026-01-26 21:54:23 - INFO - [CYCLE 3] Connected to ZXTouch\n",
+  "update_time": "2026-01-26 21:54:25"
 }
