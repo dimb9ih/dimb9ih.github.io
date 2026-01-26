@@ -1,0 +1,62 @@
+{
+  "timestamp": 1769453953,
+  "timestamp_human": "2026-01-26 21:59:13",
+  "cycle_count": 7,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 29 (предупреждений: 29), последняя: 47с назад",
+  "error_stats": {
+    "total_errors": 29,
+    "warnings": 29,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-26 21:54:45 - WARNING - [CYCLE 4] Team screen button not found, continuing...",
+      "2026-01-26 21:56:34 - WARNING - [CYCLE 5] Team screen not found, continuing...",
+      "2026-01-26 21:56:35 - WARNING - [CYCLE 5] Team screen button not found, continuing...",
+      "2026-01-26 21:58:24 - WARNING - [CYCLE 6] Team screen not found, continuing...",
+      "2026-01-26 21:58:26 - WARNING - [CYCLE 6] Team screen button not found, continuing..."
+    ],
+    "last_error_time": 1769453906,
+    "error_timestamp_human": "2026-01-26 21:58:26"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "64",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "3.62",
+      "load_5": "2.70",
+      "load_15": "2.56",
+      "cores": 4,
+      "utilization_percent": 90.5
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 257,
+      "free_mb": 5,
+      "cached_mb": 147,
+      "utilization_percent": 12.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.2Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1769453953,
+    "timestamp_human": "2026-01-26 21:59:13"
+  },
+  "last_log": "2026-01-26 21:56:35 - INFO - [CYCLE 5] Step 6/7: Sending invitations...\n2026-01-26 21:56:35 - INFO - [CYCLE 5] Someone joined the team!\n2026-01-26 21:56:35 - INFO - [CYCLE 5] Step 7/7: Starting game...\n2026-01-26 21:56:37 - INFO - [CYCLE 5] Checking for loading color at (200, 100)...\n2026-01-26 21:57:43 - INFO - [CYCLE 5] Cycle #5 completed - no loading color detected (normal)\n2026-01-26 21:58:04 - INFO - [CYCLE 5] Connected to ZXTouch\n2026-01-26 21:58:08 - INFO - [CYCLE 6] Starting cycle #6\n2026-01-26 21:58:08 - INFO - [CYCLE 6] Step 1/7: Waiting for main screen...\n2026-01-26 21:58:08 - INFO - [CYCLE 6] Waiting for main screen...\n2026-01-26 21:58:08 - DEBUG - [CYCLE 6] Current: unknown, waiting for main... 0s\n2026-01-26 21:58:09 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 0s\n2026-01-26 21:58:10 - INFO - [CYCLE 6] On main screen\n2026-01-26 21:58:10 - INFO - [CYCLE 6] Step 2/7: Transition to arsenal...\n2026-01-26 21:58:10 - INFO - [CYCLE 6] Quick transition: Кнопка Далее\n2026-01-26 21:58:13 - INFO - [CYCLE 6] Step 3/7: Transition to battle...\n2026-01-26 21:58:13 - INFO - [CYCLE 6] Quick transition: Кнопка Битва\n2026-01-26 21:58:16 - INFO - [CYCLE 6] Step 4/7: Transition to team...\n2026-01-26 21:58:18 - INFO - [CYCLE 6] Waiting for team screen...\n2026-01-26 21:58:21 - INFO - [CYCLE 6] Trying team button again\n2026-01-26 21:58:24 - WARNING - [CYCLE 6] Team screen not found, continuing...\n2026-01-26 21:58:24 - INFO - [CYCLE 6] Step 5/7: Pressing team screen button...\n2026-01-26 21:58:26 - WARNING - [CYCLE 6] Team screen button not found, continuing...\n2026-01-26 21:58:26 - INFO - [CYCLE 6] Step 6/7: Sending invitations...\n2026-01-26 21:58:39 - INFO - [CYCLE 6] Someone joined the team!\n2026-01-26 21:58:39 - INFO - [CYCLE 6] Step 7/7: Starting game...\n2026-01-26 21:58:41 - INFO - [CYCLE 6] Checking for loading color at (200, 100)...\n2026-01-26 21:58:48 - INFO - [CYCLE 6] Found attention popup\n2026-01-26 21:58:51 - INFO - [CYCLE 6] Loading color detected! Color: #A9D917\n2026-01-26 21:58:51 - INFO - [CYCLE 6] Cycle #6 completed successfully - loading color detected\n2026-01-26 21:59:11 - INFO - [CYCLE 6] Connected to ZXTouch\n",
+  "update_time": "2026-01-26 21:59:13"
+}
