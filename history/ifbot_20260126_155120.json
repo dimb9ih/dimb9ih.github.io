@@ -1,0 +1,60 @@
+{
+  "timestamp": 1769442299,
+  "timestamp_human": "2026-01-26 18:44:59",
+  "cycle_count": 11,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 3 (предупреждений: 2, ошибок: 1), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 3,
+    "warnings": 2,
+    "errors": 1,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-26 18:19:04 - WARNING - [CYCLE 6] Still on main, trying again",
+      "2026-01-26 18:44:36 - WARNING - [CYCLE 10] Failed to reach main screen",
+      "2026-01-26 18:44:36 - ERROR - [CYCLE 10] Main screen not found"
+    ],
+    "last_error_time": 1769442276,
+    "error_timestamp_human": "2026-01-26 18:44:36"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "1",
+    "battery_level": "60",
+    "battery_state_string": "Unplugged",
+    "is_charging": false
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.09",
+      "load_5": "1.88",
+      "load_15": "1.89",
+      "cores": 4,
+      "utilization_percent": 52.2
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 256,
+      "free_mb": 5,
+      "cached_mb": 154,
+      "utilization_percent": 12.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.2Gi",
+      "usage_percent": "43%",
+      "mount": "376219"
+    },
+    "timestamp": 1769442299,
+    "timestamp_human": "2026-01-26 18:44:59"
+  },
+  "last_log": "2026-01-26 18:43:06 - INFO - [CYCLE 10] Waiting for main screen...\n2026-01-26 18:43:06 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 0s\n2026-01-26 18:43:07 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 0s\n2026-01-26 18:43:11 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 5s\n2026-01-26 18:43:16 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 10s\n2026-01-26 18:43:17 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 10s\n2026-01-26 18:43:21 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 15s\n2026-01-26 18:43:22 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 15s\n2026-01-26 18:43:27 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 20s\n2026-01-26 18:43:31 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 25s\n2026-01-26 18:43:36 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 30s\n2026-01-26 18:43:37 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 30s\n2026-01-26 18:43:41 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 35s\n2026-01-26 18:43:42 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 35s\n2026-01-26 18:43:43 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-01-26 18:43:46 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 40s\n2026-01-26 18:43:52 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 45s\n2026-01-26 18:43:56 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 50s\n2026-01-26 18:44:01 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 55s\n2026-01-26 18:44:02 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 55s\n2026-01-26 18:44:06 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 60s\n2026-01-26 18:44:11 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 65s\n2026-01-26 18:44:16 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 70s\n2026-01-26 18:44:17 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 70s\n2026-01-26 18:44:22 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 75s\n2026-01-26 18:44:25 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-01-26 18:44:31 - DEBUG - [CYCLE 10] Current: loading, waiting for main... 85s\n2026-01-26 18:44:36 - WARNING - [CYCLE 10] Failed to reach main screen\n2026-01-26 18:44:36 - ERROR - [CYCLE 10] Main screen not found\n2026-01-26 18:44:57 - INFO - [CYCLE 10] Connected to ZXTouch\n",
+  "update_time": "2026-01-26 18:44:59"
+}
