@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769450388,
-  "timestamp_human": "2026-01-26 20:59:48",
-  "cycle_count": 1,
+  "timestamp": 1769450505,
+  "timestamp_human": "2026-01-26 21:01:45",
+  "cycle_count": 2,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 35 (предупреждений: 14, ошибок: 19, критических: 2)",
   "error_stats": {
@@ -28,24 +28,24 @@
   },
   "battery_info": {
     "battery_state": "2",
-    "battery_level": "50",
+    "battery_level": "51",
     "battery_state_string": "Charging",
     "is_charging": true
   },
   "system_stats": {
     "cpu": {
-      "load_1": "29.62",
-      "load_5": "28.54",
-      "load_15": "13.00",
+      "load_1": "8.81",
+      "load_5": "20.98",
+      "load_15": "11.97",
       "cores": 4,
-      "utilization_percent": 740.5
+      "utilization_percent": 220.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 257,
-      "free_mb": 8,
-      "cached_mb": 163,
-      "utilization_percent": 12.8
+      "used_mb": 254,
+      "free_mb": 9,
+      "cached_mb": 156,
+      "utilization_percent": 12.7
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769450388,
-    "timestamp_human": "2026-01-26 20:59:48"
+    "timestamp": 1769450505,
+    "timestamp_human": "2026-01-26 21:01:45"
   },
-  "last_log": "    self.s.send(datahandler.format_socket_data(tasktypes.TASK_COLOR_PICKER, x, y))\nBrokenPipeError: [Errno 32] Broken pipe\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1117, in run_cycle\n    if not self.wait_for_screen(\"main\", timeout=GAME_LOAD_TIMEOUT, check_popups=True):\n  File \"/private/var/mobile/ifbot1.py\", line 1045, in wait_for_screen\n    self.check_all_popups()\n  File \"/private/var/mobile/ifbot1.py\", line 1015, in check_all_popups\n    if check_color_at(self.device, \"attention_popup\", tolerance=40):\n  File \"/private/var/mobile/ifbot1.py\", line 867, in check_color_at\n    current_color = get_color_at(device, x, y)\n  File \"/private/var/mobile/ifbot1.py\", line 841, in get_color_at\n    print(f\"[COLOR ERROR] {e}\")\nBrokenPipeError: [Errno 32] Broken pipe\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1353, in main\n    success = bot.run_cycle()\n  File \"/private/var/mobile/ifbot1.py\", line 1259, in run_cycle\n    self.device.show_toast(TOAST_ERROR, error_msg, 3)\n  File \"/usr/lib/python3.7/site-packages/zxtouch/client.py\", line 147, in show_toast\n    self.s.send(datahandler.format_socket_data(tasktypes.TASK_SHOW_TOAST, toast_type, content, duration, position,\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-01-26 20:59:48 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-01-26 20:59:48"
+  "last_log": "2026-01-26 20:59:50 - INFO - [CYCLE 1] Waiting for main screen...\n2026-01-26 20:59:50 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 0s\n2026-01-26 20:59:51 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 0s\n2026-01-26 20:59:53 - INFO - [CYCLE 1] On main screen\n2026-01-26 20:59:53 - INFO - [CYCLE 1] Step 2/7: Transition to arsenal...\n2026-01-26 20:59:53 - INFO - [CYCLE 1] Quick transition: Кнопка Далее\n2026-01-26 20:59:56 - INFO - [CYCLE 1] Step 3/7: Transition to battle...\n2026-01-26 20:59:56 - INFO - [CYCLE 1] Quick transition: Кнопка Битва\n2026-01-26 20:59:59 - INFO - [CYCLE 1] Step 4/7: Transition to team...\n2026-01-26 21:00:01 - INFO - [CYCLE 1] Waiting for team screen...\n2026-01-26 21:00:02 - INFO - [CYCLE 1] Found team screen button\n2026-01-26 21:00:02 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-01-26 21:00:03 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-01-26 21:00:03 - INFO - [CYCLE 1] Invite #1 sent (0s)\n2026-01-26 21:00:09 - INFO - [CYCLE 1] Invite #2 sent (5s)\n2026-01-26 21:00:15 - INFO - [CYCLE 1] Invite #3 sent (11s)\n2026-01-26 21:00:21 - INFO - [CYCLE 1] Invite #4 sent (17s)\n2026-01-26 21:00:27 - INFO - [CYCLE 1] Invite #5 sent (23s)\n2026-01-26 21:00:33 - DEBUG - [CYCLE 1] Checking for attention popup (invite #5)\n2026-01-26 21:00:33 - INFO - [CYCLE 1] Invite #6 sent (29s)\n2026-01-26 21:00:39 - INFO - [CYCLE 1] Invite #7 sent (35s)\n2026-01-26 21:00:44 - INFO - [CYCLE 1] Invite #8 sent (41s)\n2026-01-26 21:00:50 - INFO - [CYCLE 1] Invite #9 sent (47s)\n2026-01-26 21:00:56 - INFO - [CYCLE 1] Invite #10 sent (52s)\n2026-01-26 21:00:57 - INFO - [CYCLE 1] Someone joined immediately!\n2026-01-26 21:00:57 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-01-26 21:00:59 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-01-26 21:01:23 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-01-26 21:01:23 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-01-26 21:01:43 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-01-26 21:01:45"
 }
