@@ -1,9 +1,9 @@
 {
-  "timestamp": 1769455996,
-  "timestamp_human": "2026-01-26 22:33:16",
-  "cycle_count": 15,
+  "timestamp": 1769456164,
+  "timestamp_human": "2026-01-26 22:36:04",
+  "cycle_count": 16,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 30 (предупреждений: 30), последняя: 31м назад",
+  "error_summary": "⚠️ Ошибок: 30 (предупреждений: 30), последняя: 34м назад",
   "error_stats": {
     "total_errors": 30,
     "warnings": 30,
@@ -28,24 +28,24 @@
   },
   "battery_info": {
     "battery_state": "2",
-    "battery_level": "82",
+    "battery_level": "90",
     "battery_state_string": "Charging",
     "is_charging": true
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.68",
-      "load_5": "2.22",
-      "load_15": "2.19",
+      "load_1": "1.78",
+      "load_5": "2.06",
+      "load_15": "2.13",
       "cores": 4,
-      "utilization_percent": 67.0
+      "utilization_percent": 44.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 251,
-      "free_mb": 5,
-      "cached_mb": 152,
-      "utilization_percent": 12.6
+      "used_mb": 250,
+      "free_mb": 6,
+      "cached_mb": 150,
+      "utilization_percent": 12.5
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769455996,
-    "timestamp_human": "2026-01-26 22:33:16"
+    "timestamp": 1769456164,
+    "timestamp_human": "2026-01-26 22:36:04"
   },
-  "last_log": "2026-01-26 22:31:07 - INFO - [CYCLE 14] Step 2/7: Transition to arsenal...\n2026-01-26 22:31:07 - INFO - [CYCLE 14] Quick transition: Кнопка Далее\n2026-01-26 22:31:09 - INFO - [CYCLE 14] Step 3/7: Transition to battle...\n2026-01-26 22:31:09 - INFO - [CYCLE 14] Quick transition: Кнопка Битва\n2026-01-26 22:31:12 - INFO - [CYCLE 14] Step 4/7: Transition to team...\n2026-01-26 22:31:14 - INFO - [CYCLE 14] Waiting for team screen...\n2026-01-26 22:31:15 - INFO - [CYCLE 14] Found team screen button\n2026-01-26 22:31:15 - INFO - [CYCLE 14] Step 5/7: Pressing team screen button...\n2026-01-26 22:31:17 - INFO - [CYCLE 14] Step 6/7: Sending invitations...\n2026-01-26 22:31:17 - INFO - [CYCLE 14] Invite #1 sent (0s)\n2026-01-26 22:31:22 - INFO - [CYCLE 14] Invite #2 sent (5s)\n2026-01-26 22:31:28 - INFO - [CYCLE 14] Invite #3 sent (11s)\n2026-01-26 22:31:34 - INFO - [CYCLE 14] Invite #4 sent (17s)\n2026-01-26 22:31:40 - INFO - [CYCLE 14] Invite #5 sent (23s)\n2026-01-26 22:31:46 - DEBUG - [CYCLE 14] Checking for attention popup (invite #5)\n2026-01-26 22:31:46 - INFO - [CYCLE 14] Invite #6 sent (29s)\n2026-01-26 22:31:52 - INFO - [CYCLE 14] Invite #7 sent (35s)\n2026-01-26 22:31:58 - INFO - [CYCLE 14] Invite #8 sent (40s)\n2026-01-26 22:32:03 - INFO - [CYCLE 14] Invite #9 sent (46s)\n2026-01-26 22:32:09 - INFO - [CYCLE 14] Invite #10 sent (52s)\n2026-01-26 22:32:15 - DEBUG - [CYCLE 14] Checking for attention popup (invite #10)\n2026-01-26 22:32:15 - INFO - [CYCLE 14] Invite #11 sent (58s)\n2026-01-26 22:32:21 - INFO - [CYCLE 14] Invite #12 sent (64s)\n2026-01-26 22:32:27 - INFO - [CYCLE 14] Invite #13 sent (70s)\n2026-01-26 22:32:28 - INFO - [CYCLE 14] Someone joined immediately!\n2026-01-26 22:32:28 - INFO - [CYCLE 14] Step 7/7: Starting game...\n2026-01-26 22:32:29 - INFO - [CYCLE 14] Checking for loading color at (200, 100)...\n2026-01-26 22:32:54 - INFO - [CYCLE 14] Loading color detected! Color: #A9D917\n2026-01-26 22:32:54 - INFO - [CYCLE 14] Cycle #14 completed successfully - loading color detected\n2026-01-26 22:33:14 - INFO - [CYCLE 14] Connected to ZXTouch\n",
-  "update_time": "2026-01-26 22:33:16"
+  "last_log": "2026-01-26 22:33:28 - INFO - [CYCLE 15] Found team screen button\n2026-01-26 22:33:28 - INFO - [CYCLE 15] Step 5/7: Pressing team screen button...\n2026-01-26 22:33:29 - INFO - [CYCLE 15] Step 6/7: Sending invitations...\n2026-01-26 22:33:30 - INFO - [CYCLE 15] Invite #1 sent (0s)\n2026-01-26 22:33:35 - INFO - [CYCLE 15] Invite #2 sent (5s)\n2026-01-26 22:33:41 - INFO - [CYCLE 15] Invite #3 sent (11s)\n2026-01-26 22:33:47 - INFO - [CYCLE 15] Invite #4 sent (17s)\n2026-01-26 22:33:53 - INFO - [CYCLE 15] Invite #5 sent (23s)\n2026-01-26 22:33:59 - DEBUG - [CYCLE 15] Checking for attention popup (invite #5)\n2026-01-26 22:33:59 - INFO - [CYCLE 15] Invite #6 sent (29s)\n2026-01-26 22:34:05 - INFO - [CYCLE 15] Invite #7 sent (35s)\n2026-01-26 22:34:11 - INFO - [CYCLE 15] Invite #8 sent (41s)\n2026-01-26 22:34:16 - INFO - [CYCLE 15] Invite #9 sent (46s)\n2026-01-26 22:34:22 - INFO - [CYCLE 15] Invite #10 sent (52s)\n2026-01-26 22:34:28 - DEBUG - [CYCLE 15] Checking for attention popup (invite #10)\n2026-01-26 22:34:28 - INFO - [CYCLE 15] Invite #11 sent (58s)\n2026-01-26 22:34:34 - INFO - [CYCLE 15] Invite #12 sent (64s)\n2026-01-26 22:34:40 - INFO - [CYCLE 15] Invite #13 sent (70s)\n2026-01-26 22:34:46 - INFO - [CYCLE 15] Invite #14 sent (76s)\n2026-01-26 22:34:52 - INFO - [CYCLE 15] Invite #15 sent (82s)\n2026-01-26 22:34:57 - DEBUG - [CYCLE 15] Checking for attention popup (invite #15)\n2026-01-26 22:34:57 - INFO - [CYCLE 15] Invite #16 sent (87s)\n2026-01-26 22:35:03 - INFO - [CYCLE 15] Invite #17 sent (93s)\n2026-01-26 22:35:09 - INFO - [CYCLE 15] Invite #18 sent (99s)\n2026-01-26 22:35:15 - INFO - [CYCLE 15] Someone joined the team!\n2026-01-26 22:35:15 - INFO - [CYCLE 15] Step 7/7: Starting game...\n2026-01-26 22:35:17 - INFO - [CYCLE 15] Checking for loading color at (200, 100)...\n2026-01-26 22:35:41 - INFO - [CYCLE 15] Loading color detected! Color: #A9D917\n2026-01-26 22:35:41 - INFO - [CYCLE 15] Cycle #15 completed successfully - loading color detected\n2026-01-26 22:36:01 - INFO - [CYCLE 15] Connected to ZXTouch\n",
+  "update_time": "2026-01-26 22:36:04"
 }
