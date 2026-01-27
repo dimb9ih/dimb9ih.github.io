@@ -1,19 +1,20 @@
 {
-  "timestamp": 1769535239,
-  "timestamp_human": "2026-01-27 20:33:59",
-  "cycle_count": 97,
+  "timestamp": 1769535498,
+  "timestamp_human": "2026-01-27 20:38:18",
+  "cycle_count": 98,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 53м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 4м назад",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 2,
+    "warnings": 2,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-27 19:40:52 - WARNING - [CYCLE 87] Still on main, trying again"
+      "2026-01-27 19:40:52 - WARNING - [CYCLE 87] Still on main, trying again",
+      "2026-01-27 20:34:07 - WARNING - [CYCLE 97] Still on main, trying again"
     ],
-    "last_error_time": 1769532052,
-    "error_timestamp_human": "2026-01-27 19:40:52"
+    "last_error_time": 1769535247,
+    "error_timestamp_human": "2026-01-27 20:34:07"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.31",
-      "load_5": "2.06",
-      "load_15": "1.92",
+      "load_1": "3.40",
+      "load_5": "2.17",
+      "load_15": "1.96",
       "cores": 4,
-      "utilization_percent": 57.8
+      "utilization_percent": 85.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 247,
+      "used_mb": 244,
       "free_mb": 7,
-      "cached_mb": 138,
-      "utilization_percent": 12.3
+      "cached_mb": 145,
+      "utilization_percent": 12.2
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769535239,
-    "timestamp_human": "2026-01-27 20:33:59"
+    "timestamp": 1769535498,
+    "timestamp_human": "2026-01-27 20:38:18"
   },
-  "last_log": "2026-01-27 20:30:53 - INFO - [CYCLE 95] Checking for loading color at (200, 100)...\n2026-01-27 20:31:59 - INFO - [CYCLE 95] Cycle #95 completed - no loading color detected (normal)\n2026-01-27 20:32:19 - INFO - [CYCLE 95] Connected to ZXTouch\n2026-01-27 20:32:24 - INFO - [CYCLE 96] Starting cycle #96\n2026-01-27 20:32:24 - INFO - [CYCLE 96] Step 1/7: Waiting for main screen...\n2026-01-27 20:32:24 - INFO - [CYCLE 96] Waiting for main screen...\n2026-01-27 20:32:24 - INFO - [CYCLE 96] Found attention popup\n2026-01-27 20:32:25 - INFO - [CYCLE 96] On main screen\n2026-01-27 20:32:25 - INFO - [CYCLE 96] Step 2/7: Transition to arsenal...\n2026-01-27 20:32:25 - INFO - [CYCLE 96] Quick transition: Кнопка Далее\n2026-01-27 20:32:28 - INFO - [CYCLE 96] Step 3/7: Transition to battle...\n2026-01-27 20:32:28 - INFO - [CYCLE 96] Quick transition: Кнопка Битва\n2026-01-27 20:32:30 - INFO - [CYCLE 96] Step 4/7: Transition to team...\n2026-01-27 20:32:32 - INFO - [CYCLE 96] Waiting for team screen...\n2026-01-27 20:32:33 - INFO - [CYCLE 96] Found team screen button\n2026-01-27 20:32:33 - INFO - [CYCLE 96] Step 5/7: Pressing team screen button...\n2026-01-27 20:32:35 - INFO - [CYCLE 96] Step 6/7: Sending invitations...\n2026-01-27 20:32:35 - INFO - [CYCLE 96] Invite #1 sent (0s)\n2026-01-27 20:32:41 - INFO - [CYCLE 96] Invite #2 sent (5s)\n2026-01-27 20:32:47 - INFO - [CYCLE 96] Invite #3 sent (11s)\n2026-01-27 20:32:53 - INFO - [CYCLE 96] Invite #4 sent (17s)\n2026-01-27 20:32:58 - INFO - [CYCLE 96] Invite #5 sent (23s)\n2026-01-27 20:33:04 - DEBUG - [CYCLE 96] Checking for attention popup (invite #5)\n2026-01-27 20:33:04 - INFO - [CYCLE 96] Invite #6 sent (29s)\n2026-01-27 20:33:10 - INFO - [CYCLE 96] Someone joined the team!\n2026-01-27 20:33:10 - INFO - [CYCLE 96] Step 7/7: Starting game...\n2026-01-27 20:33:12 - INFO - [CYCLE 96] Checking for loading color at (200, 100)...\n2026-01-27 20:33:36 - INFO - [CYCLE 96] Loading color detected! Color: #A9D917\n2026-01-27 20:33:36 - INFO - [CYCLE 96] Cycle #96 completed successfully - loading color detected\n2026-01-27 20:33:57 - INFO - [CYCLE 96] Connected to ZXTouch\n",
-  "update_time": "2026-01-27 20:33:59"
+  "last_log": "2026-01-27 20:35:33 - INFO - [CYCLE 97] Invite #14 sent (76s)\n2026-01-27 20:35:38 - INFO - [CYCLE 97] Invite #15 sent (82s)\n2026-01-27 20:35:44 - DEBUG - [CYCLE 97] Checking for attention popup (invite #15)\n2026-01-27 20:35:44 - INFO - [CYCLE 97] Invite #16 sent (88s)\n2026-01-27 20:35:50 - INFO - [CYCLE 97] Invite #17 sent (94s)\n2026-01-27 20:35:56 - INFO - [CYCLE 97] Invite #18 sent (99s)\n2026-01-27 20:36:02 - INFO - [CYCLE 97] Invite #19 sent (105s)\n2026-01-27 20:36:08 - INFO - [CYCLE 97] Invite #20 sent (111s)\n2026-01-27 20:36:14 - DEBUG - [CYCLE 97] Checking for attention popup (invite #20)\n2026-01-27 20:36:14 - INFO - [CYCLE 97] Invite #21 sent (117s)\n2026-01-27 20:36:19 - INFO - [CYCLE 97] Invite #22 sent (123s)\n2026-01-27 20:36:25 - INFO - [CYCLE 97] Invite #23 sent (129s)\n2026-01-27 20:36:31 - INFO - [CYCLE 97] Invite #24 sent (135s)\n2026-01-27 20:36:37 - INFO - [CYCLE 97] Invite #25 sent (140s)\n2026-01-27 20:36:43 - DEBUG - [CYCLE 97] Checking for attention popup (invite #25)\n2026-01-27 20:36:43 - INFO - [CYCLE 97] Invite #26 sent (146s)\n2026-01-27 20:36:49 - INFO - [CYCLE 97] Invite #27 sent (152s)\n2026-01-27 20:36:55 - INFO - [CYCLE 97] Invite #28 sent (158s)\n2026-01-27 20:37:01 - INFO - [CYCLE 97] Invite #29 sent (164s)\n2026-01-27 20:37:06 - INFO - [CYCLE 97] Invite #30 sent (170s)\n2026-01-27 20:37:12 - DEBUG - [CYCLE 97] Checking for attention popup (invite #30)\n2026-01-27 20:37:12 - INFO - [CYCLE 97] Invite #31 sent (176s)\n2026-01-27 20:37:18 - INFO - [CYCLE 97] Invite #32 sent (182s)\n2026-01-27 20:37:24 - INFO - [CYCLE 97] Invite #33 sent (187s)\n2026-01-27 20:37:30 - INFO - [CYCLE 97] Someone joined the team!\n2026-01-27 20:37:30 - INFO - [CYCLE 97] Step 7/7: Starting game...\n2026-01-27 20:37:31 - INFO - [CYCLE 97] Checking for loading color at (200, 100)...\n2026-01-27 20:37:55 - INFO - [CYCLE 97] Loading color detected! Color: #A9D917\n2026-01-27 20:37:55 - INFO - [CYCLE 97] Cycle #97 completed successfully - loading color detected\n2026-01-27 20:38:16 - INFO - [CYCLE 97] Connected to ZXTouch\n",
+  "update_time": "2026-01-27 20:38:18"
 }
