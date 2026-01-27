@@ -1,19 +1,17 @@
 {
-  "timestamp": 1769517870,
-  "timestamp_human": "2026-01-27 15:44:30",
-  "cycle_count": 46,
+  "timestamp": 1769518280,
+  "timestamp_human": "2026-01-27 15:51:20",
+  "cycle_count": 47,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 27м назад",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 0,
+    "warnings": 0,
     "errors": 0,
     "critical": 0,
-    "recent_errors": [
-      "2026-01-27 15:17:16 - WARNING - [CYCLE 42] Still on main, trying again"
-    ],
-    "last_error_time": 1769516236,
-    "error_timestamp_human": "2026-01-27 15:17:16"
+    "recent_errors": [],
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.35",
-      "load_5": "1.99",
-      "load_15": "1.90",
+      "load_1": "2.14",
+      "load_5": "1.91",
+      "load_15": "1.86",
       "cores": 4,
-      "utilization_percent": 58.8
+      "utilization_percent": 53.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 242,
-      "free_mb": 17,
-      "cached_mb": 138,
-      "utilization_percent": 12.1
+      "used_mb": 244,
+      "free_mb": 4,
+      "cached_mb": 148,
+      "utilization_percent": 12.2
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769517870,
-    "timestamp_human": "2026-01-27 15:44:30"
+    "timestamp": 1769518280,
+    "timestamp_human": "2026-01-27 15:51:20"
   },
-  "last_log": "2026-01-27 15:40:51 - INFO - [CYCLE 45] Invite #31 sent (175s)\n2026-01-27 15:40:57 - INFO - [CYCLE 45] Invite #32 sent (181s)\n2026-01-27 15:41:03 - INFO - [CYCLE 45] Invite #33 sent (187s)\n2026-01-27 15:41:09 - INFO - [CYCLE 45] Invite #34 sent (193s)\n2026-01-27 15:41:15 - INFO - [CYCLE 45] Invite #35 sent (199s)\n2026-01-27 15:41:21 - DEBUG - [CYCLE 45] Checking for attention popup (invite #35)\n2026-01-27 15:41:21 - INFO - [CYCLE 45] Invite #36 sent (205s)\n2026-01-27 15:41:27 - INFO - [CYCLE 45] Invite #37 sent (211s)\n2026-01-27 15:41:32 - INFO - [CYCLE 45] Invite #38 sent (216s)\n2026-01-27 15:41:38 - INFO - [CYCLE 45] Invite #39 sent (222s)\n2026-01-27 15:41:44 - INFO - [CYCLE 45] Invite #40 sent (228s)\n2026-01-27 15:41:50 - DEBUG - [CYCLE 45] Checking for attention popup (invite #40)\n2026-01-27 15:41:50 - INFO - [CYCLE 45] Invite #41 sent (234s)\n2026-01-27 15:41:56 - INFO - [CYCLE 45] Invite #42 sent (240s)\n2026-01-27 15:42:02 - INFO - [CYCLE 45] Invite #43 sent (246s)\n2026-01-27 15:42:08 - INFO - [CYCLE 45] Invite #44 sent (252s)\n2026-01-27 15:42:14 - INFO - [CYCLE 45] Invite #45 sent (258s)\n2026-01-27 15:42:19 - DEBUG - [CYCLE 45] Checking for attention popup (invite #45)\n2026-01-27 15:42:19 - INFO - [CYCLE 45] Invite #46 sent (263s)\n2026-01-27 15:42:25 - INFO - [CYCLE 45] Invite #47 sent (269s)\n2026-01-27 15:42:31 - INFO - [CYCLE 45] Invite #48 sent (275s)\n2026-01-27 15:42:37 - INFO - [CYCLE 45] Invite #49 sent (281s)\n2026-01-27 15:42:43 - INFO - [CYCLE 45] Invite #50 sent (287s)\n2026-01-27 15:42:49 - DEBUG - [CYCLE 45] Checking for attention popup (invite #50)\n2026-01-27 15:42:49 - INFO - [CYCLE 45] Invite #51 sent (293s)\n2026-01-27 15:42:55 - INFO - [CYCLE 45] Invite #52 sent (299s)\n2026-01-27 15:43:00 - INFO - [CYCLE 45] Step 7/7: Starting game...\n2026-01-27 15:43:02 - INFO - [CYCLE 45] Checking for loading color at (200, 100)...\n2026-01-27 15:44:07 - INFO - [CYCLE 45] Cycle #45 completed - no loading color detected (normal)\n2026-01-27 15:44:28 - INFO - [CYCLE 45] Connected to ZXTouch\n",
-  "update_time": "2026-01-27 15:44:30"
+  "last_log": "2026-01-27 15:49:38 - INFO - [CYCLE 46] Invite #51 sent (293s)\n2026-01-27 15:49:44 - INFO - [CYCLE 46] Invite #52 sent (299s)\n2026-01-27 15:49:50 - INFO - [CYCLE 46] Step 7/7: Starting game...\n2026-01-27 15:49:52 - INFO - [CYCLE 46] Checking for loading color at (200, 100)...\n2026-01-27 15:50:57 - INFO - [CYCLE 46] Cycle #46 completed - no loading color detected (normal)\n2026-01-27 15:51:17 - INFO - [CYCLE 46] Connected to ZXTouch\n",
+  "update_time": "2026-01-27 15:51:20"
 }
