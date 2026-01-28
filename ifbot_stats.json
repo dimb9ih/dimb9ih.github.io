@@ -1,19 +1,20 @@
 {
-  "timestamp": 1769611856,
-  "timestamp_human": "2026-01-28 17:50:56",
-  "cycle_count": 313,
+  "timestamp": 1769612132,
+  "timestamp_human": "2026-01-28 17:55:32",
+  "cycle_count": 314,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 52м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 4м назад",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 2,
+    "warnings": 2,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-01-28 16:58:16 - WARNING - [CYCLE 299] Still on main, trying again"
+      "2026-01-28 16:58:16 - WARNING - [CYCLE 299] Still on main, trying again",
+      "2026-01-28 17:51:03 - WARNING - [CYCLE 313] Still on main, trying again"
     ],
-    "last_error_time": 1769608696,
-    "error_timestamp_human": "2026-01-28 16:58:16"
+    "last_error_time": 1769611863,
+    "error_timestamp_human": "2026-01-28 17:51:03"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,17 +31,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.85",
-      "load_5": "1.86",
-      "load_15": "1.84",
+      "load_1": "4.24",
+      "load_5": "2.46",
+      "load_15": "2.06",
       "cores": 4,
-      "utilization_percent": 46.2
+      "utilization_percent": 106.0
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 241,
-      "free_mb": 6,
-      "cached_mb": 142,
+      "free_mb": 2,
+      "cached_mb": 134,
       "utilization_percent": 12.0
     },
     "disk": {
@@ -50,9 +51,9 @@
       "usage_percent": "45%",
       "mount": "376219"
     },
-    "timestamp": 1769611856,
-    "timestamp_human": "2026-01-28 17:50:56"
+    "timestamp": 1769612132,
+    "timestamp_human": "2026-01-28 17:55:32"
   },
-  "last_log": "2026-01-28 17:49:17 - INFO - [CYCLE 312] Starting cycle #312\n2026-01-28 17:49:17 - INFO - [CYCLE 312] Step 1/7: Waiting for main screen...\n2026-01-28 17:49:17 - INFO - [CYCLE 312] Waiting for main screen...\n2026-01-28 17:49:17 - DEBUG - [CYCLE 312] Current: unknown, waiting for main... 0s\n2026-01-28 17:49:18 - DEBUG - [CYCLE 312] Current: unknown, waiting for main... 0s\n2026-01-28 17:49:21 - INFO - [CYCLE 312] On main screen\n2026-01-28 17:49:21 - INFO - [CYCLE 312] Step 2/7: Transition to arsenal...\n2026-01-28 17:49:21 - INFO - [CYCLE 312] Quick transition: Кнопка Далее\n2026-01-28 17:49:23 - INFO - [CYCLE 312] Found attention popup\n2026-01-28 17:49:25 - INFO - [CYCLE 312] Step 3/7: Transition to battle...\n2026-01-28 17:49:25 - INFO - [CYCLE 312] Quick transition: Кнопка Битва\n2026-01-28 17:49:27 - INFO - [CYCLE 312] Step 4/7: Transition to team...\n2026-01-28 17:49:29 - INFO - [CYCLE 312] Waiting for team screen...\n2026-01-28 17:49:30 - INFO - [CYCLE 312] Found team screen button\n2026-01-28 17:49:30 - INFO - [CYCLE 312] Step 5/7: Pressing team screen button...\n2026-01-28 17:49:32 - INFO - [CYCLE 312] Step 6/7: Sending invitations...\n2026-01-28 17:49:32 - INFO - [CYCLE 312] Invite #1 sent (0s)\n2026-01-28 17:49:38 - INFO - [CYCLE 312] Invite #2 sent (5s)\n2026-01-28 17:49:44 - INFO - [CYCLE 312] Invite #3 sent (11s)\n2026-01-28 17:49:50 - INFO - [CYCLE 312] Invite #4 sent (17s)\n2026-01-28 17:49:55 - INFO - [CYCLE 312] Invite #5 sent (23s)\n2026-01-28 17:50:01 - DEBUG - [CYCLE 312] Checking for attention popup (invite #5)\n2026-01-28 17:50:01 - INFO - [CYCLE 312] Invite #6 sent (29s)\n2026-01-28 17:50:07 - INFO - [CYCLE 312] Invite #7 sent (35s)\n2026-01-28 17:50:08 - INFO - [CYCLE 312] Someone joined immediately!\n2026-01-28 17:50:08 - INFO - [CYCLE 312] Step 7/7: Starting game...\n2026-01-28 17:50:10 - INFO - [CYCLE 312] Checking for loading color at (200, 100)...\n2026-01-28 17:50:33 - INFO - [CYCLE 312] Loading color detected! Color: #A9D917\n2026-01-28 17:50:33 - INFO - [CYCLE 312] Cycle #312 completed successfully - loading color detected\n2026-01-28 17:50:54 - INFO - [CYCLE 312] Connected to ZXTouch\n",
-  "update_time": "2026-01-28 17:50:56"
+  "last_log": "2026-01-28 17:52:46 - INFO - [CYCLE 313] Invite #17 sent (94s)\n2026-01-28 17:52:52 - INFO - [CYCLE 313] Invite #18 sent (99s)\n2026-01-28 17:52:58 - INFO - [CYCLE 313] Invite #19 sent (105s)\n2026-01-28 17:53:04 - INFO - [CYCLE 313] Invite #20 sent (111s)\n2026-01-28 17:53:09 - DEBUG - [CYCLE 313] Checking for attention popup (invite #20)\n2026-01-28 17:53:10 - INFO - [CYCLE 313] Invite #21 sent (117s)\n2026-01-28 17:53:15 - INFO - [CYCLE 313] Invite #22 sent (123s)\n2026-01-28 17:53:21 - INFO - [CYCLE 313] Invite #23 sent (129s)\n2026-01-28 17:53:27 - INFO - [CYCLE 313] Invite #24 sent (135s)\n2026-01-28 17:53:33 - INFO - [CYCLE 313] Invite #25 sent (140s)\n2026-01-28 17:53:39 - DEBUG - [CYCLE 313] Checking for attention popup (invite #25)\n2026-01-28 17:53:39 - INFO - [CYCLE 313] Invite #26 sent (146s)\n2026-01-28 17:53:45 - INFO - [CYCLE 313] Invite #27 sent (152s)\n2026-01-28 17:53:51 - INFO - [CYCLE 313] Invite #28 sent (158s)\n2026-01-28 17:53:56 - INFO - [CYCLE 313] Invite #29 sent (164s)\n2026-01-28 17:54:02 - INFO - [CYCLE 313] Invite #30 sent (170s)\n2026-01-28 17:54:08 - DEBUG - [CYCLE 313] Checking for attention popup (invite #30)\n2026-01-28 17:54:08 - INFO - [CYCLE 313] Invite #31 sent (176s)\n2026-01-28 17:54:14 - INFO - [CYCLE 313] Invite #32 sent (182s)\n2026-01-28 17:54:20 - INFO - [CYCLE 313] Invite #33 sent (187s)\n2026-01-28 17:54:26 - INFO - [CYCLE 313] Invite #34 sent (193s)\n2026-01-28 17:54:32 - INFO - [CYCLE 313] Invite #35 sent (199s)\n2026-01-28 17:54:38 - DEBUG - [CYCLE 313] Checking for attention popup (invite #35)\n2026-01-28 17:54:38 - INFO - [CYCLE 313] Invite #36 sent (205s)\n2026-01-28 17:54:44 - INFO - [CYCLE 313] Someone joined the team!\n2026-01-28 17:54:44 - INFO - [CYCLE 313] Step 7/7: Starting game...\n2026-01-28 17:54:45 - INFO - [CYCLE 313] Checking for loading color at (200, 100)...\n2026-01-28 17:55:09 - INFO - [CYCLE 313] Loading color detected! Color: #A9D917\n2026-01-28 17:55:09 - INFO - [CYCLE 313] Cycle #313 completed successfully - loading color detected\n2026-01-28 17:55:30 - INFO - [CYCLE 313] Connected to ZXTouch\n",
+  "update_time": "2026-01-28 17:55:32"
 }
