@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769655985,
-  "timestamp_human": "2026-01-29 06:06:25",
-  "cycle_count": 444,
+  "timestamp": 1769656104,
+  "timestamp_human": "2026-01-29 06:08:24",
+  "cycle_count": 445,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 34 (предупреждений: 17, ошибок: 17), последняя: 23с назад",
   "error_stats": {
@@ -10,14 +10,14 @@
     "errors": 17,
     "critical": 0,
     "recent_errors": [
-      "2026-01-29 06:02:04 - ERROR - [CYCLE 441] Main screen not found",
-      "2026-01-29 06:04:03 - WARNING - [CYCLE 442] Failed to reach main screen",
       "2026-01-29 06:04:03 - ERROR - [CYCLE 442] Main screen not found",
       "2026-01-29 06:06:02 - WARNING - [CYCLE 443] Failed to reach main screen",
-      "2026-01-29 06:06:02 - ERROR - [CYCLE 443] Main screen not found"
+      "2026-01-29 06:06:02 - ERROR - [CYCLE 443] Main screen not found",
+      "2026-01-29 06:08:01 - WARNING - [CYCLE 444] Failed to reach main screen",
+      "2026-01-29 06:08:01 - ERROR - [CYCLE 444] Main screen not found"
     ],
-    "last_error_time": 1769655962,
-    "error_timestamp_human": "2026-01-29 06:06:02"
+    "last_error_time": 1769656081,
+    "error_timestamp_human": "2026-01-29 06:08:01"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.90",
-      "load_5": "2.11",
-      "load_15": "2.05",
+      "load_1": "2.00",
+      "load_5": "2.14",
+      "load_15": "2.07",
       "cores": 4,
-      "utilization_percent": 47.5
+      "utilization_percent": 50.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 248,
-      "free_mb": 6,
-      "cached_mb": 150,
-      "utilization_percent": 12.4
+      "used_mb": 247,
+      "free_mb": 5,
+      "cached_mb": 154,
+      "utilization_percent": 12.3
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769655985,
-    "timestamp_human": "2026-01-29 06:06:25"
+    "timestamp": 1769656104,
+    "timestamp_human": "2026-01-29 06:08:24"
   },
-  "last_log": "2026-01-29 06:05:17 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:19 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:21 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:22 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:24 - DEBUG - [CYCLE 443] Current: popup, waiting for main... 55s\n2026-01-29 06:05:25 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:26 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:28 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:30 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:32 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:34 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:36 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:37 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:39 - DEBUG - [CYCLE 443] Current: popup, waiting for main... 70s\n2026-01-29 06:05:39 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:41 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:43 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:45 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:47 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:49 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:51 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:52 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:54 - DEBUG - [CYCLE 443] Current: popup, waiting for main... 85s\n2026-01-29 06:05:54 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:56 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:05:58 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:06:00 - INFO - [CYCLE 443] Found ВНИМАНИЕ popup\n2026-01-29 06:06:02 - WARNING - [CYCLE 443] Failed to reach main screen\n2026-01-29 06:06:02 - ERROR - [CYCLE 443] Main screen not found\n2026-01-29 06:06:23 - INFO - [CYCLE 443] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 06:06:25"
+  "last_log": "2026-01-29 06:07:16 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:18 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:20 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:21 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:23 - DEBUG - [CYCLE 444] Current: popup, waiting for main... 55s\n2026-01-29 06:07:24 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:25 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:27 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:29 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:31 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:33 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:35 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:36 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:38 - DEBUG - [CYCLE 444] Current: popup, waiting for main... 70s\n2026-01-29 06:07:39 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:40 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:42 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:44 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:46 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:48 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:50 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:51 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:53 - DEBUG - [CYCLE 444] Current: popup, waiting for main... 85s\n2026-01-29 06:07:54 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:55 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:57 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:07:59 - INFO - [CYCLE 444] Found ВНИМАНИЕ popup\n2026-01-29 06:08:01 - WARNING - [CYCLE 444] Failed to reach main screen\n2026-01-29 06:08:01 - ERROR - [CYCLE 444] Main screen not found\n2026-01-29 06:08:22 - INFO - [CYCLE 444] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 06:08:24"
 }
