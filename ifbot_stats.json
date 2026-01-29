@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769663071,
-  "timestamp_human": "2026-01-29 08:04:31",
-  "cycle_count": 474,
+  "timestamp": 1769663510,
+  "timestamp_human": "2026-01-29 08:11:50",
+  "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 32 (предупреждений: 16, ошибок: 16), последняя: 7м назад",
+  "error_summary": "⚠️ Ошибок: 33 (предупреждений: 15, ошибок: 16, критических: 2)",
   "error_stats": {
-    "total_errors": 32,
-    "warnings": 16,
+    "total_errors": 33,
+    "warnings": 15,
     "errors": 16,
-    "critical": 0,
+    "critical": 2,
     "recent_errors": [
-      "2026-01-29 06:59:01 - ERROR - [CYCLE 470] Main screen not found",
-      "2026-01-29 07:00:58 - WARNING - [CYCLE 471] Failed to reach main screen",
-      "2026-01-29 07:00:58 - ERROR - [CYCLE 471] Main screen not found",
       "2026-01-29 07:57:16 - WARNING - [CYCLE 472] Failed to reach main screen",
-      "2026-01-29 07:57:16 - ERROR - [CYCLE 472] Main screen not found"
+      "2026-01-29 07:57:16 - ERROR - [CYCLE 472] Main screen not found",
+      "2026-01-29 08:11:24 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
+      "2026-01-29 08:11:24 - CRITICAL - Traceback (most recent call last):",
+      "BrokenPipeError: [Errno 32] Broken pipe"
     ],
-    "last_error_time": 1769662636,
-    "error_timestamp_human": "2026-01-29 07:57:16"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.11",
-      "load_5": "2.46",
-      "load_15": "2.38",
+      "load_1": "2.69",
+      "load_5": "2.08",
+      "load_15": "2.15",
       "cores": 4,
-      "utilization_percent": 52.8
+      "utilization_percent": 67.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 228,
-      "free_mb": 43,
-      "cached_mb": 121,
-      "utilization_percent": 11.4
+      "used_mb": 246,
+      "free_mb": 7,
+      "cached_mb": 149,
+      "utilization_percent": 12.3
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769663071,
-    "timestamp_human": "2026-01-29 08:04:31"
+    "timestamp": 1769663510,
+    "timestamp_human": "2026-01-29 08:11:50"
   },
-  "last_log": "2026-01-29 08:00:51 - INFO - [CYCLE 473] Invite #31 sent (176s)\n2026-01-29 08:00:57 - INFO - [CYCLE 473] Invite #32 sent (182s)\n2026-01-29 08:01:03 - INFO - [CYCLE 473] Invite #33 sent (188s)\n2026-01-29 08:01:09 - INFO - [CYCLE 473] Invite #34 sent (193s)\n2026-01-29 08:01:15 - INFO - [CYCLE 473] Invite #35 sent (199s)\n2026-01-29 08:01:21 - DEBUG - [CYCLE 473] Checking for attention popup (invite #35)\n2026-01-29 08:01:21 - INFO - [CYCLE 473] Invite #36 sent (205s)\n2026-01-29 08:01:27 - INFO - [CYCLE 473] Invite #37 sent (211s)\n2026-01-29 08:01:33 - INFO - [CYCLE 473] Invite #38 sent (217s)\n2026-01-29 08:01:38 - INFO - [CYCLE 473] Invite #39 sent (223s)\n2026-01-29 08:01:44 - INFO - [CYCLE 473] Invite #40 sent (229s)\n2026-01-29 08:01:50 - DEBUG - [CYCLE 473] Checking for attention popup (invite #40)\n2026-01-29 08:01:50 - INFO - [CYCLE 473] Invite #41 sent (234s)\n2026-01-29 08:01:56 - INFO - [CYCLE 473] Invite #42 sent (240s)\n2026-01-29 08:02:02 - INFO - [CYCLE 473] Invite #43 sent (246s)\n2026-01-29 08:02:08 - INFO - [CYCLE 473] Invite #44 sent (252s)\n2026-01-29 08:02:14 - INFO - [CYCLE 473] Invite #45 sent (258s)\n2026-01-29 08:02:20 - DEBUG - [CYCLE 473] Checking for attention popup (invite #45)\n2026-01-29 08:02:20 - INFO - [CYCLE 473] Invite #46 sent (264s)\n2026-01-29 08:02:25 - INFO - [CYCLE 473] Invite #47 sent (270s)\n2026-01-29 08:02:31 - INFO - [CYCLE 473] Invite #48 sent (276s)\n2026-01-29 08:02:37 - INFO - [CYCLE 473] Invite #49 sent (282s)\n2026-01-29 08:02:43 - INFO - [CYCLE 473] Invite #50 sent (287s)\n2026-01-29 08:02:49 - DEBUG - [CYCLE 473] Checking for attention popup (invite #50)\n2026-01-29 08:02:49 - INFO - [CYCLE 473] Invite #51 sent (293s)\n2026-01-29 08:02:55 - INFO - [CYCLE 473] Invite #52 sent (299s)\n2026-01-29 08:03:01 - INFO - [CYCLE 473] Step 7/7: Starting game...\n2026-01-29 08:03:02 - INFO - [CYCLE 473] Checking for loading color at (200, 100)...\n2026-01-29 08:04:08 - INFO - [CYCLE 473] Cycle #473 completed - no loading color detected (normal)\n2026-01-29 08:04:29 - INFO - [CYCLE 473] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 08:04:31"
+  "last_log": "2026-01-29 08:08:32 - INFO - [CYCLE 474] Invite #39 sent (223s)\n2026-01-29 08:08:38 - INFO - [CYCLE 474] Invite #40 sent (229s)\n2026-01-29 08:08:44 - DEBUG - [CYCLE 474] Checking for attention popup (invite #40)\n2026-01-29 08:08:44 - INFO - [CYCLE 474] Invite #41 sent (235s)\n2026-01-29 08:08:50 - INFO - [CYCLE 474] Invite #42 sent (240s)\n2026-01-29 08:08:55 - INFO - [CYCLE 474] Invite #43 sent (246s)\n2026-01-29 08:09:01 - INFO - [CYCLE 474] Invite #44 sent (252s)\n2026-01-29 08:09:07 - INFO - [CYCLE 474] Invite #45 sent (258s)\n2026-01-29 08:09:13 - DEBUG - [CYCLE 474] Checking for attention popup (invite #45)\n2026-01-29 08:09:13 - INFO - [CYCLE 474] Invite #46 sent (264s)\n2026-01-29 08:09:19 - INFO - [CYCLE 474] Invite #47 sent (270s)\n2026-01-29 08:09:25 - INFO - [CYCLE 474] Invite #48 sent (276s)\n2026-01-29 08:09:31 - INFO - [CYCLE 474] Invite #49 sent (282s)\n2026-01-29 08:09:36 - INFO - [CYCLE 474] Invite #50 sent (287s)\n2026-01-29 08:09:42 - DEBUG - [CYCLE 474] Checking for attention popup (invite #50)\n2026-01-29 08:09:42 - INFO - [CYCLE 474] Invite #51 sent (293s)\n2026-01-29 08:09:48 - INFO - [CYCLE 474] Invite #52 sent (299s)\n2026-01-29 08:09:54 - INFO - [CYCLE 474] Step 7/7: Starting game...\n2026-01-29 08:09:56 - INFO - [CYCLE 474] Checking for loading color at (200, 100)...\n2026-01-29 08:11:02 - INFO - [CYCLE 474] Cycle #474 completed - no loading color detected (normal)\n2026-01-29 08:11:22 - INFO - [CYCLE 474] Connected to ZXTouch\n2026-01-29 08:11:24 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-01-29 08:11:24 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1353, in main\n    success = bot.run_cycle()\n  File \"/private/var/mobile/ifbot1.py\", line 1108, in run_cycle\n    print(f\"\\n[WEB] Sending statistics (cycle {self.cycle_count})...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-01-29 08:11:50 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 08:11:50"
 }
