@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769667028,
-  "timestamp_human": "2026-01-29 09:10:28",
-  "cycle_count": 16,
+  "timestamp": 1769667512,
+  "timestamp_human": "2026-01-29 09:18:32",
+  "cycle_count": 1,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.63",
-      "load_5": "1.67",
-      "load_15": "1.78",
+      "load_1": "4.34",
+      "load_5": "2.82",
+      "load_15": "2.28",
       "cores": 4,
-      "utilization_percent": 40.8
+      "utilization_percent": 108.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 250,
-      "free_mb": 5,
-      "cached_mb": 149,
-      "utilization_percent": 12.5
+      "used_mb": 249,
+      "free_mb": 2,
+      "cached_mb": 132,
+      "utilization_percent": 12.4
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769667028,
-    "timestamp_human": "2026-01-29 09:10:28"
+    "timestamp": 1769667512,
+    "timestamp_human": "2026-01-29 09:18:32"
   },
-  "last_log": "2026-01-29 09:08:18 - INFO - [CYCLE 15] On main screen\n2026-01-29 09:08:18 - INFO - [CYCLE 15] Step 2/7: Transition to arsenal...\n2026-01-29 09:08:18 - INFO - [CYCLE 15] Quick transition: Кнопка Далее\n2026-01-29 09:08:21 - INFO - [CYCLE 15] Step 3/7: Transition to battle...\n2026-01-29 09:08:21 - INFO - [CYCLE 15] Quick transition: Кнопка Битва\n2026-01-29 09:08:24 - INFO - [CYCLE 15] Step 4/7: Transition to team...\n2026-01-29 09:08:26 - INFO - [CYCLE 15] Waiting for team screen...\n2026-01-29 09:08:27 - INFO - [CYCLE 15] Found team screen button\n2026-01-29 09:08:27 - INFO - [CYCLE 15] Step 5/7: Pressing team screen button...\n2026-01-29 09:08:28 - INFO - [CYCLE 15] Step 6/7: Sending invitations...\n2026-01-29 09:08:29 - INFO - [CYCLE 15] Invite #1 sent (0s)\n2026-01-29 09:08:34 - INFO - [CYCLE 15] Invite #2 sent (5s)\n2026-01-29 09:08:40 - INFO - [CYCLE 15] Invite #3 sent (11s)\n2026-01-29 09:08:46 - INFO - [CYCLE 15] Invite #4 sent (17s)\n2026-01-29 09:08:52 - INFO - [CYCLE 15] Invite #5 sent (23s)\n2026-01-29 09:08:58 - DEBUG - [CYCLE 15] Checking for attention popup (invite #5)\n2026-01-29 09:08:58 - INFO - [CYCLE 15] Invite #6 sent (29s)\n2026-01-29 09:09:04 - INFO - [CYCLE 15] Invite #7 sent (35s)\n2026-01-29 09:09:10 - INFO - [CYCLE 15] Invite #8 sent (41s)\n2026-01-29 09:09:16 - INFO - [CYCLE 15] Invite #9 sent (47s)\n2026-01-29 09:09:21 - INFO - [CYCLE 15] Invite #10 sent (52s)\n2026-01-29 09:09:27 - DEBUG - [CYCLE 15] Checking for attention popup (invite #10)\n2026-01-29 09:09:27 - INFO - [CYCLE 15] Invite #11 sent (58s)\n2026-01-29 09:09:33 - INFO - [CYCLE 15] Invite #12 sent (64s)\n2026-01-29 09:09:39 - INFO - [CYCLE 15] Someone joined the team!\n2026-01-29 09:09:39 - INFO - [CYCLE 15] Step 7/7: Starting game...\n2026-01-29 09:09:41 - INFO - [CYCLE 15] Checking for loading color at (200, 100)...\n2026-01-29 09:10:06 - INFO - [CYCLE 15] Loading color detected! Color: #A9D917\n2026-01-29 09:10:06 - INFO - [CYCLE 15] Cycle #15 completed successfully - loading color detected\n2026-01-29 09:10:26 - INFO - [CYCLE 15] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 09:10:28"
+  "last_log": "2026-01-29 09:10:53 - INFO - [CYCLE 16] Invite #3 sent (11s)\n2026-01-29 09:10:59 - INFO - [CYCLE 16] Invite #4 sent (17s)\n2026-01-29 09:11:05 - INFO - [CYCLE 16] Invite #5 sent (23s)\n2026-01-29 09:11:11 - DEBUG - [CYCLE 16] Checking for attention popup (invite #5)\n2026-01-29 09:11:11 - INFO - [CYCLE 16] Invite #6 sent (29s)\n2026-01-29 09:11:17 - INFO - [CYCLE 16] Invite #7 sent (35s)\n2026-01-29 09:11:23 - INFO - [CYCLE 16] Invite #8 sent (40s)\n2026-01-29 09:11:28 - INFO - [CYCLE 16] Invite #9 sent (46s)\n2026-01-29 09:11:34 - INFO - [CYCLE 16] Invite #10 sent (52s)\n2026-01-29 09:11:40 - DEBUG - [CYCLE 16] Checking for attention popup (invite #10)\n2026-01-29 09:11:40 - INFO - [CYCLE 16] Invite #11 sent (58s)\n2026-01-29 09:11:46 - INFO - [CYCLE 16] Invite #12 sent (64s)\n2026-01-29 09:11:52 - INFO - [CYCLE 16] Invite #13 sent (70s)\n2026-01-29 09:11:58 - INFO - [CYCLE 16] Invite #14 sent (76s)\n2026-01-29 09:12:04 - INFO - [CYCLE 16] Invite #15 sent (82s)\n2026-01-29 09:12:10 - DEBUG - [CYCLE 16] Checking for attention popup (invite #15)\n2026-01-29 09:12:10 - INFO - [CYCLE 16] Invite #16 sent (88s)\n2026-01-29 09:12:16 - INFO - [CYCLE 16] Invite #17 sent (94s)\n2026-01-29 09:12:22 - INFO - [CYCLE 16] Invite #18 sent (99s)\n2026-01-29 09:12:27 - INFO - [CYCLE 16] Invite #19 sent (105s)\n2026-01-29 09:12:33 - INFO - [CYCLE 16] Invite #20 sent (111s)\n2026-01-29 09:12:39 - DEBUG - [CYCLE 16] Checking for attention popup (invite #20)\n2026-01-29 09:12:39 - INFO - [CYCLE 16] Invite #21 sent (117s)\n2026-01-29 09:12:45 - INFO - [CYCLE 16] Invite #22 sent (123s)\n2026-01-29 09:12:51 - INFO - [CYCLE 16] Invite #23 sent (129s)\n2026-01-29 09:12:57 - INFO - [CYCLE 16] Invite #24 sent (135s)\n2026-01-29 09:13:03 - INFO - [CYCLE 16] Invite #25 sent (141s)\n2026-01-29 09:13:09 - DEBUG - [CYCLE 16] Checking for attention popup (invite #25)\n2026-01-29 09:13:14 - DEBUG - [CYCLE 16] Checking for attention popup (invite #25)\n2026-01-29 09:18:32 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 09:18:32"
 }
