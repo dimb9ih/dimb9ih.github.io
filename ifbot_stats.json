@@ -1,21 +1,15 @@
 {
-  "timestamp": 1769666679,
-  "timestamp_human": "2026-01-29 09:04:39",
-  "cycle_count": 14,
+  "timestamp": 1769666895,
+  "timestamp_human": "2026-01-29 09:08:15",
+  "cycle_count": 15,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 9 (предупреждений: 3, ошибок: 4, критических: 2)",
+  "error_summary": "✅ Ошибок нет",
   "error_stats": {
-    "total_errors": 9,
-    "warnings": 3,
-    "errors": 4,
-    "critical": 2,
-    "recent_errors": [
-      "2026-01-29 07:57:16 - WARNING - [CYCLE 472] Failed to reach main screen",
-      "2026-01-29 07:57:16 - ERROR - [CYCLE 472] Main screen not found",
-      "2026-01-29 08:11:24 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
-      "2026-01-29 08:11:24 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe"
-    ],
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [],
     "last_error_time": null,
     "error_timestamp_human": null
   },
@@ -34,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.99",
-      "load_5": "1.88",
-      "load_15": "1.89",
+      "load_1": "1.80",
+      "load_5": "1.78",
+      "load_15": "1.84",
       "cores": 4,
-      "utilization_percent": 49.8
+      "utilization_percent": 45.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 247,
-      "free_mb": 11,
-      "cached_mb": 146,
-      "utilization_percent": 12.3
+      "used_mb": 250,
+      "free_mb": 5,
+      "cached_mb": 149,
+      "utilization_percent": 12.5
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769666679,
-    "timestamp_human": "2026-01-29 09:04:39"
+    "timestamp": 1769666895,
+    "timestamp_human": "2026-01-29 09:08:15"
   },
-  "last_log": "2026-01-29 09:01:53 - INFO - [CYCLE 13] Invite #4 sent (17s)\n2026-01-29 09:01:59 - INFO - [CYCLE 13] Invite #5 sent (23s)\n2026-01-29 09:02:05 - DEBUG - [CYCLE 13] Checking for attention popup (invite #5)\n2026-01-29 09:02:05 - INFO - [CYCLE 13] Invite #6 sent (29s)\n2026-01-29 09:02:11 - INFO - [CYCLE 13] Invite #7 sent (35s)\n2026-01-29 09:02:17 - INFO - [CYCLE 13] Invite #8 sent (41s)\n2026-01-29 09:02:23 - INFO - [CYCLE 13] Invite #9 sent (47s)\n2026-01-29 09:02:29 - INFO - [CYCLE 13] Invite #10 sent (52s)\n2026-01-29 09:02:35 - DEBUG - [CYCLE 13] Checking for attention popup (invite #10)\n2026-01-29 09:02:35 - INFO - [CYCLE 13] Invite #11 sent (58s)\n2026-01-29 09:02:40 - INFO - [CYCLE 13] Invite #12 sent (64s)\n2026-01-29 09:02:46 - INFO - [CYCLE 13] Invite #13 sent (70s)\n2026-01-29 09:02:52 - INFO - [CYCLE 13] Invite #14 sent (76s)\n2026-01-29 09:02:58 - INFO - [CYCLE 13] Invite #15 sent (82s)\n2026-01-29 09:03:04 - DEBUG - [CYCLE 13] Checking for attention popup (invite #15)\n2026-01-29 09:03:04 - INFO - [CYCLE 13] Invite #16 sent (88s)\n2026-01-29 09:03:10 - INFO - [CYCLE 13] Invite #17 sent (94s)\n2026-01-29 09:03:16 - INFO - [CYCLE 13] Invite #18 sent (99s)\n2026-01-29 09:03:21 - INFO - [CYCLE 13] Invite #19 sent (105s)\n2026-01-29 09:03:27 - INFO - [CYCLE 13] Invite #20 sent (111s)\n2026-01-29 09:03:33 - DEBUG - [CYCLE 13] Checking for attention popup (invite #20)\n2026-01-29 09:03:33 - INFO - [CYCLE 13] Invite #21 sent (117s)\n2026-01-29 09:03:39 - INFO - [CYCLE 13] Invite #22 sent (123s)\n2026-01-29 09:03:45 - INFO - [CYCLE 13] Invite #23 sent (129s)\n2026-01-29 09:03:51 - INFO - [CYCLE 13] Someone joined the team!\n2026-01-29 09:03:51 - INFO - [CYCLE 13] Step 7/7: Starting game...\n2026-01-29 09:03:52 - INFO - [CYCLE 13] Checking for loading color at (200, 100)...\n2026-01-29 09:04:17 - INFO - [CYCLE 13] Loading color detected! Color: #A9D917\n2026-01-29 09:04:17 - INFO - [CYCLE 13] Cycle #13 completed successfully - loading color detected\n2026-01-29 09:04:37 - INFO - [CYCLE 13] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 09:04:39"
+  "last_log": "2026-01-29 09:07:27 - INFO - [CYCLE 14] Someone joined immediately!\n2026-01-29 09:07:27 - INFO - [CYCLE 14] Step 7/7: Starting game...\n2026-01-29 09:07:28 - INFO - [CYCLE 14] Checking for loading color at (200, 100)...\n2026-01-29 09:07:52 - INFO - [CYCLE 14] Loading color detected! Color: #A9D917\n2026-01-29 09:07:52 - INFO - [CYCLE 14] Cycle #14 completed successfully - loading color detected\n2026-01-29 09:08:13 - INFO - [CYCLE 14] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 09:08:15"
 }
