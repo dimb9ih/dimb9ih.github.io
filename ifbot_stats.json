@@ -1,23 +1,20 @@
 {
-  "timestamp": 1769656808,
-  "timestamp_human": "2026-01-29 06:20:08",
-  "cycle_count": 451,
+  "timestamp": 1769656927,
+  "timestamp_human": "2026-01-29 06:22:07",
+  "cycle_count": 452,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 34 (предупреждений: 17, ошибок: 17), последняя: 22с назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 34,
-    "warnings": 17,
-    "errors": 17,
+    "total_errors": 2,
+    "warnings": 1,
+    "errors": 1,
     "critical": 0,
     "recent_errors": [
-      "2026-01-29 06:15:48 - ERROR - [CYCLE 448] Main screen not found",
-      "2026-01-29 06:17:47 - WARNING - [CYCLE 449] Failed to reach main screen",
-      "2026-01-29 06:17:47 - ERROR - [CYCLE 449] Main screen not found",
-      "2026-01-29 06:19:46 - WARNING - [CYCLE 450] Failed to reach main screen",
-      "2026-01-29 06:19:46 - ERROR - [CYCLE 450] Main screen not found"
+      "2026-01-29 06:21:44 - WARNING - [CYCLE 451] Failed to reach main screen",
+      "2026-01-29 06:21:44 - ERROR - [CYCLE 451] Main screen not found"
     ],
-    "last_error_time": 1769656786,
-    "error_timestamp_human": "2026-01-29 06:19:46"
+    "last_error_time": 1769656904,
+    "error_timestamp_human": "2026-01-29 06:21:44"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +31,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.88",
-      "load_5": "1.84",
-      "load_15": "1.93",
+      "load_1": "1.59",
+      "load_5": "1.74",
+      "load_15": "1.87",
       "cores": 4,
-      "utilization_percent": 47.0
+      "utilization_percent": 39.8
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 246,
-      "free_mb": 5,
-      "cached_mb": 148,
+      "free_mb": 6,
+      "cached_mb": 150,
       "utilization_percent": 12.3
     },
     "disk": {
@@ -54,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769656808,
-    "timestamp_human": "2026-01-29 06:20:08"
+    "timestamp": 1769656927,
+    "timestamp_human": "2026-01-29 06:22:07"
   },
-  "last_log": "2026-01-29 06:19:01 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:02 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:04 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:06 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:08 - DEBUG - [CYCLE 450] Current: popup, waiting for main... 55s\n2026-01-29 06:19:08 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:10 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:12 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:13 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:16 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:17 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:19 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:21 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:23 - DEBUG - [CYCLE 450] Current: popup, waiting for main... 70s\n2026-01-29 06:19:23 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:25 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:27 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:28 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:31 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:32 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:34 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:36 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:38 - DEBUG - [CYCLE 450] Current: popup, waiting for main... 85s\n2026-01-29 06:19:38 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:40 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:42 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:43 - INFO - [CYCLE 450] Found ВНИМАНИЕ popup\n2026-01-29 06:19:46 - WARNING - [CYCLE 450] Failed to reach main screen\n2026-01-29 06:19:46 - ERROR - [CYCLE 450] Main screen not found\n2026-01-29 06:20:06 - INFO - [CYCLE 450] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 06:20:08"
+  "last_log": "2026-01-29 06:20:59 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:01 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:03 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:05 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:06 - DEBUG - [CYCLE 451] Current: popup, waiting for main... 55s\n2026-01-29 06:21:07 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:09 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:11 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:12 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:14 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:16 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:18 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:20 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:21 - DEBUG - [CYCLE 451] Current: popup, waiting for main... 70s\n2026-01-29 06:21:22 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:24 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:26 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:27 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:30 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:31 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:33 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:35 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:37 - DEBUG - [CYCLE 451] Current: popup, waiting for main... 85s\n2026-01-29 06:21:37 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:39 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:41 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:42 - INFO - [CYCLE 451] Found ВНИМАНИЕ popup\n2026-01-29 06:21:44 - WARNING - [CYCLE 451] Failed to reach main screen\n2026-01-29 06:21:44 - ERROR - [CYCLE 451] Main screen not found\n2026-01-29 06:22:05 - INFO - [CYCLE 451] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 06:22:07"
 }
