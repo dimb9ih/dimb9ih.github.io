@@ -1,0 +1,62 @@
+{
+  "timestamp": 1769659281,
+  "timestamp_human": "2026-01-29 07:01:21",
+  "cycle_count": 472,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 34 (предупреждений: 17, ошибок: 17), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 34,
+    "warnings": 17,
+    "errors": 17,
+    "critical": 0,
+    "recent_errors": [
+      "2026-01-29 06:57:03 - ERROR - [CYCLE 469] Main screen not found",
+      "2026-01-29 06:59:01 - WARNING - [CYCLE 470] Failed to reach main screen",
+      "2026-01-29 06:59:01 - ERROR - [CYCLE 470] Main screen not found",
+      "2026-01-29 07:00:58 - WARNING - [CYCLE 471] Failed to reach main screen",
+      "2026-01-29 07:00:58 - ERROR - [CYCLE 471] Main screen not found"
+    ],
+    "last_error_time": 1769659258,
+    "error_timestamp_human": "2026-01-29 07:00:58"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "1.76",
+      "load_5": "2.03",
+      "load_15": "2.04",
+      "cores": 4,
+      "utilization_percent": 44.0
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 248,
+      "free_mb": 4,
+      "cached_mb": 152,
+      "utilization_percent": 12.4
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1769659281,
+    "timestamp_human": "2026-01-29 07:01:21"
+  },
+  "last_log": "2026-01-29 07:00:14 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:16 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:17 - DEBUG - [CYCLE 471] Current: popup, waiting for main... 50s\n2026-01-29 07:00:18 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:19 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:21 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:23 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:25 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:27 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:29 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:30 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:32 - DEBUG - [CYCLE 471] Current: popup, waiting for main... 65s\n2026-01-29 07:00:33 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:34 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:36 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:38 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:40 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:41 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:44 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:45 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:47 - DEBUG - [CYCLE 471] Current: popup, waiting for main... 80s\n2026-01-29 07:00:47 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:49 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:51 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:53 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:55 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:56 - INFO - [CYCLE 471] Found ВНИМАНИЕ popup\n2026-01-29 07:00:58 - WARNING - [CYCLE 471] Failed to reach main screen\n2026-01-29 07:00:58 - ERROR - [CYCLE 471] Main screen not found\n2026-01-29 07:01:19 - INFO - [CYCLE 471] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 07:01:21"
+}
