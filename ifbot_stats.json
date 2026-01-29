@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769658930,
-  "timestamp_human": "2026-01-29 06:55:30",
-  "cycle_count": 469,
+  "timestamp": 1769659046,
+  "timestamp_human": "2026-01-29 06:57:26",
+  "cycle_count": 470,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 34 (предупреждений: 17, ошибок: 17), последняя: 23с назад",
   "error_stats": {
@@ -10,14 +10,14 @@
     "errors": 17,
     "critical": 0,
     "recent_errors": [
-      "2026-01-29 06:51:17 - ERROR - [CYCLE 466] Main screen not found",
-      "2026-01-29 06:53:12 - WARNING - [CYCLE 467] Failed to reach main screen",
       "2026-01-29 06:53:12 - ERROR - [CYCLE 467] Main screen not found",
       "2026-01-29 06:55:07 - WARNING - [CYCLE 468] Failed to reach main screen",
-      "2026-01-29 06:55:07 - ERROR - [CYCLE 468] Main screen not found"
+      "2026-01-29 06:55:07 - ERROR - [CYCLE 468] Main screen not found",
+      "2026-01-29 06:57:03 - WARNING - [CYCLE 469] Failed to reach main screen",
+      "2026-01-29 06:57:03 - ERROR - [CYCLE 469] Main screen not found"
     ],
-    "last_error_time": 1769658907,
-    "error_timestamp_human": "2026-01-29 06:55:07"
+    "last_error_time": 1769659023,
+    "error_timestamp_human": "2026-01-29 06:57:03"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.69",
-      "load_5": "2.22",
-      "load_15": "2.05",
+      "load_1": "3.67",
+      "load_5": "2.57",
+      "load_15": "2.19",
       "cores": 4,
-      "utilization_percent": 67.2
+      "utilization_percent": 91.8
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 248,
       "free_mb": 4,
-      "cached_mb": 150,
+      "cached_mb": 153,
       "utilization_percent": 12.4
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769658930,
-    "timestamp_human": "2026-01-29 06:55:30"
+    "timestamp": 1769659046,
+    "timestamp_human": "2026-01-29 06:57:26"
   },
-  "last_log": "2026-01-29 06:54:22 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:24 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:26 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:28 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:30 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:31 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:33 - DEBUG - [CYCLE 468] Current: popup, waiting for main... 55s\n2026-01-29 06:54:34 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:35 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:37 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:39 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:41 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:43 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:45 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:47 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:48 - DEBUG - [CYCLE 468] Current: popup, waiting for main... 70s\n2026-01-29 06:54:49 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:50 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:52 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:54 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:56 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:54:58 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:55:00 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:55:02 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:55:03 - DEBUG - [CYCLE 468] Current: popup, waiting for main... 85s\n2026-01-29 06:55:04 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:55:05 - INFO - [CYCLE 468] Found ВНИМАНИЕ popup\n2026-01-29 06:55:07 - WARNING - [CYCLE 468] Failed to reach main screen\n2026-01-29 06:55:07 - ERROR - [CYCLE 468] Main screen not found\n2026-01-29 06:55:28 - INFO - [CYCLE 468] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 06:55:30"
+  "last_log": "2026-01-29 06:56:18 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:19 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:21 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:23 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:25 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:27 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:28 - DEBUG - [CYCLE 469] Current: popup, waiting for main... 55s\n2026-01-29 06:56:29 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:31 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:33 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:34 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:36 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:38 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:40 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:42 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:43 - DEBUG - [CYCLE 469] Current: popup, waiting for main... 70s\n2026-01-29 06:56:44 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:46 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:48 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:49 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:51 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:53 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:55 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:57 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:56:58 - DEBUG - [CYCLE 469] Current: popup, waiting for main... 85s\n2026-01-29 06:56:59 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:57:01 - INFO - [CYCLE 469] Found ВНИМАНИЕ popup\n2026-01-29 06:57:03 - WARNING - [CYCLE 469] Failed to reach main screen\n2026-01-29 06:57:03 - ERROR - [CYCLE 469] Main screen not found\n2026-01-29 06:57:23 - INFO - [CYCLE 469] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 06:57:26"
 }
