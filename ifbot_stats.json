@@ -1,23 +1,23 @@
 {
-  "timestamp": 1769654806,
-  "timestamp_human": "2026-01-29 05:46:46",
-  "cycle_count": 434,
+  "timestamp": 1769654924,
+  "timestamp_human": "2026-01-29 05:48:44",
+  "cycle_count": 435,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 14 (предупреждений: 7, ошибок: 7), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 16 (предупреждений: 8, ошибок: 8), последняя: 22с назад",
   "error_stats": {
-    "total_errors": 14,
-    "warnings": 7,
-    "errors": 7,
+    "total_errors": 16,
+    "warnings": 8,
+    "errors": 8,
     "critical": 0,
     "recent_errors": [
-      "2026-01-29 05:42:25 - ERROR - [CYCLE 431] Main screen not found",
-      "2026-01-29 05:44:24 - WARNING - [CYCLE 432] Failed to reach main screen",
       "2026-01-29 05:44:24 - ERROR - [CYCLE 432] Main screen not found",
       "2026-01-29 05:46:23 - WARNING - [CYCLE 433] Failed to reach main screen",
-      "2026-01-29 05:46:23 - ERROR - [CYCLE 433] Main screen not found"
+      "2026-01-29 05:46:23 - ERROR - [CYCLE 433] Main screen not found",
+      "2026-01-29 05:48:22 - WARNING - [CYCLE 434] Failed to reach main screen",
+      "2026-01-29 05:48:22 - ERROR - [CYCLE 434] Main screen not found"
     ],
-    "last_error_time": 1769654783,
-    "error_timestamp_human": "2026-01-29 05:46:23"
+    "last_error_time": 1769654902,
+    "error_timestamp_human": "2026-01-29 05:48:22"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.12",
-      "load_5": "2.04",
+      "load_1": "1.93",
+      "load_5": "2.02",
       "load_15": "2.00",
       "cores": 4,
-      "utilization_percent": 53.0
+      "utilization_percent": 48.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 249,
-      "free_mb": 4,
-      "cached_mb": 154,
+      "used_mb": 248,
+      "free_mb": 5,
+      "cached_mb": 152,
       "utilization_percent": 12.4
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1769654806,
-    "timestamp_human": "2026-01-29 05:46:46"
+    "timestamp": 1769654924,
+    "timestamp_human": "2026-01-29 05:48:44"
   },
-  "last_log": "2026-01-29 05:45:38 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:39 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:42 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:43 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:45 - DEBUG - [CYCLE 433] Current: popup, waiting for main... 55s\n2026-01-29 05:45:45 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:47 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:49 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:51 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:53 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:54 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:56 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:45:58 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:00 - DEBUG - [CYCLE 433] Current: popup, waiting for main... 70s\n2026-01-29 05:46:00 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:02 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:04 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:06 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:08 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:09 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:11 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:13 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:15 - DEBUG - [CYCLE 433] Current: popup, waiting for main... 85s\n2026-01-29 05:46:15 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:17 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:19 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:21 - INFO - [CYCLE 433] Found ВНИМАНИЕ popup\n2026-01-29 05:46:23 - WARNING - [CYCLE 433] Failed to reach main screen\n2026-01-29 05:46:23 - ERROR - [CYCLE 433] Main screen not found\n2026-01-29 05:46:43 - INFO - [CYCLE 433] Connected to ZXTouch\n",
-  "update_time": "2026-01-29 05:46:46"
+  "last_log": "2026-01-29 05:47:37 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:38 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:40 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:42 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:44 - DEBUG - [CYCLE 434] Current: popup, waiting for main... 55s\n2026-01-29 05:47:44 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:46 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:48 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:50 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:52 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:53 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:55 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:57 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:47:59 - DEBUG - [CYCLE 434] Current: popup, waiting for main... 70s\n2026-01-29 05:47:59 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:01 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:03 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:05 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:07 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:08 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:10 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:12 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:14 - DEBUG - [CYCLE 434] Current: popup, waiting for main... 85s\n2026-01-29 05:48:14 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:16 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:18 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:20 - INFO - [CYCLE 434] Found ВНИМАНИЕ popup\n2026-01-29 05:48:22 - WARNING - [CYCLE 434] Failed to reach main screen\n2026-01-29 05:48:22 - ERROR - [CYCLE 434] Main screen not found\n2026-01-29 05:48:42 - INFO - [CYCLE 434] Connected to ZXTouch\n",
+  "update_time": "2026-01-29 05:48:44"
 }
