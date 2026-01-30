@@ -1,122 +1,32 @@
 {
-  "updated": "2026-01-30T21:23:30Z",
+  "updated": "2026-01-30T21:48:07Z",
   "count": 24,
   "data": [
     {
-      "t": 1769749509,
-      "cpu": 98.5,
+      "t": 1769690509,
+      "cpu": 55.8,
+      "ram": 11.5,
+      "errors": 0,
+      "warnings": 0,
+      "cycle": 66,
+      "battery": 100
+    },
+    {
+      "t": 1769687523,
+      "cpu": 45.0,
       "ram": 12.2,
       "errors": 0,
-      "warnings": 1,
-      "cycle": 232,
-      "battery": 100
-    },
-    {
-      "t": 1769744991,
-      "cpu": 66.2,
-      "ram": 11.6,
-      "errors": 0,
       "warnings": 0,
-      "cycle": 221,
+      "cycle": 58,
       "battery": 100
     },
     {
-      "t": 1769736346,
-      "cpu": 48.8,
-      "ram": 11.9,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 199,
-      "battery": 100
-    },
-    {
-      "t": 1769730327,
-      "cpu": 46.8,
-      "ram": 11.6,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 181,
-      "battery": 100
-    },
-    {
-      "t": 1769728784,
-      "cpu": 58.5,
-      "ram": 11.7,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 177,
-      "battery": 100
-    },
-    {
-      "t": 1769727167,
-      "cpu": 64.0,
-      "ram": 11.6,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 173,
-      "battery": 100
-    },
-    {
-      "t": 1769725168,
-      "cpu": 82.2,
-      "ram": 11.7,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 167,
-      "battery": 100
-    },
-    {
-      "t": 1769723375,
-      "cpu": 76.2,
-      "ram": 11.6,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 162,
-      "battery": 100
-    },
-    {
-      "t": 1769721329,
-      "cpu": 56.8,
-      "ram": 11.9,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 157,
-      "battery": 100
-    },
-    {
-      "t": 1769719671,
-      "cpu": 49.0,
-      "ram": 11.7,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 152,
-      "battery": 100
-    },
-    {
-      "t": 1769717658,
-      "cpu": 43.8,
-      "ram": 11.7,
-      "errors": 0,
-      "warnings": 0,
-      "cycle": 147,
-      "battery": 100
-    },
-    {
-      "t": 1769716021,
-      "cpu": 51.5,
-      "ram": 11.7,
+      "t": 1769808088,
+      "cpu": 63.0,
+      "ram": 12.0,
       "errors": 0,
       "warnings": 1,
-      "cycle": 143,
-      "battery": 100
-    },
-    {
-      "t": 1769714601,
-      "cpu": 39.8,
-      "ram": 11.8,
-      "errors": 0,
-      "warnings": 1,
-      "cycle": 139,
+      "cycle": 404,
       "battery": 100
     },
     {
@@ -210,12 +120,102 @@
       "battery": 100
     },
     {
-      "t": 1769808088,
-      "cpu": 63.0,
+      "t": 1769780802,
+      "cpu": 91.2,
+      "ram": 12.2,
+      "errors": 0,
+      "warnings": 0,
+      "cycle": 322,
+      "battery": 100
+    },
+    {
+      "t": 1769776939,
+      "cpu": 44.8,
+      "ram": 10.7,
+      "errors": 0,
+      "warnings": 1,
+      "cycle": 311,
+      "battery": 100
+    },
+    {
+      "t": 1769773588,
+      "cpu": 61.3,
+      "ram": 12.3,
+      "errors": 0,
+      "warnings": 2,
+      "cycle": 300,
+      "battery": 100
+    },
+    {
+      "t": 1769768639,
+      "cpu": 35.5,
+      "ram": 12.4,
+      "errors": 0,
+      "warnings": 0,
+      "cycle": 286,
+      "battery": 100
+    },
+    {
+      "t": 1769765301,
+      "cpu": 100.2,
+      "ram": 12.2,
+      "errors": 0,
+      "warnings": 2,
+      "cycle": 277,
+      "battery": 100
+    },
+    {
+      "t": 1769762294,
+      "cpu": 35.2,
+      "ram": 11.3,
+      "errors": 0,
+      "warnings": 0,
+      "cycle": 269,
+      "battery": 100
+    },
+    {
+      "t": 1769759519,
+      "cpu": 41.2,
+      "ram": 10.7,
+      "errors": 0,
+      "warnings": 0,
+      "cycle": 261,
+      "battery": 100
+    },
+    {
+      "t": 1769757053,
+      "cpu": 72.0,
+      "ram": 12.4,
+      "errors": 0,
+      "warnings": 0,
+      "cycle": 255,
+      "battery": 100
+    },
+    {
+      "t": 1769752956,
+      "cpu": 72.5,
+      "ram": 11.6,
+      "errors": 0,
+      "warnings": 2,
+      "cycle": 245,
+      "battery": 100
+    },
+    {
+      "t": 1769749509,
+      "cpu": 98.5,
+      "ram": 12.2,
+      "errors": 0,
+      "warnings": 1,
+      "cycle": 232,
+      "battery": 100
+    },
+    {
+      "t": 1769809326,
+      "cpu": 54.5,
       "ram": 12.0,
       "errors": 0,
       "warnings": 1,
-      "cycle": 404,
+      "cycle": 407,
       "battery": 100
     }
   ]
