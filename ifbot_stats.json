@@ -1,7 +1,7 @@
 {
-  "timestamp": 1769911389,
-  "timestamp_human": "2026-02-01 05:03:09",
-  "cycle_count": 218,
+  "timestamp": 1769911799,
+  "timestamp_human": "2026-02-01 05:09:59",
+  "cycle_count": 219,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -10,8 +10,8 @@
     "errors": 0,
     "critical": 0,
     "recent_errors": [],
-    "last_error_time": 1769905460,
-    "error_timestamp_human": "2026-02-01 03:24:20"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -28,17 +28,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.60",
-      "load_5": "1.95",
-      "load_15": "1.94",
+      "load_1": "2.75",
+      "load_5": "2.02",
+      "load_15": "1.93",
       "cores": 4,
-      "utilization_percent": 65.0
+      "utilization_percent": 68.8
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 247,
-      "free_mb": 5,
-      "cached_mb": 148,
+      "free_mb": 4,
+      "cached_mb": 137,
       "utilization_percent": 12.3
     },
     "disk": {
@@ -48,9 +48,9 @@
       "usage_percent": "43%",
       "mount": "376219"
     },
-    "timestamp": 1769911389,
-    "timestamp_human": "2026-02-01 05:03:09"
+    "timestamp": 1769911799,
+    "timestamp_human": "2026-02-01 05:09:59"
   },
-  "last_log": "2026-02-01 04:59:58 - INFO - [CYCLE 216] Step 7/7: Starting game...\n2026-02-01 05:00:00 - INFO - [CYCLE 216] Checking for loading color at (200, 100)...\n2026-02-01 05:01:06 - INFO - [CYCLE 216] Cycle #216 completed - no loading color detected (normal)\n2026-02-01 05:01:27 - INFO - [CYCLE 216] Connected to ZXTouch\n2026-02-01 05:01:31 - INFO - [CYCLE 217] Starting cycle #217\n2026-02-01 05:01:31 - INFO - [CYCLE 217] Step 1/7: Waiting for main screen...\n2026-02-01 05:01:31 - INFO - [CYCLE 217] Waiting for main screen...\n2026-02-01 05:01:31 - INFO - [CYCLE 217] Found attention popup\n2026-02-01 05:01:33 - INFO - [CYCLE 217] On main screen\n2026-02-01 05:01:33 - INFO - [CYCLE 217] Step 2/7: Transition to arsenal...\n2026-02-01 05:01:33 - INFO - [CYCLE 217] Quick transition: Кнопка Далее\n2026-02-01 05:01:35 - INFO - [CYCLE 217] Step 3/7: Transition to battle...\n2026-02-01 05:01:35 - INFO - [CYCLE 217] Quick transition: Кнопка Битва\n2026-02-01 05:01:38 - INFO - [CYCLE 217] Step 4/7: Transition to team...\n2026-02-01 05:01:40 - INFO - [CYCLE 217] Waiting for team screen...\n2026-02-01 05:01:41 - INFO - [CYCLE 217] Found team screen button\n2026-02-01 05:01:41 - INFO - [CYCLE 217] Step 5/7: Pressing team screen button...\n2026-02-01 05:01:43 - INFO - [CYCLE 217] Step 6/7: Sending invitations...\n2026-02-01 05:01:43 - INFO - [CYCLE 217] Invite #1 sent (0s)\n2026-02-01 05:01:49 - INFO - [CYCLE 217] Invite #2 sent (5s)\n2026-02-01 05:01:54 - INFO - [CYCLE 217] Invite #3 sent (11s)\n2026-02-01 05:02:00 - INFO - [CYCLE 217] Invite #4 sent (17s)\n2026-02-01 05:02:06 - INFO - [CYCLE 217] Invite #5 sent (23s)\n2026-02-01 05:02:12 - DEBUG - [CYCLE 217] Checking for attention popup (invite #5)\n2026-02-01 05:02:12 - INFO - [CYCLE 217] Someone joined the team!\n2026-02-01 05:02:12 - INFO - [CYCLE 217] Step 7/7: Starting game...\n2026-02-01 05:02:14 - INFO - [CYCLE 217] Checking for loading color at (200, 100)...\n2026-02-01 05:02:46 - INFO - [CYCLE 217] Loading color detected! Color: #A9D917\n2026-02-01 05:02:46 - INFO - [CYCLE 217] Cycle #217 completed successfully - loading color detected\n2026-02-01 05:03:07 - INFO - [CYCLE 217] Connected to ZXTouch\n",
-  "update_time": "2026-02-01 05:03:09"
+  "last_log": "2026-02-01 05:06:19 - INFO - [CYCLE 218] Invite #31 sent (176s)\n2026-02-01 05:06:25 - INFO - [CYCLE 218] Invite #32 sent (182s)\n2026-02-01 05:06:31 - INFO - [CYCLE 218] Invite #33 sent (188s)\n2026-02-01 05:06:37 - INFO - [CYCLE 218] Invite #34 sent (194s)\n2026-02-01 05:06:42 - INFO - [CYCLE 218] Invite #35 sent (200s)\n2026-02-01 05:06:48 - DEBUG - [CYCLE 218] Checking for attention popup (invite #35)\n2026-02-01 05:06:48 - INFO - [CYCLE 218] Invite #36 sent (205s)\n2026-02-01 05:06:54 - INFO - [CYCLE 218] Invite #37 sent (211s)\n2026-02-01 05:07:00 - INFO - [CYCLE 218] Invite #38 sent (217s)\n2026-02-01 05:07:06 - INFO - [CYCLE 218] Invite #39 sent (223s)\n2026-02-01 05:07:12 - INFO - [CYCLE 218] Invite #40 sent (229s)\n2026-02-01 05:07:18 - DEBUG - [CYCLE 218] Checking for attention popup (invite #40)\n2026-02-01 05:07:18 - INFO - [CYCLE 218] Invite #41 sent (235s)\n2026-02-01 05:07:24 - INFO - [CYCLE 218] Invite #42 sent (241s)\n2026-02-01 05:07:30 - INFO - [CYCLE 218] Invite #43 sent (247s)\n2026-02-01 05:07:35 - INFO - [CYCLE 218] Invite #44 sent (253s)\n2026-02-01 05:07:41 - INFO - [CYCLE 218] Invite #45 sent (258s)\n2026-02-01 05:07:47 - DEBUG - [CYCLE 218] Checking for attention popup (invite #45)\n2026-02-01 05:07:47 - INFO - [CYCLE 218] Invite #46 sent (264s)\n2026-02-01 05:07:53 - INFO - [CYCLE 218] Invite #47 sent (270s)\n2026-02-01 05:07:59 - INFO - [CYCLE 218] Invite #48 sent (276s)\n2026-02-01 05:08:05 - INFO - [CYCLE 218] Invite #49 sent (282s)\n2026-02-01 05:08:11 - INFO - [CYCLE 218] Invite #50 sent (288s)\n2026-02-01 05:08:16 - DEBUG - [CYCLE 218] Checking for attention popup (invite #50)\n2026-02-01 05:08:17 - INFO - [CYCLE 218] Invite #51 sent (294s)\n2026-02-01 05:08:22 - INFO - [CYCLE 218] Invite #52 sent (300s)\n2026-02-01 05:08:28 - INFO - [CYCLE 218] Step 7/7: Starting game...\n2026-02-01 05:08:30 - INFO - [CYCLE 218] Checking for loading color at (200, 100)...\n2026-02-01 05:09:36 - INFO - [CYCLE 218] Cycle #218 completed - no loading color detected (normal)\n2026-02-01 05:09:57 - INFO - [CYCLE 218] Connected to ZXTouch\n",
+  "update_time": "2026-02-01 05:09:59"
 }
