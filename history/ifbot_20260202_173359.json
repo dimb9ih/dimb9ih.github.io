@@ -1,0 +1,56 @@
+{
+  "timestamp": 1770053601,
+  "timestamp_human": "2026-02-02 20:33:21",
+  "cycle_count": 353,
+  "bot_status": "running",
+  "error_summary": "✅ Ошибок нет",
+  "error_stats": {
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [],
+    "last_error_time": null,
+    "error_timestamp_human": null
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "1.76",
+      "load_5": "1.85",
+      "load_15": "1.88",
+      "cores": 4,
+      "utilization_percent": 44.0
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 241,
+      "free_mb": 4,
+      "cached_mb": 129,
+      "utilization_percent": 12.0
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1770053601,
+    "timestamp_human": "2026-02-02 20:33:21"
+  },
+  "last_log": "2026-02-02 20:30:50 - INFO - [CYCLE 352] Waiting for team screen...\n2026-02-02 20:30:51 - INFO - [CYCLE 352] Found team screen button\n2026-02-02 20:30:51 - INFO - [CYCLE 352] Step 5/7: Pressing team screen button...\n2026-02-02 20:30:52 - INFO - [CYCLE 352] Step 6/7: Sending invitations...\n2026-02-02 20:30:52 - INFO - [CYCLE 352] Invite #1 sent (0s)\n2026-02-02 20:30:58 - INFO - [CYCLE 352] Invite #2 sent (5s)\n2026-02-02 20:31:04 - INFO - [CYCLE 352] Invite #3 sent (11s)\n2026-02-02 20:31:10 - INFO - [CYCLE 352] Invite #4 sent (17s)\n2026-02-02 20:31:16 - INFO - [CYCLE 352] Invite #5 sent (23s)\n2026-02-02 20:31:22 - DEBUG - [CYCLE 352] Checking for attention popup (invite #5)\n2026-02-02 20:31:22 - INFO - [CYCLE 352] Invite #6 sent (29s)\n2026-02-02 20:31:28 - INFO - [CYCLE 352] Invite #7 sent (35s)\n2026-02-02 20:31:34 - INFO - [CYCLE 352] Invite #8 sent (41s)\n2026-02-02 20:31:40 - INFO - [CYCLE 352] Invite #9 sent (47s)\n2026-02-02 20:31:45 - INFO - [CYCLE 352] Invite #10 sent (53s)\n2026-02-02 20:31:51 - DEBUG - [CYCLE 352] Checking for attention popup (invite #10)\n2026-02-02 20:31:51 - INFO - [CYCLE 352] Invite #11 sent (58s)\n2026-02-02 20:31:57 - INFO - [CYCLE 352] Invite #12 sent (64s)\n2026-02-02 20:32:03 - INFO - [CYCLE 352] Invite #13 sent (70s)\n2026-02-02 20:32:09 - INFO - [CYCLE 352] Invite #14 sent (76s)\n2026-02-02 20:32:15 - INFO - [CYCLE 352] Invite #15 sent (82s)\n2026-02-02 20:32:21 - DEBUG - [CYCLE 352] Checking for attention popup (invite #15)\n2026-02-02 20:32:21 - INFO - [CYCLE 352] Invite #16 sent (88s)\n2026-02-02 20:32:27 - INFO - [CYCLE 352] Invite #17 sent (94s)\n2026-02-02 20:32:33 - INFO - [CYCLE 352] Someone joined the team!\n2026-02-02 20:32:33 - INFO - [CYCLE 352] Step 7/7: Starting game...\n2026-02-02 20:32:34 - INFO - [CYCLE 352] Checking for loading color at (200, 100)...\n2026-02-02 20:32:59 - INFO - [CYCLE 352] Loading color detected! Color: #A9D917\n2026-02-02 20:32:59 - INFO - [CYCLE 352] Cycle #352 completed successfully - loading color detected\n2026-02-02 20:33:19 - INFO - [CYCLE 352] Connected to ZXTouch\n",
+  "update_time": "2026-02-02 20:33:21"
+}
