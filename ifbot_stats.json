@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770131837,
-  "timestamp_human": "2026-02-03 18:17:17",
-  "cycle_count": 2,
+  "timestamp": 1770132243,
+  "timestamp_human": "2026-02-03 18:24:03",
+  "cycle_count": 3,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 3 (ошибок: 1, критических: 2)",
   "error_stats": {
@@ -32,17 +32,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.94",
-      "load_5": "1.93",
-      "load_15": "1.96",
+      "load_1": "3.89",
+      "load_5": "2.30",
+      "load_15": "2.06",
       "cores": 4,
-      "utilization_percent": 48.5
+      "utilization_percent": 97.2
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 232,
       "free_mb": 5,
-      "cached_mb": 131,
+      "cached_mb": 130,
       "utilization_percent": 11.6
     },
     "disk": {
@@ -52,9 +52,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770131837,
-    "timestamp_human": "2026-02-03 18:17:17"
+    "timestamp": 1770132243,
+    "timestamp_human": "2026-02-03 18:24:03"
   },
-  "last_log": "2026-02-03 18:13:41 - DEBUG - [CYCLE 1] Checking for attention popup (invite #30)\n2026-02-03 18:13:41 - INFO - [CYCLE 1] Invite #31 sent (176s)\n2026-02-03 18:13:47 - INFO - [CYCLE 1] Invite #32 sent (182s)\n2026-02-03 18:13:53 - INFO - [CYCLE 1] Invite #33 sent (188s)\n2026-02-03 18:13:59 - INFO - [CYCLE 1] Invite #34 sent (194s)\n2026-02-03 18:14:05 - INFO - [CYCLE 1] Invite #35 sent (200s)\n2026-02-03 18:14:11 - DEBUG - [CYCLE 1] Checking for attention popup (invite #35)\n2026-02-03 18:14:11 - INFO - [CYCLE 1] Invite #36 sent (206s)\n2026-02-03 18:14:17 - INFO - [CYCLE 1] Invite #37 sent (212s)\n2026-02-03 18:14:23 - INFO - [CYCLE 1] Invite #38 sent (218s)\n2026-02-03 18:14:28 - INFO - [CYCLE 1] Invite #39 sent (224s)\n2026-02-03 18:14:34 - INFO - [CYCLE 1] Invite #40 sent (229s)\n2026-02-03 18:14:40 - DEBUG - [CYCLE 1] Checking for attention popup (invite #40)\n2026-02-03 18:14:40 - INFO - [CYCLE 1] Invite #41 sent (235s)\n2026-02-03 18:14:46 - INFO - [CYCLE 1] Invite #42 sent (241s)\n2026-02-03 18:14:52 - INFO - [CYCLE 1] Invite #43 sent (247s)\n2026-02-03 18:14:58 - INFO - [CYCLE 1] Invite #44 sent (253s)\n2026-02-03 18:15:04 - INFO - [CYCLE 1] Invite #45 sent (259s)\n2026-02-03 18:15:10 - DEBUG - [CYCLE 1] Checking for attention popup (invite #45)\n2026-02-03 18:15:10 - INFO - [CYCLE 1] Invite #46 sent (265s)\n2026-02-03 18:15:16 - INFO - [CYCLE 1] Invite #47 sent (271s)\n2026-02-03 18:15:22 - INFO - [CYCLE 1] Invite #48 sent (277s)\n2026-02-03 18:15:27 - INFO - [CYCLE 1] Invite #49 sent (282s)\n2026-02-03 18:15:33 - INFO - [CYCLE 1] Invite #50 sent (288s)\n2026-02-03 18:15:39 - DEBUG - [CYCLE 1] Checking for attention popup (invite #50)\n2026-02-03 18:15:39 - INFO - [CYCLE 1] Invite #51 sent (294s)\n2026-02-03 18:15:45 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-03 18:15:47 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-03 18:16:54 - INFO - [CYCLE 1] Cycle #1 completed - no loading color detected (normal)\n2026-02-03 18:17:15 - INFO - [CYCLE 1] Connected to ZXTouch\n",
-  "update_time": "2026-02-03 18:17:17"
+  "last_log": "2026-02-03 18:20:28 - DEBUG - [CYCLE 2] Checking for attention popup (invite #30)\n2026-02-03 18:20:28 - INFO - [CYCLE 2] Invite #31 sent (176s)\n2026-02-03 18:20:34 - INFO - [CYCLE 2] Invite #32 sent (182s)\n2026-02-03 18:20:40 - INFO - [CYCLE 2] Invite #33 sent (188s)\n2026-02-03 18:20:46 - INFO - [CYCLE 2] Invite #34 sent (194s)\n2026-02-03 18:20:51 - INFO - [CYCLE 2] Invite #35 sent (200s)\n2026-02-03 18:20:57 - DEBUG - [CYCLE 2] Checking for attention popup (invite #35)\n2026-02-03 18:20:57 - INFO - [CYCLE 2] Invite #36 sent (206s)\n2026-02-03 18:21:03 - INFO - [CYCLE 2] Invite #37 sent (212s)\n2026-02-03 18:21:09 - INFO - [CYCLE 2] Invite #38 sent (218s)\n2026-02-03 18:21:15 - INFO - [CYCLE 2] Invite #39 sent (224s)\n2026-02-03 18:21:21 - INFO - [CYCLE 2] Invite #40 sent (230s)\n2026-02-03 18:21:27 - DEBUG - [CYCLE 2] Checking for attention popup (invite #40)\n2026-02-03 18:21:27 - INFO - [CYCLE 2] Invite #41 sent (235s)\n2026-02-03 18:21:33 - INFO - [CYCLE 2] Invite #42 sent (241s)\n2026-02-03 18:21:39 - INFO - [CYCLE 2] Invite #43 sent (247s)\n2026-02-03 18:21:45 - INFO - [CYCLE 2] Invite #44 sent (253s)\n2026-02-03 18:21:50 - INFO - [CYCLE 2] Invite #45 sent (259s)\n2026-02-03 18:21:56 - DEBUG - [CYCLE 2] Checking for attention popup (invite #45)\n2026-02-03 18:21:56 - INFO - [CYCLE 2] Invite #46 sent (265s)\n2026-02-03 18:22:02 - INFO - [CYCLE 2] Invite #47 sent (271s)\n2026-02-03 18:22:08 - INFO - [CYCLE 2] Invite #48 sent (277s)\n2026-02-03 18:22:14 - INFO - [CYCLE 2] Invite #49 sent (282s)\n2026-02-03 18:22:20 - INFO - [CYCLE 2] Invite #50 sent (288s)\n2026-02-03 18:22:26 - DEBUG - [CYCLE 2] Checking for attention popup (invite #50)\n2026-02-03 18:22:26 - INFO - [CYCLE 2] Invite #51 sent (294s)\n2026-02-03 18:22:32 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-02-03 18:22:33 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-02-03 18:23:40 - INFO - [CYCLE 2] Cycle #2 completed - no loading color detected (normal)\n2026-02-03 18:24:00 - INFO - [CYCLE 2] Connected to ZXTouch\n",
+  "update_time": "2026-02-03 18:24:03"
 }
