@@ -1,19 +1,20 @@
 {
-  "timestamp": 1770121174,
-  "timestamp_human": "2026-02-03 15:19:34",
-  "cycle_count": 19,
+  "timestamp": 1770121469,
+  "timestamp_human": "2026-02-03 15:24:29",
+  "cycle_count": 20,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 1м назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 2), последняя: 4м назад",
   "error_stats": {
-    "total_errors": 1,
-    "warnings": 1,
+    "total_errors": 2,
+    "warnings": 2,
     "errors": 0,
     "critical": 0,
     "recent_errors": [
-      "2026-02-03 15:17:55 - WARNING - [CYCLE 18] Still on main, trying again"
+      "2026-02-03 15:17:55 - WARNING - [CYCLE 18] Still on main, trying again",
+      "2026-02-03 15:19:41 - WARNING - [CYCLE 19] Still on main, trying again"
     ],
-    "last_error_time": 1770121075,
-    "error_timestamp_human": "2026-02-03 15:17:55"
+    "last_error_time": 1770121181,
+    "error_timestamp_human": "2026-02-03 15:19:41"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -30,18 +31,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.52",
-      "load_5": "2.19",
-      "load_15": "2.08",
+      "load_1": "2.91",
+      "load_5": "2.18",
+      "load_15": "2.07",
       "cores": 4,
-      "utilization_percent": 63.0
+      "utilization_percent": 72.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 243,
-      "free_mb": 6,
-      "cached_mb": 144,
-      "utilization_percent": 12.2
+      "used_mb": 230,
+      "free_mb": 5,
+      "cached_mb": 130,
+      "utilization_percent": 11.5
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +51,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770121174,
-    "timestamp_human": "2026-02-03 15:19:34"
+    "timestamp": 1770121469,
+    "timestamp_human": "2026-02-03 15:24:29"
   },
-  "last_log": "2026-02-03 15:17:47 - INFO - [CYCLE 17] Connected to ZXTouch\n2026-02-03 15:17:51 - INFO - [CYCLE 18] Starting cycle #18\n2026-02-03 15:17:51 - INFO - [CYCLE 18] Step 1/7: Waiting for main screen...\n2026-02-03 15:17:51 - INFO - [CYCLE 18] Waiting for main screen...\n2026-02-03 15:17:51 - INFO - [CYCLE 18] On main screen\n2026-02-03 15:17:51 - INFO - [CYCLE 18] Step 2/7: Transition to arsenal...\n2026-02-03 15:17:51 - INFO - [CYCLE 18] Quick transition: Кнопка Далее\n2026-02-03 15:17:54 - INFO - [CYCLE 18] Found attention popup\n2026-02-03 15:17:55 - WARNING - [CYCLE 18] Still on main, trying again\n2026-02-03 15:17:57 - INFO - [CYCLE 18] Step 3/7: Transition to battle...\n2026-02-03 15:17:57 - INFO - [CYCLE 18] Quick transition: Кнопка Битва\n2026-02-03 15:18:00 - INFO - [CYCLE 18] Step 4/7: Transition to team...\n2026-02-03 15:18:02 - INFO - [CYCLE 18] Waiting for team screen...\n2026-02-03 15:18:03 - INFO - [CYCLE 18] Found team screen button\n2026-02-03 15:18:03 - INFO - [CYCLE 18] Step 5/7: Pressing team screen button...\n2026-02-03 15:18:04 - INFO - [CYCLE 18] Step 6/7: Sending invitations...\n2026-02-03 15:18:04 - INFO - [CYCLE 18] Invite #1 sent (0s)\n2026-02-03 15:18:10 - INFO - [CYCLE 18] Invite #2 sent (5s)\n2026-02-03 15:18:16 - INFO - [CYCLE 18] Invite #3 sent (11s)\n2026-02-03 15:18:22 - INFO - [CYCLE 18] Invite #4 sent (17s)\n2026-02-03 15:18:28 - INFO - [CYCLE 18] Invite #5 sent (23s)\n2026-02-03 15:18:34 - DEBUG - [CYCLE 18] Checking for attention popup (invite #5)\n2026-02-03 15:18:34 - INFO - [CYCLE 18] Invite #6 sent (29s)\n2026-02-03 15:18:40 - INFO - [CYCLE 18] Invite #7 sent (35s)\n2026-02-03 15:18:46 - INFO - [CYCLE 18] Someone joined the team!\n2026-02-03 15:18:46 - INFO - [CYCLE 18] Step 7/7: Starting game...\n2026-02-03 15:18:47 - INFO - [CYCLE 18] Checking for loading color at (200, 100)...\n2026-02-03 15:19:11 - INFO - [CYCLE 18] Loading color detected! Color: #A9D917\n2026-02-03 15:19:11 - INFO - [CYCLE 18] Cycle #18 completed successfully - loading color detected\n2026-02-03 15:19:32 - INFO - [CYCLE 18] Connected to ZXTouch\n",
-  "update_time": "2026-02-03 15:19:34"
+  "last_log": "2026-02-03 15:21:43 - INFO - [CYCLE 19] Invite #20 sent (111s)\n2026-02-03 15:21:48 - DEBUG - [CYCLE 19] Checking for attention popup (invite #20)\n2026-02-03 15:21:48 - INFO - [CYCLE 19] Invite #21 sent (117s)\n2026-02-03 15:21:54 - INFO - [CYCLE 19] Invite #22 sent (123s)\n2026-02-03 15:22:00 - INFO - [CYCLE 19] Invite #23 sent (129s)\n2026-02-03 15:22:06 - INFO - [CYCLE 19] Invite #24 sent (135s)\n2026-02-03 15:22:12 - INFO - [CYCLE 19] Invite #25 sent (141s)\n2026-02-03 15:22:18 - DEBUG - [CYCLE 19] Checking for attention popup (invite #25)\n2026-02-03 15:22:18 - INFO - [CYCLE 19] Invite #26 sent (147s)\n2026-02-03 15:22:24 - INFO - [CYCLE 19] Invite #27 sent (152s)\n2026-02-03 15:22:30 - INFO - [CYCLE 19] Invite #28 sent (158s)\n2026-02-03 15:22:36 - INFO - [CYCLE 19] Invite #29 sent (164s)\n2026-02-03 15:22:41 - INFO - [CYCLE 19] Invite #30 sent (170s)\n2026-02-03 15:22:47 - DEBUG - [CYCLE 19] Checking for attention popup (invite #30)\n2026-02-03 15:22:47 - INFO - [CYCLE 19] Invite #31 sent (176s)\n2026-02-03 15:22:53 - INFO - [CYCLE 19] Invite #32 sent (182s)\n2026-02-03 15:22:59 - INFO - [CYCLE 19] Invite #33 sent (188s)\n2026-02-03 15:23:05 - INFO - [CYCLE 19] Invite #34 sent (194s)\n2026-02-03 15:23:11 - INFO - [CYCLE 19] Invite #35 sent (200s)\n2026-02-03 15:23:17 - DEBUG - [CYCLE 19] Checking for attention popup (invite #35)\n2026-02-03 15:23:17 - INFO - [CYCLE 19] Invite #36 sent (206s)\n2026-02-03 15:23:23 - INFO - [CYCLE 19] Invite #37 sent (211s)\n2026-02-03 15:23:29 - INFO - [CYCLE 19] Invite #38 sent (217s)\n2026-02-03 15:23:34 - INFO - [CYCLE 19] Invite #39 sent (223s)\n2026-02-03 15:23:40 - INFO - [CYCLE 19] Someone joined the team!\n2026-02-03 15:23:40 - INFO - [CYCLE 19] Step 7/7: Starting game...\n2026-02-03 15:23:42 - INFO - [CYCLE 19] Checking for loading color at (200, 100)...\n2026-02-03 15:24:06 - INFO - [CYCLE 19] Loading color detected! Color: #A9D917\n2026-02-03 15:24:06 - INFO - [CYCLE 19] Cycle #19 completed successfully - loading color detected\n2026-02-03 15:24:27 - INFO - [CYCLE 19] Connected to ZXTouch\n",
+  "update_time": "2026-02-03 15:24:29"
 }
