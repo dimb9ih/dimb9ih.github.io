@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770116006,
-  "timestamp_human": "2026-02-03 13:53:26",
-  "cycle_count": 2,
+  "timestamp": 1770116091,
+  "timestamp_human": "2026-02-03 13:54:51",
+  "cycle_count": 3,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 3ч назад",
   "error_stats": {
@@ -30,18 +30,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.90",
-      "load_5": "1.88",
-      "load_15": "1.78",
+      "load_1": "4.28",
+      "load_5": "2.35",
+      "load_15": "1.95",
       "cores": 4,
-      "utilization_percent": 47.5
+      "utilization_percent": 107.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 233,
-      "free_mb": 7,
-      "cached_mb": 130,
-      "utilization_percent": 11.7
+      "used_mb": 241,
+      "free_mb": 2,
+      "cached_mb": 138,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -50,9 +50,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770116006,
-    "timestamp_human": "2026-02-03 13:53:26"
+    "timestamp": 1770116091,
+    "timestamp_human": "2026-02-03 13:54:51"
   },
-  "last_log": "2026-02-03 11:03:13 - INFO - [CYCLE 493] Step 5/7: Pressing team screen button...\n2026-02-03 11:03:15 - INFO - [CYCLE 493] Step 6/7: Sending invitations...\n2026-02-03 11:03:15 - INFO - [CYCLE 493] Invite #1 sent (0s)\n2026-02-03 11:03:20 - INFO - [CYCLE 493] Invite #2 sent (5s)\n2026-02-03 11:03:26 - INFO - [CYCLE 493] Invite #3 sent (11s)\n2026-02-03 13:52:07 - INFO - [CYCLE 493] Step 7/7: Starting game...\n2026-02-03 13:52:09 - INFO - [CYCLE 493] Checking for loading color at (200, 100)...\n2026-02-03 13:52:32 - INFO - [CYCLE 0] Connected to ZXTouch\n2026-02-03 13:52:34 - INFO - [CYCLE 1] Starting cycle #1\n2026-02-03 13:52:34 - INFO - [CYCLE 1] Step 1/7: Waiting for main screen...\n2026-02-03 13:52:34 - INFO - [CYCLE 1] Waiting for main screen...\n2026-02-03 13:52:34 - INFO - [CYCLE 1] On main screen\n2026-02-03 13:52:34 - INFO - [CYCLE 1] Step 2/7: Transition to arsenal...\n2026-02-03 13:52:34 - INFO - [CYCLE 1] Quick transition: Кнопка Далее\n2026-02-03 13:52:37 - INFO - [CYCLE 1] Step 3/7: Transition to battle...\n2026-02-03 13:52:37 - INFO - [CYCLE 1] Quick transition: Кнопка Битва\n2026-02-03 13:52:40 - INFO - [CYCLE 1] Found attention popup\n2026-02-03 13:52:41 - INFO - [CYCLE 1] Step 4/7: Transition to team...\n2026-02-03 13:52:43 - INFO - [CYCLE 1] Waiting for team screen...\n2026-02-03 13:52:44 - INFO - [CYCLE 1] Found team screen button\n2026-02-03 13:52:44 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-02-03 13:52:46 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-02-03 13:52:46 - INFO - [CYCLE 1] Invite #1 sent (0s)\n2026-02-03 13:52:52 - INFO - [CYCLE 1] Invite #2 sent (5s)\n2026-02-03 13:52:58 - INFO - [CYCLE 1] Someone joined the team!\n2026-02-03 13:52:58 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-03 13:52:59 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-03 13:53:03 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-02-03 13:53:03 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-02-03 13:53:23 - INFO - [CYCLE 1] Connected to ZXTouch\n",
-  "update_time": "2026-02-03 13:53:26"
+  "last_log": "2026-02-03 13:52:58 - INFO - [CYCLE 1] Someone joined the team!\n2026-02-03 13:52:58 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-03 13:52:59 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-03 13:53:03 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-02-03 13:53:03 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-02-03 13:53:23 - INFO - [CYCLE 1] Connected to ZXTouch\n2026-02-03 13:53:28 - INFO - [CYCLE 2] Starting cycle #2\n2026-02-03 13:53:28 - INFO - [CYCLE 2] Step 1/7: Waiting for main screen...\n2026-02-03 13:53:28 - INFO - [CYCLE 2] Waiting for main screen...\n2026-02-03 13:53:28 - INFO - [CYCLE 2] Found attention popup\n2026-02-03 13:53:29 - INFO - [CYCLE 2] On main screen\n2026-02-03 13:53:29 - INFO - [CYCLE 2] Step 2/7: Transition to arsenal...\n2026-02-03 13:53:29 - INFO - [CYCLE 2] Quick transition: Кнопка Далее\n2026-02-03 13:53:32 - INFO - [CYCLE 2] Step 3/7: Transition to battle...\n2026-02-03 13:53:32 - INFO - [CYCLE 2] Quick transition: Кнопка Битва\n2026-02-03 13:53:34 - INFO - [CYCLE 2] Step 4/7: Transition to team...\n2026-02-03 13:53:36 - INFO - [CYCLE 2] Waiting for team screen...\n2026-02-03 13:53:37 - INFO - [CYCLE 2] Found team screen button\n2026-02-03 13:53:37 - INFO - [CYCLE 2] Step 5/7: Pressing team screen button...\n2026-02-03 13:53:39 - INFO - [CYCLE 2] Step 6/7: Sending invitations...\n2026-02-03 13:53:39 - INFO - [CYCLE 2] Invite #1 sent (0s)\n2026-02-03 13:53:45 - INFO - [CYCLE 2] Invite #2 sent (5s)\n2026-02-03 13:53:51 - INFO - [CYCLE 2] Invite #3 sent (11s)\n2026-02-03 13:53:57 - INFO - [CYCLE 2] Invite #4 sent (17s)\n2026-02-03 13:54:03 - INFO - [CYCLE 2] Someone joined the team!\n2026-02-03 13:54:03 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-02-03 13:54:04 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-02-03 13:54:29 - INFO - [CYCLE 2] Loading color detected! Color: #A9D917\n2026-02-03 13:54:29 - INFO - [CYCLE 2] Cycle #2 completed successfully - loading color detected\n2026-02-03 13:54:49 - INFO - [CYCLE 2] Connected to ZXTouch\n",
+  "update_time": "2026-02-03 13:54:51"
 }
