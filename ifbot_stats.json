@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770249493,
-  "timestamp_human": "2026-02-05 02:58:13",
-  "cycle_count": 32,
+  "timestamp": 1770249591,
+  "timestamp_human": "2026-02-05 02:59:51",
+  "cycle_count": 33,
   "bot_status": "running",
   "error_summary": "✅ Ошибок нет",
   "error_stats": {
@@ -28,18 +28,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.16",
+      "load_1": "1.82",
       "load_5": "1.75",
-      "load_15": "1.77",
+      "load_15": "1.76",
       "cores": 4,
-      "utilization_percent": 54.0
+      "utilization_percent": 45.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 230,
+      "used_mb": 237,
       "free_mb": 4,
-      "cached_mb": 122,
-      "utilization_percent": 11.5
+      "cached_mb": 135,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -48,9 +48,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770249493,
-    "timestamp_human": "2026-02-05 02:58:13"
+    "timestamp": 1770249591,
+    "timestamp_human": "2026-02-05 02:59:51"
   },
-  "last_log": "2026-02-05 02:55:41 - INFO - [CYCLE 31] Found team screen button\n2026-02-05 02:55:41 - INFO - [CYCLE 31] Step 5/7: Pressing team screen button...\n2026-02-05 02:55:43 - INFO - [CYCLE 31] Step 6/7: Sending invitations...\n2026-02-05 02:55:43 - INFO - [CYCLE 31] Invite #1 sent (0s)\n2026-02-05 02:55:49 - INFO - [CYCLE 31] Invite #2 sent (5s)\n2026-02-05 02:55:54 - INFO - [CYCLE 31] Invite #3 sent (11s)\n2026-02-05 02:56:00 - INFO - [CYCLE 31] Invite #4 sent (17s)\n2026-02-05 02:56:06 - INFO - [CYCLE 31] Invite #5 sent (23s)\n2026-02-05 02:56:12 - DEBUG - [CYCLE 31] Checking for attention popup (invite #5)\n2026-02-05 02:56:12 - INFO - [CYCLE 31] Invite #6 sent (29s)\n2026-02-05 02:56:18 - INFO - [CYCLE 31] Invite #7 sent (35s)\n2026-02-05 02:56:24 - INFO - [CYCLE 31] Invite #8 sent (41s)\n2026-02-05 02:56:30 - INFO - [CYCLE 31] Invite #9 sent (46s)\n2026-02-05 02:56:36 - INFO - [CYCLE 31] Invite #10 sent (52s)\n2026-02-05 02:56:41 - DEBUG - [CYCLE 31] Checking for attention popup (invite #10)\n2026-02-05 02:56:42 - INFO - [CYCLE 31] Invite #11 sent (58s)\n2026-02-05 02:56:47 - INFO - [CYCLE 31] Invite #12 sent (64s)\n2026-02-05 02:56:53 - INFO - [CYCLE 31] Invite #13 sent (70s)\n2026-02-05 02:56:59 - INFO - [CYCLE 31] Invite #14 sent (76s)\n2026-02-05 02:57:05 - INFO - [CYCLE 31] Invite #15 sent (82s)\n2026-02-05 02:57:11 - DEBUG - [CYCLE 31] Checking for attention popup (invite #15)\n2026-02-05 02:57:11 - INFO - [CYCLE 31] Invite #16 sent (88s)\n2026-02-05 02:57:17 - INFO - [CYCLE 31] Invite #17 sent (94s)\n2026-02-05 02:57:23 - INFO - [CYCLE 31] Invite #18 sent (99s)\n2026-02-05 02:57:24 - INFO - [CYCLE 31] Someone joined immediately!\n2026-02-05 02:57:24 - INFO - [CYCLE 31] Step 7/7: Starting game...\n2026-02-05 02:57:25 - INFO - [CYCLE 31] Checking for loading color at (200, 100)...\n2026-02-05 02:57:50 - INFO - [CYCLE 31] Loading color detected! Color: #A9D917\n2026-02-05 02:57:50 - INFO - [CYCLE 31] Cycle #31 completed successfully - loading color detected\n2026-02-05 02:58:10 - INFO - [CYCLE 31] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 02:58:13"
+  "last_log": "2026-02-05 02:57:50 - INFO - [CYCLE 31] Loading color detected! Color: #A9D917\n2026-02-05 02:57:50 - INFO - [CYCLE 31] Cycle #31 completed successfully - loading color detected\n2026-02-05 02:58:10 - INFO - [CYCLE 31] Connected to ZXTouch\n2026-02-05 02:58:15 - INFO - [CYCLE 32] Starting cycle #32\n2026-02-05 02:58:15 - INFO - [CYCLE 32] Step 1/7: Waiting for main screen...\n2026-02-05 02:58:15 - INFO - [CYCLE 32] Waiting for main screen...\n2026-02-05 02:58:15 - INFO - [CYCLE 32] Found attention popup\n2026-02-05 02:58:16 - INFO - [CYCLE 32] On main screen\n2026-02-05 02:58:16 - INFO - [CYCLE 32] Step 2/7: Transition to arsenal...\n2026-02-05 02:58:16 - INFO - [CYCLE 32] Quick transition: Кнопка Далее\n2026-02-05 02:58:19 - INFO - [CYCLE 32] Step 3/7: Transition to battle...\n2026-02-05 02:58:19 - INFO - [CYCLE 32] Quick transition: Кнопка Битва\n2026-02-05 02:58:21 - INFO - [CYCLE 32] Step 4/7: Transition to team...\n2026-02-05 02:58:23 - INFO - [CYCLE 32] Waiting for team screen...\n2026-02-05 02:58:25 - INFO - [CYCLE 32] Found team screen button\n2026-02-05 02:58:25 - INFO - [CYCLE 32] Step 5/7: Pressing team screen button...\n2026-02-05 02:58:26 - INFO - [CYCLE 32] Step 6/7: Sending invitations...\n2026-02-05 02:58:26 - INFO - [CYCLE 32] Invite #1 sent (0s)\n2026-02-05 02:58:32 - INFO - [CYCLE 32] Invite #2 sent (5s)\n2026-02-05 02:58:38 - INFO - [CYCLE 32] Invite #3 sent (11s)\n2026-02-05 02:58:44 - INFO - [CYCLE 32] Invite #4 sent (17s)\n2026-02-05 02:58:50 - INFO - [CYCLE 32] Invite #5 sent (23s)\n2026-02-05 02:58:56 - DEBUG - [CYCLE 32] Checking for attention popup (invite #5)\n2026-02-05 02:58:56 - INFO - [CYCLE 32] Invite #6 sent (29s)\n2026-02-05 02:59:02 - INFO - [CYCLE 32] Someone joined the team!\n2026-02-05 02:59:02 - INFO - [CYCLE 32] Step 7/7: Starting game...\n2026-02-05 02:59:03 - INFO - [CYCLE 32] Checking for loading color at (200, 100)...\n2026-02-05 02:59:28 - INFO - [CYCLE 32] Loading color detected! Color: #A9D917\n2026-02-05 02:59:28 - INFO - [CYCLE 32] Cycle #32 completed successfully - loading color detected\n2026-02-05 02:59:48 - INFO - [CYCLE 32] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 02:59:51"
 }
