@@ -1,0 +1,56 @@
+{
+  "timestamp": 1770185211,
+  "timestamp_human": "2026-02-04 09:06:51",
+  "cycle_count": 22,
+  "bot_status": "running",
+  "error_summary": "✅ Ошибок нет",
+  "error_stats": {
+    "total_errors": 0,
+    "warnings": 0,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [],
+    "last_error_time": 1770180152,
+    "error_timestamp_human": "2026-02-04 07:42:32"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "1.96",
+      "load_5": "2.03",
+      "load_15": "1.88",
+      "cores": 4,
+      "utilization_percent": 49.0
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 230,
+      "free_mb": 4,
+      "cached_mb": 126,
+      "utilization_percent": 11.5
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.0Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1770185211,
+    "timestamp_human": "2026-02-04 09:06:51"
+  },
+  "last_log": "2026-02-04 09:04:43 - INFO - [CYCLE 21] Step 1/7: Waiting for main screen...\n2026-02-04 09:04:43 - INFO - [CYCLE 21] Waiting for main screen...\n2026-02-04 09:04:43 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 0s\n2026-02-04 09:04:43 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 0s\n2026-02-04 09:04:46 - INFO - [CYCLE 21] On main screen\n2026-02-04 09:04:46 - INFO - [CYCLE 21] Step 2/7: Transition to arsenal...\n2026-02-04 09:04:46 - INFO - [CYCLE 21] Quick transition: Кнопка Далее\n2026-02-04 09:04:49 - INFO - [CYCLE 21] Found attention popup\n2026-02-04 09:04:50 - INFO - [CYCLE 21] Step 3/7: Transition to battle...\n2026-02-04 09:04:50 - INFO - [CYCLE 21] Quick transition: Кнопка Битва\n2026-02-04 09:04:53 - INFO - [CYCLE 21] Step 4/7: Transition to team...\n2026-02-04 09:04:55 - INFO - [CYCLE 21] Waiting for team screen...\n2026-02-04 09:04:56 - INFO - [CYCLE 21] Found team screen button\n2026-02-04 09:04:56 - INFO - [CYCLE 21] Step 5/7: Pressing team screen button...\n2026-02-04 09:04:58 - INFO - [CYCLE 21] Step 6/7: Sending invitations...\n2026-02-04 09:04:58 - INFO - [CYCLE 21] Invite #1 sent (0s)\n2026-02-04 09:05:04 - INFO - [CYCLE 21] Invite #2 sent (5s)\n2026-02-04 09:05:10 - INFO - [CYCLE 21] Invite #3 sent (11s)\n2026-02-04 09:05:15 - INFO - [CYCLE 21] Invite #4 sent (17s)\n2026-02-04 09:05:21 - INFO - [CYCLE 21] Invite #5 sent (23s)\n2026-02-04 09:05:27 - DEBUG - [CYCLE 21] Checking for attention popup (invite #5)\n2026-02-04 09:05:27 - INFO - [CYCLE 21] Invite #6 sent (29s)\n2026-02-04 09:05:33 - INFO - [CYCLE 21] Invite #7 sent (35s)\n2026-02-04 09:05:39 - INFO - [CYCLE 21] Invite #8 sent (41s)\n2026-02-04 09:05:45 - INFO - [CYCLE 21] Someone joined the team!\n2026-02-04 09:05:45 - INFO - [CYCLE 21] Step 7/7: Starting game...\n2026-02-04 09:05:47 - INFO - [CYCLE 21] Checking for loading color at (200, 100)...\n2026-02-04 09:06:28 - INFO - [CYCLE 21] Loading color detected! Color: #A9D917\n2026-02-04 09:06:28 - INFO - [CYCLE 21] Cycle #21 completed successfully - loading color detected\n2026-02-04 09:06:48 - INFO - [CYCLE 21] Connected to ZXTouch\n",
+  "update_time": "2026-02-04 09:06:51"
+}
