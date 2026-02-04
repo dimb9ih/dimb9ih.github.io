@@ -1,19 +1,19 @@
 {
-  "timestamp": 1770217865,
-  "timestamp_human": "2026-02-04 18:11:05",
-  "cycle_count": 3,
+  "timestamp": 1770218275,
+  "timestamp_human": "2026-02-04 18:17:55",
+  "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 9 (ошибок: 3, критических: 6)",
+  "error_summary": "⚠️ Ошибок: 12 (ошибок: 4, критических: 8)",
   "error_stats": {
-    "total_errors": 9,
+    "total_errors": 12,
     "warnings": 0,
-    "errors": 3,
-    "critical": 6,
+    "errors": 4,
+    "critical": 8,
     "recent_errors": [
-      "2026-02-04 17:32:34 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe",
-      "2026-02-04 18:02:31 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
       "2026-02-04 18:02:31 - CRITICAL - Traceback (most recent call last):",
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-04 18:17:29 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
+      "2026-02-04 18:17:29 - CRITICAL - Traceback (most recent call last):",
       "BrokenPipeError: [Errno 32] Broken pipe"
     ],
     "last_error_time": null,
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.29",
-      "load_5": "2.11",
-      "load_15": "1.97",
+      "load_1": "3.41",
+      "load_5": "2.24",
+      "load_15": "2.04",
       "cores": 4,
-      "utilization_percent": 57.2
+      "utilization_percent": 85.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 239,
+      "used_mb": 227,
       "free_mb": 4,
-      "cached_mb": 138,
-      "utilization_percent": 11.9
+      "cached_mb": 124,
+      "utilization_percent": 11.3
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770217865,
-    "timestamp_human": "2026-02-04 18:11:05"
+    "timestamp": 1770218275,
+    "timestamp_human": "2026-02-04 18:17:55"
   },
-  "last_log": "2026-02-04 18:08:06 - INFO - [CYCLE 1] Invite #51 sent (294s)\n2026-02-04 18:08:12 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-04 18:08:13 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-04 18:09:21 - INFO - [CYCLE 1] Cycle #1 completed - no loading color detected (normal)\n2026-02-04 18:09:41 - INFO - [CYCLE 1] Connected to ZXTouch\n2026-02-04 18:09:46 - INFO - [CYCLE 2] Starting cycle #2\n2026-02-04 18:09:46 - INFO - [CYCLE 2] Step 1/7: Waiting for main screen...\n2026-02-04 18:09:46 - INFO - [CYCLE 2] Waiting for main screen...\n2026-02-04 18:09:46 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 0s\n2026-02-04 18:09:47 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 0s\n2026-02-04 18:09:47 - INFO - [CYCLE 2] On main screen\n2026-02-04 18:09:47 - INFO - [CYCLE 2] Step 2/7: Transition to arsenal...\n2026-02-04 18:09:47 - INFO - [CYCLE 2] Quick transition: Кнопка Далее\n2026-02-04 18:09:50 - INFO - [CYCLE 2] Found attention popup\n2026-02-04 18:09:51 - INFO - [CYCLE 2] Step 3/7: Transition to battle...\n2026-02-04 18:09:51 - INFO - [CYCLE 2] Quick transition: Кнопка Битва\n2026-02-04 18:09:54 - INFO - [CYCLE 2] Step 4/7: Transition to team...\n2026-02-04 18:09:56 - INFO - [CYCLE 2] Waiting for team screen...\n2026-02-04 18:09:57 - INFO - [CYCLE 2] Found team screen button\n2026-02-04 18:09:57 - INFO - [CYCLE 2] Step 5/7: Pressing team screen button...\n2026-02-04 18:09:59 - INFO - [CYCLE 2] Step 6/7: Sending invitations...\n2026-02-04 18:09:59 - INFO - [CYCLE 2] Invite #1 sent (0s)\n2026-02-04 18:10:05 - INFO - [CYCLE 2] Invite #2 sent (5s)\n2026-02-04 18:10:10 - INFO - [CYCLE 2] Invite #3 sent (11s)\n2026-02-04 18:10:16 - INFO - [CYCLE 2] Someone joined the team!\n2026-02-04 18:10:16 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-02-04 18:10:18 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-02-04 18:10:42 - INFO - [CYCLE 2] Loading color detected! Color: #A9D917\n2026-02-04 18:10:42 - INFO - [CYCLE 2] Cycle #2 completed successfully - loading color detected\n2026-02-04 18:11:03 - INFO - [CYCLE 2] Connected to ZXTouch\n",
-  "update_time": "2026-02-04 18:11:05"
+  "last_log": "2026-02-04 18:14:47 - DEBUG - [CYCLE 3] Checking for attention popup (invite #35)\n2026-02-04 18:14:47 - INFO - [CYCLE 3] Invite #36 sent (206s)\n2026-02-04 18:14:53 - INFO - [CYCLE 3] Invite #37 sent (212s)\n2026-02-04 18:14:59 - INFO - [CYCLE 3] Invite #38 sent (218s)\n2026-02-04 18:15:05 - INFO - [CYCLE 3] Invite #39 sent (224s)\n2026-02-04 18:15:10 - INFO - [CYCLE 3] Invite #40 sent (230s)\n2026-02-04 18:15:16 - DEBUG - [CYCLE 3] Checking for attention popup (invite #40)\n2026-02-04 18:15:16 - INFO - [CYCLE 3] Invite #41 sent (236s)\n2026-02-04 18:15:22 - INFO - [CYCLE 3] Invite #42 sent (242s)\n2026-02-04 18:15:28 - INFO - [CYCLE 3] Invite #43 sent (247s)\n2026-02-04 18:15:34 - INFO - [CYCLE 3] Invite #44 sent (253s)\n2026-02-04 18:15:40 - INFO - [CYCLE 3] Invite #45 sent (259s)\n2026-02-04 18:15:46 - DEBUG - [CYCLE 3] Checking for attention popup (invite #45)\n2026-02-04 18:15:46 - INFO - [CYCLE 3] Invite #46 sent (265s)\n2026-02-04 18:15:52 - INFO - [CYCLE 3] Invite #47 sent (271s)\n2026-02-04 18:15:58 - INFO - [CYCLE 3] Invite #48 sent (277s)\n2026-02-04 18:16:04 - INFO - [CYCLE 3] Invite #49 sent (283s)\n2026-02-04 18:16:10 - INFO - [CYCLE 3] Invite #50 sent (289s)\n2026-02-04 18:16:15 - DEBUG - [CYCLE 3] Checking for attention popup (invite #50)\n2026-02-04 18:16:15 - INFO - [CYCLE 3] Invite #51 sent (295s)\n2026-02-04 18:16:21 - INFO - [CYCLE 3] Step 7/7: Starting game...\n2026-02-04 18:16:23 - INFO - [CYCLE 3] Checking for loading color at (200, 100)...\n2026-02-04 18:17:29 - INFO - [CYCLE 3] Cycle #3 completed - no loading color detected (normal)\n2026-02-04 18:17:29 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-04 18:17:29 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1357, in main\n    print(f\"\\n[SUCCESS] Цикл #{bot.cycle_count} завершен\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-04 18:17:55 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-02-04 18:17:55"
 }
