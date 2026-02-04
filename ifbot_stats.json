@@ -1,20 +1,22 @@
 {
-  "timestamp": 1770203864,
-  "timestamp_human": "2026-02-04 14:17:44",
-  "cycle_count": 17,
+  "timestamp": 1770204057,
+  "timestamp_human": "2026-02-04 14:20:57",
+  "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 1ч назад",
+  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 1, ошибок: 1, критических: 2)",
   "error_stats": {
-    "total_errors": 2,
+    "total_errors": 4,
     "warnings": 1,
     "errors": 1,
-    "critical": 0,
+    "critical": 2,
     "recent_errors": [
-      "BrokenPipeError: [Errno 32] Broken pipe",
-      "2026-02-04 13:16:24 - WARNING - [CYCLE 6] Still on main, trying again"
+      "2026-02-04 13:16:24 - WARNING - [CYCLE 6] Still on main, trying again",
+      "2026-02-04 14:20:32 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
+      "2026-02-04 14:20:32 - CRITICAL - Traceback (most recent call last):",
+      "BrokenPipeError: [Errno 32] Broken pipe"
     ],
-    "last_error_time": 1770200184,
-    "error_timestamp_human": "2026-02-04 13:16:24"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -31,29 +33,29 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "6.55",
-      "load_5": "3.17",
-      "load_15": "2.33",
+      "load_1": "1.62",
+      "load_5": "2.35",
+      "load_15": "2.14",
       "cores": 4,
-      "utilization_percent": 163.8
+      "utilization_percent": 40.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 234,
-      "free_mb": 1,
-      "cached_mb": 131,
-      "utilization_percent": 11.7
+      "used_mb": 232,
+      "free_mb": 3,
+      "cached_mb": 130,
+      "utilization_percent": 11.6
     },
     "disk": {
       "total": "30Gi",
       "used": "7.0Gi",
-      "available": "8.9Gi",
+      "available": "9.0Gi",
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770203863,
-    "timestamp_human": "2026-02-04 14:17:43"
+    "timestamp": 1770204057,
+    "timestamp_human": "2026-02-04 14:20:57"
   },
-  "last_log": "2026-02-04 14:14:08 - DEBUG - [CYCLE 16] Checking for attention popup (invite #30)\n2026-02-04 14:14:08 - INFO - [CYCLE 16] Invite #31 sent (177s)\n2026-02-04 14:14:14 - INFO - [CYCLE 16] Invite #32 sent (182s)\n2026-02-04 14:14:20 - INFO - [CYCLE 16] Invite #33 sent (188s)\n2026-02-04 14:14:26 - INFO - [CYCLE 16] Invite #34 sent (194s)\n2026-02-04 14:14:32 - INFO - [CYCLE 16] Invite #35 sent (200s)\n2026-02-04 14:14:38 - DEBUG - [CYCLE 16] Checking for attention popup (invite #35)\n2026-02-04 14:14:38 - INFO - [CYCLE 16] Invite #36 sent (206s)\n2026-02-04 14:14:44 - INFO - [CYCLE 16] Invite #37 sent (212s)\n2026-02-04 14:14:49 - INFO - [CYCLE 16] Invite #38 sent (218s)\n2026-02-04 14:14:55 - INFO - [CYCLE 16] Invite #39 sent (224s)\n2026-02-04 14:15:01 - INFO - [CYCLE 16] Invite #40 sent (230s)\n2026-02-04 14:15:07 - DEBUG - [CYCLE 16] Checking for attention popup (invite #40)\n2026-02-04 14:15:07 - INFO - [CYCLE 16] Invite #41 sent (235s)\n2026-02-04 14:15:13 - INFO - [CYCLE 16] Invite #42 sent (241s)\n2026-02-04 14:15:19 - INFO - [CYCLE 16] Invite #43 sent (247s)\n2026-02-04 14:15:25 - INFO - [CYCLE 16] Invite #44 sent (253s)\n2026-02-04 14:15:31 - INFO - [CYCLE 16] Invite #45 sent (259s)\n2026-02-04 14:15:37 - DEBUG - [CYCLE 16] Checking for attention popup (invite #45)\n2026-02-04 14:15:37 - INFO - [CYCLE 16] Invite #46 sent (265s)\n2026-02-04 14:15:43 - INFO - [CYCLE 16] Invite #47 sent (271s)\n2026-02-04 14:15:48 - INFO - [CYCLE 16] Invite #48 sent (277s)\n2026-02-04 14:15:54 - INFO - [CYCLE 16] Invite #49 sent (283s)\n2026-02-04 14:16:00 - INFO - [CYCLE 16] Invite #50 sent (288s)\n2026-02-04 14:16:06 - DEBUG - [CYCLE 16] Checking for attention popup (invite #50)\n2026-02-04 14:16:06 - INFO - [CYCLE 16] Invite #51 sent (294s)\n2026-02-04 14:16:12 - INFO - [CYCLE 16] Step 7/7: Starting game...\n2026-02-04 14:16:14 - INFO - [CYCLE 16] Checking for loading color at (200, 100)...\n2026-02-04 14:17:21 - INFO - [CYCLE 16] Cycle #16 completed - no loading color detected (normal)\n2026-02-04 14:17:41 - INFO - [CYCLE 16] Connected to ZXTouch\n",
-  "update_time": "2026-02-04 14:17:44"
+  "last_log": "2026-02-04 14:18:15 - INFO - [CYCLE 17] Invite #4 sent (17s)\n2026-02-04 14:18:21 - INFO - [CYCLE 17] Invite #5 sent (23s)\n2026-02-04 14:18:27 - DEBUG - [CYCLE 17] Checking for attention popup (invite #5)\n2026-02-04 14:18:27 - INFO - [CYCLE 17] Invite #6 sent (29s)\n2026-02-04 14:18:33 - INFO - [CYCLE 17] Invite #7 sent (35s)\n2026-02-04 14:18:39 - INFO - [CYCLE 17] Invite #8 sent (41s)\n2026-02-04 14:18:45 - INFO - [CYCLE 17] Invite #9 sent (47s)\n2026-02-04 14:18:50 - INFO - [CYCLE 17] Invite #10 sent (53s)\n2026-02-04 14:18:56 - DEBUG - [CYCLE 17] Checking for attention popup (invite #10)\n2026-02-04 14:18:56 - INFO - [CYCLE 17] Invite #11 sent (59s)\n2026-02-04 14:19:02 - INFO - [CYCLE 17] Invite #12 sent (64s)\n2026-02-04 14:19:08 - INFO - [CYCLE 17] Invite #13 sent (70s)\n2026-02-04 14:19:14 - INFO - [CYCLE 17] Invite #14 sent (76s)\n2026-02-04 14:19:20 - INFO - [CYCLE 17] Invite #15 sent (82s)\n2026-02-04 14:19:26 - DEBUG - [CYCLE 17] Checking for attention popup (invite #15)\n2026-02-04 14:19:26 - INFO - [CYCLE 17] Invite #16 sent (88s)\n2026-02-04 14:19:32 - INFO - [CYCLE 17] Invite #17 sent (94s)\n2026-02-04 14:19:38 - INFO - [CYCLE 17] Invite #18 sent (100s)\n2026-02-04 14:19:43 - INFO - [CYCLE 17] Someone joined the team!\n2026-02-04 14:19:43 - INFO - [CYCLE 17] Step 7/7: Starting game...\n2026-02-04 14:19:45 - INFO - [CYCLE 17] Checking for loading color at (200, 100)...\n2026-02-04 14:20:26 - INFO - [CYCLE 17] Loading color detected! Color: #A9D917\n2026-02-04 14:20:26 - INFO - [CYCLE 17] Cycle #17 completed successfully - loading color detected\n2026-02-04 14:20:32 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-04 14:20:32 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1369, in main\n    print(\"[LAUNCH] Перезапускаем игру...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-04 14:20:57 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-02-04 14:20:57"
 }
