@@ -1,21 +1,22 @@
 {
-  "timestamp": 1770180144,
-  "timestamp_human": "2026-02-04 07:42:24",
-  "cycle_count": 8,
+  "timestamp": 1770180553,
+  "timestamp_human": "2026-02-04 07:49:13",
+  "cycle_count": 9,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 3 (ошибок: 1, критических: 2)",
+  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 1, ошибок: 1, критических: 2), последняя: 6м назад",
   "error_stats": {
-    "total_errors": 3,
-    "warnings": 0,
+    "total_errors": 4,
+    "warnings": 1,
     "errors": 1,
     "critical": 2,
     "recent_errors": [
       "2026-02-04 06:58:41 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
       "2026-02-04 06:58:41 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe"
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-04 07:42:32 - WARNING - [CYCLE 8] Still on main, trying again"
     ],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "last_error_time": 1770180152,
+    "error_timestamp_human": "2026-02-04 07:42:32"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -32,29 +33,29 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.42",
-      "load_5": "1.86",
-      "load_15": "2.11",
+      "load_1": "1.58",
+      "load_5": "1.79",
+      "load_15": "2.01",
       "cores": 4,
-      "utilization_percent": 35.5
+      "utilization_percent": 39.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 243,
-      "free_mb": 4,
-      "cached_mb": 138,
-      "utilization_percent": 12.2
+      "used_mb": 234,
+      "free_mb": 21,
+      "cached_mb": 123,
+      "utilization_percent": 11.7
     },
     "disk": {
       "total": "30Gi",
       "used": "7.0Gi",
-      "available": "9.1Gi",
+      "available": "9.0Gi",
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770180144,
-    "timestamp_human": "2026-02-04 07:42:24"
+    "timestamp": 1770180553,
+    "timestamp_human": "2026-02-04 07:49:13"
   },
-  "last_log": "2026-02-04 07:38:49 - DEBUG - [CYCLE 7] Checking for attention popup (invite #30)\n2026-02-04 07:38:49 - INFO - [CYCLE 7] Invite #31 sent (176s)\n2026-02-04 07:38:55 - INFO - [CYCLE 7] Invite #32 sent (182s)\n2026-02-04 07:39:01 - INFO - [CYCLE 7] Invite #33 sent (188s)\n2026-02-04 07:39:06 - INFO - [CYCLE 7] Invite #34 sent (194s)\n2026-02-04 07:39:12 - INFO - [CYCLE 7] Invite #35 sent (200s)\n2026-02-04 07:39:18 - DEBUG - [CYCLE 7] Checking for attention popup (invite #35)\n2026-02-04 07:39:18 - INFO - [CYCLE 7] Invite #36 sent (206s)\n2026-02-04 07:39:24 - INFO - [CYCLE 7] Invite #37 sent (212s)\n2026-02-04 07:39:30 - INFO - [CYCLE 7] Invite #38 sent (218s)\n2026-02-04 07:39:36 - INFO - [CYCLE 7] Invite #39 sent (224s)\n2026-02-04 07:39:42 - INFO - [CYCLE 7] Invite #40 sent (230s)\n2026-02-04 07:39:48 - DEBUG - [CYCLE 7] Checking for attention popup (invite #40)\n2026-02-04 07:39:48 - INFO - [CYCLE 7] Invite #41 sent (236s)\n2026-02-04 07:39:54 - INFO - [CYCLE 7] Invite #42 sent (241s)\n2026-02-04 07:40:00 - INFO - [CYCLE 7] Invite #43 sent (247s)\n2026-02-04 07:40:06 - INFO - [CYCLE 7] Invite #44 sent (253s)\n2026-02-04 07:40:12 - INFO - [CYCLE 7] Invite #45 sent (259s)\n2026-02-04 07:40:17 - DEBUG - [CYCLE 7] Checking for attention popup (invite #45)\n2026-02-04 07:40:17 - INFO - [CYCLE 7] Invite #46 sent (265s)\n2026-02-04 07:40:23 - INFO - [CYCLE 7] Invite #47 sent (271s)\n2026-02-04 07:40:29 - INFO - [CYCLE 7] Invite #48 sent (277s)\n2026-02-04 07:40:35 - INFO - [CYCLE 7] Invite #49 sent (283s)\n2026-02-04 07:40:41 - INFO - [CYCLE 7] Invite #50 sent (288s)\n2026-02-04 07:40:47 - DEBUG - [CYCLE 7] Checking for attention popup (invite #50)\n2026-02-04 07:40:47 - INFO - [CYCLE 7] Invite #51 sent (294s)\n2026-02-04 07:40:53 - INFO - [CYCLE 7] Step 7/7: Starting game...\n2026-02-04 07:40:54 - INFO - [CYCLE 7] Checking for loading color at (200, 100)...\n2026-02-04 07:42:01 - INFO - [CYCLE 7] Cycle #7 completed - no loading color detected (normal)\n2026-02-04 07:42:22 - INFO - [CYCLE 7] Connected to ZXTouch\n",
-  "update_time": "2026-02-04 07:42:24"
+  "last_log": "2026-02-04 07:45:38 - DEBUG - [CYCLE 8] Checking for attention popup (invite #30)\n2026-02-04 07:45:38 - INFO - [CYCLE 8] Invite #31 sent (176s)\n2026-02-04 07:45:44 - INFO - [CYCLE 8] Invite #32 sent (182s)\n2026-02-04 07:45:50 - INFO - [CYCLE 8] Invite #33 sent (188s)\n2026-02-04 07:45:56 - INFO - [CYCLE 8] Invite #34 sent (194s)\n2026-02-04 07:46:02 - INFO - [CYCLE 8] Invite #35 sent (200s)\n2026-02-04 07:46:08 - DEBUG - [CYCLE 8] Checking for attention popup (invite #35)\n2026-02-04 07:46:08 - INFO - [CYCLE 8] Invite #36 sent (206s)\n2026-02-04 07:46:14 - INFO - [CYCLE 8] Invite #37 sent (212s)\n2026-02-04 07:46:20 - INFO - [CYCLE 8] Invite #38 sent (218s)\n2026-02-04 07:46:25 - INFO - [CYCLE 8] Invite #39 sent (224s)\n2026-02-04 07:46:31 - INFO - [CYCLE 8] Invite #40 sent (229s)\n2026-02-04 07:46:37 - DEBUG - [CYCLE 8] Checking for attention popup (invite #40)\n2026-02-04 07:46:37 - INFO - [CYCLE 8] Invite #41 sent (235s)\n2026-02-04 07:46:43 - INFO - [CYCLE 8] Invite #42 sent (241s)\n2026-02-04 07:46:49 - INFO - [CYCLE 8] Invite #43 sent (247s)\n2026-02-04 07:46:55 - INFO - [CYCLE 8] Invite #44 sent (253s)\n2026-02-04 07:47:01 - INFO - [CYCLE 8] Invite #45 sent (259s)\n2026-02-04 07:47:07 - DEBUG - [CYCLE 8] Checking for attention popup (invite #45)\n2026-02-04 07:47:07 - INFO - [CYCLE 8] Invite #46 sent (265s)\n2026-02-04 07:47:13 - INFO - [CYCLE 8] Invite #47 sent (271s)\n2026-02-04 07:47:19 - INFO - [CYCLE 8] Invite #48 sent (277s)\n2026-02-04 07:47:24 - INFO - [CYCLE 8] Invite #49 sent (283s)\n2026-02-04 07:47:30 - INFO - [CYCLE 8] Invite #50 sent (288s)\n2026-02-04 07:47:36 - DEBUG - [CYCLE 8] Checking for attention popup (invite #50)\n2026-02-04 07:47:36 - INFO - [CYCLE 8] Invite #51 sent (294s)\n2026-02-04 07:47:42 - INFO - [CYCLE 8] Step 7/7: Starting game...\n2026-02-04 07:47:44 - INFO - [CYCLE 8] Checking for loading color at (200, 100)...\n2026-02-04 07:48:50 - INFO - [CYCLE 8] Cycle #8 completed - no loading color detected (normal)\n2026-02-04 07:49:11 - INFO - [CYCLE 8] Connected to ZXTouch\n",
+  "update_time": "2026-02-04 07:49:13"
 }
