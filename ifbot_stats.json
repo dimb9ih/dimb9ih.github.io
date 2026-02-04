@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770199075,
-  "timestamp_human": "2026-02-04 12:57:55",
-  "cycle_count": 1,
+  "timestamp": 1770199481,
+  "timestamp_human": "2026-02-04 13:04:41",
+  "cycle_count": 2,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 3 (ошибок: 1, критических: 2)",
   "error_stats": {
@@ -32,18 +32,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.21",
-      "load_5": "2.14",
-      "load_15": "2.03",
+      "load_1": "1.52",
+      "load_5": "1.82",
+      "load_15": "1.92",
       "cores": 4,
-      "utilization_percent": 55.2
+      "utilization_percent": 38.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 235,
-      "free_mb": 2,
-      "cached_mb": 125,
-      "utilization_percent": 11.8
+      "used_mb": 230,
+      "free_mb": 4,
+      "cached_mb": 128,
+      "utilization_percent": 11.5
     },
     "disk": {
       "total": "30Gi",
@@ -52,9 +52,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770199075,
-    "timestamp_human": "2026-02-04 12:57:55"
+    "timestamp": 1770199481,
+    "timestamp_human": "2026-02-04 13:04:41"
   },
-  "last_log": "2026-02-04 12:54:26 - INFO - [CYCLE 31] Invite #36 sent (206s)\n2026-02-04 12:54:31 - INFO - [CYCLE 31] Invite #37 sent (212s)\n2026-02-04 12:54:37 - INFO - [CYCLE 31] Invite #38 sent (218s)\n2026-02-04 12:54:43 - INFO - [CYCLE 31] Invite #39 sent (224s)\n2026-02-04 12:54:49 - INFO - [CYCLE 31] Invite #40 sent (229s)\n2026-02-04 12:54:55 - DEBUG - [CYCLE 31] Checking for attention popup (invite #40)\n2026-02-04 12:54:55 - INFO - [CYCLE 31] Invite #41 sent (235s)\n2026-02-04 12:55:01 - INFO - [CYCLE 31] Invite #42 sent (241s)\n2026-02-04 12:55:07 - INFO - [CYCLE 31] Invite #43 sent (247s)\n2026-02-04 12:55:13 - INFO - [CYCLE 31] Invite #44 sent (253s)\n2026-02-04 12:55:19 - INFO - [CYCLE 31] Invite #45 sent (259s)\n2026-02-04 12:55:24 - DEBUG - [CYCLE 31] Checking for attention popup (invite #45)\n2026-02-04 12:55:24 - INFO - [CYCLE 31] Invite #46 sent (265s)\n2026-02-04 12:55:30 - INFO - [CYCLE 31] Invite #47 sent (271s)\n2026-02-04 12:55:36 - INFO - [CYCLE 31] Invite #48 sent (277s)\n2026-02-04 12:55:42 - INFO - [CYCLE 31] Invite #49 sent (282s)\n2026-02-04 12:55:48 - INFO - [CYCLE 31] Invite #50 sent (288s)\n2026-02-04 12:55:54 - DEBUG - [CYCLE 31] Checking for attention popup (invite #50)\n2026-02-04 12:55:54 - INFO - [CYCLE 31] Invite #51 sent (294s)\n2026-02-04 12:56:00 - INFO - [CYCLE 31] Step 7/7: Starting game...\n2026-02-04 12:56:01 - INFO - [CYCLE 31] Checking for loading color at (200, 100)...\n2026-02-04 12:57:08 - INFO - [CYCLE 31] Cycle #31 completed - no loading color detected (normal)\n2026-02-04 12:57:29 - INFO - [CYCLE 31] Connected to ZXTouch\n2026-02-04 12:57:29 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-04 12:57:29 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1384, in main\n    print(\"[OK] Готов к следующему циклу\\n\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-04 12:57:55 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-02-04 12:57:55"
+  "last_log": "2026-02-04 13:01:06 - DEBUG - [CYCLE 1] Checking for attention popup (invite #30)\n2026-02-04 13:01:06 - INFO - [CYCLE 1] Invite #31 sent (177s)\n2026-02-04 13:01:12 - INFO - [CYCLE 1] Invite #32 sent (183s)\n2026-02-04 13:01:18 - INFO - [CYCLE 1] Invite #33 sent (189s)\n2026-02-04 13:01:24 - INFO - [CYCLE 1] Invite #34 sent (194s)\n2026-02-04 13:01:29 - INFO - [CYCLE 1] Invite #35 sent (200s)\n2026-02-04 13:01:35 - DEBUG - [CYCLE 1] Checking for attention popup (invite #35)\n2026-02-04 13:01:35 - INFO - [CYCLE 1] Invite #36 sent (206s)\n2026-02-04 13:01:41 - INFO - [CYCLE 1] Invite #37 sent (212s)\n2026-02-04 13:01:47 - INFO - [CYCLE 1] Invite #38 sent (218s)\n2026-02-04 13:01:53 - INFO - [CYCLE 1] Invite #39 sent (224s)\n2026-02-04 13:01:59 - INFO - [CYCLE 1] Invite #40 sent (230s)\n2026-02-04 13:02:05 - DEBUG - [CYCLE 1] Checking for attention popup (invite #40)\n2026-02-04 13:02:05 - INFO - [CYCLE 1] Invite #41 sent (236s)\n2026-02-04 13:02:11 - INFO - [CYCLE 1] Invite #42 sent (242s)\n2026-02-04 13:02:17 - INFO - [CYCLE 1] Invite #43 sent (247s)\n2026-02-04 13:02:22 - INFO - [CYCLE 1] Invite #44 sent (253s)\n2026-02-04 13:02:28 - INFO - [CYCLE 1] Invite #45 sent (259s)\n2026-02-04 13:02:34 - DEBUG - [CYCLE 1] Checking for attention popup (invite #45)\n2026-02-04 13:02:34 - INFO - [CYCLE 1] Invite #46 sent (265s)\n2026-02-04 13:02:40 - INFO - [CYCLE 1] Invite #47 sent (271s)\n2026-02-04 13:02:46 - INFO - [CYCLE 1] Invite #48 sent (277s)\n2026-02-04 13:02:52 - INFO - [CYCLE 1] Invite #49 sent (283s)\n2026-02-04 13:02:58 - INFO - [CYCLE 1] Invite #50 sent (289s)\n2026-02-04 13:03:04 - DEBUG - [CYCLE 1] Checking for attention popup (invite #50)\n2026-02-04 13:03:04 - INFO - [CYCLE 1] Invite #51 sent (295s)\n2026-02-04 13:03:10 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-04 13:03:11 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-04 13:04:18 - INFO - [CYCLE 1] Cycle #1 completed - no loading color detected (normal)\n2026-02-04 13:04:39 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-02-04 13:04:41"
 }
