@@ -1,0 +1,58 @@
+{
+  "timestamp": 1770182938,
+  "timestamp_human": "2026-02-04 08:28:58",
+  "cycle_count": 15,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 1 (предупреждений: 1), последняя: 46м назад",
+  "error_stats": {
+    "total_errors": 1,
+    "warnings": 1,
+    "errors": 0,
+    "critical": 0,
+    "recent_errors": [
+      "2026-02-04 07:42:32 - WARNING - [CYCLE 8] Still on main, trying again"
+    ],
+    "last_error_time": 1770180152,
+    "error_timestamp_human": "2026-02-04 07:42:32"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.01",
+      "load_5": "2.08",
+      "load_15": "2.02",
+      "cores": 4,
+      "utilization_percent": 50.2
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 231,
+      "free_mb": 4,
+      "cached_mb": 127,
+      "utilization_percent": 11.6
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1770182938,
+    "timestamp_human": "2026-02-04 08:28:58"
+  },
+  "last_log": "2026-02-04 08:25:23 - DEBUG - [CYCLE 14] Checking for attention popup (invite #30)\n2026-02-04 08:25:23 - INFO - [CYCLE 14] Invite #31 sent (176s)\n2026-02-04 08:25:29 - INFO - [CYCLE 14] Invite #32 sent (182s)\n2026-02-04 08:25:35 - INFO - [CYCLE 14] Invite #33 sent (188s)\n2026-02-04 08:25:41 - INFO - [CYCLE 14] Invite #34 sent (194s)\n2026-02-04 08:25:47 - INFO - [CYCLE 14] Invite #35 sent (200s)\n2026-02-04 08:25:52 - DEBUG - [CYCLE 14] Checking for attention popup (invite #35)\n2026-02-04 08:25:53 - INFO - [CYCLE 14] Invite #36 sent (206s)\n2026-02-04 08:25:58 - INFO - [CYCLE 14] Invite #37 sent (211s)\n2026-02-04 08:26:04 - INFO - [CYCLE 14] Invite #38 sent (217s)\n2026-02-04 08:26:10 - INFO - [CYCLE 14] Invite #39 sent (223s)\n2026-02-04 08:26:16 - INFO - [CYCLE 14] Invite #40 sent (229s)\n2026-02-04 08:26:22 - DEBUG - [CYCLE 14] Checking for attention popup (invite #40)\n2026-02-04 08:26:22 - INFO - [CYCLE 14] Invite #41 sent (235s)\n2026-02-04 08:26:28 - INFO - [CYCLE 14] Invite #42 sent (241s)\n2026-02-04 08:26:34 - INFO - [CYCLE 14] Invite #43 sent (247s)\n2026-02-04 08:26:40 - INFO - [CYCLE 14] Invite #44 sent (253s)\n2026-02-04 08:26:46 - INFO - [CYCLE 14] Invite #45 sent (259s)\n2026-02-04 08:26:51 - DEBUG - [CYCLE 14] Checking for attention popup (invite #45)\n2026-02-04 08:26:51 - INFO - [CYCLE 14] Invite #46 sent (265s)\n2026-02-04 08:26:57 - INFO - [CYCLE 14] Invite #47 sent (270s)\n2026-02-04 08:27:03 - INFO - [CYCLE 14] Invite #48 sent (276s)\n2026-02-04 08:27:09 - INFO - [CYCLE 14] Invite #49 sent (282s)\n2026-02-04 08:27:15 - INFO - [CYCLE 14] Invite #50 sent (288s)\n2026-02-04 08:27:21 - DEBUG - [CYCLE 14] Checking for attention popup (invite #50)\n2026-02-04 08:27:21 - INFO - [CYCLE 14] Invite #51 sent (294s)\n2026-02-04 08:27:27 - INFO - [CYCLE 14] Step 7/7: Starting game...\n2026-02-04 08:27:28 - INFO - [CYCLE 14] Checking for loading color at (200, 100)...\n2026-02-04 08:28:35 - INFO - [CYCLE 14] Cycle #14 completed - no loading color detected (normal)\n2026-02-04 08:28:56 - INFO - [CYCLE 14] Connected to ZXTouch\n",
+  "update_time": "2026-02-04 08:28:58"
+}
