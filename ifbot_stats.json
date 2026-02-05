@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770280749,
-  "timestamp_human": "2026-02-05 11:39:09",
-  "cycle_count": 22,
+  "timestamp": 1770280864,
+  "timestamp_human": "2026-02-05 11:41:04",
+  "cycle_count": 23,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 26 (предупреждений: 13, ошибок: 13), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 28 (предупреждений: 14, ошибок: 14), последняя: 22с назад",
   "error_stats": {
-    "total_errors": 26,
-    "warnings": 13,
-    "errors": 13,
+    "total_errors": 28,
+    "warnings": 14,
+    "errors": 14,
     "critical": 0,
     "recent_errors": [
-      "2026-02-05 11:34:53 - ERROR - [CYCLE 19] Main screen not found",
-      "2026-02-05 11:36:48 - WARNING - [CYCLE 20] Failed to reach main screen",
       "2026-02-05 11:36:48 - ERROR - [CYCLE 20] Main screen not found",
       "2026-02-05 11:38:46 - WARNING - [CYCLE 21] Failed to reach main screen",
-      "2026-02-05 11:38:46 - ERROR - [CYCLE 21] Main screen not found"
+      "2026-02-05 11:38:46 - ERROR - [CYCLE 21] Main screen not found",
+      "2026-02-05 11:40:42 - WARNING - [CYCLE 22] Failed to reach main screen",
+      "2026-02-05 11:40:42 - ERROR - [CYCLE 22] Main screen not found"
     ],
-    "last_error_time": 1770280726,
-    "error_timestamp_human": "2026-02-05 11:38:46"
+    "last_error_time": 1770280842,
+    "error_timestamp_human": "2026-02-05 11:40:42"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.71",
-      "load_5": "1.81",
-      "load_15": "1.83",
+      "load_1": "2.81",
+      "load_5": "2.28",
+      "load_15": "2.02",
       "cores": 4,
-      "utilization_percent": 42.8
+      "utilization_percent": 70.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 239,
-      "free_mb": 13,
-      "cached_mb": 128,
-      "utilization_percent": 11.9
+      "used_mb": 246,
+      "free_mb": 1,
+      "cached_mb": 138,
+      "utilization_percent": 12.3
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770280749,
-    "timestamp_human": "2026-02-05 11:39:09"
+    "timestamp": 1770280864,
+    "timestamp_human": "2026-02-05 11:41:04"
   },
-  "last_log": "2026-02-05 11:37:58 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:37:59 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:01 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:03 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:05 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:07 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:08 - DEBUG - [CYCLE 21] Current: popup, waiting for main... 55s\n2026-02-05 11:38:09 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:11 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:13 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:14 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:16 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:18 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:20 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:22 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:24 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:25 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:28 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:29 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:31 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:33 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:35 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:37 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:39 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:40 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:42 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:44 - INFO - [CYCLE 21] Found ВНИМАНИЕ popup\n2026-02-05 11:38:46 - WARNING - [CYCLE 21] Failed to reach main screen\n2026-02-05 11:38:46 - ERROR - [CYCLE 21] Main screen not found\n2026-02-05 11:39:07 - INFO - [CYCLE 21] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 11:39:09"
+  "last_log": "2026-02-05 11:39:27 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 15s\n2026-02-05 11:39:31 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 20s\n2026-02-05 11:39:32 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 20s\n2026-02-05 11:39:36 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 25s\n2026-02-05 11:39:37 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 25s\n2026-02-05 11:39:41 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 30s\n2026-02-05 11:39:42 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 30s\n2026-02-05 11:39:46 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 35s\n2026-02-05 11:39:47 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 35s\n2026-02-05 11:39:51 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 40s\n2026-02-05 11:39:52 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 40s\n2026-02-05 11:39:56 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 45s\n2026-02-05 11:39:57 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 45s\n2026-02-05 11:40:02 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 50s\n2026-02-05 11:40:07 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 55s\n2026-02-05 11:40:12 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 60s\n2026-02-05 11:40:16 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 65s\n2026-02-05 11:40:17 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 65s\n2026-02-05 11:40:21 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 70s\n2026-02-05 11:40:22 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 70s\n2026-02-05 11:40:26 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 75s\n2026-02-05 11:40:27 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 75s\n2026-02-05 11:40:31 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 80s\n2026-02-05 11:40:32 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 80s\n2026-02-05 11:40:36 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 85s\n2026-02-05 11:40:37 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 85s\n2026-02-05 11:40:41 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 90s\n2026-02-05 11:40:42 - WARNING - [CYCLE 22] Failed to reach main screen\n2026-02-05 11:40:42 - ERROR - [CYCLE 22] Main screen not found\n2026-02-05 11:41:02 - INFO - [CYCLE 22] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 11:41:04"
 }
