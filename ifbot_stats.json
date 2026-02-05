@@ -1,23 +1,20 @@
 {
-  "timestamp": 1770260416,
-  "timestamp_human": "2026-02-05 06:00:16",
-  "cycle_count": 7,
+  "timestamp": 1770260534,
+  "timestamp_human": "2026-02-05 06:02:14",
+  "cycle_count": 8,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 42 (предупреждений: 21, ошибок: 17, критических: 4), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 42,
-    "warnings": 21,
-    "errors": 17,
-    "critical": 4,
+    "total_errors": 2,
+    "warnings": 1,
+    "errors": 1,
+    "critical": 0,
     "recent_errors": [
-      "2026-02-05 05:55:55 - ERROR - [CYCLE 4] Main screen not found",
-      "2026-02-05 05:57:54 - WARNING - [CYCLE 5] Failed to reach main screen",
-      "2026-02-05 05:57:54 - ERROR - [CYCLE 5] Main screen not found",
-      "2026-02-05 05:59:53 - WARNING - [CYCLE 6] Failed to reach main screen",
-      "2026-02-05 05:59:53 - ERROR - [CYCLE 6] Main screen not found"
+      "2026-02-05 06:01:51 - WARNING - [CYCLE 7] Failed to reach main screen",
+      "2026-02-05 06:01:51 - ERROR - [CYCLE 7] Main screen not found"
     ],
-    "last_error_time": 1770260393,
-    "error_timestamp_human": "2026-02-05 05:59:53"
+    "last_error_time": 1770260511,
+    "error_timestamp_human": "2026-02-05 06:01:51"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,29 +31,29 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.24",
-      "load_5": "2.14",
+      "load_1": "2.11",
+      "load_5": "2.12",
       "load_15": "2.06",
       "cores": 4,
-      "utilization_percent": 81.0
+      "utilization_percent": 52.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 242,
+      "used_mb": 240,
       "free_mb": 4,
-      "cached_mb": 140,
-      "utilization_percent": 12.1
+      "cached_mb": 137,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
       "used": "7.0Gi",
-      "available": "9.0Gi",
+      "available": "9.2Gi",
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770260416,
-    "timestamp_human": "2026-02-05 06:00:16"
+    "timestamp": 1770260534,
+    "timestamp_human": "2026-02-05 06:02:14"
   },
-  "last_log": "2026-02-05 05:59:09 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:10 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:12 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:14 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:16 - DEBUG - [CYCLE 6] Current: popup, waiting for main... 55s\n2026-02-05 05:59:16 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:18 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:20 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:21 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:23 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:25 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:27 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:29 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:30 - DEBUG - [CYCLE 6] Current: popup, waiting for main... 70s\n2026-02-05 05:59:31 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:33 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:35 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:36 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:38 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:40 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:42 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:44 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:45 - DEBUG - [CYCLE 6] Current: popup, waiting for main... 85s\n2026-02-05 05:59:46 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:47 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:49 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:51 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 05:59:53 - WARNING - [CYCLE 6] Failed to reach main screen\n2026-02-05 05:59:53 - ERROR - [CYCLE 6] Main screen not found\n2026-02-05 06:00:14 - INFO - [CYCLE 6] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 06:00:16"
+  "last_log": "2026-02-05 06:01:04 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:07 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:08 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:10 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:12 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:13 - DEBUG - [CYCLE 7] Current: popup, waiting for main... 55s\n2026-02-05 06:01:14 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:16 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:18 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:19 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:21 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:23 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:25 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:27 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:29 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:30 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:32 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:34 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:36 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:38 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:39 - DEBUG - [CYCLE 7] Current: popup, waiting for main... 80s\n2026-02-05 06:01:40 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:41 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:43 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:45 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:47 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:49 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 06:01:51 - WARNING - [CYCLE 7] Failed to reach main screen\n2026-02-05 06:01:51 - ERROR - [CYCLE 7] Main screen not found\n2026-02-05 06:02:12 - INFO - [CYCLE 7] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 06:02:14"
 }
