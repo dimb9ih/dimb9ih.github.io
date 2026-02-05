@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770256744,
-  "timestamp_human": "2026-02-05 04:59:04",
-  "cycle_count": 3,
+  "timestamp": 1770256857,
+  "timestamp_human": "2026-02-05 05:00:57",
+  "cycle_count": 4,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 13 (предупреждений: 4, ошибок: 3, критических: 6), последняя: 1м назад",
+  "error_summary": "⚠️ Ошибок: 15 (предупреждений: 6, ошибок: 3, критических: 6), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 13,
-    "warnings": 4,
+    "total_errors": 15,
+    "warnings": 6,
     "errors": 3,
     "critical": 6,
     "recent_errors": [
-      "BrokenPipeError: [Errno 32] Broken pipe",
-      "2026-02-05 04:55:34 - WARNING - [CYCLE 1] Team screen not found, continuing...",
       "2026-02-05 04:55:36 - WARNING - [CYCLE 1] Team screen button not found, continuing...",
       "2026-02-05 04:57:28 - WARNING - [CYCLE 2] Team screen not found, continuing...",
-      "2026-02-05 04:57:29 - WARNING - [CYCLE 2] Team screen button not found, continuing..."
+      "2026-02-05 04:57:29 - WARNING - [CYCLE 2] Team screen button not found, continuing...",
+      "2026-02-05 04:59:21 - WARNING - [CYCLE 3] Team screen not found, continuing...",
+      "2026-02-05 04:59:23 - WARNING - [CYCLE 3] Team screen button not found, continuing..."
     ],
-    "last_error_time": 1770256649,
-    "error_timestamp_human": "2026-02-05 04:57:29"
+    "last_error_time": 1770256763,
+    "error_timestamp_human": "2026-02-05 04:59:23"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,11 +34,11 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.37",
-      "load_5": "2.24",
-      "load_15": "2.08",
+      "load_1": "2.75",
+      "load_5": "2.35",
+      "load_15": "2.13",
       "cores": 4,
-      "utilization_percent": 59.2
+      "utilization_percent": 68.8
     },
     "memory": {
       "total_mb": 2000,
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770256744,
-    "timestamp_human": "2026-02-05 04:59:04"
+    "timestamp": 1770256857,
+    "timestamp_human": "2026-02-05 05:00:57"
   },
-  "last_log": "2026-02-05 04:55:34 - WARNING - [CYCLE 1] Team screen not found, continuing...\n2026-02-05 04:55:34 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-02-05 04:55:36 - WARNING - [CYCLE 1] Team screen button not found, continuing...\n2026-02-05 04:55:36 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-02-05 04:55:36 - INFO - [CYCLE 1] Someone joined the team!\n2026-02-05 04:55:36 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-05 04:55:37 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-05 04:56:47 - INFO - [CYCLE 1] Cycle #1 completed - no loading color detected (normal)\n2026-02-05 04:57:08 - INFO - [CYCLE 1] Connected to ZXTouch\n2026-02-05 04:57:12 - INFO - [CYCLE 2] Starting cycle #2\n2026-02-05 04:57:12 - INFO - [CYCLE 2] Step 1/7: Waiting for main screen...\n2026-02-05 04:57:12 - INFO - [CYCLE 2] Waiting for main screen...\n2026-02-05 04:57:12 - INFO - [CYCLE 2] Found attention popup\n2026-02-05 04:57:13 - INFO - [CYCLE 2] On main screen\n2026-02-05 04:57:13 - INFO - [CYCLE 2] Step 2/7: Transition to arsenal...\n2026-02-05 04:57:13 - INFO - [CYCLE 2] Quick transition: Кнопка Далее\n2026-02-05 04:57:16 - INFO - [CYCLE 2] Step 3/7: Transition to battle...\n2026-02-05 04:57:16 - INFO - [CYCLE 2] Quick transition: Кнопка Битва\n2026-02-05 04:57:19 - INFO - [CYCLE 2] Step 4/7: Transition to team...\n2026-02-05 04:57:21 - INFO - [CYCLE 2] Waiting for team screen...\n2026-02-05 04:57:24 - INFO - [CYCLE 2] Trying team button again\n2026-02-05 04:57:28 - WARNING - [CYCLE 2] Team screen not found, continuing...\n2026-02-05 04:57:28 - INFO - [CYCLE 2] Step 5/7: Pressing team screen button...\n2026-02-05 04:57:29 - WARNING - [CYCLE 2] Team screen button not found, continuing...\n2026-02-05 04:57:29 - INFO - [CYCLE 2] Step 6/7: Sending invitations...\n2026-02-05 04:57:29 - INFO - [CYCLE 2] Someone joined the team!\n2026-02-05 04:57:29 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-02-05 04:57:31 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-02-05 04:58:41 - INFO - [CYCLE 2] Cycle #2 completed - no loading color detected (normal)\n2026-02-05 04:59:02 - INFO - [CYCLE 2] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 04:59:04"
+  "last_log": "2026-02-05 04:57:28 - WARNING - [CYCLE 2] Team screen not found, continuing...\n2026-02-05 04:57:28 - INFO - [CYCLE 2] Step 5/7: Pressing team screen button...\n2026-02-05 04:57:29 - WARNING - [CYCLE 2] Team screen button not found, continuing...\n2026-02-05 04:57:29 - INFO - [CYCLE 2] Step 6/7: Sending invitations...\n2026-02-05 04:57:29 - INFO - [CYCLE 2] Someone joined the team!\n2026-02-05 04:57:29 - INFO - [CYCLE 2] Step 7/7: Starting game...\n2026-02-05 04:57:31 - INFO - [CYCLE 2] Checking for loading color at (200, 100)...\n2026-02-05 04:58:41 - INFO - [CYCLE 2] Cycle #2 completed - no loading color detected (normal)\n2026-02-05 04:59:02 - INFO - [CYCLE 2] Connected to ZXTouch\n2026-02-05 04:59:06 - INFO - [CYCLE 3] Starting cycle #3\n2026-02-05 04:59:06 - INFO - [CYCLE 3] Step 1/7: Waiting for main screen...\n2026-02-05 04:59:06 - INFO - [CYCLE 3] Waiting for main screen...\n2026-02-05 04:59:06 - INFO - [CYCLE 3] Found attention popup\n2026-02-05 04:59:07 - INFO - [CYCLE 3] On main screen\n2026-02-05 04:59:07 - INFO - [CYCLE 3] Step 2/7: Transition to arsenal...\n2026-02-05 04:59:07 - INFO - [CYCLE 3] Quick transition: Кнопка Далее\n2026-02-05 04:59:10 - INFO - [CYCLE 3] Step 3/7: Transition to battle...\n2026-02-05 04:59:10 - INFO - [CYCLE 3] Quick transition: Кнопка Битва\n2026-02-05 04:59:13 - INFO - [CYCLE 3] Step 4/7: Transition to team...\n2026-02-05 04:59:15 - INFO - [CYCLE 3] Waiting for team screen...\n2026-02-05 04:59:18 - INFO - [CYCLE 3] Trying team button again\n2026-02-05 04:59:21 - WARNING - [CYCLE 3] Team screen not found, continuing...\n2026-02-05 04:59:21 - INFO - [CYCLE 3] Step 5/7: Pressing team screen button...\n2026-02-05 04:59:23 - WARNING - [CYCLE 3] Team screen button not found, continuing...\n2026-02-05 04:59:23 - INFO - [CYCLE 3] Step 6/7: Sending invitations...\n2026-02-05 04:59:23 - INFO - [CYCLE 3] Someone joined the team!\n2026-02-05 04:59:23 - INFO - [CYCLE 3] Step 7/7: Starting game...\n2026-02-05 04:59:25 - INFO - [CYCLE 3] Checking for loading color at (200, 100)...\n2026-02-05 05:00:34 - INFO - [CYCLE 3] Cycle #3 completed - no loading color detected (normal)\n2026-02-05 05:00:55 - INFO - [CYCLE 3] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 05:00:57"
 }
