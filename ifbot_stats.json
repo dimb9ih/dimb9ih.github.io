@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770277433,
-  "timestamp_human": "2026-02-05 10:43:53",
-  "cycle_count": 7,
+  "timestamp": 1770277577,
+  "timestamp_human": "2026-02-05 10:46:17",
+  "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 39 (предупреждений: 18, ошибок: 19, критических: 2), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 42 (предупреждений: 18, ошибок: 20, критических: 4)",
   "error_stats": {
-    "total_errors": 39,
+    "total_errors": 42,
     "warnings": 18,
-    "errors": 19,
-    "critical": 2,
+    "errors": 20,
+    "critical": 4,
     "recent_errors": [
-      "2026-02-05 10:39:39 - ERROR - [CYCLE 4] Main screen not found",
-      "2026-02-05 10:41:34 - WARNING - [CYCLE 5] Failed to reach main screen",
-      "2026-02-05 10:41:34 - ERROR - [CYCLE 5] Main screen not found",
-      "2026-02-05 10:43:30 - WARNING - [CYCLE 6] Failed to reach main screen",
-      "2026-02-05 10:43:30 - ERROR - [CYCLE 6] Main screen not found"
+      "2026-02-05 10:45:28 - WARNING - [CYCLE 7] Failed to reach main screen",
+      "2026-02-05 10:45:28 - ERROR - [CYCLE 7] Main screen not found",
+      "2026-02-05 10:45:51 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
+      "2026-02-05 10:45:51 - CRITICAL - Traceback (most recent call last):",
+      "BrokenPipeError: [Errno 32] Broken pipe"
     ],
-    "last_error_time": 1770277410,
-    "error_timestamp_human": "2026-02-05 10:43:30"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.00",
-      "load_5": "2.01",
-      "load_15": "2.01",
+      "load_1": "1.83",
+      "load_5": "1.93",
+      "load_15": "1.97",
       "cores": 4,
-      "utilization_percent": 50.0
+      "utilization_percent": 45.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 236,
-      "free_mb": 13,
-      "cached_mb": 128,
-      "utilization_percent": 11.8
+      "used_mb": 240,
+      "free_mb": 5,
+      "cached_mb": 139,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770277433,
-    "timestamp_human": "2026-02-05 10:43:53"
+    "timestamp": 1770277577,
+    "timestamp_human": "2026-02-05 10:46:17"
   },
-  "last_log": "2026-02-05 10:41:59 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 10:42:01 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 10:42:03 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 10:42:05 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 10:42:07 - INFO - [CYCLE 6] Found ВНИМАНИЕ popup\n2026-02-05 10:42:10 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 10s\n2026-02-05 10:42:10 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 10s\n2026-02-05 10:42:15 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 15s\n2026-02-05 10:42:20 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 20s\n2026-02-05 10:42:25 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 25s\n2026-02-05 10:42:30 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 30s\n2026-02-05 10:42:34 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 35s\n2026-02-05 10:42:35 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 35s\n2026-02-05 10:42:39 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 40s\n2026-02-05 10:42:40 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 40s\n2026-02-05 10:42:45 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 45s\n2026-02-05 10:42:50 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 50s\n2026-02-05 10:42:55 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 55s\n2026-02-05 10:42:59 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 60s\n2026-02-05 10:43:00 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 60s\n2026-02-05 10:43:04 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 65s\n2026-02-05 10:43:05 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 65s\n2026-02-05 10:43:10 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 70s\n2026-02-05 10:43:15 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 75s\n2026-02-05 10:43:20 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 80s\n2026-02-05 10:43:25 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 85s\n2026-02-05 10:43:29 - DEBUG - [CYCLE 6] Current: loading, waiting for main... 90s\n2026-02-05 10:43:30 - WARNING - [CYCLE 6] Failed to reach main screen\n2026-02-05 10:43:30 - ERROR - [CYCLE 6] Main screen not found\n2026-02-05 10:43:51 - INFO - [CYCLE 6] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 10:43:53"
+  "last_log": "2026-02-05 10:44:58 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:00 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:02 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:04 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:05 - DEBUG - [CYCLE 7] Current: popup, waiting for main... 70s\n2026-02-05 10:45:06 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:07 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:10 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:11 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:13 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:15 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:17 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:19 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:20 - DEBUG - [CYCLE 7] Current: popup, waiting for main... 85s\n2026-02-05 10:45:21 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:22 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:24 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:26 - INFO - [CYCLE 7] Found ВНИМАНИЕ popup\n2026-02-05 10:45:28 - WARNING - [CYCLE 7] Failed to reach main screen\n2026-02-05 10:45:28 - ERROR - [CYCLE 7] Main screen not found\n2026-02-05 10:45:49 - INFO - [CYCLE 7] Connected to ZXTouch\n2026-02-05 10:45:51 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 10:45:51 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1353, in main\n    success = bot.run_cycle()\n  File \"/private/var/mobile/ifbot1.py\", line 1108, in run_cycle\n    print(f\"\\n[WEB] Sending statistics (cycle {self.cycle_count})...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 10:46:16 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 10:46:17"
 }
