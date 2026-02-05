@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770276611,
-  "timestamp_human": "2026-02-05 10:30:11",
-  "cycle_count": 33,
+  "timestamp": 1770276733,
+  "timestamp_human": "2026-02-05 10:32:13",
+  "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 34 (предупреждений: 17, ошибок: 17), последняя: 22с назад",
+  "error_summary": "⚠️ Ошибок: 39 (предупреждений: 18, ошибок: 19, критических: 2)",
   "error_stats": {
-    "total_errors": 34,
-    "warnings": 17,
-    "errors": 17,
-    "critical": 0,
+    "total_errors": 39,
+    "warnings": 18,
+    "errors": 19,
+    "critical": 2,
     "recent_errors": [
-      "2026-02-05 10:25:53 - ERROR - [CYCLE 30] Main screen not found",
-      "2026-02-05 10:27:51 - WARNING - [CYCLE 31] Failed to reach main screen",
-      "2026-02-05 10:27:51 - ERROR - [CYCLE 31] Main screen not found",
-      "2026-02-05 10:29:49 - WARNING - [CYCLE 32] Failed to reach main screen",
-      "2026-02-05 10:29:49 - ERROR - [CYCLE 32] Main screen not found"
+      "2026-02-05 10:31:46 - WARNING - [CYCLE 33] Failed to reach main screen",
+      "2026-02-05 10:31:46 - ERROR - [CYCLE 33] Main screen not found",
+      "2026-02-05 10:31:46 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
+      "2026-02-05 10:31:46 - CRITICAL - Traceback (most recent call last):",
+      "BrokenPipeError: [Errno 32] Broken pipe"
     ],
-    "last_error_time": 1770276589,
-    "error_timestamp_human": "2026-02-05 10:29:49"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,16 +34,16 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.51",
-      "load_5": "1.95",
-      "load_15": "1.92",
+      "load_1": "2.27",
+      "load_5": "2.02",
+      "load_15": "1.94",
       "cores": 4,
-      "utilization_percent": 37.8
+      "utilization_percent": 56.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 238,
-      "free_mb": 4,
+      "used_mb": 239,
+      "free_mb": 5,
       "cached_mb": 139,
       "utilization_percent": 11.9
     },
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770276611,
-    "timestamp_human": "2026-02-05 10:30:11"
+    "timestamp": 1770276733,
+    "timestamp_human": "2026-02-05 10:32:13"
   },
-  "last_log": "2026-02-05 10:29:04 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:06 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:08 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:09 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:11 - DEBUG - [CYCLE 32] Current: popup, waiting for main... 55s\n2026-02-05 10:29:12 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:13 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:15 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:17 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:19 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:21 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:23 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:24 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:26 - DEBUG - [CYCLE 32] Current: popup, waiting for main... 70s\n2026-02-05 10:29:26 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:28 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:30 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:32 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:34 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:35 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:38 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:39 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:41 - DEBUG - [CYCLE 32] Current: popup, waiting for main... 85s\n2026-02-05 10:29:41 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:43 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:45 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:47 - INFO - [CYCLE 32] Found ВНИМАНИЕ popup\n2026-02-05 10:29:49 - WARNING - [CYCLE 32] Failed to reach main screen\n2026-02-05 10:29:49 - ERROR - [CYCLE 32] Main screen not found\n2026-02-05 10:30:09 - INFO - [CYCLE 32] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 10:30:11"
+  "last_log": "2026-02-05 10:31:09 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:11 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:13 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:15 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:17 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:18 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:21 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:22 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:24 - DEBUG - [CYCLE 33] Current: popup, waiting for main... 70s\n2026-02-05 10:31:24 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:26 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:28 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:30 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:32 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:33 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:35 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:37 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:39 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:41 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:43 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:44 - INFO - [CYCLE 33] Found ВНИМАНИЕ popup\n2026-02-05 10:31:46 - WARNING - [CYCLE 33] Failed to reach main screen\n2026-02-05 10:31:46 - ERROR - [CYCLE 33] Main screen not found\n2026-02-05 10:31:46 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 10:31:46 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1388, in main\n    print(f\"\\n[FAIL] Цикл #{bot.cycle_count} не удался\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 10:32:12 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 10:32:13"
 }
