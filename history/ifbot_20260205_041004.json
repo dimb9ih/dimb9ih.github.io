@@ -1,0 +1,62 @@
+{
+  "timestamp": 1770264539,
+  "timestamp_human": "2026-02-05 07:08:59",
+  "cycle_count": 3,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 37 (предупреждений: 17, ошибок: 18, критических: 2), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 37,
+    "warnings": 17,
+    "errors": 18,
+    "critical": 2,
+    "recent_errors": [
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-05 07:06:38 - WARNING - [CYCLE 1] Failed to reach main screen",
+      "2026-02-05 07:06:38 - ERROR - [CYCLE 1] Main screen not found",
+      "2026-02-05 07:08:36 - WARNING - [CYCLE 2] Failed to reach main screen",
+      "2026-02-05 07:08:36 - ERROR - [CYCLE 2] Main screen not found"
+    ],
+    "last_error_time": 1770264516,
+    "error_timestamp_human": "2026-02-05 07:08:36"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "4.59",
+      "load_5": "2.84",
+      "load_15": "2.24",
+      "cores": 4,
+      "utilization_percent": 114.8
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 216,
+      "free_mb": 52,
+      "cached_mb": 117,
+      "utilization_percent": 10.8
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "9.1Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1770264539,
+    "timestamp_human": "2026-02-05 07:08:59"
+  },
+  "last_log": "2026-02-05 07:07:19 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:24 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:28 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:33 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:38 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:40 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 35s\n2026-02-05 07:07:43 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:44 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 40s\n2026-02-05 07:07:47 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:49 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 45s\n2026-02-05 07:07:50 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 45s\n2026-02-05 07:07:52 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:54 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 50s\n2026-02-05 07:07:56 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:07:59 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 55s\n2026-02-05 07:08:00 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 55s\n2026-02-05 07:08:01 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:04 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 60s\n2026-02-05 07:08:09 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 65s\n2026-02-05 07:08:10 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:14 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 70s\n2026-02-05 07:08:15 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:19 - DEBUG - [CYCLE 2] Current: loading, waiting for main... 75s\n2026-02-05 07:08:20 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:24 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:29 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:34 - INFO - [CYCLE 2] Found loading popup with YES button\n2026-02-05 07:08:36 - WARNING - [CYCLE 2] Failed to reach main screen\n2026-02-05 07:08:36 - ERROR - [CYCLE 2] Main screen not found\n2026-02-05 07:08:57 - INFO - [CYCLE 2] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 07:08:59"
+}
