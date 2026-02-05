@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770285077,
-  "timestamp_human": "2026-02-05 12:51:17",
-  "cycle_count": 1,
+  "timestamp": 1770285192,
+  "timestamp_human": "2026-02-05 12:53:12",
+  "cycle_count": 2,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 70 (предупреждений: 32, ошибок: 34, критических: 4)",
+  "error_summary": "⚠️ Ошибок: 70 (предупреждений: 32, ошибок: 34, критических: 4), последняя: 23с назад",
   "error_stats": {
     "total_errors": 70,
     "warnings": 32,
     "errors": 34,
     "critical": 4,
     "recent_errors": [
-      "2026-02-05 12:50:31 - WARNING - [CYCLE 17] Failed to reach main screen",
-      "2026-02-05 12:50:31 - ERROR - [CYCLE 17] Main screen not found",
       "2026-02-05 12:50:51 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
       "2026-02-05 12:50:51 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe"
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-05 12:52:49 - WARNING - [CYCLE 1] Failed to reach main screen",
+      "2026-02-05 12:52:49 - ERROR - [CYCLE 1] Main screen not found"
     ],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "last_error_time": 1770285169,
+    "error_timestamp_human": "2026-02-05 12:52:49"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.01",
-      "load_5": "2.49",
-      "load_15": "2.36",
+      "load_1": "4.05",
+      "load_5": "2.80",
+      "load_15": "2.48",
       "cores": 4,
-      "utilization_percent": 75.2
+      "utilization_percent": 101.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 243,
-      "free_mb": 0,
-      "cached_mb": 140,
-      "utilization_percent": 12.2
+      "used_mb": 237,
+      "free_mb": 5,
+      "cached_mb": 138,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770285077,
-    "timestamp_human": "2026-02-05 12:51:17"
+    "timestamp": 1770285192,
+    "timestamp_human": "2026-02-05 12:53:12"
   },
-  "last_log": "2026-02-05 12:49:35 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 35s\n2026-02-05 12:49:40 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 40s\n2026-02-05 12:49:45 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 45s\n2026-02-05 12:49:50 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 50s\n2026-02-05 12:49:51 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 50s\n2026-02-05 12:49:55 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 55s\n2026-02-05 12:49:56 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 55s\n2026-02-05 12:50:00 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 60s\n2026-02-05 12:50:01 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 60s\n2026-02-05 12:50:05 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 65s\n2026-02-05 12:50:06 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 65s\n2026-02-05 12:50:10 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 70s\n2026-02-05 12:50:11 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 70s\n2026-02-05 12:50:15 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 75s\n2026-02-05 12:50:16 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 75s\n2026-02-05 12:50:20 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 80s\n2026-02-05 12:50:21 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 80s\n2026-02-05 12:50:25 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 85s\n2026-02-05 12:50:26 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 85s\n2026-02-05 12:50:30 - DEBUG - [CYCLE 17] Current: unknown, waiting for main... 90s\n2026-02-05 12:50:31 - WARNING - [CYCLE 17] Failed to reach main screen\n2026-02-05 12:50:31 - ERROR - [CYCLE 17] Main screen not found\n2026-02-05 12:50:51 - INFO - [CYCLE 17] Connected to ZXTouch\n2026-02-05 12:50:51 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 12:50:51 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1408, in main\n    print(\"[OK] Готов к повтору\\n\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 12:51:17 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 12:51:17"
+  "last_log": "2026-02-05 12:50:51 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1408, in main\n    print(\"[OK] Готов к повтору\\n\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 12:51:17 - INFO - [CYCLE 0] Connected to ZXTouch\n2026-02-05 12:51:19 - INFO - [CYCLE 1] Starting cycle #1\n2026-02-05 12:51:19 - INFO - [CYCLE 1] Step 1/7: Waiting for main screen...\n2026-02-05 12:51:19 - INFO - [CYCLE 1] Waiting for main screen...\n2026-02-05 12:51:19 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 12:51:24 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 5s\n2026-02-05 12:51:29 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 10s\n2026-02-05 12:51:34 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 15s\n2026-02-05 12:51:39 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 20s\n2026-02-05 12:51:44 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 25s\n2026-02-05 12:51:49 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 30s\n2026-02-05 12:51:54 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 35s\n2026-02-05 12:51:59 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 40s\n2026-02-05 12:52:04 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 45s\n2026-02-05 12:52:09 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 50s\n2026-02-05 12:52:14 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 55s\n2026-02-05 12:52:19 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 60s\n2026-02-05 12:52:24 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 65s\n2026-02-05 12:52:29 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 70s\n2026-02-05 12:52:34 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 75s\n2026-02-05 12:52:39 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 80s\n2026-02-05 12:52:44 - DEBUG - [CYCLE 1] Current: unknown, waiting for main... 85s\n2026-02-05 12:52:49 - WARNING - [CYCLE 1] Failed to reach main screen\n2026-02-05 12:52:49 - ERROR - [CYCLE 1] Main screen not found\n2026-02-05 12:53:10 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 12:53:12"
 }
