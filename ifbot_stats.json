@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770266754,
-  "timestamp_human": "2026-02-05 07:45:54",
-  "cycle_count": 22,
+  "timestamp": 1770266881,
+  "timestamp_human": "2026-02-05 07:48:01",
+  "cycle_count": 1,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 34 (предупреждений: 17, ошибок: 17), последняя: 24с назад",
+  "error_summary": "⚠️ Ошибок: 39 (предупреждений: 18, ошибок: 19, критических: 2)",
   "error_stats": {
-    "total_errors": 34,
-    "warnings": 17,
-    "errors": 17,
-    "critical": 0,
+    "total_errors": 39,
+    "warnings": 18,
+    "errors": 19,
+    "critical": 2,
     "recent_errors": [
-      "2026-02-05 07:41:37 - ERROR - [CYCLE 19] Main screen not found",
-      "2026-02-05 07:43:33 - WARNING - [CYCLE 20] Failed to reach main screen",
-      "2026-02-05 07:43:33 - ERROR - [CYCLE 20] Main screen not found",
-      "2026-02-05 07:45:30 - WARNING - [CYCLE 21] Failed to reach main screen",
-      "2026-02-05 07:45:30 - ERROR - [CYCLE 21] Main screen not found"
+      "2026-02-05 07:47:26 - WARNING - [CYCLE 22] Failed to reach main screen",
+      "2026-02-05 07:47:26 - ERROR - [CYCLE 22] Main screen not found",
+      "2026-02-05 07:47:35 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
+      "2026-02-05 07:47:35 - CRITICAL - Traceback (most recent call last):",
+      "BrokenPipeError: [Errno 32] Broken pipe"
     ],
-    "last_error_time": 1770266730,
-    "error_timestamp_human": "2026-02-05 07:45:30"
+    "last_error_time": null,
+    "error_timestamp_human": null
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.22",
-      "load_5": "3.31",
-      "load_15": "3.12",
+      "load_1": "3.17",
+      "load_5": "3.33",
+      "load_15": "3.16",
       "cores": 4,
-      "utilization_percent": 80.5
+      "utilization_percent": 79.2
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 243,
-      "free_mb": 8,
-      "cached_mb": 135,
+      "free_mb": 9,
+      "cached_mb": 138,
       "utilization_percent": 12.2
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770266754,
-    "timestamp_human": "2026-02-05 07:45:54"
+    "timestamp": 1770266881,
+    "timestamp_human": "2026-02-05 07:48:01"
   },
-  "last_log": "2026-02-05 07:44:10 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 10s\n2026-02-05 07:44:12 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:15 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 15s\n2026-02-05 07:44:17 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:20 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 20s\n2026-02-05 07:44:21 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:25 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 25s\n2026-02-05 07:44:26 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:30 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 30s\n2026-02-05 07:44:31 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:35 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 35s\n2026-02-05 07:44:35 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:40 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 40s\n2026-02-05 07:44:40 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:45 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 45s\n2026-02-05 07:44:45 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:49 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 50s\n2026-02-05 07:44:50 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:55 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:44:59 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:05 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:09 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:14 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:19 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:24 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:28 - INFO - [CYCLE 21] Found loading popup with YES button\n2026-02-05 07:45:30 - DEBUG - [CYCLE 21] Current: unknown, waiting for main... 90s\n2026-02-05 07:45:30 - WARNING - [CYCLE 21] Failed to reach main screen\n2026-02-05 07:45:30 - ERROR - [CYCLE 21] Main screen not found\n2026-02-05 07:45:51 - INFO - [CYCLE 21] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 07:45:54"
+  "last_log": "2026-02-05 07:46:41 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 45s\n2026-02-05 07:46:42 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 45s\n2026-02-05 07:46:43 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:46:47 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 50s\n2026-02-05 07:46:47 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:46:51 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 55s\n2026-02-05 07:46:52 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:46:56 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:47:00 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:47:02 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 65s\n2026-02-05 07:47:07 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 70s\n2026-02-05 07:47:09 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:47:12 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 75s\n2026-02-05 07:47:14 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:47:16 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 80s\n2026-02-05 07:47:17 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 80s\n2026-02-05 07:47:18 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:47:22 - DEBUG - [CYCLE 22] Current: unknown, waiting for main... 85s\n2026-02-05 07:47:22 - INFO - [CYCLE 22] Found loading popup with YES button\n2026-02-05 07:47:26 - WARNING - [CYCLE 22] Failed to reach main screen\n2026-02-05 07:47:26 - ERROR - [CYCLE 22] Main screen not found\n2026-02-05 07:47:35 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 07:47:35 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1396, in main\n    if not launch_game():\n  File \"/private/var/mobile/ifbot1.py\", line 775, in launch_game\n    print(\"[LAUNCH] Launching Iron Force...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 07:48:01 - INFO - [CYCLE 0] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 07:48:01"
 }
