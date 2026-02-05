@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770277084,
-  "timestamp_human": "2026-02-05 10:38:04",
-  "cycle_count": 4,
+  "timestamp": 1770277201,
+  "timestamp_human": "2026-02-05 10:40:01",
+  "cycle_count": 5,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 39 (предупреждений: 18, ошибок: 19, критических: 2), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 39 (предупреждений: 18, ошибок: 19, критических: 2), последняя: 22с назад",
   "error_stats": {
     "total_errors": 39,
     "warnings": 18,
     "errors": 19,
     "critical": 2,
     "recent_errors": [
-      "2026-02-05 10:33:48 - ERROR - [CYCLE 1] Main screen not found",
-      "2026-02-05 10:35:45 - WARNING - [CYCLE 2] Failed to reach main screen",
       "2026-02-05 10:35:45 - ERROR - [CYCLE 2] Main screen not found",
       "2026-02-05 10:37:41 - WARNING - [CYCLE 3] Failed to reach main screen",
-      "2026-02-05 10:37:41 - ERROR - [CYCLE 3] Main screen not found"
+      "2026-02-05 10:37:41 - ERROR - [CYCLE 3] Main screen not found",
+      "2026-02-05 10:39:39 - WARNING - [CYCLE 4] Failed to reach main screen",
+      "2026-02-05 10:39:39 - ERROR - [CYCLE 4] Main screen not found"
     ],
-    "last_error_time": 1770277061,
-    "error_timestamp_human": "2026-02-05 10:37:41"
+    "last_error_time": 1770277179,
+    "error_timestamp_human": "2026-02-05 10:39:39"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.42",
-      "load_5": "2.38",
-      "load_15": "2.14",
+      "load_1": "1.40",
+      "load_5": "1.98",
+      "load_15": "2.01",
       "cores": 4,
-      "utilization_percent": 60.5
+      "utilization_percent": 35.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 241,
-      "free_mb": 6,
-      "cached_mb": 142,
-      "utilization_percent": 12.0
+      "used_mb": 242,
+      "free_mb": 4,
+      "cached_mb": 143,
+      "utilization_percent": 12.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770277084,
-    "timestamp_human": "2026-02-05 10:38:04"
+    "timestamp": 1770277201,
+    "timestamp_human": "2026-02-05 10:40:01"
   },
-  "last_log": "2026-02-05 10:36:56 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:36:58 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:36:59 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:01 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:03 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:05 - DEBUG - [CYCLE 3] Current: popup, waiting for main... 55s\n2026-02-05 10:37:05 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:07 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:09 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:10 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:12 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:14 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:16 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:18 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:20 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:21 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:24 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:24 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:26 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:28 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:30 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:32 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:34 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:35 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:37 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:39 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 10:37:41 - DEBUG - [CYCLE 3] Current: popup, waiting for main... 90s\n2026-02-05 10:37:41 - WARNING - [CYCLE 3] Failed to reach main screen\n2026-02-05 10:37:41 - ERROR - [CYCLE 3] Main screen not found\n2026-02-05 10:38:02 - INFO - [CYCLE 3] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 10:38:04"
+  "last_log": "2026-02-05 10:38:52 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:38:54 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:38:56 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:38:58 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:00 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:01 - DEBUG - [CYCLE 4] Current: popup, waiting for main... 55s\n2026-02-05 10:39:02 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:03 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:05 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:07 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:09 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:11 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:13 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:14 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:16 - DEBUG - [CYCLE 4] Current: popup, waiting for main... 70s\n2026-02-05 10:39:17 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:18 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:20 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:22 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:24 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:26 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:28 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:29 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:31 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:33 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:35 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:37 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 10:39:39 - WARNING - [CYCLE 4] Failed to reach main screen\n2026-02-05 10:39:39 - ERROR - [CYCLE 4] Main screen not found\n2026-02-05 10:39:59 - INFO - [CYCLE 4] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 10:40:01"
 }
