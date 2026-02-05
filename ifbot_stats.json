@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770259710,
-  "timestamp_human": "2026-02-05 05:48:30",
-  "cycle_count": 1,
+  "timestamp": 1770259828,
+  "timestamp_human": "2026-02-05 05:50:28",
+  "cycle_count": 2,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 60 (предупреждений: 39, ошибок: 13, критических: 8)",
+  "error_summary": "⚠️ Ошибок: 55 (предупреждений: 36, ошибок: 13, критических: 6), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 60,
-    "warnings": 39,
+    "total_errors": 55,
+    "warnings": 36,
     "errors": 13,
-    "critical": 8,
+    "critical": 6,
     "recent_errors": [
-      "2026-02-05 05:47:58 - WARNING - [CYCLE 10] Failed to reach main screen",
-      "2026-02-05 05:47:58 - ERROR - [CYCLE 10] Main screen not found",
       "2026-02-05 05:48:03 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
       "2026-02-05 05:48:03 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe"
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-05 05:50:05 - WARNING - [CYCLE 1] Failed to reach main screen",
+      "2026-02-05 05:50:05 - ERROR - [CYCLE 1] Main screen not found"
     ],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "last_error_time": 1770259805,
+    "error_timestamp_human": "2026-02-05 05:50:05"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.56",
-      "load_5": "1.89",
-      "load_15": "2.05",
+      "load_1": "1.38",
+      "load_5": "1.70",
+      "load_15": "1.95",
       "cores": 4,
-      "utilization_percent": 39.0
+      "utilization_percent": 34.5
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 242,
-      "free_mb": 5,
-      "cached_mb": 144,
-      "utilization_percent": 12.1
+      "used_mb": 222,
+      "free_mb": 47,
+      "cached_mb": 122,
+      "utilization_percent": 11.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770259710,
-    "timestamp_human": "2026-02-05 05:48:30"
+    "timestamp": 1770259828,
+    "timestamp_human": "2026-02-05 05:50:28"
   },
-  "last_log": "2026-02-05 05:47:21 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:23 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:25 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:27 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:29 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:30 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:32 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:34 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:36 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:38 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:40 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:41 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:43 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:45 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:47 - DEBUG - [CYCLE 10] Current: popup, waiting for main... 80s\n2026-02-05 05:47:47 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:49 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:51 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:52 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:55 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:56 - INFO - [CYCLE 10] Found ВНИМАНИЕ popup\n2026-02-05 05:47:58 - WARNING - [CYCLE 10] Failed to reach main screen\n2026-02-05 05:47:58 - ERROR - [CYCLE 10] Main screen not found\n2026-02-05 05:48:03 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 05:48:03 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1395, in main\n    print(\"[LAUNCH] Перезапускаем игру...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 05:48:29 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 05:48:30"
+  "last_log": "2026-02-05 05:49:21 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:22 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:24 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:26 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:28 - DEBUG - [CYCLE 1] Current: popup, waiting for main... 55s\n2026-02-05 05:49:28 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:30 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:32 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:33 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:35 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:37 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:39 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:41 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:42 - DEBUG - [CYCLE 1] Current: popup, waiting for main... 70s\n2026-02-05 05:49:43 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:44 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:47 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:48 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:50 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:52 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:54 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:56 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:57 - DEBUG - [CYCLE 1] Current: popup, waiting for main... 85s\n2026-02-05 05:49:58 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:49:59 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:50:01 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:50:03 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:50:05 - WARNING - [CYCLE 1] Failed to reach main screen\n2026-02-05 05:50:05 - ERROR - [CYCLE 1] Main screen not found\n2026-02-05 05:50:26 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 05:50:28"
 }
