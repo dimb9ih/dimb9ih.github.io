@@ -1,0 +1,62 @@
+{
+  "timestamp": 1770287639,
+  "timestamp_human": "2026-02-05 13:33:59",
+  "cycle_count": 6,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 41 (предупреждений: 19, ошибок: 20, критических: 2), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 41,
+    "warnings": 19,
+    "errors": 20,
+    "critical": 2,
+    "recent_errors": [
+      "2026-02-05 13:29:46 - ERROR - [CYCLE 3] Main screen not found",
+      "2026-02-05 13:31:41 - WARNING - [CYCLE 4] Failed to reach main screen",
+      "2026-02-05 13:31:41 - ERROR - [CYCLE 4] Main screen not found",
+      "2026-02-05 13:33:36 - WARNING - [CYCLE 5] Failed to reach main screen",
+      "2026-02-05 13:33:36 - ERROR - [CYCLE 5] Main screen not found"
+    ],
+    "last_error_time": 1770287616,
+    "error_timestamp_human": "2026-02-05 13:33:36"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "2.74",
+      "load_5": "2.53",
+      "load_15": "2.35",
+      "cores": 4,
+      "utilization_percent": 68.5
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 233,
+      "free_mb": 4,
+      "cached_mb": 129,
+      "utilization_percent": 11.7
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "8.9Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1770287639,
+    "timestamp_human": "2026-02-05 13:33:59"
+  },
+  "last_log": "2026-02-05 13:31:26 - DEBUG - [CYCLE 4] Current: unknown, waiting for main... 75s\n2026-02-05 13:31:31 - DEBUG - [CYCLE 4] Current: unknown, waiting for main... 80s\n2026-02-05 13:31:36 - DEBUG - [CYCLE 4] Current: unknown, waiting for main... 85s\n2026-02-05 13:31:41 - WARNING - [CYCLE 4] Failed to reach main screen\n2026-02-05 13:31:41 - ERROR - [CYCLE 4] Main screen not found\n2026-02-05 13:32:01 - INFO - [CYCLE 4] Connected to ZXTouch\n2026-02-05 13:32:06 - INFO - [CYCLE 5] Starting cycle #5\n2026-02-05 13:32:06 - INFO - [CYCLE 5] Step 1/7: Waiting for main screen...\n2026-02-05 13:32:06 - INFO - [CYCLE 5] Waiting for main screen...\n2026-02-05 13:32:06 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 13:32:11 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 5s\n2026-02-05 13:32:16 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 10s\n2026-02-05 13:32:21 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 15s\n2026-02-05 13:32:26 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 20s\n2026-02-05 13:32:31 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 25s\n2026-02-05 13:32:36 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 30s\n2026-02-05 13:32:41 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 35s\n2026-02-05 13:32:46 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 40s\n2026-02-05 13:32:51 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 45s\n2026-02-05 13:32:56 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 50s\n2026-02-05 13:33:01 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 55s\n2026-02-05 13:33:06 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 60s\n2026-02-05 13:33:11 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 65s\n2026-02-05 13:33:16 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 70s\n2026-02-05 13:33:21 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 75s\n2026-02-05 13:33:26 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 80s\n2026-02-05 13:33:31 - DEBUG - [CYCLE 5] Current: unknown, waiting for main... 85s\n2026-02-05 13:33:36 - WARNING - [CYCLE 5] Failed to reach main screen\n2026-02-05 13:33:36 - ERROR - [CYCLE 5] Main screen not found\n2026-02-05 13:33:56 - INFO - [CYCLE 5] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 13:33:59"
+}
