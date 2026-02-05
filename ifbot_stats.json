@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770252174,
-  "timestamp_human": "2026-02-05 03:42:54",
-  "cycle_count": 1,
+  "timestamp": 1770252242,
+  "timestamp_human": "2026-02-05 03:44:02",
+  "cycle_count": 2,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 6 (ошибок: 2, критических: 4)",
   "error_stats": {
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.10",
-      "load_5": "1.89",
-      "load_15": "1.85",
+      "load_1": "3.99",
+      "load_5": "2.37",
+      "load_15": "2.02",
       "cores": 4,
-      "utilization_percent": 52.5
+      "utilization_percent": 99.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 232,
+      "used_mb": 238,
       "free_mb": 4,
-      "cached_mb": 131,
-      "utilization_percent": 11.6
+      "cached_mb": 136,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770252174,
-    "timestamp_human": "2026-02-05 03:42:54"
+    "timestamp": 1770252242,
+    "timestamp_human": "2026-02-05 03:44:02"
   },
-  "last_log": "2026-02-05 03:40:38 - DEBUG - [CYCLE 7] Checking for attention popup (invite #35)\n2026-02-05 03:40:38 - INFO - [CYCLE 7] Invite #36 sent (206s)\n2026-02-05 03:40:44 - INFO - [CYCLE 7] Invite #37 sent (212s)\n2026-02-05 03:40:49 - INFO - [CYCLE 7] Invite #38 sent (218s)\n2026-02-05 03:40:55 - INFO - [CYCLE 7] Invite #39 sent (224s)\n2026-02-05 03:41:01 - INFO - [CYCLE 7] Invite #40 sent (230s)\n2026-02-05 03:41:07 - DEBUG - [CYCLE 7] Checking for attention popup (invite #40)\n2026-02-05 03:41:07 - INFO - [CYCLE 7] Invite #41 sent (236s)\n2026-02-05 03:41:13 - INFO - [CYCLE 7] Invite #42 sent (242s)\n2026-02-05 03:41:19 - INFO - [CYCLE 7] Invite #43 sent (248s)\n2026-02-05 03:41:25 - INFO - [CYCLE 7] Invite #44 sent (254s)\n2026-02-05 03:41:31 - INFO - [CYCLE 7] Invite #45 sent (259s)\n2026-02-05 03:41:37 - DEBUG - [CYCLE 7] Checking for attention popup (invite #45)\n2026-02-05 03:41:37 - INFO - [CYCLE 7] Invite #46 sent (265s)\n2026-02-05 03:41:43 - INFO - [CYCLE 7] Invite #47 sent (271s)\n2026-02-05 03:41:49 - INFO - [CYCLE 7] Invite #48 sent (277s)\n2026-02-05 03:41:55 - INFO - [CYCLE 7] Someone joined the team!\n2026-02-05 03:41:55 - INFO - [CYCLE 7] Step 7/7: Starting game...\n2026-02-05 03:41:56 - INFO - [CYCLE 7] Checking for loading color at (200, 100)...\n2026-02-05 03:42:20 - INFO - [CYCLE 7] Loading color detected! Color: #A9D917\n2026-02-05 03:42:20 - INFO - [CYCLE 7] Cycle #7 completed successfully - loading color detected\n2026-02-05 03:42:29 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 03:42:29 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1370, in main\n    if not launch_game():\n  File \"/private/var/mobile/ifbot1.py\", line 775, in launch_game\n    print(\"[LAUNCH] Launching Iron Force...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 03:42:54 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 03:42:54"
+  "last_log": "2026-02-05 03:42:29 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 03:42:29 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1370, in main\n    if not launch_game():\n  File \"/private/var/mobile/ifbot1.py\", line 775, in launch_game\n    print(\"[LAUNCH] Launching Iron Force...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 03:42:54 - INFO - [CYCLE 0] Connected to ZXTouch\n2026-02-05 03:42:56 - INFO - [CYCLE 1] Starting cycle #1\n2026-02-05 03:42:56 - INFO - [CYCLE 1] Step 1/7: Waiting for main screen...\n2026-02-05 03:42:56 - INFO - [CYCLE 1] Waiting for main screen...\n2026-02-05 03:42:56 - INFO - [CYCLE 1] Found attention popup\n2026-02-05 03:42:58 - INFO - [CYCLE 1] On main screen\n2026-02-05 03:42:58 - INFO - [CYCLE 1] Step 2/7: Transition to arsenal...\n2026-02-05 03:42:58 - INFO - [CYCLE 1] Quick transition: Кнопка Далее\n2026-02-05 03:43:01 - INFO - [CYCLE 1] Step 3/7: Transition to battle...\n2026-02-05 03:43:01 - INFO - [CYCLE 1] Quick transition: Кнопка Битва\n2026-02-05 03:43:03 - INFO - [CYCLE 1] Step 4/7: Transition to team...\n2026-02-05 03:43:05 - INFO - [CYCLE 1] Waiting for team screen...\n2026-02-05 03:43:06 - INFO - [CYCLE 1] Found team screen button\n2026-02-05 03:43:06 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-02-05 03:43:08 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-02-05 03:43:08 - INFO - [CYCLE 1] Invite #1 sent (0s)\n2026-02-05 03:43:14 - INFO - [CYCLE 1] Someone joined the team!\n2026-02-05 03:43:14 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-05 03:43:16 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-05 03:43:39 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-02-05 03:43:39 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-02-05 03:44:00 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 03:44:02"
 }
