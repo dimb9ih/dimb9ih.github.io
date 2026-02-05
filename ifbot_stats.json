@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770257517,
-  "timestamp_human": "2026-02-05 05:11:57",
-  "cycle_count": 1,
+  "timestamp": 1770257630,
+  "timestamp_human": "2026-02-05 05:13:50",
+  "cycle_count": 2,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 22 (предупреждений: 10, ошибок: 4, критических: 8)",
+  "error_summary": "⚠️ Ошибок: 21 (предупреждений: 12, ошибок: 3, критических: 6), последняя: 1м назад",
   "error_stats": {
-    "total_errors": 22,
-    "warnings": 10,
-    "errors": 4,
-    "critical": 8,
+    "total_errors": 21,
+    "warnings": 12,
+    "errors": 3,
+    "critical": 6,
     "recent_errors": [
-      "2026-02-05 05:03:08 - WARNING - [CYCLE 5] Team screen not found, continuing...",
-      "2026-02-05 05:03:10 - WARNING - [CYCLE 5] Team screen button not found, continuing...",
       "2026-02-05 05:11:31 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
       "2026-02-05 05:11:31 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe"
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-05 05:12:14 - WARNING - [CYCLE 1] Team screen not found, continuing...",
+      "2026-02-05 05:12:16 - WARNING - [CYCLE 1] Team screen button not found, continuing..."
     ],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "last_error_time": 1770257536,
+    "error_timestamp_human": "2026-02-05 05:12:16"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,17 +34,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.85",
-      "load_5": "2.06",
-      "load_15": "2.08",
+      "load_1": "3.67",
+      "load_5": "2.46",
+      "load_15": "2.22",
       "cores": 4,
-      "utilization_percent": 46.2
+      "utilization_percent": 91.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 236,
-      "free_mb": 6,
-      "cached_mb": 137,
+      "used_mb": 235,
+      "free_mb": 4,
+      "cached_mb": 134,
       "utilization_percent": 11.8
     },
     "disk": {
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770257517,
-    "timestamp_human": "2026-02-05 05:11:57"
+    "timestamp": 1770257630,
+    "timestamp_human": "2026-02-05 05:13:50"
   },
-  "last_log": "2026-02-05 05:08:37 - INFO - [CYCLE 6] Invite #38 sent (218s)\n2026-02-05 05:08:43 - INFO - [CYCLE 6] Invite #39 sent (224s)\n2026-02-05 05:08:49 - INFO - [CYCLE 6] Invite #40 sent (230s)\n2026-02-05 05:08:55 - DEBUG - [CYCLE 6] Checking for attention popup (invite #40)\n2026-02-05 05:08:55 - INFO - [CYCLE 6] Invite #41 sent (236s)\n2026-02-05 05:09:01 - INFO - [CYCLE 6] Invite #42 sent (242s)\n2026-02-05 05:09:06 - INFO - [CYCLE 6] Invite #43 sent (248s)\n2026-02-05 05:09:12 - INFO - [CYCLE 6] Invite #44 sent (254s)\n2026-02-05 05:09:18 - INFO - [CYCLE 6] Invite #45 sent (259s)\n2026-02-05 05:09:24 - DEBUG - [CYCLE 6] Checking for attention popup (invite #45)\n2026-02-05 05:09:24 - INFO - [CYCLE 6] Invite #46 sent (265s)\n2026-02-05 05:09:30 - INFO - [CYCLE 6] Invite #47 sent (271s)\n2026-02-05 05:09:36 - INFO - [CYCLE 6] Invite #48 sent (277s)\n2026-02-05 05:09:42 - INFO - [CYCLE 6] Invite #49 sent (283s)\n2026-02-05 05:09:48 - INFO - [CYCLE 6] Invite #50 sent (289s)\n2026-02-05 05:09:54 - DEBUG - [CYCLE 6] Checking for attention popup (invite #50)\n2026-02-05 05:09:54 - INFO - [CYCLE 6] Invite #51 sent (295s)\n2026-02-05 05:10:00 - INFO - [CYCLE 6] Step 7/7: Starting game...\n2026-02-05 05:10:01 - INFO - [CYCLE 6] Checking for loading color at (200, 100)...\n2026-02-05 05:11:08 - INFO - [CYCLE 6] Cycle #6 completed - no loading color detected (normal)\n2026-02-05 05:11:29 - INFO - [CYCLE 6] Connected to ZXTouch\n2026-02-05 05:11:31 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 05:11:31 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1353, in main\n    success = bot.run_cycle()\n  File \"/private/var/mobile/ifbot1.py\", line 1108, in run_cycle\n    print(f\"\\n[WEB] Sending statistics (cycle {self.cycle_count})...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 05:11:57 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 05:11:57"
+  "last_log": "2026-02-05 05:11:31 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 05:11:31 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1353, in main\n    success = bot.run_cycle()\n  File \"/private/var/mobile/ifbot1.py\", line 1108, in run_cycle\n    print(f\"\\n[WEB] Sending statistics (cycle {self.cycle_count})...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 05:11:57 - INFO - [CYCLE 0] Connected to ZXTouch\n2026-02-05 05:11:59 - INFO - [CYCLE 1] Starting cycle #1\n2026-02-05 05:11:59 - INFO - [CYCLE 1] Step 1/7: Waiting for main screen...\n2026-02-05 05:11:59 - INFO - [CYCLE 1] Waiting for main screen...\n2026-02-05 05:11:59 - INFO - [CYCLE 1] Found attention popup\n2026-02-05 05:12:00 - INFO - [CYCLE 1] On main screen\n2026-02-05 05:12:00 - INFO - [CYCLE 1] Step 2/7: Transition to arsenal...\n2026-02-05 05:12:00 - INFO - [CYCLE 1] Quick transition: Кнопка Далее\n2026-02-05 05:12:03 - INFO - [CYCLE 1] Step 3/7: Transition to battle...\n2026-02-05 05:12:03 - INFO - [CYCLE 1] Quick transition: Кнопка Битва\n2026-02-05 05:12:06 - INFO - [CYCLE 1] Step 4/7: Transition to team...\n2026-02-05 05:12:08 - INFO - [CYCLE 1] Waiting for team screen...\n2026-02-05 05:12:11 - INFO - [CYCLE 1] Trying team button again\n2026-02-05 05:12:14 - WARNING - [CYCLE 1] Team screen not found, continuing...\n2026-02-05 05:12:14 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-02-05 05:12:16 - WARNING - [CYCLE 1] Team screen button not found, continuing...\n2026-02-05 05:12:16 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-02-05 05:12:16 - INFO - [CYCLE 1] Someone joined the team!\n2026-02-05 05:12:16 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-05 05:12:18 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-05 05:13:27 - INFO - [CYCLE 1] Cycle #1 completed - no loading color detected (normal)\n2026-02-05 05:13:47 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 05:13:50"
 }
