@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770273333,
-  "timestamp_human": "2026-02-05 09:35:33",
-  "cycle_count": 5,
+  "timestamp": 1770273451,
+  "timestamp_human": "2026-02-05 09:37:31",
+  "cycle_count": 6,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 37 (предупреждений: 17, ошибок: 18, критических: 2), последняя: 23с назад",
   "error_stats": {
@@ -10,14 +10,14 @@
     "errors": 18,
     "critical": 2,
     "recent_errors": [
-      "2026-02-05 09:31:15 - ERROR - [CYCLE 2] Main screen not found",
-      "2026-02-05 09:33:14 - WARNING - [CYCLE 3] Failed to reach main screen",
       "2026-02-05 09:33:14 - ERROR - [CYCLE 3] Main screen not found",
       "2026-02-05 09:35:10 - WARNING - [CYCLE 4] Failed to reach main screen",
-      "2026-02-05 09:35:10 - ERROR - [CYCLE 4] Main screen not found"
+      "2026-02-05 09:35:10 - ERROR - [CYCLE 4] Main screen not found",
+      "2026-02-05 09:37:08 - WARNING - [CYCLE 5] Failed to reach main screen",
+      "2026-02-05 09:37:08 - ERROR - [CYCLE 5] Main screen not found"
     ],
-    "last_error_time": 1770273310,
-    "error_timestamp_human": "2026-02-05 09:35:10"
+    "last_error_time": 1770273428,
+    "error_timestamp_human": "2026-02-05 09:37:08"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.50",
-      "load_5": "2.19",
-      "load_15": "2.18",
+      "load_1": "1.45",
+      "load_5": "1.82",
+      "load_15": "2.02",
       "cores": 4,
-      "utilization_percent": 62.5
+      "utilization_percent": 36.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 241,
+      "used_mb": 242,
       "free_mb": 5,
-      "cached_mb": 144,
-      "utilization_percent": 12.0
+      "cached_mb": 141,
+      "utilization_percent": 12.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770273333,
-    "timestamp_human": "2026-02-05 09:35:33"
+    "timestamp": 1770273451,
+    "timestamp_human": "2026-02-05 09:37:31"
   },
-  "last_log": "2026-02-05 09:34:24 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:26 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:28 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:29 - DEBUG - [CYCLE 4] Current: popup, waiting for main... 50s\n2026-02-05 09:34:30 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:31 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:33 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:35 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:37 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:39 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:41 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:42 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:44 - DEBUG - [CYCLE 4] Current: popup, waiting for main... 65s\n2026-02-05 09:34:45 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:46 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:48 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:50 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:52 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:54 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:56 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:57 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:34:59 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:35:01 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:35:03 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:35:05 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:35:07 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:35:08 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 09:35:10 - WARNING - [CYCLE 4] Failed to reach main screen\n2026-02-05 09:35:10 - ERROR - [CYCLE 4] Main screen not found\n2026-02-05 09:35:31 - INFO - [CYCLE 4] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 09:35:33"
+  "last_log": "2026-02-05 09:36:22 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:24 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:26 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:28 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:29 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:31 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:33 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:35 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:37 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:39 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:40 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:42 - DEBUG - [CYCLE 5] Current: popup, waiting for main... 65s\n2026-02-05 09:36:42 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:44 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:46 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:48 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:50 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:51 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:53 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:55 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:57 - DEBUG - [CYCLE 5] Current: popup, waiting for main... 80s\n2026-02-05 09:36:57 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:36:59 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:37:01 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:37:03 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:37:05 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:37:06 - INFO - [CYCLE 5] Found ВНИМАНИЕ popup\n2026-02-05 09:37:08 - WARNING - [CYCLE 5] Failed to reach main screen\n2026-02-05 09:37:08 - ERROR - [CYCLE 5] Main screen not found\n2026-02-05 09:37:29 - INFO - [CYCLE 5] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 09:37:31"
 }
