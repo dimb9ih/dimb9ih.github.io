@@ -1,20 +1,22 @@
 {
-  "timestamp": 1770270161,
-  "timestamp_human": "2026-02-05 08:42:41",
-  "cycle_count": 4,
+  "timestamp": 1770270276,
+  "timestamp_human": "2026-02-05 08:44:36",
+  "cycle_count": 5,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 2 (предупреждений: 1, ошибок: 1), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 4 (предупреждений: 2, ошибок: 2), последняя: 22с назад",
   "error_stats": {
-    "total_errors": 2,
-    "warnings": 1,
-    "errors": 1,
+    "total_errors": 4,
+    "warnings": 2,
+    "errors": 2,
     "critical": 0,
     "recent_errors": [
       "2026-02-05 08:42:18 - WARNING - [CYCLE 3] Failed to reach main screen",
-      "2026-02-05 08:42:18 - ERROR - [CYCLE 3] Main screen not found"
+      "2026-02-05 08:42:18 - ERROR - [CYCLE 3] Main screen not found",
+      "2026-02-05 08:44:14 - WARNING - [CYCLE 4] Failed to reach main screen",
+      "2026-02-05 08:44:14 - ERROR - [CYCLE 4] Main screen not found"
     ],
-    "last_error_time": 1770270138,
-    "error_timestamp_human": "2026-02-05 08:42:18"
+    "last_error_time": 1770270254,
+    "error_timestamp_human": "2026-02-05 08:44:14"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -31,17 +33,17 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.21",
-      "load_5": "2.46",
-      "load_15": "2.38",
+      "load_1": "3.72",
+      "load_5": "2.70",
+      "load_15": "2.47",
       "cores": 4,
-      "utilization_percent": 80.2
+      "utilization_percent": 93.0
     },
     "memory": {
       "total_mb": 2000,
       "used_mb": 242,
-      "free_mb": 4,
-      "cached_mb": 142,
+      "free_mb": 5,
+      "cached_mb": 141,
       "utilization_percent": 12.1
     },
     "disk": {
@@ -51,9 +53,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770270161,
-    "timestamp_human": "2026-02-05 08:42:41"
+    "timestamp": 1770270276,
+    "timestamp_human": "2026-02-05 08:44:36"
   },
-  "last_log": "2026-02-05 08:42:02 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:04 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:05 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:07 - DEBUG - [CYCLE 3] Current: popup, waiting for main... 80s\n2026-02-05 08:42:07 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:09 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:11 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:13 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:15 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:16 - INFO - [CYCLE 3] Found ВНИМАНИЕ popup\n2026-02-05 08:42:18 - WARNING - [CYCLE 3] Failed to reach main screen\n2026-02-05 08:42:18 - ERROR - [CYCLE 3] Main screen not found\n2026-02-05 08:42:39 - INFO - [CYCLE 3] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 08:42:41"
+  "last_log": "2026-02-05 08:42:49 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 08:42:51 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 08:42:52 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 08:42:54 - DEBUG - [CYCLE 4] Current: popup, waiting for main... 10s\n2026-02-05 08:42:54 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 08:42:56 - INFO - [CYCLE 4] Found ВНИМАНИЕ popup\n2026-02-05 08:42:59 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 15s\n2026-02-05 08:43:04 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 20s\n2026-02-05 08:43:09 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 25s\n2026-02-05 08:43:14 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 30s\n2026-02-05 08:43:18 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 35s\n2026-02-05 08:43:19 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 35s\n2026-02-05 08:43:23 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 40s\n2026-02-05 08:43:24 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 40s\n2026-02-05 08:43:28 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 45s\n2026-02-05 08:43:29 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 45s\n2026-02-05 08:43:34 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 50s\n2026-02-05 08:43:39 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 55s\n2026-02-05 08:43:44 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 60s\n2026-02-05 08:43:49 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 65s\n2026-02-05 08:43:53 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 70s\n2026-02-05 08:43:54 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 70s\n2026-02-05 08:43:58 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 75s\n2026-02-05 08:43:59 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 75s\n2026-02-05 08:44:04 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 80s\n2026-02-05 08:44:04 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 80s\n2026-02-05 08:44:09 - DEBUG - [CYCLE 4] Current: loading, waiting for main... 85s\n2026-02-05 08:44:14 - WARNING - [CYCLE 4] Failed to reach main screen\n2026-02-05 08:44:14 - ERROR - [CYCLE 4] Main screen not found\n2026-02-05 08:44:34 - INFO - [CYCLE 4] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 08:44:36"
 }
