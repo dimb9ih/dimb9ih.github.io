@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770271445,
-  "timestamp_human": "2026-02-05 09:04:05",
-  "cycle_count": 15,
+  "timestamp": 1770271563,
+  "timestamp_human": "2026-02-05 09:06:03",
+  "cycle_count": 16,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 24 (предупреждений: 12, ошибок: 12), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 26 (предупреждений: 13, ошибок: 13), последняя: 22с назад",
   "error_stats": {
-    "total_errors": 24,
-    "warnings": 12,
-    "errors": 12,
+    "total_errors": 26,
+    "warnings": 13,
+    "errors": 13,
     "critical": 0,
     "recent_errors": [
-      "2026-02-05 08:59:50 - ERROR - [CYCLE 12] Main screen not found",
-      "2026-02-05 09:01:45 - WARNING - [CYCLE 13] Failed to reach main screen",
       "2026-02-05 09:01:45 - ERROR - [CYCLE 13] Main screen not found",
       "2026-02-05 09:03:42 - WARNING - [CYCLE 14] Failed to reach main screen",
-      "2026-02-05 09:03:42 - ERROR - [CYCLE 14] Main screen not found"
+      "2026-02-05 09:03:42 - ERROR - [CYCLE 14] Main screen not found",
+      "2026-02-05 09:05:41 - WARNING - [CYCLE 15] Failed to reach main screen",
+      "2026-02-05 09:05:41 - ERROR - [CYCLE 15] Main screen not found"
     ],
-    "last_error_time": 1770271422,
-    "error_timestamp_human": "2026-02-05 09:03:42"
+    "last_error_time": 1770271541,
+    "error_timestamp_human": "2026-02-05 09:05:41"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "1.79",
-      "load_5": "2.38",
-      "load_15": "2.38",
+      "load_1": "1.95",
+      "load_5": "2.14",
+      "load_15": "2.27",
       "cores": 4,
-      "utilization_percent": 44.8
+      "utilization_percent": 48.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 240,
+      "used_mb": 242,
       "free_mb": 4,
       "cached_mb": 142,
-      "utilization_percent": 12.0
+      "utilization_percent": 12.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770271445,
-    "timestamp_human": "2026-02-05 09:04:05"
+    "timestamp": 1770271563,
+    "timestamp_human": "2026-02-05 09:06:03"
   },
-  "last_log": "2026-02-05 09:02:56 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:02:58 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:00 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:02 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:04 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:05 - DEBUG - [CYCLE 14] Current: popup, waiting for main... 55s\n2026-02-05 09:03:06 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:07 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:09 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:11 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:13 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:15 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:17 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:18 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:20 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:22 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:24 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:26 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:28 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:29 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:31 - DEBUG - [CYCLE 14] Current: popup, waiting for main... 80s\n2026-02-05 09:03:31 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:33 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:35 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:37 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:39 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:40 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 09:03:42 - WARNING - [CYCLE 14] Failed to reach main screen\n2026-02-05 09:03:42 - ERROR - [CYCLE 14] Main screen not found\n2026-02-05 09:04:03 - INFO - [CYCLE 14] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 09:04:05"
+  "last_log": "2026-02-05 09:04:54 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:04:56 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:04:58 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:00 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:01 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:03 - DEBUG - [CYCLE 15] Current: popup, waiting for main... 55s\n2026-02-05 09:05:04 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:05 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:07 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:09 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:11 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:13 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:15 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:16 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:18 - DEBUG - [CYCLE 15] Current: popup, waiting for main... 70s\n2026-02-05 09:05:18 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:20 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:22 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:24 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:26 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:27 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:29 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:31 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:33 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:35 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:37 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:38 - INFO - [CYCLE 15] Found ВНИМАНИЕ popup\n2026-02-05 09:05:41 - WARNING - [CYCLE 15] Failed to reach main screen\n2026-02-05 09:05:41 - ERROR - [CYCLE 15] Main screen not found\n2026-02-05 09:06:01 - INFO - [CYCLE 15] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 09:06:03"
 }
