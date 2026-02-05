@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770258639,
-  "timestamp_human": "2026-02-05 05:30:39",
-  "cycle_count": 2,
+  "timestamp": 1770258757,
+  "timestamp_human": "2026-02-05 05:32:37",
+  "cycle_count": 3,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 42 (предупреждений: 30, ошибок: 4, критических: 8), последняя: 1м назад",
+  "error_summary": "⚠️ Ошибок: 44 (предупреждений: 31, ошибок: 5, критических: 8), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 42,
-    "warnings": 30,
-    "errors": 4,
+    "total_errors": 44,
+    "warnings": 31,
+    "errors": 5,
     "critical": 8,
     "recent_errors": [
-      "2026-02-05 05:28:50 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
-      "2026-02-05 05:28:50 - CRITICAL - Traceback (most recent call last):",
       "BrokenPipeError: [Errno 32] Broken pipe",
       "2026-02-05 05:29:35 - WARNING - [CYCLE 1] Team screen not found, continuing...",
-      "2026-02-05 05:29:36 - WARNING - [CYCLE 1] Team screen button not found, continuing..."
+      "2026-02-05 05:29:36 - WARNING - [CYCLE 1] Team screen button not found, continuing...",
+      "2026-02-05 05:32:14 - WARNING - [CYCLE 2] Failed to reach main screen",
+      "2026-02-05 05:32:14 - ERROR - [CYCLE 2] Main screen not found"
     ],
-    "last_error_time": 1770258576,
-    "error_timestamp_human": "2026-02-05 05:29:36"
+    "last_error_time": 1770258734,
+    "error_timestamp_human": "2026-02-05 05:32:14"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.04",
-      "load_5": "2.44",
-      "load_15": "2.41",
+      "load_1": "2.73",
+      "load_5": "2.41",
+      "load_15": "2.39",
       "cores": 4,
-      "utilization_percent": 51.0
+      "utilization_percent": 68.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 243,
-      "free_mb": 4,
-      "cached_mb": 143,
-      "utilization_percent": 12.2
+      "used_mb": 241,
+      "free_mb": 5,
+      "cached_mb": 145,
+      "utilization_percent": 12.0
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770258639,
-    "timestamp_human": "2026-02-05 05:30:39"
+    "timestamp": 1770258757,
+    "timestamp_human": "2026-02-05 05:32:37"
   },
-  "last_log": "2026-02-05 05:28:50 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1369, in main\n    print(\"[LAUNCH] Перезапускаем игру...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 05:29:16 - INFO - [CYCLE 0] Connected to ZXTouch\n2026-02-05 05:29:18 - INFO - [CYCLE 1] Starting cycle #1\n2026-02-05 05:29:18 - INFO - [CYCLE 1] Step 1/7: Waiting for main screen...\n2026-02-05 05:29:18 - INFO - [CYCLE 1] Waiting for main screen...\n2026-02-05 05:29:18 - INFO - [CYCLE 1] Found attention popup\n2026-02-05 05:29:19 - INFO - [CYCLE 1] On main screen\n2026-02-05 05:29:19 - INFO - [CYCLE 1] Step 2/7: Transition to arsenal...\n2026-02-05 05:29:19 - INFO - [CYCLE 1] Quick transition: Кнопка Далее\n2026-02-05 05:29:22 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:29:23 - INFO - [CYCLE 1] Step 3/7: Transition to battle...\n2026-02-05 05:29:23 - INFO - [CYCLE 1] Quick transition: Кнопка Битва\n2026-02-05 05:29:26 - INFO - [CYCLE 1] Step 4/7: Transition to team...\n2026-02-05 05:29:28 - INFO - [CYCLE 1] Waiting for team screen...\n2026-02-05 05:29:32 - INFO - [CYCLE 1] Trying team button again\n2026-02-05 05:29:35 - WARNING - [CYCLE 1] Team screen not found, continuing...\n2026-02-05 05:29:35 - INFO - [CYCLE 1] Step 5/7: Pressing team screen button...\n2026-02-05 05:29:36 - WARNING - [CYCLE 1] Team screen button not found, continuing...\n2026-02-05 05:29:36 - INFO - [CYCLE 1] Step 6/7: Sending invitations...\n2026-02-05 05:29:36 - INFO - [CYCLE 1] Someone joined the team!\n2026-02-05 05:29:36 - INFO - [CYCLE 1] Step 7/7: Starting game...\n2026-02-05 05:29:38 - INFO - [CYCLE 1] Checking for loading color at (200, 100)...\n2026-02-05 05:30:14 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 05:30:16 - INFO - [CYCLE 1] Loading color detected! Color: #A9D917\n2026-02-05 05:30:16 - INFO - [CYCLE 1] Cycle #1 completed successfully - loading color detected\n2026-02-05 05:30:37 - INFO - [CYCLE 1] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 05:30:39"
+  "last_log": "2026-02-05 05:31:27 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:29 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:31 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:33 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:35 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:36 - DEBUG - [CYCLE 2] Current: popup, waiting for main... 55s\n2026-02-05 05:31:37 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:38 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:40 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:42 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:44 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:46 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:48 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:49 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:51 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:53 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:55 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:57 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:31:59 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:00 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:02 - DEBUG - [CYCLE 2] Current: popup, waiting for main... 80s\n2026-02-05 05:32:02 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:04 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:06 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:08 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:10 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:12 - INFO - [CYCLE 2] Found ВНИМАНИЕ popup\n2026-02-05 05:32:14 - WARNING - [CYCLE 2] Failed to reach main screen\n2026-02-05 05:32:14 - ERROR - [CYCLE 2] Main screen not found\n2026-02-05 05:32:34 - INFO - [CYCLE 2] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 05:32:37"
 }
