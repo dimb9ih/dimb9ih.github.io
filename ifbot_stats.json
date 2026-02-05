@@ -1,7 +1,7 @@
 {
-  "timestamp": 1770251713,
-  "timestamp_human": "2026-02-05 03:35:13",
-  "cycle_count": 6,
+  "timestamp": 1770251817,
+  "timestamp_human": "2026-02-05 03:36:57",
+  "cycle_count": 7,
   "bot_status": "running",
   "error_summary": "⚠️ Ошибок: 3 (ошибок: 1, критических: 2)",
   "error_stats": {
@@ -32,18 +32,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.04",
-      "load_5": "2.01",
-      "load_15": "1.87",
+      "load_1": "2.09",
+      "load_5": "2.02",
+      "load_15": "1.89",
       "cores": 4,
-      "utilization_percent": 51.0
+      "utilization_percent": 52.2
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 233,
-      "free_mb": 6,
-      "cached_mb": 127,
-      "utilization_percent": 11.7
+      "used_mb": 236,
+      "free_mb": 4,
+      "cached_mb": 136,
+      "utilization_percent": 11.8
     },
     "disk": {
       "total": "30Gi",
@@ -52,9 +52,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770251713,
-    "timestamp_human": "2026-02-05 03:35:13"
+    "timestamp": 1770251817,
+    "timestamp_human": "2026-02-05 03:36:57"
   },
-  "last_log": "2026-02-05 03:31:38 - DEBUG - [CYCLE 5] Checking for attention popup (invite #30)\n2026-02-05 03:31:38 - INFO - [CYCLE 5] Invite #31 sent (177s)\n2026-02-05 03:31:44 - INFO - [CYCLE 5] Invite #32 sent (182s)\n2026-02-05 03:31:50 - INFO - [CYCLE 5] Invite #33 sent (188s)\n2026-02-05 03:31:55 - INFO - [CYCLE 5] Invite #34 sent (194s)\n2026-02-05 03:32:01 - INFO - [CYCLE 5] Invite #35 sent (200s)\n2026-02-05 03:32:07 - DEBUG - [CYCLE 5] Checking for attention popup (invite #35)\n2026-02-05 03:32:07 - INFO - [CYCLE 5] Invite #36 sent (206s)\n2026-02-05 03:32:13 - INFO - [CYCLE 5] Invite #37 sent (212s)\n2026-02-05 03:32:19 - INFO - [CYCLE 5] Invite #38 sent (218s)\n2026-02-05 03:32:25 - INFO - [CYCLE 5] Invite #39 sent (224s)\n2026-02-05 03:32:31 - INFO - [CYCLE 5] Invite #40 sent (230s)\n2026-02-05 03:32:37 - DEBUG - [CYCLE 5] Checking for attention popup (invite #40)\n2026-02-05 03:32:37 - INFO - [CYCLE 5] Invite #41 sent (236s)\n2026-02-05 03:32:43 - INFO - [CYCLE 5] Invite #42 sent (242s)\n2026-02-05 03:32:49 - INFO - [CYCLE 5] Invite #43 sent (247s)\n2026-02-05 03:32:55 - INFO - [CYCLE 5] Invite #44 sent (253s)\n2026-02-05 03:33:01 - INFO - [CYCLE 5] Invite #45 sent (259s)\n2026-02-05 03:33:06 - DEBUG - [CYCLE 5] Checking for attention popup (invite #45)\n2026-02-05 03:33:06 - INFO - [CYCLE 5] Invite #46 sent (265s)\n2026-02-05 03:33:12 - INFO - [CYCLE 5] Invite #47 sent (271s)\n2026-02-05 03:33:18 - INFO - [CYCLE 5] Invite #48 sent (277s)\n2026-02-05 03:33:24 - INFO - [CYCLE 5] Invite #49 sent (283s)\n2026-02-05 03:33:30 - INFO - [CYCLE 5] Invite #50 sent (289s)\n2026-02-05 03:33:36 - DEBUG - [CYCLE 5] Checking for attention popup (invite #50)\n2026-02-05 03:33:36 - INFO - [CYCLE 5] Invite #51 sent (295s)\n2026-02-05 03:33:42 - INFO - [CYCLE 5] Step 7/7: Starting game...\n2026-02-05 03:33:43 - INFO - [CYCLE 5] Checking for loading color at (200, 100)...\n2026-02-05 03:34:50 - INFO - [CYCLE 5] Cycle #5 completed - no loading color detected (normal)\n2026-02-05 03:35:11 - INFO - [CYCLE 5] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 03:35:13"
+  "last_log": "2026-02-05 03:35:16 - INFO - [CYCLE 6] Starting cycle #6\n2026-02-05 03:35:16 - INFO - [CYCLE 6] Step 1/7: Waiting for main screen...\n2026-02-05 03:35:16 - INFO - [CYCLE 6] Waiting for main screen...\n2026-02-05 03:35:16 - INFO - [CYCLE 6] Found attention popup\n2026-02-05 03:35:17 - INFO - [CYCLE 6] On main screen\n2026-02-05 03:35:17 - INFO - [CYCLE 6] Step 2/7: Transition to arsenal...\n2026-02-05 03:35:17 - INFO - [CYCLE 6] Quick transition: Кнопка Далее\n2026-02-05 03:35:20 - INFO - [CYCLE 6] Step 3/7: Transition to battle...\n2026-02-05 03:35:20 - INFO - [CYCLE 6] Quick transition: Кнопка Битва\n2026-02-05 03:35:22 - INFO - [CYCLE 6] Step 4/7: Transition to team...\n2026-02-05 03:35:24 - INFO - [CYCLE 6] Waiting for team screen...\n2026-02-05 03:35:25 - INFO - [CYCLE 6] Found team screen button\n2026-02-05 03:35:25 - INFO - [CYCLE 6] Step 5/7: Pressing team screen button...\n2026-02-05 03:35:27 - INFO - [CYCLE 6] Step 6/7: Sending invitations...\n2026-02-05 03:35:27 - INFO - [CYCLE 6] Invite #1 sent (0s)\n2026-02-05 03:35:33 - INFO - [CYCLE 6] Invite #2 sent (5s)\n2026-02-05 03:35:39 - INFO - [CYCLE 6] Invite #3 sent (11s)\n2026-02-05 03:35:45 - INFO - [CYCLE 6] Invite #4 sent (17s)\n2026-02-05 03:35:51 - INFO - [CYCLE 6] Invite #5 sent (23s)\n2026-02-05 03:35:56 - DEBUG - [CYCLE 6] Checking for attention popup (invite #5)\n2026-02-05 03:35:56 - INFO - [CYCLE 6] Invite #6 sent (29s)\n2026-02-05 03:36:02 - INFO - [CYCLE 6] Invite #7 sent (35s)\n2026-02-05 03:36:08 - INFO - [CYCLE 6] Invite #8 sent (41s)\n2026-02-05 03:36:14 - INFO - [CYCLE 6] Invite #9 sent (47s)\n2026-02-05 03:36:20 - INFO - [CYCLE 6] Someone joined the team!\n2026-02-05 03:36:20 - INFO - [CYCLE 6] Step 7/7: Starting game...\n2026-02-05 03:36:22 - INFO - [CYCLE 6] Checking for loading color at (200, 100)...\n2026-02-05 03:36:34 - INFO - [CYCLE 6] Loading color detected! Color: #A9D917\n2026-02-05 03:36:34 - INFO - [CYCLE 6] Cycle #6 completed successfully - loading color detected\n2026-02-05 03:36:55 - INFO - [CYCLE 6] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 03:36:57"
 }
