@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770265472,
-  "timestamp_human": "2026-02-05 07:24:32",
-  "cycle_count": 11,
+  "timestamp": 1770265588,
+  "timestamp_human": "2026-02-05 07:26:28",
+  "cycle_count": 12,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 12 (предупреждений: 6, ошибок: 6), последняя: 23с назад",
+  "error_summary": "⚠️ Ошибок: 14 (предупреждений: 7, ошибок: 7), последняя: 23с назад",
   "error_stats": {
-    "total_errors": 12,
-    "warnings": 6,
-    "errors": 6,
+    "total_errors": 14,
+    "warnings": 7,
+    "errors": 7,
     "critical": 0,
     "recent_errors": [
-      "2026-02-05 07:20:15 - ERROR - [CYCLE 8] Main screen not found",
-      "2026-02-05 07:22:11 - WARNING - [CYCLE 9] Failed to reach main screen",
       "2026-02-05 07:22:11 - ERROR - [CYCLE 9] Main screen not found",
       "2026-02-05 07:24:09 - WARNING - [CYCLE 10] Failed to reach main screen",
-      "2026-02-05 07:24:09 - ERROR - [CYCLE 10] Main screen not found"
+      "2026-02-05 07:24:09 - ERROR - [CYCLE 10] Main screen not found",
+      "2026-02-05 07:26:05 - WARNING - [CYCLE 11] Failed to reach main screen",
+      "2026-02-05 07:26:05 - ERROR - [CYCLE 11] Main screen not found"
     ],
-    "last_error_time": 1770265449,
-    "error_timestamp_human": "2026-02-05 07:24:09"
+    "last_error_time": 1770265565,
+    "error_timestamp_human": "2026-02-05 07:26:05"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "3.26",
-      "load_5": "3.05",
-      "load_15": "2.78",
+      "load_1": "3.23",
+      "load_5": "3.20",
+      "load_15": "2.87",
       "cores": 4,
-      "utilization_percent": 81.5
+      "utilization_percent": 80.8
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 236,
-      "free_mb": 17,
-      "cached_mb": 117,
-      "utilization_percent": 11.8
+      "used_mb": 238,
+      "free_mb": 14,
+      "cached_mb": 116,
+      "utilization_percent": 11.9
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770265472,
-    "timestamp_human": "2026-02-05 07:24:32"
+    "timestamp": 1770265588,
+    "timestamp_human": "2026-02-05 07:26:28"
   },
-  "last_log": "2026-02-05 07:22:54 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:22:57 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 20s\n2026-02-05 07:22:58 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:02 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 25s\n2026-02-05 07:23:03 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 25s\n2026-02-05 07:23:03 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:07 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 30s\n2026-02-05 07:23:11 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:16 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:17 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 40s\n2026-02-05 07:23:20 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:22 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 45s\n2026-02-05 07:23:25 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:27 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 50s\n2026-02-05 07:23:29 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:32 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 55s\n2026-02-05 07:23:33 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:37 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:42 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:46 - INFO - [CYCLE 10] Found attention popup\n2026-02-05 07:23:47 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:51 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:56 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:23:57 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 80s\n2026-02-05 07:24:00 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:24:02 - DEBUG - [CYCLE 10] Current: unknown, waiting for main... 85s\n2026-02-05 07:24:07 - INFO - [CYCLE 10] Found loading popup with YES button\n2026-02-05 07:24:09 - WARNING - [CYCLE 10] Failed to reach main screen\n2026-02-05 07:24:09 - ERROR - [CYCLE 10] Main screen not found\n2026-02-05 07:24:30 - INFO - [CYCLE 10] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 07:24:32"
+  "last_log": "2026-02-05 07:24:57 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:24:59 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 25s\n2026-02-05 07:25:00 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 25s\n2026-02-05 07:25:02 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:05 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 30s\n2026-02-05 07:25:09 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 35s\n2026-02-05 07:25:10 - INFO - [CYCLE 11] Found attention popup\n2026-02-05 07:25:12 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:15 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 40s\n2026-02-05 07:25:16 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:20 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 45s\n2026-02-05 07:25:21 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:24 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 50s\n2026-02-05 07:25:25 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 50s\n2026-02-05 07:25:26 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:30 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 55s\n2026-02-05 07:25:30 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:34 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 60s\n2026-02-05 07:25:35 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:39 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:44 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:49 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:53 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:25:55 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 80s\n2026-02-05 07:25:58 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:26:00 - DEBUG - [CYCLE 11] Current: unknown, waiting for main... 85s\n2026-02-05 07:26:02 - INFO - [CYCLE 11] Found loading popup with YES button\n2026-02-05 07:26:05 - WARNING - [CYCLE 11] Failed to reach main screen\n2026-02-05 07:26:05 - ERROR - [CYCLE 11] Main screen not found\n2026-02-05 07:26:25 - INFO - [CYCLE 11] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 07:26:28"
 }
