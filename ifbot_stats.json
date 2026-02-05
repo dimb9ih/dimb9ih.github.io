@@ -1,23 +1,23 @@
 {
-  "timestamp": 1770269811,
-  "timestamp_human": "2026-02-05 08:36:51",
-  "cycle_count": 1,
+  "timestamp": 1770269927,
+  "timestamp_human": "2026-02-05 08:38:47",
+  "cycle_count": 2,
   "bot_status": "running",
-  "error_summary": "⚠️ Ошибок: 43 (предупреждений: 20, ошибок: 21, критических: 2)",
+  "error_summary": "⚠️ Ошибок: 43 (предупреждений: 20, ошибок: 21, критических: 2), последняя: 23с назад",
   "error_stats": {
     "total_errors": 43,
     "warnings": 20,
     "errors": 21,
     "critical": 2,
     "recent_errors": [
-      "2026-02-05 08:36:20 - WARNING - [CYCLE 25] Failed to reach main screen",
-      "2026-02-05 08:36:20 - ERROR - [CYCLE 25] Main screen not found",
       "2026-02-05 08:36:25 - CRITICAL - Bot crashed: [Errno 32] Broken pipe",
       "2026-02-05 08:36:25 - CRITICAL - Traceback (most recent call last):",
-      "BrokenPipeError: [Errno 32] Broken pipe"
+      "BrokenPipeError: [Errno 32] Broken pipe",
+      "2026-02-05 08:38:24 - WARNING - [CYCLE 1] Failed to reach main screen",
+      "2026-02-05 08:38:24 - ERROR - [CYCLE 1] Main screen not found"
     ],
-    "last_error_time": null,
-    "error_timestamp_human": null
+    "last_error_time": 1770269904,
+    "error_timestamp_human": "2026-02-05 08:38:24"
   },
   "device_info": {
     "name": "iPhone 7",
@@ -34,18 +34,18 @@
   },
   "system_stats": {
     "cpu": {
-      "load_1": "2.38",
-      "load_5": "2.56",
-      "load_15": "2.45",
+      "load_1": "1.60",
+      "load_5": "2.19",
+      "load_15": "2.31",
       "cores": 4,
-      "utilization_percent": 59.5
+      "utilization_percent": 40.0
     },
     "memory": {
       "total_mb": 2000,
-      "used_mb": 239,
+      "used_mb": 242,
       "free_mb": 4,
-      "cached_mb": 134,
-      "utilization_percent": 11.9
+      "cached_mb": 142,
+      "utilization_percent": 12.1
     },
     "disk": {
       "total": "30Gi",
@@ -54,9 +54,9 @@
       "usage_percent": "44%",
       "mount": "376219"
     },
-    "timestamp": 1770269811,
-    "timestamp_human": "2026-02-05 08:36:51"
+    "timestamp": 1770269927,
+    "timestamp_human": "2026-02-05 08:38:47"
   },
-  "last_log": "2026-02-05 08:35:14 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 25s\n2026-02-05 08:35:15 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 25s\n2026-02-05 08:35:19 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 30s\n2026-02-05 08:35:20 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 30s\n2026-02-05 08:35:25 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 35s\n2026-02-05 08:35:30 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 40s\n2026-02-05 08:35:35 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 45s\n2026-02-05 08:35:40 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 50s\n2026-02-05 08:35:44 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 55s\n2026-02-05 08:35:45 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 55s\n2026-02-05 08:35:49 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 60s\n2026-02-05 08:35:50 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 60s\n2026-02-05 08:35:55 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 65s\n2026-02-05 08:36:00 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 70s\n2026-02-05 08:36:05 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 75s\n2026-02-05 08:36:10 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 80s\n2026-02-05 08:36:14 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 85s\n2026-02-05 08:36:15 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 85s\n2026-02-05 08:36:19 - DEBUG - [CYCLE 25] Current: loading, waiting for main... 90s\n2026-02-05 08:36:20 - WARNING - [CYCLE 25] Failed to reach main screen\n2026-02-05 08:36:20 - ERROR - [CYCLE 25] Main screen not found\n2026-02-05 08:36:25 - CRITICAL - Bot crashed: [Errno 32] Broken pipe\n2026-02-05 08:36:25 - CRITICAL - Traceback (most recent call last):\n  File \"/private/var/mobile/ifbot1.py\", line 1396, in main\n    if not launch_game():\n  File \"/private/var/mobile/ifbot1.py\", line 771, in launch_game\n    print(\"[LAUNCH] Killing game if running...\")\nBrokenPipeError: [Errno 32] Broken pipe\n\n2026-02-05 08:36:51 - INFO - [CYCLE 0] Connected to ZXTouch\n",
-  "update_time": "2026-02-05 08:36:51"
+  "last_log": "2026-02-05 08:37:34 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:36 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:38 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:39 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:41 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:43 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:45 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:47 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:48 - DEBUG - [CYCLE 1] Current: popup, waiting for main... 55s\n2026-02-05 08:37:49 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:50 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:53 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:54 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:56 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:37:58 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:00 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:01 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:04 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:05 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:07 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:09 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:11 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:13 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:14 - DEBUG - [CYCLE 1] Current: popup, waiting for main... 80s\n2026-02-05 08:38:15 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:16 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:18 - INFO - [CYCLE 1] Found ВНИМАНИЕ popup\n2026-02-05 08:38:24 - WARNING - [CYCLE 1] Failed to reach main screen\n2026-02-05 08:38:24 - ERROR - [CYCLE 1] Main screen not found\n2026-02-05 08:38:44 - INFO - [CYCLE 1] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 08:38:47"
 }
