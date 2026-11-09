@@ -1,0 +1,62 @@
+{
+  "timestamp": 1770288677,
+  "timestamp_human": "2026-02-05 13:51:17",
+  "cycle_count": 15,
+  "bot_status": "running",
+  "error_summary": "⚠️ Ошибок: 59 (предупреждений: 28, ошибок: 29, критических: 2), последняя: 23с назад",
+  "error_stats": {
+    "total_errors": 59,
+    "warnings": 28,
+    "errors": 29,
+    "critical": 2,
+    "recent_errors": [
+      "2026-02-05 13:47:03 - ERROR - [CYCLE 12] Main screen not found",
+      "2026-02-05 13:48:59 - WARNING - [CYCLE 13] Failed to reach main screen",
+      "2026-02-05 13:48:59 - ERROR - [CYCLE 13] Main screen not found",
+      "2026-02-05 13:50:54 - WARNING - [CYCLE 14] Failed to reach main screen",
+      "2026-02-05 13:50:54 - ERROR - [CYCLE 14] Main screen not found"
+    ],
+    "last_error_time": 1770288654,
+    "error_timestamp_human": "2026-02-05 13:50:54"
+  },
+  "device_info": {
+    "name": "iPhone 7",
+    "system_name": "iOS",
+    "system_version": "15.8.5",
+    "model": "iPhone9,1",
+    "identifier_for_vendor": "6C0F4295-99A7-4719-9631-93C305B7606D"
+  },
+  "battery_info": {
+    "battery_state": "2",
+    "battery_level": "100",
+    "battery_state_string": "Charging",
+    "is_charging": true
+  },
+  "system_stats": {
+    "cpu": {
+      "load_1": "4.60",
+      "load_5": "3.09",
+      "load_15": "2.59",
+      "cores": 4,
+      "utilization_percent": 115.0
+    },
+    "memory": {
+      "total_mb": 2000,
+      "used_mb": 244,
+      "free_mb": 0,
+      "cached_mb": 143,
+      "utilization_percent": 12.2
+    },
+    "disk": {
+      "total": "30Gi",
+      "used": "7.0Gi",
+      "available": "8.9Gi",
+      "usage_percent": "44%",
+      "mount": "376219"
+    },
+    "timestamp": 1770288677,
+    "timestamp_human": "2026-02-05 13:51:17"
+  },
+  "last_log": "2026-02-05 13:48:59 - DEBUG - [CYCLE 13] Current: unknown, waiting for main... 90s\n2026-02-05 13:48:59 - WARNING - [CYCLE 13] Failed to reach main screen\n2026-02-05 13:48:59 - ERROR - [CYCLE 13] Main screen not found\n2026-02-05 13:49:20 - INFO - [CYCLE 13] Connected to ZXTouch\n2026-02-05 13:49:24 - INFO - [CYCLE 14] Starting cycle #14\n2026-02-05 13:49:24 - INFO - [CYCLE 14] Step 1/7: Waiting for main screen...\n2026-02-05 13:49:24 - INFO - [CYCLE 14] Waiting for main screen...\n2026-02-05 13:49:24 - INFO - [CYCLE 14] Found ВНИМАНИЕ popup\n2026-02-05 13:49:29 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 5s\n2026-02-05 13:49:34 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 10s\n2026-02-05 13:49:39 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 15s\n2026-02-05 13:49:44 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 20s\n2026-02-05 13:49:49 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 25s\n2026-02-05 13:49:54 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 30s\n2026-02-05 13:49:59 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 35s\n2026-02-05 13:50:04 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 40s\n2026-02-05 13:50:09 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 45s\n2026-02-05 13:50:14 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 50s\n2026-02-05 13:50:14 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 50s\n2026-02-05 13:50:19 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 55s\n2026-02-05 13:50:24 - INFO - [CYCLE 14] Found special invite popup\n2026-02-05 13:50:29 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 65s\n2026-02-05 13:50:34 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 70s\n2026-02-05 13:50:39 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 75s\n2026-02-05 13:50:44 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 80s\n2026-02-05 13:50:44 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 80s\n2026-02-05 13:50:49 - DEBUG - [CYCLE 14] Current: unknown, waiting for main... 85s\n2026-02-05 13:50:54 - WARNING - [CYCLE 14] Failed to reach main screen\n2026-02-05 13:50:54 - ERROR - [CYCLE 14] Main screen not found\n2026-02-05 13:51:14 - INFO - [CYCLE 14] Connected to ZXTouch\n",
+  "update_time": "2026-02-05 13:51:17"
+}
